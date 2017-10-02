@@ -19,6 +19,10 @@
  * Detailed view of stock will be available to the user with more information, and charts.
 
  ## Wireframes
+ 
+ ![alt](https://github.com/JSkeets/PennyPincher/blob/master/HomeIndex.png)
+ ![alt](https://github.com/JSkeets/PennyPincher/blob/master/Show_Page.png)
+
 
  ## Implementation Schedule
  * Weekend

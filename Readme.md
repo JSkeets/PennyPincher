@@ -42,6 +42,7 @@
  * D3 for DOM manipulation, and data rendering
  * IEX API for data gathering
  * Webpack to bundle various scripts.
+ * React for front end rendering.
  
  ## Bonus Features
   * A twitter sentiment for a specific stock ticker symbol, to get an idea of how others feel about the direction of the stock.

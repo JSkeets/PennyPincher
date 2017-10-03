@@ -37,47 +37,19 @@ priceMinSlider.oninput = function() {
 	updateMinPrice(priceMin);
 };
 
-var data = new Array(
-	{
-		symbol: "SNAP",
-		marketPercent: 0.00901,
-		bidSize: 200,
-		bidPrice: 110.94,
-		askSize: 100,
-		askPrice: 111.82,
-		volume: 177265,
-		lastSalePrice: 111.76,
-		lastSaleSize: 5,
-		lastSaleTime: 1480446905681,
-		lastUpdated: 1480446910557
-	},
-	{
-		symbol: "FB",
-		marketPercent: 0.01465,
-		bidSize: 200,
-		bidPrice: 120.8,
-		askSize: 100,
-		askPrice: 122.5,
-		volume: 205208,
-		lastSalePrice: 121.41,
-		lastSaleSize: 100,
-		lastSaleTime: 1480446908666,
-		lastUpdated: 1480446923942
-	},
-	{
-		symbol: "AIG+",
-		marketPercent: 0.04618,
-		bidSize: 0,
-		bidPrice: 0,
-		askSize: 0,
-		askPrice: 0,
-		volume: 3400,
-		lastSalePrice: 21.52,
-		lastSaleSize: 100,
-		lastSaleTime: 1480446206461,
-		lastUpdated: -1
-	}
-);
+var data = new Array({
+	symbol: "SNAP",
+	marketPercent: 0.00901,
+	bidSize: 200,
+	bidPrice: 110.94,
+	askSize: 100,
+	askPrice: 111.82,
+	volume: 177265,
+	lastSalePrice: 111.76,
+	lastSaleSize: 5,
+	lastSaleTime: 1480446905681,
+	lastUpdated: 1480446910557
+});
 
 let filteredData = [];
 let updateMinPrice = minPrice => {
@@ -90,7 +62,8 @@ let updateMinPrice = minPrice => {
 	});
 };
 
-// create the table header
+filteredData = data;
+console.log(filteredData[0]);
 var thead = d3
 	.select("thead")
 	.selectAll("th")
@@ -98,6 +71,7 @@ var thead = d3
 	.enter()
 	.append("th")
 	.text(function(d) {
+		console.log(d);
 		return d;
 	});
 // fill the table
@@ -112,6 +86,7 @@ var tr = d3
 var td = tr
 	.selectAll("td")
 	.data(function(d) {
+		console.log("VALUES", d3.values(d));
 		return d3.values(d);
 	})
 	.enter()
@@ -119,6 +94,11 @@ var td = tr
 	.text(function(d) {
 		return d;
 	});
+
+console.log(filteredData);
+console.log("FILTERED", filterED);
+
+// create the table header
 </script>
 
   </body>

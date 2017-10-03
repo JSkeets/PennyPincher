@@ -11,6 +11,20 @@ export const fetchAllStocks = () => {
 	// Connect to the channel
 	socket.on("connect", () => {
 		// Subscribe to topics (i.e. appl,fb,aig+)
-		socket.emit("subscribe", "firehose");
+		socket.emit("subscribe", "fb");
+	});
+};
+
+export const fetchStock = symbol => {
+	return $.ajax({
+		method: "GET",
+		url: `https://api.iextrading.com/1.0/stock/${symbol}/quote`
+	});
+};
+
+export const fetchStockStats = symbol => {
+	return $.ajax({
+		method: "GET",
+		url: `https://api.iextrading.com/1.0/stock/${symbol}/stats`
 	});
 };

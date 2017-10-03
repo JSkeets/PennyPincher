@@ -5,12 +5,12 @@ const socket = require("socket.io-client")(
 export const fetchAllStocks = () => {
 	// Listen to the channel's messages
 	socket.on("message", message => {
-		console.log(message);
+		console.log($.parseJSON(message));
 	});
 
 	// Connect to the channel
 	socket.on("connect", () => {
 		// Subscribe to topics (i.e. appl,fb,aig+)
-		socket.emit("subscribe", "snap,fb,aig+");
+		socket.emit("subscribe", "firehose");
 	});
 };

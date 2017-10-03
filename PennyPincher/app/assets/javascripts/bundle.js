@@ -12875,7 +12875,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		null,
 		"HEroku teSTING"
 	), root);
-	console.log((0, _stock_api_util.fetchAllStocks)());
+	(0, _stock_api_util.fetchAllStocks)();
 });
 
 /***/ }),
@@ -25366,13 +25366,13 @@ var socket = __webpack_require__(205)("https://ws-api.iextrading.com/1.0/tops");
 var fetchAllStocks = exports.fetchAllStocks = function fetchAllStocks() {
 	// Listen to the channel's messages
 	socket.on("message", function (message) {
-		console.log(message);
+		console.log($.parseJSON(message));
 	});
 
 	// Connect to the channel
 	socket.on("connect", function () {
 		// Subscribe to topics (i.e. appl,fb,aig+)
-		socket.emit("subscribe", "snap,fb,aig+");
+		socket.emit("subscribe", "firehose");
 	});
 };
 

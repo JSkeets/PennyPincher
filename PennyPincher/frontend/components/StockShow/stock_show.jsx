@@ -5,16 +5,17 @@ class StockShow extends React.Component {
 		super(props);
 	}
 	componentDidMount() {
-		this.props.fetchStock("aapl");
-		this.props.fetchStockStats("aapl");
+		this.props.fetchStock(this.props.symbol);
+		this.props.fetchStockStats(this.props.symbol);
 	}
 
 	render() {
-		if (!this.props.stocks.AAPL) {
+		let symbol = this.props.symbol;
+		if (!this.props.stocks[symbol]) {
 			return null;
 		}
 		console.log(this.props.stocks);
-		console.log(this.props.stocks.AAPL.currentPrice);
+		console.log(this.props);
 		return (
 			<div>
 				<h1> HELLO</h1>
@@ -27,11 +28,11 @@ class StockShow extends React.Component {
 						<th>Float</th>
 					</tr>
 					<tr>
-						<td>{this.props.stocks.AAPL.symbol}</td>
-						<td>{this.props.stocks.AAPL.latestPrice}</td>
-						<td>{this.props.stocks.AAPL.latestVolume}</td>
-						<td>{this.props.stocks.AAPL.changePercent * 100}</td>
-						<td>{this.props.stocks.AAPL.float}</td>
+						<td>{this.props.stocks[symbol].symbol}</td>
+						<td>{this.props.stocks[symbol].latestPrice}</td>
+						<td>{this.props.stocks[symbol].latestVolume}</td>
+						<td>{this.props.stocks[symbol].changePercent * 100}</td>
+						<td>{this.props.stocks[symbol].float}</td>
 					</tr>
 				</table>
 			</div>

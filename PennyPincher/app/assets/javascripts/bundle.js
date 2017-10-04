@@ -38815,7 +38815,7 @@ var App = function App() {
 	return _react2.default.createElement(
 		"div",
 		{ className: "app" },
-		_react2.default.createElement(_reactRouterDom.Route, { path: "/stocks/AAPL", component: _stock_show_container2.default })
+		_react2.default.createElement(_reactRouterDom.Route, { path: "/stocks/:stockTicker", component: _stock_show_container2.default })
 	);
 };
 
@@ -38842,9 +38842,10 @@ var _stock_actions = __webpack_require__(740);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var mapStateToProps = function mapStateToProps(state) {
+var mapStateToProps = function mapStateToProps(state, ownProps) {
 	return {
-		stocks: state.entities.stocks
+		stocks: state.entities.stocks,
+		symbol: ownProps.match.params.stockTicker
 	};
 };
 
@@ -38898,17 +38899,18 @@ var StockShow = function (_React$Component) {
 	_createClass(StockShow, [{
 		key: "componentDidMount",
 		value: function componentDidMount() {
-			this.props.fetchStock("aapl");
-			this.props.fetchStockStats("aapl");
+			this.props.fetchStock(this.props.symbol);
+			this.props.fetchStockStats(this.props.symbol);
 		}
 	}, {
 		key: "render",
 		value: function render() {
-			if (!this.props.stocks.AAPL) {
+			var symbol = this.props.symbol;
+			if (!this.props.stocks[symbol]) {
 				return null;
 			}
 			console.log(this.props.stocks);
-			console.log(this.props.stocks.AAPL.currentPrice);
+			console.log(this.props);
 			return _react2.default.createElement(
 				"div",
 				null,
@@ -38955,27 +38957,27 @@ var StockShow = function (_React$Component) {
 						_react2.default.createElement(
 							"td",
 							null,
-							this.props.stocks.AAPL.symbol
+							this.props.stocks[symbol].symbol
 						),
 						_react2.default.createElement(
 							"td",
 							null,
-							this.props.stocks.AAPL.latestPrice
+							this.props.stocks[symbol].latestPrice
 						),
 						_react2.default.createElement(
 							"td",
 							null,
-							this.props.stocks.AAPL.latestVolume
+							this.props.stocks[symbol].latestVolume
 						),
 						_react2.default.createElement(
 							"td",
 							null,
-							this.props.stocks.AAPL.changePercent * 100
+							this.props.stocks[symbol].changePercent * 100
 						),
 						_react2.default.createElement(
 							"td",
 							null,
-							this.props.stocks.AAPL.float
+							this.props.stocks[symbol].float
 						)
 					)
 				)

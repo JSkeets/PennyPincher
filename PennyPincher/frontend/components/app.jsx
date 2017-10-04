@@ -4,7 +4,7 @@ import { Route, Redirect, Switch, Link, HashRouter } from "react-router-dom";
 
 const App = () => (
 	<div className="app">
-		<Route path="/stocks/AAPL" component={StockShowContainer} />
+		<Route path="/stocks/:stockTicker" component={StockShowContainer} />
 	</div>
 );
 

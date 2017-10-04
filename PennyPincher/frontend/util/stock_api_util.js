@@ -18,13 +18,6 @@ export const fetchAllStocks = () => {
 export const fetchStock = symbol => {
 	return $.ajax({
 		method: "GET",
-		url: `https://api.iextrading.com/1.0/stock/${symbol}/quote`
-	});
-};
-
-export const fetchStockStats = symbol => {
-	return $.ajax({
-		method: "GET",
-		url: `https://api.iextrading.com/1.0/stock/${symbol}/stats`
+		url: `https://api.iextrading.com/1.0//stock/${symbol}/batch?types=quote,stats,news,chart&range=1m`
 	});
 };

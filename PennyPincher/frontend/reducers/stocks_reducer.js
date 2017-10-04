@@ -6,7 +6,7 @@ let StocksReducer = (state = {}, action) => {
 	let newState = {};
 	switch (action.type) {
 		case RECEIVE_STOCK:
-			return merge({}, state, { [action.stock.symbol]: action.stock });
+			return merge({}, state, { [action.stock.quote.symbol]: action.stock });
 		default:
 			return state;
 	}

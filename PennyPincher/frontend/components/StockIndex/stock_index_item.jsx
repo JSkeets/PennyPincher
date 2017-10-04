@@ -9,8 +9,10 @@ const StockIndexItem = ({ stock }) => {
 	return (
 		<li className="review-index-item">
 			<div className="stock-listing">
-				{stock.symbol}&nbsp;
-				{stock.askPrice}&nbsp;
+				<Link id="stock-symbol" to={`stocks/${stock.symbol}`}>
+					{stock.symbol}
+				</Link>&nbsp;
+				{stock.lastSalePrice}&nbsp;
 				{stock.volume}&nbsp;
 				{stock.sector}
 			</div>

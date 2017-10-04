@@ -22172,7 +22172,7 @@ var fetchAllStocks = exports.fetchAllStocks = function fetchAllStocks() {
 var fetchStock = exports.fetchStock = function fetchStock(symbol) {
 	return $.ajax({
 		method: "GET",
-		url: "https://api.iextrading.com/1.0/stock/" + symbol + "/batch?types=quote,stats,news,chart&range=1m"
+		url: "https://api.iextrading.com/1.0/stock/" + symbol + "/batch?types=quote,stats,news,chart&range=1m&last=50"
 	});
 };
 
@@ -32544,6 +32544,10 @@ var _json2csv = __webpack_require__(878);
 
 var _json2csv2 = _interopRequireDefault(_json2csv);
 
+var _news_index_item = __webpack_require__(897);
+
+var _news_index_item2 = _interopRequireDefault(_news_index_item);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -32561,6 +32565,8 @@ var StockShow = function (_React$Component) {
 		var _this = _possibleConstructorReturn(this, (StockShow.__proto__ || Object.getPrototypeOf(StockShow)).call(this, props));
 
 		_this.loadStock = _this.loadStock.bind(_this);
+		_this.date = _this.date.bind(_this);
+		_this.recentNews = _this.recentNews.bind(_this);
 		return _this;
 	}
 
@@ -32568,12 +32574,39 @@ var StockShow = function (_React$Component) {
 		key: "componentDidMount",
 		value: function componentDidMount() {
 			this.loadStock();
-			setInterval(this.loadStock, 2000);
+			// setInterval(this.loadStock, 2000);
 		}
 	}, {
 		key: "loadStock",
 		value: function loadStock() {
 			this.props.fetchStock(this.props.symbol);
+		}
+	}, {
+		key: "date",
+		value: function date() {
+			var c = new Date();
+			var x = c.setDate(c.getDate() - 5);
+			var d = new Date(x),
+			    month = "" + (d.getMonth() + 1),
+			    day = "" + d.getDate(),
+			    year = d.getFullYear();
+			if (month.length < 2) month = "0" + month;
+			if (day.length < 2) day = "0" + day;
+			return [year, month, day].join("-");
+		}
+	}, {
+		key: "recentNews",
+		value: function recentNews() {
+			var symbol = this.props.symbol;
+			var news = [];
+
+			var self = this;
+			this.props.stocks[symbol].news.forEach(function (newSing) {
+				if (self.date() < newSing.datetime.slice(0, 10)) {
+					news.push(newSing);
+				}
+			});
+			return news;
 		}
 	}, {
 		key: "render",
@@ -32583,6 +32616,7 @@ var StockShow = function (_React$Component) {
 				return null;
 			}
 
+			var recentNews = this.recentNews();
 			return _react2.default.createElement(
 				"div",
 				null,
@@ -32625,7 +32659,7 @@ var StockShow = function (_React$Component) {
 						_react2.default.createElement(
 							"th",
 							null,
-							"Number of Recent News Articles"
+							"# of New Articles in Last 5 Days"
 						)
 					),
 					_react2.default.createElement(
@@ -32659,9 +32693,16 @@ var StockShow = function (_React$Component) {
 						_react2.default.createElement(
 							"td",
 							null,
-							this.props.stocks[symbol].news.length
+							recentNews.length
 						)
 					)
+				),
+				_react2.default.createElement(
+					"ul",
+					{ id: "review-index" },
+					recentNews.map(function (news) {
+						return _react2.default.createElement(_news_index_item2.default, { key: news.datetime, news: news });
+					})
 				)
 			);
 		}
@@ -38365,9 +38406,13 @@ var StockIndexItem = function StockIndexItem(_ref) {
 		_react2.default.createElement(
 			"div",
 			{ className: "stock-listing" },
-			stock.symbol,
+			_react2.default.createElement(
+				_reactRouterDom.Link,
+				{ id: "stock-symbol", to: "stocks/" + stock.symbol },
+				stock.symbol
+			),
 			"\xA0",
-			stock.askPrice,
+			stock.lastSalePrice,
 			"\xA0",
 			stock.volume,
 			"\xA0",
@@ -38401,7 +38446,7 @@ var selectAllStocks = exports.selectAllStocks = function selectAllStocks(state) 
 	var filtered = [];
 	console.log(Date.now());
 	stocks.forEach(function (stock) {
-		if (stock.askPrice < 5) {
+		if (stock.lastSalePrice < 5 && stock.volume > 10000) {
 			filtered.push(stock);
 		}
 	});
@@ -38590,6 +38635,46 @@ var nativeKeys = overArg(Object.keys, Object);
 
 module.exports = nativeKeys;
 
+
+/***/ }),
+/* 897 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(102);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(848);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ReviewIndexItem = function ReviewIndexItem(_ref) {
+	var news = _ref.news;
+
+	return _react2.default.createElement(
+		"li",
+		{ className: "news-index-item" },
+		_react2.default.createElement(
+			"a",
+			{ href: "" + news.url },
+			news.headline
+		),
+		"\xA0\xA0",
+		news.datetime.slice(0, 10),
+		"\xA0\xA0",
+		news.source,
+		"\xA0"
+	);
+};
+
+exports.default = ReviewIndexItem;
 
 /***/ })
 /******/ ]);

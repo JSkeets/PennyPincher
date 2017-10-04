@@ -4,7 +4,7 @@ export const selectAllStocks = state => {
 	let filtered = [];
 	console.log(Date.now());
 	stocks.forEach(stock => {
-		if (stock.askPrice < 5) {
+		if (stock.lastSalePrice < 5 && stock.volume > 10000) {
 			filtered.push(stock);
 		}
 	});

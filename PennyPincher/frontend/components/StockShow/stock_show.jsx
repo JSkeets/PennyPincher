@@ -7,7 +7,7 @@ class StockShow extends React.Component {
 	}
 	componentDidMount() {
 		this.loadStock();
-		setInterval(this.loadStock, 1500);
+		setInterval(this.loadStock, 2000);
 	}
 
 	loadStock() {

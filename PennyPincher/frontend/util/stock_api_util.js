@@ -25,6 +25,6 @@ export const fetchAllStocks = () => {
 export const fetchStock = symbol => {
 	return $.ajax({
 		method: "GET",
-		url: `https://api.iextrading.com/1.0/stock/${symbol}/batch?types=quote,stats,news,chart&range=1m&last=50`
+		url: `https://api.iextrading.com/1.0/stock/${symbol}/batch?types=quote,stats,news,peers,chart&range=6m&last=50`
 	});
 };

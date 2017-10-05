@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import StockShow from "./stock_show";
+import ChartComponent from "./chart";
 import { fetchStock, fetchAllStocks } from "../../actions/stock_actions";
 
 const mapStateToProps = (state, ownProps) => ({
@@ -8,8 +8,7 @@ const mapStateToProps = (state, ownProps) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-	fetchStock: symbol => dispatch(fetchStock(symbol)),
-	fetchAllStocks: () => dispatch(fetchAllStocks())
+	fetchStock: symbol => dispatch(fetchStock(symbol))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(StockShow);
+export default connect(mapStateToProps, mapDispatchToProps)(ChartComponent);

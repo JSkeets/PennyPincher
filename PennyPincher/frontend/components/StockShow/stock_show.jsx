@@ -1,6 +1,8 @@
 import React from "react";
 import json2csv from "json2csv";
+import d3 from "d3";
 import NewsIndexItem from "./news_index_item";
+import PeerIndexItem from "./peer_index_item";
 
 class StockShow extends React.Component {
 	constructor(props) {
@@ -47,7 +49,6 @@ class StockShow extends React.Component {
 		if (!this.props.stocks[symbol]) {
 			return null;
 		}
-
 		let recentNews = this.recentNews();
 		return (
 			<div>
@@ -70,7 +71,8 @@ class StockShow extends React.Component {
 						<td>{recentNews.length}</td>
 					</tr>
 				</table>
-				<ul id="review-index">
+				<ul id="news-index">
+					NEWS ARTICLES
 					{recentNews.map(news => (
 						<NewsIndexItem key={news.datetime} news={news} />
 					))}
@@ -81,3 +83,10 @@ class StockShow extends React.Component {
 }
 
 export default StockShow;
+
+// <ul id="peers-index">
+// 	{this.props.stocks[symbol].peers.map(peer => {
+// 		console.log(peer);
+// 		console.log(this.props.stocks);
+// 	})}
+// </ul>

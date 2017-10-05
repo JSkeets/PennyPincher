@@ -19,7 +19,7 @@ class AreaChart extends React.Component {
 			return formatter(d.date);
 		};
 		const xExtents = [
-			xAccessor(data[data.length - 1]),
+			xAccessor(last(data)),
 			xAccessor(data[data.length - 100])
 		];
 
@@ -32,16 +32,13 @@ class AreaChart extends React.Component {
 				seriesName="MSFT"
 				data={data}
 				type={type}
-				xAccessor={d => {
-					let formatter = timeParse("%Y-%m-%d");
-					return formatter(d.date);
-				}}
+				xAccessor={xAccessor}
 				xScale={scaleTime()}
-				xExtents={[new Date(2017, 9, 0), new Date(2017, 10, 5)]}
+				xExtents={xExtents}
 			>
 				<Chart id={0} yExtents={d => [d.high, d.low]}>
 					<XAxis axisAt="bottom" orient="bottom" ticks={6} />
-					<YAxis axisAt="left" orient="left" ticks={5} />
+					<YAxis axisAt="left" orient="left" ticks={10} />
 					<CandlestickSeries width={timeIntervalBarWidth(utcDay)} />
 				</Chart>
 			</ChartCanvas>
@@ -62,14 +59,3 @@ AreaChart.defaultProps = {
 AreaChart = fitWidth(AreaChart);
 
 export default AreaChart;
-
-// <AreaSeries
-// 	yAccessor={d => {
-// 		return d.close;
-// 	}}
-// xAccessor={d => {
-// 	let formatter = timeParse("%Y-%m-%d");
-// 	return formatter(d.date);
-// }}
-// xScale={scaleTime()}
-// xExtents={[new Date(2017, 9, 0), new Date(2017, 10, 5)]}

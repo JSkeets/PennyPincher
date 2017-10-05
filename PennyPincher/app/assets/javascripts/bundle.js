@@ -66199,7 +66199,7 @@ var AreaChart = function (_React$Component) {
 				var formatter = (0, _d3TimeFormat.timeParse)("%Y-%m-%d");
 				return formatter(d.date);
 			};
-			var xExtents = [xAccessor(data[data.length - 1]), xAccessor(data[data.length - 100])];
+			var xExtents = [xAccessor((0, _utils.last)(data)), xAccessor(data[data.length - 100])];
 
 			return _react2.default.createElement(
 				_reactStockcharts.ChartCanvas,
@@ -66211,12 +66211,9 @@ var AreaChart = function (_React$Component) {
 					seriesName: "MSFT",
 					data: data,
 					type: type,
-					xAccessor: function xAccessor(d) {
-						var formatter = (0, _d3TimeFormat.timeParse)("%Y-%m-%d");
-						return formatter(d.date);
-					},
+					xAccessor: xAccessor,
 					xScale: (0, _d3Scale.scaleTime)(),
-					xExtents: [new Date(2017, 9, 0), new Date(2017, 10, 5)]
+					xExtents: xExtents
 				},
 				_react2.default.createElement(
 					_reactStockcharts.Chart,
@@ -66224,7 +66221,7 @@ var AreaChart = function (_React$Component) {
 							return [d.high, d.low];
 						} },
 					_react2.default.createElement(_axes.XAxis, { axisAt: "bottom", orient: "bottom", ticks: 6 }),
-					_react2.default.createElement(_axes.YAxis, { axisAt: "left", orient: "left", ticks: 5 }),
+					_react2.default.createElement(_axes.YAxis, { axisAt: "left", orient: "left", ticks: 10 }),
 					_react2.default.createElement(_series.CandlestickSeries, { width: (0, _utils.timeIntervalBarWidth)(_d3Time.utcDay) })
 				)
 			);
@@ -66247,17 +66244,6 @@ AreaChart.defaultProps = {
 AreaChart = (0, _helper.fitWidth)(AreaChart);
 
 exports.default = AreaChart;
-
-// <AreaSeries
-// 	yAccessor={d => {
-// 		return d.close;
-// 	}}
-// xAccessor={d => {
-// 	let formatter = timeParse("%Y-%m-%d");
-// 	return formatter(d.date);
-// }}
-// xScale={scaleTime()}
-// xExtents={[new Date(2017, 9, 0), new Date(2017, 10, 5)]}
 
 /***/ }),
 /* 926 */

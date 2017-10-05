@@ -60775,9 +60775,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var selectAllStocks = exports.selectAllStocks = function selectAllStocks(state) {
 	var stocks = (0, _values2.default)(state.entities.stocks);
 	var filtered = [];
-	console.log(Date.now());
+	var today = new Date();
+	var time = [today.getUTCHours(), today.getMinutes()];
+
 	stocks.forEach(function (stock) {
-		if (stock.lastSalePrice < 5 && stock.volume > 10000) {
+		if (time[0] < 15 && stock.volume > 10000 && stock.lastSalePrice < 5) {
+			filtered.push(stock);
+		} else if (time[0] === 15 && stock.volume > 50000 && stock.lastSalePrice < 5) {
+			filtered.push(stock);
+		} else if (time[0] >= 16 && stock.volume > 100000 && stock.lastSalePrice < 5) {
 			filtered.push(stock);
 		}
 	});

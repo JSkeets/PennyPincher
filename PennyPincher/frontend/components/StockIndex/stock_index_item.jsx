@@ -12,9 +12,9 @@ const StockIndexItem = ({ stock }) => {
 				<Link id="stock-symbol" to={`stocks/${stock.symbol}`}>
 					{stock.symbol}
 				</Link>&nbsp;
-				{stock.lastSalePrice}&nbsp;
-				{stock.volume}&nbsp;
-				{stock.sector}
+				<i id="stock-price">{stock.lastSalePrice}</i>&nbsp;
+				<i id="stock-volume">{stock.volume}</i>&nbsp;
+				<i id="stock-sector">{stock.sector}</i>
 			</div>
 		</li>
 	);

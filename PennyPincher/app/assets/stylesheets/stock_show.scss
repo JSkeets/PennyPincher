@@ -1,0 +1,39 @@
+.stock-show {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+.stock-show-div {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+.stock-show-div-header {
+	display: flex;
+	justify-content: space-around;
+	font-size: 20px;
+}
+.stock-data {
+	display: flex;
+	justify-content: space-between;
+}
+#symbol,
+#price,
+#volume,
+#percent-change,
+#float,
+#news-header {
+	display: flex;
+	flex-direction: column;
+}
+select#type {
+	display: none;
+}
+label {
+	display: none;
+}
+table,
+th,
+td {
+	border: 1px solid black;
+}

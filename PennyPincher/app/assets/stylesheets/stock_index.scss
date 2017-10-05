@@ -1,0 +1,25 @@
+.stock-listing {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.review-index-item-header {
+	display: flex;
+	justify-content: space-between;
+	font-size: 40px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.stock-symbol {
+	width: 100px;
+}
+
+#stock-symbol,
+#stock-price,
+#stock-volume,
+#stock-sector,
+#header-symbol {
+	flex: 1;
+}

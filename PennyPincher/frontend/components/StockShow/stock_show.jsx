@@ -3,6 +3,7 @@ import json2csv from "json2csv";
 import d3 from "d3";
 import NewsIndexItem from "./news_index_item";
 import PeerIndexItem from "./peer_index_item";
+import ReactGA from "react-ga"; // https://github.com/react-ga/react-ga
 
 class StockShow extends React.Component {
 	constructor(props) {
@@ -10,6 +11,9 @@ class StockShow extends React.Component {
 		this.loadStock = this.loadStock.bind(this);
 		this.date = this.date.bind(this);
 		this.recentNews = this.recentNews.bind(this);
+		ReactGA.initialize("UA-107597692-1");
+		// This just needs to be called once since we have no routes in this case.
+		ReactGA.pageview(window.location.pathname);
 	}
 	componentDidMount() {
 		this.loadStock();
@@ -51,26 +55,35 @@ class StockShow extends React.Component {
 		}
 		let recentNews = this.recentNews();
 		return (
-			<div>
-				<h1> HELLO</h1>
-				<table>
-					<tr>
-						<th>Symbol</th>
-						<th>Current Price</th>
-						<th>Volume</th>
-						<th>Percent Change</th>
-						<th>Float</th>
-						<th># of New Articles in Last 5 Days</th>
-					</tr>
-					<tr>
-						<td>{this.props.stocks[symbol].quote.symbol}</td>
-						<td>{this.props.stocks[symbol].quote.latestPrice}</td>
-						<td>{this.props.stocks[symbol].quote.latestVolume}</td>
-						<td>{this.props.stocks[symbol].quote.changePercent * 100}</td>
-						<td>{this.props.stocks[symbol].stats.float}</td>
-						<td>{recentNews.length}</td>
-					</tr>
-				</table>
+			<div className="stock-show">
+				<div className="stock-show-div">
+					<div className="stock-show-div-header">
+						<div id="symbol">
+							<i>Symbol</i>
+							{this.props.stocks[symbol].quote.symbol}
+						</div>
+						<div id="price">
+							Current Price
+							{this.props.stocks[symbol].quote.latestPrice}
+						</div>
+						<div id="volume">
+							Volume
+							{this.props.stocks[symbol].quote.latestVolume}
+						</div>
+						<div id="percent-change">
+							Percent Change
+							{this.props.stocks[symbol].quote.changePercent * 100}
+						</div>
+						<div id="float">
+							Float
+							{this.props.stocks[symbol].stats.float}
+						</div>
+						<div id="news-header">
+							# of New Articles in Last 5 Days
+							{recentNews.length}
+						</div>
+					</div>
+				</div>
 				<ul id="news-index">
 					NEWS ARTICLES
 					{recentNews.map(news => (

@@ -11,6 +11,7 @@ class StockShow extends React.Component {
 		this.loadStock = this.loadStock.bind(this);
 		this.date = this.date.bind(this);
 		this.recentNews = this.recentNews.bind(this);
+		this.percentUp = this.percentUp.bind(this);
 		ReactGA.initialize("UA-107597692-1");
 		// This just needs to be called once since we have no routes in this case.
 		ReactGA.pageview(window.location.pathname);
@@ -35,7 +36,18 @@ class StockShow extends React.Component {
 		if (day.length < 2) day = "0" + day;
 		return [year, month, day].join("-");
 	}
-
+	percentUp() {
+		let symbol = this.props.symbol;
+		if (this.props.stocks[symbol].quote.changePercent * 100 > 0) {
+			return {
+				color: "green"
+			};
+		} else {
+			return {
+				color: "red"
+			};
+		}
+	}
 	recentNews() {
 		let symbol = this.props.symbol;
 		let news = [];
@@ -54,40 +66,49 @@ class StockShow extends React.Component {
 			return null;
 		}
 		let recentNews = this.recentNews();
+		let percStyle = this.percentUp();
 		return (
-			<div className="stock-show">
-				<div className="stock-show-div">
-					<div className="stock-show-div-header">
-						<div id="symbol">
-							<i>Symbol</i>
-							<i>{this.props.stocks[symbol].quote.symbol}</i>
-						</div>
-						<div id="company-name">
-							<i>Company Name</i>
-							<i>{this.props.stocks[symbol].quote.companyName}</i>
-						</div>
-						<div id="price">
-							<i>Current Price</i>
-							<i>{this.props.stocks[symbol].quote.latestPrice}</i>
-						</div>
-						<div id="volume">
-							<i>Volume</i>
-							<i>{this.props.stocks[symbol].quote.latestVolume}</i>
-						</div>
-						<div id="percent-change">
-							<i>Percent Change</i>
-							<i>{this.props.stocks[symbol].quote.changePercent * 100}</i>
-						</div>
-						<div id="float">
-							<i>Float</i>
-							<i>{this.props.stocks[symbol].stats.float}</i>
-						</div>
-						<div id="news-header">
-							<i>Articles in the Last 5 Days</i>
-							<i>{recentNews.length}</i>
+			<div>
+				<div className="stock-show">
+					<div className="stock-show-div">
+						<div className="stock-show-div-header">
+							<div id="symbol">
+								<i>Symbol</i>
+								<i>{this.props.stocks[symbol].quote.symbol}</i>
+							</div>
+							<div id="company-name">
+								<i>Company Name</i>
+								<i>{this.props.stocks[symbol].quote.companyName}</i>
+							</div>
+							<div id="price">
+								<i>Current Price</i>
+								<i>{this.props.stocks[symbol].quote.latestPrice}</i>
+							</div>
+							<div id="volume">
+								<i>Volume</i>
+								<i>{this.props.stocks[symbol].quote.latestVolume}</i>
+							</div>
+							<div id="percent-change" style={percStyle}>
+								<i>Percent Change</i>
+								<i>{this.props.stocks[symbol].quote.changePercent * 100}</i>
+							</div>
+							<div id="float">
+								<i>Float</i>
+								<i>{this.props.stocks[symbol].stats.float}</i>
+							</div>
+							<div id="news-header">
+								<i>Articles in the Last 5 Days</i>
+								<i>{recentNews.length}</i>
+							</div>
 						</div>
 					</div>
 				</div>
+				<ul id="news-index">
+					NEWS ARTICLES
+					{recentNews.map(news => (
+						<NewsIndexItem key={news.datetime} news={news} />
+					))}
+				</ul>
 			</div>
 		);
 	}
@@ -95,12 +116,6 @@ class StockShow extends React.Component {
 
 export default StockShow;
 
-// <ul id="news-index">
-// 	NEWS ARTICLES
-// 	{recentNews.map(news => (
-// 		<NewsIndexItem key={news.datetime} news={news} />
-// 	))}
-// </ul>
 // <ul id="peers-index">
 // 	{this.props.stocks[symbol].peers.map(peer => {
 // 		console.log(peer);

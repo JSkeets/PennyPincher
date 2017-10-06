@@ -54892,6 +54892,7 @@ var StockShow = function (_React$Component) {
 		_this.loadStock = _this.loadStock.bind(_this);
 		_this.date = _this.date.bind(_this);
 		_this.recentNews = _this.recentNews.bind(_this);
+		_this.percentUp = _this.percentUp.bind(_this);
 		_reactGa2.default.initialize("UA-107597692-1");
 		// This just needs to be called once since we have no routes in this case.
 		_reactGa2.default.pageview(window.location.pathname);
@@ -54923,6 +54924,20 @@ var StockShow = function (_React$Component) {
 			return [year, month, day].join("-");
 		}
 	}, {
+		key: "percentUp",
+		value: function percentUp() {
+			var symbol = this.props.symbol;
+			if (this.props.stocks[symbol].quote.changePercent * 100 > 0) {
+				return {
+					color: "green"
+				};
+			} else {
+				return {
+					color: "red"
+				};
+			}
+		}
+	}, {
 		key: "recentNews",
 		value: function recentNews() {
 			var symbol = this.props.symbol;
@@ -54944,114 +54959,127 @@ var StockShow = function (_React$Component) {
 				return null;
 			}
 			var recentNews = this.recentNews();
+			var percStyle = this.percentUp();
 			return _react2.default.createElement(
 				"div",
-				{ className: "stock-show" },
+				null,
 				_react2.default.createElement(
 					"div",
-					{ className: "stock-show-div" },
+					{ className: "stock-show" },
 					_react2.default.createElement(
 						"div",
-						{ className: "stock-show-div-header" },
+						{ className: "stock-show-div" },
 						_react2.default.createElement(
 							"div",
-							{ id: "symbol" },
+							{ className: "stock-show-div-header" },
 							_react2.default.createElement(
-								"i",
-								null,
-								"Symbol"
+								"div",
+								{ id: "symbol" },
+								_react2.default.createElement(
+									"i",
+									null,
+									"Symbol"
+								),
+								_react2.default.createElement(
+									"i",
+									null,
+									this.props.stocks[symbol].quote.symbol
+								)
 							),
 							_react2.default.createElement(
-								"i",
-								null,
-								this.props.stocks[symbol].quote.symbol
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ id: "company-name" },
-							_react2.default.createElement(
-								"i",
-								null,
-								"Company Name"
+								"div",
+								{ id: "company-name" },
+								_react2.default.createElement(
+									"i",
+									null,
+									"Company Name"
+								),
+								_react2.default.createElement(
+									"i",
+									null,
+									this.props.stocks[symbol].quote.companyName
+								)
 							),
 							_react2.default.createElement(
-								"i",
-								null,
-								this.props.stocks[symbol].quote.companyName
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ id: "price" },
-							_react2.default.createElement(
-								"i",
-								null,
-								"Current Price"
+								"div",
+								{ id: "price" },
+								_react2.default.createElement(
+									"i",
+									null,
+									"Current Price"
+								),
+								_react2.default.createElement(
+									"i",
+									null,
+									this.props.stocks[symbol].quote.latestPrice
+								)
 							),
 							_react2.default.createElement(
-								"i",
-								null,
-								this.props.stocks[symbol].quote.latestPrice
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ id: "volume" },
-							_react2.default.createElement(
-								"i",
-								null,
-								"Volume"
+								"div",
+								{ id: "volume" },
+								_react2.default.createElement(
+									"i",
+									null,
+									"Volume"
+								),
+								_react2.default.createElement(
+									"i",
+									null,
+									this.props.stocks[symbol].quote.latestVolume
+								)
 							),
 							_react2.default.createElement(
-								"i",
-								null,
-								this.props.stocks[symbol].quote.latestVolume
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ id: "percent-change" },
-							_react2.default.createElement(
-								"i",
-								null,
-								"Percent Change"
+								"div",
+								{ id: "percent-change", style: percStyle },
+								_react2.default.createElement(
+									"i",
+									null,
+									"Percent Change"
+								),
+								_react2.default.createElement(
+									"i",
+									null,
+									this.props.stocks[symbol].quote.changePercent * 100
+								)
 							),
 							_react2.default.createElement(
-								"i",
-								null,
-								this.props.stocks[symbol].quote.changePercent * 100
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ id: "float" },
-							_react2.default.createElement(
-								"i",
-								null,
-								"Float"
+								"div",
+								{ id: "float" },
+								_react2.default.createElement(
+									"i",
+									null,
+									"Float"
+								),
+								_react2.default.createElement(
+									"i",
+									null,
+									this.props.stocks[symbol].stats.float
+								)
 							),
 							_react2.default.createElement(
-								"i",
-								null,
-								this.props.stocks[symbol].stats.float
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ id: "news-header" },
-							_react2.default.createElement(
-								"i",
-								null,
-								"Articles in the Last 5 Days"
-							),
-							_react2.default.createElement(
-								"i",
-								null,
-								recentNews.length
+								"div",
+								{ id: "news-header" },
+								_react2.default.createElement(
+									"i",
+									null,
+									"Articles in the Last 5 Days"
+								),
+								_react2.default.createElement(
+									"i",
+									null,
+									recentNews.length
+								)
 							)
 						)
 					)
+				),
+				_react2.default.createElement(
+					"ul",
+					{ id: "news-index" },
+					"NEWS ARTICLES",
+					recentNews.map(function (news) {
+						return _react2.default.createElement(_news_index_item2.default, { key: news.datetime, news: news });
+					})
 				)
 			);
 		}
@@ -55062,12 +55090,6 @@ var StockShow = function (_React$Component) {
 
 exports.default = StockShow;
 
-// <ul id="news-index">
-// 	NEWS ARTICLES
-// 	{recentNews.map(news => (
-// 		<NewsIndexItem key={news.datetime} news={news} />
-// 	))}
-// </ul>
 // <ul id="peers-index">
 // 	{this.props.stocks[symbol].peers.map(peer => {
 // 		console.log(peer);
@@ -66306,8 +66328,8 @@ var AreaChart = function (_React$Component) {
 					_reactStockcharts.ChartCanvas,
 					{
 						ratio: ratio,
-						width: 1000,
-						height: 1000,
+						width: 900,
+						height: 600,
 						margin: { left: 50, right: 50, top: 10, bottom: 30 },
 						seriesName: "MSFT",
 						data: data,

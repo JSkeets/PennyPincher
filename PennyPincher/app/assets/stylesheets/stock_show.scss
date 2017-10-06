@@ -1,8 +1,12 @@
 .stock-show {
-	display: flex;
-	flex-direction: unset;
 	padding: 20px;
 	float: left;
+	width: 200px;
+	max-width: 200px;
+	min-width: 0px;
+	height: 100%;
+	border-collapse: collapse;
+	display: table;
 }
 .stock-show-div {
 	display: flex;
@@ -21,15 +25,16 @@
 }
 .react-stock-chart {
 	border-style: solid;
-	border-color: gray;
-	border-width: 1px;
+	border-color: lightgray;
+	border-width: 0.5px;
 	float: left;
+	border-top: none;
 }
 
 #news-index {
-	display: flex;
-	flex-direction: column;
-	padding-left: 20px;
+	display: table-row;
+	vertical-align: bottom;
+	height: 1px;
 }
 #symbol,
 #price,
@@ -42,6 +47,7 @@
 	flex-direction: column;
 	padding: 10px;
 	padding-top: none;
+	flex-basis: 100%;
 }
 i {
 	padding: 5px;
@@ -73,4 +79,9 @@ td {
 	border-color: gray;
 	border-width: 0.5px;
 	font-weight: 1400;
+}
+#news-header {
+	border-right: solid;
+	border-color: gray;
+	border-width: 0.5px;
 }

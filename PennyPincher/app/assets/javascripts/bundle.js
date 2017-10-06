@@ -55052,14 +55052,6 @@ var StockShow = function (_React$Component) {
 							)
 						)
 					)
-				),
-				_react2.default.createElement(
-					"ul",
-					{ id: "news-index" },
-					"NEWS ARTICLES",
-					recentNews.map(function (news) {
-						return _react2.default.createElement(_news_index_item2.default, { key: news.datetime, news: news });
-					})
 				)
 			);
 		}
@@ -55070,6 +55062,12 @@ var StockShow = function (_React$Component) {
 
 exports.default = StockShow;
 
+// <ul id="news-index">
+// 	NEWS ARTICLES
+// 	{recentNews.map(news => (
+// 		<NewsIndexItem key={news.datetime} news={news} />
+// 	))}
+// </ul>
 // <ul id="peers-index">
 // 	{this.props.stocks[symbol].peers.map(peer => {
 // 		console.log(peer);
@@ -66309,7 +66307,7 @@ var AreaChart = function (_React$Component) {
 					{
 						ratio: ratio,
 						width: 1000,
-						height: 600,
+						height: 1000,
 						margin: { left: 50, right: 50, top: 10, bottom: 30 },
 						seriesName: "MSFT",
 						data: data,

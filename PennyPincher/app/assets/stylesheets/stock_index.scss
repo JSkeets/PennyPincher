@@ -7,6 +7,7 @@
 	border-left: none;
 	border-right: none;
 	border-color: lightgray;
+	font-size: 20px;
 }
 
 .review-index-item-header {
@@ -16,17 +17,26 @@
 	font-weight: bold;
 	padding-left: 10px;
 }
+.review-index-item:nth-child(odd) {
+	// background-color: rgba(194, 225, 194, 0.28);
+	// background-color: rgba(174, 212, 230, 0.28);
+	// background-color: rgba(232, 254, 209, 0.28);
+	// background-color: rgba(79, 124, 172, 0.28);
+}
 
 .stock-symbol {
 	width: 100px;
 }
 #stock-symbol:hover {
 	color: #fc5130;
+	text-decoration: underline;
 }
 
+#stock-sector {
+	flex: 1;
+}
 #stock-price,
 #stock-volume,
-#stock-sector,
 #header-symbol {
 	flex: 1;
 	color: #2c363f;
@@ -36,6 +46,7 @@
 	flex: 1;
 	color: #058ed9;
 	text-decoration: none;
+	text-decoration: underline;
 }
 #stock-index {
 	padding-left: 75px;

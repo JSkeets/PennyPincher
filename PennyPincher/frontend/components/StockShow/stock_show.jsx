@@ -88,12 +88,6 @@ class StockShow extends React.Component {
 						</div>
 					</div>
 				</div>
-				<ul id="news-index">
-					NEWS ARTICLES
-					{recentNews.map(news => (
-						<NewsIndexItem key={news.datetime} news={news} />
-					))}
-				</ul>
 			</div>
 		);
 	}
@@ -101,6 +95,12 @@ class StockShow extends React.Component {
 
 export default StockShow;
 
+// <ul id="news-index">
+// 	NEWS ARTICLES
+// 	{recentNews.map(news => (
+// 		<NewsIndexItem key={news.datetime} news={news} />
+// 	))}
+// </ul>
 // <ul id="peers-index">
 // 	{this.props.stocks[symbol].peers.map(peer => {
 // 		console.log(peer);

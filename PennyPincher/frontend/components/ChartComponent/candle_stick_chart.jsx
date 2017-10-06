@@ -28,7 +28,7 @@ class AreaChart extends React.Component {
 				<ChartCanvas
 					ratio={ratio}
 					width={1000}
-					height={600}
+					height={1000}
 					margin={{ left: 50, right: 50, top: 10, bottom: 30 }}
 					seriesName="MSFT"
 					data={data}

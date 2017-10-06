@@ -15,9 +15,13 @@ class StockIndex extends React.Component {
 	}
 
 	render() {
+		// let response = this.props.fetchStock(this.props.stocks[0].symbol);
+		// console.log(response);
 		if (this.props.stocks.length === 0) {
 			return null;
 		}
+		// this.props.fetchStock(this.props.stocks[0].symbol);
+		// console.log(this.props.stocks[0].symbol);
 		return (
 			<ul id="stock-index">
 				<li className="review-index-item-header">
@@ -27,7 +31,11 @@ class StockIndex extends React.Component {
 					<i id="header-symbol"> Sector </i>
 				</li>
 				{this.props.stocks.map(stock => (
-					<StockIndexItem key={stock.id} stock={stock} />
+					<StockIndexItem
+						key={stock.id}
+						stock={stock}
+						stockFetch={symbol => this.fetchStock(symbol)}
+					/>
 				))}
 			</ul>
 		);

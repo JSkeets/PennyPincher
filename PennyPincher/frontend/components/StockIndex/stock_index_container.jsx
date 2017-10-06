@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import StockIndex from "./stock_index";
-import { fetchAllStocks } from "../../actions/stock_actions";
+import { fetchAllStocks, fetchStock } from "../../actions/stock_actions";
 import { selectAllStocks } from "../../reducers/selectors";
 
 const mapStateToProps = (state, ownProps) => ({
@@ -8,7 +8,8 @@ const mapStateToProps = (state, ownProps) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-	fetchAllStocks: () => dispatch(fetchAllStocks())
+	fetchAllStocks: () => dispatch(fetchAllStocks()),
+	fetchStock: symbol => dispatch(fetchStock(symbol))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(StockIndex);

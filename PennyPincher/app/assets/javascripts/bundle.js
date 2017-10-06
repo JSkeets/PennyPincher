@@ -60694,6 +60694,9 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	return {
 		fetchAllStocks: function fetchAllStocks() {
 			return dispatch((0, _stock_actions.fetchAllStocks)());
+		},
+		fetchStock: function fetchStock(symbol) {
+			return dispatch((0, _stock_actions.fetchStock)(symbol));
 		}
 	};
 };
@@ -60761,9 +60764,15 @@ var StockIndex = function (_React$Component) {
 	}, {
 		key: "render",
 		value: function render() {
+			var _this2 = this;
+
+			// let response = this.props.fetchStock(this.props.stocks[0].symbol);
+			// console.log(response);
 			if (this.props.stocks.length === 0) {
 				return null;
 			}
+			// this.props.fetchStock(this.props.stocks[0].symbol);
+			// console.log(this.props.stocks[0].symbol);
 			return _react2.default.createElement(
 				"ul",
 				{ id: "stock-index" },
@@ -60792,7 +60801,13 @@ var StockIndex = function (_React$Component) {
 					)
 				),
 				this.props.stocks.map(function (stock) {
-					return _react2.default.createElement(_stock_index_item2.default, { key: stock.id, stock: stock });
+					return _react2.default.createElement(_stock_index_item2.default, {
+						key: stock.id,
+						stock: stock,
+						stockFetch: function stockFetch(symbol) {
+							return _this2.fetchStock(symbol);
+						}
+					});
 				})
 			);
 		}
@@ -60823,12 +60838,12 @@ var _reactRouterDom = __webpack_require__(848);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var StockIndexItem = function StockIndexItem(_ref) {
-	var stock = _ref.stock;
+	var stock = _ref.stock,
+	    fetchStock = _ref.fetchStock;
 
 	if (!stock) {
 		return null;
 	}
-
 	return _react2.default.createElement(
 		"li",
 		{ className: "review-index-item" },

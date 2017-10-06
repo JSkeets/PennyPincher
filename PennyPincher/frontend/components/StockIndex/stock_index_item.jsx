@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const StockIndexItem = ({ stock }) => {
+const StockIndexItem = ({ stock, fetchStock }) => {
 	if (!stock) {
 		return null;
 	}
-
 	return (
 		<li className="review-index-item">
 			<div className="stock-listing">

@@ -19,6 +19,8 @@
 
 ## The charts
   A charting library was used to render the charts. The information comes in from the IEX API as a JSON object with three months of stock trading data.
+  ![alt text](https://github.com/JSkeets/PennyPincher/blob/master/Screen%20Shot%202017-10-06%20at%209.57.31%20AM.png)
+  
 
       <ChartCanvas
         ratio={ratio}

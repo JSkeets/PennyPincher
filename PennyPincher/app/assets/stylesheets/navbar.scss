@@ -1,5 +1,30 @@
 .nav-bar {
 	display: flex;
 	font-size: 45px;
-	justify-content: center;
+	justify-content: left;
+	padding-bottom: 30px;
+	padding-left: 75px;
+	// background-color: #d29883;
+	background-color: #eeeeee;
+}
+
+h1.name {
+	// color: #ffffff;
+	text-decoration: none;
+	padding: 10px;
+	// color: #5e4137;
+	color: #058ed9;
+	font-family: $courgette;
+}
+h1.name:hover {
+	color: #fc5130;
+}
+
+#nameLink {
+	text-decoration: none;
+	padding: 10px;
+}
+body {
+	background-color: #ffffff;
+	font-family: $abel;
 }

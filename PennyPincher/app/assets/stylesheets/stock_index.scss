@@ -2,6 +2,11 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 20px;
+	border-style: solid;
+	border-width: thin;
+	border-left: none;
+	border-right: none;
+	border-color: lightgray;
 }
 
 .review-index-item-header {
@@ -15,11 +20,23 @@
 .stock-symbol {
 	width: 100px;
 }
+#stock-symbol:hover {
+	color: #fc5130;
+}
 
-#stock-symbol,
 #stock-price,
 #stock-volume,
 #stock-sector,
 #header-symbol {
 	flex: 1;
+	color: #2c363f;
+}
+
+#stock-symbol {
+	flex: 1;
+	color: #058ed9;
+	text-decoration: none;
+}
+#stock-index {
+	padding-left: 75px;
 }

@@ -6,7 +6,7 @@
 .stock-show-div {
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
+	padding-bottom: 20px;
 }
 .stock-show-div-header {
 	display: flex;
@@ -17,14 +17,32 @@
 	display: flex;
 	justify-content: space-between;
 }
+.react-stock-chart {
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+}
+
+#news-index {
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+}
 #symbol,
 #price,
 #volume,
 #percent-change,
 #float,
-#news-header {
+#news-header,
+#company-name {
 	display: flex;
 	flex-direction: column;
+	padding: 10px;
+	padding-top: none;
+}
+i {
+	padding: 5px;
+	flex: 1;
 }
 select#type {
 	display: none;

@@ -54961,37 +54961,95 @@ var StockShow = function (_React$Component) {
 								null,
 								"Symbol"
 							),
-							this.props.stocks[symbol].quote.symbol
+							_react2.default.createElement(
+								"i",
+								null,
+								this.props.stocks[symbol].quote.symbol
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ id: "company-name" },
+							_react2.default.createElement(
+								"i",
+								null,
+								"Company Name"
+							),
+							_react2.default.createElement(
+								"i",
+								null,
+								this.props.stocks[symbol].quote.companyName
+							)
 						),
 						_react2.default.createElement(
 							"div",
 							{ id: "price" },
-							"Current Price",
-							this.props.stocks[symbol].quote.latestPrice
+							_react2.default.createElement(
+								"i",
+								null,
+								"Current Price"
+							),
+							_react2.default.createElement(
+								"i",
+								null,
+								this.props.stocks[symbol].quote.latestPrice
+							)
 						),
 						_react2.default.createElement(
 							"div",
 							{ id: "volume" },
-							"Volume",
-							this.props.stocks[symbol].quote.latestVolume
+							_react2.default.createElement(
+								"i",
+								null,
+								"Volume"
+							),
+							_react2.default.createElement(
+								"i",
+								null,
+								this.props.stocks[symbol].quote.latestVolume
+							)
 						),
 						_react2.default.createElement(
 							"div",
 							{ id: "percent-change" },
-							"Percent Change",
-							this.props.stocks[symbol].quote.changePercent * 100
+							_react2.default.createElement(
+								"i",
+								null,
+								"Percent Change"
+							),
+							_react2.default.createElement(
+								"i",
+								null,
+								this.props.stocks[symbol].quote.changePercent * 100
+							)
 						),
 						_react2.default.createElement(
 							"div",
 							{ id: "float" },
-							"Float",
-							this.props.stocks[symbol].stats.float
+							_react2.default.createElement(
+								"i",
+								null,
+								"Float"
+							),
+							_react2.default.createElement(
+								"i",
+								null,
+								this.props.stocks[symbol].stats.float
+							)
 						),
 						_react2.default.createElement(
 							"div",
 							{ id: "news-header" },
-							"# of New Articles in Last 5 Days",
-							recentNews.length
+							_react2.default.createElement(
+								"i",
+								null,
+								"Articles in the Last 5 Days"
+							),
+							_react2.default.createElement(
+								"i",
+								null,
+								recentNews.length
+							)
 						)
 					)
 				),
@@ -61174,12 +61232,16 @@ var ChartComponent = function (_React$Component) {
 				_helper.TypeChooser,
 				null,
 				function (type) {
-					return _react2.default.createElement(_candle_stick_chart2.default, {
-						type: type,
-						data: _this2.props.stocks[_this2.props.symbol].chart,
-						width: 200,
-						ratio: 2
-					});
+					return _react2.default.createElement(
+						"div",
+						null,
+						_react2.default.createElement(_candle_stick_chart2.default, {
+							type: type,
+							data: _this2.props.stocks[_this2.props.symbol].chart,
+							width: 200,
+							ratio: 2
+						})
+					);
 				}
 			);
 		}
@@ -66240,27 +66302,32 @@ var AreaChart = function (_React$Component) {
 			var xExtents = [xAccessor((0, _utils.last)(data)), xAccessor(data[data.length - 100])];
 
 			return _react2.default.createElement(
-				_reactStockcharts.ChartCanvas,
-				{
-					ratio: ratio,
-					width: 1000,
-					height: 600,
-					margin: { left: 50, right: 50, top: 10, bottom: 30 },
-					seriesName: "MSFT",
-					data: data,
-					type: type,
-					xAccessor: xAccessor,
-					xScale: (0, _d3Scale.scaleTime)(),
-					xExtents: xExtents
-				},
+				"div",
+				null,
 				_react2.default.createElement(
-					_reactStockcharts.Chart,
-					{ id: 0, yExtents: function yExtents(d) {
-							return [d.high, d.low];
-						} },
-					_react2.default.createElement(_axes.XAxis, { axisAt: "bottom", orient: "bottom", ticks: 6 }),
-					_react2.default.createElement(_axes.YAxis, { axisAt: "left", orient: "left", ticks: 10 }),
-					_react2.default.createElement(_series.CandlestickSeries, { width: (0, _utils.timeIntervalBarWidth)(_d3Time.utcDay) })
+					_reactStockcharts.ChartCanvas,
+					{
+						ratio: ratio,
+						width: 1000,
+						height: 600,
+						margin: { left: 50, right: 50, top: 10, bottom: 30 },
+						seriesName: "MSFT",
+						data: data,
+						type: type,
+						xAccessor: xAccessor,
+						xScale: (0, _d3Scale.scaleTime)(),
+						xExtents: xExtents,
+						className: "react-stock-chart"
+					},
+					_react2.default.createElement(
+						_reactStockcharts.Chart,
+						{ id: 0, yExtents: function yExtents(d) {
+								return [d.high, d.low];
+							} },
+						_react2.default.createElement(_axes.XAxis, { axisAt: "bottom", orient: "bottom", ticks: 6 }),
+						_react2.default.createElement(_axes.YAxis, { axisAt: "left", orient: "left", ticks: 10 }),
+						_react2.default.createElement(_series.CandlestickSeries, { width: (0, _utils.timeIntervalBarWidth)(_d3Time.utcDay) })
+					)
 				)
 			);
 		}
@@ -76118,10 +76185,10 @@ var NavBar = function NavBar() {
 		{ className: "nav-bar" },
 		_react2.default.createElement(
 			_reactRouterDom.Link,
-			{ to: "/" },
+			{ to: "/", id: "nameLink" },
 			_react2.default.createElement(
 				"h1",
-				null,
+				{ className: "name" },
 				"Penny Pincher"
 			)
 		)

@@ -24,24 +24,27 @@ class AreaChart extends React.Component {
 		];
 
 		return (
-			<ChartCanvas
-				ratio={ratio}
-				width={1000}
-				height={600}
-				margin={{ left: 50, right: 50, top: 10, bottom: 30 }}
-				seriesName="MSFT"
-				data={data}
-				type={type}
-				xAccessor={xAccessor}
-				xScale={scaleTime()}
-				xExtents={xExtents}
-			>
-				<Chart id={0} yExtents={d => [d.high, d.low]}>
-					<XAxis axisAt="bottom" orient="bottom" ticks={6} />
-					<YAxis axisAt="left" orient="left" ticks={10} />
-					<CandlestickSeries width={timeIntervalBarWidth(utcDay)} />
-				</Chart>
-			</ChartCanvas>
+			<div>
+				<ChartCanvas
+					ratio={ratio}
+					width={1000}
+					height={600}
+					margin={{ left: 50, right: 50, top: 10, bottom: 30 }}
+					seriesName="MSFT"
+					data={data}
+					type={type}
+					xAccessor={xAccessor}
+					xScale={scaleTime()}
+					xExtents={xExtents}
+					className="react-stock-chart"
+				>
+					<Chart id={0} yExtents={d => [d.high, d.low]}>
+						<XAxis axisAt="bottom" orient="bottom" ticks={6} />
+						<YAxis axisAt="left" orient="left" ticks={10} />
+						<CandlestickSeries width={timeIntervalBarWidth(utcDay)} />
+					</Chart>
+				</ChartCanvas>
+			</div>
 		);
 	}
 }

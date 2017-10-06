@@ -60,27 +60,31 @@ class StockShow extends React.Component {
 					<div className="stock-show-div-header">
 						<div id="symbol">
 							<i>Symbol</i>
-							{this.props.stocks[symbol].quote.symbol}
+							<i>{this.props.stocks[symbol].quote.symbol}</i>
+						</div>
+						<div id="company-name">
+							<i>Company Name</i>
+							<i>{this.props.stocks[symbol].quote.companyName}</i>
 						</div>
 						<div id="price">
-							Current Price
-							{this.props.stocks[symbol].quote.latestPrice}
+							<i>Current Price</i>
+							<i>{this.props.stocks[symbol].quote.latestPrice}</i>
 						</div>
 						<div id="volume">
-							Volume
-							{this.props.stocks[symbol].quote.latestVolume}
+							<i>Volume</i>
+							<i>{this.props.stocks[symbol].quote.latestVolume}</i>
 						</div>
 						<div id="percent-change">
-							Percent Change
-							{this.props.stocks[symbol].quote.changePercent * 100}
+							<i>Percent Change</i>
+							<i>{this.props.stocks[symbol].quote.changePercent * 100}</i>
 						</div>
 						<div id="float">
-							Float
-							{this.props.stocks[symbol].stats.float}
+							<i>Float</i>
+							<i>{this.props.stocks[symbol].stats.float}</i>
 						</div>
 						<div id="news-header">
-							# of New Articles in Last 5 Days
-							{recentNews.length}
+							<i>Articles in the Last 5 Days</i>
+							<i>{recentNews.length}</i>
 						</div>
 					</div>
 				</div>

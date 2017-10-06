@@ -18,12 +18,14 @@ class ChartComponent extends React.Component {
 		return (
 			<TypeChooser>
 				{type => (
-					<Chart
-						type={type}
-						data={this.props.stocks[this.props.symbol].chart}
-						width={200}
-						ratio={2}
-					/>
+					<div>
+						<Chart
+							type={type}
+							data={this.props.stocks[this.props.symbol].chart}
+							width={200}
+							ratio={2}
+						/>
+					</div>
 				)}
 			</TypeChooser>
 		);

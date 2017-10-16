@@ -1,48 +1,48 @@
 # Penny Pincher
 
-## Description
-  Penny pincher is a stock data visualization tool, focused for use in penny stocks.
+## Introduction
+ Penny Pincher is a real time stock data application for use in Penny Stocks. The data is pre-filtered to provide the user with a narrow and useful scope of information in regards to trading penny stocks
 
-  Penny pincher will provide users with real-time stock data and information about a specific security. The information presented for each security will be.
-  * Price
-  * Volume
-  * Number of recent news articles
-  * Float
-  * Percentage gain for the day
-  * Exchanged which it is traded on
-  * Charts with various timelines
-
-## Functionality & MVP
- Penny Pincher will present the user with stocks pre-filtered by set guidelines which will be generate a list of viable candidates for purchase in the penny stock category.
- * Users can select a stock from a list of pre-filtered stocks
- * Pre-filtered stocks will contain some relevant information such as price, and volume
- * Detailed view of stock will be available to the user with more information, and charts.
-
- ## Wireframes
- 
- ![alt](https://github.com/JSkeets/PennyPincher/blob/master/HomeIndex.png)
- ![alt](https://github.com/JSkeets/PennyPincher/blob/master/Show_Page.png)
+## Technologies Used
+  - Javascript
+  - HTML
+  - CSS
+  - React
+  - IEX API
 
 
- ## Implementation Schedule
- * Weekend
-    * Complete ReadMe
-    * Familiarize with IEX API
- * **Day 1**:  Setup all necessary Node modules, including getting webpack up and running. Create webpack.config.js as well as package.json. Write a basic entry file and the bare bones of all 4 scripts outlined above. Learn the basics of IEX API. Goals for the day:
-    * Get webpack serving files and frame out index.html
-    * Be able to gather data from IEX API
-    * Hosting on heroku
- * **Day 2**: Familiarize with D3 Data Library
-    * Be able to have an index page with stock tickers, and some relevant information.
-* **Day 3**: Clean up the data, and create a show page for an individual stock.  
- **Day 4**: Ensure the website has a clean presentation, and is user friendly.
+## How are the stocks filtered?
+ Every stock currently trading on the NYSE is filtered to be under five dollars in its current price. As time goes on throughout the day the volume filter adjust to represent a list of good trades. Before 7 AM PST only stocks with greater than 10K volume are shown from 8 AM PST to 9 AM PST stocks with greater than 50K volume are shown, and for the rest of the trading day only stocks with 100K volume or greater are shown. 
 
-## Technologies
- * Javascript for data filtering
- * D3 for DOM manipulation, and data rendering
- * IEX API for data gathering
- * Webpack to bundle various scripts.
- * React for front end rendering.
- 
- ## Bonus Features
-  * A twitter sentiment for a specific stock ticker symbol, to get an idea of how others feel about the direction of the stock.
+## Where does the information come from?
+ The stock data is received from the IEX API.
+
+## The charts
+  A charting library was used to render the charts. The information comes in from the IEX API as a JSON object with three months of stock trading data.
+  ![alt text](https://github.com/JSkeets/PennyPincher/blob/master/Screen%20Shot%202017-10-06%20at%209.57.31%20AM.png)
+  
+
+      <ChartCanvas
+        ratio={ratio}
+        width={900}
+        height={600}
+        margin={{ left: 50, right: 50, top: 10, bottom: 30 }}
+        seriesName="MSFT"
+        data={data}
+        type={type}
+        xAccessor={xAccessor}
+        xScale={scaleTime()}
+        xExtents={xExtents}
+      >
+        <Chart id={0} yExtents={d => [d.high, d.low]}>
+          <XAxis axisAt="bottom" orient="bottom" ticks={6} />
+          <YAxis axisAt="left" orient="left" ticks={10} />
+          <CandlestickSeries width={timeIntervalBarWidth(utcDay)} />
+        </Chart>
+      </ChartCanvas>
+
+
+## Future of the Application
+ The first priority is to get the percent change of the stocks to render on the home page.
+
+ A second useful feature would be the use of the Twitter API to display what users are currently saying about the stock on twitter in order to give the users a sentiment of the public view on Twitter.

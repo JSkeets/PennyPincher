@@ -23,5 +23,10 @@ module.exports = {
 	devtool: "source-maps",
 	resolve: {
 		extensions: [".js", ".jsx", "*"]
+	},
+	node: {
+		fs: "empty",
+		net: "empty",
+		tls: "empty"
 	}
 };

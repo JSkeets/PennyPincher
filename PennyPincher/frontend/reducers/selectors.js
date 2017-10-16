@@ -1,4 +1,7 @@
 import values from "lodash/values";
+import merge from "lodash/merge";
+import { fetchStock } from "../actions/stock_actions";
+
 export const selectAllStocks = state => {
 	let stocks = values(state.entities.stocks);
 	let filtered = [];
@@ -23,4 +26,20 @@ export const selectAllStocks = state => {
 		}
 	});
 	return filtered;
+};
+
+export const stockInfo = state => {
+	let filtered = selectAllStocks(state);
+	let quotes = {};
+	filtered.forEach(stock => {
+		let x = $.ajax({
+			method: "GET",
+			url: `https://api.iextrading.com/1.0/stock/${stock.symbol}/batch?types=quote,stats,news,peers,chart&range=6m&last=50`
+		}).then(res => {
+			quotes = merge(quotes, {
+				[res.quote.symbol]: res.quote.changePercent * 100
+			});
+		});
+	});
+	return quotes;
 };

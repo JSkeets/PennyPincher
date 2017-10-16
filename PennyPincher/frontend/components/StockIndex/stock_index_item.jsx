@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const StockIndexItem = ({ stock, fetchStock }) => {
+const StockIndexItem = ({ stock, percents }) => {
 	if (!stock) {
 		return null;
 	}

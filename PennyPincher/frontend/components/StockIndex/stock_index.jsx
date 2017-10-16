@@ -9,19 +9,28 @@ class StockIndex extends React.Component {
 		ReactGA.initialize("UA-107597692-1");
 		// This just needs to be called once since we have no routes in this case.
 		ReactGA.pageview(window.location.pathname);
+		this.addPercents = this.addPercents.bind(this);
+		this.state = { yes: "no" };
 	}
 	componentDidMount() {
 		this.props.fetchAllStocks();
 	}
 
+	addPercents() {
+		console.log("PROPS", Object.keys(this.props.stocksInfo).length);
+		console.log("PROPS", Object.keys(this.props.stocksInfo));
+	}
 	render() {
-		// let response = this.props.fetchStock(this.props.stocks[0].symbol);
-		// console.log(response);
-		if (this.props.stocks.length === 0) {
+		if (Object.keys(this.props.stocksInfo).length === 0) {
 			return null;
 		}
-		// this.props.fetchStock(this.props.stocks[0].symbol);
-		// console.log(this.props.stocks[0].symbol);
+		// console.log("RENDER PROPS", this.props);
+		this.addPercents();
+		if (this.state.yes === "no") {
+			this.setState({ yes: "yes" });
+		}
+		let info = this.props.stocksInfo;
+		// console.log("INFO", info);
 		return (
 			<ul id="stock-index">
 				<li className="review-index-item-header">
@@ -31,11 +40,7 @@ class StockIndex extends React.Component {
 					<i id="header-symbol"> Sector </i>
 				</li>
 				{this.props.stocks.map(stock => (
-					<StockIndexItem
-						key={stock.id}
-						stock={stock}
-						stockFetch={symbol => this.fetchStock(symbol)}
-					/>
+					<StockIndexItem key={stock.id} stock={stock} />
 				))}
 			</ul>
 		);

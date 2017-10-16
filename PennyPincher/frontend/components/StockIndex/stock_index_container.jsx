@@ -1,11 +1,14 @@
 import { connect } from "react-redux";
 import StockIndex from "./stock_index";
 import { fetchAllStocks, fetchStock } from "../../actions/stock_actions";
-import { selectAllStocks } from "../../reducers/selectors";
+import { selectAllStocks, stockInfo } from "../../reducers/selectors";
 
-const mapStateToProps = (state, ownProps) => ({
-	stocks: selectAllStocks(state)
-});
+const mapStateToProps = (state, ownProps) => {
+	return {
+		stocks: selectAllStocks(state),
+		stocksInfo: stockInfo(state)
+	};
+};
 
 const mapDispatchToProps = dispatch => ({
 	fetchAllStocks: () => dispatch(fetchAllStocks()),

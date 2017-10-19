@@ -92,7 +92,7 @@ class StockShow extends React.Component {
 							</div>
 							<div id="percent-change" style={percStyle}>
 								<i>Percent Change</i>
-								<i>{this.props.stocks[symbol].quote.changePercent * 100}</i>
+								<i>{(this.props.stocks[symbol].quote.changePercent * 100).toFixed(2)}</i>
 							</div>
 							<div id="float">
 								<i>Float</i>

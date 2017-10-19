@@ -14,7 +14,7 @@ class StockIndex extends React.Component {
 	componentDidMount() {
 		console.log(this.props);
 		this.props.fetchAllStocks();
-		setTimeout(() => this.setState({ loading: false }), 10000);
+		setTimeout(() => this.setState({ loading: false }), 3000);
 	}
 
 	componentDidReceiveProps(newProps) {
@@ -23,8 +23,8 @@ class StockIndex extends React.Component {
 
 	render() {
 		if (this.state.loading) {
-			console.log("LOADING");
-			return <div>LOADING!!!</div>;
+
+			return <div className="loader">Loading...</div>;
 		} else {
 			return (
 				<ul id="stock-index">

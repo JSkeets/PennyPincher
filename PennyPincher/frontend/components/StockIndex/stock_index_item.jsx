@@ -14,7 +14,7 @@ const StockIndexItem = ({ stock, percents }) => {
 					<i id="stock-price">{stock.lastSalePrice}</i>&nbsp;
 					<i id="stock-volume">{stock.volume}</i>&nbsp;
 					<i id="stock-sector">{stock.sector}</i>&nbsp;
-					<i id="stock-price">{percents[stock.symbol]}</i>&nbsp;
+					<i id="stock-price" style={percents[stock.symbol] > 0 ? {color: "green"} : {color: "red"}}>{percents[stock.symbol].toFixed(2)}</i>&nbsp;
 				</div>
 			</li>
 		);

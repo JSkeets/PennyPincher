@@ -11,7 +11,7 @@ const mapStateToProps = (state, ownProps) => ({
 const mapDispatchToProps = dispatch => ({
 	fetchStock: symbol => dispatch(fetchStock(symbol)),
 	fetchAllStocks: () => dispatch(fetchAllStocks()),
-	fetchTwitter: hashtag => dispatch(fetchTweets(hashtag))
+	// fetchTwitter: hashtag => dispatch(fetchTweets(hashtag))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(StockShow);

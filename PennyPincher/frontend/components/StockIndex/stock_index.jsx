@@ -9,41 +9,43 @@ class StockIndex extends React.Component {
 		ReactGA.initialize("UA-107597692-1");
 		// This just needs to be called once since we have no routes in this case.
 		ReactGA.pageview(window.location.pathname);
-		this.addPercents = this.addPercents.bind(this);
-		this.state = { yes: "no" };
+		this.state = { yes: "no", loading: true };
 	}
 	componentDidMount() {
+		console.log(this.props);
 		this.props.fetchAllStocks();
+		setTimeout(() => this.setState({ loading: false }), 10000);
 	}
 
-	addPercents() {
-		console.log("PROPS", Object.keys(this.props.stocksInfo).length);
-		console.log("PROPS", Object.keys(this.props.stocksInfo));
+	componentDidReceiveProps(newProps) {
+		console.log("WILL RECEIVE", newProps.stocksInfo);
 	}
+
 	render() {
-		if (Object.keys(this.props.stocksInfo).length === 0) {
-			return null;
+		if (this.state.loading) {
+			console.log("LOADING");
+			return <div>LOADING!!!</div>;
+		} else {
+			return (
+				<ul id="stock-index">
+					<li className="review-index-item-header">
+						<i id="header-symbol">Symbol</i>
+						<i id="header-symbol"> Price</i>
+						<i id="header-symbol"> Volume</i>
+						<i id="header-symbol"> Sector </i>
+						<i id="header-symbol"> Percent Change</i>
+					</li>
+					{this.props.stocks.map(stock => (
+						<StockIndexItem
+							key={stock.id}
+							stock={stock}
+							percents={this.props.stocksInfo}
+						/>
+					))}
+				</ul>
+			);
+			// }
 		}
-		// console.log("RENDER PROPS", this.props);
-		this.addPercents();
-		if (this.state.yes === "no") {
-			this.setState({ yes: "yes" });
-		}
-		let info = this.props.stocksInfo;
-		// console.log("INFO", info);
-		return (
-			<ul id="stock-index">
-				<li className="review-index-item-header">
-					<i id="header-symbol">Symbol</i>
-					<i id="header-symbol"> Price</i>
-					<i id="header-symbol"> Volume</i>
-					<i id="header-symbol"> Sector </i>
-				</li>
-				{this.props.stocks.map(stock => (
-					<StockIndexItem key={stock.id} stock={stock} />
-				))}
-			</ul>
-		);
 	}
 }
 

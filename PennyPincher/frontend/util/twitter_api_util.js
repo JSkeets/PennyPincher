@@ -20,3 +20,5 @@ const fetchTwitter = hash => {
 };
 
 module.exports = fetchTwitter;
+
+fetchTwitter("X");

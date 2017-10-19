@@ -20,7 +20,7 @@ class StockShow extends React.Component {
 		this.loadStock();
 		// setInterval(this.loadStock, 2000);
 		console.log(this.props);
-		this.props.fetchTwitter("X");
+		// this.props.fetchTwitter("X");
 	}
 
 	loadStock() {

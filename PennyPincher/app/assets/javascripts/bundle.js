@@ -66642,6 +66642,7 @@ var StockIndex = function (_React$Component) {
 		_reactGa2.default.pageview(window.location.pathname);
 		_this.state = { yes: "no", loading: true };
 		_this.sortByKey = _this.sortByKey.bind(_this);
+		_this.addPercents = _this.addPercents.bind(_this);
 		return _this;
 	}
 
@@ -66662,6 +66663,15 @@ var StockIndex = function (_React$Component) {
 			console.log("WILL RECEIVE", newProps.stocksInfo);
 		}
 	}, {
+		key: "addPercents",
+		value: function addPercents() {
+			var _this3 = this;
+
+			this.props.stocks.map(function (stock) {
+				stock.percentChange = _this3.props.stocksInfo[stock.symbol];
+			});
+		}
+	}, {
 		key: "sortByKey",
 		value: function sortByKey(array, key) {
 			return array.sort(function (a, b) {
@@ -66672,7 +66682,7 @@ var StockIndex = function (_React$Component) {
 	}, {
 		key: "render",
 		value: function render() {
-			var _this3 = this;
+			var _this4 = this;
 
 			if (this.state.loading) {
 				// if (!this.props) {
@@ -66683,8 +66693,9 @@ var StockIndex = function (_React$Component) {
 					"Loading..."
 				);
 			} else {
+				this.addPercents();
 				console.log("STOCKS", this.props.stocks);
-				var sorted = this.sortByKey(this.props.stocks, "lastSalePrice");
+				var sorted = this.sortByKey(this.props.stocks, "percentChange");
 				console.log(sorted);
 				return _react2.default.createElement(
 					"ul",
@@ -66722,7 +66733,7 @@ var StockIndex = function (_React$Component) {
 						return _react2.default.createElement(_stock_index_item2.default, {
 							key: stock.id,
 							stock: stock,
-							percents: _this3.props.stocksInfo
+							percents: _this4.props.stocksInfo
 						});
 					})
 				);

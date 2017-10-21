@@ -13,6 +13,7 @@ class StockIndex extends React.Component {
 		ReactGA.pageview(window.location.pathname);
 		this.state = { yes: "no", loading: true };
 		this.sortByKey = this.sortByKey.bind(this);
+		this.addPercents = this.addPercents.bind(this);
 	}
 	componentDidMount() {
 		console.log(this.props);
@@ -22,6 +23,12 @@ class StockIndex extends React.Component {
 
 	componentDidReceiveProps(newProps) {
 		console.log("WILL RECEIVE", newProps.stocksInfo);
+	}
+
+	addPercents() {
+		this.props.stocks.map((stock) => {
+			stock.percentChange = this.props.stocksInfo[stock.symbol];
+		});
 	}
 
 	sortByKey(array, key) {
@@ -37,8 +44,9 @@ class StockIndex extends React.Component {
 
 			return <div className="loader">Loading...</div>;
 		} else {
+			this.addPercents();
 			console.log("STOCKS",this.props.stocks);
-			let sorted = this.sortByKey(this.props.stocks, "lastSalePrice");
+			let sorted = this.sortByKey(this.props.stocks, "percentChange");
 			console.log(sorted);
 			return (
 				<ul id="stock-index">

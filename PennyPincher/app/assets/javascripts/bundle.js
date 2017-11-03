@@ -66637,6 +66637,8 @@ var _stock_index_item = __webpack_require__(893);
 
 var _stock_index_item2 = _interopRequireDefault(_stock_index_item);
 
+var _reactRouterDom = __webpack_require__(52);
+
 var _reactBootstrapTable = __webpack_require__(1015);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -66665,6 +66667,7 @@ var StockIndex = function (_React$Component) {
     _this.state = { yes: "no", loading: true };
     _this.addPercents = _this.addPercents.bind(_this);
     _this.handleBtnClick = _this.handleBtnClick.bind(_this);
+    _this.colFormatter = _this.colFormatter.bind(_this);
     return _this;
   }
 
@@ -66694,6 +66697,15 @@ var StockIndex = function (_React$Component) {
       });
     }
   }, {
+    key: "colFormatter",
+    value: function colFormatter(cell, row) {
+      return _react2.default.createElement(
+        _reactRouterDom.Link,
+        { to: "stocks/" + cell },
+        cell
+      );
+    }
+  }, {
     key: "handleBtnClick",
     value: function handleBtnClick() {
       if (order === "desc") {
@@ -66708,8 +66720,6 @@ var StockIndex = function (_React$Component) {
     key: "render",
     value: function render() {
       if (this.state.loading) {
-        // if (!this.props) {
-
         return _react2.default.createElement(
           "div",
           { className: "loader" },
@@ -66725,7 +66735,7 @@ var StockIndex = function (_React$Component) {
             { id: "stock-index", ref: "table", data: this.props.stocks },
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { id: "header-symbol", dataField: "symbol", isKey: true, dataSort: true },
+              { id: "header-symbol", dataField: "symbol", isKey: true, dataSort: true, dataFormat: this.colFormatter },
               "Symbol"
             ),
             _react2.default.createElement(

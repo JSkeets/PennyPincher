@@ -66730,8 +66730,8 @@ var StockIndex = function (_React$Component) {
         return _react2.default.createElement(
           "div",
           null,
-          _react2.default.createElement("link", { rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" }),
           _react2.default.createElement("link", { rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" }),
+          _react2.default.createElement("link", { rel: "stylesheet", href: "https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css" }),
           _react2.default.createElement("script", { src: "http://code.jquery.com/jquery-2.1.3.min.js" }),
           _react2.default.createElement("script", { src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" }),
           _react2.default.createElement(

@@ -54,10 +54,10 @@ class StockIndex extends React.Component {
     } else {
 		this.addPercents();
 	  return <div>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
-    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css" />
+        <script src="http://code.jquery.com/jquery-2.1.3.min.js" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" />
         <BootstrapTable ref="table" data={this.props.stocks}>
           <TableHeaderColumn dataField="symbol" isKey={true} dataSort={true} dataFormat={this.colFormatter}>
             Symbol

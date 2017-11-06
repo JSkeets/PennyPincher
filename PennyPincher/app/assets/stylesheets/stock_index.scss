@@ -1,57 +1,84 @@
-.stock-listing {
-	display: flex;
-	justify-content: space-between;
-	padding: 20px;
-	border-style: solid;
-	border-width: thin;
-	border-left: none;
-	border-right: none;
-	border-color: lightgray;
-	font-size: 20px;
-}
+// .stock-listing {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	padding: 20px;
+// 	border-style: solid;
+// 	border-width: thin;
+// 	border-left: none;
+// 	border-right: none;
+// 	border-color: lightgray;
+// 	font-size: 20px;
+// }
 
-.review-index-item-header {
-	display: flex;
-	justify-content: space-between;
-	font-size: 40px;
-	font-weight: bold;
-	padding-left: 10px;
-}
-.review-index-item:nth-child(odd) {
-	// background-color: rgba(194, 225, 194, 0.28);
-	// background-color: rgba(174, 212, 230, 0.28);
-	// background-color: rgba(232, 254, 209, 0.28);
-	// background-color: rgba(79, 124, 172, 0.28);
-}
+// .review-index-item-header {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	font-size: 40px;
+// 	font-weight: bold;
+// 	padding-left: 10px;
+// }
 
-.stock-symbol {
-	width: 100px;
-}
-#stock-symbol:hover {
-	color: #fc5130;
-	text-decoration: underline;
-}
 
-#stock-sector {
-	flex: 1;
-}
-#stock-price,
-#stock-volume,
-#header-symbol {
-	flex: 1;
-	color: #2c363f;
-}
+// .stock-symbol {
+// 	width: 100px;
+// }
+// #stock-symbol:hover {
+// 	color: #fc5130;
+// 	text-decoration: underline;
+// }
 
-#stock-symbol {
-	flex: 1;
-	color: #058ed9;
-	text-decoration: none;
-	text-decoration: underline;
-}
-#stock-index {
-	padding-left: 75px;
-}
+// #stock-sector {
+// 	flex: 1;
+// }
+// // tr.stock-price,
+// // tr.stock-volume,
+// // tr.header-symbol {
+// // 	flex: 1;
+// // 	color: #2c363f;
+// // }
 
+// #stock-symbol {
+// 	flex: 1;
+// 	color: #058ed9;
+// 	text-decoration: none;
+// 	text-decoration: underline;
+// }
+// #stock-index {
+// 	padding-left: 75px;
+// }
+// // div.react-bs-table-container {
+// //   padding-left: 75px;
+// //   border-style:none;
+// //   width: -webkit-fill-available;
+// // }
+
+// // table.table.table-hover.table-bordered{
+// //   width:-webkit-fill-available;
+// //   display: flex;
+  
+
+// // }
+// // div.react-bs-container-header.table-header-wrapper {
+// //   display: flex;
+// // 	justify-content: space-between;
+// // 	font-size: 40px;
+// // 	font-weight: bold;
+// // 	padding-left: 10px;
+// // }
+
+// // th.sort-column {
+// //   flex: 1;
+// // 	color: #2c363f;
+// // }
+
+// // tr.stock-listing {
+// // 	display: flex;
+// // 	justify-content: space-between;
+// // 	font-size: 40px;
+// // 	font-weight: bold;
+// // 	padding-left: 10px;
+
+// // }
 body{background: #eeeeee; }
 
 .loader {

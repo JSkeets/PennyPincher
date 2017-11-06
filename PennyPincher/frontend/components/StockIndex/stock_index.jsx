@@ -4,10 +4,12 @@ import ReactGA from "react-ga"; // https://github.com/react-ga/react-ga
 import StockIndexItem from "./stock_index_item";
 import { Link } from "react-router-dom";
 import { BootstrapTable, TableHeaderColumn } from "react-bootstrap-table";
+
+
 let order = "desc";
 class StockIndex extends React.Component {
-  constructor(props) {
-    super(props);
+	constructor(props) {
+		super(props);
     // Add your tracking ID created from https://analytics.google.com/analytics/web/#home/
     ReactGA.initialize("UA-107597692-1");
     // This just needs to be called once since we have no routes in this case.
@@ -18,52 +20,55 @@ class StockIndex extends React.Component {
 	this.colFormatter = this.colFormatter.bind(this);
   }
   componentDidMount() {
-    console.log(this.props);
+	  console.log(this.props);
     this.props.fetchAllStocks();
     setTimeout(() => this.setState({ loading: false }), 10000);
   }
-
+  
   componentDidReceiveProps(newProps) {
-    console.log("WILL RECEIVE", newProps.stocksInfo);
+	  console.log("WILL RECEIVE", newProps.stocksInfo);
   }
-
+  
   addPercents() {
-    this.props.stocks.map(stock => {
-      stock.percentChange = this.props.stocksInfo[stock.symbol];
+	  this.props.stocks.map(stock => {
+		  stock.percentChange = this.props.stocksInfo[stock.symbol];
     });
   }
 
-  	colFormatter(cell,row) {
-		 return <Link to={`stocks/${cell}`}>{cell}</Link>;
+  colFormatter(cell,row) {
+	  return <Link to={`stocks/${cell}`}>{cell}</Link>;
 	  }
-
-  handleBtnClick () {
-    if (order === "desc") {
-      this.refs.table.handleSort("asc", "name");
+	  handleBtnClick () {
+		  if (order === "desc") {
+			  this.refs.table.handleSort("asc", "name");
       order = "asc";
     } else {
-      this.refs.table.handleSort("desc", "name");
+		this.refs.table.handleSort("desc", "name");
       order = "desc";
     }
   }
 
   render() {
-    if (this.state.loading) {
-      return <div className="loader">Loading...</div>;
+	  if (this.state.loading) {
+		  return <div className="loader">Loading...</div>;
     } else {
-      this.addPercents();
+		this.addPercents();
 	  return <div>
-        <BootstrapTable id="stock-index" ref="table" data={this.props.stocks}>
-          <TableHeaderColumn id="header-symbol" dataField="symbol" isKey={true} dataSort={true} dataFormat={ this.colFormatter }>
-              Symbol
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <BootstrapTable ref="table" data={this.props.stocks}>
+          <TableHeaderColumn dataField="symbol" isKey={true} dataSort={true} dataFormat={this.colFormatter}>
+            Symbol
           </TableHeaderColumn>
-          <TableHeaderColumn id="header-symbol" dataField="lastSalePrice" dataSort={true}>
+          <TableHeaderColumn dataField="lastSalePrice" dataSort={true}>
             Price
           </TableHeaderColumn>
-          <TableHeaderColumn id="header-symbol" dataField="volume" dataSort={true}>
+          <TableHeaderColumn dataField="volume" dataSort={true}>
             Volume
           </TableHeaderColumn>
-          <TableHeaderColumn id="header-symbol" dataField="percentChange" dataSort={true}>
+          <TableHeaderColumn dataField="percentChange" style={this.props.stocks.percentChange > 0 ? { color: "green" } : { color: "red" }} dataSort={true}>
             Percent Change
           </TableHeaderColumn>
         </BootstrapTable>

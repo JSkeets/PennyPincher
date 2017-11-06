@@ -66730,27 +66730,31 @@ var StockIndex = function (_React$Component) {
         return _react2.default.createElement(
           "div",
           null,
+          _react2.default.createElement("link", { rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" }),
+          _react2.default.createElement("link", { rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" }),
+          _react2.default.createElement("script", { src: "http://code.jquery.com/jquery-2.1.3.min.js" }),
+          _react2.default.createElement("script", { src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" }),
           _react2.default.createElement(
             _reactBootstrapTable.BootstrapTable,
-            { id: "stock-index", ref: "table", data: this.props.stocks },
+            { ref: "table", data: this.props.stocks },
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { id: "header-symbol", dataField: "symbol", isKey: true, dataSort: true, dataFormat: this.colFormatter },
+              { dataField: "symbol", isKey: true, dataSort: true, dataFormat: this.colFormatter },
               "Symbol"
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { id: "header-symbol", dataField: "lastSalePrice", dataSort: true },
+              { dataField: "lastSalePrice", dataSort: true },
               "Price"
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { id: "header-symbol", dataField: "volume", dataSort: true },
+              { dataField: "volume", dataSort: true },
               "Volume"
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { id: "header-symbol", dataField: "percentChange", dataSort: true },
+              { dataField: "percentChange", style: this.props.stocks.percentChange > 0 ? { color: "green" } : { color: "red" }, dataSort: true },
               "Percent Change"
             )
           )

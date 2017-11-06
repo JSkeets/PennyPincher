@@ -66633,10 +66633,6 @@ var _reactGa = __webpack_require__(349);
 
 var _reactGa2 = _interopRequireDefault(_reactGa);
 
-var _stock_index_item = __webpack_require__(893);
-
-var _stock_index_item2 = _interopRequireDefault(_stock_index_item);
-
 var _reactRouterDom = __webpack_require__(52);
 
 var _reactBootstrapTable = __webpack_require__(1015);
@@ -66648,7 +66644,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // https://github.com/react-ga/react-ga
-
 
 var order = "desc";
 
@@ -66677,7 +66672,6 @@ var StockIndex = function (_React$Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      console.log(this.props);
       this.props.fetchAllStocks();
       setTimeout(function () {
         return _this2.setState({ loading: false });
@@ -66715,7 +66709,6 @@ var StockIndex = function (_React$Component) {
   }, {
     key: "percentFormatter",
     value: function percentFormatter(cell, row) {
-      console.log("PERCENT Cell", cell);
       if (cell > 0) {
         return "<i id='percentPositive'>" + cell.toFixed(2) + "</i> ";
       } else if (cell < 0) {
@@ -66775,95 +66768,8 @@ var StockIndex = function (_React$Component) {
 
 exports.default = StockIndex;
 
-//   return (
-//     <ul id="stock-index">
-//       <li className="review-index-item-header">
-//         <i id="header-symbol">Symbol</i>
-//         <i id="header-symbol"> Price</i>
-//         <i id="header-symbol"> Volume</i>
-//         <i id="header-symbol"> Sector </i>
-//         {<i id="header-symbol"> Percent Change</i>}
-//       </li>
-//       {this.props.stocks.map(stock => (
-//         <StockIndexItem
-//           key={stock.id}
-//           stock={stock}
-//           percents={this.props.stocksInfo}
-//         />
-//       ))}
-//     </ul>
-//   );
-
 /***/ }),
-/* 893 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouterDom = __webpack_require__(52);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var StockIndexItem = function StockIndexItem(_ref) {
-	var stock = _ref.stock,
-	    percents = _ref.percents;
-
-	if (!percents || !stock) {
-		return null;
-	} else {
-		return _react2.default.createElement(
-			"li",
-			{ className: "review-index-item" },
-			_react2.default.createElement(
-				"div",
-				{ className: "stock-listing" },
-				_react2.default.createElement(
-					_reactRouterDom.Link,
-					{ id: "stock-symbol", to: "stocks/" + stock.symbol },
-					stock.symbol
-				),
-				"\xA0",
-				_react2.default.createElement(
-					"i",
-					{ id: "stock-price" },
-					stock.lastSalePrice
-				),
-				"\xA0",
-				_react2.default.createElement(
-					"i",
-					{ id: "stock-volume" },
-					stock.volume
-				),
-				"\xA0",
-				_react2.default.createElement(
-					"i",
-					{ id: "stock-sector" },
-					stock.sector
-				),
-				"\xA0",
-				_react2.default.createElement(
-					"i",
-					{ id: "stock-price", style: percents[stock.symbol] > 0 ? { color: "green" } : { color: "red" } },
-					percents[stock.symbol].toFixed(2)
-				),
-				"\xA0"
-			)
-		);
-	}
-};
-
-exports.default = StockIndexItem;
-
-/***/ }),
+/* 893 */,
 /* 894 */,
 /* 895 */,
 /* 896 */,

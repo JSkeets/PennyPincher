@@ -1,7 +1,7 @@
 import React from "react";
 import json2csv from "json2csv";
 import ReactGA from "react-ga"; // https://github.com/react-ga/react-ga
-import StockIndexItem from "./stock_index_item";
+
 import { Link } from "react-router-dom";
 import { BootstrapTable, TableHeaderColumn } from "react-bootstrap-table";
 
@@ -21,11 +21,10 @@ class StockIndex extends React.Component {
   this.percentFormatter = this.percentFormatter.bind(this);
   }
   componentDidMount() {
-	  console.log(this.props);
     this.props.fetchAllStocks();
     setTimeout(() => this.setState({ loading: false }), 10000);
   }
-  
+
   addPercents() {
 	  this.props.stocks.map(stock => {
 		  stock.percentChange = this.props.stocksInfo[stock.symbol];
@@ -35,8 +34,8 @@ class StockIndex extends React.Component {
   colFormatter(cell,row) {
 	  return <Link to={`stocks/${cell}`}>{cell}</Link>;
     }
-    
-	  handleBtnClick () {
+
+	handleBtnClick () {
 		  if (order === "desc") {
 			  this.refs.table.handleSort("asc", "name");
       order = "asc";
@@ -47,7 +46,6 @@ class StockIndex extends React.Component {
   }
 
   percentFormatter(cell,row) {
-    console.log("PERCENT Cell",cell);
     if (cell > 0) {
         return `<i id='percentPositive'>${cell.toFixed(2)}</i> `;
     } else if (cell < 0) {
@@ -86,22 +84,3 @@ class StockIndex extends React.Component {
 }
 
 export default StockIndex;
-
-//   return (
-//     <ul id="stock-index">
-//       <li className="review-index-item-header">
-//         <i id="header-symbol">Symbol</i>
-//         <i id="header-symbol"> Price</i>
-//         <i id="header-symbol"> Volume</i>
-//         <i id="header-symbol"> Sector </i>
-//         {<i id="header-symbol"> Percent Change</i>}
-//       </li>
-//       {this.props.stocks.map(stock => (
-//         <StockIndexItem
-//           key={stock.id}
-//           stock={stock}
-//           percents={this.props.stocksInfo}
-//         />
-//       ))}
-//     </ul>
-//   );

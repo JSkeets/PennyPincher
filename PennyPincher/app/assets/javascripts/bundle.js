@@ -66668,6 +66668,7 @@ var StockIndex = function (_React$Component) {
     _this.addPercents = _this.addPercents.bind(_this);
     _this.handleBtnClick = _this.handleBtnClick.bind(_this);
     _this.colFormatter = _this.colFormatter.bind(_this);
+    _this.percentFormatter = _this.percentFormatter.bind(_this);
     return _this;
   }
 
@@ -66681,11 +66682,6 @@ var StockIndex = function (_React$Component) {
       setTimeout(function () {
         return _this2.setState({ loading: false });
       }, 10000);
-    }
-  }, {
-    key: "componentDidReceiveProps",
-    value: function componentDidReceiveProps(newProps) {
-      console.log("WILL RECEIVE", newProps.stocksInfo);
     }
   }, {
     key: "addPercents",
@@ -66717,6 +66713,16 @@ var StockIndex = function (_React$Component) {
       }
     }
   }, {
+    key: "percentFormatter",
+    value: function percentFormatter(cell, row) {
+      console.log("PERCENT Cell", cell);
+      if (cell) {
+        return cell.toFixed(2);
+      } else {
+        return 0;
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       if (this.state.loading) {
@@ -66732,8 +66738,6 @@ var StockIndex = function (_React$Component) {
           null,
           _react2.default.createElement("link", { rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" }),
           _react2.default.createElement("link", { rel: "stylesheet", href: "https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css" }),
-          _react2.default.createElement("script", { src: "http://code.jquery.com/jquery-2.1.3.min.js" }),
-          _react2.default.createElement("script", { src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" }),
           _react2.default.createElement(
             _reactBootstrapTable.BootstrapTable,
             { ref: "table", data: this.props.stocks },
@@ -66754,7 +66758,7 @@ var StockIndex = function (_React$Component) {
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { dataField: "percentChange", style: this.props.stocks.percentChange > 0 ? { color: "green" } : { color: "red" }, dataSort: true },
+              { dataField: "percentChange", style: this.props.stocks.percentChange > 0 ? { color: "green" } : { color: "red" }, dataSort: true, dataFormat: this.percentFormatter },
               "Percent Change"
             )
           )

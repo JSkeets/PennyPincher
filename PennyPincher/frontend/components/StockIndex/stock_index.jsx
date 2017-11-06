@@ -17,16 +17,13 @@ class StockIndex extends React.Component {
     this.state = { yes: "no", loading: true };
 	this.addPercents = this.addPercents.bind(this);
 	this.handleBtnClick = this.handleBtnClick.bind(this);
-	this.colFormatter = this.colFormatter.bind(this);
+  this.colFormatter = this.colFormatter.bind(this);
+  this.percentFormatter = this.percentFormatter.bind(this);
   }
   componentDidMount() {
 	  console.log(this.props);
     this.props.fetchAllStocks();
     setTimeout(() => this.setState({ loading: false }), 10000);
-  }
-  
-  componentDidReceiveProps(newProps) {
-	  console.log("WILL RECEIVE", newProps.stocksInfo);
   }
   
   addPercents() {
@@ -37,7 +34,8 @@ class StockIndex extends React.Component {
 
   colFormatter(cell,row) {
 	  return <Link to={`stocks/${cell}`}>{cell}</Link>;
-	  }
+    }
+    
 	  handleBtnClick () {
 		  if (order === "desc") {
 			  this.refs.table.handleSort("asc", "name");
@@ -45,6 +43,15 @@ class StockIndex extends React.Component {
     } else {
 		this.refs.table.handleSort("desc", "name");
       order = "desc";
+    }
+  }
+
+  percentFormatter(cell,row) {
+    console.log("PERCENT Cell",cell);
+    if (cell) {
+    return cell.toFixed(2);
+    } else {
+      return 0;
     }
   }
 
@@ -56,8 +63,6 @@ class StockIndex extends React.Component {
 	  return <div>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css" />
-        <script src="http://code.jquery.com/jquery-2.1.3.min.js" />
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" />
         <BootstrapTable ref="table" data={this.props.stocks}>
           <TableHeaderColumn dataField="symbol" isKey={true} dataSort={true} dataFormat={this.colFormatter}>
             Symbol
@@ -68,7 +73,7 @@ class StockIndex extends React.Component {
           <TableHeaderColumn dataField="volume" dataSort={true}>
             Volume
           </TableHeaderColumn>
-          <TableHeaderColumn dataField="percentChange" style={this.props.stocks.percentChange > 0 ? { color: "green" } : { color: "red" }} dataSort={true}>
+          <TableHeaderColumn dataField="percentChange" style={this.props.stocks.percentChange > 0 ? { color: "green" } : { color: "red" }} dataSort={true} dataFormat={this.percentFormatter}>
             Percent Change
           </TableHeaderColumn>
         </BootstrapTable>

@@ -48,11 +48,14 @@ class StockIndex extends React.Component {
 
   percentFormatter(cell,row) {
     console.log("PERCENT Cell",cell);
-    if (cell) {
-    return cell.toFixed(2);
+    if (cell > 0) {
+        return `<i id='percentPositive'>${cell.toFixed(2)}</i> `;
+    } else if (cell < 0) {
+      return `<i id='percentNegative'>${cell.toFixed(2)}</i> `;
     } else {
       return 0;
     }
+    // return cell;
   }
 
   render() {
@@ -73,7 +76,7 @@ class StockIndex extends React.Component {
           <TableHeaderColumn dataField="volume" dataSort={true}>
             Volume
           </TableHeaderColumn>
-          <TableHeaderColumn dataField="percentChange" style={this.props.stocks.percentChange > 0 ? { color: "green" } : { color: "red" }} dataSort={true} dataFormat={this.percentFormatter}>
+          <TableHeaderColumn dataField="percentChange"  dataSort={true} dataFormat={this.percentFormatter}>
             Percent Change
           </TableHeaderColumn>
         </BootstrapTable>

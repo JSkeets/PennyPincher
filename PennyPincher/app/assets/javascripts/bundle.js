@@ -66716,11 +66716,14 @@ var StockIndex = function (_React$Component) {
     key: "percentFormatter",
     value: function percentFormatter(cell, row) {
       console.log("PERCENT Cell", cell);
-      if (cell) {
-        return cell.toFixed(2);
+      if (cell > 0) {
+        return "<i id='percentPositive'>" + cell.toFixed(2) + "</i> ";
+      } else if (cell < 0) {
+        return "<i id='percentNegative'>" + cell.toFixed(2) + "</i> ";
       } else {
         return 0;
       }
+      // return cell;
     }
   }, {
     key: "render",
@@ -66758,7 +66761,7 @@ var StockIndex = function (_React$Component) {
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { dataField: "percentChange", style: this.props.stocks.percentChange > 0 ? { color: "green" } : { color: "red" }, dataSort: true, dataFormat: this.percentFormatter },
+              { dataField: "percentChange", dataSort: true, dataFormat: this.percentFormatter },
               "Percent Change"
             )
           )

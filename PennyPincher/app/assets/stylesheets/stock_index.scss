@@ -1,5 +1,12 @@
 body{background: #eeeeee; }
 
+i#percentPositive {
+  color: green;
+}
+
+i#percentNegative {
+  color: red;
+}
 .loader {
   overflow: hidden;
   font-size: 10px;

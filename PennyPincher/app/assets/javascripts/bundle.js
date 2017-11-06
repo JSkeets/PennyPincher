@@ -42243,10 +42243,15 @@ var _entities_reducer = __webpack_require__(487);
 
 var _entities_reducer2 = _interopRequireDefault(_entities_reducer);
 
+var _session_reducer = __webpack_require__(1055);
+
+var _session_reducer2 = _interopRequireDefault(_session_reducer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var RootReducer = (0, _redux.combineReducers)({
-	entities: _entities_reducer2.default
+	entities: _entities_reducer2.default,
+	session: _session_reducer2.default
 });
 
 exports.default = RootReducer;
@@ -90957,6 +90962,137 @@ var _temp = function () {
 }();
 
 ;
+
+/***/ }),
+/* 1054 */,
+/* 1055 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _session_actions = __webpack_require__(1056);
+
+var _nullUser = Object.freeze({
+  currentUser: null
+});
+
+var SessionReducer = function SessionReducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _nullUser;
+  var action = arguments[1];
+
+  Object.freeze(state);
+  switch (action.type) {
+    case _session_actions.RECEIVE_CURRENT_USER:
+      return Object.assign({}, { currentUser: action.currentUser });
+    case _session_actions.RECEIVE_ERRORS:
+      return action.errors;
+    default:
+      return state;
+  }
+};
+
+exports.default = SessionReducer;
+
+/***/ }),
+/* 1056 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.createUser = exports.logout = exports.login = exports.receiveErrors = exports.receiveCurrentUser = exports.RECEIVE_SESSION_ERRORS = exports.RECEIVE_CURRENT_USER = undefined;
+
+var _session_api_util = __webpack_require__(1057);
+
+var SessionUtil = _interopRequireWildcard(_session_api_util);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+var RECEIVE_CURRENT_USER = exports.RECEIVE_CURRENT_USER = "RECEIVE_CURRENT_USER";
+var RECEIVE_SESSION_ERRORS = exports.RECEIVE_SESSION_ERRORS = "RECEIVE_ERRORS";
+
+var receiveCurrentUser = exports.receiveCurrentUser = function receiveCurrentUser(currentUser) {
+  return {
+    type: RECEIVE_CURRENT_USER,
+    currentUser: currentUser
+  };
+};
+
+var receiveErrors = exports.receiveErrors = function receiveErrors(errors) {
+  return {
+    type: RECEIVE_SESSION_ERRORS,
+    errors: errors
+  };
+};
+
+var login = exports.login = function login(user) {
+  return function (dispatch) {
+    return SessionUtil.login(user).then(function (currentUser) {
+      return dispatch(receiveCurrentUser(currentUser));
+    }, function (err) {
+      return dispatch(receiveErrors(err.responseJSON));
+    });
+  };
+};
+
+var logout = exports.logout = function logout() {
+  return function (dispatch) {
+    return SessionUtil.logout().then(function (user) {
+      return dispatch(receiveCurrentUser(null));
+    });
+  };
+};
+
+var createUser = exports.createUser = function createUser(user) {
+  return function (dispatch) {
+    return SessionUtil.createUser(user).then(function (res) {
+      return dispatch(receiveCurrentUser(res)), dispatch(login(user));
+    }, function (err) {
+      return dispatch(receiveErrors(err.responseJSON));
+    });
+  };
+};
+
+/***/ }),
+/* 1057 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var login = exports.login = function login(user) {
+  return $.ajax({
+    method: "POST",
+    url: "/api/session",
+    data: { user: user }
+  });
+};
+
+var logout = exports.logout = function logout() {
+  return $.ajax({
+    method: "DELETE",
+    url: "/api/session"
+  });
+};
+
+var createUser = exports.createUser = function createUser(user) {
+  return $.ajax({
+    method: "POST",
+    url: "/api/users",
+    data: { user: user }
+  });
+};
 
 /***/ })
 /******/ ]);

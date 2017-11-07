@@ -66669,6 +66669,7 @@ var StockIndex = function (_React$Component) {
     _this.handleBtnClick = _this.handleBtnClick.bind(_this);
     _this.colFormatter = _this.colFormatter.bind(_this);
     _this.percentFormatter = _this.percentFormatter.bind(_this);
+    _this.floatFormatter = _this.floatFormatter.bind(_this);
     return _this;
   }
 
@@ -66688,7 +66689,13 @@ var StockIndex = function (_React$Component) {
       var _this3 = this;
 
       this.props.stocks.map(function (stock) {
-        stock.percentChange = _this3.props.stocksInfo[stock.symbol];
+        if (stock.symbol === "IEXG") {
+          stock.percentChange = 0;
+          stock.float = 0;
+        } else {
+          stock.percentChange = _this3.props.stocksInfo[stock.symbol].quote.changePercent * 100;
+          stock.float = _this3.props.stocksInfo[stock.symbol].stats.float;
+        }
       });
     }
   }, {
@@ -66724,6 +66731,19 @@ var StockIndex = function (_React$Component) {
       // return cell;
     }
   }, {
+    key: "floatFormatter",
+    value: function floatFormatter(cell, row) {
+      if (cell < 200) {
+        return "<i id='floatLow'>" + cell + "</i> ";
+      } else if (cell > 200 && cell < 100000) {
+        return "<i id='floatMid'>" + cell + "</i> ";
+      } else if (cell > 100000) {
+        return "<i id='floatHigh'>" + cell + "</i> ";
+      } else {
+        return 0;
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       if (this.state.loading) {
@@ -66734,6 +66754,8 @@ var StockIndex = function (_React$Component) {
         );
       } else {
         this.addPercents();
+        console.log("STOCKSIFO", this.props.stocksInfo);
+        console.log("STOCKS", this.props.stocks);
         return _react2.default.createElement(
           "div",
           null,
@@ -66761,6 +66783,11 @@ var StockIndex = function (_React$Component) {
               _reactBootstrapTable.TableHeaderColumn,
               { dataField: "percentChange", dataSort: true, dataFormat: this.percentFormatter },
               "Percent Change"
+            ),
+            _react2.default.createElement(
+              _reactBootstrapTable.TableHeaderColumn,
+              { dataField: "float", dataSort: true, dataFormat: this.floatFormatter },
+              "Float"
             )
           )
         );
@@ -66868,7 +66895,7 @@ var stockInfo = exports.stockInfo = function stockInfo(state) {
 			method: "GET",
 			url: "https://api.iextrading.com/1.0/stock/" + stock.symbol + "/batch?types=quote,stats,news,peers,chart&range=6m&last=50"
 		}).then(function (res) {
-			quotes = (0, _merge3.default)(quotes, _defineProperty({}, res.quote.symbol, res.quote.changePercent * 100));
+			quotes = (0, _merge3.default)(quotes, _defineProperty({}, res.quote.symbol, res));
 		});
 	});
 	return quotes;

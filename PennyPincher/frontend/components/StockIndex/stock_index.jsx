@@ -19,6 +19,7 @@ class StockIndex extends React.Component {
 	this.handleBtnClick = this.handleBtnClick.bind(this);
   this.colFormatter = this.colFormatter.bind(this);
   this.percentFormatter = this.percentFormatter.bind(this);
+  this.floatFormatter = this.floatFormatter.bind(this);
   }
   componentDidMount() {
     this.props.fetchAllStocks();
@@ -27,7 +28,13 @@ class StockIndex extends React.Component {
 
   addPercents() {
 	  this.props.stocks.map(stock => {
-		  stock.percentChange = this.props.stocksInfo[stock.symbol];
+      if (stock.symbol === "IEXG" ){
+        stock.percentChange = 0;
+        stock.float = 0;
+      } else {
+      stock.percentChange = this.props.stocksInfo[stock.symbol].quote.changePercent * 100;
+      stock.float = this.props.stocksInfo[stock.symbol].stats.float;
+      }
     });
   }
 
@@ -56,11 +63,25 @@ class StockIndex extends React.Component {
     // return cell;
   }
 
+  floatFormatter(cell,row) {
+      if (cell < 200) {
+        return `<i id='floatLow'>${cell}</i> `;
+      } else if (cell > 200 && cell < 100000) {
+        return `<i id='floatMid'>${cell}</i> `;
+      } else if (cell > 100000) {
+        return `<i id='floatHigh'>${cell}</i> `;
+      } else {
+        return 0;
+      }
+  }
+
   render() {
 	  if (this.state.loading) {
 		  return <div className="loader">Loading...</div>;
     } else {
-		this.addPercents();
+    this.addPercents();
+    console.log("STOCKSIFO",this.props.stocksInfo);
+    console.log("STOCKS", this.props.stocks)
 	  return <div>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css" />
@@ -74,8 +95,11 @@ class StockIndex extends React.Component {
           <TableHeaderColumn dataField="volume" dataSort={true}>
             Volume
           </TableHeaderColumn>
-          <TableHeaderColumn dataField="percentChange"  dataSort={true} dataFormat={this.percentFormatter}>
+          <TableHeaderColumn dataField="percentChange" dataSort={true} dataFormat={this.percentFormatter}>
             Percent Change
+          </TableHeaderColumn>
+          <TableHeaderColumn dataField="float" dataSort={true} dataFormat={this.floatFormatter}>
+            Float
           </TableHeaderColumn>
         </BootstrapTable>
       </div>;

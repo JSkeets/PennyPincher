@@ -49,7 +49,7 @@ export const stockInfo = state => {
 			url: `https://api.iextrading.com/1.0/stock/${stock.symbol}/batch?types=quote,stats,news,peers,chart&range=6m&last=50`
 		}).then(res => {
 			quotes = merge(quotes, {
-				[res.quote.symbol]: res.quote.changePercent * 100
+				[res.quote.symbol]: res
 			});
 		});
 	});

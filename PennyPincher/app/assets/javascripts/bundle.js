@@ -48075,7 +48075,7 @@ var withRouter = function withRouter(Component) {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _react = __webpack_require__(1);
@@ -48094,6 +48094,10 @@ var _chart_container = __webpack_require__(931);
 
 var _chart_container2 = _interopRequireDefault(_chart_container);
 
+var _login_form_container = __webpack_require__(1058);
+
+var _login_form_container2 = _interopRequireDefault(_login_form_container);
+
 var _nav_bar = __webpack_require__(990);
 
 var _nav_bar2 = _interopRequireDefault(_nav_bar);
@@ -48107,14 +48111,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 window.fetchTweets = _stock_actions.fetchTweets;
 
 var App = function App() {
-	return _react2.default.createElement(
-		"div",
-		{ className: "app" },
-		_react2.default.createElement(_reactRouterDom.Route, { path: "/", component: _nav_bar2.default }),
-		_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: _stock_index_container2.default }),
-		_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/stocks/:stockTicker", component: _stock_show_container2.default }),
-		_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/stocks/:stockTicker", component: _chart_container2.default })
-	);
+  return _react2.default.createElement(
+    "div",
+    { className: "app" },
+    _react2.default.createElement(_reactRouterDom.Route, { path: "/", component: _nav_bar2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: _stock_index_container2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/login", component: _login_form_container2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/stocks/:stockTicker", component: _stock_show_container2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/stocks/:stockTicker", component: _chart_container2.default })
+  );
 };
 
 exports.default = App;
@@ -91120,6 +91125,172 @@ var createUser = exports.createUser = function createUser(user) {
     data: { user: user }
   });
 };
+
+/***/ }),
+/* 1058 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _reactRedux = __webpack_require__(106);
+
+var _session_actions = __webpack_require__(1056);
+
+var _login_form = __webpack_require__(1059);
+
+var _login_form2 = _interopRequireDefault(_login_form);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    loggedIn: Boolean(state.session.currentUser)
+  };
+};
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return {
+    processForm: function processForm(user) {
+      return dispatch((0, _session_actions.login)(user));
+    }
+  };
+};
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_login_form2.default);
+
+/***/ }),
+/* 1059 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(52);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var LoginForm = function (_React$Component) {
+  _inherits(LoginForm, _React$Component);
+
+  function LoginForm(props) {
+    _classCallCheck(this, LoginForm);
+
+    var _this = _possibleConstructorReturn(this, (LoginForm.__proto__ || Object.getPrototypeOf(LoginForm)).call(this, props));
+
+    _this.state = {
+      username: "",
+      password: ""
+    };
+    _this.handleSubmit = _this.handleSubmit.bind(_this);
+    return _this;
+  }
+
+  _createClass(LoginForm, [{
+    key: "componentWillReceiveProps",
+    value: function componentWillReceiveProps(nextProps) {
+      if (nextProps.loggedIn) {
+        this.props.history.push("/");
+      }
+    }
+  }, {
+    key: "update",
+    value: function update(field) {
+      var _this2 = this;
+
+      return function (e) {
+        return _this2.setState(_defineProperty({}, field, e.currentTarget.value));
+      };
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(e) {
+      e.preventDefault();
+      var user = this.state;
+      this.props.processForm(user);
+    }
+  }, {
+    key: "navLink",
+    value: function navLink() {
+      return _react2.default.createElement(
+        _reactRouterDom.Link,
+        { to: "/signup" },
+        " New? Sign Up!"
+      );
+    }
+
+    //   renderErrors() {
+    //     return (
+    //       <ul className="session-errors">
+    //         {this.props.errors.map((error, i) => (
+    //           <li key={`error-${i}`}>{error}</li>
+    //         ))}
+    //       </ul>
+    //     );
+    //   }
+
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "login-form-container" },
+        _react2.default.createElement(
+          "form",
+          { onSubmit: this.handleSubmit, className: "login-form-box" },
+          "Welcome to Penny Pincher",
+          _react2.default.createElement("br", null),
+          "Please Log In",
+          _react2.default.createElement("br", null),
+          _react2.default.createElement(
+            "div",
+            { className: "login-form" },
+            _react2.default.createElement("br", null),
+            _react2.default.createElement("input", { type: "text", placeholder: "username", value: this.state.username, onChange: this.update("username") }),
+            _react2.default.createElement("br", null),
+            _react2.default.createElement("input", { type: "password", placeholder: "password", value: this.state.password, onChange: this.update("password"), className: "login-input" }),
+            _react2.default.createElement("br", null),
+            _react2.default.createElement(
+              "div",
+              { className: "submit-button" },
+              _react2.default.createElement(
+                "button",
+                { className: "submit-button", type: "submit" },
+                "LOG IN"
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return LoginForm;
+}(_react2.default.Component);
+
+exports.default = (0, _reactRouterDom.withRouter)(LoginForm);
 
 /***/ })
 /******/ ]);

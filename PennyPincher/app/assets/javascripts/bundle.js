@@ -48102,9 +48102,9 @@ var _signup_form_container = __webpack_require__(1060);
 
 var _signup_form_container2 = _interopRequireDefault(_signup_form_container);
 
-var _nav_bar = __webpack_require__(990);
+var _navbar_container = __webpack_require__(1063);
 
-var _nav_bar2 = _interopRequireDefault(_nav_bar);
+var _navbar_container2 = _interopRequireDefault(_navbar_container);
 
 var _reactRouterDom = __webpack_require__(52);
 
@@ -48118,7 +48118,7 @@ var App = function App() {
   return _react2.default.createElement(
     "div",
     { className: "app" },
-    _react2.default.createElement(_reactRouterDom.Route, { path: "/", component: _nav_bar2.default }),
+    _react2.default.createElement(_navbar_container2.default, null),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: _stock_index_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/signup", component: _signup_form_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/login", component: _login_form_container2.default }),
@@ -77329,25 +77329,67 @@ var _reactRouterDom = __webpack_require__(52);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var NavBar = function NavBar() {
+var sessionLinks = function sessionLinks() {
 	return _react2.default.createElement(
 		"div",
-		{ className: "nav-bar" },
+		null,
 		_react2.default.createElement(
-			_reactRouterDom.Link,
-			{ to: "/", id: "nameLink" },
+			"div",
+			{ className: "nav-bar" },
 			_react2.default.createElement(
-				"h1",
-				{ className: "name" },
-				"Penny Pincher"
+				_reactRouterDom.Link,
+				{ to: "/", id: "nameLink" },
+				_react2.default.createElement(
+					"h1",
+					{ className: "name" },
+					"Penny Pincher"
+				)
+			),
+			_react2.default.createElement(
+				_reactRouterDom.Link,
+				{ to: "login" },
+				"Log In"
 			)
-		),
-		_react2.default.createElement(
-			_reactRouterDom.Link,
-			{ to: "login" },
-			"Log In"
 		)
 	);
+};
+
+var loggedInLinks = function loggedInLinks(currentUser, logout) {
+	return _react2.default.createElement(
+		"hgroup",
+		{ className: "header-group" },
+		_react2.default.createElement(
+			"button",
+			{ className: "logout-button", onClick: logout },
+			"LOG OUT"
+		),
+		_react2.default.createElement(
+			_reactRouterDom.NavLink,
+			{ className: "check-in", to: "/checkin", activeClassName: "is-active" },
+			"CHECK IN"
+		),
+		_react2.default.createElement(
+			_reactRouterDom.NavLink,
+			{ className: "global", to: "/the-bar", activeClassName: "is-active" },
+			"THE BAR"
+		),
+		_react2.default.createElement(
+			_reactRouterDom.NavLink,
+			{
+				className: "header-name",
+				to: "/dashboard",
+				activeClassName: "user-is-active"
+			},
+			"Welcome ",
+			currentUser.username
+		)
+	);
+};
+
+var NavBar = function NavBar(_ref) {
+	var currentUser = _ref.currentUser,
+	    logout = _ref.logout;
+	return currentUser ? loggedInLinks(currentUser, logout) : sessionLinks();
 };
 
 exports.default = NavBar;
@@ -91499,6 +91541,46 @@ var SignUpForm = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = (0, _reactRouterDom.withRouter)(SignUpForm);
+
+/***/ }),
+/* 1063 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _reactRedux = __webpack_require__(106);
+
+var _session_actions = __webpack_require__(1056);
+
+var _reactRouterDom = __webpack_require__(52);
+
+var _nav_bar = __webpack_require__(990);
+
+var _nav_bar2 = _interopRequireDefault(_nav_bar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var mapStateToProps = function mapStateToProps(_ref) {
+  var session = _ref.session;
+  return {
+    currentUser: session.currentUser
+  };
+};
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return {
+    logout: function logout() {
+      return dispatch((0, _session_actions.logout)());
+    }
+  };
+};
+
+exports.default = (0, _reactRouterDom.withRouter)((0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_nav_bar2.default));
 
 /***/ })
 /******/ ]);

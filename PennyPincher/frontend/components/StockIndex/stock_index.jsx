@@ -31,6 +31,9 @@ class StockIndex extends React.Component {
       if (stock.symbol === "IEXG" ){
         stock.percentChange = 0;
         stock.float = 0;
+      } else if (this.props.stocksInfo[stock.symbol] === undefined){
+        stock.percentChange = 0;
+        stock.float = 0;
       } else {
       stock.percentChange = this.props.stocksInfo[stock.symbol].quote.changePercent * 100;
       stock.float = this.props.stocksInfo[stock.symbol].stats.float;

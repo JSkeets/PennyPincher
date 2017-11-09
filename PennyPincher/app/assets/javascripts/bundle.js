@@ -66702,6 +66702,9 @@ var StockIndex = function (_React$Component) {
         if (stock.symbol === "IEXG") {
           stock.percentChange = 0;
           stock.float = 0;
+        } else if (_this3.props.stocksInfo[stock.symbol] === undefined) {
+          stock.percentChange = 0;
+          stock.float = 0;
         } else {
           stock.percentChange = _this3.props.stocksInfo[stock.symbol].quote.changePercent * 100;
           stock.float = _this3.props.stocksInfo[stock.symbol].stats.float;

@@ -7,6 +7,10 @@ const NavBar = () => {
 			<Link to={`/`} id="nameLink">
 				<h1 className="name">Penny Pincher</h1>
 			</Link>
+
+			<Link to="login">
+				Log In 
+			</Link>
 		</div>
 	);
 };

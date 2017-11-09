@@ -66703,8 +66703,8 @@ var StockIndex = function (_React$Component) {
           stock.percentChange = 0;
           stock.float = 0;
         } else if (_this3.props.stocksInfo[stock.symbol] === undefined) {
-          stock.percentChange = 0;
-          stock.float = 0;
+          stock.percentChange = "N/A";
+          stock.float = "N/A";
         } else {
           stock.percentChange = _this3.props.stocksInfo[stock.symbol].quote.changePercent * 100;
           stock.float = _this3.props.stocksInfo[stock.symbol].stats.float;
@@ -77341,6 +77341,11 @@ var NavBar = function NavBar() {
 				{ className: "name" },
 				"Penny Pincher"
 			)
+		),
+		_react2.default.createElement(
+			_reactRouterDom.Link,
+			{ to: "login" },
+			"Log In"
 		)
 	);
 };

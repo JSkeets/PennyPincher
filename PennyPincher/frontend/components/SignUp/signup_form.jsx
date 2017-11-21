@@ -71,7 +71,7 @@ class SignUpForm extends React.Component {
 
             <br />
 
-            <input type="text" placeholder="phone-number" value={this.state.phone_number} onChange={this.update("phone_number")} className="signup-input" />
+            <input type="text" placeholder="phone number" value={this.state.phone_number} onChange={this.update("phone_number")} className="signup-input" />
 
             <br />
 

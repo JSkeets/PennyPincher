@@ -46,44 +46,33 @@ class LoginForm extends React.Component {
 
   render() {
     return <div className="login-page">
-      <div className="form">
-        <form onSubmit={this.handleSubmit} className="login-form">
-         <i> Welcome to Penny Pincher </i>
-          <br />
-          <i>Please Log In </i>
-          <br />
-          <div className="login-form">
+        <div className="form">
+          <form onSubmit={this.handleSubmit} className="login-form">
+            <i> Welcome to Penny Pincher </i>
             <br />
-              <input
-               type="text"
-               placeholder="username"
-               className="input-txt"
-               value={this.state.username}
-               onChange={this.update("username")} />
+            <i>Please Log In </i>
             <br />
-              <input type="password"
-               placeholder="password"
-               className="input-txt"
-               value={this.state.password}
-               onChange={this.update("password")} className="login-input" />
-            <br />
-             <div className="login-footer">
-              <a href="#" className="lnk">
-                <span className="icon icon--min">ಠ╭╮ಠ</span>
-                I've forgotten something
-              </a>
-              <button type="submit" className="btn btn--right">
-                Sign in{" "}
-              </button>
+            <div className="login-form">
+              <br />
+              <input type="text" placeholder="username" className="input-txt" value={this.state.username} onChange={this.update("username")} />
+              <br />
+              <input type="password" placeholder="password" className="input-txt" value={this.state.password} onChange={this.update("password")} className="login-input" />
+              <br />
+              <div className="login-footer">
+                <a href="#" className="lnk">
+                  <span className="icon icon--min">ಠ╭╮ಠ</span>
+                  I've forgotten something
+                </a>
+                <button type="submit" className="btn btn--right">
+                  Sign in{" "}
+                </button>
                 <div className="signup-button">
-
-                <Link to="/signup" >
-                SIGN UP
-                </Link>
-             </div>
+                  Don't have an account? 
+                  <Link to="/signup">Create one!</Link>
+                </div>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
         </div>
       </div>;
 

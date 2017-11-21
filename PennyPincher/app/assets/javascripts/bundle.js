@@ -91198,18 +91198,9 @@ var LoginForm = function (_React$Component) {
               "div",
               { className: "login-form" },
               _react2.default.createElement("br", null),
-              _react2.default.createElement("input", {
-                type: "text",
-                placeholder: "username",
-                className: "input-txt",
-                value: this.state.username,
-                onChange: this.update("username") }),
+              _react2.default.createElement("input", { type: "text", placeholder: "username", className: "input-txt", value: this.state.username, onChange: this.update("username") }),
               _react2.default.createElement("br", null),
-              _react2.default.createElement("input", _defineProperty({ type: "password",
-                placeholder: "password",
-                className: "input-txt",
-                value: this.state.password,
-                onChange: this.update("password") }, "className", "login-input")),
+              _react2.default.createElement("input", _defineProperty({ type: "password", placeholder: "password", className: "input-txt", value: this.state.password, onChange: this.update("password") }, "className", "login-input")),
               _react2.default.createElement("br", null),
               _react2.default.createElement(
                 "div",
@@ -91233,10 +91224,11 @@ var LoginForm = function (_React$Component) {
                 _react2.default.createElement(
                   "div",
                   { className: "signup-button" },
+                  "Don't have an account?",
                   _react2.default.createElement(
                     _reactRouterDom.Link,
                     { to: "/signup" },
-                    "SIGN UP"
+                    "Create one!"
                   )
                 )
               )
@@ -91408,7 +91400,7 @@ var SignUpForm = function (_React$Component) {
               _react2.default.createElement("br", null),
               _react2.default.createElement("input", { type: "text", placeholder: "email", value: this.state.email, onChange: this.update("email"), className: "signup-input" }),
               _react2.default.createElement("br", null),
-              _react2.default.createElement("input", { type: "text", placeholder: "phone-number", value: this.state.phone_number, onChange: this.update("phone_number"), className: "signup-input" }),
+              _react2.default.createElement("input", { type: "text", placeholder: "phone number", value: this.state.phone_number, onChange: this.update("phone_number"), className: "signup-input" }),
               _react2.default.createElement("br", null),
               _react2.default.createElement("input", { type: "text", placeholder: "first name", value: this.state.fname, onChange: this.update("fname"), className: "signup-input" }),
               _react2.default.createElement("input", { type: "text", placeholder: "last name", value: this.state.lname, onChange: this.update("lname"), className: "signup-input" }),

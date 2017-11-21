@@ -91175,45 +91175,70 @@ var LoginForm = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         "div",
-        { className: "login-form-container" },
+        { className: "login-page" },
         _react2.default.createElement(
-          "form",
-          { onSubmit: this.handleSubmit, className: "login-form-box" },
-          "Welcome to Penny Pincher",
-          _react2.default.createElement("br", null),
-          "Please Log In",
-          _react2.default.createElement("br", null),
+          "div",
+          { className: "form" },
           _react2.default.createElement(
-            "div",
-            { className: "login-form" },
-            _react2.default.createElement("br", null),
-            _react2.default.createElement("input", {
-              type: "text",
-              placeholder: "username",
-              value: this.state.username,
-              onChange: this.update("username") }),
-            _react2.default.createElement("br", null),
-            _react2.default.createElement("input", { type: "password",
-              placeholder: "password",
-              value: this.state.password,
-              onChange: this.update("password"), className: "login-input" }),
-            _react2.default.createElement("br", null),
+            "form",
+            { onSubmit: this.handleSubmit, className: "login-form" },
             _react2.default.createElement(
-              "div",
-              { className: "submit-button" },
-              _react2.default.createElement(
-                "button",
-                { className: "submit-button", type: "submit" },
-                "LOG IN"
-              )
+              "i",
+              null,
+              " Welcome to Penny Pincher "
             ),
+            _react2.default.createElement("br", null),
+            _react2.default.createElement(
+              "i",
+              null,
+              "Please Log In "
+            ),
+            _react2.default.createElement("br", null),
             _react2.default.createElement(
               "div",
-              { className: "signup-button" },
+              { className: "login-form" },
+              _react2.default.createElement("br", null),
+              _react2.default.createElement("input", {
+                type: "text",
+                placeholder: "username",
+                className: "input-txt",
+                value: this.state.username,
+                onChange: this.update("username") }),
+              _react2.default.createElement("br", null),
+              _react2.default.createElement("input", _defineProperty({ type: "password",
+                placeholder: "password",
+                className: "input-txt",
+                value: this.state.password,
+                onChange: this.update("password") }, "className", "login-input")),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
-                _reactRouterDom.Link,
-                { to: "/signup" },
-                "SIGN UP"
+                "div",
+                { className: "login-footer" },
+                _react2.default.createElement(
+                  "a",
+                  { href: "#", className: "lnk" },
+                  _react2.default.createElement(
+                    "span",
+                    { className: "icon icon--min" },
+                    "\u0CA0\u256D\u256E\u0CA0"
+                  ),
+                  "I've forgotten something"
+                ),
+                _react2.default.createElement(
+                  "button",
+                  { type: "submit", className: "btn btn--right" },
+                  "Sign in",
+                  " "
+                ),
+                _react2.default.createElement(
+                  "div",
+                  { className: "signup-button" },
+                  _react2.default.createElement(
+                    _reactRouterDom.Link,
+                    { to: "/signup" },
+                    "SIGN UP"
+                  )
+                )
               )
             )
           )

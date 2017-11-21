@@ -49,13 +49,14 @@ class SignUpForm extends React.Component {
   // }
 
   render() {
-    return <div className="signup-form-container">
+    return <div className="login-page">
+      <div className="form">
         <form onSubmit={this.handleSubmit} className="signup-form-box">
           Welcome to Straight Up
           <br />
           Create an account
           <br />
-          <div className="signup-form">
+          <div className="login-form">
             <br />
 
             <input type="text" placeholder="username" value={this.state.username} onChange={this.update("username")} className="signup-input" />
@@ -85,6 +86,7 @@ class SignUpForm extends React.Component {
             </div>
           </div>
         </form>
+        </div>
       </div>;
   }
 }

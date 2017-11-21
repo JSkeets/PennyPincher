@@ -91387,36 +91387,40 @@ var SignUpForm = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         "div",
-        { className: "signup-form-container" },
+        { className: "login-page" },
         _react2.default.createElement(
-          "form",
-          { onSubmit: this.handleSubmit, className: "signup-form-box" },
-          "Welcome to Straight Up",
-          _react2.default.createElement("br", null),
-          "Create an account",
-          _react2.default.createElement("br", null),
+          "div",
+          { className: "form" },
           _react2.default.createElement(
-            "div",
-            { className: "signup-form" },
+            "form",
+            { onSubmit: this.handleSubmit, className: "signup-form-box" },
+            "Welcome to Straight Up",
             _react2.default.createElement("br", null),
-            _react2.default.createElement("input", { type: "text", placeholder: "username", value: this.state.username, onChange: this.update("username"), className: "signup-input" }),
-            _react2.default.createElement("br", null),
-            _react2.default.createElement("input", { type: "password", placeholder: "password", value: this.state.password, onChange: this.update("password"), className: "signup-input" }),
-            _react2.default.createElement("br", null),
-            _react2.default.createElement("input", { type: "text", placeholder: "email", value: this.state.email, onChange: this.update("email"), className: "signup-input" }),
-            _react2.default.createElement("br", null),
-            _react2.default.createElement("input", { type: "text", placeholder: "phone-number", value: this.state.phone_number, onChange: this.update("phone_number"), className: "signup-input" }),
-            _react2.default.createElement("br", null),
-            _react2.default.createElement("input", { type: "text", placeholder: "first name", value: this.state.fname, onChange: this.update("fname"), className: "signup-input" }),
-            _react2.default.createElement("input", { type: "text", placeholder: "last name", value: this.state.lname, onChange: this.update("lname"), className: "signup-input" }),
+            "Create an account",
             _react2.default.createElement("br", null),
             _react2.default.createElement(
               "div",
-              { className: "submit-button" },
+              { className: "login-form" },
+              _react2.default.createElement("br", null),
+              _react2.default.createElement("input", { type: "text", placeholder: "username", value: this.state.username, onChange: this.update("username"), className: "signup-input" }),
+              _react2.default.createElement("br", null),
+              _react2.default.createElement("input", { type: "password", placeholder: "password", value: this.state.password, onChange: this.update("password"), className: "signup-input" }),
+              _react2.default.createElement("br", null),
+              _react2.default.createElement("input", { type: "text", placeholder: "email", value: this.state.email, onChange: this.update("email"), className: "signup-input" }),
+              _react2.default.createElement("br", null),
+              _react2.default.createElement("input", { type: "text", placeholder: "phone-number", value: this.state.phone_number, onChange: this.update("phone_number"), className: "signup-input" }),
+              _react2.default.createElement("br", null),
+              _react2.default.createElement("input", { type: "text", placeholder: "first name", value: this.state.fname, onChange: this.update("fname"), className: "signup-input" }),
+              _react2.default.createElement("input", { type: "text", placeholder: "last name", value: this.state.lname, onChange: this.update("lname"), className: "signup-input" }),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
-                "button",
-                { className: "submit-button", type: "submit" },
-                "SIGN UP"
+                "div",
+                { className: "submit-button" },
+                _react2.default.createElement(
+                  "button",
+                  { className: "submit-button", type: "submit" },
+                  "SIGN UP"
+                )
               )
             )
           )

@@ -1,18 +1,15 @@
 .nav-bar {
 	display: flex;
 	font-size: 45px;
-	justify-content: left;
-	padding-bottom: 30px;
-	padding-left: 75px;
-	// background-color: #d29883;
+	align-items: baseline;
 	background-color: #eeeeee;
+	flex-direction: column;
 }
 
 h1.name {
-	// color: #ffffff;
+
 	text-decoration: none;
 	padding: 10px;
-	// color: #5e4137;
 	color: #058ed9;
 	font-family: $courgette;
 }
@@ -23,8 +20,17 @@ h1.name:hover {
 #nameLink {
 	text-decoration: none;
 	padding: 10px;
+	align-self: center;
 }
 body {
 	background-color: #ffffff;
 	font-family: $abel;
+}
+
+a.login {
+	text-decoration: none;
+	color: #058ed9;
+	font-family: $courgette;
+	font-size: 30px;
+	padding-left: 20px;
 }

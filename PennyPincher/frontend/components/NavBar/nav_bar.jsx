@@ -10,7 +10,7 @@ const sessionLinks = () => (
 				<h1 className="name">Penny Pincher</h1>
 			</Link>
 
-			<Link to="login">
+			<Link className="login" to="login">
 				Log In
 			</Link>
 		</div>
@@ -19,24 +19,30 @@ const sessionLinks = () => (
 );
 
 const loggedInLinks = (currentUser, logout) => (
-	<hgroup className="header-group">
-		<button className="logout-button" onClick={logout}>
-			LOG OUT
-		</button>
-		<NavLink className="check-in" to="/checkin" activeClassName="is-active">
-			CHECK IN
-		</NavLink>
-		<NavLink className="global" to="/the-bar" activeClassName="is-active">
-			THE BAR
-		</NavLink>
-		<NavLink
-			className="header-name"
-			to="/dashboard"
-			activeClassName="user-is-active"
-		>
-			Welcome {currentUser.username}
-		</NavLink>
-	</hgroup>
+  <hgroup className="header-group">
+    <button className="logout-button" onClick={logout}>
+      LOG OUT
+    </button>
+    <NavLink
+      className="my_watchlist"
+      to="/watchlist"
+      activeClassName="is-active"
+    >
+      My Watchlist
+    </NavLink>
+    <NavLink
+      className="header-name"
+      to="/dashboard"
+      activeClassName="user-is-active"
+    >
+      Welcome {currentUser.username}
+    </NavLink>
+    <div className="nav-bar">
+      <Link to={`/`} id="nameLink">
+        <h1 className="name">Penny Pincher</h1>
+      </Link>
+    </div>
+  </hgroup>
 );
 
 const NavBar = ({ currentUser, logout}) =>

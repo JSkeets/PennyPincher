@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171021234415) do
+ActiveRecord::Schema.define(version: 20171122022155) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20171021234415) do
     t.string "session_token", null: false
     t.boolean "premium", default: false, null: false
     t.string "email", null: false
-    t.integer "phone_number", null: false
+    t.bigint "phone_number", null: false
     t.string "fname", null: false
     t.string "lname", null: false
     t.datetime "created_at", null: false

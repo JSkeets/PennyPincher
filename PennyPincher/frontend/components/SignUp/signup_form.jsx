@@ -50,42 +50,46 @@ class SignUpForm extends React.Component {
 
   render() {
     return <div className="login-page">
-      <div className="form">
-        <form onSubmit={this.handleSubmit} className="signup-form-box">
-          Welcome to Straight Up
-          <br />
-          Create an account
-          <br />
-          <div className="login-form">
+        <div className="form">
+          <form onSubmit={this.handleSubmit} className="signup-form-box">
+            Welcome to Straight Up
             <br />
-
-            <input type="text" placeholder="username" value={this.state.username} onChange={this.update("username")} className="signup-input" />
-
+            Create an account
             <br />
+            <div className="login-form">
+              <br />
 
-            <input type="password" placeholder="password" value={this.state.password} onChange={this.update("password")} className="signup-input" />
+              <input type="text" placeholder="username" value={this.state.username} onChange={this.update("username")} className="signup-input" />
 
-            <br />
+              <br />
 
-            <input type="text" placeholder="email" value={this.state.email} onChange={this.update("email")} className="signup-input" />
+              <input type="password" placeholder="password" value={this.state.password} onChange={this.update("password")} className="signup-input" />
 
-            <br />
+              <br />
 
-            <input type="text" placeholder="phone number" value={this.state.phone_number} onChange={this.update("phone_number")} className="signup-input" />
+              <input type="email" placeholder="email" value={this.state.email} onChange={this.update("email")} className="signup-input" />
 
-            <br />
+              <br />
 
-            <input type="text" placeholder="first name" value={this.state.fname} onChange={this.update("fname")} className="signup-input" />
-            <input type="text" placeholder="last name" value={this.state.lname} onChange={this.update("lname")} className="signup-input" />
+              <input type="tel" placeholder="phone number" value={this.state.phone_number} onChange={this.update("phone_number")} className="signup-input" />
 
-            <br />
-            <div className="submit-button">
-              <button className="submit-button" type="submit">
-                SIGN UP
-              </button>
+              <br />
+
+              <input type="text" placeholder="first name" value={this.state.fname} onChange={this.update("fname")} className="signup-input" />
+              <input type="text" placeholder="last name" value={this.state.lname} onChange={this.update("lname")} className="signup-input" />
+
+              <br />
+              <div className="submit-button">
+                <button className="submit-button" type="submit">
+                  SIGN UP
+                </button>
+              </div>
+              <div className="signup-button">
+                Already have an account?&nbsp;
+                <Link to="/login">Log in!</Link>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
         </div>
       </div>;
   }

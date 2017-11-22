@@ -91224,7 +91224,7 @@ var LoginForm = function (_React$Component) {
                 _react2.default.createElement(
                   "div",
                   { className: "signup-button" },
-                  "Don't have an account?",
+                  "Don't have an account?\xA0",
                   _react2.default.createElement(
                     _reactRouterDom.Link,
                     { to: "/signup" },
@@ -91398,9 +91398,9 @@ var SignUpForm = function (_React$Component) {
               _react2.default.createElement("br", null),
               _react2.default.createElement("input", { type: "password", placeholder: "password", value: this.state.password, onChange: this.update("password"), className: "signup-input" }),
               _react2.default.createElement("br", null),
-              _react2.default.createElement("input", { type: "text", placeholder: "email", value: this.state.email, onChange: this.update("email"), className: "signup-input" }),
+              _react2.default.createElement("input", { type: "email", placeholder: "email", value: this.state.email, onChange: this.update("email"), className: "signup-input" }),
               _react2.default.createElement("br", null),
-              _react2.default.createElement("input", { type: "text", placeholder: "phone number", value: this.state.phone_number, onChange: this.update("phone_number"), className: "signup-input" }),
+              _react2.default.createElement("input", { type: "tel", placeholder: "phone number", value: this.state.phone_number, onChange: this.update("phone_number"), className: "signup-input" }),
               _react2.default.createElement("br", null),
               _react2.default.createElement("input", { type: "text", placeholder: "first name", value: this.state.fname, onChange: this.update("fname"), className: "signup-input" }),
               _react2.default.createElement("input", { type: "text", placeholder: "last name", value: this.state.lname, onChange: this.update("lname"), className: "signup-input" }),
@@ -91412,6 +91412,16 @@ var SignUpForm = function (_React$Component) {
                   "button",
                   { className: "submit-button", type: "submit" },
                   "SIGN UP"
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "signup-button" },
+                "Already have an account?\xA0",
+                _react2.default.createElement(
+                  _reactRouterDom.Link,
+                  { to: "/login" },
+                  "Log in!"
                 )
               )
             )

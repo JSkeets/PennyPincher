@@ -14,13 +14,12 @@
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
 #
-require 'valid_email'
 class User < ApplicationRecord
-  include ActiveModel::Validations
+
   validates :username, :session_token, :password_digest, presence:true
   validates :username, :session_token, uniqueness: true
   validates :password, length: {minimum: 6, allow_nil: true}
-  validates :email, :presence => true, :email => true
+
 
   after_initialize :ensure_session_token
 

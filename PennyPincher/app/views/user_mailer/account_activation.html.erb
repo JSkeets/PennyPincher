@@ -1,5 +1,11 @@
-<h1>User#account_activation</h1>
 
+<h1>Hi <%= @user.fname %>, </h1>
 <p>
-  <%= @greeting %>, find me in app/views/user_mailer/account_activation.html.erb
-</p>
+Welcome to the Penny Pincher! Click on the link below to activate your account:
+
+<a href=<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>>Here<a>
+
+Thank You,
+  Penny Pincher!
+
+  </p>

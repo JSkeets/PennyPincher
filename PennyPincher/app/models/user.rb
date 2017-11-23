@@ -28,7 +28,7 @@ class User < ApplicationRecord
   after_initialize :ensure_session_token
   attr_accessor :activation_token
 
-  attr_reader :password,:email
+  attr_reader :password
 
    def create_activation_digest
     # Create the token and digest.

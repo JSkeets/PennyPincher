@@ -15,6 +15,14 @@ export const createUser = (user) =>(
    $.ajax({
     method: "POST",
     url: "/api/users",
-    data: {user}
+    data: {user},
+    success: function(response) {
+    console.log("Response is ", response);
+    //When we get 200, this function should execute
+    window.location.href = "/#/thankyou";
+  },
+  error: function(error){
+    console.log("Error is ", error);
+  }
   })
 );

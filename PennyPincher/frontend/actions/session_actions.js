@@ -25,6 +25,6 @@ export const logout = () => dispatch =>
 
 export const createUser = user => dispatch =>
   SessionUtil.createUser(user).then(
-    res => (dispatch(receiveCurrentUser(res)), dispatch(login(user))),
+    res => (dispatch(receiveCurrentUser(res))),
     err => dispatch(receiveErrors(err.responseJSON))
   );

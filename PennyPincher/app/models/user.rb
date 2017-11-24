@@ -31,9 +31,9 @@ class User < ApplicationRecord
   attr_reader :password
 
    def create_activation_digest
-    # Create the token and digest.
-    self.activation_token  = User.generate_session_token
-    self.activation_digest = BCrypt::Password.create(activation_token)
+    if self.activation_digest.blank?
+        self.activation_digest = SecureRandom.urlsafe_base64.to_s
+    end
   end
 
   def self.find_by_credentials(username, password)
@@ -51,6 +51,7 @@ class User < ApplicationRecord
     BCrypt::Password.new(self.password_digest).is_password?(password)
   end
 
+
   def ensure_session_token
     self.session_token ||= User.generate_session_token
   end
@@ -59,6 +60,12 @@ class User < ApplicationRecord
     self.session_token = User.generate_session_token
     self.save!
     self.session_token
+  end
+
+  def email_activate
+    self.activated= true
+    self.activation_digest = nil
+    save!(:validate => false)
   end
 
   private

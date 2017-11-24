@@ -3,7 +3,8 @@ Hi <%= @user.fname %>,
 
 Welcome to the Penny Pincher! Click on the link below to activate your account:
 
-<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
+
+api/users/<%=(@user.activation_digest) %>
 
 Thank You,
   Penny Pincher!

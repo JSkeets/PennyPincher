@@ -4,8 +4,7 @@ class Api::UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       UserMailer.account_activation(@user).deliver_now
-      login!(@user)
-      render json: @user
+      redirect_to "/"
     else
       render json: @user.errors.full_messages, status: 422
     end
@@ -20,12 +19,25 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  def confirm_email
+    @user = User.find_by_activation_digest(params[:id])
+    if @user
+      @user.email_activate
+      flash[:success] = "Welcome to the Sample App! Your email has been confirmed.
+      Please sign in to continue."
+      redirect_to "/signin"
+    else
+      flash[:error] = "Sorry. User does not exist"
+      redirect_to "/"
+    end
+  end
+
   def index
     @users = User.all
     render "api/users/index"
   end
 
   def user_params
-    params.require(:user).permit(:username, :password, :email, :fname, :lname, :phone_number)
+    params.require(:user).permit(:id,:username, :password, :email, :fname, :lname, :phone_number, :activation_digest)
   end
 end

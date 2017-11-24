@@ -25,7 +25,7 @@ class Api::UsersController < ApplicationController
       @user.email_activate
       flash[:success] = "Welcome to the Sample App! Your email has been confirmed.
       Please sign in to continue."
-      redirect_to "/signin"
+      redirect_to "/#/login"
     else
       flash[:error] = "Sorry. User does not exist"
       redirect_to "/"

@@ -16,6 +16,8 @@
 #  activation_digest :string
 #  activated         :boolean
 #  activated_at      :datetime
+#  reset_digest      :string
+#  reset_sent_at     :datetime
 #
 
 class User < ApplicationRecord
@@ -26,14 +28,25 @@ class User < ApplicationRecord
 
   before_create :create_activation_digest
   after_initialize :ensure_session_token
-  attr_accessor :activation_token
+  attr_accessor :activation_token, :reset_token
 
   attr_reader :password
 
    def create_activation_digest
-    if self.activation_digest.blank?
-        self.activation_digest = SecureRandom.urlsafe_base64.to_s
-    end
+      if self.activation_digest.blank?
+          self.activation_digest = SecureRandom.urlsafe_base64.to_s
+      end
+   end
+
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_attribute(:reset_digest,  User.digest(reset_token))
+    update_attribute(:reset_sent_at, Time.zone.now)
+  end
+
+  # Sends password reset email.
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
   end
 
   def self.find_by_credentials(username, password)

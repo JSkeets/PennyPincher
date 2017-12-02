@@ -28,3 +28,8 @@ export const createUser = user => dispatch =>
     res => (dispatch(receiveCurrentUser(res))),
     err => dispatch(receiveErrors(err.responseJSON))
   );
+
+export const resetEmail = user => dispatch =>
+  SessionUtil.resetEmail(user).then(
+    res => console.log(res)
+  );

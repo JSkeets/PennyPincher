@@ -26,3 +26,11 @@ export const createUser = (user) =>(
   }
   })
 );
+
+export const resetEmail = (user) => (
+  $.ajax({
+    method:"POST",
+    url: "/password_resets",
+    data: {user}
+  })
+);

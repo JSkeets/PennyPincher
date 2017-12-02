@@ -43,6 +43,7 @@ class User < ApplicationRecord
                                                   BCrypt::Engine.cost
     BCrypt::Password.create(string, cost: cost)
   end
+
   def create_reset_digest
     self.reset_token = SecureRandom.urlsafe_base64.to_s
     update_attribute(:reset_digest,  User.digest(reset_token))

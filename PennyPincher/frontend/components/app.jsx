@@ -24,7 +24,7 @@ const App = () => (
     <Route exact path="/stocks/:stockTicker" component={StockShowContainer} />
     <Route exact path="/stocks/:stockTicker" component={ChartContainer} />
     <Route exact path="/forgot" component={ForgotPassword} />
-    <Route exact path="/reset" component={PasswordReset} />
+    <Route path="/password_resets" component={PasswordReset} />
   </div>
 );
 

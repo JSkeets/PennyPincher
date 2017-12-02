@@ -51154,7 +51154,7 @@ var App = function App() {
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/stocks/:stockTicker", component: _stock_show_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/stocks/:stockTicker", component: _chart_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/forgot", component: _forgot_password_container2.default }),
-    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/reset", component: _password_reset_container2.default })
+    _react2.default.createElement(_reactRouterDom.Route, { path: "/password_resets", component: _password_reset_container2.default })
   );
 };
 
@@ -91813,7 +91813,15 @@ var _password_reset2 = _interopRequireDefault(_password_reset);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var mapStateToProps = function mapStateToProps(state) {};
+var mapStateToProps = function mapStateToProps(state, ownProps) {
+  var length = ownProps.location.search.length;
+  var parsedEmail = decodeURIComponent(ownProps.location.search.slice(7));
+  var parsedId = decodeURIComponent(ownProps.location.pathname.split("/")[2]);
+  return {
+    email: parsedEmail,
+    id: parsedId
+  };
+};
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
@@ -91899,6 +91907,7 @@ var PasswordReset = function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      console.log(this.props);
       return _react2.default.createElement(
         "div",
         { className: "login-page" },
@@ -91927,6 +91936,10 @@ var PasswordReset = function (_React$Component) {
                 onChange: this.update("password")
               }),
               _react2.default.createElement("br", null),
+              _react2.default.createElement("input", {
+                type: "hidden",
+                value: this.stat
+              }),
               _react2.default.createElement("br", null),
               _react2.default.createElement("input", {
                 type: "password",

@@ -5,7 +5,7 @@ class PasswordReset extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      password: ""
+      password: "",
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -34,6 +34,7 @@ class PasswordReset extends React.Component {
   //   }
 
   render() {
+    console.log(this.props);
     return (
       <div className="login-page">
         <div className="form">
@@ -51,6 +52,10 @@ class PasswordReset extends React.Component {
                 onChange={this.update("password")}
               />
               <br />
+              <input
+                type="hidden"
+                value={this.stat}
+              />
               <br />
               <input
                 type="password"

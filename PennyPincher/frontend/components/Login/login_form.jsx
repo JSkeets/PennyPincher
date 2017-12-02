@@ -59,7 +59,7 @@ class LoginForm extends React.Component {
               <input type="password" placeholder="password" className="input-txt" value={this.state.password} onChange={this.update("password")} className="login-input" />
               <br />
               <div className="login-footer">
-                <Link to="/password_resets/new"> Forgot your password? </Link>
+                <Link to="/forgot"> Forgot your password? </Link>
                 <button type="submit" className="btn btn--right">
                   Sign in{" "}
                 </button>

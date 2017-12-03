@@ -34,3 +34,11 @@ export const resetEmail = (user) => (
     data: {user}
   })
 );
+
+export const resetPassword = (user) => (
+  $.ajax({
+    method:"PUT",
+    url: `/password_resets/${user.id}`,
+    data: {user}
+  })
+);

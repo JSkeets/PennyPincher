@@ -6,6 +6,8 @@ class PasswordReset extends React.Component {
     super(props);
     this.state = {
       password: "",
+      email: this.props.email,
+      id: this.props.id
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -54,7 +56,11 @@ class PasswordReset extends React.Component {
               <br />
               <input
                 type="hidden"
-                value={this.stat}
+                value={this.props.email}
+              />
+              <input
+                type="hidden"
+                value={this.props.id}
               />
               <br />
               <input

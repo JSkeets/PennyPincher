@@ -1,5 +1,6 @@
 class PasswordResetsController < ApplicationController
   def new
+    debugger
   end
 
   def create
@@ -16,5 +17,10 @@ class PasswordResetsController < ApplicationController
   end
 
   def edit
+    debugger
   end
+
+  def update
+    debugger
+  end 
 end

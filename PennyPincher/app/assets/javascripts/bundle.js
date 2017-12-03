@@ -7417,7 +7417,7 @@ module.exports = isObjectLike;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.resetEmail = exports.createUser = exports.logout = exports.login = exports.receiveErrors = exports.receiveCurrentUser = exports.RECEIVE_SESSION_ERRORS = exports.RECEIVE_CURRENT_USER = undefined;
+exports.resetPassword = exports.resetEmail = exports.createUser = exports.logout = exports.login = exports.receiveErrors = exports.receiveCurrentUser = exports.RECEIVE_SESSION_ERRORS = exports.RECEIVE_CURRENT_USER = undefined;
 
 var _session_api_util = __webpack_require__(559);
 
@@ -7473,6 +7473,14 @@ var createUser = exports.createUser = function createUser(user) {
 var resetEmail = exports.resetEmail = function resetEmail(user) {
   return function (dispatch) {
     return SessionUtil.resetEmail(user).then(function (res) {
+      return console.log(res);
+    });
+  };
+};
+
+var resetPassword = exports.resetPassword = function resetPassword(user) {
+  return function (dispatch) {
+    return SessionUtil.resetPassword(user).then(function (res) {
       return console.log(res);
     });
   };
@@ -47365,6 +47373,14 @@ var resetEmail = exports.resetEmail = function resetEmail(user) {
   return $.ajax({
     method: "POST",
     url: "/password_resets",
+    data: { user: user }
+  });
+};
+
+var resetPassword = exports.resetPassword = function resetPassword(user) {
+  return $.ajax({
+    method: "PUT",
+    url: "/password_resets/" + user.id,
     data: { user: user }
   });
 };
@@ -91871,7 +91887,9 @@ var PasswordReset = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (PasswordReset.__proto__ || Object.getPrototypeOf(PasswordReset)).call(this, props));
 
     _this.state = {
-      password: ""
+      password: "",
+      email: _this.props.email,
+      id: _this.props.id
     };
     _this.handleSubmit = _this.handleSubmit.bind(_this);
     return _this;
@@ -91938,7 +91956,11 @@ var PasswordReset = function (_React$Component) {
               _react2.default.createElement("br", null),
               _react2.default.createElement("input", {
                 type: "hidden",
-                value: this.stat
+                value: this.props.email
+              }),
+              _react2.default.createElement("input", {
+                type: "hidden",
+                value: this.props.id
               }),
               _react2.default.createElement("br", null),
               _react2.default.createElement("input", {

@@ -33,3 +33,8 @@ export const resetEmail = user => dispatch =>
   SessionUtil.resetEmail(user).then(
     res => console.log(res)
   );
+
+export const resetPassword = user => dispatch =>
+  SessionUtil.resetPassword(user).then(
+    res => console.log(res)
+  );

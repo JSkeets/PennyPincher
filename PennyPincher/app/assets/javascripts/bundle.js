@@ -47380,7 +47380,7 @@ var resetEmail = exports.resetEmail = function resetEmail(user) {
 var resetPassword = exports.resetPassword = function resetPassword(user) {
   return $.ajax({
     method: "PUT",
-    url: "/password_resets/" + user.id,
+    url: "/password_resets/:id",
     data: { user: user }
   });
 };
@@ -91888,10 +91888,13 @@ var PasswordReset = function (_React$Component) {
 
     _this.state = {
       password: "",
+      passwordConfirm: "",
       email: _this.props.email,
-      id: _this.props.id
+      id: _this.props.id,
+      match: false
     };
     _this.handleSubmit = _this.handleSubmit.bind(_this);
+    _this.passwordConfirm = _this.passwordConfirm.bind(_this);
     return _this;
   }
 
@@ -91909,7 +91912,19 @@ var PasswordReset = function (_React$Component) {
     value: function handleSubmit(e) {
       e.preventDefault();
       var user = this.state;
-      this.props.processForm(user);
+      console.log(this.passwordConfirm(this.state.password, this.state.passwordConfirm));
+      if (this.passwordConfirm(this.state.password, this.state.passwordConfirm)) {
+        this.props.processForm(user);
+      } else {
+        this.setState({ password: "", passwordConfirm: "" });
+        console.log(this.state);
+        console.log("Passwords must match");
+      }
+    }
+  }, {
+    key: "passwordConfirm",
+    value: function passwordConfirm(pw1, pw2) {
+      return pw1 == pw2;
     }
 
     //   renderErrors() {
@@ -91967,8 +91982,8 @@ var PasswordReset = function (_React$Component) {
                 type: "password",
                 placeholder: "confirm password",
                 className: "input-txt",
-                value: this.state.password,
-                onChange: this.update("password")
+                value: this.state.passwordConfirm,
+                onChange: this.update("passwordConfirm")
               }),
               _react2.default.createElement("br", null),
               _react2.default.createElement(

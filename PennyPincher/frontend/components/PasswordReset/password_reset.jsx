@@ -6,10 +6,13 @@ class PasswordReset extends React.Component {
     super(props);
     this.state = {
       password: "",
+      passwordConfirm: "",
       email: this.props.email,
-      id: this.props.id
+      id: this.props.id,
+      match: false
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.passwordConfirm = this.passwordConfirm.bind(this);
   }
 
   update(field) {
@@ -22,7 +25,18 @@ class PasswordReset extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    this.props.processForm(user);
+    console.log(this.passwordConfirm(this.state.password,this.state.passwordConfirm));
+    if (this.passwordConfirm(this.state.password,this.state.passwordConfirm)){
+      this.props.processForm(user);
+    } else {
+      this.setState({password: "", passwordConfirm: ""});
+      console.log(this.state);
+      console.log("Passwords must match");
+    }
+  }
+
+  passwordConfirm(pw1,pw2) {
+    return (pw1 == pw2);
   }
 
   //   renderErrors() {
@@ -67,8 +81,8 @@ class PasswordReset extends React.Component {
                 type="password"
                 placeholder="confirm password"
                 className="input-txt"
-                value={this.state.password}
-                onChange={this.update("password")}
+                value={this.state.passwordConfirm}
+                onChange={this.update("passwordConfirm")}
               />
               <br />
               <div className="login-footer">

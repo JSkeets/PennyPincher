@@ -38,7 +38,7 @@ export const resetEmail = (user) => (
 export const resetPassword = (user) => (
   $.ajax({
     method:"PUT",
-    url: `/password_resets/${user.id}`,
+    url: "/password_resets/:id",
     data: {user}
   })
 );

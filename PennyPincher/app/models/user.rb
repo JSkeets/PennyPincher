@@ -38,6 +38,10 @@ class User < ApplicationRecord
       end
    end
 
+  def password_reset_expired?
+    reset_sent_at < 2.hours.ago
+  end
+
   def self.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
                                                   BCrypt::Engine.cost

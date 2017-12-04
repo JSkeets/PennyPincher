@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resource :session, only: [:create,:destroy]
   end
   resources :password_resets,     only: [:new, :create, :edit, :update]
+
 namespace :api  do
 resources :users do
     member do

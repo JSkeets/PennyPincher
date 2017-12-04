@@ -25,14 +25,14 @@ class PasswordReset extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    console.log(this.passwordConfirm(this.state.password,this.state.passwordConfirm));
-    if (this.passwordConfirm(this.state.password,this.state.passwordConfirm)){
+    // console.log(this.passwordConfirm(this.state.password,this.state.passwordConfirm));
+    // if (this.passwordConfirm(this.state.password,this.state.passwordConfirm)){
       this.props.processForm(user);
-    } else {
-      this.setState({password: "", passwordConfirm: ""});
-      console.log(this.state);
-      console.log("Passwords must match");
-    }
+    // } else {
+    //   this.setState({password: "", passwordConfirm: ""});
+    //   console.log(this.state);
+    //   console.log("Passwords must match");
+    // }
   }
 
   passwordConfirm(pw1,pw2) {

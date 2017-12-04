@@ -7,6 +7,7 @@ import SignUpFormContainer from "../components/SignUp/signup_form_container.jsx"
 import ThankYou from "../components/SignUp/thankyou.jsx";
 import ForgotPassword from "../components/ForgotPassword/forgot_password_container.jsx";
 import PasswordReset from "../components/PasswordReset/password_reset_container.jsx";
+import EmailSent from "../components/PasswordReset/emailsent.jsx";
 
 import NavBar from "../components/NavBar/navbar_container";
 import { Route, Redirect, Switch, Link, HashRouter } from "react-router-dom";
@@ -24,6 +25,7 @@ const App = () => (
     <Route exact path="/stocks/:stockTicker" component={StockShowContainer} />
     <Route exact path="/stocks/:stockTicker" component={ChartContainer} />
     <Route exact path="/forgot" component={ForgotPassword} />
+    <Route exact path="/emailsent" component={EmailSent} />
     <Route path="/password_resets" component={PasswordReset} />
   </div>
 );

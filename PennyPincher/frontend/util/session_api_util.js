@@ -31,14 +31,22 @@ export const resetEmail = (user) => (
   $.ajax({
     method:"POST",
     url: "/password_resets",
-    data: {user}
+    data: {user},
+    success: function(response) {
+      window.location.href ="/#/emailsent";
+    }
   })
 );
 
-export const resetPassword = (user) => (
+export const resetPassword = (user) => {
+return (
   $.ajax({
     method:"PUT",
     url: "/password_resets/:id",
-    data: {user}
+    data: {user},
+    success: function(response) {
+      window.location.href ="/#/login";
+    }
   })
 );
+};

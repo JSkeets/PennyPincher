@@ -47373,7 +47373,10 @@ var resetEmail = exports.resetEmail = function resetEmail(user) {
   return $.ajax({
     method: "POST",
     url: "/password_resets",
-    data: { user: user }
+    data: { user: user },
+    success: function success(response) {
+      window.location.href = "/#/emailsent";
+    }
   });
 };
 
@@ -47381,7 +47384,10 @@ var resetPassword = exports.resetPassword = function resetPassword(user) {
   return $.ajax({
     method: "PUT",
     url: "/password_resets/:id",
-    data: { user: user }
+    data: { user: user },
+    success: function success(response) {
+      window.location.href = "/#/login";
+    }
   });
 };
 
@@ -51146,6 +51152,10 @@ var _password_reset_container = __webpack_require__(1012);
 
 var _password_reset_container2 = _interopRequireDefault(_password_reset_container);
 
+var _emailsent = __webpack_require__(1016);
+
+var _emailsent2 = _interopRequireDefault(_emailsent);
+
 var _navbar_container = __webpack_require__(1014);
 
 var _navbar_container2 = _interopRequireDefault(_navbar_container);
@@ -51170,6 +51180,7 @@ var App = function App() {
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/stocks/:stockTicker", component: _stock_show_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/stocks/:stockTicker", component: _chart_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/forgot", component: _forgot_password_container2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/emailsent", component: _emailsent2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { path: "/password_resets", component: _password_reset_container2.default })
   );
 };
@@ -91776,14 +91787,14 @@ var PasswordReset = function (_React$Component) {
     value: function handleSubmit(e) {
       e.preventDefault();
       var user = this.state;
-      console.log(this.passwordConfirm(this.state.password, this.state.passwordConfirm));
-      if (this.passwordConfirm(this.state.password, this.state.passwordConfirm)) {
-        this.props.processForm(user);
-      } else {
-        this.setState({ password: "", passwordConfirm: "" });
-        console.log(this.state);
-        console.log("Passwords must match");
-      }
+      // console.log(this.passwordConfirm(this.state.password,this.state.passwordConfirm));
+      // if (this.passwordConfirm(this.state.password,this.state.passwordConfirm)){
+      this.props.processForm(user);
+      // } else {
+      //   this.setState({password: "", passwordConfirm: ""});
+      //   console.log(this.state);
+      //   console.log("Passwords must match");
+      // }
     }
   }, {
     key: "passwordConfirm",
@@ -92007,6 +92018,35 @@ var NavBar = function NavBar(_ref) {
 };
 
 exports.default = NavBar;
+
+/***/ }),
+/* 1016 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(24);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var EmailSent = function EmailSent() {
+  return _react2.default.createElement(
+    "p",
+    null,
+    "Please check your email for a link to reset your password"
+  );
+};
+
+exports.default = EmailSent;
 
 /***/ })
 /******/ ]);

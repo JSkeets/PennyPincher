@@ -20874,14 +20874,13 @@ Object.defineProperty(exports, "__esModule", {
 var fetchAllStocks = exports.fetchAllStocks = function fetchAllStocks() {
 	return $.ajax({
 		method: "GET",
-		// url: `https://api.iextrading.com/1.0/tops`
 		url: "/stocks"
 	});
 };
 var fetchStock = exports.fetchStock = function fetchStock(symbol) {
 	return $.ajax({
 		method: "GET",
-		url: "https://api.iextrading.com/1.0/stock/" + symbol + "/batch?types=quote,stats,news,peers,chart&range=6m&last=50"
+		url: "/stocks/" + symbol
 	});
 };
 
@@ -69750,7 +69749,7 @@ var StockIndex = function (_React$Component) {
       this.props.fetchAllStocks();
       setTimeout(function () {
         return _this2.setState({ loading: false });
-      }, 2000);
+      }, 3000);
     }
   }, {
     key: "addPercents",

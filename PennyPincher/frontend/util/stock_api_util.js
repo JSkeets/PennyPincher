@@ -19,7 +19,8 @@
 export const fetchAllStocks = () => {
 	return $.ajax({
 		method: "GET",
-		url: `https://api.iextrading.com/1.0/tops`
+		// url: `https://api.iextrading.com/1.0/tops`
+		url: "/stocks"
 	});
 };
 export const fetchStock = symbol => {

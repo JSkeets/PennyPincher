@@ -23,7 +23,7 @@ class StockIndex extends React.Component {
   }
   componentDidMount() {
     this.props.fetchAllStocks();
-    setTimeout(() => this.setState({ loading: false }), 10000);
+    setTimeout(() => this.setState({ loading: false }), 2000);
   }
 
   addPercents() {

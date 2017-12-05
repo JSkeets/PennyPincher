@@ -69750,7 +69750,7 @@ var StockIndex = function (_React$Component) {
       this.props.fetchAllStocks();
       setTimeout(function () {
         return _this2.setState({ loading: false });
-      }, 10000);
+      }, 2000);
     }
   }, {
     key: "addPercents",

@@ -51194,8 +51194,12 @@ var App = function App() {
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/signup", component: _signup_form_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/login", component: _login_form_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/thankyou", component: _thankyou2.default }),
-    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/stocks/:stockTicker", component: _stock_show_container2.default }),
-    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/stocks/:stockTicker", component: _chart_container2.default }),
+    _react2.default.createElement(
+      "div",
+      { className: "stock-show-page" },
+      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/stocks/:stockTicker", component: _stock_show_container2.default }),
+      _react2.default.createElement("div", { className: "stock-show-chart" })
+    ),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/forgot", component: _forgot_password_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/emailsent", component: _emailsent2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { path: "/password_resets", component: _password_reset_container2.default })
@@ -51203,6 +51207,7 @@ var App = function App() {
 };
 
 exports.default = App;
+//  <Route exact path="/stocks/:stockTicker" component={ChartContainer} />;
 
 /***/ }),
 /* 600 */
@@ -51390,132 +51395,132 @@ var StockShow = function (_React$Component) {
 			console.log("PROPS", this.props);
 			return _react2.default.createElement(
 				"div",
-				null,
+				{ className: "stock-show" },
 				_react2.default.createElement(
 					"div",
-					{ className: "stock-show" },
+					{ className: "stock-basic-info" },
 					_react2.default.createElement(
 						"div",
-						{ className: "stock-show-div" },
+						{ id: "symbol" },
 						_react2.default.createElement(
-							"div",
-							{ className: "stock-show-div-header" },
-							_react2.default.createElement(
-								"div",
-								{ id: "symbol" },
-								_react2.default.createElement(
-									"i",
-									null,
-									"Symbol"
-								),
-								_react2.default.createElement(
-									"i",
-									null,
-									this.props.stocks[symbol].quote.symbol
-								)
-							),
-							_react2.default.createElement(
-								"div",
-								{ id: "company-name" },
-								_react2.default.createElement(
-									"i",
-									null,
-									"Company Name"
-								),
-								_react2.default.createElement(
-									"i",
-									null,
-									this.props.stocks[symbol].quote.companyName
-								)
-							),
-							_react2.default.createElement(
-								"div",
-								{ id: "price" },
-								_react2.default.createElement(
-									"i",
-									null,
-									"Current Price"
-								),
-								_react2.default.createElement(
-									"i",
-									null,
-									this.props.stocks[symbol].quote.latestPrice
-								)
-							),
-							_react2.default.createElement(
-								"div",
-								{ id: "volume" },
-								_react2.default.createElement(
-									"i",
-									null,
-									"Volume"
-								),
-								_react2.default.createElement(
-									"i",
-									null,
-									this.props.stocks[symbol].quote.latestVolume
-								)
-							),
-							_react2.default.createElement(
-								"div",
-								{ id: "percent-change", style: percStyle },
-								_react2.default.createElement(
-									"i",
-									null,
-									"Percent Change"
-								),
-								_react2.default.createElement(
-									"i",
-									null,
-									(this.props.stocks[symbol].quote.changePercent * 100).toFixed(2)
-								)
-							),
-							_react2.default.createElement(
-								"div",
-								{ id: "float" },
-								_react2.default.createElement(
-									"i",
-									null,
-									"Float"
-								),
-								_react2.default.createElement(
-									"i",
-									null,
-									this.props.stocks[symbol].stats.float
-								)
-							),
-							_react2.default.createElement(
-								"div",
-								{ id: "news-header" },
-								_react2.default.createElement(
-									"i",
-									null,
-									"Articles in the Last 5 Days"
-								),
-								_react2.default.createElement(
-									"i",
-									null,
-									recentNews.length
-								)
-							)
+							"i",
+							null,
+							"Symbol"
+						),
+						_react2.default.createElement(
+							"i",
+							null,
+							this.props.stocks[symbol].quote.symbol
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ id: "company-name" },
+						_react2.default.createElement(
+							"i",
+							null,
+							"Company Name"
+						),
+						_react2.default.createElement(
+							"i",
+							null,
+							this.props.stocks[symbol].quote.companyName
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ id: "price" },
+						_react2.default.createElement(
+							"i",
+							null,
+							"Current Price"
+						),
+						_react2.default.createElement(
+							"i",
+							null,
+							this.props.stocks[symbol].quote.latestPrice
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ id: "volume" },
+						_react2.default.createElement(
+							"i",
+							null,
+							"Volume"
+						),
+						_react2.default.createElement(
+							"i",
+							null,
+							this.props.stocks[symbol].quote.latestVolume
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ id: "percent-change", style: percStyle },
+						_react2.default.createElement(
+							"i",
+							null,
+							"Percent Change"
+						),
+						_react2.default.createElement(
+							"i",
+							null,
+							(this.props.stocks[symbol].quote.changePercent * 100).toFixed(2)
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ id: "float" },
+						_react2.default.createElement(
+							"i",
+							null,
+							"Float"
+						),
+						_react2.default.createElement(
+							"i",
+							null,
+							this.props.stocks[symbol].stats.float
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ id: "news-header" },
+						_react2.default.createElement(
+							"i",
+							null,
+							"Articles in the Last 5 Days"
+						),
+						_react2.default.createElement(
+							"i",
+							null,
+							recentNews.length
 						)
 					)
 				),
 				_react2.default.createElement(
-					"ul",
-					{ id: "news-index" },
-					"NEWS ARTICLES",
-					recentNews.map(function (news) {
-						return _react2.default.createElement(_news_index_item2.default, { key: news.datetime, news: news });
-					})
+					"div",
+					{ className: "stock-news" },
+					_react2.default.createElement(
+						"ul",
+						{ id: "news-index" },
+						"NEWS ARTICLES",
+						recentNews.map(function (news) {
+							return _react2.default.createElement(_news_index_item2.default, { key: news.datetime, news: news });
+						})
+					)
 				),
 				_react2.default.createElement(
-					"ul",
-					{ id: "tweets-index" },
-					"What are people saying on twitter?",
-					tweets.map(function (tweet) {
-						return _react2.default.createElement(_tweets_index_item2.default, { key: tweet.created_at, tweet: tweet });
-					})
+					"div",
+					{ className: "stock-tweets" },
+					_react2.default.createElement(
+						"ul",
+						{ id: "tweets-index" },
+						"What are people saying on twitter?",
+						tweets.map(function (tweet) {
+							return _react2.default.createElement(_tweets_index_item2.default, { key: tweet.created_at, tweet: tweet });
+						})
+					)
 				)
 			);
 		}
@@ -92171,7 +92176,8 @@ var TweetIndexItem = function TweetIndexItem(_ref) {
   return _react2.default.createElement(
     "li",
     null,
-    tweet.text,
+    tweet.full_text,
+    _react2.default.createElement("br", null),
     _react2.default.createElement("br", null)
   );
 };

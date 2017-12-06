@@ -1,24 +1,32 @@
 .stock-show {
 	padding: 20px;
-	float: left;
-	width: 200px;
-	max-width: 200px;
-	min-width: 0px;
 	height: 100%;
 	border-collapse: collapse;
-	display: table;
-}
-.stock-show-div {
 	display: flex;
 	flex-direction: column;
+	// display: table;
+}
+.stock-basic-info {
+	display:flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.stock-show-info {
+	display: flex;
+}
+.stock-show-page {
+	display: flex;
+}
+.stock-show-chart {
+	display: flex;
+}
+.stock-basic-info {
+	display: flex;
 	padding-bottom: 20px;
-}
-.stock-show-div-header {
-	display: flex;
-	justify-content: space-around;
-	flex-direction: column;
 	font-size: 20px;
+	align-self: center;
 }
+
 .stock-data {
 	display: flex;
 	justify-content: space-between;
@@ -44,14 +52,11 @@
 #news-header,
 #company-name {
 	display: flex;
-	flex-direction: column;
-	padding: 10px;
 	padding-top: none;
-	flex-basis: 100%;
+	flex-direction: column;
 }
 i {
 	padding: 5px;
-	flex: 1;
 }
 select#type {
 	display: none;
@@ -65,9 +70,6 @@ td {
 	border: 1px solid black;
 }
 #symbol {
-	border-right: solid;
-	border-color: gray;
-	border-width: 0.5px;
 	font-weight: 1400;
 }
 #company-name,
@@ -75,13 +77,9 @@ td {
 #volume,
 #percent-change,
 #float {
-	border-right: solid;
-	border-color: gray;
-	border-width: 0.5px;
+
 	font-weight: 1400;
 }
 #news-header {
-	border-right: solid;
-	border-color: gray;
 	border-width: 0.5px;
 }

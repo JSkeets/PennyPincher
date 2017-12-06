@@ -77,53 +77,53 @@ class StockShow extends React.Component {
 		let percStyle = this.percentUp();
 		console.log("PROPS",this.props);
 		return (
-			<div>
-				<div className="stock-show">
-					<div className="stock-show-div">
-						<div className="stock-show-div-header">
-							<div id="symbol">
-								<i>Symbol</i>
-								<i>{this.props.stocks[symbol].quote.symbol}</i>
-							</div>
-							<div id="company-name">
-								<i>Company Name</i>
-								<i>{this.props.stocks[symbol].quote.companyName}</i>
-							</div>
-							<div id="price">
-								<i>Current Price</i>
-								<i>{this.props.stocks[symbol].quote.latestPrice}</i>
-							</div>
-							<div id="volume">
-								<i>Volume</i>
-								<i>{this.props.stocks[symbol].quote.latestVolume}</i>
-							</div>
-							<div id="percent-change" style={percStyle}>
-								<i>Percent Change</i>
-								<i>{(this.props.stocks[symbol].quote.changePercent * 100).toFixed(2)}</i>
-							</div>
-							<div id="float">
-								<i>Float</i>
-								<i>{this.props.stocks[symbol].stats.float}</i>
-							</div>
-							<div id="news-header">
-								<i>Articles in the Last 5 Days</i>
-								<i>{recentNews.length}</i>
-							</div>
-						</div>
-					</div>
+			<div className="stock-show">
+							<div className="stock-basic-info">
+								<div id="symbol">
+									<i>Symbol</i>
+									<i>{this.props.stocks[symbol].quote.symbol}</i>
+								</div>
+								<div id="company-name">
+									<i>Company Name</i>
+									<i>{this.props.stocks[symbol].quote.companyName}</i>
+								</div>
+								<div id="price">
+									<i>Current Price</i>
+									<i>{this.props.stocks[symbol].quote.latestPrice}</i>
+								</div>
+								<div id="volume">
+									<i>Volume</i>
+									<i>{this.props.stocks[symbol].quote.latestVolume}</i>
+								</div>
+								<div id="percent-change" style={percStyle}>
+									<i>Percent Change</i>
+									<i>{(this.props.stocks[symbol].quote.changePercent * 100).toFixed(2)}</i>
+								</div>
+								<div id="float">
+									<i>Float</i>
+									<i>{this.props.stocks[symbol].stats.float}</i>
+								</div>
+								<div id="news-header">
+									<i>Articles in the Last 5 Days</i>
+									<i>{recentNews.length}</i>
+								</div>
 				</div>
+				<div className="stock-news">
 				<ul id="news-index">
 					NEWS ARTICLES
 					{recentNews.map(news => (
 						<NewsIndexItem key={news.datetime} news={news} />
 					))}
 				</ul>
+				</div>
+				<div className="stock-tweets">
 				<ul id="tweets-index">
 					What are people saying on twitter?
 					{tweets.map(tweet => (
 						<TweetsIndexItem key={tweet.created_at} tweet={tweet} />
 					))}
 				</ul>
+				</div>
 
 			</div>
 		);

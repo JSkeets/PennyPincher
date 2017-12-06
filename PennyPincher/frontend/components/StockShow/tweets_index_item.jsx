@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 const TweetIndexItem = ({ tweet }) => {
   return (
   <li >
-      {tweet.text}<br/>
+      {tweet.full_text}<br/>
+      <br/>
     </li>
   );
 };

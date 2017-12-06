@@ -2,6 +2,7 @@ import React from "react";
 import json2csv from "json2csv";
 import d3 from "d3";
 import NewsIndexItem from "./news_index_item";
+import TweetsIndexItem from "./tweets_index_item";
 import PeerIndexItem from "./peer_index_item";
 import ReactGA from "react-ga"; // https://github.com/react-ga/react-ga
 
@@ -10,6 +11,7 @@ class StockShow extends React.Component {
 		super(props);
 		this.loadStock = this.loadStock.bind(this);
 		this.date = this.date.bind(this);
+		this.loadTweets = this.loadTweets.bind(this);
 		this.recentNews = this.recentNews.bind(this);
 		this.percentUp = this.percentUp.bind(this);
 		ReactGA.initialize("UA-107597692-1");
@@ -18,9 +20,12 @@ class StockShow extends React.Component {
 	}
 	componentDidMount() {
 		this.loadStock();
+		this.loadTweets();
 		// setInterval(this.loadStock, 2000);
-		console.log(this.props);
-		// this.props.fetchTwitter("X");
+	}
+
+	loadTweets() {
+		this.props.fetchTweets(this.props.symbol);
 	}
 
 	loadStock() {
@@ -68,7 +73,9 @@ class StockShow extends React.Component {
 			return null;
 		}
 		let recentNews = this.recentNews();
+		let tweets = this.props.tweets[symbol].statuses;
 		let percStyle = this.percentUp();
+		console.log("PROPS",this.props);
 		return (
 			<div>
 				<div className="stock-show">
@@ -111,6 +118,13 @@ class StockShow extends React.Component {
 						<NewsIndexItem key={news.datetime} news={news} />
 					))}
 				</ul>
+				<ul id="tweets-index">
+					What are people saying on twitter?
+					{tweets.map(tweet => (
+						<TweetsIndexItem key={tweet.created_at} tweet={tweet} />
+					))}
+				</ul>
+
 			</div>
 		);
 	}

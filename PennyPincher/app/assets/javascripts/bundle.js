@@ -6236,18 +6236,21 @@ module.exports = DOMLazyTree;
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.fetchAllStocks = exports.fetchStock = exports.RECEIVE_ALL_STOCKS = exports.RECEIVE_STOCK = undefined;
+exports.fetchTweets = exports.fetchAllStocks = exports.fetchStock = exports.RECEIVE_TWEETS = exports.RECEIVE_ALL_STOCKS = exports.RECEIVE_STOCK = undefined;
 
 var _stock_api_util = __webpack_require__(234);
 
 var StocksUtil = _interopRequireWildcard(_stock_api_util);
 
+var _twitter_api_util = __webpack_require__(1017);
+
+var TweetUtil = _interopRequireWildcard(_twitter_api_util);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 var RECEIVE_STOCK = exports.RECEIVE_STOCK = "RECEIVE_STOCK";
 var RECEIVE_ALL_STOCKS = exports.RECEIVE_ALL_STOCKS = "RECEIVE_ALL_STOCKS";
-
-// const fetchTwitter = require("../util/twitter_api_util");
+var RECEIVE_TWEETS = exports.RECEIVE_TWEETS = "RECEIVE_TWEETS";
 
 var receiveStock = function receiveStock(stock) {
 	return { type: RECEIVE_STOCK, stock: stock };
@@ -6255,6 +6258,10 @@ var receiveStock = function receiveStock(stock) {
 
 var receiveAllStocks = function receiveAllStocks(stocks) {
 	return { type: RECEIVE_ALL_STOCKS, stocks: stocks };
+};
+
+var receiveTweets = function receiveTweets(res, hashtag) {
+	return { type: RECEIVE_TWEETS, res: res, hashtag: hashtag };
 };
 
 var fetchStock = exports.fetchStock = function fetchStock(stock) {
@@ -6273,10 +6280,13 @@ var fetchAllStocks = exports.fetchAllStocks = function fetchAllStocks() {
 	};
 };
 
-// export const fetchTweets = hashtag => dispatch => {
-// 	debugger;
-// 	fetchTwitter(hashtag).then(res => dispatch(receiveStock(res)));
-// };
+var fetchTweets = exports.fetchTweets = function fetchTweets(hashtag) {
+	return function (dispatch) {
+		TweetUtil.fetchTweets(hashtag).then(function (res) {
+			return dispatch(receiveTweets(res, hashtag));
+		});
+	};
+};
 
 // fetchTwitter("X");
 
@@ -45214,10 +45224,15 @@ var _stocks_reducer = __webpack_require__(493);
 
 var _stocks_reducer2 = _interopRequireDefault(_stocks_reducer);
 
+var _tweets_reducer = __webpack_require__(1018);
+
+var _tweets_reducer2 = _interopRequireDefault(_tweets_reducer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var EntitiesReducer = (0, _redux.combineReducers)({
-	stocks: _stocks_reducer2.default
+	stocks: _stocks_reducer2.default,
+	tweets: _tweets_reducer2.default
 });
 
 exports.default = EntitiesReducer;
@@ -45235,9 +45250,9 @@ Object.defineProperty(exports, "__esModule", {
 
 var _stock_actions = __webpack_require__(54);
 
-var _merge2 = __webpack_require__(235);
+var _merge3 = __webpack_require__(235);
 
-var _merge3 = _interopRequireDefault(_merge2);
+var _merge4 = _interopRequireDefault(_merge3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -45251,9 +45266,11 @@ var StocksReducer = function StocksReducer() {
 	var newState = {};
 	switch (action.type) {
 		case _stock_actions.RECEIVE_STOCK:
-			return (0, _merge3.default)({}, state, _defineProperty({}, action.stock.quote.symbol, action.stock));
+			return (0, _merge4.default)({}, state, _defineProperty({}, action.stock.quote.symbol, action.stock));
 		case _stock_actions.RECEIVE_ALL_STOCKS:
-			return (0, _merge3.default)({}, state, action.stocks);
+			return (0, _merge4.default)({}, state, action.stocks);
+		case _stock_actions.RECEIVE_TWEETS:
+			return (0, _merge4.default)({}, state, _defineProperty({}, action.hashtag, action.res));
 		default:
 			return state;
 	}
@@ -51206,13 +51223,12 @@ var _stock_show2 = _interopRequireDefault(_stock_show);
 
 var _stock_actions = __webpack_require__(54);
 
-var _stock_actions2 = _interopRequireDefault(_stock_actions);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
 	return {
 		stocks: state.entities.stocks,
+		tweets: state.entities.tweets,
 		symbol: ownProps.match.params.stockTicker
 	};
 };
@@ -51224,8 +51240,10 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 		},
 		fetchAllStocks: function fetchAllStocks() {
 			return dispatch((0, _stock_actions.fetchAllStocks)());
+		},
+		fetchTweets: function fetchTweets(hashtag) {
+			return dispatch((0, _stock_actions.fetchTweets)(hashtag));
 		}
-		// fetchTwitter: hashtag => dispatch(fetchTweets(hashtag))
 	};
 };
 
@@ -51260,6 +51278,10 @@ var _news_index_item = __webpack_require__(896);
 
 var _news_index_item2 = _interopRequireDefault(_news_index_item);
 
+var _tweets_index_item = __webpack_require__(1019);
+
+var _tweets_index_item2 = _interopRequireDefault(_tweets_index_item);
+
 var _peer_index_item = __webpack_require__(897);
 
 var _peer_index_item2 = _interopRequireDefault(_peer_index_item);
@@ -51288,6 +51310,7 @@ var StockShow = function (_React$Component) {
 
 		_this.loadStock = _this.loadStock.bind(_this);
 		_this.date = _this.date.bind(_this);
+		_this.loadTweets = _this.loadTweets.bind(_this);
 		_this.recentNews = _this.recentNews.bind(_this);
 		_this.percentUp = _this.percentUp.bind(_this);
 		_reactGa2.default.initialize("UA-107597692-1");
@@ -51300,9 +51323,13 @@ var StockShow = function (_React$Component) {
 		key: "componentDidMount",
 		value: function componentDidMount() {
 			this.loadStock();
+			this.loadTweets();
 			// setInterval(this.loadStock, 2000);
-			console.log(this.props);
-			// this.props.fetchTwitter("X");
+		}
+	}, {
+		key: "loadTweets",
+		value: function loadTweets() {
+			this.props.fetchTweets(this.props.symbol);
 		}
 	}, {
 		key: "loadStock",
@@ -51358,7 +51385,9 @@ var StockShow = function (_React$Component) {
 				return null;
 			}
 			var recentNews = this.recentNews();
+			var tweets = this.props.tweets[symbol].statuses;
 			var percStyle = this.percentUp();
+			console.log("PROPS", this.props);
 			return _react2.default.createElement(
 				"div",
 				null,
@@ -51478,6 +51507,14 @@ var StockShow = function (_React$Component) {
 					"NEWS ARTICLES",
 					recentNews.map(function (news) {
 						return _react2.default.createElement(_news_index_item2.default, { key: news.datetime, news: news });
+					})
+				),
+				_react2.default.createElement(
+					"ul",
+					{ id: "tweets-index" },
+					"What are people saying on twitter?",
+					tweets.map(function (tweet) {
+						return _react2.default.createElement(_tweets_index_item2.default, { key: tweet.created_at, tweet: tweet });
 					})
 				)
 			);
@@ -92047,6 +92084,104 @@ var NavBar = function NavBar(_ref) {
 };
 
 exports.default = NavBar;
+
+/***/ }),
+/* 1017 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+// let request = require("request");
+// let twitter_api = "https://api.twitter.com/1.1/search/tweets.json?q=%23";
+
+// let bearer_token =
+// 	"AAAAAAAAAAAAAAAAAAAAADgf2wAAAAAAi%2FgY9%2B5jezau37ibeFpO9Mfi2MI%3DhutwBYMg37ZGvYMx0VdMHOhyqB85pJ3ywLbVuPYjzr2rdrLdZH"; // the token you got in the last step
+
+
+var fetchTweets = exports.fetchTweets = function fetchTweets(symbol) {
+  return $.ajax({
+    method: "GET",
+    url: "/tweets/" + symbol
+  });
+};
+
+/***/ }),
+/* 1018 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _stock_actions = __webpack_require__(54);
+
+var _merge2 = __webpack_require__(235);
+
+var _merge3 = _interopRequireDefault(_merge2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var TweetsReducer = function TweetsReducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var action = arguments[1];
+
+  Object.freeze(state);
+  var newState = {};
+  switch (action.type) {
+    case _stock_actions.RECEIVE_TWEETS:
+      return (0, _merge3.default)({}, state, _defineProperty({}, action.hashtag, action.res));
+    default:
+      return state;
+  }
+};
+
+exports.default = TweetsReducer;
+
+/***/ }),
+/* 1019 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(21);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var TweetIndexItem = function TweetIndexItem(_ref) {
+  var tweet = _ref.tweet;
+
+  return _react2.default.createElement(
+    "li",
+    null,
+    tweet.text,
+    _react2.default.createElement("br", null)
+  );
+};
+
+exports.default = TweetIndexItem;
+//   <li className="news-index-item">
+//       <a href={`${news.url}`}>{news.headline}</a>&nbsp;&nbsp;
+//       {news.datetime.slice(0, 10)}&nbsp;&nbsp;
+//       {news.source}&nbsp;
+//     </li>
 
 /***/ })
 /******/ ]);

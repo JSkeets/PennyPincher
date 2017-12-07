@@ -6,6 +6,7 @@ import TweetsIndexItem from "./tweets_index_item";
 import PeerIndexItem from "./peer_index_item";
 import ChartComponent from "./chart_component";
 import ReactGA from "react-ga"; // https://github.com/react-ga/react-ga
+import Collapsible from "react-collapsible";
 
 
 class StockShow extends React.Component {
@@ -115,22 +116,25 @@ class StockShow extends React.Component {
 									<ChartComponent stocks={this.props.stocks} symbol={this.props.stocks[symbol].quote.symbol} />
 								</div>
 			<div className="tweets-news-wrapper">
-				<div className="stock-news">
-				<ul id="news-index">
-					NEWS ARTICLES
-					{recentNews.map(news => (
-						<NewsIndexItem key={news.datetime} news={news} />
-					))}
-				</ul>
-				</div>
-				<div className="stock-tweets">
-				<ul id="tweets-index">
-					What are people saying on twitter?
-					{tweets.map(tweet => (
-						<TweetsIndexItem key={tweet.created_at} tweet={tweet} />
-					))}
-				</ul>
-				</div>
+					<div className="stock-news">
+						<ul id="news-index">
+				<Collapsible trigger="NEWS ARTICLES">
+							{recentNews.map(news => (
+								<NewsIndexItem key={news.datetime} news={news} />
+							))}
+				</Collapsible>
+						</ul>
+					</div>
+				<Collapsible trigger="Tweets">
+					<div className="stock-tweets">
+					<ul id="tweets-index">
+						What are people saying on twitter?
+						{tweets.map(tweet => (
+							<TweetsIndexItem key={tweet.created_at} tweet={tweet} />
+						))}
+					</ul>
+					</div>
+				</Collapsible>
 			</div>
 			</div>
 		</div>

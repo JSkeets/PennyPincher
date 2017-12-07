@@ -1,7 +1,6 @@
 import React from "react";
 import StockShowContainer from "../components/StockShow/stock_show_container";
 import StockIndexContainer from "../components/StockIndex/stock_index_container";
-import ChartContainer from "../components/ChartComponent/chart_container";
 import LoginFormContainer from "../components/Login/login_form_container";
 import SignUpFormContainer from "../components/SignUp/signup_form_container.jsx";
 import ThankYou from "../components/SignUp/thankyou.jsx";

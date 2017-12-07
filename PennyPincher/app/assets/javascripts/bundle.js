@@ -70,7 +70,7 @@
 "use strict";
 
 
-module.exports = __webpack_require__(51);
+module.exports = __webpack_require__(50);
 
 
 /***/ }),
@@ -553,7 +553,7 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var _rebind = __webpack_require__(980);
+var _rebind = __webpack_require__(931);
 
 Object.defineProperty(exports, "rebind", {
 	enumerable: true,
@@ -562,7 +562,7 @@ Object.defineProperty(exports, "rebind", {
 	}
 });
 
-var _zipper = __webpack_require__(374);
+var _zipper = __webpack_require__(354);
 
 Object.defineProperty(exports, "zipper", {
 	enumerable: true,
@@ -571,7 +571,7 @@ Object.defineProperty(exports, "zipper", {
 	}
 });
 
-var _merge = __webpack_require__(981);
+var _merge = __webpack_require__(932);
 
 Object.defineProperty(exports, "merge", {
 	enumerable: true,
@@ -580,7 +580,7 @@ Object.defineProperty(exports, "merge", {
 	}
 });
 
-var _slidingWindow = __webpack_require__(982);
+var _slidingWindow = __webpack_require__(933);
 
 Object.defineProperty(exports, "slidingWindow", {
 	enumerable: true,
@@ -607,7 +607,7 @@ Object.defineProperty(exports, "noop", {
 	}
 });
 
-var _shallowEqual = __webpack_require__(375);
+var _shallowEqual = __webpack_require__(355);
 
 Object.defineProperty(exports, "shallowEqual", {
 	enumerable: true,
@@ -616,7 +616,7 @@ Object.defineProperty(exports, "shallowEqual", {
 	}
 });
 
-var _mappedSlidingWindow = __webpack_require__(983);
+var _mappedSlidingWindow = __webpack_require__(934);
 
 Object.defineProperty(exports, "mappedSlidingWindow", {
 	enumerable: true,
@@ -625,7 +625,7 @@ Object.defineProperty(exports, "mappedSlidingWindow", {
 	}
 });
 
-var _accumulatingWindow = __webpack_require__(984);
+var _accumulatingWindow = __webpack_require__(935);
 
 Object.defineProperty(exports, "accumulatingWindow", {
 	enumerable: true,
@@ -634,7 +634,7 @@ Object.defineProperty(exports, "accumulatingWindow", {
 	}
 });
 
-var _PureComponent = __webpack_require__(985);
+var _PureComponent = __webpack_require__(936);
 
 Object.defineProperty(exports, "PureComponent", {
 	enumerable: true,
@@ -643,7 +643,7 @@ Object.defineProperty(exports, "PureComponent", {
 	}
 });
 
-var _barWidth = __webpack_require__(986);
+var _barWidth = __webpack_require__(937);
 
 Object.keys(_barWidth).forEach(function (key) {
 	if (key === "default" || key === "__esModule") return;
@@ -655,7 +655,7 @@ Object.keys(_barWidth).forEach(function (key) {
 	});
 });
 
-var _strokeDasharray = __webpack_require__(987);
+var _strokeDasharray = __webpack_require__(938);
 
 Object.keys(_strokeDasharray).forEach(function (key) {
 	if (key === "default" || key === "__esModule") return;
@@ -711,7 +711,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 function getLogger(prefix) {
 	var logger = _noop2.default;
 	if (process.env.NODE_ENV !== "production") {
-		logger = __webpack_require__(371)("react-stockcharts:" + prefix);
+		logger = __webpack_require__(351)("react-stockcharts:" + prefix);
 	}
 	return logger;
 }
@@ -1327,7 +1327,7 @@ var _temp = function () {
 
 var _prodInvariant = __webpack_require__(6);
 
-var DOMProperty = __webpack_require__(39);
+var DOMProperty = __webpack_require__(38);
 var ReactDOMComponentFlags = __webpack_require__(206);
 
 var invariant = __webpack_require__(3);
@@ -2287,27 +2287,27 @@ function getMouseCanvas(contexts) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_d3_array__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__noop__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__identity__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__rebind__ = __webpack_require__(961);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__rebind__ = __webpack_require__(912);
 /* unused harmony reexport rebind */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__zipper__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__zipper__ = __webpack_require__(349);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "B", function() { return __WEBPACK_IMPORTED_MODULE_5__zipper__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__merge__ = __webpack_require__(962);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__merge__ = __webpack_require__(913);
 /* unused harmony reexport merge */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__slidingWindow__ = __webpack_require__(963);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__slidingWindow__ = __webpack_require__(914);
 /* unused harmony reexport slidingWindow */
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return __WEBPACK_IMPORTED_MODULE_3__identity__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return __WEBPACK_IMPORTED_MODULE_2__noop__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shallowEqual__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shallowEqual__ = __webpack_require__(350);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return __WEBPACK_IMPORTED_MODULE_8__shallowEqual__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__mappedSlidingWindow__ = __webpack_require__(964);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__mappedSlidingWindow__ = __webpack_require__(915);
 /* unused harmony reexport mappedSlidingWindow */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__accumulatingWindow__ = __webpack_require__(965);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__accumulatingWindow__ = __webpack_require__(916);
 /* unused harmony reexport accumulatingWindow */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__PureComponent__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__PureComponent__ = __webpack_require__(194);
 /* unused harmony reexport PureComponent */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__barWidth__ = __webpack_require__(966);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__barWidth__ = __webpack_require__(917);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__strokeDasharray__ = __webpack_require__(967);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__strokeDasharray__ = __webpack_require__(918);
 /* unused harmony namespace reexport */
 
 
@@ -2341,7 +2341,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 function getLogger(prefix) {
 	var logger = __WEBPACK_IMPORTED_MODULE_2__noop__["a" /* default */];
 	if (process.env.NODE_ENV !== "production") {
-		logger = __webpack_require__(371)("react-stockcharts:" + prefix);
+		logger = __webpack_require__(351)("react-stockcharts:" + prefix);
 	}
 	return logger;
 }
@@ -3029,7 +3029,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 
-var _prodInvariant = __webpack_require__(52);
+var _prodInvariant = __webpack_require__(51);
 
 var ReactCurrentOwner = __webpack_require__(31);
 
@@ -3727,7 +3727,7 @@ Selection.prototype = selection.prototype = {
 /* harmony export (immutable) */ __webpack_exports__["g"] = init;
 /* harmony export (immutable) */ __webpack_exports__["h"] = set;
 /* harmony export (immutable) */ __webpack_exports__["f"] = get;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_dispatch__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_dispatch__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_d3_timer__ = __webpack_require__(108);
 
 
@@ -4124,7 +4124,7 @@ var _prodInvariant = __webpack_require__(6),
 var CallbackQueue = __webpack_require__(210);
 var PooledClass = __webpack_require__(44);
 var ReactFeatureFlags = __webpack_require__(211);
-var ReactReconciler = __webpack_require__(53);
+var ReactReconciler = __webpack_require__(52);
 var Transaction = __webpack_require__(93);
 
 var invariant = __webpack_require__(3);
@@ -4834,25 +4834,6 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(569);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(253);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(572);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
-
-
-
-
-
-
-/***/ }),
-/* 38 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return durationSecond; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return durationMinute; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return durationHour; });
@@ -4866,7 +4847,7 @@ var durationWeek = 6048e5;
 
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5077,6 +5058,25 @@ var DOMProperty = {
 
 module.exports = DOMProperty;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 39 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(569);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(572);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
+
+
+
+
+
 
 /***/ }),
 /* 40 */
@@ -5652,70 +5652,6 @@ module.exports = PooledClass;
 
 /***/ }),
 /* 45 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-exports.fetchTweets = exports.fetchAllStocks = exports.fetchStock = exports.RECEIVE_TWEETS = exports.RECEIVE_ALL_STOCKS = exports.RECEIVE_STOCK = undefined;
-
-var _stock_api_util = __webpack_require__(235);
-
-var StocksUtil = _interopRequireWildcard(_stock_api_util);
-
-var _twitter_api_util = __webpack_require__(497);
-
-var TweetUtil = _interopRequireWildcard(_twitter_api_util);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-var RECEIVE_STOCK = exports.RECEIVE_STOCK = "RECEIVE_STOCK";
-var RECEIVE_ALL_STOCKS = exports.RECEIVE_ALL_STOCKS = "RECEIVE_ALL_STOCKS";
-var RECEIVE_TWEETS = exports.RECEIVE_TWEETS = "RECEIVE_TWEETS";
-
-var receiveStock = function receiveStock(stock) {
-	return { type: RECEIVE_STOCK, stock: stock };
-};
-
-var receiveAllStocks = function receiveAllStocks(stocks) {
-	return { type: RECEIVE_ALL_STOCKS, stocks: stocks };
-};
-
-var receiveTweets = function receiveTweets(res, hashtag) {
-	return { type: RECEIVE_TWEETS, res: res, hashtag: hashtag };
-};
-
-var fetchStock = exports.fetchStock = function fetchStock(stock) {
-	return function (dispatch) {
-		return StocksUtil.fetchStock(stock).then(function (res) {
-			return dispatch(receiveStock(res));
-		});
-	};
-};
-
-var fetchAllStocks = exports.fetchAllStocks = function fetchAllStocks() {
-	return function (dispatch) {
-		StocksUtil.fetchAllStocks().then(function (res) {
-			return dispatch(receiveAllStocks(res));
-		});
-	};
-};
-
-var fetchTweets = exports.fetchTweets = function fetchTweets(hashtag) {
-	return function (dispatch) {
-		TweetUtil.fetchTweets(hashtag).then(function (res) {
-			return dispatch(receiveTweets(res, hashtag));
-		});
-	};
-};
-
-// fetchTwitter("X");
-
-/***/ }),
-/* 46 */
 /***/ (function(module, exports) {
 
 /**
@@ -5752,7 +5688,7 @@ module.exports = isObject;
 
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5762,7 +5698,7 @@ module.exports = isObject;
 
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5838,7 +5774,7 @@ function streamPolygon(coordinates, stream) {
 
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5851,7 +5787,7 @@ var slice = array.slice;
 
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5863,7 +5799,7 @@ var slice = array.slice;
 
 
 /***/ }),
-/* 51 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5999,7 +5935,7 @@ module.exports = React;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 52 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6041,7 +5977,7 @@ function reactProdInvariant(code) {
 module.exports = reactProdInvariant;
 
 /***/ }),
-/* 53 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6211,7 +6147,7 @@ module.exports = ReactReconciler;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 54 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6330,6 +6266,70 @@ DOMLazyTree.queueHTML = queueHTML;
 DOMLazyTree.queueText = queueText;
 
 module.exports = DOMLazyTree;
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.fetchTweets = exports.fetchAllStocks = exports.fetchStock = exports.RECEIVE_TWEETS = exports.RECEIVE_ALL_STOCKS = exports.RECEIVE_STOCK = undefined;
+
+var _stock_api_util = __webpack_require__(235);
+
+var StocksUtil = _interopRequireWildcard(_stock_api_util);
+
+var _twitter_api_util = __webpack_require__(497);
+
+var TweetUtil = _interopRequireWildcard(_twitter_api_util);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+var RECEIVE_STOCK = exports.RECEIVE_STOCK = "RECEIVE_STOCK";
+var RECEIVE_ALL_STOCKS = exports.RECEIVE_ALL_STOCKS = "RECEIVE_ALL_STOCKS";
+var RECEIVE_TWEETS = exports.RECEIVE_TWEETS = "RECEIVE_TWEETS";
+
+var receiveStock = function receiveStock(stock) {
+	return { type: RECEIVE_STOCK, stock: stock };
+};
+
+var receiveAllStocks = function receiveAllStocks(stocks) {
+	return { type: RECEIVE_ALL_STOCKS, stocks: stocks };
+};
+
+var receiveTweets = function receiveTweets(res, hashtag) {
+	return { type: RECEIVE_TWEETS, res: res, hashtag: hashtag };
+};
+
+var fetchStock = exports.fetchStock = function fetchStock(stock) {
+	return function (dispatch) {
+		return StocksUtil.fetchStock(stock).then(function (res) {
+			return dispatch(receiveStock(res));
+		});
+	};
+};
+
+var fetchAllStocks = exports.fetchAllStocks = function fetchAllStocks() {
+	return function (dispatch) {
+		StocksUtil.fetchAllStocks().then(function (res) {
+			return dispatch(receiveAllStocks(res));
+		});
+	};
+};
+
+var fetchTweets = exports.fetchTweets = function fetchTweets(hashtag) {
+	return function (dispatch) {
+		TweetUtil.fetchTweets(hashtag).then(function (res) {
+			return dispatch(receiveTweets(res, hashtag));
+		});
+	};
+};
+
+// fetchTwitter("X");
 
 /***/ }),
 /* 55 */
@@ -10591,7 +10591,7 @@ TransformStream.prototype = {
 /* harmony export (immutable) */ __webpack_exports__["b"] = continuous;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_array__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_d3_interpolate__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__array__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__array__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constant__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__number__ = __webpack_require__(327);
 
@@ -11874,7 +11874,7 @@ module.exports = getEventModifierState;
 
 
 
-var DOMLazyTree = __webpack_require__(54);
+var DOMLazyTree = __webpack_require__(53);
 var Danger = __webpack_require__(413);
 var ReactDOMComponentTree = __webpack_require__(11);
 var ReactInstrumentation = __webpack_require__(23);
@@ -12167,7 +12167,7 @@ var _prodInvariant = __webpack_require__(6);
 var ReactPropTypesSecret = __webpack_require__(219);
 var propTypesFactory = __webpack_require__(204);
 
-var React = __webpack_require__(51);
+var React = __webpack_require__(50);
 var PropTypes = propTypesFactory(React.isValidElement);
 
 var invariant = __webpack_require__(3);
@@ -13326,7 +13326,7 @@ module.exports = getNative;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(101),
-    isObject = __webpack_require__(46);
+    isObject = __webpack_require__(45);
 
 /** `Object#toString` result references. */
 var asyncTag = '[object AsyncFunction]',
@@ -15123,7 +15123,7 @@ function conicProjection(projectAt) {
 /* harmony export (immutable) */ __webpack_exports__["c"] = fitSize;
 /* harmony export (immutable) */ __webpack_exports__["d"] = fitWidth;
 /* harmony export (immutable) */ __webpack_exports__["b"] = fitHeight;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stream__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__stream__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__path_bounds__ = __webpack_require__(315);
 
 
@@ -15438,7 +15438,7 @@ function squarifyRatio(ratio, parent, x0, y0, x1, y1) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_collection__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_d3_dispatch__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_d3_dispatch__ = __webpack_require__(46);
 
 
 
@@ -15784,7 +15784,7 @@ function defaultLocale(definition) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_path__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constant__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constant__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__curve_linear__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__point__ = __webpack_require__(189);
 
@@ -16406,193 +16406,12 @@ function clipEdges(x0, y0, x1, y1) {
 
 /***/ }),
 /* 194 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
-    if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-    } else if (typeof exports !== "undefined") {
-        factory(exports);
-    } else {
-        var mod = {
-            exports: {}
-        };
-        factory(mod.exports);
-        global.sAlertTools = mod.exports;
-    }
-})(this, function (exports) {
-    'use strict';
-
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
-
-    var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
-        return typeof obj;
-    } : function (obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-
-    var actualGlobalConfig = void 0;
-
-    var sAlertTools = {
-        randomId: function randomId() {
-            return Math.random().toString(36).split('.')[1];
-        },
-        returnFirstDefined: function returnFirstDefined() {
-            var value = void 0;
-            var i = void 0;
-
-            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-                args[_key] = arguments[_key];
-            }
-
-            for (i = 0; i < args.length; i++) {
-                if (typeof args[i] !== 'undefined') {
-                    value = args[i];
-                    break;
-                }
-            }
-            return value;
-        },
-        styleToObj: function styleToObj(input) {
-            var result = {},
-                i = void 0,
-                entry = void 0,
-                attributes = input && input.split(';').filter(Boolean);
-
-            for (i = 0; i < attributes.length; i++) {
-                entry = attributes[i].split(':');
-                result[entry.splice(0, 1)[0].trim()] = entry.join(':').trim();
-            }
-            return result;
-        },
-        setGlobalConfig: function setGlobalConfig(config) {
-            if ((typeof config === 'undefined' ? 'undefined' : _typeof(config)) === 'object') {
-                actualGlobalConfig = config;
-            }
-        },
-        getGlobalConfig: function getGlobalConfig() {
-            return actualGlobalConfig;
-        }
-    };
-
-    exports.default = sAlertTools;
-});
-
-/***/ }),
-/* 195 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
-    if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-    } else if (typeof exports !== "undefined") {
-        factory(exports);
-    } else {
-        var mod = {
-            exports: {}
-        };
-        factory(mod.exports);
-        global.sAlertStore = mod.exports;
-    }
-})(this, function (exports) {
-    'use strict';
-
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
-
-    function _toConsumableArray(arr) {
-        if (Array.isArray(arr)) {
-            for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
-                arr2[i] = arr[i];
-            }
-
-            return arr2;
-        } else {
-            return Array.from(arr);
-        }
-    }
-
-    // custom simple store based on a awesome Redux library https://github.com/rackt/redux
-
-    var createSAlertStore = function createSAlertStore(reducer) {
-        var state = void 0;
-        var listeners = [];
-        var getState = function getState() {
-            return state;
-        };
-        var dispatch = function dispatch(action) {
-            state = reducer(state, action);
-            listeners.forEach(function (listener) {
-                return listener();
-            });
-        };
-        var subscribe = function subscribe(listener) {
-            listeners.push(listener);
-            return function () {
-                listeners = listeners.filter(function (l) {
-                    return l !== listener;
-                });
-            };
-        };
-        dispatch({});
-        return {
-            getState: getState, dispatch: dispatch, subscribe: subscribe
-        };
-    };
-
-    var insert = function insert(state, action) {
-        return [].concat(_toConsumableArray(state), [action.data]);
-    };
-
-    var remove = function remove(state, action) {
-        var elemToRemoveArray = state.slice().filter(function (item) {
-            return item.id === action.data.id;
-        });
-        if (Array.isArray(elemToRemoveArray)) {
-            var elemToRemoveIndex = state.indexOf(elemToRemoveArray[0]);
-            return [].concat(_toConsumableArray(state.slice(0, elemToRemoveIndex)), _toConsumableArray(state.slice(elemToRemoveIndex + 1)));
-        }
-        return state;
-    };
-
-    var alertsReducer = function alertsReducer() {
-        var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-        var action = arguments[1];
-
-        switch (action.type) {
-            case 'INSERT':
-                return insert(state, action);
-            case 'REMOVE':
-                return remove(state, action);
-            case 'REMOVEALL':
-                return [];
-            default:
-                return state;
-        }
-    };
-
-    var sAlertStore = createSAlertStore(alertsReducer);
-
-    exports.default = sAlertStore;
-});
-
-/***/ }),
-/* 196 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shallowEqual__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shallowEqual__ = __webpack_require__(350);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -16629,7 +16448,7 @@ var PureComponent = function (_React$Component) {
 //# sourceMappingURL=PureComponent.js.map
 
 /***/ }),
-/* 197 */
+/* 195 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16644,9 +16463,9 @@ var PureComponent = function (_React$Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_d3_array__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_d3_collection__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash_flattendeep__ = __webpack_require__(971);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash_flattendeep__ = __webpack_require__(922);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash_flattendeep___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lodash_flattendeep__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Chart__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Chart__ = __webpack_require__(352);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__index__ = __webpack_require__(16);
 
 
@@ -16921,7 +16740,7 @@ function getXValue(xScale, xAccessor, mouseXY, plotData) {
 //# sourceMappingURL=ChartDataUtil.js.map
 
 /***/ }),
-/* 198 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17120,6 +16939,187 @@ exports.default = AreaOnlySeries;
 //# sourceMappingURL=AreaOnlySeries.js.map
 
 /***/ }),
+/* 197 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+    if (true) {
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+    } else if (typeof exports !== "undefined") {
+        factory(exports);
+    } else {
+        var mod = {
+            exports: {}
+        };
+        factory(mod.exports);
+        global.sAlertTools = mod.exports;
+    }
+})(this, function (exports) {
+    'use strict';
+
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+
+    var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+        return typeof obj;
+    } : function (obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+
+    var actualGlobalConfig = void 0;
+
+    var sAlertTools = {
+        randomId: function randomId() {
+            return Math.random().toString(36).split('.')[1];
+        },
+        returnFirstDefined: function returnFirstDefined() {
+            var value = void 0;
+            var i = void 0;
+
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                args[_key] = arguments[_key];
+            }
+
+            for (i = 0; i < args.length; i++) {
+                if (typeof args[i] !== 'undefined') {
+                    value = args[i];
+                    break;
+                }
+            }
+            return value;
+        },
+        styleToObj: function styleToObj(input) {
+            var result = {},
+                i = void 0,
+                entry = void 0,
+                attributes = input && input.split(';').filter(Boolean);
+
+            for (i = 0; i < attributes.length; i++) {
+                entry = attributes[i].split(':');
+                result[entry.splice(0, 1)[0].trim()] = entry.join(':').trim();
+            }
+            return result;
+        },
+        setGlobalConfig: function setGlobalConfig(config) {
+            if ((typeof config === 'undefined' ? 'undefined' : _typeof(config)) === 'object') {
+                actualGlobalConfig = config;
+            }
+        },
+        getGlobalConfig: function getGlobalConfig() {
+            return actualGlobalConfig;
+        }
+    };
+
+    exports.default = sAlertTools;
+});
+
+/***/ }),
+/* 198 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+    if (true) {
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+    } else if (typeof exports !== "undefined") {
+        factory(exports);
+    } else {
+        var mod = {
+            exports: {}
+        };
+        factory(mod.exports);
+        global.sAlertStore = mod.exports;
+    }
+})(this, function (exports) {
+    'use strict';
+
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+
+    function _toConsumableArray(arr) {
+        if (Array.isArray(arr)) {
+            for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
+                arr2[i] = arr[i];
+            }
+
+            return arr2;
+        } else {
+            return Array.from(arr);
+        }
+    }
+
+    // custom simple store based on a awesome Redux library https://github.com/rackt/redux
+
+    var createSAlertStore = function createSAlertStore(reducer) {
+        var state = void 0;
+        var listeners = [];
+        var getState = function getState() {
+            return state;
+        };
+        var dispatch = function dispatch(action) {
+            state = reducer(state, action);
+            listeners.forEach(function (listener) {
+                return listener();
+            });
+        };
+        var subscribe = function subscribe(listener) {
+            listeners.push(listener);
+            return function () {
+                listeners = listeners.filter(function (l) {
+                    return l !== listener;
+                });
+            };
+        };
+        dispatch({});
+        return {
+            getState: getState, dispatch: dispatch, subscribe: subscribe
+        };
+    };
+
+    var insert = function insert(state, action) {
+        return [].concat(_toConsumableArray(state), [action.data]);
+    };
+
+    var remove = function remove(state, action) {
+        var elemToRemoveArray = state.slice().filter(function (item) {
+            return item.id === action.data.id;
+        });
+        if (Array.isArray(elemToRemoveArray)) {
+            var elemToRemoveIndex = state.indexOf(elemToRemoveArray[0]);
+            return [].concat(_toConsumableArray(state.slice(0, elemToRemoveIndex)), _toConsumableArray(state.slice(elemToRemoveIndex + 1)));
+        }
+        return state;
+    };
+
+    var alertsReducer = function alertsReducer() {
+        var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+        var action = arguments[1];
+
+        switch (action.type) {
+            case 'INSERT':
+                return insert(state, action);
+            case 'REMOVE':
+                return remove(state, action);
+            case 'REMOVEALL':
+                return [];
+            default:
+                return state;
+        }
+    };
+
+    var sAlertStore = createSAlertStore(alertsReducer);
+
+    exports.default = sAlertStore;
+});
+
+/***/ }),
 /* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17134,7 +17134,7 @@ exports.default = AreaOnlySeries;
 
 
 
-var _prodInvariant = __webpack_require__(52),
+var _prodInvariant = __webpack_require__(51),
     _assign = __webpack_require__(9);
 
 var ReactNoopUpdateQueue = __webpack_require__(200);
@@ -19034,7 +19034,7 @@ module.exports = CSSProperty;
 
 
 
-var DOMProperty = __webpack_require__(39);
+var DOMProperty = __webpack_require__(38);
 var ReactDOMComponentTree = __webpack_require__(11);
 var ReactInstrumentation = __webpack_require__(23);
 
@@ -19633,7 +19633,7 @@ module.exports = instantiateReactComponent;
 
 var _prodInvariant = __webpack_require__(6);
 
-var React = __webpack_require__(51);
+var React = __webpack_require__(50);
 
 var invariant = __webpack_require__(3);
 
@@ -20210,9 +20210,9 @@ module.exports = getActiveElement;
 
 var _prodInvariant = __webpack_require__(6);
 
-var DOMLazyTree = __webpack_require__(54);
-var DOMProperty = __webpack_require__(39);
-var React = __webpack_require__(51);
+var DOMLazyTree = __webpack_require__(53);
+var DOMProperty = __webpack_require__(38);
+var React = __webpack_require__(50);
 var ReactBrowserEventEmitter = __webpack_require__(97);
 var ReactCurrentOwner = __webpack_require__(31);
 var ReactDOMComponentTree = __webpack_require__(11);
@@ -20222,7 +20222,7 @@ var ReactFeatureFlags = __webpack_require__(211);
 var ReactInstanceMap = __webpack_require__(68);
 var ReactInstrumentation = __webpack_require__(23);
 var ReactMarkupChecksum = __webpack_require__(471);
-var ReactReconciler = __webpack_require__(53);
+var ReactReconciler = __webpack_require__(52);
 var ReactUpdateQueue = __webpack_require__(138);
 var ReactUpdates = __webpack_require__(32);
 
@@ -23058,7 +23058,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "lab", function() { return __WEBPACK_IMPORTED_MODULE_6_d3_color__["e"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "hcl", function() { return __WEBPACK_IMPORTED_MODULE_6_d3_color__["c"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "cubehelix", function() { return __WEBPACK_IMPORTED_MODULE_6_d3_color__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_d3_dispatch__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_d3_dispatch__ = __webpack_require__(46);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "dispatch", function() { return __WEBPACK_IMPORTED_MODULE_7_d3_dispatch__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_d3_drag__ = __webpack_require__(155);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "drag", function() { return __WEBPACK_IMPORTED_MODULE_8_d3_drag__["a"]; });
@@ -24429,7 +24429,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["b"] = x;
 /* harmony export (immutable) */ __webpack_exports__["c"] = y;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_dispatch__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_dispatch__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_d3_collection__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_d3_timer__ = __webpack_require__(108);
 
@@ -24849,7 +24849,7 @@ var prefixExponent;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__adder__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__math__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__noop__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__stream__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__stream__ = __webpack_require__(47);
 
 
 
@@ -25725,7 +25725,7 @@ var coordinates = [null, null],
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__adder__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__math__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__noop__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__stream__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__stream__ = __webpack_require__(47);
 
 
 
@@ -26249,7 +26249,7 @@ function responseOf(parse, row) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return implicit; });
 /* harmony export (immutable) */ __webpack_exports__["a"] = ordinal;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_collection__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(48);
 
 
 
@@ -26343,7 +26343,7 @@ function ordinal(range) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_d3_interpolate__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_d3_time__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_d3_time_format__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__array__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__array__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__continuous__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__nice__ = __webpack_require__(328);
 
@@ -27149,7 +27149,7 @@ var formatIso = Date.prototype.toISOString
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_path__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constant__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constant__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__curve_linear__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__line__ = __webpack_require__(188);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__point__ = __webpack_require__(189);
@@ -27939,6 +27939,1964 @@ function transform(node) {
 
 /***/ }),
 /* 349 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = zipper;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_array__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identity__ = __webpack_require__(63);
+
+
+/* an extension to d3.zip so we call a function instead of an array */
+
+
+
+
+
+function zipper() {
+	var combine = __WEBPACK_IMPORTED_MODULE_1__identity__["a" /* default */];
+
+	function zip() {
+		var n = arguments.length;
+		if (!n) return [];
+		var m = Object(__WEBPACK_IMPORTED_MODULE_0_d3_array__["min"])(arguments, d3_zipLength);
+
+		// eslint-disable-next-line prefer-const
+		var i = void 0,
+		    zips = new Array(m);
+		for (i = -1; ++i < m;) {
+			for (var j = -1, _zip = zips[i] = new Array(n); ++j < n;) {
+				_zip[j] = arguments[j][i];
+			}
+			zips[i] = combine.apply(this, zips[i]);
+		}
+		return zips;
+	}
+	function d3_zipLength(d) {
+		return d.length;
+	}
+	zip.combine = function (x) {
+		if (!arguments.length) {
+			return combine;
+		}
+		combine = x;
+		return zip;
+	};
+	return zip;
+}
+//# sourceMappingURL=zipper.js.map
+
+/***/ }),
+/* 350 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = shallowEqual;
+// https://github.com/jonschlinkert/is-equal-shallow/
+
+/*
+The MIT License (MIT)
+
+Copyright (c) 2015, Jon Schlinkert.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+function isDate(date) {
+	return Object.prototype.toString.call(date) === "[object Date]";
+}
+
+function isEqual(val1, val2) {
+	return isDate(val1) && isDate(val2) ? val1.getTime() === val2.getTime() : val1 === val2;
+}
+
+function shallowEqual(a, b) {
+	if (!a && !b) {
+		return true;
+	}
+	if (!a && b || a && !b) {
+		return false;
+	}
+
+	var numKeysA = 0,
+	    numKeysB = 0,
+	    key = void 0;
+	for (key in b) {
+		numKeysB++;
+		if ( /* !isPrimitive(b[key]) || */b.hasOwnProperty(key) && !a.hasOwnProperty(key) || !isEqual(a[key], b[key])) {
+			// console.log(key, a, b);
+			return false;
+		}
+	}
+	for (key in a) {
+		numKeysA++;
+	}
+	return numKeysA === numKeysB;
+}
+//# sourceMappingURL=shallowEqual.js.map
+
+/***/ }),
+/* 351 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * This is the web browser implementation of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = __webpack_require__(919);
+exports.log = log;
+exports.formatArgs = formatArgs;
+exports.save = save;
+exports.load = load;
+exports.useColors = useColors;
+exports.storage = 'undefined' != typeof chrome
+               && 'undefined' != typeof chrome.storage
+                  ? chrome.storage.local
+                  : localstorage();
+
+/**
+ * Colors.
+ */
+
+exports.colors = [
+  '#0000CC', '#0000FF', '#0033CC', '#0033FF', '#0066CC', '#0066FF', '#0099CC',
+  '#0099FF', '#00CC00', '#00CC33', '#00CC66', '#00CC99', '#00CCCC', '#00CCFF',
+  '#3300CC', '#3300FF', '#3333CC', '#3333FF', '#3366CC', '#3366FF', '#3399CC',
+  '#3399FF', '#33CC00', '#33CC33', '#33CC66', '#33CC99', '#33CCCC', '#33CCFF',
+  '#6600CC', '#6600FF', '#6633CC', '#6633FF', '#66CC00', '#66CC33', '#9900CC',
+  '#9900FF', '#9933CC', '#9933FF', '#99CC00', '#99CC33', '#CC0000', '#CC0033',
+  '#CC0066', '#CC0099', '#CC00CC', '#CC00FF', '#CC3300', '#CC3333', '#CC3366',
+  '#CC3399', '#CC33CC', '#CC33FF', '#CC6600', '#CC6633', '#CC9900', '#CC9933',
+  '#CCCC00', '#CCCC33', '#FF0000', '#FF0033', '#FF0066', '#FF0099', '#FF00CC',
+  '#FF00FF', '#FF3300', '#FF3333', '#FF3366', '#FF3399', '#FF33CC', '#FF33FF',
+  '#FF6600', '#FF6633', '#FF9900', '#FF9933', '#FFCC00', '#FFCC33'
+];
+
+/**
+ * Currently only WebKit-based Web Inspectors, Firefox >= v31,
+ * and the Firebug extension (any Firefox version) are known
+ * to support "%c" CSS customizations.
+ *
+ * TODO: add a `localStorage` variable to explicitly enable/disable colors
+ */
+
+function useColors() {
+  // NB: In an Electron preload script, document will be defined but not fully
+  // initialized. Since we know we're in Chrome, we'll just detect this case
+  // explicitly
+  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
+    return true;
+  }
+
+  // Internet Explorer and Edge do not support colors.
+  if (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
+    return false;
+  }
+
+  // is webkit? http://stackoverflow.com/a/16459606/376773
+  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
+  return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
+    // is firebug? http://stackoverflow.com/a/398120/376773
+    (typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
+    // is firefox >= v31?
+    // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
+    // double check webkit in userAgent just in case we are in a worker
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
+}
+
+/**
+ * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
+ */
+
+exports.formatters.j = function(v) {
+  try {
+    return JSON.stringify(v);
+  } catch (err) {
+    return '[UnexpectedJSONParseError]: ' + err.message;
+  }
+};
+
+
+/**
+ * Colorize log arguments if enabled.
+ *
+ * @api public
+ */
+
+function formatArgs(args) {
+  var useColors = this.useColors;
+
+  args[0] = (useColors ? '%c' : '')
+    + this.namespace
+    + (useColors ? ' %c' : ' ')
+    + args[0]
+    + (useColors ? '%c ' : ' ')
+    + '+' + exports.humanize(this.diff);
+
+  if (!useColors) return;
+
+  var c = 'color: ' + this.color;
+  args.splice(1, 0, c, 'color: inherit')
+
+  // the final "%c" is somewhat tricky, because there could be other
+  // arguments passed either before or after the %c, so we need to
+  // figure out the correct index to insert the CSS into
+  var index = 0;
+  var lastC = 0;
+  args[0].replace(/%[a-zA-Z%]/g, function(match) {
+    if ('%%' === match) return;
+    index++;
+    if ('%c' === match) {
+      // we only are interested in the *last* %c
+      // (the user may have provided their own)
+      lastC = index;
+    }
+  });
+
+  args.splice(lastC, 0, c);
+}
+
+/**
+ * Invokes `console.log()` when available.
+ * No-op when `console.log` is not a "function".
+ *
+ * @api public
+ */
+
+function log() {
+  // this hackery is required for IE8/9, where
+  // the `console.log` function doesn't have 'apply'
+  return 'object' === typeof console
+    && console.log
+    && Function.prototype.apply.call(console.log, console, arguments);
+}
+
+/**
+ * Save `namespaces`.
+ *
+ * @param {String} namespaces
+ * @api private
+ */
+
+function save(namespaces) {
+  try {
+    if (null == namespaces) {
+      exports.storage.removeItem('debug');
+    } else {
+      exports.storage.debug = namespaces;
+    }
+  } catch(e) {}
+}
+
+/**
+ * Load `namespaces`.
+ *
+ * @return {String} returns the previously persisted debug modes
+ * @api private
+ */
+
+function load() {
+  var r;
+  try {
+    r = exports.storage.debug;
+  } catch(e) {}
+
+  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
+  if (!r && typeof process !== 'undefined' && 'env' in process) {
+    r = process.env.DEBUG;
+  }
+
+  return r;
+}
+
+/**
+ * Enable namespaces listed in `localStorage.debug` initially.
+ */
+
+exports.enable(load());
+
+/**
+ * Localstorage attempts to return the localstorage.
+ *
+ * This is necessary because safari throws
+ * when a user disables cookies/localstorage
+ * and you attempt to access it.
+ *
+ * @return {LocalStorage}
+ * @api private
+ */
+
+function localstorage() {
+  try {
+    return window.localStorage;
+  } catch (e) {}
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 352 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_d3_scale__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_PureComponent__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(16);
+
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+
+var Chart = function (_PureComponent) {
+	_inherits(Chart, _PureComponent);
+
+	function Chart(props, context) {
+		_classCallCheck(this, Chart);
+
+		var _this = _possibleConstructorReturn(this, (Chart.__proto__ || Object.getPrototypeOf(Chart)).call(this, props, context));
+
+		_this.yScale = _this.yScale.bind(_this);
+		_this.listener = _this.listener.bind(_this);
+		return _this;
+	}
+
+	_createClass(Chart, [{
+		key: "componentWillMount",
+		value: function componentWillMount() {
+			var id = this.props.id;
+			var subscribe = this.context.subscribe;
+
+			subscribe("chart_" + id, {
+				listener: this.listener
+			});
+		}
+	}, {
+		key: "componentWillUnmount",
+		value: function componentWillUnmount() {
+			var id = this.props.id;
+			var unsubscribe = this.context.unsubscribe;
+
+			unsubscribe("chart_" + id);
+		}
+	}, {
+		key: "listener",
+		value: function listener(type, moreProps, state, e) {
+			var _props = this.props,
+			    id = _props.id,
+			    onContextMenu = _props.onContextMenu;
+
+
+			if (type === "contextmenu") {
+				var currentCharts = moreProps.currentCharts;
+
+				if (currentCharts.indexOf(id) > -1) {
+					onContextMenu(moreProps, e);
+				}
+			}
+		}
+	}, {
+		key: "yScale",
+		value: function yScale() {
+			var _this2 = this;
+
+			var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_4__utils__["i" /* find */])(this.context.chartConfig, function (each) {
+				return each.id === _this2.props.id;
+			});
+			return chartConfig.yScale.copy();
+		}
+	}, {
+		key: "getChildContext",
+		value: function getChildContext() {
+			var chartId = this.props.id;
+
+			var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_4__utils__["i" /* find */])(this.context.chartConfig, function (each) {
+				return each.id === chartId;
+			});
+
+			return {
+				chartId: chartId,
+				chartConfig: chartConfig
+			};
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var _this3 = this;
+
+			var _find = Object(__WEBPACK_IMPORTED_MODULE_4__utils__["i" /* find */])(this.context.chartConfig, function (each) {
+				return each.id === _this3.props.id;
+			}),
+			    origin = _find.origin;
+
+			var _origin = _slicedToArray(origin, 2),
+			    x = _origin[0],
+			    y = _origin[1];
+
+			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+				"g",
+				{ transform: "translate(" + x + ", " + y + ")" },
+				this.props.children
+			);
+		}
+	}]);
+
+	return Chart;
+}(__WEBPACK_IMPORTED_MODULE_3__utils_PureComponent__["a" /* default */]);
+
+Chart.propTypes = {
+	height: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
+	origin: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func]),
+	id: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string]).isRequired,
+	yExtents: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func]),
+	yExtentsCalculator: function yExtentsCalculator(props, propName, componentName) {
+		if (Object(__WEBPACK_IMPORTED_MODULE_4__utils__["s" /* isNotDefined */])(props.yExtents) && typeof props.yExtentsCalculator !== "function") return new Error("yExtents or yExtentsCalculator must" + (" be present on " + componentName + ". Validation failed."));
+	},
+	onContextMenu: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	yScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+
+	flipYScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
+	padding: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.shape({
+		top: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
+		bottom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number
+	})]),
+	children: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.node
+};
+
+Chart.defaultProps = {
+	id: 0,
+	origin: [0, 0],
+	padding: 0,
+	yScale: Object(__WEBPACK_IMPORTED_MODULE_2_d3_scale__["scaleLinear"])(),
+	flipYScale: false,
+	yPan: true,
+	yPanEnabled: false,
+	onContextMenu: __WEBPACK_IMPORTED_MODULE_4__utils__["x" /* noop */]
+};
+
+Chart.contextTypes = {
+	chartConfig: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array,
+	subscribe: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	unsubscribe: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired
+};
+
+Chart.childContextTypes = {
+	chartConfig: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object.isRequired,
+	chartId: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string]).isRequired
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Chart);
+//# sourceMappingURL=Chart.js.map
+
+/***/ }),
+/* 353 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export getAxisCanvas */
+/* unused harmony export getMouseCanvas */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(16);
+
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+var aliases = {
+	mouseleave: "mousemove", // to draw interactive after mouse exit
+	panend: "pan",
+	pinchzoom: "pan",
+	mousedown: "mousemove",
+	click: "mousemove",
+	contextmenu: "mousemove",
+	dblclick: "mousemove",
+	dragstart: "drag",
+	dragend: "drag",
+	dragcancel: "drag"
+};
+
+var GenericComponent = function (_Component) {
+	_inherits(GenericComponent, _Component);
+
+	function GenericComponent(props, context) {
+		_classCallCheck(this, GenericComponent);
+
+		var _this = _possibleConstructorReturn(this, (GenericComponent.__proto__ || Object.getPrototypeOf(GenericComponent)).call(this, props, context));
+
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		_this.getMoreProps = _this.getMoreProps.bind(_this);
+		_this.listener = _this.listener.bind(_this);
+		_this.draw = _this.draw.bind(_this);
+		_this.updateMoreProps = _this.updateMoreProps.bind(_this);
+		_this.evaluateType = _this.evaluateType.bind(_this);
+		_this.isHover = _this.isHover.bind(_this);
+		_this.preCanvasDraw = _this.preCanvasDraw.bind(_this);
+		_this.postCanvasDraw = _this.postCanvasDraw.bind(_this);
+		_this.getPanConditions = _this.getPanConditions.bind(_this);
+		_this.shouldTypeProceed = _this.shouldTypeProceed.bind(_this);
+		_this.preEvaluate = _this.preEvaluate.bind(_this);
+
+		var generateSubscriptionId = context.generateSubscriptionId;
+
+		_this.suscriberId = generateSubscriptionId();
+
+		_this.moreProps = {};
+
+		_this.state = {
+			updateCount: 0
+		};
+		return _this;
+	}
+
+	_createClass(GenericComponent, [{
+		key: "updateMoreProps",
+		value: function updateMoreProps(moreProps) {
+			var _this2 = this;
+
+			Object.keys(moreProps).forEach(function (key) {
+				_this2.moreProps[key] = moreProps[key];
+			});
+		}
+	}, {
+		key: "shouldTypeProceed",
+		value: function shouldTypeProceed() {
+			return true;
+		}
+	}, {
+		key: "preEvaluate",
+		value: function preEvaluate() {}
+	}, {
+		key: "listener",
+		value: function listener(type, moreProps, state, e) {
+			// console.log(e.shiftKey)
+			if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(moreProps)) {
+				this.updateMoreProps(moreProps);
+			}
+			this.evaluationInProgress = true;
+			this.evaluateType(type, e);
+			this.evaluationInProgress = false;
+		}
+	}, {
+		key: "evaluateType",
+		value: function evaluateType(type, e) {
+			var newType = aliases[type] || type;
+			var proceed = this.props.drawOn.indexOf(newType) > -1;
+
+			// console.log("type ->", type, proceed);
+
+			if (!proceed) return;
+			// const moreProps = this.getMoreProps();
+			this.preEvaluate(type, this.moreProps, e);
+			if (!this.shouldTypeProceed(type, this.moreProps)) return;
+
+			switch (type) {
+				case "zoom":
+				case "mouseenter":
+					// DO NOT DRAW FOR THESE EVENTS
+					break;
+				case "mouseleave":
+
+					break;
+				case "contextmenu":
+					{
+						if (this.props.onContextMenu) {
+							this.props.onContextMenu(this.getMoreProps(), e);
+						}
+						if (this.moreProps.hovering && this.props.onContextMenuWhenHover) {
+							this.props.onContextMenuWhenHover(this.getMoreProps(), e);
+						}
+						break;
+					}
+				case "mousedown":
+					{
+						if (this.props.onMouseDown) {
+							this.props.onMouseDown(this.getMoreProps(), e);
+						}
+						break;
+					}
+				case "click":
+					{
+						var moreProps = this.getMoreProps();
+						if (this.moreProps.hovering) {
+							// console.error("TODO use this only for SAR, Line series")
+							this.props.onClickWhenHover(moreProps, e);
+						} else {
+							this.props.onClickOutside(moreProps, e);
+						}
+						if (this.props.onClick) {
+							this.props.onClick(moreProps, e);
+						}
+						break;
+					}
+				case "mousemove":
+					{
+
+						var prevHover = this.moreProps.hovering;
+						this.moreProps.hovering = this.isHover(e);
+
+						var _context = this.context,
+						    amIOnTop = _context.amIOnTop,
+						    setCursorClass = _context.setCursorClass;
+
+
+						if (this.moreProps.hovering && !this.props.selected && !prevHover && Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(this.props.onHover)) {
+							setCursorClass("react-stockcharts-pointer-cursor");
+							this.iSetTheCursorClass = true;
+						} else if (this.moreProps.hovering && this.props.selected && amIOnTop(this.suscriberId)) {
+							setCursorClass(this.props.interactiveCursorClass);
+							this.iSetTheCursorClass = true;
+						} else if (prevHover && !this.moreProps.hovering && this.iSetTheCursorClass) {
+							this.iSetTheCursorClass = false;
+							setCursorClass(null);
+						}
+						var _moreProps = this.getMoreProps();
+
+						if (this.moreProps.hovering && !prevHover) {
+							if (this.props.onHover) {
+								this.props.onHover(_moreProps, e);
+							}
+						}
+						if (prevHover && !this.moreProps.hovering) {
+							if (this.props.onUnHover) {
+								this.props.onUnHover(_moreProps, e);
+							}
+						}
+
+						if (this.props.onMouseMove) {
+							this.props.onMouseMove(_moreProps, e);
+						}
+						break;
+					}
+				case "dblclick":
+					{
+						var _moreProps2 = this.getMoreProps();
+
+						if (this.props.onDoubleClick) {
+							this.props.onDoubleClick(_moreProps2, e);
+						}
+						if (this.moreProps.hovering && this.props.onDoubleClickWhenHover) {
+							this.props.onDoubleClickWhenHover(_moreProps2, e);
+						}
+						break;
+					}
+				case "pan":
+					{
+						this.moreProps.hovering = false;
+						if (this.props.onPan) {
+							this.props.onPan(this.getMoreProps(), e);
+						}
+						break;
+					}
+				case "panend":
+					{
+						if (this.props.onPanEnd) {
+							this.props.onPanEnd(this.getMoreProps(), e);
+						}
+						break;
+					}
+				case "dragstart":
+					{
+						if (this.moreProps.hovering && this.props.selected) {
+							var _amIOnTop = this.context.amIOnTop;
+
+							if (_amIOnTop(this.suscriberId)) {
+								this.dragInProgress = true;
+								this.props.onDragStart(this.getMoreProps(), e);
+							}
+						}
+						this.someDragInProgress = true;
+						break;
+					}
+				case "drag":
+					{
+						if (this.dragInProgress && this.props.onDrag) {
+							this.props.onDrag(this.getMoreProps(), e);
+						}
+						break;
+					}
+				case "dragend":
+					{
+						if (this.dragInProgress && this.props.onDragComplete) {
+							this.props.onDragComplete(this.getMoreProps(), e);
+						}
+						this.dragInProgress = false;
+						this.someDragInProgress = false;
+						break;
+					}
+				case "dragcancel":
+					{
+						if (this.dragInProgress || this.iSetTheCursorClass) {
+							var _setCursorClass = this.context.setCursorClass;
+
+							_setCursorClass(null);
+						}
+						break;
+					}
+			}
+		}
+	}, {
+		key: "isHover",
+		value: function isHover(e) {
+			return Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(this.props.isHover) ? this.props.isHover(this.getMoreProps(), e) : false;
+		}
+	}, {
+		key: "getPanConditions",
+		value: function getPanConditions() {
+			var draggable = !!(this.props.selected && this.moreProps.hovering);
+
+			return {
+				draggable: draggable,
+				panEnabled: !this.props.disablePan
+			};
+		}
+	}, {
+		key: "draw",
+		value: function draw() {
+			var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { force: false },
+			    trigger = _ref.trigger,
+			    force = _ref.force;
+
+			var type = aliases[trigger] || trigger;
+			var proceed = this.props.drawOn.indexOf(type) > -1;
+
+			if (proceed || this.props.selected /* this is to draw as soon as you select */
+			|| force) {
+				var chartCanvasType = this.context.chartCanvasType;
+				var canvasDraw = this.props.canvasDraw;
+
+
+				if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["s" /* isNotDefined */])(canvasDraw) || chartCanvasType === "svg") {
+					var updateCount = this.state.updateCount;
+
+					this.setState({
+						updateCount: updateCount + 1
+					});
+				} else {
+					this.drawOnCanvas();
+				}
+			}
+		}
+	}, {
+		key: "componentWillMount",
+		value: function componentWillMount() {
+			var _context2 = this.context,
+			    subscribe = _context2.subscribe,
+			    chartId = _context2.chartId;
+			var _props = this.props,
+			    clip = _props.clip,
+			    edgeClip = _props.edgeClip;
+
+
+			subscribe(this.suscriberId, {
+				chartId: chartId, clip: clip, edgeClip: edgeClip,
+				listener: this.listener,
+				draw: this.draw,
+				getPanConditions: this.getPanConditions
+			});
+			this.componentWillReceiveProps(this.props, this.context);
+		}
+	}, {
+		key: "componentWillUnmount",
+		value: function componentWillUnmount() {
+			var unsubscribe = this.context.unsubscribe;
+
+			unsubscribe(this.suscriberId);
+		}
+	}, {
+		key: "componentDidMount",
+		value: function componentDidMount() {
+			this.componentDidUpdate(this.props);
+		}
+	}, {
+		key: "componentDidUpdate",
+		value: function componentDidUpdate(prevProps) {
+			var chartCanvasType = this.context.chartCanvasType;
+			var _props2 = this.props,
+			    canvasDraw = _props2.canvasDraw,
+			    selected = _props2.selected,
+			    interactiveCursorClass = _props2.interactiveCursorClass;
+
+
+			if (prevProps.selected !== selected) {
+				var setCursorClass = this.context.setCursorClass;
+
+				setCursorClass(selected && this.moreProps.hovering ? interactiveCursorClass : null);
+			}
+			if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(canvasDraw) && !this.evaluationInProgress
+			// && !(this.someDragInProgress && this.props.selected)
+			/*
+   prevent double draw of interactive elements
+   during dragging / hover / click etc.
+   */
+			&& chartCanvasType !== "svg") {
+				this.drawOnCanvas();
+			}
+		}
+	}, {
+		key: "componentWillReceiveProps",
+		value: function componentWillReceiveProps(nextProps, nextContext) {
+			var xScale = nextContext.xScale,
+			    plotData = nextContext.plotData,
+			    chartConfig = nextContext.chartConfig,
+			    getMutableState = nextContext.getMutableState;
+
+
+			this.props.debug(nextContext);
+			this.moreProps = _extends({}, this.moreProps, getMutableState(), {
+				/*
+    ^ this is so
+    mouseXY, currentCharts, currentItem are available to
+    newly created components like MouseHoverText which
+    is created right after a new interactive object is drawn
+    */
+				xScale: xScale, plotData: plotData, chartConfig: chartConfig
+			});
+		}
+	}, {
+		key: "getMoreProps",
+		value: function getMoreProps() {
+			var _context3 = this.context,
+			    xScale = _context3.xScale,
+			    plotData = _context3.plotData,
+			    chartConfig = _context3.chartConfig,
+			    morePropsDecorator = _context3.morePropsDecorator,
+			    xAccessor = _context3.xAccessor,
+			    displayXAccessor = _context3.displayXAccessor,
+			    width = _context3.width,
+			    height = _context3.height;
+			var _context4 = this.context,
+			    chartId = _context4.chartId,
+			    fullData = _context4.fullData;
+
+
+			var moreProps = _extends({
+				xScale: xScale, plotData: plotData, chartConfig: chartConfig,
+				xAccessor: xAccessor, displayXAccessor: displayXAccessor,
+				width: width, height: height,
+				chartId: chartId,
+				fullData: fullData
+			}, this.moreProps);
+
+			return (morePropsDecorator || __WEBPACK_IMPORTED_MODULE_2__utils__["q" /* identity */])(moreProps);
+		}
+	}, {
+		key: "preCanvasDraw",
+		value: function preCanvasDraw() {
+			// do nothing
+		}
+	}, {
+		key: "postCanvasDraw",
+		value: function postCanvasDraw() {}
+	}, {
+		key: "drawOnCanvas",
+		value: function drawOnCanvas() {
+			var _props3 = this.props,
+			    canvasDraw = _props3.canvasDraw,
+			    canvasToDraw = _props3.canvasToDraw;
+			var getCanvasContexts = this.context.getCanvasContexts;
+
+
+			var moreProps = this.getMoreProps();
+
+			var ctx = canvasToDraw(getCanvasContexts());
+
+			this.preCanvasDraw(ctx, moreProps);
+			canvasDraw(ctx, moreProps);
+			this.postCanvasDraw(ctx, moreProps);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var _context5 = this.context,
+			    chartCanvasType = _context5.chartCanvasType,
+			    chartId = _context5.chartId;
+			var _props4 = this.props,
+			    canvasDraw = _props4.canvasDraw,
+			    clip = _props4.clip,
+			    svgDraw = _props4.svgDraw;
+
+
+			if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(canvasDraw) && chartCanvasType !== "svg") {
+				return null;
+			}
+
+			var suffix = Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(chartId) ? "-" + chartId : "";
+
+			var style = clip ? { "clipPath": "url(#chart-area-clip" + suffix + ")" } : null;
+
+			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+				"g",
+				{ style: style },
+				svgDraw(this.getMoreProps())
+			);
+		}
+	}]);
+
+	return GenericComponent;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+GenericComponent.propTypes = {
+	svgDraw: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	canvasDraw: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+
+	drawOn: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array.isRequired,
+
+	clip: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
+	edgeClip: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
+	interactiveCursorClass: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
+
+	selected: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
+	disablePan: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
+
+	canvasToDraw: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+
+	isHover: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+
+	onClick: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onClickWhenHover: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onClickOutside: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+
+	onPan: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onPanEnd: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onDragStart: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onDrag: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onDragComplete: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onDoubleClick: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onDoubleClickWhenHover: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onContextMenu: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onContextMenuWhenHover: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onMouseMove: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onMouseDown: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onHover: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onUnHover: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+
+	debug: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func
+	// owner: PropTypes.string.isRequired,
+};
+
+GenericComponent.defaultProps = {
+	svgDraw: Object(__WEBPACK_IMPORTED_MODULE_2__utils__["j" /* functor */])(null),
+	draw: [],
+	canvasToDraw: function canvasToDraw(contexts) {
+		return contexts.mouseCoord;
+	},
+	clip: true,
+	edgeClip: false,
+	selected: false,
+	disablePan: false,
+
+	onClickWhenHover: __WEBPACK_IMPORTED_MODULE_2__utils__["x" /* noop */],
+	onClickOutside: __WEBPACK_IMPORTED_MODULE_2__utils__["x" /* noop */],
+	onDragStart: __WEBPACK_IMPORTED_MODULE_2__utils__["x" /* noop */],
+	onMouseMove: __WEBPACK_IMPORTED_MODULE_2__utils__["x" /* noop */],
+	onMouseDown: __WEBPACK_IMPORTED_MODULE_2__utils__["x" /* noop */],
+	debug: __WEBPACK_IMPORTED_MODULE_2__utils__["x" /* noop */]
+};
+
+GenericComponent.contextTypes = {
+	width: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	height: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	margin: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object.isRequired,
+	chartId: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string]),
+	getCanvasContexts: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+
+	chartCanvasType: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
+	xScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	xAccessor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	displayXAccessor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	plotData: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array.isRequired,
+	fullData: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array.isRequired,
+
+	chartConfig: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object]).isRequired,
+
+	morePropsDecorator: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	generateSubscriptionId: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	getMutableState: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+
+	amIOnTop: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	subscribe: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	unsubscribe: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	setCursorClass: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (GenericComponent);
+
+function getAxisCanvas(contexts) {
+	return contexts.axes;
+}
+
+function getMouseCanvas(contexts) {
+	return contexts.mouseCoord;
+}
+//# sourceMappingURL=GenericComponent.js.map
+
+/***/ }),
+/* 354 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/* an extension to d3.zip so we call a function instead of an array */
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.default = zipper;
+
+var _d3Array = __webpack_require__(8);
+
+var _identity = __webpack_require__(87);
+
+var _identity2 = _interopRequireDefault(_identity);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function zipper() {
+	var combine = _identity2.default;
+
+	function zip() {
+		var n = arguments.length;
+		if (!n) return [];
+		var m = (0, _d3Array.min)(arguments, d3_zipLength);
+
+		// eslint-disable-next-line prefer-const
+		var i = void 0,
+		    zips = new Array(m);
+		for (i = -1; ++i < m;) {
+			for (var j = -1, _zip = zips[i] = new Array(n); ++j < n;) {
+				_zip[j] = arguments[j][i];
+			}
+			zips[i] = combine.apply(this, zips[i]);
+		}
+		return zips;
+	}
+	function d3_zipLength(d) {
+		return d.length;
+	}
+	zip.combine = function (x) {
+		if (!arguments.length) {
+			return combine;
+		}
+		combine = x;
+		return zip;
+	};
+	return zip;
+}
+//# sourceMappingURL=zipper.js.map
+
+/***/ }),
+/* 355 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.default = shallowEqual;
+// https://github.com/jonschlinkert/is-equal-shallow/
+
+/*
+The MIT License (MIT)
+
+Copyright (c) 2015, Jon Schlinkert.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+function isDate(date) {
+	return Object.prototype.toString.call(date) === "[object Date]";
+}
+
+function isEqual(val1, val2) {
+	return isDate(val1) && isDate(val2) ? val1.getTime() === val2.getTime() : val1 === val2;
+}
+
+function shallowEqual(a, b) {
+	if (!a && !b) {
+		return true;
+	}
+	if (!a && b || a && !b) {
+		return false;
+	}
+
+	var numKeysA = 0,
+	    numKeysB = 0,
+	    key = void 0;
+	for (key in b) {
+		numKeysB++;
+		if ( /* !isPrimitive(b[key]) || */b.hasOwnProperty(key) && !a.hasOwnProperty(key) || !isEqual(a[key], b[key])) {
+			// console.log(key, a, b);
+			return false;
+		}
+	}
+	for (key in a) {
+		numKeysA++;
+	}
+	return numKeysA === numKeysB;
+}
+//# sourceMappingURL=shallowEqual.js.map
+
+/***/ }),
+/* 356 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _StackedBarSeries = __webpack_require__(122);
+
+var _StackedBarSeries2 = _interopRequireDefault(_StackedBarSeries);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BarSeries = function (_Component) {
+	_inherits(BarSeries, _Component);
+
+	function BarSeries(props) {
+		_classCallCheck(this, BarSeries);
+
+		var _this = _possibleConstructorReturn(this, (BarSeries.__proto__ || Object.getPrototypeOf(BarSeries)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(BarSeries, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+
+			if (this.props.swapScales) {
+				var xAccessor = moreProps.xAccessor;
+
+				(0, _StackedBarSeries.drawOnCanvasHelper)(ctx, this.props, moreProps, xAccessor, _StackedBarSeries.identityStack);
+			} else {
+				var bars = getBars(this.props, moreProps);
+				(0, _StackedBarSeries.drawOnCanvas2)(this.props, ctx, bars);
+			}
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			if (this.props.swapScales) {
+				var xAccessor = moreProps.xAccessor;
+
+				return _react2.default.createElement(
+					"g",
+					null,
+					(0, _StackedBarSeries.svgHelper)(this.props, moreProps, xAccessor, _StackedBarSeries.identityStack)
+				);
+			} else {
+				var bars = getBars(this.props, moreProps);
+				return _react2.default.createElement(
+					"g",
+					null,
+					(0, _StackedBarSeries.getBarsSVG2)(this.props, bars)
+				);
+			}
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var clip = this.props.clip;
+
+
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				clip: clip,
+				svgDraw: this.renderSVG,
+
+				canvasToDraw: _GenericComponent.getAxisCanvas,
+				canvasDraw: this.drawOnCanvas,
+
+				drawOn: ["pan"]
+			});
+		}
+	}]);
+
+	return BarSeries;
+}(_react.Component);
+
+BarSeries.propTypes = {
+	baseAt: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]),
+	stroke: _propTypes2.default.bool,
+	width: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]),
+	yAccessor: _propTypes2.default.func.isRequired,
+	opacity: _propTypes2.default.number,
+	fill: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]),
+	className: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]),
+	clip: _propTypes2.default.bool,
+	swapScales: _propTypes2.default.bool
+};
+
+BarSeries.defaultProps = _StackedBarSeries2.default.defaultProps;
+
+exports.default = BarSeries;
+
+/*
+ Initially, this program was using StackedBarSeries.getBars
+ to benefit from code reuse and having a single place that
+ contains the logic for drawing all types of bar charts
+ simple, grouped, horizontal, but turnes out
+ making it highly cuztimizable also made it slow for the
+ most simple case, a regular bar chart.
+ This function contains just the necessary logic
+ to create bars
+*/
+
+function getBars(props, moreProps) {
+	var baseAt = props.baseAt,
+	    fill = props.fill,
+	    stroke = props.stroke,
+	    yAccessor = props.yAccessor;
+	var xScale = moreProps.xScale,
+	    xAccessor = moreProps.xAccessor,
+	    plotData = moreProps.plotData,
+	    yScale = moreProps.chartConfig.yScale;
+
+
+	var getFill = (0, _utils.functor)(fill);
+	var getBase = (0, _utils.functor)(baseAt);
+
+	var widthFunctor = (0, _utils.functor)(props.width);
+
+	var width = widthFunctor(props, {
+		xScale: xScale,
+		xAccessor: xAccessor,
+		plotData: plotData
+	});
+
+	/*
+ const barWidth = Math.round(width);
+ const offset = Math.round(barWidth === 1 ? 0 : 0.5 * barWidth);
+ */
+	var offset = Math.floor(0.5 * width);
+
+	var bars = plotData.map(function (d) {
+		var yValue = yAccessor(d);
+		var y = yScale(yValue);
+
+		var x = Math.round(xScale(xAccessor(d))) - offset;
+		var h = getBase(xScale, yScale, d) - yScale(yValue);
+
+		if (h < 0) {
+			y = y + h;
+			h = -h;
+		}
+
+		return {
+			// type: "line"
+			x: x,
+			y: Math.round(y),
+			height: Math.round(h),
+			width: offset * 2,
+			fill: getFill(d, 0),
+			stroke: stroke ? getFill(d, 0) : "none"
+		};
+	});
+
+	return bars;
+}
+//# sourceMappingURL=BarSeries.js.map
+
+/***/ }),
+/* 357 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _d3Force = __webpack_require__(297);
+
+var _d3Array = __webpack_require__(8);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _AxisZoomCapture = __webpack_require__(959);
+
+var _AxisZoomCapture2 = _interopRequireDefault(_AxisZoomCapture);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Axis = function (_Component) {
+	_inherits(Axis, _Component);
+
+	function Axis(props) {
+		_classCallCheck(this, Axis);
+
+		var _this = _possibleConstructorReturn(this, (Axis.__proto__ || Object.getPrototypeOf(Axis)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		_this.saveNode = _this.saveNode.bind(_this);
+		_this.getMoreProps = _this.getMoreProps.bind(_this);
+		return _this;
+	}
+
+	_createClass(Axis, [{
+		key: "saveNode",
+		value: function saveNode(node) {
+			this.node = node;
+		}
+	}, {
+		key: "getMoreProps",
+		value: function getMoreProps() {
+			return this.node.getMoreProps();
+		}
+	}, {
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var _props = this.props,
+			    showDomain = _props.showDomain,
+			    showTicks = _props.showTicks,
+			    transform = _props.transform,
+			    range = _props.range,
+			    getScale = _props.getScale;
+
+
+			ctx.save();
+			ctx.translate(transform[0], transform[1]);
+
+			if (showDomain) drawAxisLine(ctx, this.props, range);
+			if (showTicks) {
+				var tickProps = tickHelper(this.props, getScale(moreProps));
+				drawTicks(ctx, tickProps);
+			}
+
+			ctx.restore();
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var className = this.props.className;
+			var _props2 = this.props,
+			    showDomain = _props2.showDomain,
+			    showTicks = _props2.showTicks,
+			    range = _props2.range,
+			    getScale = _props2.getScale;
+
+
+			var ticks = showTicks ? axisTicksSVG(this.props, getScale(moreProps)) : null;
+			var domain = showDomain ? axisLineSVG(this.props, range) : null;
+
+			return _react2.default.createElement(
+				"g",
+				{ className: className },
+				ticks,
+				domain
+			);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var _props3 = this.props,
+			    bg = _props3.bg,
+			    axisZoomCallback = _props3.axisZoomCallback,
+			    zoomCursorClassName = _props3.zoomCursorClassName,
+			    zoomEnabled = _props3.zoomEnabled,
+			    getScale = _props3.getScale,
+			    inverted = _props3.inverted;
+			var _props4 = this.props,
+			    transform = _props4.transform,
+			    getMouseDelta = _props4.getMouseDelta,
+			    edgeClip = _props4.edgeClip;
+			var _props5 = this.props,
+			    onContextMenu = _props5.onContextMenu,
+			    onDoubleClick = _props5.onDoubleClick;
+
+
+			var zoomCapture = zoomEnabled ? _react2.default.createElement(_AxisZoomCapture2.default, {
+				bg: bg,
+				getScale: getScale,
+				getMoreProps: this.getMoreProps,
+				getMouseDelta: getMouseDelta,
+				axisZoomCallback: axisZoomCallback,
+				zoomCursorClassName: zoomCursorClassName,
+				inverted: inverted,
+				onContextMenu: onContextMenu,
+				onDoubleClick: onDoubleClick
+			}) : null;
+
+			return _react2.default.createElement(
+				"g",
+				{ transform: "translate(" + transform[0] + ", " + transform[1] + ")" },
+				zoomCapture,
+				_react2.default.createElement(_GenericChartComponent2.default, { ref: this.saveNode,
+					canvasToDraw: _GenericComponent.getAxisCanvas,
+					clip: false,
+					edgeClip: edgeClip,
+					svgDraw: this.renderSVG,
+					canvasDraw: this.drawOnCanvas,
+					drawOn: ["pan"]
+				})
+			);
+		}
+	}]);
+
+	return Axis;
+}(_react.Component);
+
+Axis.propTypes = {
+	innerTickSize: _propTypes2.default.number,
+	outerTickSize: _propTypes2.default.number,
+	tickFormat: _propTypes2.default.func,
+	tickPadding: _propTypes2.default.number,
+	tickSize: _propTypes2.default.number,
+	ticks: _propTypes2.default.number,
+	tickValues: _propTypes2.default.array,
+	tickInterval: _propTypes2.default.number,
+	showDomain: _propTypes2.default.bool,
+	showTicks: _propTypes2.default.bool,
+	className: _propTypes2.default.string,
+	axisZoomCallback: _propTypes2.default.func,
+	zoomEnabled: _propTypes2.default.bool,
+	inverted: _propTypes2.default.bool,
+	zoomCursorClassName: _propTypes2.default.string,
+	transform: _propTypes2.default.arrayOf(_propTypes2.default.number).isRequired,
+	range: _propTypes2.default.arrayOf(_propTypes2.default.number).isRequired,
+	getMouseDelta: _propTypes2.default.func.isRequired,
+	getScale: _propTypes2.default.func.isRequired,
+	bg: _propTypes2.default.object.isRequired,
+	edgeClip: _propTypes2.default.bool.isRequired,
+	onContextMenu: _propTypes2.default.func,
+	onDoubleClick: _propTypes2.default.func
+};
+
+Axis.defaultProps = {
+	zoomEnabled: false,
+	zoomCursorClassName: "",
+	edgeClip: false
+};
+
+function tickHelper(props, scale) {
+	var orient = props.orient,
+	    innerTickSize = props.innerTickSize,
+	    tickFormat = props.tickFormat,
+	    tickPadding = props.tickPadding,
+	    tickLabelFill = props.tickLabelFill,
+	    tickStrokeWidth = props.tickStrokeWidth,
+	    tickStrokeDasharray = props.tickStrokeDasharray,
+	    fontSize = props.fontSize,
+	    fontFamily = props.fontFamily,
+	    showTicks = props.showTicks,
+	    flexTicks = props.flexTicks;
+	var tickArguments = props.ticks,
+	    tickValuesProp = props.tickValues,
+	    tickStroke = props.tickStroke,
+	    tickStrokeOpacity = props.tickStrokeOpacity,
+	    tickInterval = props.tickInterval;
+
+	// if (tickArguments) tickArguments = [tickArguments];
+
+	var tickValues = void 0;
+	if ((0, _utils.isDefined)(tickValuesProp)) {
+		tickValues = tickValuesProp;
+	} else if ((0, _utils.isDefined)(tickInterval)) {
+		var _scale$domain = scale.domain(),
+		    _scale$domain2 = _slicedToArray(_scale$domain, 2),
+		    min = _scale$domain2[0],
+		    max = _scale$domain2[1];
+
+		tickValues = (0, _d3Array.range)(min, max, (max - min) / tickInterval);
+	} else if ((0, _utils.isDefined)(scale.ticks)) {
+		tickValues = scale.ticks(tickArguments, flexTicks);
+	} else {
+		tickValues = scale.domain();
+	}
+
+	var baseFormat = scale.tickFormat ? scale.tickFormat(tickArguments) : _utils.identity;
+
+	var format = (0, _utils.isNotDefined)(tickFormat) ? baseFormat : function (d) {
+		return tickFormat(d) || "";
+	};
+
+	var sign = orient === "top" || orient === "left" ? -1 : 1;
+	var tickSpacing = Math.max(innerTickSize, 0) + tickPadding;
+
+	var ticks = void 0,
+	    dy = void 0,
+	    canvas_dy = void 0,
+	    textAnchor = void 0;
+
+	if (orient === "bottom" || orient === "top") {
+		dy = sign < 0 ? "0em" : ".71em";
+		canvas_dy = sign < 0 ? 0 : fontSize * .71;
+		textAnchor = "middle";
+
+		ticks = tickValues.map(function (d) {
+			var x = Math.round(scale(d));
+			return {
+				value: d,
+				x1: x,
+				y1: 0,
+				x2: x,
+				y2: sign * innerTickSize,
+				labelX: x,
+				labelY: sign * tickSpacing
+			};
+		});
+
+		if (showTicks && flexTicks) {
+			// console.log(ticks, showTicks);
+
+			var nodes = ticks.map(function (d) {
+				return { id: d.value, value: d.value, fy: d.y2, origX: d.x1 };
+			});
+
+			var simulation = (0, _d3Force.forceSimulation)(nodes).force("x", (0, _d3Force.forceX)(function (d) {
+				return d.origX;
+			}).strength(1)).force("collide", (0, _d3Force.forceCollide)(22))
+			// .force("center", forceCenter())
+			.stop();
+
+			for (var i = 0; i < 100; ++i) {
+				simulation.tick();
+			} // console.log(nodes);
+
+			var zip = (0, _utils.zipper)().combine(function (a, b) {
+				if (Math.abs(b.x - b.origX) > 0.01) {
+					return _extends({}, a, {
+						x2: b.x,
+						labelX: b.x
+					});
+				}
+				return a;
+			});
+
+			ticks = zip(ticks, nodes);
+		}
+	} else {
+		ticks = tickValues.map(function (d) {
+			var y = Math.round(scale(d));
+			return {
+				value: d,
+				x1: 0,
+				y1: y,
+				x2: sign * innerTickSize,
+				y2: y,
+				labelX: sign * tickSpacing,
+				labelY: y
+			};
+		});
+
+		dy = ".32em";
+		canvas_dy = fontSize * .32;
+		textAnchor = sign < 0 ? "end" : "start";
+	}
+
+	return {
+		ticks: ticks, scale: scale, tickStroke: tickStroke,
+		tickLabelFill: tickLabelFill || tickStroke,
+		tickStrokeOpacity: tickStrokeOpacity,
+		tickStrokeWidth: tickStrokeWidth,
+		tickStrokeDasharray: tickStrokeDasharray,
+		dy: dy,
+		canvas_dy: canvas_dy,
+		textAnchor: textAnchor,
+		fontSize: fontSize,
+		fontFamily: fontFamily,
+		format: format
+	};
+}
+
+/* eslint-disable react/prop-types */
+function axisLineSVG(props, range) {
+	var orient = props.orient,
+	    outerTickSize = props.outerTickSize;
+	var domainClassName = props.domainClassName,
+	    fill = props.fill,
+	    stroke = props.stroke,
+	    strokeWidth = props.strokeWidth,
+	    opacity = props.opacity;
+
+
+	var sign = orient === "top" || orient === "left" ? -1 : 1;
+
+	var d = void 0;
+
+	if (orient === "bottom" || orient === "top") {
+		d = "M" + range[0] + "," + sign * outerTickSize + "V0H" + range[1] + "V" + sign * outerTickSize;
+	} else {
+		d = "M" + sign * outerTickSize + "," + range[0] + "H0V" + range[1] + "H" + sign * outerTickSize;
+	}
+
+	return _react2.default.createElement("path", {
+		className: domainClassName,
+		d: d,
+		fill: fill,
+		opacity: opacity,
+		stroke: stroke,
+		strokeWidth: strokeWidth });
+}
+/* eslint-enable react/prop-types */
+
+function drawAxisLine(ctx, props, range) {
+	// props = { ...AxisLine.defaultProps, ...props };
+
+	var orient = props.orient,
+	    outerTickSize = props.outerTickSize,
+	    stroke = props.stroke,
+	    strokeWidth = props.strokeWidth,
+	    opacity = props.opacity;
+
+
+	var sign = orient === "top" || orient === "left" ? -1 : 1;
+	var xAxis = orient === "bottom" || orient === "top";
+
+	// var range = d3_scaleRange(xAxis ? xScale : yScale);
+
+	ctx.lineWidth = strokeWidth;
+	ctx.strokeStyle = (0, _utils.hexToRGBA)(stroke, opacity);
+
+	ctx.beginPath();
+
+	if (xAxis) {
+		ctx.moveTo((0, _utils.first)(range), sign * outerTickSize);
+		ctx.lineTo((0, _utils.first)(range), 0);
+		ctx.lineTo((0, _utils.last)(range), 0);
+		ctx.lineTo((0, _utils.last)(range), sign * outerTickSize);
+	} else {
+		ctx.moveTo(sign * outerTickSize, (0, _utils.first)(range));
+		ctx.lineTo(0, (0, _utils.first)(range));
+		ctx.lineTo(0, (0, _utils.last)(range));
+		ctx.lineTo(sign * outerTickSize, (0, _utils.last)(range));
+	}
+	ctx.stroke();
+}
+
+function Tick(props) {
+	var tickLabelFill = props.tickLabelFill,
+	    tickStroke = props.tickStroke,
+	    tickStrokeOpacity = props.tickStrokeOpacity,
+	    tickStrokeDasharray = props.tickStrokeDasharray,
+	    tickStrokeWidth = props.tickStrokeWidth,
+	    textAnchor = props.textAnchor,
+	    fontSize = props.fontSize,
+	    fontFamily = props.fontFamily;
+	var x1 = props.x1,
+	    y1 = props.y1,
+	    x2 = props.x2,
+	    y2 = props.y2,
+	    labelX = props.labelX,
+	    labelY = props.labelY,
+	    dy = props.dy;
+
+	return _react2.default.createElement(
+		"g",
+		{ className: "tick" },
+		_react2.default.createElement("line", {
+			shapeRendering: "crispEdges",
+			opacity: tickStrokeOpacity,
+			stroke: tickStroke,
+			strokeWidth: tickStrokeWidth,
+			strokeDasharray: (0, _utils.getStrokeDasharray)(tickStrokeDasharray),
+			x1: x1, y1: y1,
+			x2: x2, y2: y2 }),
+		_react2.default.createElement(
+			"text",
+			{
+				dy: dy, x: labelX, y: labelY,
+				fill: tickLabelFill,
+				fontSize: fontSize,
+				fontFamily: fontFamily,
+				textAnchor: textAnchor },
+			props.children
+		)
+	);
+}
+
+Tick.propTypes = {
+	children: _propTypes2.default.string.isRequired,
+	x1: _propTypes2.default.number.isRequired,
+	y1: _propTypes2.default.number.isRequired,
+	x2: _propTypes2.default.number.isRequired,
+	y2: _propTypes2.default.number.isRequired,
+	labelX: _propTypes2.default.number.isRequired,
+	labelY: _propTypes2.default.number.isRequired,
+	dy: _propTypes2.default.string.isRequired,
+	tickStroke: _propTypes2.default.string,
+	tickLabelFill: _propTypes2.default.string,
+	tickStrokeWidth: _propTypes2.default.number,
+	tickStrokeOpacity: _propTypes2.default.number,
+	tickStrokeDasharray: _propTypes2.default.oneOf(_utils.strokeDashTypes),
+	textAnchor: _propTypes2.default.string,
+	fontSize: _propTypes2.default.number,
+	fontFamily: _propTypes2.default.string
+};
+
+function axisTicksSVG(props, scale) {
+	var result = tickHelper(props, scale);
+
+	var tickLabelFill = result.tickLabelFill,
+	    tickStroke = result.tickStroke,
+	    tickStrokeOpacity = result.tickStrokeOpacity,
+	    tickStrokeWidth = result.tickStrokeWidth,
+	    tickStrokeDasharray = result.tickStrokeDasharray,
+	    textAnchor = result.textAnchor;
+	var fontSize = result.fontSize,
+	    fontFamily = result.fontFamily,
+	    ticks = result.ticks,
+	    format = result.format;
+	var dy = result.dy;
+
+
+	return _react2.default.createElement(
+		"g",
+		null,
+		ticks.map(function (tick, idx) {
+			return _react2.default.createElement(
+				Tick,
+				{ key: idx,
+					tickStroke: tickStroke,
+					tickLabelFill: tickLabelFill,
+					tickStrokeWidth: tickStrokeWidth,
+					tickStrokeOpacity: tickStrokeOpacity,
+					tickStrokeDasharray: tickStrokeDasharray,
+					dy: dy,
+					x1: tick.x1, y1: tick.y1,
+					x2: tick.x2, y2: tick.y2,
+					labelX: tick.labelX, labelY: tick.labelY,
+					textAnchor: textAnchor,
+					fontSize: fontSize, fontFamily: fontFamily },
+				format(tick.value)
+			);
+		})
+	);
+}
+
+function drawTicks(ctx, result) {
+	var tickStroke = result.tickStroke,
+	    tickStrokeOpacity = result.tickStrokeOpacity,
+	    tickLabelFill = result.tickLabelFill;
+	var textAnchor = result.textAnchor,
+	    fontSize = result.fontSize,
+	    fontFamily = result.fontFamily,
+	    ticks = result.ticks;
+
+
+	ctx.strokeStyle = (0, _utils.hexToRGBA)(tickStroke, tickStrokeOpacity);
+
+	ctx.fillStyle = tickStroke;
+	// ctx.textBaseline = 'middle';
+
+	ticks.forEach(function (tick) {
+		drawEachTick(ctx, tick, result);
+	});
+
+	ctx.font = fontSize + "px " + fontFamily;
+	ctx.fillStyle = tickLabelFill;
+	ctx.textAlign = textAnchor === "middle" ? "center" : textAnchor;
+
+	ticks.forEach(function (tick) {
+		drawEachTickLabel(ctx, tick, result);
+	});
+}
+
+function drawEachTick(ctx, tick, result) {
+	var tickStrokeWidth = result.tickStrokeWidth,
+	    tickStrokeDasharray = result.tickStrokeDasharray;
+
+
+	ctx.beginPath();
+
+	ctx.moveTo(tick.x1, tick.y1);
+	ctx.lineTo(tick.x2, tick.y2);
+	ctx.lineWidth = tickStrokeWidth;
+	ctx.setLineDash((0, _utils.getStrokeDasharray)(tickStrokeDasharray).split(","));
+	ctx.stroke();
+}
+
+function drawEachTickLabel(ctx, tick, result) {
+	var canvas_dy = result.canvas_dy,
+	    format = result.format;
+
+
+	ctx.beginPath();
+	ctx.fillText(format(tick.value), tick.labelX, tick.labelY + canvas_dy);
+}
+
+exports.default = Axis;
+//# sourceMappingURL=Axis.js.map
+
+/***/ }),
+/* 358 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _TypeChooser = __webpack_require__(961);
+
+Object.defineProperty(exports, "TypeChooser", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_TypeChooser).default;
+  }
+});
+
+var _SaveChartAsImage = __webpack_require__(962);
+
+Object.defineProperty(exports, "SaveChartAsImage", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_SaveChartAsImage).default;
+  }
+});
+
+var _fitWidth = __webpack_require__(964);
+
+Object.defineProperty(exports, "fitWidth", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_fitWidth).default;
+  }
+});
+
+var _fitDimensions = __webpack_require__(965);
+
+Object.defineProperty(exports, "fitDimensions", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_fitDimensions).default;
+  }
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -28960,18 +30918,18 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_12__;
 });
 
 /***/ }),
-/* 350 */
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(912);
+module.exports = __webpack_require__(971);
 
 /***/ }),
-/* 351 */
+/* 361 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
     if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(0), __webpack_require__(26), __webpack_require__(2), __webpack_require__(194), __webpack_require__(195), __webpack_require__(913)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(0), __webpack_require__(26), __webpack_require__(2), __webpack_require__(197), __webpack_require__(198), __webpack_require__(972)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -29191,7 +31149,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 });
 
 /***/ }),
-/* 352 */
+/* 362 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29225,23 +31183,23 @@ var _util = __webpack_require__(30);
 
 var _util2 = _interopRequireDefault(_util);
 
-var _Date = __webpack_require__(915);
+var _Date = __webpack_require__(974);
 
 var _Date2 = _interopRequireDefault(_Date);
 
-var _Text = __webpack_require__(916);
+var _Text = __webpack_require__(975);
 
 var _Text2 = _interopRequireDefault(_Text);
 
-var _Regex = __webpack_require__(917);
+var _Regex = __webpack_require__(976);
 
 var _Regex2 = _interopRequireDefault(_Regex);
 
-var _Select = __webpack_require__(918);
+var _Select = __webpack_require__(977);
 
 var _Select2 = _interopRequireDefault(_Select);
 
-var _Number = __webpack_require__(919);
+var _Number = __webpack_require__(978);
 
 var _Number2 = _interopRequireDefault(_Number);
 
@@ -29668,7 +31626,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 353 */
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29819,7 +31777,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 354 */
+/* 364 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29830,7 +31788,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.notice = undefined;
 
-var _reactSAlert = __webpack_require__(350);
+var _reactSAlert = __webpack_require__(360);
 
 var _reactSAlert2 = _interopRequireDefault(_reactSAlert);
 
@@ -29863,7 +31821,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 355 */
+/* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29989,7 +31947,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 356 */
+/* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30053,7 +32011,7 @@ function findTabbableDescendants(element) {
 module.exports = exports["default"];
 
 /***/ }),
-/* 357 */
+/* 367 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30126,7 +32084,7 @@ function resetForTesting() {
 }
 
 /***/ }),
-/* 358 */
+/* 368 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30168,7 +32126,7 @@ function totalCount() {
 }
 
 /***/ }),
-/* 359 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30179,7 +32137,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.canUseDOM = undefined;
 
-var _exenv = __webpack_require__(938);
+var _exenv = __webpack_require__(997);
 
 var _exenv2 = _interopRequireDefault(_exenv);
 
@@ -30194,7 +32152,7 @@ var canUseDOM = exports.canUseDOM = EE.canUseDOM;
 exports.default = SafeHTMLElement;
 
 /***/ }),
-/* 360 */
+/* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30357,7 +32315,7 @@ var _temp2 = function () {
 ;
 
 /***/ }),
-/* 361 */
+/* 371 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30529,7 +32487,7 @@ var _temp2 = function () {
 ;
 
 /***/ }),
-/* 362 */
+/* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30549,7 +32507,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Editor = __webpack_require__(353);
+var _Editor = __webpack_require__(363);
 
 var _Editor2 = _interopRequireDefault(_Editor);
 
@@ -30695,7 +32653,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 363 */
+/* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30809,7 +32767,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 364 */
+/* 374 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30923,7 +32881,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 365 */
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31037,7 +32995,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 366 */
+/* 376 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31154,7 +33112,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 367 */
+/* 377 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31263,7 +33221,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 368 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31367,1964 +33325,6 @@ var _temp = function () {
 }();
 
 ;
-
-/***/ }),
-/* 369 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = zipper;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_array__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identity__ = __webpack_require__(63);
-
-
-/* an extension to d3.zip so we call a function instead of an array */
-
-
-
-
-
-function zipper() {
-	var combine = __WEBPACK_IMPORTED_MODULE_1__identity__["a" /* default */];
-
-	function zip() {
-		var n = arguments.length;
-		if (!n) return [];
-		var m = Object(__WEBPACK_IMPORTED_MODULE_0_d3_array__["min"])(arguments, d3_zipLength);
-
-		// eslint-disable-next-line prefer-const
-		var i = void 0,
-		    zips = new Array(m);
-		for (i = -1; ++i < m;) {
-			for (var j = -1, _zip = zips[i] = new Array(n); ++j < n;) {
-				_zip[j] = arguments[j][i];
-			}
-			zips[i] = combine.apply(this, zips[i]);
-		}
-		return zips;
-	}
-	function d3_zipLength(d) {
-		return d.length;
-	}
-	zip.combine = function (x) {
-		if (!arguments.length) {
-			return combine;
-		}
-		combine = x;
-		return zip;
-	};
-	return zip;
-}
-//# sourceMappingURL=zipper.js.map
-
-/***/ }),
-/* 370 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = shallowEqual;
-// https://github.com/jonschlinkert/is-equal-shallow/
-
-/*
-The MIT License (MIT)
-
-Copyright (c) 2015, Jon Schlinkert.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-*/
-
-function isDate(date) {
-	return Object.prototype.toString.call(date) === "[object Date]";
-}
-
-function isEqual(val1, val2) {
-	return isDate(val1) && isDate(val2) ? val1.getTime() === val2.getTime() : val1 === val2;
-}
-
-function shallowEqual(a, b) {
-	if (!a && !b) {
-		return true;
-	}
-	if (!a && b || a && !b) {
-		return false;
-	}
-
-	var numKeysA = 0,
-	    numKeysB = 0,
-	    key = void 0;
-	for (key in b) {
-		numKeysB++;
-		if ( /* !isPrimitive(b[key]) || */b.hasOwnProperty(key) && !a.hasOwnProperty(key) || !isEqual(a[key], b[key])) {
-			// console.log(key, a, b);
-			return false;
-		}
-	}
-	for (key in a) {
-		numKeysA++;
-	}
-	return numKeysA === numKeysB;
-}
-//# sourceMappingURL=shallowEqual.js.map
-
-/***/ }),
-/* 371 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * This is the web browser implementation of `debug()`.
- *
- * Expose `debug()` as the module.
- */
-
-exports = module.exports = __webpack_require__(968);
-exports.log = log;
-exports.formatArgs = formatArgs;
-exports.save = save;
-exports.load = load;
-exports.useColors = useColors;
-exports.storage = 'undefined' != typeof chrome
-               && 'undefined' != typeof chrome.storage
-                  ? chrome.storage.local
-                  : localstorage();
-
-/**
- * Colors.
- */
-
-exports.colors = [
-  '#0000CC', '#0000FF', '#0033CC', '#0033FF', '#0066CC', '#0066FF', '#0099CC',
-  '#0099FF', '#00CC00', '#00CC33', '#00CC66', '#00CC99', '#00CCCC', '#00CCFF',
-  '#3300CC', '#3300FF', '#3333CC', '#3333FF', '#3366CC', '#3366FF', '#3399CC',
-  '#3399FF', '#33CC00', '#33CC33', '#33CC66', '#33CC99', '#33CCCC', '#33CCFF',
-  '#6600CC', '#6600FF', '#6633CC', '#6633FF', '#66CC00', '#66CC33', '#9900CC',
-  '#9900FF', '#9933CC', '#9933FF', '#99CC00', '#99CC33', '#CC0000', '#CC0033',
-  '#CC0066', '#CC0099', '#CC00CC', '#CC00FF', '#CC3300', '#CC3333', '#CC3366',
-  '#CC3399', '#CC33CC', '#CC33FF', '#CC6600', '#CC6633', '#CC9900', '#CC9933',
-  '#CCCC00', '#CCCC33', '#FF0000', '#FF0033', '#FF0066', '#FF0099', '#FF00CC',
-  '#FF00FF', '#FF3300', '#FF3333', '#FF3366', '#FF3399', '#FF33CC', '#FF33FF',
-  '#FF6600', '#FF6633', '#FF9900', '#FF9933', '#FFCC00', '#FFCC33'
-];
-
-/**
- * Currently only WebKit-based Web Inspectors, Firefox >= v31,
- * and the Firebug extension (any Firefox version) are known
- * to support "%c" CSS customizations.
- *
- * TODO: add a `localStorage` variable to explicitly enable/disable colors
- */
-
-function useColors() {
-  // NB: In an Electron preload script, document will be defined but not fully
-  // initialized. Since we know we're in Chrome, we'll just detect this case
-  // explicitly
-  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
-    return true;
-  }
-
-  // Internet Explorer and Edge do not support colors.
-  if (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
-    return false;
-  }
-
-  // is webkit? http://stackoverflow.com/a/16459606/376773
-  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
-  return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
-    // is firebug? http://stackoverflow.com/a/398120/376773
-    (typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
-    // is firefox >= v31?
-    // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
-    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
-    // double check webkit in userAgent just in case we are in a worker
-    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
-}
-
-/**
- * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
- */
-
-exports.formatters.j = function(v) {
-  try {
-    return JSON.stringify(v);
-  } catch (err) {
-    return '[UnexpectedJSONParseError]: ' + err.message;
-  }
-};
-
-
-/**
- * Colorize log arguments if enabled.
- *
- * @api public
- */
-
-function formatArgs(args) {
-  var useColors = this.useColors;
-
-  args[0] = (useColors ? '%c' : '')
-    + this.namespace
-    + (useColors ? ' %c' : ' ')
-    + args[0]
-    + (useColors ? '%c ' : ' ')
-    + '+' + exports.humanize(this.diff);
-
-  if (!useColors) return;
-
-  var c = 'color: ' + this.color;
-  args.splice(1, 0, c, 'color: inherit')
-
-  // the final "%c" is somewhat tricky, because there could be other
-  // arguments passed either before or after the %c, so we need to
-  // figure out the correct index to insert the CSS into
-  var index = 0;
-  var lastC = 0;
-  args[0].replace(/%[a-zA-Z%]/g, function(match) {
-    if ('%%' === match) return;
-    index++;
-    if ('%c' === match) {
-      // we only are interested in the *last* %c
-      // (the user may have provided their own)
-      lastC = index;
-    }
-  });
-
-  args.splice(lastC, 0, c);
-}
-
-/**
- * Invokes `console.log()` when available.
- * No-op when `console.log` is not a "function".
- *
- * @api public
- */
-
-function log() {
-  // this hackery is required for IE8/9, where
-  // the `console.log` function doesn't have 'apply'
-  return 'object' === typeof console
-    && console.log
-    && Function.prototype.apply.call(console.log, console, arguments);
-}
-
-/**
- * Save `namespaces`.
- *
- * @param {String} namespaces
- * @api private
- */
-
-function save(namespaces) {
-  try {
-    if (null == namespaces) {
-      exports.storage.removeItem('debug');
-    } else {
-      exports.storage.debug = namespaces;
-    }
-  } catch(e) {}
-}
-
-/**
- * Load `namespaces`.
- *
- * @return {String} returns the previously persisted debug modes
- * @api private
- */
-
-function load() {
-  var r;
-  try {
-    r = exports.storage.debug;
-  } catch(e) {}
-
-  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
-  if (!r && typeof process !== 'undefined' && 'env' in process) {
-    r = process.env.DEBUG;
-  }
-
-  return r;
-}
-
-/**
- * Enable namespaces listed in `localStorage.debug` initially.
- */
-
-exports.enable(load());
-
-/**
- * Localstorage attempts to return the localstorage.
- *
- * This is necessary because safari throws
- * when a user disables cookies/localstorage
- * and you attempt to access it.
- *
- * @return {LocalStorage}
- * @api private
- */
-
-function localstorage() {
-  try {
-    return window.localStorage;
-  } catch (e) {}
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
-
-/***/ }),
-/* 372 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_d3_scale__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_PureComponent__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(16);
-
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-
-
-
-var Chart = function (_PureComponent) {
-	_inherits(Chart, _PureComponent);
-
-	function Chart(props, context) {
-		_classCallCheck(this, Chart);
-
-		var _this = _possibleConstructorReturn(this, (Chart.__proto__ || Object.getPrototypeOf(Chart)).call(this, props, context));
-
-		_this.yScale = _this.yScale.bind(_this);
-		_this.listener = _this.listener.bind(_this);
-		return _this;
-	}
-
-	_createClass(Chart, [{
-		key: "componentWillMount",
-		value: function componentWillMount() {
-			var id = this.props.id;
-			var subscribe = this.context.subscribe;
-
-			subscribe("chart_" + id, {
-				listener: this.listener
-			});
-		}
-	}, {
-		key: "componentWillUnmount",
-		value: function componentWillUnmount() {
-			var id = this.props.id;
-			var unsubscribe = this.context.unsubscribe;
-
-			unsubscribe("chart_" + id);
-		}
-	}, {
-		key: "listener",
-		value: function listener(type, moreProps, state, e) {
-			var _props = this.props,
-			    id = _props.id,
-			    onContextMenu = _props.onContextMenu;
-
-
-			if (type === "contextmenu") {
-				var currentCharts = moreProps.currentCharts;
-
-				if (currentCharts.indexOf(id) > -1) {
-					onContextMenu(moreProps, e);
-				}
-			}
-		}
-	}, {
-		key: "yScale",
-		value: function yScale() {
-			var _this2 = this;
-
-			var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_4__utils__["i" /* find */])(this.context.chartConfig, function (each) {
-				return each.id === _this2.props.id;
-			});
-			return chartConfig.yScale.copy();
-		}
-	}, {
-		key: "getChildContext",
-		value: function getChildContext() {
-			var chartId = this.props.id;
-
-			var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_4__utils__["i" /* find */])(this.context.chartConfig, function (each) {
-				return each.id === chartId;
-			});
-
-			return {
-				chartId: chartId,
-				chartConfig: chartConfig
-			};
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var _this3 = this;
-
-			var _find = Object(__WEBPACK_IMPORTED_MODULE_4__utils__["i" /* find */])(this.context.chartConfig, function (each) {
-				return each.id === _this3.props.id;
-			}),
-			    origin = _find.origin;
-
-			var _origin = _slicedToArray(origin, 2),
-			    x = _origin[0],
-			    y = _origin[1];
-
-			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-				"g",
-				{ transform: "translate(" + x + ", " + y + ")" },
-				this.props.children
-			);
-		}
-	}]);
-
-	return Chart;
-}(__WEBPACK_IMPORTED_MODULE_3__utils_PureComponent__["a" /* default */]);
-
-Chart.propTypes = {
-	height: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
-	origin: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func]),
-	id: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string]).isRequired,
-	yExtents: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func]),
-	yExtentsCalculator: function yExtentsCalculator(props, propName, componentName) {
-		if (Object(__WEBPACK_IMPORTED_MODULE_4__utils__["s" /* isNotDefined */])(props.yExtents) && typeof props.yExtentsCalculator !== "function") return new Error("yExtents or yExtentsCalculator must" + (" be present on " + componentName + ". Validation failed."));
-	},
-	onContextMenu: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	yScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-
-	flipYScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
-	padding: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.shape({
-		top: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
-		bottom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number
-	})]),
-	children: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.node
-};
-
-Chart.defaultProps = {
-	id: 0,
-	origin: [0, 0],
-	padding: 0,
-	yScale: Object(__WEBPACK_IMPORTED_MODULE_2_d3_scale__["scaleLinear"])(),
-	flipYScale: false,
-	yPan: true,
-	yPanEnabled: false,
-	onContextMenu: __WEBPACK_IMPORTED_MODULE_4__utils__["x" /* noop */]
-};
-
-Chart.contextTypes = {
-	chartConfig: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array,
-	subscribe: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	unsubscribe: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired
-};
-
-Chart.childContextTypes = {
-	chartConfig: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object.isRequired,
-	chartId: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string]).isRequired
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Chart);
-//# sourceMappingURL=Chart.js.map
-
-/***/ }),
-/* 373 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export getAxisCanvas */
-/* unused harmony export getMouseCanvas */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(16);
-
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-
-var aliases = {
-	mouseleave: "mousemove", // to draw interactive after mouse exit
-	panend: "pan",
-	pinchzoom: "pan",
-	mousedown: "mousemove",
-	click: "mousemove",
-	contextmenu: "mousemove",
-	dblclick: "mousemove",
-	dragstart: "drag",
-	dragend: "drag",
-	dragcancel: "drag"
-};
-
-var GenericComponent = function (_Component) {
-	_inherits(GenericComponent, _Component);
-
-	function GenericComponent(props, context) {
-		_classCallCheck(this, GenericComponent);
-
-		var _this = _possibleConstructorReturn(this, (GenericComponent.__proto__ || Object.getPrototypeOf(GenericComponent)).call(this, props, context));
-
-		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
-		_this.getMoreProps = _this.getMoreProps.bind(_this);
-		_this.listener = _this.listener.bind(_this);
-		_this.draw = _this.draw.bind(_this);
-		_this.updateMoreProps = _this.updateMoreProps.bind(_this);
-		_this.evaluateType = _this.evaluateType.bind(_this);
-		_this.isHover = _this.isHover.bind(_this);
-		_this.preCanvasDraw = _this.preCanvasDraw.bind(_this);
-		_this.postCanvasDraw = _this.postCanvasDraw.bind(_this);
-		_this.getPanConditions = _this.getPanConditions.bind(_this);
-		_this.shouldTypeProceed = _this.shouldTypeProceed.bind(_this);
-		_this.preEvaluate = _this.preEvaluate.bind(_this);
-
-		var generateSubscriptionId = context.generateSubscriptionId;
-
-		_this.suscriberId = generateSubscriptionId();
-
-		_this.moreProps = {};
-
-		_this.state = {
-			updateCount: 0
-		};
-		return _this;
-	}
-
-	_createClass(GenericComponent, [{
-		key: "updateMoreProps",
-		value: function updateMoreProps(moreProps) {
-			var _this2 = this;
-
-			Object.keys(moreProps).forEach(function (key) {
-				_this2.moreProps[key] = moreProps[key];
-			});
-		}
-	}, {
-		key: "shouldTypeProceed",
-		value: function shouldTypeProceed() {
-			return true;
-		}
-	}, {
-		key: "preEvaluate",
-		value: function preEvaluate() {}
-	}, {
-		key: "listener",
-		value: function listener(type, moreProps, state, e) {
-			// console.log(e.shiftKey)
-			if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(moreProps)) {
-				this.updateMoreProps(moreProps);
-			}
-			this.evaluationInProgress = true;
-			this.evaluateType(type, e);
-			this.evaluationInProgress = false;
-		}
-	}, {
-		key: "evaluateType",
-		value: function evaluateType(type, e) {
-			var newType = aliases[type] || type;
-			var proceed = this.props.drawOn.indexOf(newType) > -1;
-
-			// console.log("type ->", type, proceed);
-
-			if (!proceed) return;
-			// const moreProps = this.getMoreProps();
-			this.preEvaluate(type, this.moreProps, e);
-			if (!this.shouldTypeProceed(type, this.moreProps)) return;
-
-			switch (type) {
-				case "zoom":
-				case "mouseenter":
-					// DO NOT DRAW FOR THESE EVENTS
-					break;
-				case "mouseleave":
-
-					break;
-				case "contextmenu":
-					{
-						if (this.props.onContextMenu) {
-							this.props.onContextMenu(this.getMoreProps(), e);
-						}
-						if (this.moreProps.hovering && this.props.onContextMenuWhenHover) {
-							this.props.onContextMenuWhenHover(this.getMoreProps(), e);
-						}
-						break;
-					}
-				case "mousedown":
-					{
-						if (this.props.onMouseDown) {
-							this.props.onMouseDown(this.getMoreProps(), e);
-						}
-						break;
-					}
-				case "click":
-					{
-						var moreProps = this.getMoreProps();
-						if (this.moreProps.hovering) {
-							// console.error("TODO use this only for SAR, Line series")
-							this.props.onClickWhenHover(moreProps, e);
-						} else {
-							this.props.onClickOutside(moreProps, e);
-						}
-						if (this.props.onClick) {
-							this.props.onClick(moreProps, e);
-						}
-						break;
-					}
-				case "mousemove":
-					{
-
-						var prevHover = this.moreProps.hovering;
-						this.moreProps.hovering = this.isHover(e);
-
-						var _context = this.context,
-						    amIOnTop = _context.amIOnTop,
-						    setCursorClass = _context.setCursorClass;
-
-
-						if (this.moreProps.hovering && !this.props.selected && !prevHover && Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(this.props.onHover)) {
-							setCursorClass("react-stockcharts-pointer-cursor");
-							this.iSetTheCursorClass = true;
-						} else if (this.moreProps.hovering && this.props.selected && amIOnTop(this.suscriberId)) {
-							setCursorClass(this.props.interactiveCursorClass);
-							this.iSetTheCursorClass = true;
-						} else if (prevHover && !this.moreProps.hovering && this.iSetTheCursorClass) {
-							this.iSetTheCursorClass = false;
-							setCursorClass(null);
-						}
-						var _moreProps = this.getMoreProps();
-
-						if (this.moreProps.hovering && !prevHover) {
-							if (this.props.onHover) {
-								this.props.onHover(_moreProps, e);
-							}
-						}
-						if (prevHover && !this.moreProps.hovering) {
-							if (this.props.onUnHover) {
-								this.props.onUnHover(_moreProps, e);
-							}
-						}
-
-						if (this.props.onMouseMove) {
-							this.props.onMouseMove(_moreProps, e);
-						}
-						break;
-					}
-				case "dblclick":
-					{
-						var _moreProps2 = this.getMoreProps();
-
-						if (this.props.onDoubleClick) {
-							this.props.onDoubleClick(_moreProps2, e);
-						}
-						if (this.moreProps.hovering && this.props.onDoubleClickWhenHover) {
-							this.props.onDoubleClickWhenHover(_moreProps2, e);
-						}
-						break;
-					}
-				case "pan":
-					{
-						this.moreProps.hovering = false;
-						if (this.props.onPan) {
-							this.props.onPan(this.getMoreProps(), e);
-						}
-						break;
-					}
-				case "panend":
-					{
-						if (this.props.onPanEnd) {
-							this.props.onPanEnd(this.getMoreProps(), e);
-						}
-						break;
-					}
-				case "dragstart":
-					{
-						if (this.moreProps.hovering && this.props.selected) {
-							var _amIOnTop = this.context.amIOnTop;
-
-							if (_amIOnTop(this.suscriberId)) {
-								this.dragInProgress = true;
-								this.props.onDragStart(this.getMoreProps(), e);
-							}
-						}
-						this.someDragInProgress = true;
-						break;
-					}
-				case "drag":
-					{
-						if (this.dragInProgress && this.props.onDrag) {
-							this.props.onDrag(this.getMoreProps(), e);
-						}
-						break;
-					}
-				case "dragend":
-					{
-						if (this.dragInProgress && this.props.onDragComplete) {
-							this.props.onDragComplete(this.getMoreProps(), e);
-						}
-						this.dragInProgress = false;
-						this.someDragInProgress = false;
-						break;
-					}
-				case "dragcancel":
-					{
-						if (this.dragInProgress || this.iSetTheCursorClass) {
-							var _setCursorClass = this.context.setCursorClass;
-
-							_setCursorClass(null);
-						}
-						break;
-					}
-			}
-		}
-	}, {
-		key: "isHover",
-		value: function isHover(e) {
-			return Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(this.props.isHover) ? this.props.isHover(this.getMoreProps(), e) : false;
-		}
-	}, {
-		key: "getPanConditions",
-		value: function getPanConditions() {
-			var draggable = !!(this.props.selected && this.moreProps.hovering);
-
-			return {
-				draggable: draggable,
-				panEnabled: !this.props.disablePan
-			};
-		}
-	}, {
-		key: "draw",
-		value: function draw() {
-			var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { force: false },
-			    trigger = _ref.trigger,
-			    force = _ref.force;
-
-			var type = aliases[trigger] || trigger;
-			var proceed = this.props.drawOn.indexOf(type) > -1;
-
-			if (proceed || this.props.selected /* this is to draw as soon as you select */
-			|| force) {
-				var chartCanvasType = this.context.chartCanvasType;
-				var canvasDraw = this.props.canvasDraw;
-
-
-				if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["s" /* isNotDefined */])(canvasDraw) || chartCanvasType === "svg") {
-					var updateCount = this.state.updateCount;
-
-					this.setState({
-						updateCount: updateCount + 1
-					});
-				} else {
-					this.drawOnCanvas();
-				}
-			}
-		}
-	}, {
-		key: "componentWillMount",
-		value: function componentWillMount() {
-			var _context2 = this.context,
-			    subscribe = _context2.subscribe,
-			    chartId = _context2.chartId;
-			var _props = this.props,
-			    clip = _props.clip,
-			    edgeClip = _props.edgeClip;
-
-
-			subscribe(this.suscriberId, {
-				chartId: chartId, clip: clip, edgeClip: edgeClip,
-				listener: this.listener,
-				draw: this.draw,
-				getPanConditions: this.getPanConditions
-			});
-			this.componentWillReceiveProps(this.props, this.context);
-		}
-	}, {
-		key: "componentWillUnmount",
-		value: function componentWillUnmount() {
-			var unsubscribe = this.context.unsubscribe;
-
-			unsubscribe(this.suscriberId);
-		}
-	}, {
-		key: "componentDidMount",
-		value: function componentDidMount() {
-			this.componentDidUpdate(this.props);
-		}
-	}, {
-		key: "componentDidUpdate",
-		value: function componentDidUpdate(prevProps) {
-			var chartCanvasType = this.context.chartCanvasType;
-			var _props2 = this.props,
-			    canvasDraw = _props2.canvasDraw,
-			    selected = _props2.selected,
-			    interactiveCursorClass = _props2.interactiveCursorClass;
-
-
-			if (prevProps.selected !== selected) {
-				var setCursorClass = this.context.setCursorClass;
-
-				setCursorClass(selected && this.moreProps.hovering ? interactiveCursorClass : null);
-			}
-			if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(canvasDraw) && !this.evaluationInProgress
-			// && !(this.someDragInProgress && this.props.selected)
-			/*
-   prevent double draw of interactive elements
-   during dragging / hover / click etc.
-   */
-			&& chartCanvasType !== "svg") {
-				this.drawOnCanvas();
-			}
-		}
-	}, {
-		key: "componentWillReceiveProps",
-		value: function componentWillReceiveProps(nextProps, nextContext) {
-			var xScale = nextContext.xScale,
-			    plotData = nextContext.plotData,
-			    chartConfig = nextContext.chartConfig,
-			    getMutableState = nextContext.getMutableState;
-
-
-			this.props.debug(nextContext);
-			this.moreProps = _extends({}, this.moreProps, getMutableState(), {
-				/*
-    ^ this is so
-    mouseXY, currentCharts, currentItem are available to
-    newly created components like MouseHoverText which
-    is created right after a new interactive object is drawn
-    */
-				xScale: xScale, plotData: plotData, chartConfig: chartConfig
-			});
-		}
-	}, {
-		key: "getMoreProps",
-		value: function getMoreProps() {
-			var _context3 = this.context,
-			    xScale = _context3.xScale,
-			    plotData = _context3.plotData,
-			    chartConfig = _context3.chartConfig,
-			    morePropsDecorator = _context3.morePropsDecorator,
-			    xAccessor = _context3.xAccessor,
-			    displayXAccessor = _context3.displayXAccessor,
-			    width = _context3.width,
-			    height = _context3.height;
-			var _context4 = this.context,
-			    chartId = _context4.chartId,
-			    fullData = _context4.fullData;
-
-
-			var moreProps = _extends({
-				xScale: xScale, plotData: plotData, chartConfig: chartConfig,
-				xAccessor: xAccessor, displayXAccessor: displayXAccessor,
-				width: width, height: height,
-				chartId: chartId,
-				fullData: fullData
-			}, this.moreProps);
-
-			return (morePropsDecorator || __WEBPACK_IMPORTED_MODULE_2__utils__["q" /* identity */])(moreProps);
-		}
-	}, {
-		key: "preCanvasDraw",
-		value: function preCanvasDraw() {
-			// do nothing
-		}
-	}, {
-		key: "postCanvasDraw",
-		value: function postCanvasDraw() {}
-	}, {
-		key: "drawOnCanvas",
-		value: function drawOnCanvas() {
-			var _props3 = this.props,
-			    canvasDraw = _props3.canvasDraw,
-			    canvasToDraw = _props3.canvasToDraw;
-			var getCanvasContexts = this.context.getCanvasContexts;
-
-
-			var moreProps = this.getMoreProps();
-
-			var ctx = canvasToDraw(getCanvasContexts());
-
-			this.preCanvasDraw(ctx, moreProps);
-			canvasDraw(ctx, moreProps);
-			this.postCanvasDraw(ctx, moreProps);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var _context5 = this.context,
-			    chartCanvasType = _context5.chartCanvasType,
-			    chartId = _context5.chartId;
-			var _props4 = this.props,
-			    canvasDraw = _props4.canvasDraw,
-			    clip = _props4.clip,
-			    svgDraw = _props4.svgDraw;
-
-
-			if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(canvasDraw) && chartCanvasType !== "svg") {
-				return null;
-			}
-
-			var suffix = Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(chartId) ? "-" + chartId : "";
-
-			var style = clip ? { "clipPath": "url(#chart-area-clip" + suffix + ")" } : null;
-
-			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-				"g",
-				{ style: style },
-				svgDraw(this.getMoreProps())
-			);
-		}
-	}]);
-
-	return GenericComponent;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-GenericComponent.propTypes = {
-	svgDraw: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	canvasDraw: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-
-	drawOn: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array.isRequired,
-
-	clip: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
-	edgeClip: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
-	interactiveCursorClass: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
-
-	selected: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
-	disablePan: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
-
-	canvasToDraw: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-
-	isHover: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-
-	onClick: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onClickWhenHover: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onClickOutside: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-
-	onPan: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onPanEnd: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onDragStart: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onDrag: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onDragComplete: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onDoubleClick: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onDoubleClickWhenHover: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onContextMenu: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onContextMenuWhenHover: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onMouseMove: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onMouseDown: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onHover: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onUnHover: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-
-	debug: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func
-	// owner: PropTypes.string.isRequired,
-};
-
-GenericComponent.defaultProps = {
-	svgDraw: Object(__WEBPACK_IMPORTED_MODULE_2__utils__["j" /* functor */])(null),
-	draw: [],
-	canvasToDraw: function canvasToDraw(contexts) {
-		return contexts.mouseCoord;
-	},
-	clip: true,
-	edgeClip: false,
-	selected: false,
-	disablePan: false,
-
-	onClickWhenHover: __WEBPACK_IMPORTED_MODULE_2__utils__["x" /* noop */],
-	onClickOutside: __WEBPACK_IMPORTED_MODULE_2__utils__["x" /* noop */],
-	onDragStart: __WEBPACK_IMPORTED_MODULE_2__utils__["x" /* noop */],
-	onMouseMove: __WEBPACK_IMPORTED_MODULE_2__utils__["x" /* noop */],
-	onMouseDown: __WEBPACK_IMPORTED_MODULE_2__utils__["x" /* noop */],
-	debug: __WEBPACK_IMPORTED_MODULE_2__utils__["x" /* noop */]
-};
-
-GenericComponent.contextTypes = {
-	width: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	height: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	margin: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object.isRequired,
-	chartId: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string]),
-	getCanvasContexts: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-
-	chartCanvasType: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
-	xScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	xAccessor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	displayXAccessor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	plotData: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array.isRequired,
-	fullData: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array.isRequired,
-
-	chartConfig: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object]).isRequired,
-
-	morePropsDecorator: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	generateSubscriptionId: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	getMutableState: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-
-	amIOnTop: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	subscribe: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	unsubscribe: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	setCursorClass: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (GenericComponent);
-
-function getAxisCanvas(contexts) {
-	return contexts.axes;
-}
-
-function getMouseCanvas(contexts) {
-	return contexts.mouseCoord;
-}
-//# sourceMappingURL=GenericComponent.js.map
-
-/***/ }),
-/* 374 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/* an extension to d3.zip so we call a function instead of an array */
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-exports.default = zipper;
-
-var _d3Array = __webpack_require__(8);
-
-var _identity = __webpack_require__(87);
-
-var _identity2 = _interopRequireDefault(_identity);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function zipper() {
-	var combine = _identity2.default;
-
-	function zip() {
-		var n = arguments.length;
-		if (!n) return [];
-		var m = (0, _d3Array.min)(arguments, d3_zipLength);
-
-		// eslint-disable-next-line prefer-const
-		var i = void 0,
-		    zips = new Array(m);
-		for (i = -1; ++i < m;) {
-			for (var j = -1, _zip = zips[i] = new Array(n); ++j < n;) {
-				_zip[j] = arguments[j][i];
-			}
-			zips[i] = combine.apply(this, zips[i]);
-		}
-		return zips;
-	}
-	function d3_zipLength(d) {
-		return d.length;
-	}
-	zip.combine = function (x) {
-		if (!arguments.length) {
-			return combine;
-		}
-		combine = x;
-		return zip;
-	};
-	return zip;
-}
-//# sourceMappingURL=zipper.js.map
-
-/***/ }),
-/* 375 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-exports.default = shallowEqual;
-// https://github.com/jonschlinkert/is-equal-shallow/
-
-/*
-The MIT License (MIT)
-
-Copyright (c) 2015, Jon Schlinkert.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-*/
-
-function isDate(date) {
-	return Object.prototype.toString.call(date) === "[object Date]";
-}
-
-function isEqual(val1, val2) {
-	return isDate(val1) && isDate(val2) ? val1.getTime() === val2.getTime() : val1 === val2;
-}
-
-function shallowEqual(a, b) {
-	if (!a && !b) {
-		return true;
-	}
-	if (!a && b || a && !b) {
-		return false;
-	}
-
-	var numKeysA = 0,
-	    numKeysB = 0,
-	    key = void 0;
-	for (key in b) {
-		numKeysB++;
-		if ( /* !isPrimitive(b[key]) || */b.hasOwnProperty(key) && !a.hasOwnProperty(key) || !isEqual(a[key], b[key])) {
-			// console.log(key, a, b);
-			return false;
-		}
-	}
-	for (key in a) {
-		numKeysA++;
-	}
-	return numKeysA === numKeysB;
-}
-//# sourceMappingURL=shallowEqual.js.map
-
-/***/ }),
-/* 376 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _GenericChartComponent = __webpack_require__(17);
-
-var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
-
-var _GenericComponent = __webpack_require__(15);
-
-var _StackedBarSeries = __webpack_require__(122);
-
-var _StackedBarSeries2 = _interopRequireDefault(_StackedBarSeries);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var BarSeries = function (_Component) {
-	_inherits(BarSeries, _Component);
-
-	function BarSeries(props) {
-		_classCallCheck(this, BarSeries);
-
-		var _this = _possibleConstructorReturn(this, (BarSeries.__proto__ || Object.getPrototypeOf(BarSeries)).call(this, props));
-
-		_this.renderSVG = _this.renderSVG.bind(_this);
-		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
-		return _this;
-	}
-
-	_createClass(BarSeries, [{
-		key: "drawOnCanvas",
-		value: function drawOnCanvas(ctx, moreProps) {
-
-			if (this.props.swapScales) {
-				var xAccessor = moreProps.xAccessor;
-
-				(0, _StackedBarSeries.drawOnCanvasHelper)(ctx, this.props, moreProps, xAccessor, _StackedBarSeries.identityStack);
-			} else {
-				var bars = getBars(this.props, moreProps);
-				(0, _StackedBarSeries.drawOnCanvas2)(this.props, ctx, bars);
-			}
-		}
-	}, {
-		key: "renderSVG",
-		value: function renderSVG(moreProps) {
-			if (this.props.swapScales) {
-				var xAccessor = moreProps.xAccessor;
-
-				return _react2.default.createElement(
-					"g",
-					null,
-					(0, _StackedBarSeries.svgHelper)(this.props, moreProps, xAccessor, _StackedBarSeries.identityStack)
-				);
-			} else {
-				var bars = getBars(this.props, moreProps);
-				return _react2.default.createElement(
-					"g",
-					null,
-					(0, _StackedBarSeries.getBarsSVG2)(this.props, bars)
-				);
-			}
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var clip = this.props.clip;
-
-
-			return _react2.default.createElement(_GenericChartComponent2.default, {
-				clip: clip,
-				svgDraw: this.renderSVG,
-
-				canvasToDraw: _GenericComponent.getAxisCanvas,
-				canvasDraw: this.drawOnCanvas,
-
-				drawOn: ["pan"]
-			});
-		}
-	}]);
-
-	return BarSeries;
-}(_react.Component);
-
-BarSeries.propTypes = {
-	baseAt: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]),
-	stroke: _propTypes2.default.bool,
-	width: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]),
-	yAccessor: _propTypes2.default.func.isRequired,
-	opacity: _propTypes2.default.number,
-	fill: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]),
-	className: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]),
-	clip: _propTypes2.default.bool,
-	swapScales: _propTypes2.default.bool
-};
-
-BarSeries.defaultProps = _StackedBarSeries2.default.defaultProps;
-
-exports.default = BarSeries;
-
-/*
- Initially, this program was using StackedBarSeries.getBars
- to benefit from code reuse and having a single place that
- contains the logic for drawing all types of bar charts
- simple, grouped, horizontal, but turnes out
- making it highly cuztimizable also made it slow for the
- most simple case, a regular bar chart.
- This function contains just the necessary logic
- to create bars
-*/
-
-function getBars(props, moreProps) {
-	var baseAt = props.baseAt,
-	    fill = props.fill,
-	    stroke = props.stroke,
-	    yAccessor = props.yAccessor;
-	var xScale = moreProps.xScale,
-	    xAccessor = moreProps.xAccessor,
-	    plotData = moreProps.plotData,
-	    yScale = moreProps.chartConfig.yScale;
-
-
-	var getFill = (0, _utils.functor)(fill);
-	var getBase = (0, _utils.functor)(baseAt);
-
-	var widthFunctor = (0, _utils.functor)(props.width);
-
-	var width = widthFunctor(props, {
-		xScale: xScale,
-		xAccessor: xAccessor,
-		plotData: plotData
-	});
-
-	/*
- const barWidth = Math.round(width);
- const offset = Math.round(barWidth === 1 ? 0 : 0.5 * barWidth);
- */
-	var offset = Math.floor(0.5 * width);
-
-	var bars = plotData.map(function (d) {
-		var yValue = yAccessor(d);
-		var y = yScale(yValue);
-
-		var x = Math.round(xScale(xAccessor(d))) - offset;
-		var h = getBase(xScale, yScale, d) - yScale(yValue);
-
-		if (h < 0) {
-			y = y + h;
-			h = -h;
-		}
-
-		return {
-			// type: "line"
-			x: x,
-			y: Math.round(y),
-			height: Math.round(h),
-			width: offset * 2,
-			fill: getFill(d, 0),
-			stroke: stroke ? getFill(d, 0) : "none"
-		};
-	});
-
-	return bars;
-}
-//# sourceMappingURL=BarSeries.js.map
-
-/***/ }),
-/* 377 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _d3Force = __webpack_require__(297);
-
-var _d3Array = __webpack_require__(8);
-
-var _GenericChartComponent = __webpack_require__(17);
-
-var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
-
-var _GenericComponent = __webpack_require__(15);
-
-var _AxisZoomCapture = __webpack_require__(1008);
-
-var _AxisZoomCapture2 = _interopRequireDefault(_AxisZoomCapture);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Axis = function (_Component) {
-	_inherits(Axis, _Component);
-
-	function Axis(props) {
-		_classCallCheck(this, Axis);
-
-		var _this = _possibleConstructorReturn(this, (Axis.__proto__ || Object.getPrototypeOf(Axis)).call(this, props));
-
-		_this.renderSVG = _this.renderSVG.bind(_this);
-		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
-		_this.saveNode = _this.saveNode.bind(_this);
-		_this.getMoreProps = _this.getMoreProps.bind(_this);
-		return _this;
-	}
-
-	_createClass(Axis, [{
-		key: "saveNode",
-		value: function saveNode(node) {
-			this.node = node;
-		}
-	}, {
-		key: "getMoreProps",
-		value: function getMoreProps() {
-			return this.node.getMoreProps();
-		}
-	}, {
-		key: "drawOnCanvas",
-		value: function drawOnCanvas(ctx, moreProps) {
-			var _props = this.props,
-			    showDomain = _props.showDomain,
-			    showTicks = _props.showTicks,
-			    transform = _props.transform,
-			    range = _props.range,
-			    getScale = _props.getScale;
-
-
-			ctx.save();
-			ctx.translate(transform[0], transform[1]);
-
-			if (showDomain) drawAxisLine(ctx, this.props, range);
-			if (showTicks) {
-				var tickProps = tickHelper(this.props, getScale(moreProps));
-				drawTicks(ctx, tickProps);
-			}
-
-			ctx.restore();
-		}
-	}, {
-		key: "renderSVG",
-		value: function renderSVG(moreProps) {
-			var className = this.props.className;
-			var _props2 = this.props,
-			    showDomain = _props2.showDomain,
-			    showTicks = _props2.showTicks,
-			    range = _props2.range,
-			    getScale = _props2.getScale;
-
-
-			var ticks = showTicks ? axisTicksSVG(this.props, getScale(moreProps)) : null;
-			var domain = showDomain ? axisLineSVG(this.props, range) : null;
-
-			return _react2.default.createElement(
-				"g",
-				{ className: className },
-				ticks,
-				domain
-			);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var _props3 = this.props,
-			    bg = _props3.bg,
-			    axisZoomCallback = _props3.axisZoomCallback,
-			    zoomCursorClassName = _props3.zoomCursorClassName,
-			    zoomEnabled = _props3.zoomEnabled,
-			    getScale = _props3.getScale,
-			    inverted = _props3.inverted;
-			var _props4 = this.props,
-			    transform = _props4.transform,
-			    getMouseDelta = _props4.getMouseDelta,
-			    edgeClip = _props4.edgeClip;
-			var _props5 = this.props,
-			    onContextMenu = _props5.onContextMenu,
-			    onDoubleClick = _props5.onDoubleClick;
-
-
-			var zoomCapture = zoomEnabled ? _react2.default.createElement(_AxisZoomCapture2.default, {
-				bg: bg,
-				getScale: getScale,
-				getMoreProps: this.getMoreProps,
-				getMouseDelta: getMouseDelta,
-				axisZoomCallback: axisZoomCallback,
-				zoomCursorClassName: zoomCursorClassName,
-				inverted: inverted,
-				onContextMenu: onContextMenu,
-				onDoubleClick: onDoubleClick
-			}) : null;
-
-			return _react2.default.createElement(
-				"g",
-				{ transform: "translate(" + transform[0] + ", " + transform[1] + ")" },
-				zoomCapture,
-				_react2.default.createElement(_GenericChartComponent2.default, { ref: this.saveNode,
-					canvasToDraw: _GenericComponent.getAxisCanvas,
-					clip: false,
-					edgeClip: edgeClip,
-					svgDraw: this.renderSVG,
-					canvasDraw: this.drawOnCanvas,
-					drawOn: ["pan"]
-				})
-			);
-		}
-	}]);
-
-	return Axis;
-}(_react.Component);
-
-Axis.propTypes = {
-	innerTickSize: _propTypes2.default.number,
-	outerTickSize: _propTypes2.default.number,
-	tickFormat: _propTypes2.default.func,
-	tickPadding: _propTypes2.default.number,
-	tickSize: _propTypes2.default.number,
-	ticks: _propTypes2.default.number,
-	tickValues: _propTypes2.default.array,
-	tickInterval: _propTypes2.default.number,
-	showDomain: _propTypes2.default.bool,
-	showTicks: _propTypes2.default.bool,
-	className: _propTypes2.default.string,
-	axisZoomCallback: _propTypes2.default.func,
-	zoomEnabled: _propTypes2.default.bool,
-	inverted: _propTypes2.default.bool,
-	zoomCursorClassName: _propTypes2.default.string,
-	transform: _propTypes2.default.arrayOf(_propTypes2.default.number).isRequired,
-	range: _propTypes2.default.arrayOf(_propTypes2.default.number).isRequired,
-	getMouseDelta: _propTypes2.default.func.isRequired,
-	getScale: _propTypes2.default.func.isRequired,
-	bg: _propTypes2.default.object.isRequired,
-	edgeClip: _propTypes2.default.bool.isRequired,
-	onContextMenu: _propTypes2.default.func,
-	onDoubleClick: _propTypes2.default.func
-};
-
-Axis.defaultProps = {
-	zoomEnabled: false,
-	zoomCursorClassName: "",
-	edgeClip: false
-};
-
-function tickHelper(props, scale) {
-	var orient = props.orient,
-	    innerTickSize = props.innerTickSize,
-	    tickFormat = props.tickFormat,
-	    tickPadding = props.tickPadding,
-	    tickLabelFill = props.tickLabelFill,
-	    tickStrokeWidth = props.tickStrokeWidth,
-	    tickStrokeDasharray = props.tickStrokeDasharray,
-	    fontSize = props.fontSize,
-	    fontFamily = props.fontFamily,
-	    showTicks = props.showTicks,
-	    flexTicks = props.flexTicks;
-	var tickArguments = props.ticks,
-	    tickValuesProp = props.tickValues,
-	    tickStroke = props.tickStroke,
-	    tickStrokeOpacity = props.tickStrokeOpacity,
-	    tickInterval = props.tickInterval;
-
-	// if (tickArguments) tickArguments = [tickArguments];
-
-	var tickValues = void 0;
-	if ((0, _utils.isDefined)(tickValuesProp)) {
-		tickValues = tickValuesProp;
-	} else if ((0, _utils.isDefined)(tickInterval)) {
-		var _scale$domain = scale.domain(),
-		    _scale$domain2 = _slicedToArray(_scale$domain, 2),
-		    min = _scale$domain2[0],
-		    max = _scale$domain2[1];
-
-		tickValues = (0, _d3Array.range)(min, max, (max - min) / tickInterval);
-	} else if ((0, _utils.isDefined)(scale.ticks)) {
-		tickValues = scale.ticks(tickArguments, flexTicks);
-	} else {
-		tickValues = scale.domain();
-	}
-
-	var baseFormat = scale.tickFormat ? scale.tickFormat(tickArguments) : _utils.identity;
-
-	var format = (0, _utils.isNotDefined)(tickFormat) ? baseFormat : function (d) {
-		return tickFormat(d) || "";
-	};
-
-	var sign = orient === "top" || orient === "left" ? -1 : 1;
-	var tickSpacing = Math.max(innerTickSize, 0) + tickPadding;
-
-	var ticks = void 0,
-	    dy = void 0,
-	    canvas_dy = void 0,
-	    textAnchor = void 0;
-
-	if (orient === "bottom" || orient === "top") {
-		dy = sign < 0 ? "0em" : ".71em";
-		canvas_dy = sign < 0 ? 0 : fontSize * .71;
-		textAnchor = "middle";
-
-		ticks = tickValues.map(function (d) {
-			var x = Math.round(scale(d));
-			return {
-				value: d,
-				x1: x,
-				y1: 0,
-				x2: x,
-				y2: sign * innerTickSize,
-				labelX: x,
-				labelY: sign * tickSpacing
-			};
-		});
-
-		if (showTicks && flexTicks) {
-			// console.log(ticks, showTicks);
-
-			var nodes = ticks.map(function (d) {
-				return { id: d.value, value: d.value, fy: d.y2, origX: d.x1 };
-			});
-
-			var simulation = (0, _d3Force.forceSimulation)(nodes).force("x", (0, _d3Force.forceX)(function (d) {
-				return d.origX;
-			}).strength(1)).force("collide", (0, _d3Force.forceCollide)(22))
-			// .force("center", forceCenter())
-			.stop();
-
-			for (var i = 0; i < 100; ++i) {
-				simulation.tick();
-			} // console.log(nodes);
-
-			var zip = (0, _utils.zipper)().combine(function (a, b) {
-				if (Math.abs(b.x - b.origX) > 0.01) {
-					return _extends({}, a, {
-						x2: b.x,
-						labelX: b.x
-					});
-				}
-				return a;
-			});
-
-			ticks = zip(ticks, nodes);
-		}
-	} else {
-		ticks = tickValues.map(function (d) {
-			var y = Math.round(scale(d));
-			return {
-				value: d,
-				x1: 0,
-				y1: y,
-				x2: sign * innerTickSize,
-				y2: y,
-				labelX: sign * tickSpacing,
-				labelY: y
-			};
-		});
-
-		dy = ".32em";
-		canvas_dy = fontSize * .32;
-		textAnchor = sign < 0 ? "end" : "start";
-	}
-
-	return {
-		ticks: ticks, scale: scale, tickStroke: tickStroke,
-		tickLabelFill: tickLabelFill || tickStroke,
-		tickStrokeOpacity: tickStrokeOpacity,
-		tickStrokeWidth: tickStrokeWidth,
-		tickStrokeDasharray: tickStrokeDasharray,
-		dy: dy,
-		canvas_dy: canvas_dy,
-		textAnchor: textAnchor,
-		fontSize: fontSize,
-		fontFamily: fontFamily,
-		format: format
-	};
-}
-
-/* eslint-disable react/prop-types */
-function axisLineSVG(props, range) {
-	var orient = props.orient,
-	    outerTickSize = props.outerTickSize;
-	var domainClassName = props.domainClassName,
-	    fill = props.fill,
-	    stroke = props.stroke,
-	    strokeWidth = props.strokeWidth,
-	    opacity = props.opacity;
-
-
-	var sign = orient === "top" || orient === "left" ? -1 : 1;
-
-	var d = void 0;
-
-	if (orient === "bottom" || orient === "top") {
-		d = "M" + range[0] + "," + sign * outerTickSize + "V0H" + range[1] + "V" + sign * outerTickSize;
-	} else {
-		d = "M" + sign * outerTickSize + "," + range[0] + "H0V" + range[1] + "H" + sign * outerTickSize;
-	}
-
-	return _react2.default.createElement("path", {
-		className: domainClassName,
-		d: d,
-		fill: fill,
-		opacity: opacity,
-		stroke: stroke,
-		strokeWidth: strokeWidth });
-}
-/* eslint-enable react/prop-types */
-
-function drawAxisLine(ctx, props, range) {
-	// props = { ...AxisLine.defaultProps, ...props };
-
-	var orient = props.orient,
-	    outerTickSize = props.outerTickSize,
-	    stroke = props.stroke,
-	    strokeWidth = props.strokeWidth,
-	    opacity = props.opacity;
-
-
-	var sign = orient === "top" || orient === "left" ? -1 : 1;
-	var xAxis = orient === "bottom" || orient === "top";
-
-	// var range = d3_scaleRange(xAxis ? xScale : yScale);
-
-	ctx.lineWidth = strokeWidth;
-	ctx.strokeStyle = (0, _utils.hexToRGBA)(stroke, opacity);
-
-	ctx.beginPath();
-
-	if (xAxis) {
-		ctx.moveTo((0, _utils.first)(range), sign * outerTickSize);
-		ctx.lineTo((0, _utils.first)(range), 0);
-		ctx.lineTo((0, _utils.last)(range), 0);
-		ctx.lineTo((0, _utils.last)(range), sign * outerTickSize);
-	} else {
-		ctx.moveTo(sign * outerTickSize, (0, _utils.first)(range));
-		ctx.lineTo(0, (0, _utils.first)(range));
-		ctx.lineTo(0, (0, _utils.last)(range));
-		ctx.lineTo(sign * outerTickSize, (0, _utils.last)(range));
-	}
-	ctx.stroke();
-}
-
-function Tick(props) {
-	var tickLabelFill = props.tickLabelFill,
-	    tickStroke = props.tickStroke,
-	    tickStrokeOpacity = props.tickStrokeOpacity,
-	    tickStrokeDasharray = props.tickStrokeDasharray,
-	    tickStrokeWidth = props.tickStrokeWidth,
-	    textAnchor = props.textAnchor,
-	    fontSize = props.fontSize,
-	    fontFamily = props.fontFamily;
-	var x1 = props.x1,
-	    y1 = props.y1,
-	    x2 = props.x2,
-	    y2 = props.y2,
-	    labelX = props.labelX,
-	    labelY = props.labelY,
-	    dy = props.dy;
-
-	return _react2.default.createElement(
-		"g",
-		{ className: "tick" },
-		_react2.default.createElement("line", {
-			shapeRendering: "crispEdges",
-			opacity: tickStrokeOpacity,
-			stroke: tickStroke,
-			strokeWidth: tickStrokeWidth,
-			strokeDasharray: (0, _utils.getStrokeDasharray)(tickStrokeDasharray),
-			x1: x1, y1: y1,
-			x2: x2, y2: y2 }),
-		_react2.default.createElement(
-			"text",
-			{
-				dy: dy, x: labelX, y: labelY,
-				fill: tickLabelFill,
-				fontSize: fontSize,
-				fontFamily: fontFamily,
-				textAnchor: textAnchor },
-			props.children
-		)
-	);
-}
-
-Tick.propTypes = {
-	children: _propTypes2.default.string.isRequired,
-	x1: _propTypes2.default.number.isRequired,
-	y1: _propTypes2.default.number.isRequired,
-	x2: _propTypes2.default.number.isRequired,
-	y2: _propTypes2.default.number.isRequired,
-	labelX: _propTypes2.default.number.isRequired,
-	labelY: _propTypes2.default.number.isRequired,
-	dy: _propTypes2.default.string.isRequired,
-	tickStroke: _propTypes2.default.string,
-	tickLabelFill: _propTypes2.default.string,
-	tickStrokeWidth: _propTypes2.default.number,
-	tickStrokeOpacity: _propTypes2.default.number,
-	tickStrokeDasharray: _propTypes2.default.oneOf(_utils.strokeDashTypes),
-	textAnchor: _propTypes2.default.string,
-	fontSize: _propTypes2.default.number,
-	fontFamily: _propTypes2.default.string
-};
-
-function axisTicksSVG(props, scale) {
-	var result = tickHelper(props, scale);
-
-	var tickLabelFill = result.tickLabelFill,
-	    tickStroke = result.tickStroke,
-	    tickStrokeOpacity = result.tickStrokeOpacity,
-	    tickStrokeWidth = result.tickStrokeWidth,
-	    tickStrokeDasharray = result.tickStrokeDasharray,
-	    textAnchor = result.textAnchor;
-	var fontSize = result.fontSize,
-	    fontFamily = result.fontFamily,
-	    ticks = result.ticks,
-	    format = result.format;
-	var dy = result.dy;
-
-
-	return _react2.default.createElement(
-		"g",
-		null,
-		ticks.map(function (tick, idx) {
-			return _react2.default.createElement(
-				Tick,
-				{ key: idx,
-					tickStroke: tickStroke,
-					tickLabelFill: tickLabelFill,
-					tickStrokeWidth: tickStrokeWidth,
-					tickStrokeOpacity: tickStrokeOpacity,
-					tickStrokeDasharray: tickStrokeDasharray,
-					dy: dy,
-					x1: tick.x1, y1: tick.y1,
-					x2: tick.x2, y2: tick.y2,
-					labelX: tick.labelX, labelY: tick.labelY,
-					textAnchor: textAnchor,
-					fontSize: fontSize, fontFamily: fontFamily },
-				format(tick.value)
-			);
-		})
-	);
-}
-
-function drawTicks(ctx, result) {
-	var tickStroke = result.tickStroke,
-	    tickStrokeOpacity = result.tickStrokeOpacity,
-	    tickLabelFill = result.tickLabelFill;
-	var textAnchor = result.textAnchor,
-	    fontSize = result.fontSize,
-	    fontFamily = result.fontFamily,
-	    ticks = result.ticks;
-
-
-	ctx.strokeStyle = (0, _utils.hexToRGBA)(tickStroke, tickStrokeOpacity);
-
-	ctx.fillStyle = tickStroke;
-	// ctx.textBaseline = 'middle';
-
-	ticks.forEach(function (tick) {
-		drawEachTick(ctx, tick, result);
-	});
-
-	ctx.font = fontSize + "px " + fontFamily;
-	ctx.fillStyle = tickLabelFill;
-	ctx.textAlign = textAnchor === "middle" ? "center" : textAnchor;
-
-	ticks.forEach(function (tick) {
-		drawEachTickLabel(ctx, tick, result);
-	});
-}
-
-function drawEachTick(ctx, tick, result) {
-	var tickStrokeWidth = result.tickStrokeWidth,
-	    tickStrokeDasharray = result.tickStrokeDasharray;
-
-
-	ctx.beginPath();
-
-	ctx.moveTo(tick.x1, tick.y1);
-	ctx.lineTo(tick.x2, tick.y2);
-	ctx.lineWidth = tickStrokeWidth;
-	ctx.setLineDash((0, _utils.getStrokeDasharray)(tickStrokeDasharray).split(","));
-	ctx.stroke();
-}
-
-function drawEachTickLabel(ctx, tick, result) {
-	var canvas_dy = result.canvas_dy,
-	    format = result.format;
-
-
-	ctx.beginPath();
-	ctx.fillText(format(tick.value), tick.labelX, tick.labelY + canvas_dy);
-}
-
-exports.default = Axis;
-//# sourceMappingURL=Axis.js.map
-
-/***/ }),
-/* 378 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _TypeChooser = __webpack_require__(1010);
-
-Object.defineProperty(exports, "TypeChooser", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_TypeChooser).default;
-  }
-});
-
-var _SaveChartAsImage = __webpack_require__(1011);
-
-Object.defineProperty(exports, "SaveChartAsImage", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_SaveChartAsImage).default;
-  }
-});
-
-var _fitWidth = __webpack_require__(1013);
-
-Object.defineProperty(exports, "fitWidth", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_fitWidth).default;
-  }
-});
-
-var _fitDimensions = __webpack_require__(1014);
-
-Object.defineProperty(exports, "fitDimensions", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_fitDimensions).default;
-  }
-});
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-//# sourceMappingURL=index.js.map
 
 /***/ }),
 /* 379 */
@@ -33571,7 +33571,7 @@ module.exports = ReactChildren;
 
 
 
-var _prodInvariant = __webpack_require__(52);
+var _prodInvariant = __webpack_require__(51);
 
 var invariant = __webpack_require__(3);
 
@@ -33686,7 +33686,7 @@ module.exports = PooledClass;
 
 
 
-var _prodInvariant = __webpack_require__(52);
+var _prodInvariant = __webpack_require__(51);
 
 var ReactCurrentOwner = __webpack_require__(31);
 var REACT_ELEMENT_TYPE = __webpack_require__(201);
@@ -34101,7 +34101,7 @@ module.exports = ReactDOMFactories;
 
 
 
-var _prodInvariant = __webpack_require__(52);
+var _prodInvariant = __webpack_require__(51);
 
 var ReactPropTypeLocationNames = __webpack_require__(386);
 var ReactPropTypesSecret = __webpack_require__(387);
@@ -35250,7 +35250,7 @@ module.exports = factory;
  */
 
 
-var _prodInvariant = __webpack_require__(52);
+var _prodInvariant = __webpack_require__(51);
 
 var ReactElement = __webpack_require__(43);
 
@@ -35298,7 +35298,7 @@ module.exports = onlyChild;
 var ReactDOMComponentTree = __webpack_require__(11);
 var ReactDefaultInjection = __webpack_require__(395);
 var ReactMount = __webpack_require__(229);
-var ReactReconciler = __webpack_require__(53);
+var ReactReconciler = __webpack_require__(52);
 var ReactUpdates = __webpack_require__(32);
 var ReactVersion = __webpack_require__(473);
 
@@ -37278,7 +37278,7 @@ module.exports = EnterLeaveEventPlugin;
 
 
 
-var DOMProperty = __webpack_require__(39);
+var DOMProperty = __webpack_require__(38);
 
 var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
 var HAS_BOOLEAN_VALUE = DOMProperty.injection.HAS_BOOLEAN_VALUE;
@@ -37551,7 +37551,7 @@ module.exports = ReactComponentBrowserEnvironment;
 
 var _prodInvariant = __webpack_require__(6);
 
-var DOMLazyTree = __webpack_require__(54);
+var DOMLazyTree = __webpack_require__(53);
 var ExecutionEnvironment = __webpack_require__(13);
 
 var createNodesFromMarkup = __webpack_require__(414);
@@ -37960,9 +37960,9 @@ var _prodInvariant = __webpack_require__(6),
 
 var AutoFocusUtils = __webpack_require__(419);
 var CSSPropertyOperations = __webpack_require__(420);
-var DOMLazyTree = __webpack_require__(54);
+var DOMLazyTree = __webpack_require__(53);
 var DOMNamespaces = __webpack_require__(131);
-var DOMProperty = __webpack_require__(39);
+var DOMProperty = __webpack_require__(38);
 var DOMPropertyOperations = __webpack_require__(218);
 var EventPluginHub = __webpack_require__(66);
 var EventPluginRegistry = __webpack_require__(92);
@@ -39950,7 +39950,7 @@ module.exports = ReactDOMInput;
 
 var _assign = __webpack_require__(9);
 
-var React = __webpack_require__(51);
+var React = __webpack_require__(50);
 var ReactDOMComponentTree = __webpack_require__(11);
 var ReactDOMSelect = __webpack_require__(220);
 
@@ -40245,7 +40245,7 @@ var ReactInstanceMap = __webpack_require__(68);
 var ReactInstrumentation = __webpack_require__(23);
 
 var ReactCurrentOwner = __webpack_require__(31);
-var ReactReconciler = __webpack_require__(53);
+var ReactReconciler = __webpack_require__(52);
 var ReactChildReconciler = __webpack_require__(434);
 
 var emptyFunction = __webpack_require__(22);
@@ -40688,7 +40688,7 @@ module.exports = ReactMultiChild;
 
 
 
-var ReactReconciler = __webpack_require__(53);
+var ReactReconciler = __webpack_require__(52);
 
 var instantiateReactComponent = __webpack_require__(221);
 var KeyEscapeUtils = __webpack_require__(137);
@@ -40848,14 +40848,14 @@ module.exports = ReactChildReconciler;
 var _prodInvariant = __webpack_require__(6),
     _assign = __webpack_require__(9);
 
-var React = __webpack_require__(51);
+var React = __webpack_require__(50);
 var ReactComponentEnvironment = __webpack_require__(134);
 var ReactCurrentOwner = __webpack_require__(31);
 var ReactErrorUtils = __webpack_require__(126);
 var ReactInstanceMap = __webpack_require__(68);
 var ReactInstrumentation = __webpack_require__(23);
 var ReactNodeTypes = __webpack_require__(222);
-var ReactReconciler = __webpack_require__(53);
+var ReactReconciler = __webpack_require__(52);
 
 if (process.env.NODE_ENV !== 'production') {
   var checkReactTypeSpec = __webpack_require__(436);
@@ -42279,7 +42279,7 @@ module.exports = ReactServerUpdateQueue;
 
 var _assign = __webpack_require__(9);
 
-var DOMLazyTree = __webpack_require__(54);
+var DOMLazyTree = __webpack_require__(53);
 var ReactDOMComponentTree = __webpack_require__(11);
 
 var ReactDOMEmptyComponent = function (instantiate) {
@@ -42484,7 +42484,7 @@ var _prodInvariant = __webpack_require__(6),
     _assign = __webpack_require__(9);
 
 var DOMChildrenOperations = __webpack_require__(130);
-var DOMLazyTree = __webpack_require__(54);
+var DOMLazyTree = __webpack_require__(53);
 var ReactDOMComponentTree = __webpack_require__(11);
 
 var escapeTextContentForBrowser = __webpack_require__(96);
@@ -42917,7 +42917,7 @@ module.exports = getUnboundedScrollPosition;
 
 
 
-var DOMProperty = __webpack_require__(39);
+var DOMProperty = __webpack_require__(38);
 var EventPluginHub = __webpack_require__(66);
 var EventPluginUtils = __webpack_require__(125);
 var ReactComponentEnvironment = __webpack_require__(134);
@@ -45019,7 +45019,7 @@ module.exports = ReactMount.renderSubtreeIntoContainer;
 
 
 
-var DOMProperty = __webpack_require__(39);
+var DOMProperty = __webpack_require__(38);
 var EventPluginRegistry = __webpack_require__(92);
 var ReactComponentTreeHook = __webpack_require__(21);
 
@@ -45182,7 +45182,7 @@ module.exports = ReactDOMNullInputValuePropHook;
 
 
 
-var DOMProperty = __webpack_require__(39);
+var DOMProperty = __webpack_require__(38);
 var ReactComponentTreeHook = __webpack_require__(21);
 
 var warning = __webpack_require__(4);
@@ -45916,7 +45916,7 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _stock_actions = __webpack_require__(45);
+var _stock_actions = __webpack_require__(54);
 
 var _merge3 = __webpack_require__(142);
 
@@ -45978,7 +45978,7 @@ var Stack = __webpack_require__(499),
     assignMergeValue = __webpack_require__(239),
     baseFor = __webpack_require__(530),
     baseMergeDeep = __webpack_require__(532),
-    isObject = __webpack_require__(46),
+    isObject = __webpack_require__(45),
     keysIn = __webpack_require__(248);
 
 /**
@@ -46320,7 +46320,7 @@ module.exports = stackSet;
 
 var isFunction = __webpack_require__(144),
     isMasked = __webpack_require__(513),
-    isObject = __webpack_require__(46),
+    isObject = __webpack_require__(45),
     toSource = __webpack_require__(515);
 
 /**
@@ -46961,7 +46961,7 @@ var assignMergeValue = __webpack_require__(239),
     isArrayLikeObject = __webpack_require__(541),
     isBuffer = __webpack_require__(246),
     isFunction = __webpack_require__(144),
-    isObject = __webpack_require__(46),
+    isObject = __webpack_require__(45),
     isPlainObject = __webpack_require__(543),
     isTypedArray = __webpack_require__(247),
     toPlainObject = __webpack_require__(547);
@@ -47198,7 +47198,7 @@ module.exports = initCloneObject;
 /* 539 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(46);
+var isObject = __webpack_require__(45);
 
 /** Built-in value references. */
 var objectCreate = Object.create;
@@ -47648,7 +47648,7 @@ module.exports = baseTimes;
 /* 551 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(46),
+var isObject = __webpack_require__(45),
     isPrototype = __webpack_require__(146),
     nativeKeysIn = __webpack_require__(552);
 
@@ -47974,7 +47974,7 @@ module.exports = shortOut;
 var eq = __webpack_require__(100),
     isArrayLike = __webpack_require__(104),
     isIndex = __webpack_require__(250),
-    isObject = __webpack_require__(46);
+    isObject = __webpack_require__(45);
 
 /**
  * Checks if the given arguments are from an iteratee call.
@@ -48014,7 +48014,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _stock_actions = __webpack_require__(45);
+var _stock_actions = __webpack_require__(54);
 
 var _merge2 = __webpack_require__(142);
 
@@ -48216,7 +48216,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(37);
+var _reactRedux = __webpack_require__(39);
 
 var _reactRouterDom = __webpack_require__(19);
 
@@ -51870,13 +51870,9 @@ var _stock_show_container = __webpack_require__(605);
 
 var _stock_show_container2 = _interopRequireDefault(_stock_show_container);
 
-var _stock_index_container = __webpack_require__(908);
+var _stock_index_container = __webpack_require__(967);
 
 var _stock_index_container2 = _interopRequireDefault(_stock_index_container);
-
-var _chart_container = __webpack_require__(956);
-
-var _chart_container2 = _interopRequireDefault(_chart_container);
 
 var _login_form_container = __webpack_require__(1015);
 
@@ -51908,7 +51904,7 @@ var _navbar_container2 = _interopRequireDefault(_navbar_container);
 
 var _reactRouterDom = __webpack_require__(19);
 
-var _stock_actions = __webpack_require__(45);
+var _stock_actions = __webpack_require__(54);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -51947,13 +51943,13 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _reactRedux = __webpack_require__(37);
+var _reactRedux = __webpack_require__(39);
 
 var _stock_show = __webpack_require__(606);
 
 var _stock_show2 = _interopRequireDefault(_stock_show);
 
-var _stock_actions = __webpack_require__(45);
+var _stock_actions = __webpack_require__(54);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -52018,13 +52014,17 @@ var _peer_index_item = __webpack_require__(907);
 
 var _peer_index_item2 = _interopRequireDefault(_peer_index_item);
 
-var _chart_component = __webpack_require__(1027);
+var _chart_component = __webpack_require__(908);
 
 var _chart_component2 = _interopRequireDefault(_chart_component);
 
-var _reactGa = __webpack_require__(349);
+var _reactGa = __webpack_require__(359);
 
 var _reactGa2 = _interopRequireDefault(_reactGa);
+
+var _reactCollapsible = __webpack_require__(966);
+
+var _reactCollapsible2 = _interopRequireDefault(_reactCollapsible);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -52032,9 +52032,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-// https://github.com/react-ga/react-ga
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // https://github.com/react-ga/react-ga
 
 
 var StockShow = function (_React$Component) {
@@ -52248,22 +52246,29 @@ var StockShow = function (_React$Component) {
 							_react2.default.createElement(
 								"ul",
 								{ id: "news-index" },
-								"NEWS ARTICLES",
-								recentNews.map(function (news) {
-									return _react2.default.createElement(_news_index_item2.default, { key: news.datetime, news: news });
-								})
+								_react2.default.createElement(
+									_reactCollapsible2.default,
+									{ trigger: "NEWS ARTICLES" },
+									recentNews.map(function (news) {
+										return _react2.default.createElement(_news_index_item2.default, { key: news.datetime, news: news });
+									})
+								)
 							)
 						),
 						_react2.default.createElement(
-							"div",
-							{ className: "stock-tweets" },
+							_reactCollapsible2.default,
+							{ trigger: "Tweets" },
 							_react2.default.createElement(
-								"ul",
-								{ id: "tweets-index" },
-								"What are people saying on twitter?",
-								tweets.map(function (tweet) {
-									return _react2.default.createElement(_tweets_index_item2.default, { key: tweet.created_at, tweet: tweet });
-								})
+								"div",
+								{ className: "stock-tweets" },
+								_react2.default.createElement(
+									"ul",
+									{ id: "tweets-index" },
+									"What are people saying on twitter?",
+									tweets.map(function (tweet) {
+										return _react2.default.createElement(_tweets_index_item2.default, { key: tweet.created_at, tweet: tweet });
+									})
+								)
 							)
 						)
 					)
@@ -58133,7 +58138,7 @@ var slice = Array.prototype.slice;
 /* harmony export (immutable) */ __webpack_exports__["a"] = brushSelection;
 /* harmony export (immutable) */ __webpack_exports__["b"] = brushX;
 /* harmony export (immutable) */ __webpack_exports__["c"] = brushY;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_dispatch__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_dispatch__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_d3_drag__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_d3_interpolate__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_d3_selection__ = __webpack_require__(12);
@@ -58778,7 +58783,7 @@ function set(type, name, callback) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_dispatch__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_dispatch__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_d3_selection__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nodrag__ = __webpack_require__(283);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__noevent__ = __webpack_require__(284);
@@ -63467,7 +63472,7 @@ function defaultLocale(definition) {
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "U", function() { return __WEBPACK_IMPORTED_MODULE_29__src_projection_transverseMercator__["b"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__src_rotation__ = __webpack_require__(111);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "O", function() { return __WEBPACK_IMPORTED_MODULE_30__src_rotation__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__src_stream__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__src_stream__ = __webpack_require__(47);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "R", function() { return __WEBPACK_IMPORTED_MODULE_31__src_stream__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__src_transform__ = __webpack_require__(113);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "S", function() { return __WEBPACK_IMPORTED_MODULE_32__src_transform__["a"]; });
@@ -63515,7 +63520,7 @@ function defaultLocale(definition) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__area__ = __webpack_require__(303);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cartesian__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__math__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__stream__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__stream__ = __webpack_require__(47);
 
 
 
@@ -63701,7 +63706,7 @@ function rangeContains(range, x) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__math__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__noop__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__stream__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__stream__ = __webpack_require__(47);
 
 
 
@@ -64210,7 +64215,7 @@ function graticule10() {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__identity__ = __webpack_require__(176);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__stream__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__stream__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__area__ = __webpack_require__(775);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bounds__ = __webpack_require__(315);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__centroid__ = __webpack_require__(776);
@@ -67051,7 +67056,7 @@ function point() {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = identity;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__array__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__array__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__linear__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__number__ = __webpack_require__(327);
 
@@ -67317,7 +67322,7 @@ function sqrt() {
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = quantile;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_array__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(48);
 
 
 
@@ -67378,7 +67383,7 @@ function quantile() {
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = quantize;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_array__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__linear__ = __webpack_require__(79);
 
 
@@ -67435,7 +67440,7 @@ function quantize() {
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = threshold;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_array__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(48);
 
 
 
@@ -67513,7 +67518,7 @@ var milliseconds = millisecond.range;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return seconds; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__interval__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(37);
 
 
 
@@ -67538,7 +67543,7 @@ var seconds = second.range;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return minutes; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__interval__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(37);
 
 
 
@@ -67563,7 +67568,7 @@ var minutes = minute.range;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return hours; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__interval__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(37);
 
 
 
@@ -67590,7 +67595,7 @@ var hours = hour.range;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return days; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__interval__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(37);
 
 
 
@@ -67628,7 +67633,7 @@ var days = day.range;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return fridays; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return saturdays; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__interval__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(37);
 
 
 
@@ -67726,7 +67731,7 @@ var years = year.range;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return utcMinutes; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__interval__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(37);
 
 
 
@@ -67751,7 +67756,7 @@ var utcMinutes = utcMinute.range;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return utcHours; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__interval__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(37);
 
 
 
@@ -67776,7 +67781,7 @@ var utcHours = utcHour.range;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return utcDays; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__interval__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(37);
 
 
 
@@ -67814,7 +67819,7 @@ var utcDays = utcDay.range;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return utcFridays; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return utcSaturdays; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__interval__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__duration__ = __webpack_require__(37);
 
 
 
@@ -68101,7 +68106,7 @@ function sequential(interpolator) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_path__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constant__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constant__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__math__ = __webpack_require__(83);
 
 
@@ -68369,7 +68374,7 @@ function cornerTangents(x0, y0, x1, y1, r1, rc, cw) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constant__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constant__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__descending__ = __webpack_require__(873);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identity__ = __webpack_require__(874);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__math__ = __webpack_require__(83);
@@ -68523,7 +68528,7 @@ function cornerTangents(x0, y0, x1, y1, r1, rc, cw) {
 /* harmony export (immutable) */ __webpack_exports__["b"] = linkRadial;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_path__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(336);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constant__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constant__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__point__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pointRadial__ = __webpack_require__(335);
 
@@ -68626,7 +68631,7 @@ function linkRadial() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__symbol_square__ = __webpack_require__(341);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__symbol_triangle__ = __webpack_require__(342);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__symbol_wye__ = __webpack_require__(343);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__constant__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__constant__ = __webpack_require__(49);
 
 
 
@@ -69288,7 +69293,7 @@ function stepAfter(context) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__array__ = __webpack_require__(336);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constant__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constant__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__offset_none__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__order_none__ = __webpack_require__(85);
 
@@ -69823,7 +69828,7 @@ function rightBreakPoint(arc, directrix) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_dispatch__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_d3_dispatch__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_d3_drag__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_d3_interpolate__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_d3_selection__ = __webpack_require__(12);
@@ -70417,18 +70422,10653 @@ exports.default = ReviewIndexItem;
 
 
 Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(26);
+
+var _candle_stick_chart = __webpack_require__(909);
+
+var _candle_stick_chart2 = _interopRequireDefault(_candle_stick_chart);
+
+var _helper = __webpack_require__(358);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ChartComponent = function (_React$Component) {
+  _inherits(ChartComponent, _React$Component);
+
+  function ChartComponent(props) {
+    _classCallCheck(this, ChartComponent);
+
+    return _possibleConstructorReturn(this, (ChartComponent.__proto__ || Object.getPrototypeOf(ChartComponent)).call(this, props));
+  }
+
+  _createClass(ChartComponent, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      console.log("CHARTPROPS", this.props);
+      return _react2.default.createElement(
+        _helper.TypeChooser,
+        null,
+        function (type) {
+          return _react2.default.createElement(
+            "div",
+            null,
+            _react2.default.createElement(_candle_stick_chart2.default, {
+              type: type,
+              data: _this2.props.stocks[_this2.props.symbol].chart,
+              ratio: 6
+            })
+          );
+        }
+      );
+    }
+  }]);
+
+  return ChartComponent;
+}(_react2.default.Component);
+
+exports.default = ChartComponent;
+
+/***/ }),
+/* 909 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _d = __webpack_require__(265);
+
+var d3 = _interopRequireWildcard(_d);
+
+var _d3Time = __webpack_require__(80);
+
+var _d3Scale = __webpack_require__(61);
+
+var _d3TimeFormat = __webpack_require__(117);
+
+var _reactStockcharts = __webpack_require__(910);
+
+var _series = __webpack_require__(929);
+
+var _axes = __webpack_require__(957);
+
+var _helper = __webpack_require__(358);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var AreaChart = function (_React$Component) {
+  _inherits(AreaChart, _React$Component);
+
+  function AreaChart() {
+    _classCallCheck(this, AreaChart);
+
+    return _possibleConstructorReturn(this, (AreaChart.__proto__ || Object.getPrototypeOf(AreaChart)).apply(this, arguments));
+  }
+
+  _createClass(AreaChart, [{
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          data = _props.data,
+          type = _props.type,
+          width = _props.width,
+          ratio = _props.ratio;
+
+      var xAccessor = function xAccessor(d) {
+        var formatter = (0, _d3TimeFormat.timeParse)("%Y-%m-%d");
+        return formatter(d.date);
+      };
+      var xExtents = [xAccessor((0, _utils.last)(data)), xAccessor(data[data.length - 100])];
+      console.log("CHARTTTPROPS", this.props);
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          _reactStockcharts.ChartCanvas,
+          {
+            ratio: ratio,
+            width: width,
+            height: 400,
+            margin: { left: 50, right: 50, top: 10, bottom: 30 },
+            seriesName: "MSFT",
+            data: data,
+            type: type,
+            xAccessor: xAccessor,
+            xScale: (0, _d3Scale.scaleTime)(),
+            xExtents: xExtents,
+            zoomEvent: false,
+            clamp: true,
+            className: "react-stock-chart"
+          },
+          _react2.default.createElement(
+            _reactStockcharts.Chart,
+            { id: 0, yExtents: function yExtents(d) {
+                return [d.high, d.low];
+              } },
+            _react2.default.createElement(_axes.XAxis, { axisAt: "bottom", orient: "bottom", ticks: 6 }),
+            _react2.default.createElement(_axes.YAxis, { axisAt: "left", orient: "left", ticks: 10 }),
+            _react2.default.createElement(_series.CandlestickSeries, { width: (0, _utils.timeIntervalBarWidth)(_d3Time.utcDay) })
+          )
+        )
+      );
+    }
+  }]);
+
+  return AreaChart;
+}(_react2.default.Component);
+
+AreaChart.propTypes = {
+  data: _propTypes2.default.array.isRequired,
+  width: _propTypes2.default.number.isRequired,
+  ratio: _propTypes2.default.number.isRequired,
+  type: _propTypes2.default.oneOf(["svg", "hybrid"]).isRequired
+};
+
+AreaChart.defaultProps = {
+  type: "svg"
+};
+AreaChart = (0, _helper.fitWidth)(AreaChart);
+
+exports.default = AreaChart;
+
+/***/ }),
+/* 910 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "version", function() { return version; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_ChartCanvas__ = __webpack_require__(911);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ChartCanvas", function() { return __WEBPACK_IMPORTED_MODULE_0__lib_ChartCanvas__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_Chart__ = __webpack_require__(352);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Chart", function() { return __WEBPACK_IMPORTED_MODULE_1__lib_Chart__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_GenericChartComponent__ = __webpack_require__(926);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "GenericChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_2__lib_GenericChartComponent__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_GenericComponent__ = __webpack_require__(353);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "GenericComponent", function() { return __WEBPACK_IMPORTED_MODULE_3__lib_GenericComponent__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_BackgroundText__ = __webpack_require__(927);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BackgroundText", function() { return __WEBPACK_IMPORTED_MODULE_4__lib_BackgroundText__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lib_ZoomButtons__ = __webpack_require__(928);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ZoomButtons", function() { return __WEBPACK_IMPORTED_MODULE_5__lib_ZoomButtons__["a"]; });
+
+
+// common components
+
+
+
+
+
+
+
+
+var version = "0.7.0-beta.21";
+
+/*
+// chart types & Series
+import * as series from "./lib/series";
+import * as scale from "./lib/scale";
+
+import * as coordinates from "./lib/coordinates";
+import * as indicator from "./lib/indicator";
+import * as algorithm from "./lib/algorithm";
+
+import * as annotation from "./lib/annotation";
+
+import * as axes from "./lib/axes";
+import * as tooltip from "./lib/tooltip";
+import * as helper from "./lib/helper";
+
+import * as interactive from "./lib/interactive";
+import * as utils from "./lib/utils";
+
+*/
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+/* 911 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_d3_array__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_zoomBehavior__ = __webpack_require__(921);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__EventCapture__ = __webpack_require__(923);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__CanvasContainer__ = __webpack_require__(924);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__scale_evaluator__ = __webpack_require__(925);
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+/* eslint-disable no-unused-vars */
+
+/* eslint-enable no-unused-vars */
+
+
+
+
+
+
+
+
+var log = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["m" /* getLogger */])("ChartCanvas");
+
+var CANDIDATES_FOR_RESET = ["seriesName"];
+
+function shouldResetChart(thisProps, nextProps) {
+	return !CANDIDATES_FOR_RESET.every(function (key) {
+		var result = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["z" /* shallowEqual */])(thisProps[key], nextProps[key]);
+		// console.log(key, result);
+		return result;
+	});
+}
+
+function getCursorStyle(useCrossHairStyleCursor) {
+	var style = "\n\t.react-stockcharts-grabbing-cursor {\n\t\tpointer-events: all;\n\t\tcursor: -moz-grabbing;\n\t\tcursor: -webkit-grabbing;\n\t\tcursor: grabbing;\n\t}\n\t.react-stockcharts-crosshair-cursor {\n\t\tpointer-events: all;\n\t\tcursor: crosshair;\n\t}\n\t.react-stockcharts-tooltip-hover {\n\t\tpointer-events: all;\n\t\tcursor: pointer;\n\t}";
+	var tooltipStyle = "\n\t.react-stockcharts-avoid-interaction {\n\t\tpointer-events: none;\n\t}\n\t.react-stockcharts-enable-interaction {\n\t\tpointer-events: all;\n\t}\n\t.react-stockcharts-tooltip {\n\t\tpointer-events: all;\n\t\tcursor: pointer;\n\t}\n\t.react-stockcharts-default-cursor {\n\t\tcursor: default;\n\t}\n\t.react-stockcharts-move-cursor {\n\t\tcursor: move;\n\t}\n\t.react-stockcharts-pointer-cursor {\n\t\tcursor: pointer;\n\t}\n\t.react-stockcharts-ns-resize-cursor {\n\t\tcursor: ns-resize;\n\t}\n\t.react-stockcharts-ew-resize-cursor {\n\t\tcursor: ew-resize;\n\t}";
+	return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+		"style",
+		{ type: "text/css" },
+		useCrossHairStyleCursor ? style + tooltipStyle : tooltipStyle
+	);
+}
+
+function getDimensions(props) {
+	return {
+		height: props.height - props.margin.top - props.margin.bottom,
+		width: props.width - props.margin.left - props.margin.right
+	};
+}
+
+function getXScaleDirection(flipXScale) {
+	return flipXScale ? -1 : 1;
+}
+
+function calculateFullData(props) {
+	var fullData = props.data,
+	    plotFull = props.plotFull,
+	    xScale = props.xScale,
+	    clamp = props.clamp,
+	    pointsPerPxThreshold = props.pointsPerPxThreshold;
+	var xAccessor = props.xAccessor,
+	    displayXAccessor = props.displayXAccessor,
+	    minPointsPerPxThreshold = props.minPointsPerPxThreshold;
+
+
+	var useWholeData = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(plotFull) ? plotFull : xAccessor === __WEBPACK_IMPORTED_MODULE_3__utils__["q" /* identity */];
+
+	var _evaluator = Object(__WEBPACK_IMPORTED_MODULE_8__scale_evaluator__["a" /* default */])({
+		xScale: xScale,
+		useWholeData: useWholeData,
+		clamp: clamp,
+		pointsPerPxThreshold: pointsPerPxThreshold,
+		minPointsPerPxThreshold: minPointsPerPxThreshold
+	}),
+	    filterData = _evaluator.filterData;
+
+	return {
+		xAccessor: xAccessor,
+		displayXAccessor: displayXAccessor || xAccessor,
+		xScale: xScale,
+		fullData: fullData,
+		filterData: filterData
+	};
+}
+function resetChart(props) {
+	var firstCalculation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+	if (process.env.NODE_ENV !== "production") {
+		if (!firstCalculation) log("CHART RESET");
+	}
+
+	var state = calculateState(props);
+	var xAccessor = state.xAccessor,
+	    displayXAccessor = state.displayXAccessor,
+	    fullData = state.fullData;
+	var initialPlotData = state.plotData,
+	    xScale = state.xScale;
+	var postCalculator = props.postCalculator,
+	    children = props.children;
+
+
+	var plotData = postCalculator(initialPlotData);
+
+	var dimensions = getDimensions(props);
+	var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["a" /* getChartConfigWithUpdatedYScales */])(Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["d" /* getNewChartConfig */])(dimensions, children), { plotData: plotData, xAccessor: xAccessor, displayXAccessor: displayXAccessor, fullData: fullData }, xScale.domain());
+
+	return _extends({}, state, {
+		xScale: xScale,
+		plotData: plotData,
+		chartConfig: chartConfig
+	});
+}
+
+function updateChart(newState, initialXScale, props, lastItemWasVisible, initialChartConfig) {
+	var fullData = newState.fullData,
+	    xScale = newState.xScale,
+	    xAccessor = newState.xAccessor,
+	    displayXAccessor = newState.displayXAccessor,
+	    filterData = newState.filterData;
+
+
+	var lastItem = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["u" /* last */])(fullData);
+
+	var _initialXScale$domain = initialXScale.domain(),
+	    _initialXScale$domain2 = _slicedToArray(_initialXScale$domain, 2),
+	    start = _initialXScale$domain2[0],
+	    end = _initialXScale$domain2[1];
+
+	if (process.env.NODE_ENV !== "production") {
+		log("TRIVIAL CHANGE");
+	}
+
+	var postCalculator = props.postCalculator,
+	    children = props.children,
+	    padding = props.padding,
+	    flipXScale = props.flipXScale;
+	var maintainPointsPerPixelOnResize = props.maintainPointsPerPixelOnResize;
+
+	var direction = getXScaleDirection(flipXScale);
+	var dimensions = getDimensions(props);
+
+	var updatedXScale = setXRange(xScale, dimensions, padding, direction);
+
+	// console.log("lastItemWasVisible =", lastItemWasVisible, end, xAccessor(lastItem), end >= xAccessor(lastItem));
+	var initialPlotData = void 0;
+	if (!lastItemWasVisible || end >= xAccessor(lastItem)) {
+		// resize comes here...
+		var _initialXScale$range = initialXScale.range(),
+		    _initialXScale$range2 = _slicedToArray(_initialXScale$range, 2),
+		    rangeStart = _initialXScale$range2[0],
+		    rangeEnd = _initialXScale$range2[1];
+
+		var _updatedXScale$range = updatedXScale.range(),
+		    _updatedXScale$range2 = _slicedToArray(_updatedXScale$range, 2),
+		    newRangeStart = _updatedXScale$range2[0],
+		    newRangeEnd = _updatedXScale$range2[1];
+
+		var newDomainExtent = (newRangeEnd - newRangeStart) / (rangeEnd - rangeStart) * (end - start);
+		var newStart = maintainPointsPerPixelOnResize ? end - newDomainExtent : start;
+
+		var lastItemX = initialXScale(xAccessor(lastItem));
+		// console.log("pointsPerPixel => ", newStart, start, end, updatedXScale(end));
+		var response = filterData(fullData, [newStart, end], xAccessor, updatedXScale, { fallbackStart: start, fallbackEnd: { lastItem: lastItem, lastItemX: lastItemX } });
+		initialPlotData = response.plotData;
+		updatedXScale.domain(response.domain);
+		// console.log("HERE!!!!!", start, end);
+	} else if (lastItemWasVisible && end < xAccessor(lastItem)) {
+		// this is when a new item is added and last item was visible
+		// so slide over and show the new item also
+
+		// get plotData between [xAccessor(l) - (end - start), xAccessor(l)] and DO change the domain
+		var dx = initialXScale(xAccessor(lastItem)) - initialXScale.range()[1];
+
+		var _initialXScale$range$ = initialXScale.range().map(function (x) {
+			return x + dx;
+		}).map(initialXScale.invert),
+		    _initialXScale$range$2 = _slicedToArray(_initialXScale$range$, 2),
+		    _newStart = _initialXScale$range$2[0],
+		    newEnd = _initialXScale$range$2[1];
+
+		var _response = filterData(fullData, [_newStart, newEnd], xAccessor, updatedXScale);
+		initialPlotData = _response.plotData;
+		updatedXScale.domain(_response.domain); // if last item was visible, then shift
+	}
+	// plotData = getDataOfLength(fullData, showingInterval, plotData.length)
+	var plotData = postCalculator(initialPlotData);
+	var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["a" /* getChartConfigWithUpdatedYScales */])(Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["d" /* getNewChartConfig */])(dimensions, children, initialChartConfig), { plotData: plotData, xAccessor: xAccessor, displayXAccessor: displayXAccessor, fullData: fullData }, updatedXScale.domain());
+
+	return {
+		xScale: updatedXScale,
+		xAccessor: xAccessor,
+		chartConfig: chartConfig,
+		plotData: plotData,
+		fullData: fullData,
+		filterData: filterData
+	};
+}
+
+function calculateState(props) {
+	var inputXAccesor = props.xAccessor,
+	    xExtentsProp = props.xExtents,
+	    data = props.data,
+	    padding = props.padding,
+	    flipXScale = props.flipXScale;
+
+
+	if (process.env.NODE_ENV !== "production" && Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(props.xScale.invert)) {
+		for (var i = 1; i < data.length; i++) {
+			var prev = data[i - 1];
+			var curr = data[i];
+			if (inputXAccesor(prev) > inputXAccesor(curr)) {
+				throw new Error("'data' is not sorted on 'xAccessor', send 'data' sorted in assending order of 'xAccessor'");
+			}
+		}
+	}
+
+	var direction = getXScaleDirection(flipXScale);
+	var dimensions = getDimensions(props);
+
+	var extent = typeof xExtentsProp === "function" ? xExtentsProp(data) : Object(__WEBPACK_IMPORTED_MODULE_2_d3_array__["extent"])(xExtentsProp.map(function (d) {
+		return Object(__WEBPACK_IMPORTED_MODULE_3__utils__["j" /* functor */])(d);
+	}).map(function (each) {
+		return each(data, inputXAccesor);
+	}));
+
+	var _calculateFullData = calculateFullData(props),
+	    xAccessor = _calculateFullData.xAccessor,
+	    displayXAccessor = _calculateFullData.displayXAccessor,
+	    xScale = _calculateFullData.xScale,
+	    fullData = _calculateFullData.fullData,
+	    filterData = _calculateFullData.filterData;
+
+	var updatedXScale = setXRange(xScale, dimensions, padding, direction);
+
+	var _filterData = filterData(fullData, extent, inputXAccesor, updatedXScale),
+	    plotData = _filterData.plotData,
+	    domain = _filterData.domain;
+
+	if (process.env.NODE_ENV !== "production" && plotData.length <= 1) {
+		throw new Error("Showing " + plotData.length + " datapoints, review the 'xExtents' prop of ChartCanvas");
+	}
+	return {
+		plotData: plotData,
+		xScale: updatedXScale.domain(domain),
+		xAccessor: xAccessor,
+		displayXAccessor: displayXAccessor,
+		fullData: fullData,
+		filterData: filterData
+	};
+}
+
+function setXRange(xScale, dimensions, padding) {
+	var direction = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 1;
+
+	if (xScale.rangeRoundPoints) {
+		if (isNaN(padding)) throw new Error("padding has to be a number for ordinal scale");
+		xScale.rangeRoundPoints([0, dimensions.width], padding);
+	} else if (xScale.padding) {
+		if (isNaN(padding)) throw new Error("padding has to be a number for ordinal scale");
+		xScale.range([0, dimensions.width]);
+		xScale.padding(padding / 2);
+	} else {
+		var _ref = isNaN(padding) ? padding : { left: padding, right: padding },
+		    left = _ref.left,
+		    right = _ref.right;
+
+		if (direction > 0) {
+			xScale.range([left, dimensions.width - right]);
+		} else {
+			xScale.range([dimensions.width - right, left]);
+		}
+	}
+	return xScale;
+}
+
+function pinchCoordinates(pinch) {
+	var touch1Pos = pinch.touch1Pos,
+	    touch2Pos = pinch.touch2Pos;
+
+
+	return {
+		topLeft: [Math.min(touch1Pos[0], touch2Pos[0]), Math.min(touch1Pos[1], touch2Pos[1])],
+		bottomRight: [Math.max(touch1Pos[0], touch2Pos[0]), Math.max(touch1Pos[1], touch2Pos[1])]
+	};
+}
+
+var ChartCanvas = function (_Component) {
+	_inherits(ChartCanvas, _Component);
+
+	function ChartCanvas() {
+		_classCallCheck(this, ChartCanvas);
+
+		var _this = _possibleConstructorReturn(this, (ChartCanvas.__proto__ || Object.getPrototypeOf(ChartCanvas)).call(this));
+
+		_this.getDataInfo = _this.getDataInfo.bind(_this);
+		_this.getCanvasContexts = _this.getCanvasContexts.bind(_this);
+
+		_this.handleMouseMove = _this.handleMouseMove.bind(_this);
+		_this.handleMouseEnter = _this.handleMouseEnter.bind(_this);
+		_this.handleMouseLeave = _this.handleMouseLeave.bind(_this);
+		_this.handleZoom = _this.handleZoom.bind(_this);
+		_this.handlePinchZoom = _this.handlePinchZoom.bind(_this);
+		_this.handlePinchZoomEnd = _this.handlePinchZoomEnd.bind(_this);
+		_this.handlePan = _this.handlePan.bind(_this);
+		_this.handlePanEnd = _this.handlePanEnd.bind(_this);
+		_this.handleClick = _this.handleClick.bind(_this);
+		_this.handleMouseDown = _this.handleMouseDown.bind(_this);
+		_this.handleDoubleClick = _this.handleDoubleClick.bind(_this);
+		_this.handleContextMenu = _this.handleContextMenu.bind(_this);
+		_this.handleDragStart = _this.handleDragStart.bind(_this);
+		_this.handleDrag = _this.handleDrag.bind(_this);
+		_this.handleDragEnd = _this.handleDragEnd.bind(_this);
+
+		_this.panHelper = _this.panHelper.bind(_this);
+		_this.pinchZoomHelper = _this.pinchZoomHelper.bind(_this);
+		_this.xAxisZoom = _this.xAxisZoom.bind(_this);
+		_this.yAxisZoom = _this.yAxisZoom.bind(_this);
+		_this.resetYDomain = _this.resetYDomain.bind(_this);
+		_this.calculateStateForDomain = _this.calculateStateForDomain.bind(_this);
+		_this.generateSubscriptionId = _this.generateSubscriptionId.bind(_this);
+		_this.draw = _this.draw.bind(_this);
+		_this.redraw = _this.redraw.bind(_this);
+		_this.getAllPanConditions = _this.getAllPanConditions.bind(_this);
+
+		_this.subscriptions = [];
+		_this.subscribe = _this.subscribe.bind(_this);
+		_this.unsubscribe = _this.unsubscribe.bind(_this);
+		_this.amIOnTop = _this.amIOnTop.bind(_this);
+		_this.saveEventCaptureNode = _this.saveEventCaptureNode.bind(_this);
+		_this.saveCanvasContainerNode = _this.saveCanvasContainerNode.bind(_this);
+		_this.setCursorClass = _this.setCursorClass.bind(_this);
+		_this.getMutableState = _this.getMutableState.bind(_this);
+		// this.canvasDrawCallbackList = [];
+		_this.interactiveState = [];
+		_this.panInProgress = false;
+
+		_this.state = {};
+		_this.mutableState = {};
+		_this.lastSubscriptionId = 0;
+		return _this;
+	}
+
+	_createClass(ChartCanvas, [{
+		key: "saveEventCaptureNode",
+		value: function saveEventCaptureNode(node) {
+			this.eventCaptureNode = node;
+		}
+	}, {
+		key: "saveCanvasContainerNode",
+		value: function saveCanvasContainerNode(node) {
+			this.canvasContainerNode = node;
+		}
+	}, {
+		key: "getMutableState",
+		value: function getMutableState() {
+			return this.mutableState;
+		}
+	}, {
+		key: "getDataInfo",
+		value: function getDataInfo() {
+			return _extends({}, this.state, {
+				fullData: this.fullData
+			});
+		}
+	}, {
+		key: "getCanvasContexts",
+		value: function getCanvasContexts() {
+			if (this.canvasContainerNode) {
+				return this.canvasContainerNode.getCanvasContexts();
+			}
+		}
+	}, {
+		key: "generateSubscriptionId",
+		value: function generateSubscriptionId() {
+			this.lastSubscriptionId++;
+			return this.lastSubscriptionId;
+		}
+	}, {
+		key: "clearBothCanvas",
+		value: function clearBothCanvas() {
+			var canvases = this.getCanvasContexts();
+			if (canvases && canvases.axes) {
+				Object(__WEBPACK_IMPORTED_MODULE_3__utils__["g" /* clearCanvas */])([canvases.axes,
+				// canvases.hover,
+				canvases.mouseCoord], this.props.ratio);
+			}
+		}
+	}, {
+		key: "clearMouseCanvas",
+		value: function clearMouseCanvas() {
+			var canvases = this.getCanvasContexts();
+			if (canvases && canvases.mouseCoord) {
+				Object(__WEBPACK_IMPORTED_MODULE_3__utils__["g" /* clearCanvas */])([canvases.mouseCoord], this.props.ratio);
+			}
+		}
+	}, {
+		key: "clearThreeCanvas",
+		value: function clearThreeCanvas() {
+			var canvases = this.getCanvasContexts();
+			if (canvases && canvases.axes) {
+				Object(__WEBPACK_IMPORTED_MODULE_3__utils__["g" /* clearCanvas */])([canvases.axes,
+				// canvases.hover,
+				canvases.mouseCoord, canvases.bg], this.props.ratio);
+			}
+		}
+	}, {
+		key: "subscribe",
+		value: function subscribe(id, rest) {
+			var _rest$getPanCondition = rest.getPanConditions,
+			    getPanConditions = _rest$getPanCondition === undefined ? Object(__WEBPACK_IMPORTED_MODULE_3__utils__["j" /* functor */])({
+				draggable: false,
+				panEnabled: true
+			}) : _rest$getPanCondition;
+
+			this.subscriptions = this.subscriptions.concat(_extends({
+				id: id
+			}, rest, {
+				getPanConditions: getPanConditions
+			}));
+		}
+	}, {
+		key: "unsubscribe",
+		value: function unsubscribe(id) {
+			this.subscriptions = this.subscriptions.filter(function (each) {
+				return each.id !== id;
+			});
+		}
+	}, {
+		key: "getAllPanConditions",
+		value: function getAllPanConditions() {
+			return this.subscriptions.map(function (each) {
+				return each.getPanConditions();
+			});
+		}
+	}, {
+		key: "setCursorClass",
+		value: function setCursorClass(className) {
+			this.eventCaptureNode.setCursorClass(className);
+		}
+	}, {
+		key: "amIOnTop",
+		value: function amIOnTop(id) {
+			var dragableComponents = this.subscriptions.filter(function (each) {
+				return each.getPanConditions().draggable;
+			});
+
+			return dragableComponents.length > 0 && Object(__WEBPACK_IMPORTED_MODULE_3__utils__["u" /* last */])(dragableComponents).id === id;
+		}
+	}, {
+		key: "handleContextMenu",
+		value: function handleContextMenu(mouseXY, e) {
+			var _state = this.state,
+			    xAccessor = _state.xAccessor,
+			    chartConfig = _state.chartConfig,
+			    plotData = _state.plotData,
+			    xScale = _state.xScale;
+
+
+			var currentCharts = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["b" /* getCurrentCharts */])(chartConfig, mouseXY);
+			var currentItem = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["c" /* getCurrentItem */])(xScale, xAccessor, mouseXY, plotData);
+
+			this.triggerEvent("contextmenu", {
+				mouseXY: mouseXY,
+				currentItem: currentItem,
+				currentCharts: currentCharts
+			}, e);
+		}
+	}, {
+		key: "calculateStateForDomain",
+		value: function calculateStateForDomain(newDomain) {
+			var _state2 = this.state,
+			    xAccessor = _state2.xAccessor,
+			    displayXAccessor = _state2.displayXAccessor,
+			    initialXScale = _state2.xScale,
+			    initialChartConfig = _state2.chartConfig,
+			    initialPlotData = _state2.plotData;
+			var filterData = this.state.filterData;
+			var fullData = this.fullData;
+			var postCalculator = this.props.postCalculator;
+
+			var _filterData2 = filterData(fullData, newDomain, xAccessor, initialXScale, {
+				currentPlotData: initialPlotData,
+				currentDomain: initialXScale.domain()
+			}),
+			    beforePlotData = _filterData2.plotData,
+			    domain = _filterData2.domain;
+
+			var plotData = postCalculator(beforePlotData);
+			var updatedScale = initialXScale.copy().domain(domain);
+			var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["a" /* getChartConfigWithUpdatedYScales */])(initialChartConfig, { plotData: plotData, xAccessor: xAccessor, displayXAccessor: displayXAccessor, fullData: fullData }, updatedScale.domain());
+
+			return {
+				xScale: updatedScale,
+				plotData: plotData,
+				chartConfig: chartConfig
+			};
+		}
+	}, {
+		key: "pinchZoomHelper",
+		value: function pinchZoomHelper(initialPinch, finalPinch) {
+			var initialPinchXScale = initialPinch.xScale;
+			var _state3 = this.state,
+			    initialXScale = _state3.xScale,
+			    initialChartConfig = _state3.chartConfig,
+			    initialPlotData = _state3.plotData,
+			    xAccessor = _state3.xAccessor,
+			    displayXAccessor = _state3.displayXAccessor;
+			var filterData = this.state.filterData;
+			var fullData = this.fullData;
+			var postCalculator = this.props.postCalculator;
+
+			var _pinchCoordinates = pinchCoordinates(initialPinch),
+			    iTL = _pinchCoordinates.topLeft,
+			    iBR = _pinchCoordinates.bottomRight;
+
+			var _pinchCoordinates2 = pinchCoordinates(finalPinch),
+			    fTL = _pinchCoordinates2.topLeft,
+			    fBR = _pinchCoordinates2.bottomRight;
+
+			var e = initialPinchXScale.range()[1];
+
+			var xDash = Math.round(-(iBR[0] * fTL[0] - iTL[0] * fBR[0]) / (iTL[0] - iBR[0]));
+			var yDash = Math.round(e + ((e - iBR[0]) * (e - fTL[0]) - (e - iTL[0]) * (e - fBR[0])) / (e - iTL[0] - (e - iBR[0])));
+
+			var x = Math.round(-xDash * iTL[0] / (-xDash + fTL[0]));
+			var y = Math.round(e - (yDash - e) * (e - iTL[0]) / (yDash + (e - fTL[0])));
+
+			var newDomain = [x, y].map(initialPinchXScale.invert);
+			// var domainR = initial.right + right;
+
+			var _filterData3 = filterData(fullData, newDomain, xAccessor, initialPinchXScale, {
+				currentPlotData: initialPlotData,
+				currentDomain: initialXScale.domain()
+			}),
+			    beforePlotData = _filterData3.plotData,
+			    domain = _filterData3.domain;
+
+			var plotData = postCalculator(beforePlotData);
+			var updatedScale = initialXScale.copy().domain(domain);
+
+			var mouseXY = finalPinch.touch1Pos;
+			var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["a" /* getChartConfigWithUpdatedYScales */])(initialChartConfig, { plotData: plotData, xAccessor: xAccessor, displayXAccessor: displayXAccessor, fullData: fullData }, updatedScale.domain());
+			var currentItem = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["c" /* getCurrentItem */])(updatedScale, xAccessor, mouseXY, plotData);
+
+			return {
+				chartConfig: chartConfig,
+				xScale: updatedScale,
+				plotData: plotData,
+				mouseXY: mouseXY,
+				currentItem: currentItem
+			};
+		}
+	}, {
+		key: "cancelDrag",
+		value: function cancelDrag() {
+			this.eventCaptureNode.cancelDrag();
+			this.triggerEvent("dragcancel");
+		}
+	}, {
+		key: "handlePinchZoom",
+		value: function handlePinchZoom(initialPinch, finalPinch, e) {
+			var _this2 = this;
+
+			if (!this.waitingForAnimationFrame) {
+				this.waitingForAnimationFrame = true;
+				var state = this.pinchZoomHelper(initialPinch, finalPinch);
+
+				this.triggerEvent("pinchzoom", state, e);
+
+				this.finalPinch = finalPinch;
+
+				requestAnimationFrame(function () {
+					_this2.clearBothCanvas();
+					_this2.draw({ trigger: "pinchzoom" });
+					_this2.waitingForAnimationFrame = false;
+				});
+			}
+		}
+	}, {
+		key: "handlePinchZoomEnd",
+		value: function handlePinchZoomEnd(initialPinch, e) {
+			var xAccessor = this.state.xAccessor;
+
+
+			if (this.finalPinch) {
+				var state = this.pinchZoomHelper(initialPinch, this.finalPinch);
+				var xScale = state.xScale;
+
+				this.triggerEvent("pinchzoom", state, e);
+
+				this.finalPinch = null;
+
+				this.clearThreeCanvas();
+
+				var fullData = this.fullData;
+
+				var firstItem = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(fullData);
+
+				var start = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(xScale.domain());
+				var end = xAccessor(firstItem);
+				var onLoadMore = this.props.onLoadMore;
+
+
+				this.setState(state, function () {
+					if (start < end) {
+						onLoadMore(start, end);
+					}
+				});
+			}
+		}
+	}, {
+		key: "handleZoom",
+		value: function handleZoom(zoomDirection, mouseXY, e) {
+			if (this.panInProgress) return;
+			// console.log("zoomDirection ", zoomDirection, " mouseXY ", mouseXY);
+			var _state4 = this.state,
+			    xAccessor = _state4.xAccessor,
+			    initialXScale = _state4.xScale,
+			    initialPlotData = _state4.plotData;
+			var _props = this.props,
+			    zoomMultiplier = _props.zoomMultiplier,
+			    zoomAnchor = _props.zoomAnchor;
+			var fullData = this.fullData;
+
+			var item = zoomAnchor({
+				xScale: initialXScale,
+				xAccessor: xAccessor,
+				mouseXY: mouseXY,
+				plotData: initialPlotData,
+				fullData: fullData
+			});
+
+			var cx = initialXScale(item);
+			var c = zoomDirection > 0 ? 1 * zoomMultiplier : 1 / zoomMultiplier;
+			var newDomain = initialXScale.range().map(function (x) {
+				return cx + (x - cx) * c;
+			}).map(initialXScale.invert);
+
+			var _calculateStateForDom = this.calculateStateForDomain(newDomain),
+			    xScale = _calculateStateForDom.xScale,
+			    plotData = _calculateStateForDom.plotData,
+			    chartConfig = _calculateStateForDom.chartConfig;
+
+			var currentItem = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["c" /* getCurrentItem */])(xScale, xAccessor, mouseXY, plotData);
+			var currentCharts = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["b" /* getCurrentCharts */])(chartConfig, mouseXY);
+
+			this.clearThreeCanvas();
+
+			var firstItem = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(fullData);
+
+			var start = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(xScale.domain());
+			var end = xAccessor(firstItem);
+			var onLoadMore = this.props.onLoadMore;
+
+
+			this.mutableState = {
+				mouseXY: mouseXY,
+				currentItem: currentItem,
+				currentCharts: currentCharts
+			};
+
+			this.triggerEvent("zoom", {
+				xScale: xScale,
+				plotData: plotData,
+				chartConfig: chartConfig,
+				mouseXY: mouseXY,
+				currentCharts: currentCharts,
+				currentItem: currentItem,
+				show: true
+			}, e);
+
+			this.setState({
+				xScale: xScale,
+				plotData: plotData,
+				chartConfig: chartConfig
+			}, function () {
+				if (start < end) {
+					onLoadMore(start, end);
+				}
+			});
+		}
+	}, {
+		key: "xAxisZoom",
+		value: function xAxisZoom(newDomain) {
+			var _calculateStateForDom2 = this.calculateStateForDomain(newDomain),
+			    xScale = _calculateStateForDom2.xScale,
+			    plotData = _calculateStateForDom2.plotData,
+			    chartConfig = _calculateStateForDom2.chartConfig;
+
+			this.clearThreeCanvas();
+
+			var xAccessor = this.state.xAccessor;
+			var fullData = this.fullData;
+
+			var firstItem = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(fullData);
+			var start = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(xScale.domain());
+			var end = xAccessor(firstItem);
+			var onLoadMore = this.props.onLoadMore;
+
+
+			this.setState({
+				xScale: xScale,
+				plotData: plotData,
+				chartConfig: chartConfig
+			}, function () {
+				if (start < end) onLoadMore(start, end);
+			});
+		}
+	}, {
+		key: "yAxisZoom",
+		value: function yAxisZoom(chartId, newDomain) {
+			this.clearThreeCanvas();
+			var initialChartConfig = this.state.chartConfig;
+
+			var chartConfig = initialChartConfig.map(function (each) {
+				if (each.id === chartId) {
+					var yScale = each.yScale;
+
+					return _extends({}, each, {
+						yScale: yScale.copy().domain(newDomain),
+						yPanEnabled: true
+					});
+				} else {
+					return each;
+				}
+			});
+
+			this.setState({
+				chartConfig: chartConfig
+			});
+		}
+	}, {
+		key: "triggerEvent",
+		value: function triggerEvent(type, props, e) {
+			var _this3 = this;
+
+			// console.log("triggering ->", type);
+
+			this.subscriptions.forEach(function (each) {
+				var state = _extends({}, _this3.state, {
+					fullData: _this3.fullData,
+					subscriptions: _this3.subscriptions
+				});
+				each.listener(type, props, state, e);
+			});
+		}
+	}, {
+		key: "draw",
+		value: function draw(props) {
+			this.subscriptions.forEach(function (each) {
+				if (Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(each.draw)) each.draw(props);
+			});
+		}
+	}, {
+		key: "redraw",
+		value: function redraw() {
+			this.clearThreeCanvas();
+			this.draw({ force: true });
+		}
+	}, {
+		key: "panHelper",
+		value: function panHelper(mouseXY, initialXScale, panOrigin, chartsToPan) {
+			var _state5 = this.state,
+			    xAccessor = _state5.xAccessor,
+			    displayXAccessor = _state5.displayXAccessor,
+			    initialChartConfig = _state5.chartConfig;
+			var filterData = this.state.filterData;
+			var fullData = this.fullData;
+			var postCalculator = this.props.postCalculator;
+
+
+			var dx = mouseXY[0] - panOrigin[0];
+			var dy = mouseXY[1] - panOrigin[1];
+
+			if (Object(__WEBPACK_IMPORTED_MODULE_3__utils__["s" /* isNotDefined */])(initialXScale.invert)) throw new Error("xScale provided does not have an invert() method." + "You are likely using an ordinal scale. This scale does not support zoom, pan");
+
+			var newDomain = initialXScale.range().map(function (x) {
+				return x - dx;
+			}).map(initialXScale.invert);
+
+			var _filterData4 = filterData(fullData, newDomain, xAccessor, initialXScale, {
+				currentPlotData: this.hackyWayToStopPanBeyondBounds__plotData,
+				currentDomain: this.hackyWayToStopPanBeyondBounds__domain
+			}),
+			    beforePlotData = _filterData4.plotData,
+			    domain = _filterData4.domain;
+
+			var updatedScale = initialXScale.copy().domain(domain);
+			var plotData = postCalculator(beforePlotData);
+			// console.log(last(plotData));
+
+			var currentItem = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["c" /* getCurrentItem */])(updatedScale, xAccessor, mouseXY, plotData);
+			var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["a" /* getChartConfigWithUpdatedYScales */])(initialChartConfig, { plotData: plotData, xAccessor: xAccessor, displayXAccessor: displayXAccessor, fullData: fullData }, updatedScale.domain(), dy, chartsToPan);
+			var currentCharts = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["b" /* getCurrentCharts */])(chartConfig, mouseXY);
+
+			// console.log(initialXScale.domain(), newDomain, updatedScale.domain());
+			return {
+				xScale: updatedScale,
+				plotData: plotData,
+				chartConfig: chartConfig,
+				mouseXY: mouseXY,
+				currentCharts: currentCharts,
+				currentItem: currentItem
+			};
+		}
+	}, {
+		key: "handlePan",
+		value: function handlePan(mousePosition, panStartXScale, panOrigin, chartsToPan, e) {
+			var _this4 = this;
+
+			if (!this.waitingForPanAnimationFrame) {
+				this.waitingForPanAnimationFrame = true;
+
+				this.hackyWayToStopPanBeyondBounds__plotData = this.hackyWayToStopPanBeyondBounds__plotData || this.state.plotData;
+				this.hackyWayToStopPanBeyondBounds__domain = this.hackyWayToStopPanBeyondBounds__domain || this.state.xScale.domain();
+
+				var state = this.panHelper(mousePosition, panStartXScale, panOrigin, chartsToPan);
+
+				this.hackyWayToStopPanBeyondBounds__plotData = state.plotData;
+				this.hackyWayToStopPanBeyondBounds__domain = state.xScale.domain();
+
+				this.panInProgress = true;
+				// console.log(panStartXScale.domain(), state.xScale.domain())
+
+				this.triggerEvent("pan", state, e);
+
+				this.mutableState = {
+					mouseXY: state.mouseXY,
+					currentItem: state.currentItem,
+					currentCharts: state.currentCharts
+				};
+				requestAnimationFrame(function () {
+
+					_this4.waitingForPanAnimationFrame = false;
+					_this4.clearBothCanvas();
+					_this4.draw({ trigger: "pan" });
+				});
+			}
+		}
+	}, {
+		key: "handleMouseDown",
+		value: function handleMouseDown(mousePosition, currentCharts, e) {
+			this.triggerEvent("mousedown", this.mutableState, e);
+		}
+	}, {
+		key: "handleMouseEnter",
+		value: function handleMouseEnter(e) {
+			this.triggerEvent("mouseenter", {
+				show: true
+			}, e);
+		}
+	}, {
+		key: "handleMouseMove",
+		value: function handleMouseMove(mouseXY, inputType, e) {
+			var _this5 = this;
+
+			if (!this.waitingForAnimationFrame) {
+				this.waitingForAnimationFrame = true;
+
+				var _state6 = this.state,
+				    chartConfig = _state6.chartConfig,
+				    plotData = _state6.plotData,
+				    xScale = _state6.xScale,
+				    xAccessor = _state6.xAccessor;
+
+				var currentCharts = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["b" /* getCurrentCharts */])(chartConfig, mouseXY);
+				var currentItem = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["c" /* getCurrentItem */])(xScale, xAccessor, mouseXY, plotData);
+				this.triggerEvent("mousemove", {
+					show: true,
+					mouseXY: mouseXY,
+					// prevMouseXY is used in interactive components
+					prevMouseXY: this.prevMouseXY,
+					currentItem: currentItem,
+					currentCharts: currentCharts
+				}, e);
+
+				this.prevMouseXY = mouseXY;
+				this.mutableState = {
+					mouseXY: mouseXY,
+					currentItem: currentItem,
+					currentCharts: currentCharts
+				};
+
+				requestAnimationFrame(function () {
+					_this5.clearMouseCanvas();
+					_this5.draw({ trigger: "mousemove" });
+					_this5.waitingForAnimationFrame = false;
+				});
+			}
+		}
+	}, {
+		key: "handleMouseLeave",
+		value: function handleMouseLeave(e) {
+			this.triggerEvent("mouseleave", { show: false }, e);
+			this.clearMouseCanvas();
+			this.draw({ trigger: "mouseleave" });
+		}
+	}, {
+		key: "handleDragStart",
+		value: function handleDragStart(_ref2, e) {
+			var startPos = _ref2.startPos;
+
+			this.triggerEvent("dragstart", { startPos: startPos }, e);
+		}
+	}, {
+		key: "handleDrag",
+		value: function handleDrag(_ref3, e) {
+			var _this6 = this;
+
+			var startPos = _ref3.startPos,
+			    mouseXY = _ref3.mouseXY;
+			var _state7 = this.state,
+			    chartConfig = _state7.chartConfig,
+			    plotData = _state7.plotData,
+			    xScale = _state7.xScale,
+			    xAccessor = _state7.xAccessor;
+
+			var currentCharts = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["b" /* getCurrentCharts */])(chartConfig, mouseXY);
+			var currentItem = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["c" /* getCurrentItem */])(xScale, xAccessor, mouseXY, plotData);
+
+			this.triggerEvent("drag", {
+				startPos: startPos,
+				mouseXY: mouseXY,
+				currentItem: currentItem,
+				currentCharts: currentCharts
+			}, e);
+
+			this.mutableState = {
+				mouseXY: mouseXY,
+				currentItem: currentItem,
+				currentCharts: currentCharts
+			};
+
+			requestAnimationFrame(function () {
+				_this6.clearMouseCanvas();
+				_this6.draw({ trigger: "drag" });
+			});
+		}
+	}, {
+		key: "handleDragEnd",
+		value: function handleDragEnd(_ref4, e) {
+			var _this7 = this;
+
+			var mouseXY = _ref4.mouseXY;
+
+			this.triggerEvent("dragend", { mouseXY: mouseXY }, e);
+
+			requestAnimationFrame(function () {
+				_this7.clearMouseCanvas();
+				_this7.draw({ trigger: "dragend" });
+			});
+		}
+	}, {
+		key: "handleClick",
+		value: function handleClick(mousePosition, e) {
+			var _this8 = this;
+
+			this.triggerEvent("click", this.mutableState, e);
+
+			requestAnimationFrame(function () {
+				_this8.clearMouseCanvas();
+				_this8.draw({ trigger: "click" });
+			});
+		}
+	}, {
+		key: "handleDoubleClick",
+		value: function handleDoubleClick(mousePosition, e) {
+			this.triggerEvent("dblclick", {}, e);
+		}
+	}, {
+		key: "handlePanEnd",
+		value: function handlePanEnd(mousePosition, panStartXScale, panOrigin, chartsToPan, e) {
+			var _this9 = this;
+
+			var state = this.panHelper(mousePosition, panStartXScale, panOrigin, chartsToPan);
+			// console.log(this.canvasDrawCallbackList.map(d => d.type));
+			this.hackyWayToStopPanBeyondBounds__plotData = null;
+			this.hackyWayToStopPanBeyondBounds__domain = null;
+
+			this.panInProgress = false;
+
+			// console.log("PANEND", panEnd++);
+			var xScale = state.xScale,
+			    plotData = state.plotData,
+			    chartConfig = state.chartConfig;
+
+
+			this.triggerEvent("panend", state, e);
+
+			requestAnimationFrame(function () {
+				var xAccessor = _this9.state.xAccessor;
+				var fullData = _this9.fullData;
+
+
+				var firstItem = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(fullData);
+				var start = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(xScale.domain());
+				var end = xAccessor(firstItem);
+				// console.log(start, end, start < end ? "Load more" : "I have it");
+
+				var onLoadMore = _this9.props.onLoadMore;
+
+
+				_this9.clearThreeCanvas();
+
+				_this9.setState({
+					xScale: xScale,
+					plotData: plotData,
+					chartConfig: chartConfig
+				}, function () {
+					if (start < end) onLoadMore(start, end);
+				});
+			});
+		}
+	}, {
+		key: "getChildContext",
+		value: function getChildContext() {
+			var dimensions = getDimensions(this.props);
+			return {
+				fullData: this.fullData,
+				plotData: this.state.plotData,
+				width: dimensions.width,
+				height: dimensions.height,
+				chartConfig: this.state.chartConfig,
+				xScale: this.state.xScale,
+				xAccessor: this.state.xAccessor,
+				displayXAccessor: this.state.displayXAccessor,
+				chartCanvasType: this.props.type,
+				margin: this.props.margin,
+				ratio: this.props.ratio,
+				xAxisZoom: this.xAxisZoom,
+				yAxisZoom: this.yAxisZoom,
+				getCanvasContexts: this.getCanvasContexts,
+				redraw: this.redraw,
+				subscribe: this.subscribe,
+				unsubscribe: this.unsubscribe,
+				generateSubscriptionId: this.generateSubscriptionId,
+				getMutableState: this.getMutableState,
+				amIOnTop: this.amIOnTop,
+				setCursorClass: this.setCursorClass
+			};
+		}
+	}, {
+		key: "componentWillMount",
+		value: function componentWillMount() {
+			var _resetChart = resetChart(this.props, true),
+			    fullData = _resetChart.fullData,
+			    state = _objectWithoutProperties(_resetChart, ["fullData"]);
+
+			this.setState(state);
+			this.fullData = fullData;
+		}
+	}, {
+		key: "componentWillReceiveProps",
+		value: function componentWillReceiveProps(nextProps) {
+			var reset = shouldResetChart(this.props, nextProps);
+
+			var interaction = isInteractionEnabled(this.state.xScale, this.state.xAccessor, this.state.plotData);
+			var initialChartConfig = this.state.chartConfig;
+
+
+			var newState = void 0;
+			if (!interaction || reset || !Object(__WEBPACK_IMPORTED_MODULE_3__utils__["z" /* shallowEqual */])(this.props.xExtents, nextProps.xExtents)) {
+				if (process.env.NODE_ENV !== "production") {
+					if (!interaction) log("RESET CHART, changes to a non interactive chart");else if (reset) log("RESET CHART, one or more of these props changed", CANDIDATES_FOR_RESET);else log("xExtents changed");
+				}
+				// do reset
+				newState = resetChart(nextProps);
+			} else {
+				var _state$xScale$domain = this.state.xScale.domain(),
+				    _state$xScale$domain2 = _slicedToArray(_state$xScale$domain, 2),
+				    start = _state$xScale$domain2[0],
+				    end = _state$xScale$domain2[1];
+
+				var prevLastItem = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["u" /* last */])(this.fullData);
+
+				var calculatedState = calculateFullData(nextProps);
+				var xAccessor = calculatedState.xAccessor;
+
+				var lastItemWasVisible = xAccessor(prevLastItem) <= end && xAccessor(prevLastItem) >= start;
+
+				if (process.env.NODE_ENV !== "production") {
+					if (this.props.data !== nextProps.data) log("data is changed but seriesName did not, change the seriesName if you wish to reset the chart and lastItemWasVisible = ", lastItemWasVisible);else log("Trivial change, may be width/height or type changed, but that does not matter");
+				}
+
+				newState = updateChart(calculatedState, this.state.xScale, nextProps, lastItemWasVisible, initialChartConfig);
+			}
+
+			var _newState = newState,
+			    fullData = _newState.fullData,
+			    state = _objectWithoutProperties(_newState, ["fullData"]);
+
+			if (this.panInProgress) {
+				if (process.env.NODE_ENV !== "production") {
+					log("Pan is in progress");
+				}
+			} else {
+				/*
+    if (!reset) {
+    	state.chartConfig
+    		.forEach((each) => {
+    			// const sourceChartConfig = initialChartConfig.filter(d => d.id === each.id);
+    			const prevChartConfig = find(initialChartConfig, d => d.id === each.id);
+    			if (isDefined(prevChartConfig) && prevChartConfig.yPanEnabled) {
+    				each.yScale.domain(prevChartConfig.yScale.domain());
+    				each.yPanEnabled = prevChartConfig.yPanEnabled;
+    			}
+    		});
+    }
+    */
+				this.clearThreeCanvas();
+
+				this.setState(state);
+			}
+			this.fullData = fullData;
+		}
+		/*
+  componentDidUpdate(prevProps, prevState) {
+  	console.error(this.state.chartConfig, this.state.chartConfig.map(d => d.yScale.domain()));
+  }
+  */
+
+	}, {
+		key: "resetYDomain",
+		value: function resetYDomain(chartId) {
+			var chartConfig = this.state.chartConfig;
+
+			var changed = false;
+			var newChartConfig = chartConfig.map(function (each) {
+				if ((Object(__WEBPACK_IMPORTED_MODULE_3__utils__["s" /* isNotDefined */])(chartId) || each.id === chartId) && !Object(__WEBPACK_IMPORTED_MODULE_3__utils__["z" /* shallowEqual */])(each.yScale.domain(), each.realYDomain)) {
+					changed = true;
+					return _extends({}, each, {
+						yScale: each.yScale.domain(each.realYDomain),
+						yPanEnabled: false
+					});
+				}
+				return each;
+			});
+
+			if (changed) {
+				this.clearThreeCanvas();
+				this.setState({
+					chartConfig: newChartConfig
+				});
+			}
+		}
+	}, {
+		key: "shouldComponentUpdate",
+		value: function shouldComponentUpdate() {
+			// console.log("Happneing.....", !this.panInProgress)
+			return !this.panInProgress;
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var _props2 = this.props,
+			    type = _props2.type,
+			    height = _props2.height,
+			    width = _props2.width,
+			    margin = _props2.margin,
+			    className = _props2.className,
+			    zIndex = _props2.zIndex,
+			    defaultFocus = _props2.defaultFocus,
+			    ratio = _props2.ratio,
+			    mouseMoveEvent = _props2.mouseMoveEvent,
+			    panEvent = _props2.panEvent,
+			    zoomEvent = _props2.zoomEvent;
+			var _props3 = this.props,
+			    useCrossHairStyleCursor = _props3.useCrossHairStyleCursor,
+			    onSelect = _props3.onSelect;
+			var _state8 = this.state,
+			    plotData = _state8.plotData,
+			    xScale = _state8.xScale,
+			    xAccessor = _state8.xAccessor,
+			    chartConfig = _state8.chartConfig;
+
+			var dimensions = getDimensions(this.props);
+
+			var interaction = isInteractionEnabled(xScale, xAccessor, plotData);
+
+			var cursor = getCursorStyle(useCrossHairStyleCursor && interaction);
+			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+				"div",
+				{ style: { position: "relative", width: width, height: height }, className: className, onClick: onSelect },
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__CanvasContainer__["a" /* default */], { ref: this.saveCanvasContainerNode,
+					type: type,
+					ratio: ratio,
+					width: width, height: height, zIndex: zIndex }),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					"svg",
+					{ className: className, width: width, height: height, style: { position: "absolute", zIndex: zIndex + 5 } },
+					cursor,
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+						"defs",
+						null,
+						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+							"clipPath",
+							{ id: "chart-area-clip" },
+							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", { x: "0", y: "0", width: dimensions.width, height: dimensions.height })
+						),
+						chartConfig.map(function (each, idx) {
+							return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+								"clipPath",
+								{ key: idx, id: "chart-area-clip-" + each.id },
+								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", { x: "0", y: "0", width: each.width, height: each.height })
+							);
+						})
+					),
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+						"g",
+						{ transform: "translate(" + (margin.left + 0.5) + ", " + (margin.top + 0.5) + ")" },
+						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__EventCapture__["a" /* default */], {
+							ref: this.saveEventCaptureNode,
+							mouseMove: mouseMoveEvent && interaction,
+							zoom: zoomEvent && interaction,
+							pan: panEvent && interaction,
+
+							width: dimensions.width,
+							height: dimensions.height,
+							chartConfig: chartConfig,
+							xScale: xScale,
+							xAccessor: xAccessor,
+							focus: defaultFocus,
+
+							getAllPanConditions: this.getAllPanConditions,
+							onContextMenu: this.handleContextMenu,
+							onClick: this.handleClick,
+							onDoubleClick: this.handleDoubleClick,
+							onMouseDown: this.handleMouseDown,
+							onMouseMove: this.handleMouseMove,
+							onMouseEnter: this.handleMouseEnter,
+							onMouseLeave: this.handleMouseLeave,
+
+							onDragStart: this.handleDragStart,
+							onDrag: this.handleDrag,
+							onDragComplete: this.handleDragEnd,
+
+							onZoom: this.handleZoom,
+							onPinchZoom: this.handlePinchZoom,
+							onPinchZoomEnd: this.handlePinchZoomEnd,
+							onPan: this.handlePan,
+							onPanEnd: this.handlePanEnd
+						}),
+						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+							"g",
+							{ className: "react-stockcharts-avoid-interaction" },
+							this.props.children
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return ChartCanvas;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+function isInteractionEnabled(xScale, xAccessor, data) {
+	var interaction = !isNaN(xScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(data)))) && Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(xScale.invert);
+	return interaction;
+}
+
+ChartCanvas.propTypes = {
+	width: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	height: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	margin: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object,
+	ratio: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	// interval: PropTypes.oneOf(["D", "W", "M"]), // ,"m1", "m5", "m15", "W", "M"
+	type: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOf(["svg", "hybrid"]),
+	pointsPerPxThreshold: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
+	minPointsPerPxThreshold: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
+	data: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array.isRequired,
+	// initialDisplay: PropTypes.number,
+	xAccessor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	xExtents: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func]),
+	zoomAnchor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+
+	className: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
+	seriesName: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
+	zIndex: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
+	children: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.node.isRequired,
+	xScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	postCalculator: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	flipXScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
+	useCrossHairStyleCursor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
+	padding: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.shape({
+		left: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
+		right: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number
+	})]),
+	defaultFocus: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
+	zoomMultiplier: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
+	onLoadMore: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	displayXAccessor: function displayXAccessor(props, propName /* , componentName */) {
+		if (Object(__WEBPACK_IMPORTED_MODULE_3__utils__["s" /* isNotDefined */])(props[propName])) {
+			console.warn("`displayXAccessor` is not defined," + " will use the value from `xAccessor` as `displayXAccessor`." + " This might be ok if you do not use a discontinuous scale" + " but if you do, provide a `displayXAccessor` prop to `ChartCanvas`");
+		} else if (typeof props[propName] !== "function") {
+			return new Error("displayXAccessor has to be a function");
+		}
+	},
+	mouseMoveEvent: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
+	panEvent: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
+	clamp: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool]),
+	zoomEvent: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
+	onSelect: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	maintainPointsPerPixelOnResize: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool
+};
+
+ChartCanvas.defaultProps = {
+	margin: { top: 20, right: 30, bottom: 30, left: 80 },
+	type: "hybrid",
+	pointsPerPxThreshold: 2,
+	minPointsPerPxThreshold: 1 / 100,
+	className: "react-stockchart",
+	zIndex: 1,
+	xExtents: [__WEBPACK_IMPORTED_MODULE_2_d3_array__["min"], __WEBPACK_IMPORTED_MODULE_2_d3_array__["max"]],
+	postCalculator: __WEBPACK_IMPORTED_MODULE_3__utils__["q" /* identity */],
+	padding: 0,
+	xAccessor: __WEBPACK_IMPORTED_MODULE_3__utils__["q" /* identity */],
+	flipXScale: false,
+	useCrossHairStyleCursor: true,
+	defaultFocus: true,
+	onLoadMore: __WEBPACK_IMPORTED_MODULE_3__utils__["x" /* noop */],
+	onSelect: __WEBPACK_IMPORTED_MODULE_3__utils__["x" /* noop */],
+	mouseMoveEvent: true,
+	panEvent: true,
+	zoomEvent: true,
+	zoomMultiplier: 1.1,
+	clamp: false,
+	zoomAnchor: __WEBPACK_IMPORTED_MODULE_4__utils_zoomBehavior__["a" /* mouseBasedZoomAnchor */],
+	maintainPointsPerPixelOnResize: true
+	// ratio: 2,
+};
+
+ChartCanvas.childContextTypes = {
+	plotData: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array,
+	fullData: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array,
+	chartConfig: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.arrayOf(__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.shape({
+		id: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string]).isRequired,
+		origin: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.arrayOf(__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number).isRequired,
+		padding: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.shape({
+			top: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
+			bottom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number
+		})]),
+		yExtents: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.arrayOf(__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func),
+		yExtentsProvider: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+		yScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+		mouseCoordinates: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.shape({
+			at: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
+			format: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func
+		}),
+		width: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+		height: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired
+	})).isRequired,
+	xScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	xAccessor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	displayXAccessor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	width: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	height: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	chartCanvasType: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOf(["svg", "hybrid"]).isRequired,
+	margin: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object.isRequired,
+	ratio: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	getCanvasContexts: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	xAxisZoom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	yAxisZoom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	amIOnTop: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	redraw: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	subscribe: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	unsubscribe: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	setCursorClass: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	generateSubscriptionId: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	getMutableState: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func
+};
+
+ChartCanvas.ohlcv = function (d) {
+	return { date: d.date, open: d.open, high: d.high, low: d.low, close: d.close, volume: d.volume };
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (ChartCanvas);
+//# sourceMappingURL=ChartCanvas.js.map
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
+
+/***/ }),
+/* 912 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export default */
+// copied from https://github.com/d3fc/d3fc-rebind/blob/master/src/rebind.js
+
+function createReboundMethod(target, source, name) {
+	var method = source[name];
+	if (typeof method !== "function") {
+		throw new Error("Attempt to rebind " + name + " which isn't a function on the source object");
+	}
+	return function () {
+		for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+			args[_key] = arguments[_key];
+		}
+
+		var value = method.apply(source, args);
+		return value === source ? target : value;
+	};
+}
+
+function rebind(target, source) {
+	for (var _len2 = arguments.length, names = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+		names[_key2 - 2] = arguments[_key2];
+	}
+
+	var _iteratorNormalCompletion = true;
+	var _didIteratorError = false;
+	var _iteratorError = undefined;
+
+	try {
+		for (var _iterator = names[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+			var name = _step.value;
+
+			target[name] = createReboundMethod(target, source, name);
+		}
+	} catch (err) {
+		_didIteratorError = true;
+		_iteratorError = err;
+	} finally {
+		try {
+			if (!_iteratorNormalCompletion && _iterator.return) {
+				_iterator.return();
+			}
+		} finally {
+			if (_didIteratorError) {
+				throw _iteratorError;
+			}
+		}
+	}
+
+	return target;
+}
+//# sourceMappingURL=rebind.js.map
+
+/***/ }),
+/* 913 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__identity__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zipper__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__noop__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index__ = __webpack_require__(16);
+/*
+https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/merge.js
+
+The MIT License (MIT)
+
+Copyright (c) 2014-2015 Scott Logic Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+
+
+
+
+
+
+// applies an algorithm to an array, merging the result back into
+// the source array using the given merge function.
+/* unused harmony default export */ var _unused_webpack_default_export = (function () {
+
+	var algorithm = __WEBPACK_IMPORTED_MODULE_0__identity__["a" /* default */],
+	    skipUndefined = true,
+	    merge = __WEBPACK_IMPORTED_MODULE_2__noop__["a" /* default */];
+
+	function mergeCompute(data) {
+		var zip = Object(__WEBPACK_IMPORTED_MODULE_1__zipper__["a" /* default */])().combine(function (datum, indicator) {
+			var result = skipUndefined && Object(__WEBPACK_IMPORTED_MODULE_3__index__["s" /* isNotDefined */])(indicator) ? datum : merge(datum, indicator);
+			return Object(__WEBPACK_IMPORTED_MODULE_3__index__["s" /* isNotDefined */])(result) ? datum : result;
+		});
+
+		// console.log(data);
+		return zip(data, algorithm(data));
+	}
+
+	mergeCompute.algorithm = function (x) {
+		if (!arguments.length) {
+			return algorithm;
+		}
+		algorithm = x;
+		return mergeCompute;
+	};
+
+	mergeCompute.merge = function (x) {
+		if (!arguments.length) {
+			return merge;
+		}
+		merge = x;
+		return mergeCompute;
+	};
+	mergeCompute.skipUndefined = function (x) {
+		if (!arguments.length) {
+			return skipUndefined;
+		}
+		skipUndefined = x;
+		return mergeCompute;
+	};
+
+	return mergeCompute;
+});
+//# sourceMappingURL=merge.js.map
+
+/***/ }),
+/* 914 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__noop__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(16);
+
+
+/*
+
+Taken from https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/calculator/slidingWindow.js
+
+The MIT License (MIT)
+
+Copyright (c) 2014-2015 Scott Logic Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+*/
+
+
+
+
+/* unused harmony default export */ var _unused_webpack_default_export = (function () {
+
+	var undefinedValue = undefined,
+	    windowSize = 10,
+	    accumulator = __WEBPACK_IMPORTED_MODULE_0__noop__["a" /* default */],
+	    sourcePath = void 0,
+	    source = void 0,
+	    skipInitial = 0,
+	    misc = void 0;
+
+	// eslint-disable-next-line prefer-const
+	var slidingWindow = function slidingWindow(data) {
+		var sourceFunction = source || Object(__WEBPACK_IMPORTED_MODULE_1__index__["y" /* path */])(sourcePath);
+
+		var size = Object(__WEBPACK_IMPORTED_MODULE_1__index__["j" /* functor */])(windowSize).apply(this, arguments);
+		var windowData = data.slice(skipInitial, size + skipInitial).map(sourceFunction);
+		var accumulatorIdx = 0;
+		var undef = Object(__WEBPACK_IMPORTED_MODULE_1__index__["j" /* functor */])(undefinedValue);
+		// console.log(skipInitial, size, data.length, windowData.length);
+		return data.map(function (d, i) {
+			// console.log(d, i);
+			if (i < skipInitial + size - 1) {
+				return undef(sourceFunction(d), i, misc);
+			}
+			if (i >= skipInitial + size) {
+				// Treat windowData as FIFO rolling buffer
+				windowData.shift();
+				windowData.push(sourceFunction(d, i));
+			}
+			return accumulator(windowData, i, accumulatorIdx++, misc);
+		});
+	};
+
+	slidingWindow.undefinedValue = function (x) {
+		if (!arguments.length) {
+			return undefinedValue;
+		}
+		undefinedValue = x;
+		return slidingWindow;
+	};
+	slidingWindow.windowSize = function (x) {
+		if (!arguments.length) {
+			return windowSize;
+		}
+		windowSize = x;
+		return slidingWindow;
+	};
+	slidingWindow.misc = function (x) {
+		if (!arguments.length) {
+			return misc;
+		}
+		misc = x;
+		return slidingWindow;
+	};
+	slidingWindow.accumulator = function (x) {
+		if (!arguments.length) {
+			return accumulator;
+		}
+		accumulator = x;
+		return slidingWindow;
+	};
+	slidingWindow.skipInitial = function (x) {
+		if (!arguments.length) {
+			return skipInitial;
+		}
+		skipInitial = x;
+		return slidingWindow;
+	};
+	slidingWindow.sourcePath = function (x) {
+		if (!arguments.length) {
+			return sourcePath;
+		}
+		sourcePath = x;
+		return slidingWindow;
+	};
+	slidingWindow.source = function (x) {
+		if (!arguments.length) {
+			return source;
+		}
+		source = x;
+		return slidingWindow;
+	};
+
+	return slidingWindow;
+});
+//# sourceMappingURL=slidingWindow.js.map
+
+/***/ }),
+/* 915 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__noop__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identity__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__index__ = __webpack_require__(16);
+
+
+
+
+
+
+/* unused harmony default export */ var _unused_webpack_default_export = (function () {
+
+	var undefinedValue = undefined,
+	    windowSize = 10,
+	    accumulator = __WEBPACK_IMPORTED_MODULE_0__noop__["a" /* default */],
+	    source = __WEBPACK_IMPORTED_MODULE_1__identity__["a" /* default */],
+	    skipInitial = 0;
+
+	// eslint-disable-next-line prefer-const
+	var mappedSlidingWindow = function mappedSlidingWindow(data) {
+		var size = Object(__WEBPACK_IMPORTED_MODULE_2__index__["j" /* functor */])(windowSize).apply(this, arguments);
+		var windowData = [];
+		var accumulatorIdx = 0;
+		var undef = Object(__WEBPACK_IMPORTED_MODULE_2__index__["j" /* functor */])(undefinedValue);
+		// console.log(skipInitial, size, data.length, windowData.length);
+		var result = [];
+		data.forEach(function (d, i) {
+			// console.log(d, i, windowData.length);
+			var mapped = void 0;
+			if (i < skipInitial + size - 1) {
+				mapped = undef(d, i);
+				result.push(mapped);
+				windowData.push(mapped);
+				return;
+			}
+			if (i >= skipInitial + size) {
+				// Treat windowData as FIFO rolling buffer
+				windowData.shift();
+			}
+			windowData.push(source(d, i));
+			mapped = accumulator(windowData, i, accumulatorIdx++);
+			result.push(mapped);
+			windowData.pop();
+			windowData.push(mapped);
+			return;
+		});
+		return result;
+	};
+
+	mappedSlidingWindow.undefinedValue = function (x) {
+		if (!arguments.length) {
+			return undefinedValue;
+		}
+		undefinedValue = x;
+		return mappedSlidingWindow;
+	};
+	mappedSlidingWindow.windowSize = function (x) {
+		if (!arguments.length) {
+			return windowSize;
+		}
+		windowSize = x;
+		return mappedSlidingWindow;
+	};
+	mappedSlidingWindow.accumulator = function (x) {
+		if (!arguments.length) {
+			return accumulator;
+		}
+		accumulator = x;
+		return mappedSlidingWindow;
+	};
+	mappedSlidingWindow.skipInitial = function (x) {
+		if (!arguments.length) {
+			return skipInitial;
+		}
+		skipInitial = x;
+		return mappedSlidingWindow;
+	};
+	mappedSlidingWindow.source = function (x) {
+		if (!arguments.length) {
+			return source;
+		}
+		source = x;
+		return mappedSlidingWindow;
+	};
+
+	return mappedSlidingWindow;
+});
+//# sourceMappingURL=mappedSlidingWindow.js.map
+
+/***/ }),
+/* 916 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__noop__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identity__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__index__ = __webpack_require__(16);
+
+
+/*
+
+Taken from https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/calculator/slidingWindow.js
+
+The MIT License (MIT)
+
+Copyright (c) 2014-2015 Scott Logic Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+*/
+
+
+
+
+
+/* unused harmony default export */ var _unused_webpack_default_export = (function () {
+
+	var accumulateTill = Object(__WEBPACK_IMPORTED_MODULE_2__index__["j" /* functor */])(false),
+	    accumulator = __WEBPACK_IMPORTED_MODULE_0__noop__["a" /* default */],
+	    value = __WEBPACK_IMPORTED_MODULE_1__identity__["a" /* default */],
+	    discardTillStart = false,
+	    discardTillEnd = false;
+
+	// eslint-disable-next-line prefer-const
+	var accumulatingWindow = function accumulatingWindow(data) {
+		var accumulatedWindow = discardTillStart ? undefined : [];
+		var response = [];
+		var accumulatorIdx = 0;
+		var i = 0;
+		for (i = 0; i < data.length; i++) {
+			var d = data[i];
+			// console.log(d, accumulateTill(d));
+			if (accumulatedWindow.length > 0 && accumulateTill(d, i, accumulatedWindow)) {
+				if (accumulatedWindow && accumulatedWindow.length > 0) response.push(accumulator(accumulatedWindow, i, accumulatorIdx++));
+				accumulatedWindow = [value(d)];
+			} else {
+				if (accumulatedWindow) accumulatedWindow.push(value(d));
+			}
+		}
+		if (!discardTillEnd) response.push(accumulator(accumulatedWindow, i, accumulatorIdx));
+		return response;
+	};
+
+	accumulatingWindow.accumulateTill = function (x) {
+		if (!arguments.length) {
+			return accumulateTill;
+		}
+		accumulateTill = Object(__WEBPACK_IMPORTED_MODULE_2__index__["j" /* functor */])(x);
+		return accumulatingWindow;
+	};
+	accumulatingWindow.accumulator = function (x) {
+		if (!arguments.length) {
+			return accumulator;
+		}
+		accumulator = x;
+		return accumulatingWindow;
+	};
+	accumulatingWindow.value = function (x) {
+		if (!arguments.length) {
+			return value;
+		}
+		value = x;
+		return accumulatingWindow;
+	};
+	accumulatingWindow.discardTillStart = function (x) {
+		if (!arguments.length) {
+			return discardTillStart;
+		}
+		discardTillStart = x;
+		return accumulatingWindow;
+	};
+	accumulatingWindow.discardTillEnd = function (x) {
+		if (!arguments.length) {
+			return discardTillEnd;
+		}
+		discardTillEnd = x;
+		return accumulatingWindow;
+	};
+	return accumulatingWindow;
+});
+//# sourceMappingURL=accumulatingWindow.js.map
+
+/***/ }),
+/* 917 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export plotDataLengthBarWidth */
+/* unused harmony export timeIntervalBarWidth */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(16);
+
+
+
+
+/**
+ * Bar width is based on the amount of items in the plot data and the distance between the first and last of those
+ * items.
+ * @param props the props passed to the series.
+ * @param moreProps an object holding the xScale, xAccessor and plotData.
+ * @return {number} the bar width.
+ */
+function plotDataLengthBarWidth(props, moreProps) {
+  var _props$widthRatio = props.widthRatio,
+      widthRatio = _props$widthRatio === undefined ? 0.8 : _props$widthRatio;
+  var scale = moreProps.xScale,
+      accessor = moreProps.xAccessor,
+      plotData = moreProps.plotData;
+
+
+  var width = Math.abs((scale(accessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(plotData))) - scale(accessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(plotData)))) / (plotData.length - 1));
+  return width * widthRatio;
+}
+
+/**
+ * Generates a width function that calculates the bar width based on the given time interval.
+ * @param interval a d3-time time interval.
+ * @return {Function} the width function.
+ */
+function timeIntervalBarWidth(interval) {
+  return function (props, moreProps) {
+    var _props$widthRatio2 = props.widthRatio,
+        widthRatio = _props$widthRatio2 === undefined ? 0.8 : _props$widthRatio2;
+    var scale = moreProps.xScale,
+        accessor = moreProps.xAccessor,
+        plotData = moreProps.plotData;
+
+
+    var first = accessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(plotData));
+    return Math.abs(scale(interval.offset(first, 1)) - scale(first)) * widthRatio;
+  };
+}
+//# sourceMappingURL=barWidth.js.map
+
+/***/ }),
+/* 918 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export strokeDashTypes */
+/* unused harmony export getStrokeDasharray */
+var strokeDashTypes = ["Solid", "ShortDash", "ShortDot", "ShortDashDot", "ShortDashDotDot", "Dot", "Dash", "LongDash", "DashDot", "LongDashDot", "LongDashDotDot"];
+
+var getStrokeDasharray = function getStrokeDasharray(type) {
+	switch (type) {
+		default:
+		case "Solid":
+			return "none";
+		case "ShortDash":
+			return "6, 2";
+		case "ShortDot":
+			return "2, 2";
+		case "ShortDashDot":
+			return "6, 2, 2, 2";
+		case "ShortDashDotDot":
+			return "6, 2, 2, 2, 2, 2";
+		case "Dot":
+			return "2, 6";
+		case "Dash":
+			return "8, 6";
+		case "LongDash":
+			return "16, 6";
+		case "DashDot":
+			return "8, 6, 2, 6";
+		case "LongDashDot":
+			return "16, 6, 2, 6";
+		case "LongDashDotDot":
+			return "16, 6, 2, 6, 2, 6";
+	}
+};
+//# sourceMappingURL=strokeDasharray.js.map
+
+/***/ }),
+/* 919 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * This is the common logic for both the Node.js and web browser
+ * implementations of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = createDebug.debug = createDebug['default'] = createDebug;
+exports.coerce = coerce;
+exports.disable = disable;
+exports.enable = enable;
+exports.enabled = enabled;
+exports.humanize = __webpack_require__(920);
+
+/**
+ * Active `debug` instances.
+ */
+exports.instances = [];
+
+/**
+ * The currently active debug mode names, and names to skip.
+ */
+
+exports.names = [];
+exports.skips = [];
+
+/**
+ * Map of special "%n" handling functions, for the debug "format" argument.
+ *
+ * Valid key names are a single, lower or upper-case letter, i.e. "n" and "N".
+ */
+
+exports.formatters = {};
+
+/**
+ * Select a color.
+ * @param {String} namespace
+ * @return {Number}
+ * @api private
+ */
+
+function selectColor(namespace) {
+  var hash = 0, i;
+
+  for (i in namespace) {
+    hash  = ((hash << 5) - hash) + namespace.charCodeAt(i);
+    hash |= 0; // Convert to 32bit integer
+  }
+
+  return exports.colors[Math.abs(hash) % exports.colors.length];
+}
+
+/**
+ * Create a debugger with the given `namespace`.
+ *
+ * @param {String} namespace
+ * @return {Function}
+ * @api public
+ */
+
+function createDebug(namespace) {
+
+  var prevTime;
+
+  function debug() {
+    // disabled?
+    if (!debug.enabled) return;
+
+    var self = debug;
+
+    // set `diff` timestamp
+    var curr = +new Date();
+    var ms = curr - (prevTime || curr);
+    self.diff = ms;
+    self.prev = prevTime;
+    self.curr = curr;
+    prevTime = curr;
+
+    // turn the `arguments` into a proper Array
+    var args = new Array(arguments.length);
+    for (var i = 0; i < args.length; i++) {
+      args[i] = arguments[i];
+    }
+
+    args[0] = exports.coerce(args[0]);
+
+    if ('string' !== typeof args[0]) {
+      // anything else let's inspect with %O
+      args.unshift('%O');
+    }
+
+    // apply any `formatters` transformations
+    var index = 0;
+    args[0] = args[0].replace(/%([a-zA-Z%])/g, function(match, format) {
+      // if we encounter an escaped % then don't increase the array index
+      if (match === '%%') return match;
+      index++;
+      var formatter = exports.formatters[format];
+      if ('function' === typeof formatter) {
+        var val = args[index];
+        match = formatter.call(self, val);
+
+        // now we need to remove `args[index]` since it's inlined in the `format`
+        args.splice(index, 1);
+        index--;
+      }
+      return match;
+    });
+
+    // apply env-specific formatting (colors, etc.)
+    exports.formatArgs.call(self, args);
+
+    var logFn = debug.log || exports.log || console.log.bind(console);
+    logFn.apply(self, args);
+  }
+
+  debug.namespace = namespace;
+  debug.enabled = exports.enabled(namespace);
+  debug.useColors = exports.useColors();
+  debug.color = selectColor(namespace);
+  debug.destroy = destroy;
+
+  // env-specific initialization logic for debug instances
+  if ('function' === typeof exports.init) {
+    exports.init(debug);
+  }
+
+  exports.instances.push(debug);
+
+  return debug;
+}
+
+function destroy () {
+  var index = exports.instances.indexOf(this);
+  if (index !== -1) {
+    exports.instances.splice(index, 1);
+    return true;
+  } else {
+    return false;
+  }
+}
+
+/**
+ * Enables a debug mode by namespaces. This can include modes
+ * separated by a colon and wildcards.
+ *
+ * @param {String} namespaces
+ * @api public
+ */
+
+function enable(namespaces) {
+  exports.save(namespaces);
+
+  exports.names = [];
+  exports.skips = [];
+
+  var i;
+  var split = (typeof namespaces === 'string' ? namespaces : '').split(/[\s,]+/);
+  var len = split.length;
+
+  for (i = 0; i < len; i++) {
+    if (!split[i]) continue; // ignore empty strings
+    namespaces = split[i].replace(/\*/g, '.*?');
+    if (namespaces[0] === '-') {
+      exports.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
+    } else {
+      exports.names.push(new RegExp('^' + namespaces + '$'));
+    }
+  }
+
+  for (i = 0; i < exports.instances.length; i++) {
+    var instance = exports.instances[i];
+    instance.enabled = exports.enabled(instance.namespace);
+  }
+}
+
+/**
+ * Disable debug output.
+ *
+ * @api public
+ */
+
+function disable() {
+  exports.enable('');
+}
+
+/**
+ * Returns true if the given mode name is enabled, false otherwise.
+ *
+ * @param {String} name
+ * @return {Boolean}
+ * @api public
+ */
+
+function enabled(name) {
+  if (name[name.length - 1] === '*') {
+    return true;
+  }
+  var i, len;
+  for (i = 0, len = exports.skips.length; i < len; i++) {
+    if (exports.skips[i].test(name)) {
+      return false;
+    }
+  }
+  for (i = 0, len = exports.names.length; i < len; i++) {
+    if (exports.names[i].test(name)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Coerce `val`.
+ *
+ * @param {Mixed} val
+ * @return {Mixed}
+ * @api private
+ */
+
+function coerce(val) {
+  if (val instanceof Error) return val.stack || val.message;
+  return val;
+}
+
+
+/***/ }),
+/* 920 */
+/***/ (function(module, exports) {
+
+/**
+ * Helpers.
+ */
+
+var s = 1000;
+var m = s * 60;
+var h = m * 60;
+var d = h * 24;
+var y = d * 365.25;
+
+/**
+ * Parse or format the given `val`.
+ *
+ * Options:
+ *
+ *  - `long` verbose formatting [false]
+ *
+ * @param {String|Number} val
+ * @param {Object} [options]
+ * @throws {Error} throw an error if val is not a non-empty string or a number
+ * @return {String|Number}
+ * @api public
+ */
+
+module.exports = function(val, options) {
+  options = options || {};
+  var type = typeof val;
+  if (type === 'string' && val.length > 0) {
+    return parse(val);
+  } else if (type === 'number' && isNaN(val) === false) {
+    return options.long ? fmtLong(val) : fmtShort(val);
+  }
+  throw new Error(
+    'val is not a non-empty string or a valid number. val=' +
+      JSON.stringify(val)
+  );
+};
+
+/**
+ * Parse the given `str` and return milliseconds.
+ *
+ * @param {String} str
+ * @return {Number}
+ * @api private
+ */
+
+function parse(str) {
+  str = String(str);
+  if (str.length > 100) {
+    return;
+  }
+  var match = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(
+    str
+  );
+  if (!match) {
+    return;
+  }
+  var n = parseFloat(match[1]);
+  var type = (match[2] || 'ms').toLowerCase();
+  switch (type) {
+    case 'years':
+    case 'year':
+    case 'yrs':
+    case 'yr':
+    case 'y':
+      return n * y;
+    case 'days':
+    case 'day':
+    case 'd':
+      return n * d;
+    case 'hours':
+    case 'hour':
+    case 'hrs':
+    case 'hr':
+    case 'h':
+      return n * h;
+    case 'minutes':
+    case 'minute':
+    case 'mins':
+    case 'min':
+    case 'm':
+      return n * m;
+    case 'seconds':
+    case 'second':
+    case 'secs':
+    case 'sec':
+    case 's':
+      return n * s;
+    case 'milliseconds':
+    case 'millisecond':
+    case 'msecs':
+    case 'msec':
+    case 'ms':
+      return n;
+    default:
+      return undefined;
+  }
+}
+
+/**
+ * Short format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtShort(ms) {
+  if (ms >= d) {
+    return Math.round(ms / d) + 'd';
+  }
+  if (ms >= h) {
+    return Math.round(ms / h) + 'h';
+  }
+  if (ms >= m) {
+    return Math.round(ms / m) + 'm';
+  }
+  if (ms >= s) {
+    return Math.round(ms / s) + 's';
+  }
+  return ms + 'ms';
+}
+
+/**
+ * Long format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtLong(ms) {
+  return plural(ms, d, 'day') ||
+    plural(ms, h, 'hour') ||
+    plural(ms, m, 'minute') ||
+    plural(ms, s, 'second') ||
+    ms + ' ms';
+}
+
+/**
+ * Pluralization helper.
+ */
+
+function plural(ms, n, name) {
+  if (ms < n) {
+    return;
+  }
+  if (ms < n * 1.5) {
+    return Math.floor(ms / n) + ' ' + name;
+  }
+  return Math.ceil(ms / n) + ' ' + name + 's';
+}
+
+
+/***/ }),
+/* 921 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = mouseBasedZoomAnchor;
+/* unused harmony export lastVisibleItemBasedZoomAnchor */
+/* unused harmony export rightDomainBasedZoomAnchor */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ChartDataUtil__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(16);
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+
+
+
+/* eslint-disable no-unused-vars */
+
+function mouseBasedZoomAnchor(_ref) {
+	var xScale = _ref.xScale,
+	    xAccessor = _ref.xAccessor,
+	    mouseXY = _ref.mouseXY,
+	    plotData = _ref.plotData,
+	    fullData = _ref.fullData;
+
+	var currentItem = Object(__WEBPACK_IMPORTED_MODULE_0__ChartDataUtil__["c" /* getCurrentItem */])(xScale, xAccessor, mouseXY, plotData);
+	return xAccessor(currentItem);
+}
+
+function lastVisibleItemBasedZoomAnchor(_ref2) {
+	var xScale = _ref2.xScale,
+	    xAccessor = _ref2.xAccessor,
+	    mouseXY = _ref2.mouseXY,
+	    plotData = _ref2.plotData,
+	    fullData = _ref2.fullData;
+
+	var lastItem = Object(__WEBPACK_IMPORTED_MODULE_1__index__["u" /* last */])(plotData);
+	return xAccessor(lastItem);
+}
+
+function rightDomainBasedZoomAnchor(_ref3) {
+	var xScale = _ref3.xScale,
+	    xAccessor = _ref3.xAccessor,
+	    mouseXY = _ref3.mouseXY,
+	    plotData = _ref3.plotData,
+	    fullData = _ref3.fullData;
+
+	var _xScale$domain = xScale.domain(),
+	    _xScale$domain2 = _slicedToArray(_xScale$domain, 2),
+	    end = _xScale$domain2[1];
+
+	return end;
+}
+/* eslint-enable no-unused-vars */
+//# sourceMappingURL=zoomBehavior.js.map
+
+/***/ }),
+/* 922 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {/**
+ * lodash (Custom Build) <https://lodash.com/>
+ * Build: `lodash modularize exports="npm" -o ./`
+ * Copyright jQuery Foundation and other contributors <https://jquery.org/>
+ * Released under MIT license <https://lodash.com/license>
+ * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ */
+
+/** Used as references for various `Number` constants. */
+var INFINITY = 1 / 0,
+    MAX_SAFE_INTEGER = 9007199254740991;
+
+/** `Object#toString` result references. */
+var argsTag = '[object Arguments]',
+    funcTag = '[object Function]',
+    genTag = '[object GeneratorFunction]';
+
+/** Detect free variable `global` from Node.js. */
+var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+
+/** Detect free variable `self`. */
+var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+/** Used as a reference to the global object. */
+var root = freeGlobal || freeSelf || Function('return this')();
+
+/**
+ * Appends the elements of `values` to `array`.
+ *
+ * @private
+ * @param {Array} array The array to modify.
+ * @param {Array} values The values to append.
+ * @returns {Array} Returns `array`.
+ */
+function arrayPush(array, values) {
+  var index = -1,
+      length = values.length,
+      offset = array.length;
+
+  while (++index < length) {
+    array[offset + index] = values[index];
+  }
+  return array;
+}
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var objectToString = objectProto.toString;
+
+/** Built-in value references. */
+var Symbol = root.Symbol,
+    propertyIsEnumerable = objectProto.propertyIsEnumerable,
+    spreadableSymbol = Symbol ? Symbol.isConcatSpreadable : undefined;
+
+/**
+ * The base implementation of `_.flatten` with support for restricting flattening.
+ *
+ * @private
+ * @param {Array} array The array to flatten.
+ * @param {number} depth The maximum recursion depth.
+ * @param {boolean} [predicate=isFlattenable] The function invoked per iteration.
+ * @param {boolean} [isStrict] Restrict to values that pass `predicate` checks.
+ * @param {Array} [result=[]] The initial result value.
+ * @returns {Array} Returns the new flattened array.
+ */
+function baseFlatten(array, depth, predicate, isStrict, result) {
+  var index = -1,
+      length = array.length;
+
+  predicate || (predicate = isFlattenable);
+  result || (result = []);
+
+  while (++index < length) {
+    var value = array[index];
+    if (depth > 0 && predicate(value)) {
+      if (depth > 1) {
+        // Recursively flatten arrays (susceptible to call stack limits).
+        baseFlatten(value, depth - 1, predicate, isStrict, result);
+      } else {
+        arrayPush(result, value);
+      }
+    } else if (!isStrict) {
+      result[result.length] = value;
+    }
+  }
+  return result;
+}
+
+/**
+ * Checks if `value` is a flattenable `arguments` object or array.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is flattenable, else `false`.
+ */
+function isFlattenable(value) {
+  return isArray(value) || isArguments(value) ||
+    !!(spreadableSymbol && value && value[spreadableSymbol]);
+}
+
+/**
+ * Recursively flattens `array`.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.0.0
+ * @category Array
+ * @param {Array} array The array to flatten.
+ * @returns {Array} Returns the new flattened array.
+ * @example
+ *
+ * _.flattenDeep([1, [2, [3, [4]], 5]]);
+ * // => [1, 2, 3, 4, 5]
+ */
+function flattenDeep(array) {
+  var length = array ? array.length : 0;
+  return length ? baseFlatten(array, INFINITY) : [];
+}
+
+/**
+ * Checks if `value` is likely an `arguments` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+ *  else `false`.
+ * @example
+ *
+ * _.isArguments(function() { return arguments; }());
+ * // => true
+ *
+ * _.isArguments([1, 2, 3]);
+ * // => false
+ */
+function isArguments(value) {
+  // Safari 8.1 makes `arguments.callee` enumerable in strict mode.
+  return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') &&
+    (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
+}
+
+/**
+ * Checks if `value` is classified as an `Array` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an array, else `false`.
+ * @example
+ *
+ * _.isArray([1, 2, 3]);
+ * // => true
+ *
+ * _.isArray(document.body.children);
+ * // => false
+ *
+ * _.isArray('abc');
+ * // => false
+ *
+ * _.isArray(_.noop);
+ * // => false
+ */
+var isArray = Array.isArray;
+
+/**
+ * Checks if `value` is array-like. A value is considered array-like if it's
+ * not a function and has a `value.length` that's an integer greater than or
+ * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+ * @example
+ *
+ * _.isArrayLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isArrayLike(document.body.children);
+ * // => true
+ *
+ * _.isArrayLike('abc');
+ * // => true
+ *
+ * _.isArrayLike(_.noop);
+ * // => false
+ */
+function isArrayLike(value) {
+  return value != null && isLength(value.length) && !isFunction(value);
+}
+
+/**
+ * This method is like `_.isArrayLike` except that it also checks if `value`
+ * is an object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an array-like object,
+ *  else `false`.
+ * @example
+ *
+ * _.isArrayLikeObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isArrayLikeObject(document.body.children);
+ * // => true
+ *
+ * _.isArrayLikeObject('abc');
+ * // => false
+ *
+ * _.isArrayLikeObject(_.noop);
+ * // => false
+ */
+function isArrayLikeObject(value) {
+  return isObjectLike(value) && isArrayLike(value);
+}
+
+/**
+ * Checks if `value` is classified as a `Function` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a function, else `false`.
+ * @example
+ *
+ * _.isFunction(_);
+ * // => true
+ *
+ * _.isFunction(/abc/);
+ * // => false
+ */
+function isFunction(value) {
+  // The use of `Object#toString` avoids issues with the `typeof` operator
+  // in Safari 8-9 which returns 'object' for typed array and other constructors.
+  var tag = isObject(value) ? objectToString.call(value) : '';
+  return tag == funcTag || tag == genTag;
+}
+
+/**
+ * Checks if `value` is a valid array-like length.
+ *
+ * **Note:** This method is loosely based on
+ * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+ * @example
+ *
+ * _.isLength(3);
+ * // => true
+ *
+ * _.isLength(Number.MIN_VALUE);
+ * // => false
+ *
+ * _.isLength(Infinity);
+ * // => false
+ *
+ * _.isLength('3');
+ * // => false
+ */
+function isLength(value) {
+  return typeof value == 'number' &&
+    value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+}
+
+/**
+ * Checks if `value` is the
+ * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+ * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+ * @example
+ *
+ * _.isObject({});
+ * // => true
+ *
+ * _.isObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isObject(_.noop);
+ * // => true
+ *
+ * _.isObject(null);
+ * // => false
+ */
+function isObject(value) {
+  var type = typeof value;
+  return !!value && (type == 'object' || type == 'function');
+}
+
+/**
+ * Checks if `value` is object-like. A value is object-like if it's not `null`
+ * and has a `typeof` result of "object".
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+ * @example
+ *
+ * _.isObjectLike({});
+ * // => true
+ *
+ * _.isObjectLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isObjectLike(_.noop);
+ * // => false
+ *
+ * _.isObjectLike(null);
+ * // => false
+ */
+function isObjectLike(value) {
+  return !!value && typeof value == 'object';
+}
+
+module.exports = flattenDeep;
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(33)))
+
+/***/ }),
+/* 923 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_d3_selection__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_ChartDataUtil__ = __webpack_require__(195);
+
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+
+var EventCapture = function (_Component) {
+	_inherits(EventCapture, _Component);
+
+	function EventCapture(props) {
+		_classCallCheck(this, EventCapture);
+
+		var _this = _possibleConstructorReturn(this, (EventCapture.__proto__ || Object.getPrototypeOf(EventCapture)).call(this, props));
+
+		_this.handleEnter = _this.handleEnter.bind(_this);
+		_this.handleLeave = _this.handleLeave.bind(_this);
+		_this.handleWheel = _this.handleWheel.bind(_this);
+		_this.handleMouseMove = _this.handleMouseMove.bind(_this);
+		_this.handleMouseDown = _this.handleMouseDown.bind(_this);
+		_this.handlePanEnd = _this.handlePanEnd.bind(_this);
+		_this.handlePan = _this.handlePan.bind(_this);
+		_this.handleTouchStart = _this.handleTouchStart.bind(_this);
+		_this.handlePinchZoom = _this.handlePinchZoom.bind(_this);
+		_this.handlePinchZoomEnd = _this.handlePinchZoomEnd.bind(_this);
+
+		_this.handleClick = _this.handleClick.bind(_this);
+
+		_this.handleRightClick = _this.handleRightClick.bind(_this);
+		_this.handleDrag = _this.handleDrag.bind(_this);
+		_this.handleDragEnd = _this.handleDragEnd.bind(_this);
+
+		_this.setCursorClass = _this.setCursorClass.bind(_this);
+		_this.saveNode = _this.saveNode.bind(_this);
+
+		_this.mouseInside = false;
+
+		_this.mouseInteraction = true;
+		_this.state = {
+			panInProgress: false
+		};
+		return _this;
+	}
+
+	_createClass(EventCapture, [{
+		key: "saveNode",
+		value: function saveNode(node) {
+			this.node = node;
+		}
+	}, {
+		key: "componentWillMount",
+		value: function componentWillMount() {
+			this.focus = this.props.focus;
+		}
+	}, {
+		key: "componentDidMount",
+		value: function componentDidMount() {
+			if (this.node) {
+				Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(this.node).on(__WEBPACK_IMPORTED_MODULE_3__utils__["a" /* MOUSEENTER */], this.handleEnter).on(__WEBPACK_IMPORTED_MODULE_3__utils__["b" /* MOUSELEAVE */], this.handleLeave);
+			}
+		}
+	}, {
+		key: "componentDidUpdate",
+		value: function componentDidUpdate() {
+			this.componentDidMount();
+		}
+	}, {
+		key: "componentWillUnmount",
+		value: function componentWillUnmount() {
+			if (this.node) {
+				Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(this.node).on(__WEBPACK_IMPORTED_MODULE_3__utils__["a" /* MOUSEENTER */], null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["b" /* MOUSELEAVE */], null);
+			}
+		}
+	}, {
+		key: "handleEnter",
+		value: function handleEnter() {
+			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
+
+			var onMouseEnter = this.props.onMouseEnter;
+
+			this.mouseInside = true;
+			if (!this.state.panInProgress && !this.state.dragInProgress) {
+				var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
+				Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], this.handleMouseMove);
+			}
+			onMouseEnter(e);
+		}
+	}, {
+		key: "handleLeave",
+		value: function handleLeave(e) {
+			var onMouseLeave = this.props.onMouseLeave;
+
+			this.mouseInside = false;
+			if (!this.state.panInProgress && !this.state.dragInProgress) {
+				var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
+				Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], null);
+			}
+			onMouseLeave(e);
+		}
+	}, {
+		key: "handleWheel",
+		value: function handleWheel(e) {
+			var _props = this.props,
+			    zoom = _props.zoom,
+			    onZoom = _props.onZoom;
+
+
+			if (zoom && this.focus && e.deltaY !== 0) {
+				e.preventDefault();
+
+				var newPos = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["w" /* mousePosition */])(e);
+				var zoomDir = e.deltaY > 0 ? 1 : -1;
+
+				onZoom(zoomDir, newPos, e);
+			}
+		}
+	}, {
+		key: "handleMouseMove",
+		value: function handleMouseMove() {
+			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
+
+			var _props2 = this.props,
+			    onMouseMove = _props2.onMouseMove,
+			    mouseMove = _props2.mouseMove;
+
+
+			if (this.mouseInteraction && mouseMove && !this.state.panInProgress) {
+
+				var newPos = Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["mouse"])(this.node);
+
+				onMouseMove(newPos, "mouse", e);
+			}
+		}
+	}, {
+		key: "handleClick",
+		value: function handleClick(e) {
+			var _this2 = this;
+
+			var mouseXY = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["w" /* mousePosition */])(e);
+			var _props3 = this.props,
+			    onClick = _props3.onClick,
+			    onDoubleClick = _props3.onDoubleClick;
+
+
+			if (!this.panHappened && !this.dragHappened) {
+				if (this.clicked) {
+					onDoubleClick(mouseXY, e);
+					this.clicked = false;
+				} else {
+					onClick(mouseXY, e);
+					this.clicked = true;
+					setTimeout(function () {
+						if (_this2.clicked) {
+							_this2.clicked = false;
+						}
+					}, 400);
+				}
+			}
+		}
+	}, {
+		key: "handleRightClick",
+		value: function handleRightClick(e) {
+			e.stopPropagation();
+			e.preventDefault();
+			var _props4 = this.props,
+			    onContextMenu = _props4.onContextMenu,
+			    onPanEnd = _props4.onPanEnd;
+
+
+			var mouseXY = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["w" /* mousePosition */])(e, this.node.getBoundingClientRect());
+
+			if (Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(this.state.panStart)) {
+				var _state$panStart = this.state.panStart,
+				    panStartXScale = _state$panStart.panStartXScale,
+				    panOrigin = _state$panStart.panOrigin,
+				    chartsToPan = _state$panStart.chartsToPan;
+
+				if (this.panHappened) {
+					onPanEnd(mouseXY, panStartXScale, panOrigin, chartsToPan, e);
+				}
+				var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
+				Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["d" /* MOUSEUP */], null);
+
+				this.setState({
+					panInProgress: false,
+					panStart: null
+				});
+			}
+
+			onContextMenu(mouseXY, e);
+		}
+	}, {
+		key: "handleDrag",
+		value: function handleDrag() {
+			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
+			if (this.props.onDrag) {
+				this.dragHappened = true;
+				var mouseXY = Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["mouse"])(this.node);
+				this.props.onDrag({
+					startPos: this.state.dragStartPosition,
+					mouseXY: mouseXY
+				}, e);
+			}
+		}
+	}, {
+		key: "cancelDrag",
+		value: function cancelDrag() {
+			var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
+			Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], this.mouseInside ? this.handleMouseMove : null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["d" /* MOUSEUP */], null);
+
+			this.setState({
+				dragInProgress: false
+			});
+			this.mouseInteraction = true;
+		}
+	}, {
+		key: "handleDragEnd",
+		value: function handleDragEnd() {
+			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
+			var mouseXY = Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["mouse"])(this.node);
+
+			var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
+			Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], this.mouseInside ? this.handleMouseMove : null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["d" /* MOUSEUP */], null);
+
+			if (this.dragHappened) {
+				this.props.onDragComplete({
+					mouseXY: mouseXY
+				}, e);
+			}
+
+			this.setState({
+				dragInProgress: false
+			});
+			this.mouseInteraction = true;
+		}
+	}, {
+		key: "handleMouseDown",
+		value: function handleMouseDown(e) {
+			if (e.button !== 0) {
+				return;
+			}
+			var _props5 = this.props,
+			    initialPanEnabled = _props5.pan,
+			    xScale = _props5.xScale,
+			    chartConfig = _props5.chartConfig,
+			    onMouseDown = _props5.onMouseDown;
+			var getAllPanConditions = this.props.getAllPanConditions;
+
+
+			this.panHappened = false;
+			this.dragHappened = false;
+			this.focus = true;
+
+			if (!this.state.panInProgress && this.mouseInteraction) {
+
+				var mouseXY = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["w" /* mousePosition */])(e);
+				var currentCharts = Object(__WEBPACK_IMPORTED_MODULE_4__utils_ChartDataUtil__["b" /* getCurrentCharts */])(chartConfig, mouseXY);
+
+				var _getAllPanConditions$ = getAllPanConditions().reduce(function (returnObj, a) {
+					return {
+						draggable: returnObj.draggable || a.draggable,
+						panEnabled: returnObj.panEnabled && a.panEnabled
+					};
+				}, {
+					draggable: false,
+					panEnabled: initialPanEnabled
+				}),
+				    panEnabled = _getAllPanConditions$.panEnabled,
+				    somethingSelected = _getAllPanConditions$.draggable;
+
+				var pan = panEnabled && !somethingSelected;
+
+				if (pan) {
+					this.setState({
+						panInProgress: pan,
+						panStart: {
+							panStartXScale: xScale,
+							panOrigin: mouseXY,
+							chartsToPan: currentCharts
+						}
+					});
+
+					var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
+					Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], this.handlePan).on(__WEBPACK_IMPORTED_MODULE_3__utils__["d" /* MOUSEUP */], this.handlePanEnd);
+				} else if (somethingSelected) {
+					this.setState({
+						panInProgress: false,
+						dragInProgress: true,
+						panStart: null,
+						dragStartPosition: mouseXY
+					});
+					this.props.onDragStart({ startPos: mouseXY }, e);
+					// this.mouseInteraction = false;
+
+					var _win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
+					Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(_win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], this.handleDrag).on(__WEBPACK_IMPORTED_MODULE_3__utils__["d" /* MOUSEUP */], this.handleDragEnd);
+				}
+
+				onMouseDown(mouseXY, currentCharts, e);
+			}
+			e.preventDefault();
+		}
+	}, {
+		key: "handlePan",
+		value: function handlePan() {
+			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
+
+			var _props6 = this.props,
+			    panEnabled = _props6.pan,
+			    onPan = _props6.onPan;
+
+
+			if (panEnabled && onPan && Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(this.state.panStart)) {
+
+				this.panHappened = true;
+
+				var _state$panStart2 = this.state.panStart,
+				    panStartXScale = _state$panStart2.panStartXScale,
+				    panOrigin = _state$panStart2.panOrigin,
+				    chartsToPan = _state$panStart2.chartsToPan;
+
+
+				var newPos = this.mouseInteraction ? Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["mouse"])(this.node) : Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["touches"])(this.node)[0];
+
+				this.lastNewPos = newPos;
+				onPan(newPos, panStartXScale, panOrigin, chartsToPan, e);
+			}
+		}
+	}, {
+		key: "handlePanEnd",
+		value: function handlePanEnd() {
+			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
+			var _props7 = this.props,
+			    panEnabled = _props7.pan,
+			    onPanEnd = _props7.onPanEnd;
+
+
+			if (Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(this.state.panStart)) {
+				var _state$panStart3 = this.state.panStart,
+				    panStartXScale = _state$panStart3.panStartXScale,
+				    panOrigin = _state$panStart3.panOrigin,
+				    chartsToPan = _state$panStart3.chartsToPan;
+
+
+				var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
+				Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], this.mouseInside ? this.handleMouseMove : null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["d" /* MOUSEUP */], null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["f" /* TOUCHMOVE */], null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["e" /* TOUCHEND */], null);
+
+				if (this.panHappened
+				// && !this.contextMenuClicked
+				&& panEnabled && onPanEnd) {
+
+					onPanEnd(this.lastNewPos, panStartXScale, panOrigin, chartsToPan, e);
+				}
+
+				this.setState({
+					panInProgress: false,
+					panStart: null
+				});
+			}
+		}
+	}, {
+		key: "handleTouchStart",
+		value: function handleTouchStart(e) {
+			this.mouseInteraction = false;
+
+			var _props8 = this.props,
+			    panEnabled = _props8.pan,
+			    chartConfig = _props8.chartConfig,
+			    onMouseMove = _props8.onMouseMove;
+			var _props9 = this.props,
+			    xScale = _props9.xScale,
+			    onPanEnd = _props9.onPanEnd;
+
+
+			if (e.touches.length === 1) {
+
+				this.panHappened = false;
+				var touchXY = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["A" /* touchPosition */])(Object(__WEBPACK_IMPORTED_MODULE_3__utils__["n" /* getTouchProps */])(e.touches[0]), e);
+				// onMouseMove(touchXY, "touch", e);
+				if (panEnabled) {
+					var currentCharts = Object(__WEBPACK_IMPORTED_MODULE_4__utils_ChartDataUtil__["b" /* getCurrentCharts */])(chartConfig, touchXY);
+
+					this.setState({
+						panInProgress: true,
+						panStart: {
+							panStartXScale: xScale,
+							panOrigin: touchXY,
+							chartsToPan: currentCharts
+						}
+					});
+
+					onMouseMove(touchXY, "touch", e);
+
+					var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
+					Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["f" /* TOUCHMOVE */], this.handlePan, false).on(__WEBPACK_IMPORTED_MODULE_3__utils__["e" /* TOUCHEND */], this.handlePanEnd, false);
+				}
+			} else if (e.touches.length === 2) {
+				// pinch zoom begin
+				// do nothing pinch zoom is handled in handleTouchMove
+				var _state = this.state,
+				    panInProgress = _state.panInProgress,
+				    panStart = _state.panStart;
+
+
+				if (panInProgress && panEnabled && onPanEnd) {
+					var panStartXScale = panStart.panStartXScale,
+					    panOrigin = panStart.panOrigin,
+					    chartsToPan = panStart.chartsToPan;
+
+
+					var _win2 = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
+					Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(_win2).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], this.mouseInside ? this.handleMouseMove : null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["d" /* MOUSEUP */], null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["f" /* TOUCHMOVE */], this.handlePinchZoom, false).on(__WEBPACK_IMPORTED_MODULE_3__utils__["e" /* TOUCHEND */], this.handlePinchZoomEnd, false);
+
+					var touch1Pos = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["A" /* touchPosition */])(Object(__WEBPACK_IMPORTED_MODULE_3__utils__["n" /* getTouchProps */])(e.touches[0]), e);
+					var touch2Pos = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["A" /* touchPosition */])(Object(__WEBPACK_IMPORTED_MODULE_3__utils__["n" /* getTouchProps */])(e.touches[1]), e);
+
+					if (this.panHappened
+					// && !this.contextMenuClicked
+					&& panEnabled && onPanEnd) {
+
+						onPanEnd(this.lastNewPos, panStartXScale, panOrigin, chartsToPan, e);
+					}
+
+					this.setState({
+						panInProgress: false,
+						pinchZoomStart: {
+							xScale: xScale,
+							touch1Pos: touch1Pos,
+							touch2Pos: touch2Pos,
+							range: xScale.range(),
+							chartsToPan: chartsToPan
+						}
+					});
+				}
+			}
+		}
+	}, {
+		key: "handlePinchZoom",
+		value: function handlePinchZoom() {
+			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
+
+			var _touches = Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["touches"])(this.node),
+			    _touches2 = _slicedToArray(_touches, 2),
+			    touch1Pos = _touches2[0],
+			    touch2Pos = _touches2[1];
+
+			var _props10 = this.props,
+			    xScale = _props10.xScale,
+			    zoomEnabled = _props10.zoom,
+			    onPinchZoom = _props10.onPinchZoom;
+
+			// eslint-disable-next-line no-unused-vars
+
+			var _state$pinchZoomStart = this.state.pinchZoomStart,
+			    chartsToPan = _state$pinchZoomStart.chartsToPan,
+			    initialPinch = _objectWithoutProperties(_state$pinchZoomStart, ["chartsToPan"]);
+
+			if (zoomEnabled && onPinchZoom) {
+				onPinchZoom(initialPinch, {
+					touch1Pos: touch1Pos,
+					touch2Pos: touch2Pos,
+					xScale: xScale
+				}, e);
+			}
+		}
+	}, {
+		key: "handlePinchZoomEnd",
+		value: function handlePinchZoomEnd() {
+			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
+
+			var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
+			Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["f" /* TOUCHMOVE */], null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["e" /* TOUCHEND */], null);
+
+			var _props11 = this.props,
+			    zoomEnabled = _props11.zoom,
+			    onPinchZoomEnd = _props11.onPinchZoomEnd;
+
+			// eslint-disable-next-line no-unused-vars
+
+			var _state$pinchZoomStart2 = this.state.pinchZoomStart,
+			    chartsToPan = _state$pinchZoomStart2.chartsToPan,
+			    initialPinch = _objectWithoutProperties(_state$pinchZoomStart2, ["chartsToPan"]);
+
+			if (zoomEnabled && onPinchZoomEnd) {
+				onPinchZoomEnd(initialPinch, e);
+			}
+
+			this.setState({
+				pinchZoomStart: null
+			});
+		}
+	}, {
+		key: "setCursorClass",
+		value: function setCursorClass(cursorOverrideClass) {
+			if (cursorOverrideClass !== this.state.cursorOverrideClass) {
+				this.setState({
+					cursorOverrideClass: cursorOverrideClass
+				});
+			}
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var _props12 = this.props,
+			    height = _props12.height,
+			    width = _props12.width;
+
+			var className = this.state.cursorOverrideClass != null ? this.state.cursorOverrideClass : this.state.panInProgress ? "react-stockcharts-grabbing-cursor" : "react-stockcharts-crosshair-cursor";
+
+			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", { ref: this.saveNode,
+				className: className,
+				width: width,
+				height: height,
+				style: { opacity: 0 },
+				onWheel: this.handleWheel,
+				onMouseDown: this.handleMouseDown,
+				onClick: this.handleClick,
+				onContextMenu: this.handleRightClick,
+				onTouchStart: this.handleTouchStart
+			});
+		}
+	}]);
+
+	return EventCapture;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+// 				onMouseEnter={this.handleEnter}
+//				onMouseLeave={this.handleLeave}
+
+
+EventCapture.propTypes = {
+	mouseMove: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
+	zoom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
+	pan: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
+	panSpeedMultiplier: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	focus: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
+
+	width: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	height: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	chartConfig: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array,
+	xScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	xAccessor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+
+	getAllPanConditions: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+
+	onMouseMove: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onMouseEnter: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onMouseLeave: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onZoom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onPinchZoom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onPinchZoomEnd: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	onPan: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onPanEnd: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onDragStart: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onDrag: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onDragComplete: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+
+	onClick: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onDoubleClick: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onContextMenu: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	onMouseDown: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	children: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.node
+};
+
+EventCapture.defaultProps = {
+	mouseMove: false,
+	zoom: false,
+	pan: false,
+	panSpeedMultiplier: 1,
+	focus: false,
+	onDragComplete: __WEBPACK_IMPORTED_MODULE_3__utils__["x" /* noop */]
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (EventCapture);
+//# sourceMappingURL=EventCapture.js.map
+
+/***/ }),
+/* 924 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(16);
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+var log = Object(__WEBPACK_IMPORTED_MODULE_2__utils__["m" /* getLogger */])("CanvasContainer");
+
+var CanvasContainer = function (_Component) {
+	_inherits(CanvasContainer, _Component);
+
+	function CanvasContainer(props) {
+		_classCallCheck(this, CanvasContainer);
+
+		var _this = _possibleConstructorReturn(this, (CanvasContainer.__proto__ || Object.getPrototypeOf(CanvasContainer)).call(this, props));
+
+		_this.setDrawCanvas = _this.setDrawCanvas.bind(_this);
+		_this.drawCanvas = {};
+		return _this;
+	}
+
+	_createClass(CanvasContainer, [{
+		key: "setDrawCanvas",
+		value: function setDrawCanvas(node) {
+			if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(node)) this.drawCanvas[node.id] = node.getContext("2d");else this.drawCanvas = {};
+		}
+	}, {
+		key: "getCanvasContexts",
+		value: function getCanvasContexts() {
+			if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(this.drawCanvas.axes)) {
+				return this.drawCanvas;
+			}
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var _props = this.props,
+			    height = _props.height,
+			    width = _props.width,
+			    type = _props.type,
+			    zIndex = _props.zIndex,
+			    ratio = _props.ratio;
+
+			if (type === "svg") return null;
+
+			log("using ratio ", ratio);
+
+			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+				"div",
+				{ style: { position: "absolute", zIndex: zIndex } },
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("canvas", { id: "bg", ref: this.setDrawCanvas, width: width * ratio, height: height * ratio,
+					style: { position: "absolute", width: width, height: height } }),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("canvas", { id: "axes", ref: this.setDrawCanvas, width: width * ratio, height: height * ratio,
+					style: { position: "absolute", width: width, height: height } }),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("canvas", { id: "mouseCoord", ref: this.setDrawCanvas, width: width * ratio, height: height * ratio,
+					style: { position: "absolute", width: width, height: height } })
+			);
+		}
+	}]);
+
+	return CanvasContainer;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+/*
+				<canvas id="hover" ref={this.setDrawCanvas} width={width * ratio} height={height * ratio}
+					style={{ position: "absolute", width: width, height: height }} />
+*/
+
+
+CanvasContainer.propTypes = {
+	width: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	height: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	type: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
+	zIndex: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
+	ratio: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (CanvasContainer);
+//# sourceMappingURL=CanvasContainer.js.map
+
+/***/ }),
+/* 925 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(16);
+
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+
+
+var log = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["m" /* getLogger */])("evaluator");
+
+function getNewEnd(fallbackEnd, xAccessor, initialXScale, start) {
+	var lastItem = fallbackEnd.lastItem,
+	    lastItemX = fallbackEnd.lastItemX;
+
+	var lastItemXValue = xAccessor(lastItem);
+
+	var _initialXScale$range = initialXScale.range(),
+	    _initialXScale$range2 = _slicedToArray(_initialXScale$range, 2),
+	    rangeStart = _initialXScale$range2[0],
+	    rangeEnd = _initialXScale$range2[1];
+
+	var newEnd = (rangeEnd - rangeStart) / (lastItemX - rangeStart) * (lastItemXValue - start) + start;
+	return newEnd;
+}
+
+function extentsWrapper(useWholeData, clamp, pointsPerPxThreshold, minPointsPerPxThreshold) {
+	function filterData(data, inputDomain, xAccessor, initialXScale) {
+		var _ref = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : {},
+		    currentPlotData = _ref.currentPlotData,
+		    currentDomain = _ref.currentDomain,
+		    fallbackStart = _ref.fallbackStart,
+		    fallbackEnd = _ref.fallbackEnd;
+
+		if (useWholeData) {
+			return { plotData: data, domain: inputDomain };
+		}
+
+		var left = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(inputDomain);
+		var right = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(inputDomain);
+		var clampedDomain = inputDomain;
+
+		var filteredData = getFilteredResponse(data, left, right, xAccessor);
+
+		if (filteredData.length === 1 && Object(__WEBPACK_IMPORTED_MODULE_0__utils__["r" /* isDefined */])(fallbackStart)) {
+			left = fallbackStart;
+			right = getNewEnd(fallbackEnd, xAccessor, initialXScale, left);
+
+			clampedDomain = [left, right];
+			filteredData = getFilteredResponse(data, left, right, xAccessor);
+		}
+
+		if (clamp === "left" || clamp === "both" || clamp === true) {
+			clampedDomain = [Math.max(left, xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(data))), clampedDomain[1]];
+		}
+		if (clamp === "right" || clamp === "both" || clamp === true) {
+			clampedDomain = [clampedDomain[0], Math.min(right, xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(data)))];
+		}
+
+		var realInputDomain = clampedDomain;
+		// [xAccessor(head(filteredData)), xAccessor(last(filteredData))];
+
+		var xScale = initialXScale.copy().domain(realInputDomain);
+
+		var width = Math.floor(xScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(filteredData))) - xScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(filteredData))));
+
+		var plotData = void 0,
+		    domain = void 0;
+
+		var chartWidth = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(xScale.range()) - Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(xScale.range());
+
+		log("Trying to show " + filteredData.length + " points in " + width + "px," + (" I can show up to " + (showMaxThreshold(width, pointsPerPxThreshold) - 1) + " points in that width. ") + ("Also FYI the entire chart width is " + chartWidth + "px and pointsPerPxThreshold is " + pointsPerPxThreshold));
+
+		if (canShowTheseManyPeriods(width, filteredData.length, pointsPerPxThreshold, minPointsPerPxThreshold)) {
+			plotData = filteredData;
+			domain = realInputDomain;
+			log("AND IT WORKED");
+		} else {
+			if (chartWidth > showMaxThreshold(width, pointsPerPxThreshold) && Object(__WEBPACK_IMPORTED_MODULE_0__utils__["r" /* isDefined */])(fallbackEnd)) {
+				plotData = filteredData;
+				var newEnd = getNewEnd(fallbackEnd, xAccessor, initialXScale, Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(realInputDomain));
+				domain = [Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(realInputDomain), newEnd];
+				// plotData = currentPlotData || filteredData.slice(filteredData.length - showMax(width, pointsPerPxThreshold));
+				// domain = currentDomain || [xAccessor(head(plotData)), xAccessor(last(plotData))];
+
+				var newXScale = xScale.copy().domain(domain);
+				var newWidth = Math.floor(newXScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(plotData))) - newXScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(plotData))));
+
+				log("and ouch, that is too much, so instead showing " + plotData.length + " in " + newWidth + "px");
+			} else {
+				plotData = currentPlotData || filteredData.slice(filteredData.length - showMax(width, pointsPerPxThreshold));
+				domain = currentDomain || [xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(plotData)), xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(plotData))];
+
+				var _newXScale = xScale.copy().domain(domain);
+				var _newWidth = Math.floor(_newXScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(plotData))) - _newXScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(plotData))));
+
+				log("and ouch, that is too much, so instead showing " + plotData.length + " in " + _newWidth + "px");
+			}
+		}
+		return { plotData: plotData, domain: domain };
+	}
+	return { filterData: filterData };
+}
+
+function canShowTheseManyPeriods(width, arrayLength, maxThreshold, minThreshold) {
+	return arrayLength > showMinThreshold(width, minThreshold) && arrayLength < showMaxThreshold(width, maxThreshold);
+}
+
+function showMinThreshold(width, threshold) {
+	return Math.max(1, Math.ceil(width * threshold));
+}
+
+function showMaxThreshold(width, threshold) {
+	return Math.floor(width * threshold);
+}
+
+function showMax(width, threshold) {
+	return Math.floor(showMaxThreshold(width, threshold) * 0.97);
+}
+
+function getFilteredResponse(data, left, right, xAccessor) {
+	var newLeftIndex = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["l" /* getClosestItemIndexes */])(data, left, xAccessor).right;
+	var newRightIndex = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["l" /* getClosestItemIndexes */])(data, right, xAccessor).left;
+
+	var filteredData = data.slice(newLeftIndex, newRightIndex + 1);
+	// console.log(right, newRightIndex, dataForInterval.length);
+
+	return filteredData;
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (function (_ref2) {
+	var xScale = _ref2.xScale,
+	    useWholeData = _ref2.useWholeData,
+	    clamp = _ref2.clamp,
+	    pointsPerPxThreshold = _ref2.pointsPerPxThreshold,
+	    minPointsPerPxThreshold = _ref2.minPointsPerPxThreshold;
+
+	return extentsWrapper(useWholeData || Object(__WEBPACK_IMPORTED_MODULE_0__utils__["s" /* isNotDefined */])(xScale.invert), clamp, pointsPerPxThreshold, minPointsPerPxThreshold);
+});
+//# sourceMappingURL=evaluator.js.map
+
+/***/ }),
+/* 926 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__GenericComponent__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(16);
+
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var ALWAYS_TRUE_TYPES = ["drag", "dragend"];
+
+var GenericChartComponent = function (_GenericComponent) {
+	_inherits(GenericChartComponent, _GenericComponent);
+
+	function GenericChartComponent(props, context) {
+		_classCallCheck(this, GenericChartComponent);
+
+		var _this = _possibleConstructorReturn(this, (GenericChartComponent.__proto__ || Object.getPrototypeOf(GenericChartComponent)).call(this, props, context));
+
+		_this.preCanvasDraw = _this.preCanvasDraw.bind(_this);
+		_this.postCanvasDraw = _this.postCanvasDraw.bind(_this);
+		_this.shouldTypeProceed = _this.shouldTypeProceed.bind(_this);
+		_this.preEvaluate = _this.preEvaluate.bind(_this);
+		return _this;
+	}
+
+	_createClass(GenericChartComponent, [{
+		key: "preCanvasDraw",
+		value: function preCanvasDraw(ctx, moreProps) {
+			_get(GenericChartComponent.prototype.__proto__ || Object.getPrototypeOf(GenericChartComponent.prototype), "preCanvasDraw", this).call(this, ctx, moreProps);
+			ctx.save();
+			var _context = this.context,
+			    margin = _context.margin,
+			    ratio = _context.ratio;
+			var chartConfig = moreProps.chartConfig;
+
+
+			var canvasOriginX = 0.5 * ratio + chartConfig.origin[0] + margin.left;
+			var canvasOriginY = 0.5 * ratio + chartConfig.origin[1] + margin.top;
+
+			var _moreProps$chartConfi = moreProps.chartConfig,
+			    width = _moreProps$chartConfi.width,
+			    height = _moreProps$chartConfi.height;
+			var _props = this.props,
+			    clip = _props.clip,
+			    edgeClip = _props.edgeClip;
+
+
+			ctx.setTransform(1, 0, 0, 1, 0, 0);
+			ctx.scale(ratio, ratio);
+			if (edgeClip) {
+				ctx.beginPath();
+				ctx.rect(-1, canvasOriginY - 10, width + margin.left + margin.right + 1, height + 20);
+				ctx.clip();
+			}
+
+			ctx.translate(canvasOriginX, canvasOriginY);
+
+			if (clip) {
+				ctx.beginPath();
+				ctx.rect(-1, -1, width + 1, height + 1);
+				ctx.clip();
+			}
+		}
+	}, {
+		key: "postCanvasDraw",
+		value: function postCanvasDraw(ctx, moreProps) {
+			_get(GenericChartComponent.prototype.__proto__ || Object.getPrototypeOf(GenericChartComponent.prototype), "postCanvasDraw", this).call(this, ctx, moreProps);
+			ctx.restore();
+		}
+	}, {
+		key: "updateMoreProps",
+		value: function updateMoreProps(moreProps) {
+			_get(GenericChartComponent.prototype.__proto__ || Object.getPrototypeOf(GenericChartComponent.prototype), "updateMoreProps", this).call(this, moreProps);
+			var chartConfigList = moreProps.chartConfig;
+
+
+			if (chartConfigList) {
+				var chartId = this.context.chartId;
+
+				var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_2__utils__["i" /* find */])(chartConfigList, function (each) {
+					return each.id === chartId;
+				});
+				this.moreProps.chartConfig = chartConfig;
+			}
+			if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(this.moreProps.chartConfig)) {
+				var _moreProps$chartConfi2 = _slicedToArray(this.moreProps.chartConfig.origin, 2),
+				    ox = _moreProps$chartConfi2[0],
+				    oy = _moreProps$chartConfi2[1];
+
+				if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(moreProps.mouseXY)) {
+					var _moreProps$mouseXY = _slicedToArray(moreProps.mouseXY, 2),
+					    x = _moreProps$mouseXY[0],
+					    y = _moreProps$mouseXY[1];
+
+					this.moreProps.mouseXY = [x - ox, y - oy];
+				}
+				if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(moreProps.startPos)) {
+					var _moreProps$startPos = _slicedToArray(moreProps.startPos, 2),
+					    _x = _moreProps$startPos[0],
+					    _y = _moreProps$startPos[1];
+
+					this.moreProps.startPos = [_x - ox, _y - oy];
+				}
+			}
+		}
+	}, {
+		key: "preEvaluate",
+		value: function preEvaluate() /* type, moreProps */{
+			/* if (
+   	type === "mousemove"
+   	&& this.props.onMouseMove
+   	&& isDefined(moreProps)
+   	&& isDefined(moreProps.currentCharts)
+   ) {
+   	if (moreProps.currentCharts.indexOf(this.context.chartId) === -1) {
+   		moreProps.show = false;
+   	}
+   } */
+		}
+	}, {
+		key: "shouldTypeProceed",
+		value: function shouldTypeProceed(type, moreProps) {
+			if ((type === "mousemove" || type === "click") && this.props.disablePan) {
+				return true;
+			}
+			if (ALWAYS_TRUE_TYPES.indexOf(type) === -1 && Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(moreProps) && Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(moreProps.currentCharts)) {
+				return moreProps.currentCharts.indexOf(this.context.chartId) > -1;
+			}
+			return true;
+		}
+	}]);
+
+	return GenericChartComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__GenericComponent__["a" /* default */]);
+
+GenericChartComponent.propTypes = __WEBPACK_IMPORTED_MODULE_1__GenericComponent__["a" /* default */].propTypes;
+
+GenericChartComponent.defaultProps = __WEBPACK_IMPORTED_MODULE_1__GenericComponent__["a" /* default */].defaultProps;
+
+GenericChartComponent.contextTypes = _extends({}, __WEBPACK_IMPORTED_MODULE_1__GenericComponent__["a" /* default */].contextTypes, {
+	canvasOriginX: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
+	canvasOriginY: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
+	chartId: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string]).isRequired,
+	chartConfig: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object.isRequired,
+	ratio: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number.isRequired
+});
+
+/* harmony default export */ __webpack_exports__["a"] = (GenericChartComponent);
+//# sourceMappingURL=GenericChartComponent.js.map
+
+/***/ }),
+/* 927 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_PureComponent__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(16);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+var BackgroundText = function (_PureComponent) {
+	_inherits(BackgroundText, _PureComponent);
+
+	function BackgroundText() {
+		_classCallCheck(this, BackgroundText);
+
+		return _possibleConstructorReturn(this, (BackgroundText.__proto__ || Object.getPrototypeOf(BackgroundText)).apply(this, arguments));
+	}
+
+	_createClass(BackgroundText, [{
+		key: "componentDidMount",
+		value: function componentDidMount() {
+			if (this.context.chartCanvasType !== "svg" && Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(this.context.getCanvasContexts)) {
+				var contexts = this.context.getCanvasContexts();
+				if (contexts) BackgroundText.drawOnCanvas(contexts.bg, this.props, this.context, this.props.children);
+			}
+		}
+	}, {
+		key: "componentDidUpdate",
+		value: function componentDidUpdate() {
+			this.componentDidMount();
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var chartCanvasType = this.context.chartCanvasType;
+
+
+			if (chartCanvasType !== "svg") return null;
+
+			var _props = this.props,
+			    x = _props.x,
+			    y = _props.y,
+			    fill = _props.fill,
+			    opacity = _props.opacity,
+			    stroke = _props.stroke,
+			    strokeOpacity = _props.strokeOpacity,
+			    fontFamily = _props.fontFamily,
+			    fontSize = _props.fontSize,
+			    textAnchor = _props.textAnchor;
+
+			var props = { x: x, y: y, fill: fill, opacity: opacity, stroke: stroke, strokeOpacity: strokeOpacity, fontFamily: fontFamily, fontSize: fontSize, textAnchor: textAnchor };
+			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+				"text",
+				props,
+				"this.props.children(interval)"
+			);
+		}
+	}]);
+
+	return BackgroundText;
+}(__WEBPACK_IMPORTED_MODULE_2__utils_PureComponent__["a" /* default */]);
+
+BackgroundText.drawOnCanvas = function (ctx, props, _ref, getText) {
+	var interval = _ref.interval;
+
+	ctx.clearRect(-1, -1, ctx.canvas.width + 2, ctx.canvas.height + 2);
+	ctx.save();
+
+	ctx.setTransform(1, 0, 0, 1, 0, 0);
+	ctx.translate(0.5, 0.5);
+
+	var x = props.x,
+	    y = props.y,
+	    fill = props.fill,
+	    opacity = props.opacity,
+	    stroke = props.stroke,
+	    strokeOpacity = props.strokeOpacity,
+	    fontFamily = props.fontFamily,
+	    fontSize = props.fontSize,
+	    textAnchor = props.textAnchor;
+
+
+	var text = getText(interval);
+
+	ctx.strokeStyle = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["p" /* hexToRGBA */])(stroke, strokeOpacity);
+
+	ctx.font = fontSize + "px " + fontFamily;
+	ctx.fillStyle = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["p" /* hexToRGBA */])(fill, opacity);
+	ctx.textAlign = textAnchor === "middle" ? "center" : textAnchor;
+
+	if (stroke !== "none") ctx.strokeText(text, x, y);
+	ctx.fillText(text, x, y);
+
+	ctx.restore();
+};
+
+BackgroundText.propTypes = {
+	x: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	y: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	fontFamily: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
+	fontSize: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	fill: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
+	stroke: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
+	opacity: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
+	strokeOpacity: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
+	textAnchor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
+	children: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func
+};
+
+BackgroundText.defaultProps = {
+	opacity: 0.3,
+	fill: "#9E7523",
+	stroke: "#9E7523",
+	strokeOpacity: 1,
+	fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
+	fontSize: 12,
+	textAnchor: "middle"
+};
+
+BackgroundText.contextTypes = {
+	interval: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
+	getCanvasContexts: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
+	chartCanvasType: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (BackgroundText);
+//# sourceMappingURL=BackgroundText.js.map
+
+/***/ }),
+/* 928 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_d3_path__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_d3_interpolate__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(16);
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+// import { mean } from "d3-array";
+
+
+
+
+
+
+var ZoomButtons = function (_Component) {
+	_inherits(ZoomButtons, _Component);
+
+	function ZoomButtons(props) {
+		_classCallCheck(this, ZoomButtons);
+
+		var _this = _possibleConstructorReturn(this, (ZoomButtons.__proto__ || Object.getPrototypeOf(ZoomButtons)).call(this, props));
+
+		_this.handleZoomOut = _this.handleZoomOut.bind(_this);
+		_this.handleZoomIn = _this.handleZoomIn.bind(_this);
+		_this.zoom = _this.zoom.bind(_this);
+		return _this;
+	}
+
+	_createClass(ZoomButtons, [{
+		key: "zoom",
+		value: function zoom(direction) {
+			var _this2 = this;
+
+			var _context = this.context,
+			    xAxisZoom = _context.xAxisZoom,
+			    xScale = _context.xScale,
+			    plotData = _context.plotData,
+			    xAccessor = _context.xAccessor;
+
+			var cx = xScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_4__utils__["u" /* last */])(plotData)));
+			// mean(xScale.range());
+			var zoomMultiplier = this.props.zoomMultiplier;
+
+
+			var c = direction > 0 ? 1 * zoomMultiplier : 1 / zoomMultiplier;
+
+			var _xScale$domain = xScale.domain(),
+			    _xScale$domain2 = _slicedToArray(_xScale$domain, 2),
+			    start = _xScale$domain2[0],
+			    end = _xScale$domain2[1];
+
+			var _xScale$range$map$map = xScale.range().map(function (x) {
+				return cx + (x - cx) * c;
+			}).map(xScale.invert),
+			    _xScale$range$map$map2 = _slicedToArray(_xScale$range$map$map, 2),
+			    newStart = _xScale$range$map$map2[0],
+			    newEnd = _xScale$range$map$map2[1];
+
+			var left = Object(__WEBPACK_IMPORTED_MODULE_3_d3_interpolate__["m" /* interpolateNumber */])(start, newStart);
+			var right = Object(__WEBPACK_IMPORTED_MODULE_3_d3_interpolate__["m" /* interpolateNumber */])(end, newEnd);
+
+			var foo = [0.25, 0.3, 0.5, 0.6, 0.75, 1].map(function (i) {
+				return [left(i), right(i)];
+			});
+
+			this.interval = setInterval(function () {
+				xAxisZoom(foo.shift());
+				if (foo.length === 0) {
+					clearInterval(_this2.interval);
+					delete _this2.interval;
+				}
+			}, 10);
+		}
+	}, {
+		key: "handleZoomOut",
+		value: function handleZoomOut() {
+			if (this.interval) return;
+			this.zoom(1);
+		}
+	}, {
+		key: "handleZoomIn",
+		value: function handleZoomIn() {
+			if (this.interval) return;
+			this.zoom(-1);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var chartConfig = this.context.chartConfig;
+			var width = chartConfig.width,
+			    height = chartConfig.height;
+			var _props = this.props,
+			    size = _props.size,
+			    heightFromBase = _props.heightFromBase,
+			    rx = _props.rx,
+			    ry = _props.ry;
+			var _props2 = this.props,
+			    stroke = _props2.stroke,
+			    strokeOpacity = _props2.strokeOpacity,
+			    fill = _props2.fill,
+			    strokeWidth = _props2.strokeWidth,
+			    fillOpacity = _props2.fillOpacity;
+			var _props3 = this.props,
+			    textFill = _props3.textFill,
+			    textStrokeWidth = _props3.textStrokeWidth;
+			var onReset = this.props.onReset;
+
+			var centerX = Math.round(width / 2);
+			var y = height - heightFromBase;
+
+			var _size = _slicedToArray(size, 2),
+			    w = _size[0],
+			    h = _size[1];
+
+			var hLength = 5;
+			var wLength = 6;
+
+			var textY = Math.round(y + h / 2);
+
+			var resetX = centerX;
+
+			var zoomOut = Object(__WEBPACK_IMPORTED_MODULE_2_d3_path__["a" /* path */])();
+			var zoomOutX = centerX - w - 2 * strokeWidth;
+			zoomOut.moveTo(zoomOutX - wLength, textY);
+			zoomOut.lineTo(zoomOutX + wLength, textY);
+			zoomOut.closePath();
+
+			var zoomIn = Object(__WEBPACK_IMPORTED_MODULE_2_d3_path__["a" /* path */])();
+			var zoomInX = centerX + w + 2 * strokeWidth;
+
+			zoomIn.moveTo(zoomInX - wLength, textY);
+			zoomIn.lineTo(zoomInX + wLength, textY);
+
+			zoomIn.moveTo(zoomInX, textY - hLength);
+			zoomIn.lineTo(zoomInX, textY + hLength);
+			// zoomIn.closePath();
+
+			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+				"g",
+				{ className: "react-stockcharts-zoom-button" },
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", {
+					x: zoomOutX - w / 2,
+					y: y,
+					rx: rx,
+					ry: ry,
+					height: h,
+					width: w,
+					fill: fill,
+					fillOpacity: fillOpacity,
+					stroke: stroke,
+					strokeOpacity: strokeOpacity,
+					strokeWidth: strokeWidth
+				}),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("path", { d: zoomOut.toString(),
+					stroke: textFill,
+					strokeWidth: textStrokeWidth
+				}),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", {
+					x: resetX - w / 2,
+					y: y,
+					rx: rx,
+					ry: ry,
+					height: h,
+					width: w,
+					fill: fill,
+					fillOpacity: fillOpacity,
+					stroke: stroke,
+					strokeOpacity: strokeOpacity,
+					strokeWidth: strokeWidth
+				}),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					"g",
+					{ transform: "translate (" + resetX + ", " + (y + h / 4) + ") scale(.14)" },
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("path", { d: "M31 13C23.4 5.3 12.8.5 1.1.5c-23.3 0-42.3 19-42.3 42.5s18.9 42.5 42.3 42.5c13.8 0 26-6.6 33.7-16.9l-16.5-1.8C13.5 70.4 7.5 72.5 1 72.5c-16.2 0-29.3-13.2-29.3-29.4S-15.2 13.7 1 13.7c8.1 0 15.4 3.3 20.7 8.6l-10.9 11h32.5V.5L31 13z",
+						fill: textFill
+					})
+				),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", {
+					x: zoomInX - w / 2,
+					y: y,
+					rx: rx,
+					ry: ry,
+					height: h,
+					width: w,
+					fill: fill,
+					fillOpacity: fillOpacity,
+					stroke: stroke,
+					strokeOpacity: strokeOpacity,
+					strokeWidth: strokeWidth
+				}),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("path", { d: zoomIn.toString(),
+					stroke: textFill,
+					strokeWidth: textStrokeWidth
+				}),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", { className: "react-stockcharts-enable-interaction out",
+					onClick: this.handleZoomOut,
+					x: zoomOutX - w / 2,
+					y: y,
+					rx: rx,
+					ry: ry,
+					height: h,
+					width: w,
+					fill: "none"
+				}),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", { className: "react-stockcharts-enable-interaction reset",
+					onClick: onReset,
+					x: resetX - w / 2,
+					y: y,
+					rx: rx,
+					ry: ry,
+					height: h,
+					width: w,
+					fill: "none"
+				}),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", { className: "react-stockcharts-enable-interaction in",
+					onClick: this.handleZoomIn,
+					x: zoomInX - w / 2,
+					y: y,
+					rx: rx,
+					ry: ry,
+					height: h,
+					width: w,
+					fill: "none"
+				})
+			);
+		}
+	}]);
+
+	return ZoomButtons;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+ZoomButtons.propTypes = {
+	zoomMultiplier: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	size: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array.isRequired,
+	heightFromBase: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	rx: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	ry: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	stroke: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
+	strokeWidth: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	strokeOpacity: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	fill: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
+	fillOpacity: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	fontSize: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	textDy: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
+	textFill: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
+	textStrokeWidth: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
+	onReset: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func
+};
+
+ZoomButtons.defaultProps = {
+	size: [30, 24],
+	heightFromBase: 50,
+	rx: 3,
+	ry: 3,
+	stroke: "#000000",
+	strokeOpacity: 0.3,
+	strokeWidth: 1,
+	fill: "#D6D6D6",
+	fillOpacity: 0.4,
+	fontSize: 16,
+	textDy: ".3em",
+	textFill: "#000000",
+	textStrokeWidth: 2,
+	zoomMultiplier: 1.5,
+	onReset: __WEBPACK_IMPORTED_MODULE_4__utils__["x" /* noop */]
+};
+
+ZoomButtons.contextTypes = {
+	xScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	chartConfig: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object.isRequired,
+	plotData: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array.isRequired,
+	xAccessor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
+	xAxisZoom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (ZoomButtons);
+//# sourceMappingURL=ZoomButtons.js.map
+
+/***/ }),
+/* 929 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _AreaSeries = __webpack_require__(930);
+
+Object.defineProperty(exports, "AreaSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_AreaSeries).default;
+  }
+});
+
+var _AreaOnlySeries = __webpack_require__(196);
+
+Object.defineProperty(exports, "AreaOnlySeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_AreaOnlySeries).default;
+  }
+});
+
+var _ScatterSeries = __webpack_require__(939);
+
+Object.defineProperty(exports, "ScatterSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_ScatterSeries).default;
+  }
+});
+
+var _CircleMarker = __webpack_require__(940);
+
+Object.defineProperty(exports, "CircleMarker", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_CircleMarker).default;
+  }
+});
+
+var _TriangleMarker = __webpack_require__(941);
+
+Object.defineProperty(exports, "TriangleMarker", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_TriangleMarker).default;
+  }
+});
+
+var _SquareMarker = __webpack_require__(942);
+
+Object.defineProperty(exports, "SquareMarker", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_SquareMarker).default;
+  }
+});
+
+var _LineSeries = __webpack_require__(64);
+
+Object.defineProperty(exports, "LineSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_LineSeries).default;
+  }
+});
+
+var _CandlestickSeries = __webpack_require__(943);
+
+Object.defineProperty(exports, "CandlestickSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_CandlestickSeries).default;
+  }
+});
+
+var _OHLCSeries = __webpack_require__(944);
+
+Object.defineProperty(exports, "OHLCSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_OHLCSeries).default;
+  }
+});
+
+var _BarSeries = __webpack_require__(356);
+
+Object.defineProperty(exports, "BarSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_BarSeries).default;
+  }
+});
+
+var _StackedBarSeries = __webpack_require__(122);
+
+Object.defineProperty(exports, "StackedBarSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_StackedBarSeries).default;
+  }
+});
+
+var _GroupedBarSeries = __webpack_require__(945);
+
+Object.defineProperty(exports, "GroupedBarSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_GroupedBarSeries).default;
+  }
+});
+
+var _KagiSeries = __webpack_require__(946);
+
+Object.defineProperty(exports, "KagiSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_KagiSeries).default;
+  }
+});
+
+var _PointAndFigureSeries = __webpack_require__(947);
+
+Object.defineProperty(exports, "PointAndFigureSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_PointAndFigureSeries).default;
+  }
+});
+
+var _RenkoSeries = __webpack_require__(948);
+
+Object.defineProperty(exports, "RenkoSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_RenkoSeries).default;
+  }
+});
+
+var _MACDSeries = __webpack_require__(949);
+
+Object.defineProperty(exports, "MACDSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_MACDSeries).default;
+  }
+});
+
+var _BollingerSeries = __webpack_require__(950);
+
+Object.defineProperty(exports, "BollingerSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_BollingerSeries).default;
+  }
+});
+
+var _RSISeries = __webpack_require__(951);
+
+Object.defineProperty(exports, "RSISeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_RSISeries).default;
+  }
+});
+
+var _StochasticSeries = __webpack_require__(952);
+
+Object.defineProperty(exports, "StochasticSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_StochasticSeries).default;
+  }
+});
+
+var _ElderRaySeries = __webpack_require__(953);
+
+Object.defineProperty(exports, "ElderRaySeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_ElderRaySeries).default;
+  }
+});
+
+var _VolumeProfileSeries = __webpack_require__(955);
+
+Object.defineProperty(exports, "VolumeProfileSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_VolumeProfileSeries).default;
+  }
+});
+
+var _StraightLine = __webpack_require__(89);
+
+Object.defineProperty(exports, "StraightLine", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_StraightLine).default;
+  }
+});
+
+var _SARSeries = __webpack_require__(956);
+
+Object.defineProperty(exports, "SARSeries", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_SARSeries).default;
+  }
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+/* 930 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _reactRedux = __webpack_require__(37);
+var _react = __webpack_require__(0);
 
-var _stock_index = __webpack_require__(909);
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _LineSeries = __webpack_require__(64);
+
+var _LineSeries2 = _interopRequireDefault(_LineSeries);
+
+var _AreaOnlySeries = __webpack_require__(196);
+
+var _AreaOnlySeries2 = _interopRequireDefault(_AreaOnlySeries);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function AreaSeries(props) {
+	var yAccessor = props.yAccessor,
+	    baseAt = props.baseAt;
+	var className = props.className,
+	    opacity = props.opacity,
+	    stroke = props.stroke,
+	    strokeWidth = props.strokeWidth,
+	    fill = props.fill;
+
+
+	return _react2.default.createElement(
+		"g",
+		{ className: className },
+		_react2.default.createElement(_LineSeries2.default, {
+			yAccessor: yAccessor,
+			stroke: stroke, fill: "none",
+			strokeWidth: strokeWidth,
+			hoverHighlight: false }),
+		_react2.default.createElement(_AreaOnlySeries2.default, {
+			yAccessor: yAccessor,
+			base: baseAt,
+			stroke: "none", fill: fill,
+			opacity: opacity })
+	);
+}
+
+AreaSeries.propTypes = {
+	stroke: _propTypes2.default.string,
+	strokeWidth: _propTypes2.default.number,
+	fill: _propTypes2.default.string.isRequired,
+	opacity: _propTypes2.default.number.isRequired,
+	className: _propTypes2.default.string,
+	yAccessor: _propTypes2.default.func.isRequired,
+	baseAt: _propTypes2.default.func
+};
+
+AreaSeries.defaultProps = {
+	stroke: "#4682B4",
+	strokeWidth: 1,
+	opacity: 0.5,
+	fill: "#4682B4",
+	className: "react-stockcharts-area"
+};
+
+exports.default = AreaSeries;
+//# sourceMappingURL=AreaSeries.js.map
+
+/***/ }),
+/* 931 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.default = rebind;
+// copied from https://github.com/d3fc/d3fc-rebind/blob/master/src/rebind.js
+
+function createReboundMethod(target, source, name) {
+	var method = source[name];
+	if (typeof method !== "function") {
+		throw new Error("Attempt to rebind " + name + " which isn't a function on the source object");
+	}
+	return function () {
+		for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+			args[_key] = arguments[_key];
+		}
+
+		var value = method.apply(source, args);
+		return value === source ? target : value;
+	};
+}
+
+function rebind(target, source) {
+	for (var _len2 = arguments.length, names = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+		names[_key2 - 2] = arguments[_key2];
+	}
+
+	var _iteratorNormalCompletion = true;
+	var _didIteratorError = false;
+	var _iteratorError = undefined;
+
+	try {
+		for (var _iterator = names[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+			var name = _step.value;
+
+			target[name] = createReboundMethod(target, source, name);
+		}
+	} catch (err) {
+		_didIteratorError = true;
+		_iteratorError = err;
+	} finally {
+		try {
+			if (!_iteratorNormalCompletion && _iterator.return) {
+				_iterator.return();
+			}
+		} finally {
+			if (_didIteratorError) {
+				throw _iteratorError;
+			}
+		}
+	}
+
+	return target;
+}
+//# sourceMappingURL=rebind.js.map
+
+/***/ }),
+/* 932 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var algorithm = _identity2.default,
+	    skipUndefined = true,
+	    merge = _noop2.default;
+
+	function mergeCompute(data) {
+		var zip = (0, _zipper2.default)().combine(function (datum, indicator) {
+			var result = skipUndefined && (0, _index.isNotDefined)(indicator) ? datum : merge(datum, indicator);
+			return (0, _index.isNotDefined)(result) ? datum : result;
+		});
+
+		// console.log(data);
+		return zip(data, algorithm(data));
+	}
+
+	mergeCompute.algorithm = function (x) {
+		if (!arguments.length) {
+			return algorithm;
+		}
+		algorithm = x;
+		return mergeCompute;
+	};
+
+	mergeCompute.merge = function (x) {
+		if (!arguments.length) {
+			return merge;
+		}
+		merge = x;
+		return mergeCompute;
+	};
+	mergeCompute.skipUndefined = function (x) {
+		if (!arguments.length) {
+			return skipUndefined;
+		}
+		skipUndefined = x;
+		return mergeCompute;
+	};
+
+	return mergeCompute;
+};
+
+var _identity = __webpack_require__(87);
+
+var _identity2 = _interopRequireDefault(_identity);
+
+var _zipper = __webpack_require__(354);
+
+var _zipper2 = _interopRequireDefault(_zipper);
+
+var _noop = __webpack_require__(88);
+
+var _noop2 = _interopRequireDefault(_noop);
+
+var _index = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=merge.js.map
+
+/***/ }),
+/* 933 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+
+Taken from https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/calculator/slidingWindow.js
+
+The MIT License (MIT)
+
+Copyright (c) 2014-2015 Scott Logic Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+*/
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var undefinedValue = undefined,
+	    windowSize = 10,
+	    accumulator = _noop2.default,
+	    sourcePath = void 0,
+	    source = void 0,
+	    skipInitial = 0,
+	    misc = void 0;
+
+	// eslint-disable-next-line prefer-const
+	var slidingWindow = function slidingWindow(data) {
+		var sourceFunction = source || (0, _index.path)(sourcePath);
+
+		var size = (0, _index.functor)(windowSize).apply(this, arguments);
+		var windowData = data.slice(skipInitial, size + skipInitial).map(sourceFunction);
+		var accumulatorIdx = 0;
+		var undef = (0, _index.functor)(undefinedValue);
+		// console.log(skipInitial, size, data.length, windowData.length);
+		return data.map(function (d, i) {
+			// console.log(d, i);
+			if (i < skipInitial + size - 1) {
+				return undef(sourceFunction(d), i, misc);
+			}
+			if (i >= skipInitial + size) {
+				// Treat windowData as FIFO rolling buffer
+				windowData.shift();
+				windowData.push(sourceFunction(d, i));
+			}
+			return accumulator(windowData, i, accumulatorIdx++, misc);
+		});
+	};
+
+	slidingWindow.undefinedValue = function (x) {
+		if (!arguments.length) {
+			return undefinedValue;
+		}
+		undefinedValue = x;
+		return slidingWindow;
+	};
+	slidingWindow.windowSize = function (x) {
+		if (!arguments.length) {
+			return windowSize;
+		}
+		windowSize = x;
+		return slidingWindow;
+	};
+	slidingWindow.misc = function (x) {
+		if (!arguments.length) {
+			return misc;
+		}
+		misc = x;
+		return slidingWindow;
+	};
+	slidingWindow.accumulator = function (x) {
+		if (!arguments.length) {
+			return accumulator;
+		}
+		accumulator = x;
+		return slidingWindow;
+	};
+	slidingWindow.skipInitial = function (x) {
+		if (!arguments.length) {
+			return skipInitial;
+		}
+		skipInitial = x;
+		return slidingWindow;
+	};
+	slidingWindow.sourcePath = function (x) {
+		if (!arguments.length) {
+			return sourcePath;
+		}
+		sourcePath = x;
+		return slidingWindow;
+	};
+	slidingWindow.source = function (x) {
+		if (!arguments.length) {
+			return source;
+		}
+		source = x;
+		return slidingWindow;
+	};
+
+	return slidingWindow;
+};
+
+var _noop = __webpack_require__(88);
+
+var _noop2 = _interopRequireDefault(_noop);
+
+var _index = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=slidingWindow.js.map
+
+/***/ }),
+/* 934 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var undefinedValue = undefined,
+	    windowSize = 10,
+	    accumulator = _noop2.default,
+	    source = _identity2.default,
+	    skipInitial = 0;
+
+	// eslint-disable-next-line prefer-const
+	var mappedSlidingWindow = function mappedSlidingWindow(data) {
+		var size = (0, _index.functor)(windowSize).apply(this, arguments);
+		var windowData = [];
+		var accumulatorIdx = 0;
+		var undef = (0, _index.functor)(undefinedValue);
+		// console.log(skipInitial, size, data.length, windowData.length);
+		var result = [];
+		data.forEach(function (d, i) {
+			// console.log(d, i, windowData.length);
+			var mapped = void 0;
+			if (i < skipInitial + size - 1) {
+				mapped = undef(d, i);
+				result.push(mapped);
+				windowData.push(mapped);
+				return;
+			}
+			if (i >= skipInitial + size) {
+				// Treat windowData as FIFO rolling buffer
+				windowData.shift();
+			}
+			windowData.push(source(d, i));
+			mapped = accumulator(windowData, i, accumulatorIdx++);
+			result.push(mapped);
+			windowData.pop();
+			windowData.push(mapped);
+			return;
+		});
+		return result;
+	};
+
+	mappedSlidingWindow.undefinedValue = function (x) {
+		if (!arguments.length) {
+			return undefinedValue;
+		}
+		undefinedValue = x;
+		return mappedSlidingWindow;
+	};
+	mappedSlidingWindow.windowSize = function (x) {
+		if (!arguments.length) {
+			return windowSize;
+		}
+		windowSize = x;
+		return mappedSlidingWindow;
+	};
+	mappedSlidingWindow.accumulator = function (x) {
+		if (!arguments.length) {
+			return accumulator;
+		}
+		accumulator = x;
+		return mappedSlidingWindow;
+	};
+	mappedSlidingWindow.skipInitial = function (x) {
+		if (!arguments.length) {
+			return skipInitial;
+		}
+		skipInitial = x;
+		return mappedSlidingWindow;
+	};
+	mappedSlidingWindow.source = function (x) {
+		if (!arguments.length) {
+			return source;
+		}
+		source = x;
+		return mappedSlidingWindow;
+	};
+
+	return mappedSlidingWindow;
+};
+
+var _noop = __webpack_require__(88);
+
+var _noop2 = _interopRequireDefault(_noop);
+
+var _identity = __webpack_require__(87);
+
+var _identity2 = _interopRequireDefault(_identity);
+
+var _index = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=mappedSlidingWindow.js.map
+
+/***/ }),
+/* 935 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+
+Taken from https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/calculator/slidingWindow.js
+
+The MIT License (MIT)
+
+Copyright (c) 2014-2015 Scott Logic Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+*/
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var accumulateTill = (0, _index.functor)(false),
+	    accumulator = _noop2.default,
+	    value = _identity2.default,
+	    discardTillStart = false,
+	    discardTillEnd = false;
+
+	// eslint-disable-next-line prefer-const
+	var accumulatingWindow = function accumulatingWindow(data) {
+		var accumulatedWindow = discardTillStart ? undefined : [];
+		var response = [];
+		var accumulatorIdx = 0;
+		var i = 0;
+		for (i = 0; i < data.length; i++) {
+			var d = data[i];
+			// console.log(d, accumulateTill(d));
+			if (accumulatedWindow.length > 0 && accumulateTill(d, i, accumulatedWindow)) {
+				if (accumulatedWindow && accumulatedWindow.length > 0) response.push(accumulator(accumulatedWindow, i, accumulatorIdx++));
+				accumulatedWindow = [value(d)];
+			} else {
+				if (accumulatedWindow) accumulatedWindow.push(value(d));
+			}
+		}
+		if (!discardTillEnd) response.push(accumulator(accumulatedWindow, i, accumulatorIdx));
+		return response;
+	};
+
+	accumulatingWindow.accumulateTill = function (x) {
+		if (!arguments.length) {
+			return accumulateTill;
+		}
+		accumulateTill = (0, _index.functor)(x);
+		return accumulatingWindow;
+	};
+	accumulatingWindow.accumulator = function (x) {
+		if (!arguments.length) {
+			return accumulator;
+		}
+		accumulator = x;
+		return accumulatingWindow;
+	};
+	accumulatingWindow.value = function (x) {
+		if (!arguments.length) {
+			return value;
+		}
+		value = x;
+		return accumulatingWindow;
+	};
+	accumulatingWindow.discardTillStart = function (x) {
+		if (!arguments.length) {
+			return discardTillStart;
+		}
+		discardTillStart = x;
+		return accumulatingWindow;
+	};
+	accumulatingWindow.discardTillEnd = function (x) {
+		if (!arguments.length) {
+			return discardTillEnd;
+		}
+		discardTillEnd = x;
+		return accumulatingWindow;
+	};
+	return accumulatingWindow;
+};
+
+var _noop = __webpack_require__(88);
+
+var _noop2 = _interopRequireDefault(_noop);
+
+var _identity = __webpack_require__(87);
+
+var _identity2 = _interopRequireDefault(_identity);
+
+var _index = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=accumulatingWindow.js.map
+
+/***/ }),
+/* 936 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _shallowEqual = __webpack_require__(355);
+
+var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var PureComponent = function (_React$Component) {
+	_inherits(PureComponent, _React$Component);
+
+	function PureComponent() {
+		_classCallCheck(this, PureComponent);
+
+		return _possibleConstructorReturn(this, (PureComponent.__proto__ || Object.getPrototypeOf(PureComponent)).apply(this, arguments));
+	}
+
+	_createClass(PureComponent, [{
+		key: "shouldComponentUpdate",
+		value: function shouldComponentUpdate(nextProps, nextState, nextContext) {
+			return !(0, _shallowEqual2.default)(this.props, nextProps) || !(0, _shallowEqual2.default)(this.state, nextState) || !(0, _shallowEqual2.default)(this.context, nextContext);
+		}
+	}]);
+
+	return PureComponent;
+}(_react2.default.Component);
+
+exports.default = PureComponent;
+//# sourceMappingURL=PureComponent.js.map
+
+/***/ }),
+/* 937 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.plotDataLengthBarWidth = plotDataLengthBarWidth;
+exports.timeIntervalBarWidth = timeIntervalBarWidth;
+
+var _utils = __webpack_require__(7);
+
+/**
+ * Bar width is based on the amount of items in the plot data and the distance between the first and last of those
+ * items.
+ * @param props the props passed to the series.
+ * @param moreProps an object holding the xScale, xAccessor and plotData.
+ * @return {number} the bar width.
+ */
+function plotDataLengthBarWidth(props, moreProps) {
+  var _props$widthRatio = props.widthRatio,
+      widthRatio = _props$widthRatio === undefined ? 0.8 : _props$widthRatio;
+  var scale = moreProps.xScale,
+      accessor = moreProps.xAccessor,
+      plotData = moreProps.plotData;
+
+
+  var width = Math.abs((scale(accessor((0, _utils.last)(plotData))) - scale(accessor((0, _utils.head)(plotData)))) / (plotData.length - 1));
+  return width * widthRatio;
+}
+
+/**
+ * Generates a width function that calculates the bar width based on the given time interval.
+ * @param interval a d3-time time interval.
+ * @return {Function} the width function.
+ */
+function timeIntervalBarWidth(interval) {
+  return function (props, moreProps) {
+    var _props$widthRatio2 = props.widthRatio,
+        widthRatio = _props$widthRatio2 === undefined ? 0.8 : _props$widthRatio2;
+    var scale = moreProps.xScale,
+        accessor = moreProps.xAccessor,
+        plotData = moreProps.plotData;
+
+
+    var first = accessor((0, _utils.head)(plotData));
+    return Math.abs(scale(interval.offset(first, 1)) - scale(first)) * widthRatio;
+  };
+}
+//# sourceMappingURL=barWidth.js.map
+
+/***/ }),
+/* 938 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+var strokeDashTypes = exports.strokeDashTypes = ["Solid", "ShortDash", "ShortDot", "ShortDashDot", "ShortDashDotDot", "Dot", "Dash", "LongDash", "DashDot", "LongDashDot", "LongDashDotDot"];
+
+var getStrokeDasharray = exports.getStrokeDasharray = function getStrokeDasharray(type) {
+	switch (type) {
+		default:
+		case "Solid":
+			return "none";
+		case "ShortDash":
+			return "6, 2";
+		case "ShortDot":
+			return "2, 2";
+		case "ShortDashDot":
+			return "6, 2, 2, 2";
+		case "ShortDashDotDot":
+			return "6, 2, 2, 2, 2, 2";
+		case "Dot":
+			return "2, 6";
+		case "Dash":
+			return "8, 6";
+		case "LongDash":
+			return "16, 6";
+		case "DashDot":
+			return "8, 6, 2, 6";
+		case "LongDashDot":
+			return "16, 6, 2, 6";
+		case "LongDashDotDot":
+			return "16, 6, 2, 6, 2, 6";
+	}
+};
+//# sourceMappingURL=strokeDasharray.js.map
+
+/***/ }),
+/* 939 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _d3Collection = __webpack_require__(29);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ScatterSeries = function (_Component) {
+	_inherits(ScatterSeries, _Component);
+
+	function ScatterSeries(props) {
+		_classCallCheck(this, ScatterSeries);
+
+		var _this = _possibleConstructorReturn(this, (ScatterSeries.__proto__ || Object.getPrototypeOf(ScatterSeries)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(ScatterSeries, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var xAccessor = moreProps.xAccessor;
+
+
+			var points = helper(this.props, moreProps, xAccessor);
+
+			_drawOnCanvas(ctx, this.props, points);
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var _props = this.props,
+			    className = _props.className,
+			    markerProps = _props.markerProps;
+			var xAccessor = moreProps.xAccessor;
+
+
+			var points = helper(this.props, moreProps, xAccessor);
+
+			return _react2.default.createElement(
+				"g",
+				{ className: className },
+				points.map(function (point, idx) {
+					var Marker = point.marker;
+
+					return _react2.default.createElement(Marker, _extends({ key: idx }, markerProps, { point: point }));
+				})
+			);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				svgDraw: this.renderSVG,
+				canvasDraw: this.drawOnCanvas,
+				canvasToDraw: _GenericComponent.getAxisCanvas,
+				drawOn: ["pan"]
+			});
+		}
+	}]);
+
+	return ScatterSeries;
+}(_react.Component);
+
+ScatterSeries.propTypes = {
+	className: _propTypes2.default.string,
+	yAccessor: _propTypes2.default.func.isRequired,
+	marker: _propTypes2.default.func,
+	markerProvider: _propTypes2.default.func,
+	markerProps: _propTypes2.default.object
+};
+
+ScatterSeries.defaultProps = {
+	className: "react-stockcharts-scatter"
+};
+
+function helper(props, moreProps, xAccessor) {
+	var yAccessor = props.yAccessor,
+	    markerProvider = props.markerProvider,
+	    markerProps = props.markerProps;
+	var Marker = props.marker;
+	var xScale = moreProps.xScale,
+	    yScale = moreProps.chartConfig.yScale,
+	    plotData = moreProps.plotData;
+
+
+	if (!(markerProvider || Marker)) throw new Error("required prop, either marker or markerProvider missing");
+
+	return plotData.map(function (d) {
+
+		if (markerProvider) Marker = markerProvider(d);
+
+		var mProps = _extends({}, Marker.defaultProps, markerProps);
+
+		var fill = (0, _utils.functor)(mProps.fill);
+		var stroke = (0, _utils.functor)(mProps.stroke);
+
+		return {
+			x: xScale(xAccessor(d)),
+			y: yScale(yAccessor(d)),
+			fill: (0, _utils.hexToRGBA)(fill(d), mProps.opacity),
+			stroke: stroke(d),
+			datum: d,
+			marker: Marker
+		};
+	});
+}
+
+function _drawOnCanvas(ctx, props, points) {
+	var markerProps = props.markerProps;
+
+
+	var nest = (0, _d3Collection.nest)().key(function (d) {
+		return d.fill;
+	}).key(function (d) {
+		return d.stroke;
+	}).entries(points);
+
+	nest.forEach(function (fillGroup) {
+		var fillKey = fillGroup.key,
+		    fillValues = fillGroup.values;
+
+
+		if (fillKey !== "none") {
+			ctx.fillStyle = fillKey;
+		}
+
+		fillValues.forEach(function (strokeGroup) {
+			// var { key: strokeKey, values: strokeValues } = strokeGroup;
+			var strokeValues = strokeGroup.values;
+
+
+			strokeValues.forEach(function (point) {
+				var marker = point.marker;
+
+				marker.drawOnCanvas(_extends({}, marker.defaultProps, markerProps, { fill: fillKey }), point, ctx);
+			});
+		});
+	});
+}
+
+exports.default = ScatterSeries;
+//# sourceMappingURL=ScatterSeries.js.map
+
+/***/ }),
+/* 940 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Circle(props) {
+	var className = props.className,
+	    stroke = props.stroke,
+	    strokeWidth = props.strokeWidth,
+	    opacity = props.opacity,
+	    fill = props.fill,
+	    point = props.point,
+	    r = props.r;
+
+	var radius = (0, _utils.functor)(r)(point.datum);
+	return _react2.default.createElement("circle", { className: className,
+		cx: point.x, cy: point.y,
+		stroke: stroke, strokeWidth: strokeWidth,
+		fillOpacity: opacity, fill: fill, r: radius });
+}
+
+Circle.propTypes = {
+	stroke: _propTypes2.default.string,
+	fill: _propTypes2.default.string.isRequired,
+	opacity: _propTypes2.default.number.isRequired,
+	point: _propTypes2.default.shape({
+		x: _propTypes2.default.number.isRequired,
+		y: _propTypes2.default.number.isRequired,
+		datum: _propTypes2.default.object.isRequired
+	}).isRequired,
+	className: _propTypes2.default.string,
+	strokeWidth: _propTypes2.default.number,
+	r: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]).isRequired
+};
+
+Circle.defaultProps = {
+	stroke: "#4682B4",
+	strokeWidth: 1,
+	opacity: 0.5,
+	fill: "#4682B4",
+	className: "react-stockcharts-marker-circle"
+};
+
+Circle.drawOnCanvas = function (props, point, ctx) {
+	var stroke = props.stroke,
+	    fill = props.fill,
+	    opacity = props.opacity,
+	    strokeWidth = props.strokeWidth;
+
+
+	ctx.strokeStyle = stroke;
+	ctx.lineWidth = strokeWidth;
+
+	if (fill !== "none") {
+		ctx.fillStyle = (0, _utils.hexToRGBA)(fill, opacity);
+	}
+
+	Circle.drawOnCanvasWithNoStateChange(props, point, ctx);
+};
+
+Circle.drawOnCanvasWithNoStateChange = function (props, point, ctx) {
+	var r = props.r;
+
+	var radius = (0, _utils.functor)(r)(point.datum);
+
+	ctx.moveTo(point.x, point.y);
+	ctx.beginPath();
+	ctx.arc(point.x, point.y, radius, 0, 2 * Math.PI, false);
+	ctx.stroke();
+	ctx.fill();
+};
+
+exports.default = Circle;
+//# sourceMappingURL=CircleMarker.js.map
+
+/***/ }),
+/* 941 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Triangle(props) {
+	var className = props.className,
+	    stroke = props.stroke,
+	    strokeWidth = props.strokeWidth,
+	    opacity = props.opacity,
+	    fill = props.fill,
+	    point = props.point,
+	    width = props.width;
+
+	var w = (0, _utils.functor)(width)(point.datum);
+	var x = point.x,
+	    y = point.y;
+
+	var _getTrianglePoints = getTrianglePoints(w),
+	    innerOpposite = _getTrianglePoints.innerOpposite,
+	    innerHypotenuse = _getTrianglePoints.innerHypotenuse;
+
+	var points = "\n\t\t" + x + " " + (y - innerHypotenuse) + ",\n\t\t" + (x + w / 2) + " " + (y + innerOpposite) + ",\n\t\t" + (x - w / 2) + " " + (y + innerOpposite) + "\n\t";
+	return _react2.default.createElement("polygon", {
+		className: className,
+		points: points,
+		stroke: stroke,
+		strokeWidth: strokeWidth,
+		fillOpacity: opacity,
+		fill: fill
+	});
+}
+Triangle.propTypes = {
+	stroke: _propTypes2.default.string,
+	fill: _propTypes2.default.string.isRequired,
+	opacity: _propTypes2.default.number.isRequired,
+	point: _propTypes2.default.shape({
+		x: _propTypes2.default.number.isRequired,
+		y: _propTypes2.default.number.isRequired,
+		datum: _propTypes2.default.object.isRequired
+	}).isRequired,
+	className: _propTypes2.default.string,
+	strokeWidth: _propTypes2.default.number,
+	width: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]).isRequired
+};
+Triangle.defaultProps = {
+	stroke: "#4682B4",
+	strokeWidth: 1,
+	opacity: 0.5,
+	fill: "#4682B4",
+	className: "react-stockcharts-marker-triangle"
+};
+Triangle.drawOnCanvas = function (props, point, ctx) {
+	var stroke = props.stroke,
+	    fill = props.fill,
+	    opacity = props.opacity,
+	    strokeWidth = props.strokeWidth;
+
+	ctx.strokeStyle = stroke;
+	ctx.lineWidth = strokeWidth;
+	if (fill !== "none") {
+		ctx.fillStyle = (0, _utils.hexToRGBA)(fill, opacity);
+	}
+	Triangle.drawOnCanvasWithNoStateChange(props, point, ctx);
+};
+Triangle.drawOnCanvasWithNoStateChange = function (props, point, ctx) {
+	var width = props.width;
+
+	var w = (0, _utils.functor)(width)(point.datum);
+	var x = point.x,
+	    y = point.y;
+
+	var _getTrianglePoints2 = getTrianglePoints(w),
+	    innerOpposite = _getTrianglePoints2.innerOpposite,
+	    innerHypotenuse = _getTrianglePoints2.innerHypotenuse;
+
+	ctx.beginPath();
+	ctx.moveTo(x, y - innerHypotenuse);
+	ctx.lineTo(x + w / 2, y + innerOpposite);
+	ctx.lineTo(x - w / 2, y + innerOpposite);
+	ctx.stroke();
+	ctx.fill();
+};
+exports.default = Triangle;
+
+
+function getTrianglePoints(width) {
+	var innerHypotenuse = width / 2 * (1 / Math.cos(30 * Math.PI / 180));
+	var innerOpposite = width / 2 * (1 / Math.tan(60 * Math.PI / 180));
+	return {
+		innerOpposite: innerOpposite,
+		innerHypotenuse: innerHypotenuse
+	};
+}
+//# sourceMappingURL=TriangleMarker.js.map
+
+/***/ }),
+/* 942 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Square(props) {
+	var className = props.className,
+	    stroke = props.stroke,
+	    strokeWidth = props.strokeWidth,
+	    opacity = props.opacity,
+	    fill = props.fill,
+	    point = props.point,
+	    width = props.width;
+
+	var w = (0, _utils.functor)(width)(point.datum);
+	var x = point.x - w / 2;
+	var y = point.y - w / 2;
+	return _react2.default.createElement("rect", {
+		className: className,
+		x: x,
+		y: y,
+		stroke: stroke,
+		strokeWidth: strokeWidth,
+		fillOpacity: opacity,
+		fill: fill,
+		width: w,
+		height: w
+	});
+}
+Square.propTypes = {
+	stroke: _propTypes2.default.string,
+	fill: _propTypes2.default.string.isRequired,
+	opacity: _propTypes2.default.number.isRequired,
+	point: _propTypes2.default.shape({
+		x: _propTypes2.default.number.isRequired,
+		y: _propTypes2.default.number.isRequired,
+		datum: _propTypes2.default.object.isRequired
+	}).isRequired,
+	className: _propTypes2.default.string,
+	strokeWidth: _propTypes2.default.number,
+	width: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]).isRequired
+};
+Square.defaultProps = {
+	stroke: "#4682B4",
+	strokeWidth: 1,
+	opacity: 0.5,
+	fill: "#4682B4",
+	className: "react-stockcharts-marker-rect"
+};
+Square.drawOnCanvas = function (props, point, ctx) {
+	var stroke = props.stroke,
+	    fill = props.fill,
+	    opacity = props.opacity,
+	    strokeWidth = props.strokeWidth;
+
+	ctx.strokeStyle = stroke;
+	ctx.lineWidth = strokeWidth;
+	if (fill !== "none") {
+		ctx.fillStyle = (0, _utils.hexToRGBA)(fill, opacity);
+	}
+	Square.drawOnCanvasWithNoStateChange(props, point, ctx);
+};
+Square.drawOnCanvasWithNoStateChange = function (props, point, ctx) {
+	var width = props.width;
+
+	var w = (0, _utils.functor)(width)(point.datum);
+	var x = point.x - w / 2;
+	var y = point.y - w / 2;
+	ctx.beginPath();
+	ctx.rect(x, y, w, w);
+	ctx.stroke();
+	ctx.fill();
+};
+exports.default = Square;
+//# sourceMappingURL=SquareMarker.js.map
+
+/***/ }),
+/* 943 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _d3Collection = __webpack_require__(29);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var CandlestickSeries = function (_Component) {
+	_inherits(CandlestickSeries, _Component);
+
+	function CandlestickSeries(props) {
+		_classCallCheck(this, CandlestickSeries);
+
+		var _this = _possibleConstructorReturn(this, (CandlestickSeries.__proto__ || Object.getPrototypeOf(CandlestickSeries)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(CandlestickSeries, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			_drawOnCanvas(ctx, this.props, moreProps);
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var _props = this.props,
+			    className = _props.className,
+			    wickClassName = _props.wickClassName,
+			    candleClassName = _props.candleClassName;
+			var xScale = moreProps.xScale,
+			    yScale = moreProps.chartConfig.yScale,
+			    plotData = moreProps.plotData,
+			    xAccessor = moreProps.xAccessor;
+
+
+			var candleData = getCandleData(this.props, xAccessor, xScale, yScale, plotData);
+
+			return _react2.default.createElement(
+				"g",
+				{ className: className },
+				_react2.default.createElement(
+					"g",
+					{ className: wickClassName, key: "wicks" },
+					getWicksSVG(candleData)
+				),
+				_react2.default.createElement(
+					"g",
+					{ className: candleClassName, key: "candles" },
+					getCandlesSVG(this.props, candleData)
+				)
+			);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var clip = this.props.clip;
+
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				clip: clip,
+				svgDraw: this.renderSVG,
+				canvasDraw: this.drawOnCanvas,
+				canvasToDraw: _GenericComponent.getAxisCanvas,
+				drawOn: ["pan"]
+			});
+		}
+	}]);
+
+	return CandlestickSeries;
+}(_react.Component);
+
+CandlestickSeries.propTypes = {
+	className: _propTypes2.default.string,
+	wickClassName: _propTypes2.default.string,
+	candleClassName: _propTypes2.default.string,
+	widthRatio: _propTypes2.default.number,
+	width: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]),
+	classNames: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]),
+	fill: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]),
+	stroke: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]),
+	wickStroke: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]),
+	yAccessor: _propTypes2.default.func,
+	clip: _propTypes2.default.bool
+};
+
+CandlestickSeries.defaultProps = {
+	className: "react-stockcharts-candlestick",
+	wickClassName: "react-stockcharts-candlestick-wick",
+	candleClassName: "react-stockcharts-candlestick-candle",
+	yAccessor: function yAccessor(d) {
+		return { open: d.open, high: d.high, low: d.low, close: d.close };
+	},
+	classNames: function classNames(d) {
+		return d.close > d.open ? "up" : "down";
+	},
+	width: _utils.plotDataLengthBarWidth,
+	wickStroke: "#000000",
+	// wickStroke: d => d.close > d.open ? "#6BA583" : "#FF0000",
+	fill: function fill(d) {
+		return d.close > d.open ? "#6BA583" : "#FF0000";
+	},
+	// stroke: d => d.close > d.open ? "#6BA583" : "#FF0000",
+	stroke: "#000000",
+	candleStrokeWidth: 0.5,
+	// stroke: "none",
+	widthRatio: 0.8,
+	opacity: 0.5,
+	clip: true
+};
+
+function getWicksSVG(candleData) {
+
+	var wicks = candleData.map(function (each, idx) {
+		var d = each.wick;
+		return _react2.default.createElement("path", { key: idx,
+			className: each.className,
+			stroke: d.stroke,
+			d: "M" + d.x + "," + d.y1 + " L" + d.x + "," + d.y2 + " M" + d.x + "," + d.y3 + " L" + d.x + "," + d.y4 });
+	});
+
+	return wicks;
+}
+
+function getCandlesSVG(props, candleData) {
+
+	/* eslint-disable react/prop-types */
+	var opacity = props.opacity,
+	    candleStrokeWidth = props.candleStrokeWidth;
+	/* eslint-enable react/prop-types */
+
+	var candles = candleData.map(function (d, idx) {
+		if (d.width <= 1) return _react2.default.createElement("line", { className: d.className, key: idx,
+			x1: d.x, y1: d.y, x2: d.x, y2: d.y + d.height,
+			stroke: d.fill });else if (d.height === 0) return _react2.default.createElement("line", { key: idx,
+			x1: d.x, y1: d.y, x2: d.x + d.width, y2: d.y + d.height,
+			stroke: d.fill });
+		return _react2.default.createElement("rect", { key: idx, className: d.className,
+			fillOpacity: opacity,
+			x: d.x, y: d.y, width: d.width, height: d.height,
+			fill: d.fill, stroke: d.stroke, strokeWidth: candleStrokeWidth });
+	});
+	return candles;
+}
+
+function _drawOnCanvas(ctx, props, moreProps) {
+	var opacity = props.opacity,
+	    candleStrokeWidth = props.candleStrokeWidth;
+	var xScale = moreProps.xScale,
+	    yScale = moreProps.chartConfig.yScale,
+	    plotData = moreProps.plotData,
+	    xAccessor = moreProps.xAccessor;
+
+	// const wickData = getWickData(props, xAccessor, xScale, yScale, plotData);
+
+	var candleData = getCandleData(props, xAccessor, xScale, yScale, plotData);
+
+	var wickNest = (0, _d3Collection.nest)().key(function (d) {
+		return d.wick.stroke;
+	}).entries(candleData);
+
+	wickNest.forEach(function (outer) {
+		var key = outer.key,
+		    values = outer.values;
+
+		ctx.strokeStyle = key;
+		ctx.fillStyle = key;
+		values.forEach(function (each) {
+			/*
+   ctx.moveTo(d.x, d.y1);
+   ctx.lineTo(d.x, d.y2);
+   	ctx.beginPath();
+   ctx.moveTo(d.x, d.y3);
+   ctx.lineTo(d.x, d.y4);
+   ctx.stroke(); */
+			var d = each.wick;
+
+			ctx.fillRect(d.x - 0.5, d.y1, 1, d.y2 - d.y1);
+			ctx.fillRect(d.x - 0.5, d.y3, 1, d.y4 - d.y3);
+		});
+	});
+
+	// const candleData = getCandleData(props, xAccessor, xScale, yScale, plotData);
+
+	var candleNest = (0, _d3Collection.nest)().key(function (d) {
+		return d.stroke;
+	}).key(function (d) {
+		return d.fill;
+	}).entries(candleData);
+
+	candleNest.forEach(function (outer) {
+		var strokeKey = outer.key,
+		    strokeValues = outer.values;
+
+		if (strokeKey !== "none") {
+			ctx.strokeStyle = strokeKey;
+			ctx.lineWidth = candleStrokeWidth;
+		}
+		strokeValues.forEach(function (inner) {
+			var key = inner.key,
+			    values = inner.values;
+
+			var fillStyle = (0, _utils.head)(values).width <= 1 ? key : (0, _utils.hexToRGBA)(key, opacity);
+			ctx.fillStyle = fillStyle;
+
+			values.forEach(function (d) {
+				if (d.width <= 1) {
+					// <line className={d.className} key={idx} x1={d.x} y1={d.y} x2={d.x} y2={d.y + d.height}/>
+					/*
+     ctx.beginPath();
+     ctx.moveTo(d.x, d.y);
+     ctx.lineTo(d.x, d.y + d.height);
+     ctx.stroke();
+     */
+					ctx.fillRect(d.x - 0.5, d.y, 1, d.height);
+				} else if (d.height === 0) {
+					// <line key={idx} x1={d.x} y1={d.y} x2={d.x + d.width} y2={d.y + d.height} />
+					/*
+     ctx.beginPath();
+     ctx.moveTo(d.x, d.y);
+     ctx.lineTo(d.x + d.width, d.y + d.height);
+     ctx.stroke();
+     */
+					ctx.fillRect(d.x, d.y - 0.5, d.width, 1);
+				} else {
+					/*
+     ctx.beginPath();
+     ctx.rect(d.x, d.y, d.width, d.height);
+     ctx.closePath();
+     ctx.fill();
+     if (strokeKey !== "none") ctx.stroke();
+     */
+					ctx.fillRect(d.x, d.y, d.width, d.height);
+					if (strokeKey !== "none") ctx.strokeRect(d.x, d.y, d.width, d.height);
+				}
+			});
+		});
+	});
+}
+/*
+function getWickData(props, xAccessor, xScale, yScale, plotData) {
+
+	const { classNames: classNameProp, wickStroke: wickStrokeProp, yAccessor } = props;
+	const wickStroke = functor(wickStrokeProp);
+	const className = functor(classNameProp);
+	const wickData = plotData
+			.filter(d => isDefined(yAccessor(d).close))
+			.map(d => {
+				// console.log(yAccessor);
+				const ohlc = yAccessor(d);
+
+				const x = Math.round(xScale(xAccessor(d))),
+					y1 = yScale(ohlc.high),
+					y2 = yScale(Math.max(ohlc.open, ohlc.close)),
+					y3 = yScale(Math.min(ohlc.open, ohlc.close)),
+					y4 = yScale(ohlc.low);
+
+				return {
+					x,
+					y1,
+					y2,
+					y3,
+					y4,
+					className: className(ohlc),
+					direction: (ohlc.close - ohlc.open),
+					stroke: wickStroke(ohlc),
+				};
+			});
+	return wickData;
+}
+*/
+
+function getCandleData(props, xAccessor, xScale, yScale, plotData) {
+	var wickStrokeProp = props.wickStroke;
+
+	var wickStroke = (0, _utils.functor)(wickStrokeProp);
+
+	var classNames = props.classNames,
+	    fillProp = props.fill,
+	    strokeProp = props.stroke,
+	    yAccessor = props.yAccessor;
+
+	var className = (0, _utils.functor)(classNames);
+
+	var fill = (0, _utils.functor)(fillProp);
+	var stroke = (0, _utils.functor)(strokeProp);
+
+	var widthFunctor = (0, _utils.functor)(props.width);
+	var width = widthFunctor(props, {
+		xScale: xScale,
+		xAccessor: xAccessor,
+		plotData: plotData
+	});
+
+	/*
+ const candleWidth = Math.round(width);
+ const offset = Math.round(candleWidth === 1 ? 0 : 0.5 * width);
+ */
+	var trueOffset = 0.5 * width;
+	var offset = trueOffset > 0.7 ? Math.round(trueOffset) : Math.floor(trueOffset);
+
+	// eslint-disable-next-line prefer-const
+	var candles = [];
+
+	for (var i = 0; i < plotData.length; i++) {
+		var d = plotData[i];
+		if ((0, _utils.isDefined)(yAccessor(d).close)) {
+			var x = Math.round(xScale(xAccessor(d)));
+			// const x = Math.round(xScale(xAccessor(d)) - offset);
+
+			var ohlc = yAccessor(d);
+			var y = Math.round(yScale(Math.max(ohlc.open, ohlc.close)));
+			var height = Math.round(Math.abs(yScale(ohlc.open) - yScale(ohlc.close)));
+
+			candles.push({
+				// type: "line"
+				x: x - offset,
+				y: y,
+				wick: {
+					stroke: wickStroke(ohlc),
+					x: x,
+					y1: Math.round(yScale(ohlc.high)),
+					y2: y,
+					y3: y + height, // Math.round(yScale(Math.min(ohlc.open, ohlc.close))),
+					y4: Math.round(yScale(ohlc.low))
+				},
+				height: height,
+				width: offset * 2,
+				className: className(ohlc),
+				fill: fill(ohlc),
+				stroke: stroke(ohlc),
+				direction: ohlc.close - ohlc.open
+			});
+		}
+	}
+
+	return candles;
+}
+
+exports.default = CandlestickSeries;
+//# sourceMappingURL=CandlestickSeries.js.map
+
+/***/ }),
+/* 944 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _d3Collection = __webpack_require__(29);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var OHLCSeries = function (_Component) {
+	_inherits(OHLCSeries, _Component);
+
+	function OHLCSeries(props) {
+		_classCallCheck(this, OHLCSeries);
+
+		var _this = _possibleConstructorReturn(this, (OHLCSeries.__proto__ || Object.getPrototypeOf(OHLCSeries)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(OHLCSeries, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var yAccessor = this.props.yAccessor;
+			var xAccessor = moreProps.xAccessor;
+			var xScale = moreProps.xScale,
+			    yScale = moreProps.chartConfig.yScale,
+			    plotData = moreProps.plotData;
+
+
+			var barData = getOHLCBars(this.props, xAccessor, yAccessor, xScale, yScale, plotData);
+			_drawOnCanvas(ctx, barData);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var clip = this.props.clip;
+
+
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				svgDraw: this.renderSVG,
+				canvasToDraw: _GenericComponent.getAxisCanvas,
+				canvasDraw: this.drawOnCanvas,
+				clip: clip,
+				drawOn: ["pan"]
+			});
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var _props = this.props,
+			    className = _props.className,
+			    yAccessor = _props.yAccessor;
+			var xAccessor = moreProps.xAccessor;
+			var xScale = moreProps.xScale,
+			    yScale = moreProps.chartConfig.yScale,
+			    plotData = moreProps.plotData;
+
+
+			var barData = getOHLCBars(this.props, xAccessor, yAccessor, xScale, yScale, plotData);
+
+			var strokeWidth = barData.strokeWidth,
+			    bars = barData.bars;
+
+
+			return _react2.default.createElement(
+				"g",
+				{ className: className },
+				bars.map(function (d, idx) {
+					return _react2.default.createElement("path", { key: idx,
+						className: d.className, stroke: d.stroke, strokeWidth: strokeWidth,
+						d: "M" + d.openX1 + " " + d.openY + " L" + d.openX2 + " " + d.openY + " M" + d.x + " " + d.y1 + " L" + d.x + " " + d.y2 + " M" + d.closeX1 + " " + d.closeY + " L" + d.closeX2 + " " + d.closeY });
+				})
+			);
+		}
+	}]);
+
+	return OHLCSeries;
+}(_react.Component);
+
+OHLCSeries.propTypes = {
+	className: _propTypes2.default.string,
+	classNames: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]).isRequired,
+	stroke: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]).isRequired,
+	yAccessor: _propTypes2.default.func.isRequired,
+	clip: _propTypes2.default.bool.isRequired
+};
+
+OHLCSeries.defaultProps = {
+	className: "react-stockcharts-ohlc",
+	yAccessor: function yAccessor(d) {
+		return { open: d.open, high: d.high, low: d.low, close: d.close };
+	},
+	classNames: function classNames(d) {
+		return (0, _utils.isDefined)(d.absoluteChange) ? d.absoluteChange > 0 ? "up" : "down" : "firstbar";
+	},
+	stroke: function stroke(d) {
+		return (0, _utils.isDefined)(d.absoluteChange) ? d.absoluteChange > 0 ? "#6BA583" : "#FF0000" : "#000000";
+	},
+	clip: true
+};
+
+function _drawOnCanvas(ctx, barData) {
+	var strokeWidth = barData.strokeWidth,
+	    bars = barData.bars;
+
+
+	var wickNest = (0, _d3Collection.nest)().key(function (d) {
+		return d.stroke;
+	}).entries(bars);
+
+	ctx.lineWidth = strokeWidth;
+
+	wickNest.forEach(function (outer) {
+		var key = outer.key,
+		    values = outer.values;
+
+		ctx.strokeStyle = key;
+		values.forEach(function (d) {
+			ctx.beginPath();
+			ctx.moveTo(d.x, d.y1);
+			ctx.lineTo(d.x, d.y2);
+
+			ctx.moveTo(d.openX1, d.openY);
+			ctx.lineTo(d.openX2, d.openY);
+
+			ctx.moveTo(d.closeX1, d.closeY);
+			ctx.lineTo(d.closeX2, d.closeY);
+
+			ctx.stroke();
+		});
+	});
+}
+
+function getOHLCBars(props, xAccessor, yAccessor, xScale, yScale, plotData) {
+	var classNamesProp = props.classNames,
+	    strokeProp = props.stroke;
+
+
+	var strokeFunc = (0, _utils.functor)(strokeProp);
+	var classNameFunc = (0, _utils.functor)(classNamesProp);
+
+	var width = xScale(xAccessor(plotData[plotData.length - 1])) - xScale(xAccessor(plotData[0]));
+
+	var barWidth = Math.max(1, Math.round(width / (plotData.length - 1) / 2) - 1.5);
+	var strokeWidth = Math.min(barWidth, 6);
+
+	var bars = plotData.filter(function (d) {
+		return (0, _utils.isDefined)(yAccessor(d).close);
+	}).map(function (d) {
+		var ohlc = yAccessor(d),
+		    x = Math.round(xScale(xAccessor(d))),
+		    y1 = yScale(ohlc.high),
+		    y2 = yScale(ohlc.low),
+		    openX1 = x - barWidth,
+		    openX2 = x + strokeWidth / 2,
+		    openY = yScale(ohlc.open),
+		    closeX1 = x - strokeWidth / 2,
+		    closeX2 = x + barWidth,
+		    closeY = yScale(ohlc.close),
+		    className = classNameFunc(d),
+		    stroke = strokeFunc(d);
+
+		return { x: x, y1: y1, y2: y2, openX1: openX1, openX2: openX2, openY: openY, closeX1: closeX1, closeX2: closeX2, closeY: closeY, stroke: stroke, className: className };
+	});
+	return { barWidth: barWidth, strokeWidth: strokeWidth, bars: bars };
+}
+
+exports.default = OHLCSeries;
+//# sourceMappingURL=OHLCSeries.js.map
+
+/***/ }),
+/* 945 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _StackedBarSeries = __webpack_require__(122);
+
+var _StackedBarSeries2 = _interopRequireDefault(_StackedBarSeries);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var GroupedBarSeries = function (_Component) {
+	_inherits(GroupedBarSeries, _Component);
+
+	function GroupedBarSeries(props) {
+		_classCallCheck(this, GroupedBarSeries);
+
+		var _this = _possibleConstructorReturn(this, (GroupedBarSeries.__proto__ || Object.getPrototypeOf(GroupedBarSeries)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(GroupedBarSeries, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var xAccessor = moreProps.xAccessor;
+
+
+			(0, _StackedBarSeries.drawOnCanvasHelper)(ctx, this.props, moreProps, xAccessor, _StackedBarSeries.identityStack, postProcessor);
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var xAccessor = moreProps.xAccessor;
+
+
+			return _react2.default.createElement(
+				"g",
+				{ className: "react-stockcharts-grouped-bar-series" },
+				(0, _StackedBarSeries.svgHelper)(this.props, moreProps, xAccessor, _StackedBarSeries.identityStack, postProcessor)
+			);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				svgDraw: this.renderSVG,
+				canvasDraw: this.drawOnCanvas,
+				canvasToDraw: _GenericComponent.getAxisCanvas,
+				drawOn: ["pan"]
+			});
+		}
+	}]);
+
+	return GroupedBarSeries;
+}(_react.Component);
+
+GroupedBarSeries.propTypes = {
+	baseAt: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]).isRequired,
+	direction: _propTypes2.default.oneOf(["up", "down"]).isRequired,
+	stroke: _propTypes2.default.bool.isRequired,
+	widthRatio: _propTypes2.default.number.isRequired,
+	opacity: _propTypes2.default.number.isRequired,
+	fill: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]).isRequired,
+	className: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]).isRequired,
+	yAccessor: _propTypes2.default.arrayOf(_propTypes2.default.func)
+};
+
+GroupedBarSeries.defaultProps = _extends({}, _StackedBarSeries2.default.defaultProps, {
+	widthRatio: 0.8,
+	spaceBetweenBar: 5
+});
+
+function postProcessor(array) {
+	return array.map(function (each) {
+		return _extends({}, each, {
+			x: each.x + each.offset - each.groupOffset,
+			width: each.groupWidth
+		});
+	});
+}
+
+exports.default = GroupedBarSeries;
+//# sourceMappingURL=GroupedBarSeries.js.map
+
+/***/ }),
+/* 946 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _d3Shape = __webpack_require__(82);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var KagiSeries = function (_Component) {
+	_inherits(KagiSeries, _Component);
+
+	function KagiSeries(props) {
+		_classCallCheck(this, KagiSeries);
+
+		var _this = _possibleConstructorReturn(this, (KagiSeries.__proto__ || Object.getPrototypeOf(KagiSeries)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(KagiSeries, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var xAccessor = moreProps.xAccessor;
+
+
+			_drawOnCanvas(ctx, this.props, moreProps, xAccessor);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				svgDraw: this.renderSVG,
+				canvasToDraw: _GenericComponent.getAxisCanvas,
+				canvasDraw: this.drawOnCanvas,
+				drawOn: ["pan"]
+			});
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var xAccessor = moreProps.xAccessor;
+			var xScale = moreProps.xScale,
+			    yScale = moreProps.chartConfig.yScale,
+			    plotData = moreProps.plotData;
+			var _props = this.props,
+			    className = _props.className,
+			    stroke = _props.stroke,
+			    fill = _props.fill,
+			    strokeWidth = _props.strokeWidth;
+
+
+			var paths = helper(plotData, xAccessor).map(function (each, i) {
+				var dataSeries = (0, _d3Shape.line)().x(function (item) {
+					return xScale(item[0]);
+				}).y(function (item) {
+					return yScale(item[1]);
+				}).curve(_d3Shape.curveStepBefore);
+
+				dataSeries(each.plot);
+
+				return _react2.default.createElement("path", { key: i, d: dataSeries(each.plot), className: each.type,
+					stroke: stroke[each.type], fill: fill[each.type], strokeWidth: strokeWidth });
+			});
+			return _react2.default.createElement(
+				"g",
+				{ className: className },
+				paths
+			);
+		}
+	}]);
+
+	return KagiSeries;
+}(_react.Component);
+
+KagiSeries.propTypes = {
+	className: _propTypes2.default.string,
+	stroke: _propTypes2.default.object,
+	fill: _propTypes2.default.object,
+	strokeWidth: _propTypes2.default.number.isRequired
+};
+
+KagiSeries.defaultProps = {
+	className: "react-stockcharts-kagi",
+	strokeWidth: 2,
+	stroke: {
+		yang: "#6BA583",
+		yin: "#E60000"
+	},
+	fill: {
+		yang: "none",
+		yin: "none"
+	},
+	currentValueStroke: "#000000"
+};
+
+function _drawOnCanvas(ctx, props, moreProps, xAccessor) {
+	var stroke = props.stroke,
+	    strokeWidth = props.strokeWidth,
+	    currentValueStroke = props.currentValueStroke;
+	var xScale = moreProps.xScale,
+	    yScale = moreProps.chartConfig.yScale,
+	    plotData = moreProps.plotData;
+
+
+	var paths = helper(plotData, xAccessor);
+
+	var begin = true;
+
+	paths.forEach(function (each) {
+		ctx.strokeStyle = stroke[each.type];
+		ctx.lineWidth = strokeWidth;
+
+		ctx.beginPath();
+		var prevX = void 0;
+		each.plot.forEach(function (d) {
+			var _ref = [xScale(d[0]), yScale(d[1])],
+			    x = _ref[0],
+			    y = _ref[1];
+
+			if (begin) {
+				ctx.moveTo(x, y);
+				begin = false;
+			} else {
+				if ((0, _utils.isDefined)(prevX)) {
+					ctx.lineTo(prevX, y);
+				}
+				ctx.lineTo(x, y);
+			}
+			prevX = x;
+			// console.log(d);
+		});
+		ctx.stroke();
+	});
+	var lastPlot = paths[paths.length - 1].plot;
+	var last = lastPlot[lastPlot.length - 1];
+	ctx.beginPath();
+	// ctx.strokeStyle = "black";
+	ctx.lineWidth = 1;
+
+	var _ref2 = [xScale(last[0]), yScale(last[2]), yScale(last[3])],
+	    x = _ref2[0],
+	    y1 = _ref2[1],
+	    y2 = _ref2[2];
+	// console.log(last, x, y);
+
+	ctx.moveTo(x, y1);
+	ctx.lineTo(x + 10, y1);
+	ctx.stroke();
+
+	ctx.beginPath();
+	ctx.strokeStyle = currentValueStroke;
+	ctx.moveTo(x - 10, y2);
+	ctx.lineTo(x, y2);
+	ctx.stroke();
+}
+
+function helper(plotData, xAccessor) {
+	var kagiLine = [];
+	var kagi = {};
+	var d = plotData[0];
+	var idx = xAccessor(d);
+
+	for (var i = 0; i < plotData.length; i++) {
+		d = plotData[i];
+
+		if ((0, _utils.isNotDefined)(d.close)) continue;
+		if ((0, _utils.isNotDefined)(kagi.type)) kagi.type = d.startAs;
+		if ((0, _utils.isNotDefined)(kagi.plot)) kagi.plot = [];
+
+		idx = xAccessor(d);
+		kagi.plot.push([idx, d.open]);
+
+		if ((0, _utils.isDefined)(d.changeTo)) {
+			kagi.plot.push([idx, d.changePoint]);
+			kagi.added = true;
+			kagiLine.push(kagi);
+
+			kagi = {
+				type: d.changeTo,
+				plot: [],
+				added: false
+			};
+			kagi.plot.push([idx, d.changePoint]);
+		}
+	}
+
+	if (!kagi.added) {
+		kagi.plot.push([idx, d.close, d.current, d.reverseAt]);
+		kagiLine.push(kagi);
+	}
+
+	// console.log(d.reverseAt);
+
+	return kagiLine;
+}
+
+exports.default = KagiSeries;
+//# sourceMappingURL=KagiSeries.js.map
+
+/***/ }),
+/* 947 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var PointAndFigureSeries = function (_Component) {
+	_inherits(PointAndFigureSeries, _Component);
+
+	function PointAndFigureSeries(props) {
+		_classCallCheck(this, PointAndFigureSeries);
+
+		var _this = _possibleConstructorReturn(this, (PointAndFigureSeries.__proto__ || Object.getPrototypeOf(PointAndFigureSeries)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(PointAndFigureSeries, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var xAccessor = moreProps.xAccessor;
+			var xScale = moreProps.xScale,
+			    yScale = moreProps.chartConfig.yScale,
+			    plotData = moreProps.plotData;
+
+			var columns = getColumns(xScale, xAccessor, yScale, plotData);
+
+			_drawOnCanvas(ctx, this.props, columns);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var clip = this.props.clip;
+
+
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				clip: clip,
+				svgDraw: this.renderSVG,
+				canvasDraw: this.drawOnCanvas,
+				canvasToDraw: _GenericComponent.getAxisCanvas,
+				drawOn: ["pan"]
+			});
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var xAccessor = moreProps.xAccessor;
+			var xScale = moreProps.xScale,
+			    yScale = moreProps.chartConfig.yScale,
+			    plotData = moreProps.plotData;
+			var _props = this.props,
+			    stroke = _props.stroke,
+			    fill = _props.fill,
+			    strokeWidth = _props.strokeWidth,
+			    className = _props.className;
+
+
+			var columns = getColumns(xScale, xAccessor, yScale, plotData);
+
+			return _react2.default.createElement(
+				"g",
+				{ className: className },
+				columns.map(function (col, idx) {
+					return _react2.default.createElement(
+						"g",
+						{ key: idx, className: col.className, transform: "translate(" + col.offset[0] + ", " + col.offset[1] + ")" },
+						col.boxes.map(function (box, i) {
+							if (col.direction > 0) {
+								return _react2.default.createElement(
+									"g",
+									{ key: idx + "-" + i },
+									_react2.default.createElement("line", { className: "up", strokeWidth: strokeWidth, stroke: stroke.up, fill: fill.up,
+										x1: 0, y1: box.open, x2: box.columnWidth, y2: box.close }),
+									_react2.default.createElement("line", { className: "up", strokeWidth: strokeWidth, stroke: stroke.up, fill: fill.up,
+										x1: 0, y1: box.close, x2: box.columnWidth, y2: box.open })
+								);
+							}
+							return _react2.default.createElement("ellipse", { key: idx + "-" + i,
+								className: "down", strokeWidth: strokeWidth, stroke: stroke.down, fill: fill.down,
+								cx: box.columnWidth / 2, cy: (box.open + box.close) / 2,
+								rx: box.columnWidth / 2, ry: box.boxHeight / 2 });
+						})
+					);
+				})
+			);
+		}
+	}]);
+
+	return PointAndFigureSeries;
+}(_react.Component);
+
+PointAndFigureSeries.propTypes = {
+	className: _propTypes2.default.string,
+	strokeWidth: _propTypes2.default.number.isRequired,
+	stroke: _propTypes2.default.object.isRequired,
+	fill: _propTypes2.default.object.isRequired,
+	clip: _propTypes2.default.bool.isRequired
+};
+
+PointAndFigureSeries.defaultProps = {
+	className: "react-stockcharts-point-and-figure",
+	strokeWidth: 1,
+	stroke: {
+		up: "#6BA583",
+		down: "#FF0000"
+	},
+	fill: {
+		up: "none",
+		down: "none"
+	},
+	clip: true
+};
+
+function _drawOnCanvas(ctx, props, columns) {
+	var stroke = props.stroke,
+	    fill = props.fill,
+	    strokeWidth = props.strokeWidth;
+
+
+	ctx.lineWidth = strokeWidth;
+
+	columns.forEach(function (col) {
+		var _col$offset = _slicedToArray(col.offset, 2),
+		    offsetX = _col$offset[0],
+		    offsetY = _col$offset[1];
+
+		col.boxes.forEach(function (box) {
+			if (col.direction > 0) {
+				ctx.fillStyle = fill.up;
+				ctx.strokeStyle = stroke.up;
+
+				ctx.beginPath();
+
+				ctx.moveTo(offsetX, offsetY + box.open);
+				ctx.lineTo(offsetX + box.columnWidth, offsetY + box.close);
+				ctx.moveTo(offsetX, offsetY + box.close);
+				ctx.lineTo(offsetX + box.columnWidth, offsetY + box.open);
+
+				ctx.stroke();
+			} else {
+				ctx.fillStyle = fill.down;
+				ctx.strokeStyle = stroke.down;
+
+				ctx.beginPath();
+
+				var x = offsetX + box.columnWidth / 2,
+				    y = offsetY + box.open + box.boxHeight / 2;
+				var rx = box.columnWidth / 2,
+				    ry = box.boxHeight / 2;
+
+
+				ctx.ellipse(x, y, rx, ry, 0, 0, 2 * Math.PI);
+				ctx.stroke();
+			}
+		});
+	});
+
+	ctx.stroke();
+}
+
+function getColumns(xScale, xAccessor, yScale, plotData) {
+
+	var width = xScale(xAccessor(plotData[plotData.length - 1])) - xScale(xAccessor(plotData[0]));
+
+	var columnWidth = width / (plotData.length - 1);
+
+	var anyBox = void 0,
+	    j = 0;
+	while ((0, _utils.isNotDefined)(anyBox)) {
+		if ((0, _utils.isDefined)(plotData[j].close)) {
+			anyBox = plotData[j].boxes[0];
+		} else {
+			break;
+		}
+		j++;
+	}
+
+	var boxHeight = Math.abs(yScale(anyBox.open) - yScale(anyBox.close));
+
+	var columns = plotData.filter(function (d) {
+		return (0, _utils.isDefined)(d.close);
+	}).map(function (d) {
+		var boxes = d.boxes.map(function (box) {
+			return {
+				columnWidth: columnWidth,
+				boxHeight: boxHeight,
+				open: yScale(box.open),
+				close: yScale(box.close)
+			};
+		});
+
+		var xOffset = xScale(xAccessor(d)) - columnWidth / 2;
+		return {
+			boxes: boxes,
+			direction: d.direction,
+			offset: [xOffset, 0]
+		};
+	});
+	return columns;
+}
+
+exports.default = PointAndFigureSeries;
+//# sourceMappingURL=PointAndFigureSeries.js.map
+
+/***/ }),
+/* 948 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var RenkoSeries = function (_Component) {
+	_inherits(RenkoSeries, _Component);
+
+	function RenkoSeries(props) {
+		_classCallCheck(this, RenkoSeries);
+
+		var _this = _possibleConstructorReturn(this, (RenkoSeries.__proto__ || Object.getPrototypeOf(RenkoSeries)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(RenkoSeries, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var xAccessor = moreProps.xAccessor;
+			var xScale = moreProps.xScale,
+			    yScale = moreProps.chartConfig.yScale,
+			    plotData = moreProps.plotData;
+			var yAccessor = this.props.yAccessor;
+
+
+			var candles = getRenko(this.props, plotData, xScale, xAccessor, yScale, yAccessor);
+
+			_drawOnCanvas(ctx, candles);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var clip = this.props.clip;
+
+
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				clip: clip,
+				svgDraw: this.renderSVG,
+				canvasDraw: this.drawOnCanvas,
+				canvasToDraw: _GenericComponent.getAxisCanvas,
+				drawOn: ["pan"]
+			});
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var xAccessor = moreProps.xAccessor;
+			var xScale = moreProps.xScale,
+			    yScale = moreProps.chartConfig.yScale,
+			    plotData = moreProps.plotData;
+			var yAccessor = this.props.yAccessor;
+
+
+			var candles = getRenko(this.props, plotData, xScale, xAccessor, yScale, yAccessor).map(function (each, idx) {
+				return _react2.default.createElement("rect", { key: idx, className: each.className,
+					fill: each.fill,
+					x: each.x,
+					y: each.y,
+					width: each.width,
+					height: each.height });
+			});
+
+			return _react2.default.createElement(
+				"g",
+				null,
+				_react2.default.createElement(
+					"g",
+					{ className: "candle" },
+					candles
+				)
+			);
+		}
+	}]);
+
+	return RenkoSeries;
+}(_react.Component);
+
+RenkoSeries.propTypes = {
+	classNames: _propTypes2.default.shape({
+		up: _propTypes2.default.string,
+		down: _propTypes2.default.string
+	}),
+	stroke: _propTypes2.default.shape({
+		up: _propTypes2.default.string,
+		down: _propTypes2.default.string
+	}),
+	fill: _propTypes2.default.shape({
+		up: _propTypes2.default.string,
+		down: _propTypes2.default.string,
+		partial: _propTypes2.default.string
+	}),
+	yAccessor: _propTypes2.default.func.isRequired,
+	clip: _propTypes2.default.bool.isRequired
+};
+
+RenkoSeries.defaultProps = {
+	classNames: {
+		up: "up",
+		down: "down"
+	},
+	stroke: {
+		up: "none",
+		down: "none"
+	},
+	fill: {
+		up: "#6BA583",
+		down: "#E60000",
+		partial: "#4682B4"
+	},
+	yAccessor: function yAccessor(d) {
+		return { open: d.open, high: d.high, low: d.low, close: d.close };
+	},
+	clip: true
+};
+
+function _drawOnCanvas(ctx, renko) {
+	renko.forEach(function (d) {
+		ctx.beginPath();
+
+		ctx.strokeStyle = d.stroke;
+		ctx.fillStyle = d.fill;
+
+		ctx.rect(d.x, d.y, d.width, d.height);
+		ctx.closePath();
+		ctx.fill();
+	});
+}
+
+function getRenko(props, plotData, xScale, xAccessor, yScale, yAccessor) {
+	var classNames = props.classNames,
+	    fill = props.fill;
+
+	var width = xScale(xAccessor(plotData[plotData.length - 1])) - xScale(xAccessor(plotData[0]));
+
+	var candleWidth = width / (plotData.length - 1);
+	var candles = plotData.filter(function (d) {
+		return (0, _utils.isDefined)(yAccessor(d).close);
+	}).map(function (d) {
+		var ohlc = yAccessor(d);
+		var x = xScale(xAccessor(d)) - 0.5 * candleWidth,
+		    y = yScale(Math.max(ohlc.open, ohlc.close)),
+		    height = Math.abs(yScale(ohlc.open) - yScale(ohlc.close)),
+		    className = ohlc.open <= ohlc.close ? classNames.up : classNames.down;
+
+		var svgfill = d.fullyFormed ? ohlc.open <= ohlc.close ? fill.up : fill.down : fill.partial;
+
+		return {
+			className: className,
+			fill: svgfill,
+			x: x,
+			y: y,
+			height: height,
+			width: candleWidth
+		};
+	});
+	return candles;
+}
+
+exports.default = RenkoSeries;
+//# sourceMappingURL=RenkoSeries.js.map
+
+/***/ }),
+/* 949 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _BarSeries = __webpack_require__(356);
+
+var _BarSeries2 = _interopRequireDefault(_BarSeries);
+
+var _LineSeries = __webpack_require__(64);
+
+var _LineSeries2 = _interopRequireDefault(_LineSeries);
+
+var _StraightLine = __webpack_require__(89);
+
+var _StraightLine2 = _interopRequireDefault(_StraightLine);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var MACDSeries = function (_Component) {
+	_inherits(MACDSeries, _Component);
+
+	function MACDSeries(props) {
+		_classCallCheck(this, MACDSeries);
+
+		var _this = _possibleConstructorReturn(this, (MACDSeries.__proto__ || Object.getPrototypeOf(MACDSeries)).call(this, props));
+
+		_this.yAccessorForMACD = _this.yAccessorForMACD.bind(_this);
+		_this.yAccessorForSignal = _this.yAccessorForSignal.bind(_this);
+		_this.yAccessorForDivergence = _this.yAccessorForDivergence.bind(_this);
+		_this.yAccessorForDivergenceBase = _this.yAccessorForDivergenceBase.bind(_this);
+		return _this;
+	}
+
+	_createClass(MACDSeries, [{
+		key: "yAccessorForMACD",
+		value: function yAccessorForMACD(d) {
+			var yAccessor = this.props.yAccessor;
+
+			return yAccessor(d) && yAccessor(d).macd;
+		}
+	}, {
+		key: "yAccessorForSignal",
+		value: function yAccessorForSignal(d) {
+			var yAccessor = this.props.yAccessor;
+
+			return yAccessor(d) && yAccessor(d).signal;
+		}
+	}, {
+		key: "yAccessorForDivergence",
+		value: function yAccessorForDivergence(d) {
+			var yAccessor = this.props.yAccessor;
+
+			return yAccessor(d) && yAccessor(d).divergence;
+		}
+	}, {
+		key: "yAccessorForDivergenceBase",
+		value: function yAccessorForDivergenceBase(xScale, yScale /* , d */) {
+			return yScale(0);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var _props = this.props,
+			    className = _props.className,
+			    opacity = _props.opacity,
+			    divergenceStroke = _props.divergenceStroke;
+			var _props2 = this.props,
+			    stroke = _props2.stroke,
+			    fill = _props2.fill;
+			var clip = this.props.clip;
+			var _props3 = this.props,
+			    zeroLineStroke = _props3.zeroLineStroke,
+			    zeroLineOpacity = _props3.zeroLineOpacity;
+
+
+			return _react2.default.createElement(
+				"g",
+				{ className: className },
+				_react2.default.createElement(_BarSeries2.default, {
+					baseAt: this.yAccessorForDivergenceBase,
+					className: "macd-divergence",
+					widthRatio: 0.5,
+					stroke: divergenceStroke,
+					fill: fill.divergence,
+					opacity: opacity,
+					clip: clip,
+					yAccessor: this.yAccessorForDivergence }),
+				_react2.default.createElement(_LineSeries2.default, {
+					yAccessor: this.yAccessorForMACD,
+					stroke: stroke.macd,
+					fill: "none" }),
+				_react2.default.createElement(_LineSeries2.default, {
+					yAccessor: this.yAccessorForSignal,
+					stroke: stroke.signal,
+					fill: "none" }),
+				_react2.default.createElement(_StraightLine2.default, {
+					stroke: zeroLineStroke,
+					opacity: zeroLineOpacity,
+					yValue: 0 })
+			);
+		}
+	}]);
+
+	return MACDSeries;
+}(_react.Component);
+
+MACDSeries.propTypes = {
+	className: _propTypes2.default.string,
+	yAccessor: _propTypes2.default.func.isRequired,
+	opacity: _propTypes2.default.number,
+	divergenceStroke: _propTypes2.default.bool,
+	zeroLineStroke: _propTypes2.default.string,
+	zeroLineOpacity: _propTypes2.default.number,
+	clip: _propTypes2.default.bool.isRequired,
+	stroke: _propTypes2.default.shape({
+		macd: _propTypes2.default.string.isRequired,
+		signal: _propTypes2.default.string.isRequired
+	}).isRequired,
+	fill: _propTypes2.default.shape({
+		divergence: _propTypes2.default.string.isRequired
+	}).isRequired
+};
+
+MACDSeries.defaultProps = {
+	className: "react-stockcharts-macd-series",
+	zeroLineStroke: "#000000",
+	zeroLineOpacity: 0.3,
+	opacity: 0.6,
+	divergenceStroke: false,
+	clip: true
+};
+
+exports.default = MACDSeries;
+//# sourceMappingURL=MACDSeries.js.map
+
+/***/ }),
+/* 950 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _LineSeries = __webpack_require__(64);
+
+var _LineSeries2 = _interopRequireDefault(_LineSeries);
+
+var _AreaOnlySeries = __webpack_require__(196);
+
+var _AreaOnlySeries2 = _interopRequireDefault(_AreaOnlySeries);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BollingerSeries = function (_Component) {
+	_inherits(BollingerSeries, _Component);
+
+	function BollingerSeries(props) {
+		_classCallCheck(this, BollingerSeries);
+
+		var _this = _possibleConstructorReturn(this, (BollingerSeries.__proto__ || Object.getPrototypeOf(BollingerSeries)).call(this, props));
+
+		_this.yAccessorForTop = _this.yAccessorForTop.bind(_this);
+		_this.yAccessorForMiddle = _this.yAccessorForMiddle.bind(_this);
+		_this.yAccessorForBottom = _this.yAccessorForBottom.bind(_this);
+		_this.yAccessorForScalledBottom = _this.yAccessorForScalledBottom.bind(_this);
+		return _this;
+	}
+
+	_createClass(BollingerSeries, [{
+		key: "yAccessorForTop",
+		value: function yAccessorForTop(d) {
+			var yAccessor = this.props.yAccessor;
+
+			return yAccessor(d) && yAccessor(d).top;
+		}
+	}, {
+		key: "yAccessorForMiddle",
+		value: function yAccessorForMiddle(d) {
+			var yAccessor = this.props.yAccessor;
+
+			return yAccessor(d) && yAccessor(d).middle;
+		}
+	}, {
+		key: "yAccessorForBottom",
+		value: function yAccessorForBottom(d) {
+			var yAccessor = this.props.yAccessor;
+
+			return yAccessor(d) && yAccessor(d).bottom;
+		}
+	}, {
+		key: "yAccessorForScalledBottom",
+		value: function yAccessorForScalledBottom(scale, d) {
+			var yAccessor = this.props.yAccessor;
+
+			return scale(yAccessor(d) && yAccessor(d).bottom);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var _props = this.props,
+			    areaClassName = _props.areaClassName,
+			    className = _props.className,
+			    opacity = _props.opacity;
+			var _props2 = this.props,
+			    stroke = _props2.stroke,
+			    fill = _props2.fill;
+
+
+			return _react2.default.createElement(
+				"g",
+				{ className: className },
+				_react2.default.createElement(_LineSeries2.default, { yAccessor: this.yAccessorForTop,
+					stroke: stroke.top, fill: "none" }),
+				_react2.default.createElement(_LineSeries2.default, { yAccessor: this.yAccessorForMiddle,
+					stroke: stroke.middle, fill: "none" }),
+				_react2.default.createElement(_LineSeries2.default, { yAccessor: this.yAccessorForBottom,
+					stroke: stroke.bottom, fill: "none" }),
+				_react2.default.createElement(_AreaOnlySeries2.default, { className: areaClassName,
+					yAccessor: this.yAccessorForTop,
+					base: this.yAccessorForScalledBottom,
+					stroke: "none", fill: fill,
+					opacity: opacity })
+			);
+		}
+	}]);
+
+	return BollingerSeries;
+}(_react.Component);
+
+BollingerSeries.propTypes = {
+	yAccessor: _propTypes2.default.func.isRequired,
+	className: _propTypes2.default.string,
+	areaClassName: _propTypes2.default.string,
+	opacity: _propTypes2.default.number,
+	type: _propTypes2.default.string,
+	stroke: _propTypes2.default.shape({
+		top: _propTypes2.default.string.isRequired,
+		middle: _propTypes2.default.string.isRequired,
+		bottom: _propTypes2.default.string.isRequired
+	}).isRequired,
+	fill: _propTypes2.default.string.isRequired
+};
+
+BollingerSeries.defaultProps = {
+	className: "react-stockcharts-bollinger-band-series",
+	areaClassName: "react-stockcharts-bollinger-band-series-area",
+	opacity: 0.2
+};
+
+exports.default = BollingerSeries;
+//# sourceMappingURL=BollingerSeries.js.map
+
+/***/ }),
+/* 951 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _LineSeries = __webpack_require__(64);
+
+var _LineSeries2 = _interopRequireDefault(_LineSeries);
+
+var _StraightLine = __webpack_require__(89);
+
+var _StraightLine2 = _interopRequireDefault(_StraightLine);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var RSISeries = function (_Component) {
+	_inherits(RSISeries, _Component);
+
+	function RSISeries() {
+		_classCallCheck(this, RSISeries);
+
+		return _possibleConstructorReturn(this, (RSISeries.__proto__ || Object.getPrototypeOf(RSISeries)).apply(this, arguments));
+	}
+
+	_createClass(RSISeries, [{
+		key: "render",
+		value: function render() {
+			var _props = this.props,
+			    className = _props.className,
+			    stroke = _props.stroke,
+			    opacity = _props.opacity;
+			var yAccessor = this.props.yAccessor;
+			var _props2 = this.props,
+			    overSold = _props2.overSold,
+			    middle = _props2.middle,
+			    overBought = _props2.overBought;
+
+
+			return _react2.default.createElement(
+				"g",
+				{ className: className },
+				_react2.default.createElement(_LineSeries2.default, {
+					className: className,
+					yAccessor: yAccessor,
+					stroke: stroke.line, fill: "none" }),
+				_react2.default.createElement(_StraightLine2.default, {
+					stroke: stroke.top, opacity: opacity.top,
+					yValue: overSold }),
+				_react2.default.createElement(_StraightLine2.default, {
+					stroke: stroke.middle, opacity: opacity.middle,
+					yValue: middle }),
+				_react2.default.createElement(_StraightLine2.default, {
+					stroke: stroke.bottom, opacity: opacity.bottom,
+					yValue: overBought })
+			);
+		}
+	}]);
+
+	return RSISeries;
+}(_react.Component);
+
+RSISeries.propTypes = {
+	className: _propTypes2.default.string,
+	yAccessor: _propTypes2.default.func.isRequired,
+	stroke: _propTypes2.default.shape({
+		line: _propTypes2.default.string.isRequired,
+		top: _propTypes2.default.string.isRequired,
+		middle: _propTypes2.default.string.isRequired,
+		bottom: _propTypes2.default.string.isRequired
+	}).isRequired,
+	opacity: _propTypes2.default.shape({
+		top: _propTypes2.default.number.isRequired,
+		middle: _propTypes2.default.number.isRequired,
+		bottom: _propTypes2.default.number.isRequired
+	}).isRequired,
+	overSold: _propTypes2.default.number.isRequired,
+	middle: _propTypes2.default.number.isRequired,
+	overBought: _propTypes2.default.number.isRequired
+};
+
+RSISeries.defaultProps = {
+	className: "react-stockcharts-rsi-series",
+	stroke: {
+		line: "#000000",
+		top: "#964B00",
+		middle: "#000000",
+		bottom: "#964B00"
+	},
+	opacity: {
+		top: 0.3,
+		middle: 0.3,
+		bottom: 0.3
+	},
+	overSold: 70,
+	middle: 50,
+	overBought: 30
+};
+
+exports.default = RSISeries;
+//# sourceMappingURL=RSISeries.js.map
+
+/***/ }),
+/* 952 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _LineSeries = __webpack_require__(64);
+
+var _LineSeries2 = _interopRequireDefault(_LineSeries);
+
+var _StraightLine = __webpack_require__(89);
+
+var _StraightLine2 = _interopRequireDefault(_StraightLine);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var StochasticSeries = function (_Component) {
+	_inherits(StochasticSeries, _Component);
+
+	function StochasticSeries(props) {
+		_classCallCheck(this, StochasticSeries);
+
+		var _this = _possibleConstructorReturn(this, (StochasticSeries.__proto__ || Object.getPrototypeOf(StochasticSeries)).call(this, props));
+
+		_this.yAccessorForD = _this.yAccessorForD.bind(_this);
+		_this.yAccessorForK = _this.yAccessorForK.bind(_this);
+		return _this;
+	}
+
+	_createClass(StochasticSeries, [{
+		key: "yAccessorForD",
+		value: function yAccessorForD(d) {
+			var yAccessor = this.props.yAccessor;
+
+			return yAccessor(d) && yAccessor(d).D;
+		}
+	}, {
+		key: "yAccessorForK",
+		value: function yAccessorForK(d) {
+			var yAccessor = this.props.yAccessor;
+
+			return yAccessor(d) && yAccessor(d).K;
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var _props = this.props,
+			    className = _props.className,
+			    stroke = _props.stroke,
+			    refLineOpacity = _props.refLineOpacity;
+			var _props2 = this.props,
+			    overSold = _props2.overSold,
+			    middle = _props2.middle,
+			    overBought = _props2.overBought;
+
+			return _react2.default.createElement(
+				"g",
+				{ className: className },
+				_react2.default.createElement(_LineSeries2.default, { yAccessor: this.yAccessorForD,
+					stroke: stroke.dLine,
+					fill: "none" }),
+				_react2.default.createElement(_LineSeries2.default, { yAccessor: this.yAccessorForK,
+					stroke: stroke.kLine,
+					fill: "none" }),
+				_react2.default.createElement(_StraightLine2.default, {
+					stroke: stroke.top,
+					opacity: refLineOpacity,
+					yValue: overSold }),
+				_react2.default.createElement(_StraightLine2.default, {
+					stroke: stroke.middle,
+					opacity: refLineOpacity,
+					yValue: middle }),
+				_react2.default.createElement(_StraightLine2.default, {
+					stroke: stroke.bottom,
+					opacity: refLineOpacity,
+					yValue: overBought })
+			);
+		}
+	}]);
+
+	return StochasticSeries;
+}(_react.Component);
+
+StochasticSeries.propTypes = {
+	className: _propTypes2.default.string,
+	yAccessor: _propTypes2.default.func.isRequired,
+	stroke: _propTypes2.default.shape({
+		top: _propTypes2.default.string.isRequired,
+		middle: _propTypes2.default.string.isRequired,
+		bottom: _propTypes2.default.string.isRequired,
+		dLine: _propTypes2.default.string.isRequired,
+		kLine: _propTypes2.default.string.isRequired
+	}).isRequired,
+	overSold: _propTypes2.default.number.isRequired,
+	middle: _propTypes2.default.number.isRequired,
+	overBought: _propTypes2.default.number.isRequired,
+	refLineOpacity: _propTypes2.default.number.isRequired
+};
+
+StochasticSeries.defaultProps = {
+	className: "react-stockcharts-stochastic-series",
+	stroke: {
+		top: "#964B00",
+		middle: "#000000",
+		bottom: "#964B00",
+		dLine: "#EA2BFF",
+		kLine: "#74D400"
+	},
+	overSold: 80,
+	middle: 50,
+	overBought: 20,
+	refLineOpacity: 0.3
+};
+
+exports.default = StochasticSeries;
+//# sourceMappingURL=StochasticSeries.js.map
+
+/***/ }),
+/* 953 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _OverlayBarSeries = __webpack_require__(954);
+
+var _OverlayBarSeries2 = _interopRequireDefault(_OverlayBarSeries);
+
+var _StraightLine = __webpack_require__(89);
+
+var _StraightLine2 = _interopRequireDefault(_StraightLine);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ElderRaySeries = function (_Component) {
+	_inherits(ElderRaySeries, _Component);
+
+	function ElderRaySeries(props) {
+		_classCallCheck(this, ElderRaySeries);
+
+		var _this = _possibleConstructorReturn(this, (ElderRaySeries.__proto__ || Object.getPrototypeOf(ElderRaySeries)).call(this, props));
+
+		_this.fillForEachBar = _this.fillForEachBar.bind(_this);
+		_this.yAccessorTop = _this.yAccessorTop.bind(_this);
+		_this.yAccessorBullTop = _this.yAccessorBullTop.bind(_this);
+		_this.yAccessorBearTop = _this.yAccessorBearTop.bind(_this);
+		_this.yAccessorBullBottom = _this.yAccessorBullBottom.bind(_this);
+		_this.yAccessorBearBottom = _this.yAccessorBearBottom.bind(_this);
+		_this.yAccessorForBarBase = _this.yAccessorForBarBase.bind(_this);
+		return _this;
+	}
+
+	_createClass(ElderRaySeries, [{
+		key: "yAccessorTop",
+		value: function yAccessorTop(d) {
+			var yAccessor = this.props.yAccessor;
+
+			return yAccessor(d) && Math.max(yAccessor(d).bullPower, 0);
+		}
+	}, {
+		key: "yAccessorBullTop",
+		value: function yAccessorBullTop(d) {
+			var yAccessor = this.props.yAccessor;
+
+			return yAccessor(d) && (yAccessor(d).bullPower > 0 ? yAccessor(d).bullPower : undefined);
+		}
+	}, {
+		key: "yAccessorBearTop",
+		value: function yAccessorBearTop(d) {
+			var yAccessor = this.props.yAccessor;
+
+			return yAccessor(d) && (yAccessor(d).bearPower > 0 ? yAccessor(d).bearPower : undefined);
+		}
+	}, {
+		key: "yAccessorBullBottom",
+		value: function yAccessorBullBottom(d) {
+			var yAccessor = this.props.yAccessor;
+
+			return yAccessor(d) && (yAccessor(d).bullPower < 0 ? 0 : undefined);
+		}
+	}, {
+		key: "yAccessorBearBottom",
+		value: function yAccessorBearBottom(d) {
+			var yAccessor = this.props.yAccessor;
+
+			return yAccessor(d) && (yAccessor(d).bullPower < 0 || yAccessor(d).bullPower * yAccessor(d).bearPower < 0 // bullPower is +ve and bearPower is -ve
+			? Math.min(0, yAccessor(d).bullPower) : undefined);
+		}
+	}, {
+		key: "yAccessorForBarBase",
+		value: function yAccessorForBarBase(xScale, yScale, d) {
+			var yAccessor = this.props.yAccessor;
+
+			var y = yAccessor(d) && Math.min(yAccessor(d).bearPower, 0);
+			return yScale(y);
+		}
+	}, {
+		key: "fillForEachBar",
+		value: function fillForEachBar(d, yAccessorNumber) {
+			var _props = this.props,
+			    bullPowerFill = _props.bullPowerFill,
+			    bearPowerFill = _props.bearPowerFill;
+
+			return yAccessorNumber % 2 === 0 ? bullPowerFill : bearPowerFill;
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var _props2 = this.props,
+			    className = _props2.className,
+			    opacity = _props2.opacity,
+			    stroke = _props2.stroke,
+			    straightLineStroke = _props2.straightLineStroke,
+			    straightLineOpacity = _props2.straightLineOpacity,
+			    widthRatio = _props2.widthRatio;
+			var clip = this.props.clip;
+
+
+			return _react2.default.createElement(
+				"g",
+				{ className: className },
+				_react2.default.createElement(_OverlayBarSeries2.default, {
+					baseAt: this.yAccessorForBarBase,
+					className: "react-stockcharts-elderray-bar",
+					stroke: stroke,
+					fill: this.fillForEachBar,
+					opacity: opacity,
+					widthRatio: widthRatio,
+					clip: clip,
+					yAccessor: [this.yAccessorBullTop, this.yAccessorBearTop, this.yAccessorBullBottom, this.yAccessorBearBottom] }),
+				_react2.default.createElement(_StraightLine2.default, {
+					className: "react-stockcharts-elderray-straight-line",
+					yValue: 0,
+					stroke: straightLineStroke,
+					opacity: straightLineOpacity })
+			);
+		}
+	}]);
+
+	return ElderRaySeries;
+}(_react.Component);
+
+ElderRaySeries.propTypes = {
+	className: _propTypes2.default.string,
+	yAccessor: _propTypes2.default.func,
+	opacity: _propTypes2.default.number,
+	stroke: _propTypes2.default.bool,
+	bullPowerFill: _propTypes2.default.string,
+	bearPowerFill: _propTypes2.default.string,
+	straightLineStroke: _propTypes2.default.string,
+	straightLineOpacity: _propTypes2.default.number,
+	widthRatio: _propTypes2.default.number,
+	clip: _propTypes2.default.bool.isRequired
+};
+
+ElderRaySeries.defaultProps = {
+	className: "react-stockcharts-elderray-series",
+	straightLineStroke: "#000000",
+	straightLineOpacity: 0.3,
+	opacity: 0.5,
+	stroke: true,
+	bullPowerFill: "#6BA583",
+	bearPowerFill: "#FF0000",
+	widthRatio: 0.8,
+	clip: true
+};
+
+exports.default = ElderRaySeries;
+//# sourceMappingURL=ElderRaySeries.js.map
+
+/***/ }),
+/* 954 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _d3Array = __webpack_require__(8);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _StackedBarSeries = __webpack_require__(122);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var OverlayBarSeries = function (_Component) {
+	_inherits(OverlayBarSeries, _Component);
+
+	function OverlayBarSeries(props) {
+		_classCallCheck(this, OverlayBarSeries);
+
+		var _this = _possibleConstructorReturn(this, (OverlayBarSeries.__proto__ || Object.getPrototypeOf(OverlayBarSeries)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(OverlayBarSeries, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var yAccessor = this.props.yAccessor;
+			var xAccessor = moreProps.xAccessor;
+			var xScale = moreProps.xScale,
+			    yScale = moreProps.chartConfig.yScale,
+			    plotData = moreProps.plotData;
+
+
+			var bars = getBars(this.props, xAccessor, yAccessor, xScale, yScale, plotData);
+
+			(0, _StackedBarSeries.drawOnCanvas2)(this.props, ctx, bars);
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var yAccessor = this.props.yAccessor;
+			var xAccessor = moreProps.xAccessor;
+			var xScale = moreProps.xScale,
+			    yScale = moreProps.chartConfig.yScale,
+			    plotData = moreProps.plotData;
+
+
+			var bars = getBars(this.props, xAccessor, yAccessor, xScale, yScale, plotData);
+			return _react2.default.createElement(
+				"g",
+				{ className: "react-stockcharts-bar-series" },
+				(0, _StackedBarSeries.getBarsSVG2)(this.props, bars)
+			);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var clip = this.props.clip;
+
+
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				svgDraw: this.renderSVG,
+				canvasToDraw: _GenericComponent.getAxisCanvas,
+				canvasDraw: this.drawOnCanvas,
+				clip: clip,
+				drawOn: ["pan"]
+			});
+		}
+	}]);
+
+	return OverlayBarSeries;
+}(_react.Component);
+
+OverlayBarSeries.propTypes = {
+	baseAt: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]).isRequired,
+	direction: _propTypes2.default.oneOf(["up", "down"]).isRequired,
+	stroke: _propTypes2.default.bool.isRequired,
+	widthRatio: _propTypes2.default.number.isRequired,
+	opacity: _propTypes2.default.number.isRequired,
+	fill: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]).isRequired,
+	className: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]).isRequired,
+	xAccessor: _propTypes2.default.func,
+	yAccessor: _propTypes2.default.arrayOf(_propTypes2.default.func),
+	xScale: _propTypes2.default.func,
+	yScale: _propTypes2.default.func,
+	plotData: _propTypes2.default.array,
+	clip: _propTypes2.default.bool.isRequired
+};
+
+OverlayBarSeries.defaultProps = {
+	baseAt: function baseAt(xScale, yScale /* , d*/) {
+		return (0, _utils.first)(yScale.range());
+	},
+	direction: "up",
+	className: "bar",
+	stroke: false,
+	fill: "#4682B4",
+	opacity: 1,
+	widthRatio: 0.5,
+	clip: true
+};
+
+function getBars(props, xAccessor, yAccessor, xScale, yScale, plotData) {
+	var baseAt = props.baseAt,
+	    className = props.className,
+	    fill = props.fill,
+	    stroke = props.stroke,
+	    widthRatio = props.widthRatio;
+
+
+	var getClassName = (0, _utils.functor)(className);
+	var getFill = (0, _utils.functor)(fill);
+	var getBase = (0, _utils.functor)(baseAt);
+
+	var width = Math.abs(xScale(xAccessor((0, _utils.last)(plotData))) - xScale(xAccessor((0, _utils.first)(plotData))));
+
+	var bw = width / (plotData.length - 1) * widthRatio;
+	var barWidth = Math.round(bw);
+	var offset = barWidth === 1 ? 0 : 0.5 * bw;
+
+	// console.log(xScale.domain(), yScale.domain());
+
+	var bars = plotData.map(function (d) {
+		// eslint-disable-next-line prefer-const
+		var innerBars = yAccessor.map(function (eachYAccessor, i) {
+			var yValue = eachYAccessor(d);
+			if ((0, _utils.isNotDefined)(yValue)) return undefined;
+
+			var xValue = xAccessor(d);
+			var x = Math.round(xScale(xValue)) - offset;
+			var y = yScale(yValue);
+			// console.log(yValue, y, xValue, x)
+			return {
+				width: barWidth,
+				x: x,
+				y: y,
+				className: getClassName(d, i),
+				stroke: stroke ? getFill(d, i) : "none",
+				fill: getFill(d, i),
+				i: i
+			};
+		}).filter(function (yValue) {
+			return (0, _utils.isDefined)(yValue);
+		});
+
+		var b = getBase(xScale, yScale, d);
+		var h = void 0;
+		for (var i = innerBars.length - 1; i >= 0; i--) {
+			h = b - innerBars[i].y;
+			if (h < 0) {
+				innerBars[i].y = b;
+				h = -1 * h;
+			}
+			innerBars[i].height = h;
+			b = innerBars[i].y;
+		}
+		return innerBars;
+	});
+
+	return (0, _d3Array.merge)(bars);
+}
+
+exports.default = OverlayBarSeries;
+//# sourceMappingURL=OverlayBarSeries.js.map
+
+/***/ }),
+/* 955 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _d3Array = __webpack_require__(8);
+
+var _d3Collection = __webpack_require__(29);
+
+var _d3Scale = __webpack_require__(61);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var VolumeProfileSeries = function (_Component) {
+	_inherits(VolumeProfileSeries, _Component);
+
+	function VolumeProfileSeries(props) {
+		_classCallCheck(this, VolumeProfileSeries);
+
+		var _this = _possibleConstructorReturn(this, (VolumeProfileSeries.__proto__ || Object.getPrototypeOf(VolumeProfileSeries)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(VolumeProfileSeries, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var xAccessor = moreProps.xAccessor,
+			    width = moreProps.width;
+
+			var _helper = helper(this.props, moreProps, xAccessor, width),
+			    rects = _helper.rects,
+			    sessionBg = _helper.sessionBg;
+
+			_drawOnCanvas(ctx, this.props, rects, sessionBg);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				svgDraw: this.renderSVG,
+				canvasDraw: this.drawOnCanvas,
+				canvasToDraw: _GenericComponent.getAxisCanvas,
+				drawOn: ["pan"]
+			});
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var _props = this.props,
+			    className = _props.className,
+			    opacity = _props.opacity;
+			var _props2 = this.props,
+			    showSessionBackground = _props2.showSessionBackground,
+			    sessionBackGround = _props2.sessionBackGround,
+			    sessionBackGroundOpacity = _props2.sessionBackGroundOpacity;
+			var xAccessor = moreProps.xAccessor,
+			    width = moreProps.width;
+
+			var _helper2 = helper(this.props, moreProps, xAccessor, width),
+			    rects = _helper2.rects,
+			    sessionBg = _helper2.sessionBg;
+
+			var sessionBgSvg = showSessionBackground ? sessionBg.map(function (d, idx) {
+				return _react2.default.createElement("rect", _extends({ key: idx }, d, { opacity: sessionBackGroundOpacity, fill: sessionBackGround }));
+			}) : null;
+
+			return _react2.default.createElement(
+				"g",
+				{ className: className },
+				sessionBgSvg,
+				rects.map(function (d, i) {
+					return _react2.default.createElement(
+						"g",
+						{ key: i },
+						_react2.default.createElement("rect", { x: d.x, y: d.y,
+							width: d.w1, height: d.height,
+							fill: d.fill1, stroke: d.stroke1, fillOpacity: opacity }),
+						_react2.default.createElement("rect", { x: d.x + d.w1, y: d.y,
+							width: d.w2, height: d.height,
+							fill: d.fill2, stroke: d.stroke2, fillOpacity: opacity })
+					);
+				})
+			);
+		}
+	}]);
+
+	return VolumeProfileSeries;
+}(_react.Component);
+
+VolumeProfileSeries.propTypes = {
+	className: _propTypes2.default.string,
+	opacity: _propTypes2.default.number,
+	showSessionBackground: _propTypes2.default.bool,
+	sessionBackGround: _propTypes2.default.string,
+	sessionBackGroundOpacity: _propTypes2.default.number
+};
+
+VolumeProfileSeries.defaultProps = {
+	opacity: 0.5,
+	className: "line ",
+	bins: 20,
+	maxProfileWidthPercent: 50,
+	source: function source(d) {
+		return d.close;
+	},
+	volume: function volume(d) {
+		return d.volume;
+	},
+	absoluteChange: function absoluteChange(d) {
+		return d.absoluteChange;
+	},
+	bySession: false,
+	/* eslint-disable no-unused-vars */
+	sessionStart: function sessionStart(_ref) {
+		var d = _ref.d,
+		    i = _ref.i,
+		    plotData = _ref.plotData;
+		return d.idx.startOfMonth;
+	},
+	/* eslint-enable no-unused-vars */
+	orient: "left",
+	fill: function fill(_ref2) {
+		var type = _ref2.type;
+		return type === "up" ? "#6BA583" : "#FF0000";
+	},
+	// // fill: ({ type }) => { var c = type === "up" ? "#6BA583" : "#FF0000"; console.log(type, c); return c },
+	// stroke: ({ type }) =>  type === "up" ? "#6BA583" : "#FF0000",
+	// stroke: "none",
+	stroke: "#FFFFFF",
+	showSessionBackground: false,
+	sessionBackGround: "#4682B4",
+	sessionBackGroundOpacity: 0.3,
+	partialStartOK: false,
+	partialEndOK: true
+};
+
+function helper(props, moreProps, xAccessor, width) {
+	var realXScale = moreProps.xScale,
+	    yScale = moreProps.chartConfig.yScale,
+	    plotData = moreProps.plotData;
+	var sessionStart = props.sessionStart,
+	    bySession = props.bySession,
+	    partialStartOK = props.partialStartOK,
+	    partialEndOK = props.partialEndOK;
+	var bins = props.bins,
+	    maxProfileWidthPercent = props.maxProfileWidthPercent,
+	    source = props.source,
+	    volume = props.volume,
+	    absoluteChange = props.absoluteChange,
+	    orient = props.orient,
+	    fill = props.fill,
+	    stroke = props.stroke;
+
+
+	var sessionBuilder = (0, _utils.accumulatingWindow)().discardTillStart(!partialStartOK).discardTillEnd(!partialEndOK).accumulateTill(function (d, i) {
+		return sessionStart({ d: d, i: i, plotData: plotData });
+	}).accumulator(_utils.identity);
+
+	var dx = plotData.length > 1 ? realXScale(xAccessor(plotData[1])) - realXScale(xAccessor((0, _utils.head)(plotData))) : 0;
+
+	var sessions = bySession ? sessionBuilder(plotData) : [plotData];
+
+	var allRects = sessions.map(function (session) {
+
+		var begin = bySession ? realXScale(xAccessor((0, _utils.head)(session))) : 0;
+		var finish = bySession ? realXScale(xAccessor((0, _utils.last)(session))) : width;
+		var sessionWidth = finish - begin + dx;
+
+		// console.log(session)
+
+		/* var histogram = d3.layout.histogram()
+  		.value(source)
+  		.bins(bins);*/
+
+		var histogram2 = (0, _d3Array.histogram)()
+		// .domain(xScale.domain())
+		.value(source).thresholds(bins);
+
+		// console.log(bins, histogram(session))
+		// console.log(bins, histogram2(session))
+		var rollup = (0, _d3Collection.nest)().key(function (d) {
+			return d.direction;
+		}).sortKeys(orient === "right" ? _d3Array.descending : _d3Array.ascending).rollup(function (leaves) {
+			return (0, _d3Array.sum)(leaves, function (d) {
+				return d.volume;
+			});
+		});
+
+		var values = histogram2(session);
+		// console.log("values", values)
+
+		var volumeInBins = values.map(function (arr) {
+			return arr.map(function (d) {
+				return absoluteChange(d) > 0 ? { direction: "up", volume: volume(d) } : { direction: "down", volume: volume(d) };
+			});
+		}).map(function (arr) {
+			return rollup.entries(arr);
+		});
+
+		// console.log("volumeInBins", volumeInBins)
+		var volumeValues = volumeInBins.map(function (each) {
+			return (0, _d3Array.sum)(each.map(function (d) {
+				return d.value;
+			}));
+		});
+
+		// console.log("volumeValues", volumeValues)
+		var base = function base(xScale) {
+			return (0, _utils.head)(xScale.range());
+		};
+
+		var _ref3 = orient === "right" ? [begin, begin + sessionWidth * maxProfileWidthPercent / 100] : [finish, finish - sessionWidth * (100 - maxProfileWidthPercent) / 100],
+		    _ref4 = _slicedToArray(_ref3, 2),
+		    start = _ref4[0],
+		    end = _ref4[1];
+
+		var xScale = (0, _d3Scale.scaleLinear)().domain([0, (0, _d3Array.max)(volumeValues)]).range([start, end]);
+
+		// console.log(xScale.domain())
+
+		var totalVolumes = volumeInBins.map(function (volumes) {
+
+			var totalVolume = (0, _d3Array.sum)(volumes, function (d) {
+				return d.value;
+			});
+			var totalVolumeX = xScale(totalVolume);
+			var width = base(xScale) - totalVolumeX;
+			var x = width < 0 ? totalVolumeX + width : totalVolumeX;
+
+			var ws = volumes.map(function (d) {
+				return {
+					type: d.key,
+					width: d.value * Math.abs(width) / totalVolume
+				};
+			});
+
+			return { x: x, ws: ws, totalVolumeX: totalVolumeX };
+		});
+		// console.log("totalVolumes", totalVolumes)
+
+		var rects = (0, _d3Array.zip)(values, totalVolumes).map(function (_ref5) {
+			var _ref6 = _slicedToArray(_ref5, 2),
+			    d = _ref6[0],
+			    _ref6$ = _ref6[1],
+			    x = _ref6$.x,
+			    ws = _ref6$.ws;
+
+			var w1 = ws[0] || { type: "up", width: 0 };
+			var w2 = ws[1] || { type: "down", width: 0 };
+
+			return {
+				// y: yScale(d.x + d.dx),
+				y: yScale(d.x1),
+				// height: yScale(d.x - d.dx) - yScale(d.x),
+				height: yScale(d.x1) - yScale(d.x0),
+				x: x,
+				width: width,
+				w1: w1.width,
+				w2: w2.width,
+				stroke1: (0, _utils.functor)(stroke)(w1),
+				stroke2: (0, _utils.functor)(stroke)(w2),
+				fill1: (0, _utils.functor)(fill)(w1),
+				fill2: (0, _utils.functor)(fill)(w2)
+			};
+		});
+
+		// console.log("rects", rects)
+
+		var sessionBg = {
+			x: begin,
+			y: (0, _utils.last)(rects).y,
+			height: (0, _utils.head)(rects).y - (0, _utils.last)(rects).y + (0, _utils.head)(rects).height,
+			width: sessionWidth
+		};
+
+		return { rects: rects, sessionBg: sessionBg };
+	});
+
+	return {
+		rects: (0, _d3Array.merge)(allRects.map(function (d) {
+			return d.rects;
+		})),
+		sessionBg: allRects.map(function (d) {
+			return d.sessionBg;
+		})
+	};
+}
+
+function _drawOnCanvas(ctx, props, rects, sessionBg) {
+	var opacity = props.opacity,
+	    sessionBackGround = props.sessionBackGround,
+	    sessionBackGroundOpacity = props.sessionBackGroundOpacity,
+	    showSessionBackground = props.showSessionBackground;
+
+	// var { rects, sessionBg } = helper(props, xScale, yScale, plotData);
+
+	if (showSessionBackground) {
+		ctx.fillStyle = (0, _utils.hexToRGBA)(sessionBackGround, sessionBackGroundOpacity);
+
+		sessionBg.forEach(function (each) {
+			var x = each.x,
+			    y = each.y,
+			    height = each.height,
+			    width = each.width;
+
+
+			ctx.beginPath();
+			ctx.rect(x, y, width, height);
+			ctx.closePath();
+			ctx.fill();
+		});
+	}
+
+	rects.forEach(function (each) {
+		var x = each.x,
+		    y = each.y,
+		    height = each.height,
+		    w1 = each.w1,
+		    w2 = each.w2,
+		    stroke1 = each.stroke1,
+		    stroke2 = each.stroke2,
+		    fill1 = each.fill1,
+		    fill2 = each.fill2;
+
+
+		if (w1 > 0) {
+			ctx.fillStyle = (0, _utils.hexToRGBA)(fill1, opacity);
+			if (stroke1 !== "none") ctx.strokeStyle = stroke1;
+
+			ctx.beginPath();
+			ctx.rect(x, y, w1, height);
+			ctx.closePath();
+			ctx.fill();
+
+			if (stroke1 !== "none") ctx.stroke();
+		}
+
+		if (w2 > 0) {
+			ctx.fillStyle = (0, _utils.hexToRGBA)(fill2, opacity);
+			if (stroke2 !== "none") ctx.strokeStyle = stroke2;
+
+			ctx.beginPath();
+			ctx.rect(x + w1, y, w2, height);
+			ctx.closePath();
+			ctx.fill();
+
+			if (stroke2 !== "none") ctx.stroke();
+		}
+	});
+}
+
+exports.default = VolumeProfileSeries;
+//# sourceMappingURL=VolumeProfileSeries.js.map
+
+/***/ }),
+/* 956 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SARSeries = function (_Component) {
+	_inherits(SARSeries, _Component);
+
+	function SARSeries(props) {
+		_classCallCheck(this, SARSeries);
+
+		var _this = _possibleConstructorReturn(this, (SARSeries.__proto__ || Object.getPrototypeOf(SARSeries)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		_this.isHover = _this.isHover.bind(_this);
+		return _this;
+	}
+
+	_createClass(SARSeries, [{
+		key: "isHover",
+		value: function isHover(moreProps) {
+			var mouseXY = moreProps.mouseXY,
+			    currentItem = moreProps.currentItem,
+			    yScale = moreProps.chartConfig.yScale;
+			var yAccessor = this.props.yAccessor;
+
+			var y = mouseXY[1];
+			var currentY = yScale(yAccessor(currentItem));
+			return y < currentY + 5 && y > currentY - 5;
+		}
+	}, {
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var _props = this.props,
+			    yAccessor = _props.yAccessor,
+			    fill = _props.fill,
+			    opacity = _props.opacity;
+			var xAccessor = moreProps.xAccessor,
+			    plotData = moreProps.plotData,
+			    xScale = moreProps.xScale,
+			    yScale = moreProps.chartConfig.yScale,
+			    hovering = moreProps.hovering;
+
+
+			var width = xScale(xAccessor((0, _utils.last)(plotData))) - xScale(xAccessor((0, _utils.first)(plotData)));
+
+			var d = width / plotData.length * 0.5 / 2;
+			var rx = Math.max(0.5, d / 2) + (hovering ? 2 : 0);
+			var ry = Math.min(2, Math.max(0.5, d)) + (hovering ? 0 : 0);
+
+			plotData.forEach(function (each) {
+				var centerX = xScale(xAccessor(each));
+				var centerY = yScale(yAccessor(each));
+				var color = yAccessor(each) > each.close ? fill.falling : fill.rising;
+
+				ctx.fillStyle = (0, _utils.hexToRGBA)(color, opacity);
+				ctx.strokeStyle = color;
+
+				ctx.beginPath();
+				ctx.ellipse(centerX, centerY, rx, ry, 0, 0, 2 * Math.PI);
+				ctx.closePath();
+				ctx.fill();
+				ctx.stroke();
+			});
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var _props2 = this.props,
+			    className = _props2.className,
+			    yAccessor = _props2.yAccessor;
+			var xAccessor = moreProps.xAccessor,
+			    plotData = moreProps.plotData,
+			    xScale = moreProps.xScale,
+			    yScale = moreProps.chartConfig.yScale;
+			// console.log(moreProps);
+
+			return _react2.default.createElement(
+				"g",
+				{ className: className },
+				plotData.map(function (each, idx) {
+					return _react2.default.createElement("circle", { key: idx, cx: xScale(xAccessor(each)),
+						cy: yScale(yAccessor(each)), r: 3, fill: "green" });
+				})
+			);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var highlightOnHover = this.props.highlightOnHover;
+
+			var hoverProps = highlightOnHover ? {
+				isHover: this.isHover,
+				drawOn: ["mousemove", "pan"],
+				canvasToDraw: _GenericComponent.getMouseCanvas
+			} : {
+				drawOn: ["pan"],
+				canvasToDraw: _GenericComponent.getAxisCanvas
+			};
+
+			return _react2.default.createElement(_GenericChartComponent2.default, _extends({
+				svgDraw: this.renderSVG,
+
+				canvasDraw: this.drawOnCanvas,
+
+				onClickWhenHover: this.props.onClick,
+				onDoubleClickWhenHover: this.props.onDoubleClick,
+				onContextMenuWhenHover: this.props.onContextMenu
+			}, hoverProps));
+		}
+	}]);
+
+	return SARSeries;
+}(_react.Component);
+
+SARSeries.propTypes = {
+	className: _propTypes2.default.string,
+	fill: _propTypes2.default.object.isRequired,
+	yAccessor: _propTypes2.default.func.isRequired,
+	opacity: _propTypes2.default.number.isRequired,
+	onClick: _propTypes2.default.func,
+	onDoubleClick: _propTypes2.default.func,
+	onContextMenu: _propTypes2.default.func,
+	highlightOnHover: _propTypes2.default.bool
+};
+
+SARSeries.defaultProps = {
+	className: "react-stockcharts-sar",
+	fill: {
+		falling: "#4682B4",
+		rising: "#15EC2E"
+	},
+	highlightOnHover: true,
+	opacity: 0.2,
+	onClick: function onClick(e) {
+		console.log("Click", e);
+	},
+	onDoubleClick: function onDoubleClick(e) {
+		console.log("Double Click", e);
+	},
+	onContextMenu: function onContextMenu(e) {
+		console.log("Right Click", e);
+	}
+};
+
+exports.default = SARSeries;
+//# sourceMappingURL=SARSeries.js.map
+
+/***/ }),
+/* 957 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _XAxis = __webpack_require__(958);
+
+Object.defineProperty(exports, "XAxis", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_XAxis).default;
+  }
+});
+
+var _YAxis = __webpack_require__(960);
+
+Object.defineProperty(exports, "YAxis", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_YAxis).default;
+  }
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+/* 958 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _Axis = __webpack_require__(357);
+
+var _Axis2 = _interopRequireDefault(_Axis);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var XAxis = function (_Component) {
+	_inherits(XAxis, _Component);
+
+	function XAxis(props, context) {
+		_classCallCheck(this, XAxis);
+
+		var _this = _possibleConstructorReturn(this, (XAxis.__proto__ || Object.getPrototypeOf(XAxis)).call(this, props, context));
+
+		_this.axisZoomCallback = _this.axisZoomCallback.bind(_this);
+		return _this;
+	}
+
+	_createClass(XAxis, [{
+		key: "axisZoomCallback",
+		value: function axisZoomCallback(newXDomain) {
+			var xAxisZoom = this.context.xAxisZoom;
+
+			xAxisZoom(newXDomain);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var showTicks = this.props.showTicks;
+
+			var moreProps = helper(this.props, this.context);
+
+			return _react2.default.createElement(_Axis2.default, _extends({}, this.props, moreProps, { x: true,
+				zoomEnabled: this.props.zoomEnabled && showTicks,
+				axisZoomCallback: this.axisZoomCallback,
+				zoomCursorClassName: "react-stockcharts-ew-resize-cursor" }));
+		}
+	}]);
+
+	return XAxis;
+}(_react.Component);
+
+XAxis.propTypes = {
+	axisAt: _propTypes2.default.oneOfType([_propTypes2.default.oneOf(["top", "bottom", "middle"]), _propTypes2.default.number]).isRequired,
+	orient: _propTypes2.default.oneOf(["top", "bottom"]).isRequired,
+	innerTickSize: _propTypes2.default.number,
+	outerTickSize: _propTypes2.default.number,
+	tickFormat: _propTypes2.default.func,
+	tickPadding: _propTypes2.default.number,
+	tickSize: _propTypes2.default.number,
+	ticks: _propTypes2.default.number,
+	tickValues: _propTypes2.default.array,
+	showTicks: _propTypes2.default.bool,
+	className: _propTypes2.default.string,
+	zoomEnabled: _propTypes2.default.bool,
+	onContextMenu: _propTypes2.default.func,
+	onDoubleClick: _propTypes2.default.func
+};
+
+XAxis.defaultProps = {
+	showGrid: false,
+	showTicks: true,
+	showDomain: true,
+	className: "react-stockcharts-x-axis",
+	ticks: 10,
+	outerTickSize: 0,
+	fill: "none",
+	stroke: "#000000", // x axis stroke coloe
+	strokeWidth: 1,
+	opacity: 1, // x axis opacity
+	domainClassName: "react-stockcharts-axis-domain",
+	innerTickSize: 5,
+	tickPadding: 6,
+	tickStroke: "#000000", // tick/grid stroke
+	tickStrokeOpacity: 1,
+	fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
+	fontSize: 12,
+	xZoomHeight: 25,
+	zoomEnabled: true,
+	getMouseDelta: function getMouseDelta(startXY, mouseXY) {
+		return startXY[0] - mouseXY[0];
+	}
+};
+
+XAxis.contextTypes = {
+	chartConfig: _propTypes2.default.object.isRequired,
+	xAxisZoom: _propTypes2.default.func.isRequired
+};
+
+function helper(props, context) {
+	var axisAt = props.axisAt,
+	    xZoomHeight = props.xZoomHeight,
+	    orient = props.orient;
+	var _context$chartConfig = context.chartConfig,
+	    width = _context$chartConfig.width,
+	    height = _context$chartConfig.height;
+
+
+	var axisLocation = void 0;
+	var x = 0,
+	    w = width,
+	    h = xZoomHeight;
+
+	if (axisAt === "top") axisLocation = 0;else if (axisAt === "bottom") axisLocation = height;else if (axisAt === "middle") axisLocation = height / 2;else axisLocation = axisAt;
+
+	var y = orient === "top" ? -xZoomHeight : 0;
+
+	return {
+		transform: [0, axisLocation],
+		range: [0, width],
+		getScale: getXScale,
+		bg: { x: x, y: y, h: h, w: w }
+	};
+}
+
+function getXScale(moreProps) {
+	var scale = moreProps.xScale,
+	    width = moreProps.width;
+
+
+	if (scale.invert) {
+		var trueRange = [0, width];
+		var trueDomain = trueRange.map(scale.invert);
+		return scale.copy().domain(trueDomain).range(trueRange);
+	}
+
+	return scale;
+}
+
+exports.default = XAxis;
+//# sourceMappingURL=XAxis.js.map
+
+/***/ }),
+/* 959 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _d3Selection = __webpack_require__(12);
+
+var _d3Array = __webpack_require__(8);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var AxisZoomCapture = function (_Component) {
+	_inherits(AxisZoomCapture, _Component);
+
+	function AxisZoomCapture(props) {
+		_classCallCheck(this, AxisZoomCapture);
+
+		var _this = _possibleConstructorReturn(this, (AxisZoomCapture.__proto__ || Object.getPrototypeOf(AxisZoomCapture)).call(this, props));
+
+		_this.handleDragStartMouse = _this.handleDragStartMouse.bind(_this);
+		_this.handleDragStartTouch = _this.handleDragStartTouch.bind(_this);
+		_this.handleDrag = _this.handleDrag.bind(_this);
+		_this.handleDragEnd = _this.handleDragEnd.bind(_this);
+		_this.handleRightClick = _this.handleRightClick.bind(_this);
+		_this.saveNode = _this.saveNode.bind(_this);
+		_this.state = {
+			startPosition: null
+		};
+		return _this;
+	}
+
+	_createClass(AxisZoomCapture, [{
+		key: "saveNode",
+		value: function saveNode(node) {
+			this.node = node;
+		}
+	}, {
+		key: "handleRightClick",
+		value: function handleRightClick(e) {
+			e.stopPropagation();
+			e.preventDefault();
+
+			var onContextMenu = this.props.onContextMenu;
+
+
+			var mouseXY = (0, _utils.mousePosition)(e, this.node.getBoundingClientRect());
+
+			(0, _d3Selection.select)((0, _utils.d3Window)(this.node)).on(_utils.MOUSEMOVE, null).on(_utils.MOUSEUP, null);
+			this.setState({
+				startPosition: null
+			});
+
+			onContextMenu(mouseXY, e);
+
+			this.contextMenuClicked = true;
+		}
+	}, {
+		key: "handleDragStartMouse",
+		value: function handleDragStartMouse(e) {
+			this.mouseInteraction = true;
+
+			var _props = this.props,
+			    getScale = _props.getScale,
+			    getMoreProps = _props.getMoreProps;
+
+			var startScale = getScale(getMoreProps());
+			this.dragHappened = false;
+
+			if (startScale.invert) {
+				(0, _d3Selection.select)((0, _utils.d3Window)(this.node)).on(_utils.MOUSEMOVE, this.handleDrag, false).on(_utils.MOUSEUP, this.handleDragEnd, false);
+
+				var startXY = (0, _utils.mousePosition)(e);
+
+				this.setState({
+					startPosition: {
+						startXY: startXY,
+						startScale: startScale
+					}
+				});
+			}
+			e.preventDefault();
+		}
+	}, {
+		key: "handleDragStartTouch",
+		value: function handleDragStartTouch(e) {
+			this.mouseInteraction = false;
+
+			var _props2 = this.props,
+			    getScale = _props2.getScale,
+			    getMoreProps = _props2.getMoreProps;
+
+			var startScale = getScale(getMoreProps());
+			this.dragHappened = false;
+
+			if (e.touches.length === 1 && startScale.invert) {
+				(0, _d3Selection.select)((0, _utils.d3Window)(this.node)).on(_utils.TOUCHMOVE, this.handleDrag).on(_utils.TOUCHEND, this.handleDragEnd);
+
+				var startXY = (0, _utils.touchPosition)((0, _utils.getTouchProps)(e.touches[0]), e);
+
+				this.setState({
+					startPosition: {
+						startXY: startXY,
+						startScale: startScale
+					}
+				});
+			}
+		}
+	}, {
+		key: "handleDrag",
+		value: function handleDrag() {
+			var startPosition = this.state.startPosition;
+			var _props3 = this.props,
+			    getMouseDelta = _props3.getMouseDelta,
+			    inverted = _props3.inverted;
+
+
+			this.dragHappened = true;
+			if ((0, _utils.isDefined)(startPosition)) {
+				var startScale = startPosition.startScale;
+				var startXY = startPosition.startXY;
+
+
+				var mouseXY = this.mouseInteraction ? (0, _d3Selection.mouse)(this.node) : (0, _d3Selection.touches)(this.node)[0];
+
+				var diff = getMouseDelta(startXY, mouseXY);
+
+				var center = (0, _d3Array.mean)(startScale.range());
+
+				var tempRange = startScale.range().map(function (d) {
+					return inverted ? d - (0, _utils.sign)(d - center) * diff : d + (0, _utils.sign)(d - center) * diff;
+				});
+
+				var newDomain = tempRange.map(startScale.invert);
+
+				if ((0, _utils.sign)((0, _utils.last)(startScale.range()) - (0, _utils.first)(startScale.range())) === (0, _utils.sign)((0, _utils.last)(tempRange) - (0, _utils.first)(tempRange))) {
+					var axisZoomCallback = this.props.axisZoomCallback;
+					// console.log(startXScale.domain(), newXDomain)
+
+					axisZoomCallback(newDomain);
+				}
+			}
+		}
+	}, {
+		key: "handleDragEnd",
+		value: function handleDragEnd() {
+			var _this2 = this;
+
+			if (!this.dragHappened) {
+				if (this.clicked) {
+					var e = _d3Selection.event;
+					var mouseXY = this.mouseInteraction ? (0, _d3Selection.mouse)(this.node) : (0, _d3Selection.touches)(this.node)[0];
+					var onDoubleClick = this.props.onDoubleClick;
+
+
+					onDoubleClick(mouseXY, e);
+				} else {
+					this.clicked = true;
+					setTimeout(function () {
+						_this2.clicked = false;
+					}, 300);
+				}
+			}
+
+			(0, _d3Selection.select)((0, _utils.d3Window)(this.node)).on(_utils.MOUSEMOVE, null).on(_utils.MOUSEUP, null).on(_utils.TOUCHMOVE, null).on(_utils.TOUCHEND, null);
+
+			this.setState({
+				startPosition: null
+			});
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var _props4 = this.props,
+			    bg = _props4.bg,
+			    zoomCursorClassName = _props4.zoomCursorClassName;
+
+
+			var cursor = (0, _utils.isDefined)(this.state.startPosition) ? zoomCursorClassName : "react-stockcharts-default-cursor";
+
+			return _react2.default.createElement("rect", {
+				className: "react-stockcharts-enable-interaction " + cursor,
+				ref: this.saveNode,
+				x: bg.x, y: bg.y, opacity: 0, height: bg.h, width: bg.w,
+				onContextMenu: this.handleRightClick,
+				onMouseDown: this.handleDragStartMouse,
+				onTouchStart: this.handleDragStartTouch
+			});
+		}
+	}]);
+
+	return AxisZoomCapture;
+}(_react.Component);
+
+AxisZoomCapture.propTypes = {
+	innerTickSize: _propTypes2.default.number,
+	outerTickSize: _propTypes2.default.number,
+	tickFormat: _propTypes2.default.func,
+	tickPadding: _propTypes2.default.number,
+	tickSize: _propTypes2.default.number,
+	ticks: _propTypes2.default.number,
+	tickValues: _propTypes2.default.array,
+	showDomain: _propTypes2.default.bool,
+	showTicks: _propTypes2.default.bool,
+	className: _propTypes2.default.string,
+	axisZoomCallback: _propTypes2.default.func,
+	inverted: _propTypes2.default.bool,
+	bg: _propTypes2.default.object.isRequired,
+	zoomCursorClassName: _propTypes2.default.string.isRequired,
+	getMoreProps: _propTypes2.default.func.isRequired,
+	getScale: _propTypes2.default.func.isRequired,
+	getMouseDelta: _propTypes2.default.func.isRequired,
+	onDoubleClick: _propTypes2.default.func.isRequired,
+	onContextMenu: _propTypes2.default.func.isRequired
+};
+
+AxisZoomCapture.defaultProps = {
+	onDoubleClick: _utils.noop,
+	onContextMenu: _utils.noop,
+	inverted: true
+};
+
+exports.default = AxisZoomCapture;
+//# sourceMappingURL=AxisZoomCapture.js.map
+
+/***/ }),
+/* 960 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _Axis = __webpack_require__(357);
+
+var _Axis2 = _interopRequireDefault(_Axis);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var YAxis = function (_Component) {
+	_inherits(YAxis, _Component);
+
+	function YAxis(props, context) {
+		_classCallCheck(this, YAxis);
+
+		var _this = _possibleConstructorReturn(this, (YAxis.__proto__ || Object.getPrototypeOf(YAxis)).call(this, props, context));
+
+		_this.axisZoomCallback = _this.axisZoomCallback.bind(_this);
+		return _this;
+	}
+
+	_createClass(YAxis, [{
+		key: "axisZoomCallback",
+		value: function axisZoomCallback(newYDomain) {
+			var _context = this.context,
+			    chartId = _context.chartId,
+			    yAxisZoom = _context.yAxisZoom;
+
+			yAxisZoom(chartId, newYDomain);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var _helper = helper(this.props, this.context),
+			    zoomEnabled = _helper.zoomEnabled,
+			    moreProps = _objectWithoutProperties(_helper, ["zoomEnabled"]);
+
+			return _react2.default.createElement(_Axis2.default, _extends({}, this.props, moreProps, {
+				zoomEnabled: this.props.zoomEnabled && zoomEnabled,
+				edgeClip: true,
+				axisZoomCallback: this.axisZoomCallback,
+				zoomCursorClassName: "react-stockcharts-ns-resize-cursor" }));
+		}
+	}]);
+
+	return YAxis;
+}(_react.Component);
+
+YAxis.propTypes = {
+	axisAt: _propTypes2.default.oneOfType([_propTypes2.default.oneOf(["left", "right", "middle"]), _propTypes2.default.number]).isRequired,
+	orient: _propTypes2.default.oneOf(["left", "right"]).isRequired,
+	innerTickSize: _propTypes2.default.number,
+	outerTickSize: _propTypes2.default.number,
+	tickFormat: _propTypes2.default.func,
+	tickPadding: _propTypes2.default.number,
+	tickSize: _propTypes2.default.number,
+	ticks: _propTypes2.default.number,
+	yZoomWidth: _propTypes2.default.number,
+	tickValues: _propTypes2.default.array,
+	showTicks: _propTypes2.default.bool,
+	className: _propTypes2.default.string,
+	zoomEnabled: _propTypes2.default.bool,
+	onContextMenu: _propTypes2.default.func,
+	onDoubleClick: _propTypes2.default.func
+};
+
+YAxis.defaultProps = {
+	showGrid: false,
+	showTicks: true,
+	showDomain: true,
+	className: "react-stockcharts-y-axis",
+	ticks: 10,
+	outerTickSize: 0,
+	domainClassName: "react-stockcharts-axis-domain",
+	fill: "none",
+	stroke: "#FFFFFF",
+	strokeWidth: 1,
+	opacity: 1,
+	innerTickSize: 5,
+	tickPadding: 6,
+	tickStroke: "#000000",
+	tickStrokeOpacity: 1,
+	fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
+	fontSize: 12,
+	yZoomWidth: 40,
+	zoomEnabled: true,
+	getMouseDelta: function getMouseDelta(startXY, mouseXY) {
+		return startXY[1] - mouseXY[1];
+	}
+};
+
+YAxis.contextTypes = {
+	yAxisZoom: _propTypes2.default.func.isRequired,
+	chartId: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string]).isRequired,
+	chartConfig: _propTypes2.default.object.isRequired
+};
+
+function helper(props, context) {
+	var axisAt = props.axisAt,
+	    yZoomWidth = props.yZoomWidth,
+	    orient = props.orient;
+	var _context$chartConfig = context.chartConfig,
+	    width = _context$chartConfig.width,
+	    height = _context$chartConfig.height;
+
+
+	var axisLocation = void 0;
+	var y = 0,
+	    w = yZoomWidth,
+	    h = height;
+
+	if (axisAt === "left") {
+		axisLocation = 0;
+	} else if (axisAt === "right") {
+		axisLocation = width;
+	} else if (axisAt === "middle") {
+		axisLocation = width / 2;
+	} else {
+		axisLocation = axisAt;
+	}
+
+	var x = orient === "left" ? -yZoomWidth : 0;
+
+	return {
+		transform: [axisLocation, 0],
+		range: [0, height],
+		getScale: getYScale,
+		bg: { x: x, y: y, h: h, w: w },
+		zoomEnabled: context.chartConfig.yPan
+	};
+}
+
+function getYScale(moreProps) {
+	var _moreProps$chartConfi = moreProps.chartConfig,
+	    scale = _moreProps$chartConfi.yScale,
+	    flipYScale = _moreProps$chartConfi.flipYScale,
+	    height = _moreProps$chartConfi.height;
+
+	if (scale.invert) {
+		var trueRange = flipYScale ? [0, height] : [height, 0];
+		var trueDomain = trueRange.map(scale.invert);
+		return scale.copy().domain(trueDomain).range(trueRange);
+	}
+	return scale;
+}
+
+exports.default = YAxis;
+//# sourceMappingURL=YAxis.js.map
+
+/***/ }),
+/* 961 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TypeChooser = function (_Component) {
+	_inherits(TypeChooser, _Component);
+
+	function TypeChooser(props) {
+		_classCallCheck(this, TypeChooser);
+
+		var _this = _possibleConstructorReturn(this, (TypeChooser.__proto__ || Object.getPrototypeOf(TypeChooser)).call(this, props));
+
+		_this.state = {
+			type: _this.props.type
+		};
+		_this.handleTypeChange = _this.handleTypeChange.bind(_this);
+		return _this;
+	}
+
+	_createClass(TypeChooser, [{
+		key: "handleTypeChange",
+		value: function handleTypeChange(e) {
+			// console.log(e.target.value);
+			this.setState({
+				type: e.target.value
+			});
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"div",
+				null,
+				_react2.default.createElement(
+					"label",
+					null,
+					"Type: "
+				),
+				_react2.default.createElement(
+					"select",
+					{ name: "type", id: "type", onChange: this.handleTypeChange, value: this.state.type },
+					_react2.default.createElement(
+						"option",
+						{ value: "svg" },
+						"svg"
+					),
+					_react2.default.createElement(
+						"option",
+						{ value: "hybrid" },
+						"canvas + svg"
+					)
+				),
+				_react2.default.createElement(
+					"div",
+					{ style: this.props.style },
+					this.props.children(this.state.type)
+				)
+			);
+		}
+	}]);
+
+	return TypeChooser;
+}(_react.Component);
+
+TypeChooser.propTypes = {
+	type: _propTypes2.default.oneOf(["svg", "hybrid"]),
+	children: _propTypes2.default.func.isRequired,
+	style: _propTypes2.default.object.isRequired
+};
+
+TypeChooser.defaultProps = {
+	type: "hybrid",
+	style: {}
+};
+
+exports.default = TypeChooser;
+//# sourceMappingURL=TypeChooser.js.map
+
+/***/ }),
+/* 962 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _saveSvgAsPng = __webpack_require__(963);
+
+var _saveSvgAsPng2 = _interopRequireDefault(_saveSvgAsPng);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var dx = 0;
+var dy = 0;
+
+var SaveChartAsImage = {
+	save: function save(doc, container, background, cb) {
+		_saveSvgAsPng2.default.svgAsDataUri(container.getElementsByTagName("svg")[0], {}, function (uri) {
+			// eslint-disable-next-line prefer-const
+			var image = new Image();
+			image.onload = function () {
+
+				// eslint-disable-next-line prefer-const
+				var canvas = doc.createElement("canvas");
+				canvas.width = image.width;
+				canvas.height = image.height;
+
+				// eslint-disable-next-line prefer-const
+				var context = canvas.getContext("2d");
+
+				if ((0, _utils.isDefined)(background)) {
+					context.fillStyle = background;
+					context.fillRect(0, 0, canvas.width, canvas.height);
+				}
+				var canvasList = container.getElementsByTagName("canvas");
+				for (var i = 0; i < canvasList.length; i++) {
+					var each = canvasList[i];
+					if ((0, _utils.isDefined)(each)) {
+						var parent = each.parentNode.parentNode.getBoundingClientRect();
+						var rect = each.getBoundingClientRect();
+						context.drawImage(each, rect.left - parent.left + dx, rect.top - parent.top + dy);
+					}
+				}
+
+				context.drawImage(image, dx, dy);
+				cb(canvas.toDataURL("image/png"));
+			};
+			image.src = uri;
+		});
+	},
+	saveWithWhiteBG: function saveWithWhiteBG(doc, container, cb) {
+		return this.saveWithBG(doc, container, "white", cb);
+	},
+	saveWithDarkBG: function saveWithDarkBG(doc, container, cb) {
+		return this.saveWithBG(doc, container, "#303030", cb);
+	},
+	saveWithBG: function saveWithBG(doc, container, background, cb) {
+		return this.save(doc, container, background, cb);
+	},
+	saveChartAsImage: function saveChartAsImage(container) {
+		this.saveWithWhiteBG(document, container, function (src) {
+			var a = document.createElement("a");
+			a.setAttribute("href", src);
+			a.setAttribute("download", "Chart.png");
+
+			document.body.appendChild(a);
+			a.addEventListener("click", function () /* e */{
+				a.parentNode.removeChild(a);
+			});
+
+			a.click();
+		});
+	}
+};
+
+exports.default = SaveChartAsImage;
+//# sourceMappingURL=SaveChartAsImage.js.map
+
+/***/ }),
+/* 963 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;(function() {
+  var out$ = typeof exports != 'undefined' && exports || "function" != 'undefined' && {} || this;
+
+  var doctype = '<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [<!ENTITY nbsp "&#160;">]>';
+
+  function isElement(obj) {
+    return obj instanceof HTMLElement || obj instanceof SVGElement;
+  }
+
+  function requireDomNode(el) {
+    if (!isElement(el)) {
+      throw new Error('an HTMLElement or SVGElement is required; got ' + el);
+    }
+  }
+
+  function isExternal(url) {
+    return url && url.lastIndexOf('http',0) == 0 && url.lastIndexOf(window.location.host) == -1;
+  }
+
+  function inlineImages(el, callback) {
+    requireDomNode(el);
+
+    var images = el.querySelectorAll('image'),
+        left = images.length,
+        checkDone = function() {
+          if (left === 0) {
+            callback();
+          }
+        };
+
+    checkDone();
+    for (var i = 0; i < images.length; i++) {
+      (function(image) {
+        var href = image.getAttributeNS("http://www.w3.org/1999/xlink", "href");
+        if (href) {
+          if (isExternal(href.value)) {
+            console.warn("Cannot render embedded images linking to external hosts: "+href.value);
+            return;
+          }
+        }
+        var canvas = document.createElement('canvas');
+        var ctx = canvas.getContext('2d');
+        var img = new Image();
+        img.crossOrigin="anonymous";
+        href = href || image.getAttribute('href');
+        if (href) {
+          img.src = href;
+          img.onload = function() {
+            canvas.width = img.width;
+            canvas.height = img.height;
+            ctx.drawImage(img, 0, 0);
+            image.setAttributeNS("http://www.w3.org/1999/xlink", "href", canvas.toDataURL('image/png'));
+            left--;
+            checkDone();
+          }
+          img.onerror = function() {
+            console.log("Could not load "+href);
+            left--;
+            checkDone();
+          }
+        } else {
+          left--;
+          checkDone();
+        }
+      })(images[i]);
+    }
+  }
+
+  function styles(el, options, cssLoadedCallback) {
+    var selectorRemap = options.selectorRemap;
+    var modifyStyle = options.modifyStyle;
+    var css = "";
+    // each font that has extranl link is saved into queue, and processed
+    // asynchronously
+    var fontsQueue = [];
+    var sheets = document.styleSheets;
+    for (var i = 0; i < sheets.length; i++) {
+      try {
+        var rules = sheets[i].cssRules;
+      } catch (e) {
+        console.warn("Stylesheet could not be loaded: "+sheets[i].href);
+        continue;
+      }
+
+      if (rules != null) {
+        for (var j = 0, match; j < rules.length; j++, match = null) {
+          var rule = rules[j];
+          if (typeof(rule.style) != "undefined") {
+            var selectorText;
+
+            try {
+              selectorText = rule.selectorText;
+            } catch(err) {
+              console.warn('The following CSS rule has an invalid selector: "' + rule + '"', err);
+            }
+
+            try {
+              if (selectorText) {
+                match = el.querySelector(selectorText) || el.parentNode.querySelector(selectorText);
+              }
+            } catch(err) {
+              console.warn('Invalid CSS selector "' + selectorText + '"', err);
+            }
+
+            if (match) {
+              var selector = selectorRemap ? selectorRemap(rule.selectorText) : rule.selectorText;
+              var cssText = modifyStyle ? modifyStyle(rule.style.cssText) : rule.style.cssText;
+              css += selector + " { " + cssText + " }\n";
+            } else if(rule.cssText.match(/^@font-face/)) {
+              // below we are trying to find matches to external link. E.g.
+              // @font-face {
+              //   // ...
+              //   src: local('Abel'), url(https://fonts.gstatic.com/s/abel/v6/UzN-iejR1VoXU2Oc-7LsbvesZW2xOQ-xsNqO47m55DA.woff2);
+              // }
+              //
+              // This regex will save extrnal link into first capture group
+              var fontUrlRegexp = /url\(["']?(.+?)["']?\)/;
+              // TODO: This needs to be changed to support multiple url declarations per font.
+              var fontUrlMatch = rule.cssText.match(fontUrlRegexp);
+
+              var externalFontUrl = (fontUrlMatch && fontUrlMatch[1]) || '';
+              var fontUrlIsDataURI = externalFontUrl.match(/^data:/);
+              if (fontUrlIsDataURI) {
+                // We should ignore data uri - they are already embedded
+                externalFontUrl = '';
+              }
+
+              if (externalFontUrl) {
+                // okay, we are lucky. We can fetch this font later
+
+                //handle url if relative
+                if (externalFontUrl.startsWith('../')) {
+                  externalFontUrl = sheets[i].href + '/../' + externalFontUrl
+                } else if (externalFontUrl.startsWith('./')) {
+                  externalFontUrl = sheets[i].href + '/.' + externalFontUrl
+                }
+
+                fontsQueue.push({
+                  text: rule.cssText,
+                  // Pass url regex, so that once font is downladed, we can run `replace()` on it
+                  fontUrlRegexp: fontUrlRegexp,
+                  format: getFontMimeTypeFromUrl(externalFontUrl),
+                  url: externalFontUrl
+                });
+              } else {
+                // otherwise, use previous logic
+                css += rule.cssText + '\n';
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Now all css is processed, it's time to handle scheduled fonts
+    processFontQueue(fontsQueue);
+
+    function getFontMimeTypeFromUrl(fontUrl) {
+      var supportedFormats = {
+        'woff2': 'font/woff2',
+        'woff': 'font/woff',
+        'otf': 'application/x-font-opentype',
+        'ttf': 'application/x-font-ttf',
+        'eot': 'application/vnd.ms-fontobject',
+        'sfnt': 'application/font-sfnt',
+        'svg': 'image/svg+xml'
+      };
+      var extensions = Object.keys(supportedFormats);
+      for (var i = 0; i < extensions.length; ++i) {
+        var extension = extensions[i];
+        // TODO: This is not bullet proof, it needs to handle edge cases...
+        if (fontUrl.indexOf('.' + extension) > 0) {
+          return supportedFormats[extension];
+        }
+      }
+
+      // If you see this error message, you probably need to update code above.
+      console.error('Unknown font format for ' + fontUrl+ '; Fonts may not be working correctly');
+      return 'application/octet-stream';
+    }
+
+    function processFontQueue(queue) {
+      if (queue.length > 0) {
+        // load fonts one by one until we have anything in the queue:
+        var font = queue.pop();
+        processNext(font);
+      } else {
+        // no more fonts to load.
+        cssLoadedCallback(css);
+      }
+
+      function processNext(font) {
+        // TODO: This could benefit from caching.
+        var oReq = new XMLHttpRequest();
+        oReq.addEventListener('load', fontLoaded);
+        oReq.addEventListener('error', transferFailed);
+        oReq.addEventListener('abort', transferFailed);
+        oReq.open('GET', font.url);
+        oReq.responseType = 'arraybuffer';
+        oReq.send();
+
+        function fontLoaded() {
+          // TODO: it may be also worth to wait until fonts are fully loaded before
+          // attempting to rasterize them. (e.g. use https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet )
+          var fontBits = oReq.response;
+          var fontInBase64 = arrayBufferToBase64(fontBits);
+          updateFontStyle(font, fontInBase64);
+        }
+
+        function transferFailed(e) {
+          console.warn('Failed to load font from: ' + font.url);
+          console.warn(e)
+          css += font.text + '\n';
+          processFontQueue();
+        }
+
+        function updateFontStyle(font, fontInBase64) {
+          var dataUrl = 'url("data:' + font.format + ';base64,' + fontInBase64 + '")';
+          css += font.text.replace(font.fontUrlRegexp, dataUrl) + '\n';
+
+          // schedule next font download on next tick.
+          setTimeout(function() {
+            processFontQueue(queue)
+          }, 0);
+        }
+
+      }
+    }
+
+    function arrayBufferToBase64(buffer) {
+      var binary = '';
+      var bytes = new Uint8Array(buffer);
+      var len = bytes.byteLength;
+
+      for (var i = 0; i < len; i++) {
+          binary += String.fromCharCode(bytes[i]);
+      }
+
+      return window.btoa(binary);
+    }
+  }
+
+  function getDimension(el, clone, dim) {
+    var v = (el.viewBox && el.viewBox.baseVal && el.viewBox.baseVal[dim]) ||
+      (clone.getAttribute(dim) !== null && !clone.getAttribute(dim).match(/%$/) && parseInt(clone.getAttribute(dim))) ||
+      el.getBoundingClientRect()[dim] ||
+      parseInt(clone.style[dim]) ||
+      parseInt(window.getComputedStyle(el).getPropertyValue(dim));
+    return (typeof v === 'undefined' || v === null || isNaN(parseFloat(v))) ? 0 : v;
+  }
+
+  function reEncode(data) {
+    data = encodeURIComponent(data);
+    data = data.replace(/%([0-9A-F]{2})/g, function(match, p1) {
+      var c = String.fromCharCode('0x'+p1);
+      return c === '%' ? '%25' : c;
+    });
+    return decodeURIComponent(data);
+  }
+
+  out$.prepareSvg = function(el, options, cb) {
+    requireDomNode(el);
+
+    options = options || {};
+    options.scale = options.scale || 1;
+    options.responsive = options.responsive || false;
+    var xmlns = "http://www.w3.org/2000/xmlns/";
+
+    inlineImages(el, function() {
+      var outer = document.createElement("div");
+      var clone = el.cloneNode(true);
+      var width, height;
+      if(el.tagName == 'svg') {
+        width = options.width || getDimension(el, clone, 'width');
+        height = options.height || getDimension(el, clone, 'height');
+      } else if(el.getBBox) {
+        var box = el.getBBox();
+        width = box.x + box.width;
+        height = box.y + box.height;
+        clone.setAttribute('transform', clone.getAttribute('transform').replace(/translate\(.*?\)/, ''));
+
+        var svg = document.createElementNS('http://www.w3.org/2000/svg','svg')
+        svg.appendChild(clone)
+        clone = svg;
+      } else {
+        console.error('Attempted to render non-SVG element', el);
+        return;
+      }
+
+      clone.setAttribute("version", "1.1");
+      if (!clone.getAttribute('xmlns')) {
+        clone.setAttributeNS(xmlns, "xmlns", "http://www.w3.org/2000/svg");
+      }
+      if (!clone.getAttribute('xmlns:xlink')) {
+        clone.setAttributeNS(xmlns, "xmlns:xlink", "http://www.w3.org/1999/xlink");
+      }
+
+      if (options.responsive) {
+        clone.removeAttribute('width');
+        clone.removeAttribute('height');
+        clone.setAttribute('preserveAspectRatio', 'xMinYMin meet');
+      } else {
+        clone.setAttribute("width", width * options.scale);
+        clone.setAttribute("height", height * options.scale);
+      }
+
+      clone.setAttribute("viewBox", [
+        options.left || 0,
+        options.top || 0,
+        width,
+        height
+      ].join(" "));
+
+      var fos = clone.querySelectorAll('foreignObject > *');
+      for (var i = 0; i < fos.length; i++) {
+        if (!fos[i].getAttribute('xmlns')) {
+          fos[i].setAttributeNS(xmlns, "xmlns", "http://www.w3.org/1999/xhtml");
+        }
+      }
+
+      outer.appendChild(clone);
+
+      // In case of custom fonts we need to fetch font first, and then inline
+      // its url into data-uri format (encode as base64). That's why style
+      // processing is done asynchonously. Once all inlining is finshed
+      // cssLoadedCallback() is called.
+      styles(el, options, cssLoadedCallback);
+
+      function cssLoadedCallback(css) {
+        // here all fonts are inlined, so that we can render them properly.
+        var s = document.createElement('style');
+        s.setAttribute('type', 'text/css');
+        s.innerHTML = "<![CDATA[\n" + css + "\n]]>";
+        var defs = document.createElement('defs');
+        defs.appendChild(s);
+        clone.insertBefore(defs, clone.firstChild);
+
+        if (cb) {
+          var outHtml = outer.innerHTML;
+          outHtml = outHtml.replace(/NS\d+:href/gi, 'xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href');
+          cb(outHtml, width, height);
+        }
+      }
+    });
+  }
+
+  out$.svgAsDataUri = function(el, options, cb) {
+    out$.prepareSvg(el, options, function(svg) {
+      var uri = 'data:image/svg+xml;base64,' + window.btoa(reEncode(doctype + svg));
+      if (cb) {
+        cb(uri);
+      }
+    });
+  }
+
+  out$.svgAsPngUri = function(el, options, cb) {
+    requireDomNode(el);
+
+    options = options || {};
+    options.encoderType = options.encoderType || 'image/png';
+    options.encoderOptions = options.encoderOptions || 0.8;
+
+    var convertToPng = function(src, w, h) {
+      var canvas = document.createElement('canvas');
+      var context = canvas.getContext('2d');
+      canvas.width = w;
+      canvas.height = h;
+
+      if(options.canvg) {
+        options.canvg(canvas, src);
+      } else {
+        context.drawImage(src, 0, 0);
+      }
+
+      if(options.backgroundColor){
+        context.globalCompositeOperation = 'destination-over';
+        context.fillStyle = options.backgroundColor;
+        context.fillRect(0, 0, canvas.width, canvas.height);
+      }
+
+      var png;
+      try {
+        png = canvas.toDataURL(options.encoderType, options.encoderOptions);
+      } catch (e) {
+        if ((typeof SecurityError !== 'undefined' && e instanceof SecurityError) || e.name == "SecurityError") {
+          console.error("Rendered SVG images cannot be downloaded in this browser.");
+          return;
+        } else {
+          throw e;
+        }
+      }
+      cb(png);
+    }
+
+    if(options.canvg) {
+      out$.prepareSvg(el, options, convertToPng);
+    } else {
+      out$.svgAsDataUri(el, options, function(uri) {
+        var image = new Image();
+
+        image.onload = function() {
+          convertToPng(image, image.width, image.height);
+        }
+
+        image.onerror = function() {
+          console.error(
+            'There was an error loading the data URI as an image on the following SVG\n',
+            window.atob(uri.slice(26)), '\n',
+            "Open the following link to see browser's diagnosis\n",
+            uri);
+        }
+
+        image.src = uri;
+      });
+    }
+  }
+
+  out$.download = function(name, uri) {
+    if (navigator.msSaveOrOpenBlob) {
+      navigator.msSaveOrOpenBlob(uriToBlob(uri), name);
+    } else {
+      var saveLink = document.createElement('a');
+      var downloadSupported = 'download' in saveLink;
+      if (downloadSupported) {
+        saveLink.download = name;
+        saveLink.style.display = 'none';
+        document.body.appendChild(saveLink);
+        try {
+          var blob = uriToBlob(uri);
+          var url = URL.createObjectURL(blob);
+          saveLink.href = url;
+          saveLink.onclick = function() {
+            requestAnimationFrame(function() {
+              URL.revokeObjectURL(url);
+            })
+          };
+        } catch (e) {
+          console.warn('This browser does not support object URLs. Falling back to string URL.');
+          saveLink.href = uri;
+        }
+        saveLink.click();
+        document.body.removeChild(saveLink);
+      }
+      else {
+        window.open(uri, '_temp', 'menubar=no,toolbar=no,status=no');
+      }
+    }
+  }
+
+  function uriToBlob(uri) {
+    var byteString = window.atob(uri.split(',')[1]);
+    var mimeString = uri.split(',')[0].split(':')[1].split(';')[0]
+    var buffer = new ArrayBuffer(byteString.length);
+    var intArray = new Uint8Array(buffer);
+    for (var i = 0; i < byteString.length; i++) {
+      intArray[i] = byteString.charCodeAt(i);
+    }
+    return new Blob([buffer], {type: mimeString});
+  }
+
+  out$.saveSvg = function(el, name, options) {
+    requireDomNode(el);
+
+    options = options || {};
+    out$.svgAsDataUri(el, options, function(uri) {
+      out$.download(name, uri);
+    });
+  }
+
+  out$.saveSvgAsPng = function(el, name, options) {
+    requireDomNode(el);
+
+    options = options || {};
+    out$.svgAsPngUri(el, options, function(uri) {
+      out$.download(name, uri);
+    });
+  }
+
+  // if define is defined create as an AMD module
+  if (true) {
+    !(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
+      return out$;
+    }).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  }
+
+})();
+
+
+/***/ }),
+/* 964 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+exports.default = fitWidth;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(26);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function getDisplayName(Series) {
+	var name = Series.displayName || Series.name || "Series";
+	return name;
+}
+
+function fitWidth(WrappedComponent) {
+	var withRef = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+	var minWidth = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 100;
+
+	var ResponsiveComponent = function (_Component) {
+		_inherits(ResponsiveComponent, _Component);
+
+		function ResponsiveComponent(props) {
+			_classCallCheck(this, ResponsiveComponent);
+
+			var _this = _possibleConstructorReturn(this, (ResponsiveComponent.__proto__ || Object.getPrototypeOf(ResponsiveComponent)).call(this, props));
+
+			_this.handleWindowResize = _this.handleWindowResize.bind(_this);
+			_this.getWrappedInstance = _this.getWrappedInstance.bind(_this);
+			_this.saveNode = _this.saveNode.bind(_this);
+			_this.setTestCanvas = _this.setTestCanvas.bind(_this);
+			_this.state = {};
+			return _this;
+		}
+
+		_createClass(ResponsiveComponent, [{
+			key: "saveNode",
+			value: function saveNode(node) {
+				this.node = node;
+			}
+		}, {
+			key: "setTestCanvas",
+			value: function setTestCanvas(node) {
+				this.testCanvas = node;
+			}
+		}, {
+			key: "getRatio",
+			value: function getRatio() {
+				if ((0, _utils.isDefined)(this.testCanvas)) {
+					var context = this.testCanvas.getContext("2d");
+
+					var devicePixelRatio = window.devicePixelRatio || 1;
+					var backingStoreRatio = context.webkitBackingStorePixelRatio || context.mozBackingStorePixelRatio || context.msBackingStorePixelRatio || context.oBackingStorePixelRatio || context.backingStorePixelRatio || 1;
+
+					var ratio = devicePixelRatio / backingStoreRatio;
+					// console.log("ratio = ", ratio);
+					return ratio;
+				}
+				return 1;
+			}
+		}, {
+			key: "componentDidMount",
+			value: function componentDidMount() {
+				window.addEventListener("resize", this.handleWindowResize);
+				var el = this.node;
+				var w = el.parentNode.clientWidth;
+
+				/* eslint-disable react/no-did-mount-set-state */
+				this.setState({
+					width: Math.max(w, minWidth),
+					ratio: this.getRatio()
+				});
+				/* eslint-enable react/no-did-mount-set-state */
+			}
+		}, {
+			key: "componentWillUnmount",
+			value: function componentWillUnmount() {
+				window.removeEventListener("resize", this.handleWindowResize);
+			}
+		}, {
+			key: "handleWindowResize",
+			value: function handleWindowResize() {
+				var el = _reactDom2.default.findDOMNode(this.node); // eslint-disable-line react/no-find-dom-node
+				var w = el.parentNode.clientWidth;
+
+				if (w > minWidth) {
+					this.setState({
+						width: w
+					});
+				}
+			}
+		}, {
+			key: "getWrappedInstance",
+			value: function getWrappedInstance() {
+				return this.node;
+			}
+		}, {
+			key: "render",
+			value: function render() {
+				var ref = withRef ? { ref: this.saveNode } : {};
+
+				if (this.state.width) {
+					return _react2.default.createElement(WrappedComponent, _extends({ width: this.state.width, ratio: this.state.ratio }, this.props, ref));
+				} else {
+					return _react2.default.createElement(
+						"div",
+						ref,
+						_react2.default.createElement("canvas", { ref: this.setTestCanvas })
+					);
+				}
+			}
+		}]);
+
+		return ResponsiveComponent;
+	}(_react.Component);
+
+	ResponsiveComponent.displayName = "fitWidth(" + getDisplayName(WrappedComponent) + ")";
+
+	return ResponsiveComponent;
+}
+//# sourceMappingURL=fitWidth.js.map
+
+/***/ }),
+/* 965 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+exports.default = fitDimensions;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(26);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function getDisplayName(Series) {
+	var name = Series.displayName || Series.name || "Series";
+	return name;
+}
+
+function fitDimensions(WrappedComponent) {
+	var props = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	var _props$minWidth = props.minWidth,
+	    minWidth = _props$minWidth === undefined ? 100 : _props$minWidth,
+	    _props$minHeight = props.minHeight,
+	    minHeight = _props$minHeight === undefined ? 100 : _props$minHeight,
+	    ratio = props.ratio,
+	    width = props.width,
+	    height = props.height;
+
+
+	function getDimensions(el) {
+		var w = el.parentNode.clientWidth;
+		var h = el.parentNode.clientHeight;
+
+		return {
+			width: (0, _utils.isDefined)(width) ? width : Math.max(w, minWidth),
+			height: (0, _utils.isDefined)(height) ? height : Math.max(h, minHeight)
+		};
+	}
+
+	var ResponsiveComponent = function (_Component) {
+		_inherits(ResponsiveComponent, _Component);
+
+		function ResponsiveComponent(props) {
+			_classCallCheck(this, ResponsiveComponent);
+
+			var _this = _possibleConstructorReturn(this, (ResponsiveComponent.__proto__ || Object.getPrototypeOf(ResponsiveComponent)).call(this, props));
+
+			_this.handleWindowResize = _this.handleWindowResize.bind(_this);
+			_this.getWrappedInstance = _this.getWrappedInstance.bind(_this);
+			_this.saveNode = _this.saveNode.bind(_this);
+			_this.setTestCanvas = _this.setTestCanvas.bind(_this);
+			_this.state = {};
+			return _this;
+		}
+
+		_createClass(ResponsiveComponent, [{
+			key: "saveNode",
+			value: function saveNode(node) {
+				this.node = node;
+			}
+		}, {
+			key: "setTestCanvas",
+			value: function setTestCanvas(node) {
+				this.testCanvas = node;
+			}
+		}, {
+			key: "getRatio",
+			value: function getRatio() {
+				if ((0, _utils.isDefined)(this.testCanvas)) {
+					var context = this.testCanvas.getContext("2d");
+
+					var devicePixelRatio = window.devicePixelRatio || 1;
+					var backingStoreRatio = context.webkitBackingStorePixelRatio || context.mozBackingStorePixelRatio || context.msBackingStorePixelRatio || context.oBackingStorePixelRatio || context.backingStorePixelRatio || 1;
+
+					var _ratio = devicePixelRatio / backingStoreRatio;
+					// console.log("ratio = ", ratio);
+					return _ratio;
+				}
+				return 1;
+			}
+		}, {
+			key: "componentDidMount",
+			value: function componentDidMount() {
+				window.addEventListener("resize", this.handleWindowResize);
+				var dimensions = getDimensions(this.node);
+
+				/* eslint-disable react/no-did-mount-set-state */
+				this.setState(_extends({}, dimensions, {
+					ratio: (0, _utils.isDefined)(ratio) ? ratio : this.getRatio()
+				}));
+				/* eslint-enable react/no-did-mount-set-state */
+			}
+		}, {
+			key: "componentWillUnmount",
+			value: function componentWillUnmount() {
+				window.removeEventListener("resize", this.handleWindowResize);
+			}
+		}, {
+			key: "handleWindowResize",
+			value: function handleWindowResize() {
+				var node = _reactDom2.default.findDOMNode(this.node); // eslint-disable-line react/no-find-dom-node
+				this.setState(getDimensions(node));
+			}
+		}, {
+			key: "getWrappedInstance",
+			value: function getWrappedInstance() {
+				return this.node;
+			}
+		}, {
+			key: "render",
+			value: function render() {
+				var ref = { ref: this.saveNode };
+
+				if (this.state.width) {
+					return _react2.default.createElement(WrappedComponent, _extends({
+						height: this.state.height,
+						width: this.state.width,
+						ratio: this.state.ratio
+					}, this.props, ref));
+				} else {
+					return _react2.default.createElement(
+						"div",
+						ref,
+						_react2.default.createElement("canvas", { ref: this.setTestCanvas })
+					);
+				}
+			}
+		}]);
+
+		return ResponsiveComponent;
+	}(_react.Component);
+
+	ResponsiveComponent.displayName = "fitDimensions(" + getDisplayName(WrappedComponent) + ")";
+
+	return ResponsiveComponent;
+}
+//# sourceMappingURL=fitDimensions.js.map
+
+/***/ }),
+/* 966 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Collapsible = function (_Component) {
+  _inherits(Collapsible, _Component);
+
+  function Collapsible(props) {
+    _classCallCheck(this, Collapsible);
+
+    // Bind class methods
+    var _this = _possibleConstructorReturn(this, (Collapsible.__proto__ || Object.getPrototypeOf(Collapsible)).call(this, props));
+
+    _this.handleTriggerClick = _this.handleTriggerClick.bind(_this);
+    _this.handleTransitionEnd = _this.handleTransitionEnd.bind(_this);
+    _this.continueOpenCollapsible = _this.continueOpenCollapsible.bind(_this);
+
+    // Defaults the dropdown to be closed
+    if (props.open) {
+      _this.state = {
+        isClosed: false,
+        shouldSwitchAutoOnNextCycle: false,
+        height: 'auto',
+        transition: 'none',
+        hasBeenOpened: true,
+        overflow: props.overflowWhenOpen,
+        inTransition: false
+      };
+    } else {
+      _this.state = {
+        isClosed: true,
+        shouldSwitchAutoOnNextCycle: false,
+        height: 0,
+        transition: 'height ' + props.transitionTime + 'ms ' + props.easing,
+        hasBeenOpened: false,
+        overflow: 'hidden',
+        inTransition: false
+      };
+    }
+    return _this;
+  }
+
+  _createClass(Collapsible, [{
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate(prevProps, prevState) {
+      var _this2 = this;
+
+      if (this.state.shouldOpenOnNextCycle) {
+        this.continueOpenCollapsible();
+      }
+
+      if (prevState.height === 'auto' && this.state.shouldSwitchAutoOnNextCycle === true) {
+        window.setTimeout(function () {
+          // Set small timeout to ensure a true re-render
+          _this2.setState({
+            height: 0,
+            overflow: 'hidden',
+            isClosed: true,
+            shouldSwitchAutoOnNextCycle: false
+          });
+        }, 50);
+      }
+
+      // If there has been a change in the open prop (controlled by accordion)
+      if (prevProps.open !== this.props.open) {
+        if (this.props.open === true) {
+          this.openCollapsible();
+        } else {
+          this.closeCollapsible();
+        }
+      }
+    }
+  }, {
+    key: 'closeCollapsible',
+    value: function closeCollapsible() {
+      this.setState({
+        shouldSwitchAutoOnNextCycle: true,
+        height: this.refs.inner.offsetHeight,
+        transition: 'height ' + this.props.transitionTime + 'ms ' + this.props.easing,
+        inTransition: true
+      });
+    }
+  }, {
+    key: 'openCollapsible',
+    value: function openCollapsible() {
+      this.setState({
+        inTransition: true,
+        shouldOpenOnNextCycle: true
+      });
+    }
+  }, {
+    key: 'continueOpenCollapsible',
+    value: function continueOpenCollapsible() {
+      this.setState({
+        height: this.refs.inner.offsetHeight,
+        transition: 'height ' + this.props.transitionTime + 'ms ' + this.props.easing,
+        isClosed: false,
+        hasBeenOpened: true,
+        inTransition: true,
+        shouldOpenOnNextCycle: false
+      });
+    }
+  }, {
+    key: 'handleTriggerClick',
+    value: function handleTriggerClick(event) {
+      event.preventDefault();
+
+      if (this.props.triggerDisabled) {
+        return;
+      }
+
+      if (this.props.handleTriggerClick) {
+        this.props.handleTriggerClick(this.props.accordionPosition);
+      } else {
+        if (this.state.isClosed === true) {
+          this.openCollapsible();
+          this.props.onOpening();
+        } else {
+          this.closeCollapsible();
+          this.props.onClosing();
+        }
+      }
+    }
+  }, {
+    key: 'renderNonClickableTriggerElement',
+    value: function renderNonClickableTriggerElement() {
+      if (this.props.triggerSibling && typeof this.props.triggerSibling === 'string') {
+        return _react2.default.createElement(
+          'span',
+          { className: this.props.classParentString + '__trigger-sibling' },
+          this.props.triggerSibling
+        );
+      } else if (this.props.triggerSibling) {
+        return _react2.default.createElement(this.props.triggerSibling, null);
+      }
+
+      return null;
+    }
+  }, {
+    key: 'handleTransitionEnd',
+    value: function handleTransitionEnd() {
+      // Switch to height auto to make the container responsive
+      if (!this.state.isClosed) {
+        this.setState({ height: 'auto', overflow: this.props.overflowWhenOpen, inTransition: false });
+        this.props.onOpen();
+      } else {
+        this.setState({ inTransition: false });
+        this.props.onClose();
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var dropdownStyle = {
+        height: this.state.height,
+        WebkitTransition: this.state.transition,
+        msTransition: this.state.transition,
+        transition: this.state.transition,
+        overflow: this.state.overflow
+      };
+
+      var openClass = this.state.isClosed ? 'is-closed' : 'is-open';
+      var disabledClass = this.props.triggerDisabled ? 'is-disabled' : '';
+
+      //If user wants different text when tray is open
+      var trigger = this.state.isClosed === false && this.props.triggerWhenOpen !== undefined ? this.props.triggerWhenOpen : this.props.trigger;
+
+      // Don't render children until the first opening of the Collapsible if lazy rendering is enabled
+      var children = this.props.lazyRender && !this.state.hasBeenOpened && this.state.isClosed && !this.state.inTransition ? null : this.props.children;
+
+      // Construct CSS classes strings
+      var triggerClassString = this.props.classParentString + '__trigger ' + openClass + ' ' + disabledClass + ' ' + (this.state.isClosed ? this.props.triggerClassName : this.props.triggerOpenedClassName);
+      var parentClassString = this.props.classParentString + ' ' + (this.state.isClosed ? this.props.className : this.props.openedClassName);
+      var outerClassString = this.props.classParentString + '__contentOuter ' + this.props.contentOuterClassName;
+      var innerClassString = this.props.classParentString + '__contentInner ' + this.props.contentInnerClassName;
+
+      return _react2.default.createElement(
+        'div',
+        { className: parentClassString.trim() },
+        _react2.default.createElement(
+          'span',
+          {
+            className: triggerClassString.trim(),
+            onClick: this.handleTriggerClick },
+          trigger
+        ),
+        this.renderNonClickableTriggerElement(),
+        _react2.default.createElement(
+          'div',
+          {
+            className: outerClassString.trim(),
+            ref: 'outer',
+            style: dropdownStyle,
+            onTransitionEnd: this.handleTransitionEnd
+          },
+          _react2.default.createElement(
+            'div',
+            {
+              className: innerClassString.trim(),
+              ref: 'inner'
+            },
+            children
+          )
+        )
+      );
+    }
+  }]);
+
+  return Collapsible;
+}(_react.Component);
+
+Collapsible.propTypes = {
+  transitionTime: _propTypes2.default.number,
+  easing: _propTypes2.default.string,
+  open: _propTypes2.default.bool,
+  classParentString: _propTypes2.default.string,
+  openedClassName: _propTypes2.default.string,
+  triggerClassName: _propTypes2.default.string,
+  triggerOpenedClassName: _propTypes2.default.string,
+  contentOuterClassName: _propTypes2.default.string,
+  contentInnerClassName: _propTypes2.default.string,
+  accordionPosition: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
+  handleTriggerClick: _propTypes2.default.func,
+  onOpen: _propTypes2.default.func,
+  onClose: _propTypes2.default.func,
+  onOpening: _propTypes2.default.func,
+  onClosing: _propTypes2.default.func,
+  trigger: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element]),
+  triggerWhenOpen: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element]),
+  triggerDisabled: _propTypes2.default.bool,
+  lazyRender: _propTypes2.default.bool,
+  overflowWhenOpen: _propTypes2.default.oneOf(['hidden', 'visible', 'auto', 'scroll', 'inherit', 'initial', 'unset']),
+  triggerSibling: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.func])
+};
+
+Collapsible.defaultProps = {
+  transitionTime: 400,
+  easing: 'linear',
+  open: false,
+  classParentString: 'Collapsible',
+  triggerDisabled: false,
+  lazyRender: false,
+  overflowWhenOpen: 'hidden',
+  openedClassName: '',
+  triggerClassName: '',
+  triggerOpenedClassName: '',
+  contentOuterClassName: '',
+  contentInnerClassName: '',
+  className: '',
+  triggerSibling: null,
+  onOpen: function onOpen() {},
+  onClose: function onClose() {},
+  onOpening: function onOpening() {},
+  onClosing: function onClosing() {}
+};
+
+exports.default = Collapsible;
+
+
+
+/***/ }),
+/* 967 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _reactRedux = __webpack_require__(39);
+
+var _stock_index = __webpack_require__(968);
 
 var _stock_index2 = _interopRequireDefault(_stock_index);
 
-var _stock_actions = __webpack_require__(45);
+var _stock_actions = __webpack_require__(54);
 
-var _selectors = __webpack_require__(949);
+var _selectors = __webpack_require__(1008);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -70453,7 +81093,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_stock_index2.default);
 
 /***/ }),
-/* 909 */
+/* 968 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70473,13 +81113,13 @@ var _json2csv = __webpack_require__(264);
 
 var _json2csv2 = _interopRequireDefault(_json2csv);
 
-var _reactGa = __webpack_require__(349);
+var _reactGa = __webpack_require__(359);
 
 var _reactGa2 = _interopRequireDefault(_reactGa);
 
 var _reactRouterDom = __webpack_require__(19);
 
-var _reactBootstrapTable = __webpack_require__(910);
+var _reactBootstrapTable = __webpack_require__(969);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -70643,7 +81283,7 @@ var StockIndex = function (_React$Component) {
 exports.default = StockIndex;
 
 /***/ }),
-/* 910 */
+/* 969 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70654,55 +81294,55 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.SizePerPageDropDown = exports.ButtonGroup = exports.SearchField = exports.ClearSearchButton = exports.ExportCSVButton = exports.ShowSelectedOnlyButton = exports.DeleteButton = exports.InsertButton = exports.InsertModalFooter = exports.InsertModalBody = exports.InsertModalHeader = exports.TableHeaderColumn = exports.BootstrapTable = undefined;
 
-var _BootstrapTable = __webpack_require__(911);
+var _BootstrapTable = __webpack_require__(970);
 
 var _BootstrapTable2 = _interopRequireDefault(_BootstrapTable);
 
-var _TableHeaderColumn = __webpack_require__(352);
+var _TableHeaderColumn = __webpack_require__(362);
 
 var _TableHeaderColumn2 = _interopRequireDefault(_TableHeaderColumn);
 
-var _InsertModalHeader = __webpack_require__(360);
+var _InsertModalHeader = __webpack_require__(370);
 
 var _InsertModalHeader2 = _interopRequireDefault(_InsertModalHeader);
 
-var _InsertModalBody = __webpack_require__(362);
+var _InsertModalBody = __webpack_require__(372);
 
 var _InsertModalBody2 = _interopRequireDefault(_InsertModalBody);
 
-var _InsertModalFooter = __webpack_require__(361);
+var _InsertModalFooter = __webpack_require__(371);
 
 var _InsertModalFooter2 = _interopRequireDefault(_InsertModalFooter);
 
-var _InsertButton = __webpack_require__(363);
+var _InsertButton = __webpack_require__(373);
 
 var _InsertButton2 = _interopRequireDefault(_InsertButton);
 
-var _DeleteButton = __webpack_require__(364);
+var _DeleteButton = __webpack_require__(374);
 
 var _DeleteButton2 = _interopRequireDefault(_DeleteButton);
 
-var _ExportCSVButton = __webpack_require__(365);
+var _ExportCSVButton = __webpack_require__(375);
 
 var _ExportCSVButton2 = _interopRequireDefault(_ExportCSVButton);
 
-var _ShowSelectedOnlyButton = __webpack_require__(366);
+var _ShowSelectedOnlyButton = __webpack_require__(376);
 
 var _ShowSelectedOnlyButton2 = _interopRequireDefault(_ShowSelectedOnlyButton);
 
-var _ClearSearchButton = __webpack_require__(368);
+var _ClearSearchButton = __webpack_require__(378);
 
 var _ClearSearchButton2 = _interopRequireDefault(_ClearSearchButton);
 
-var _SearchField = __webpack_require__(367);
+var _SearchField = __webpack_require__(377);
 
 var _SearchField2 = _interopRequireDefault(_SearchField);
 
-var _ButtonGroup = __webpack_require__(948);
+var _ButtonGroup = __webpack_require__(1007);
 
 var _ButtonGroup2 = _interopRequireDefault(_ButtonGroup);
 
-var _SizePerPageDropDown = __webpack_require__(355);
+var _SizePerPageDropDown = __webpack_require__(365);
 
 var _SizePerPageDropDown2 = _interopRequireDefault(_SizePerPageDropDown);
 
@@ -70747,7 +81387,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 911 */
+/* 970 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70775,7 +81415,7 @@ var _classnames = __webpack_require__(20);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _reactSAlert = __webpack_require__(350);
+var _reactSAlert = __webpack_require__(360);
 
 var _reactSAlert2 = _interopRequireDefault(_reactSAlert);
 
@@ -70783,45 +81423,45 @@ var _Const = __webpack_require__(10);
 
 var _Const2 = _interopRequireDefault(_Const);
 
-var _TableHeaderColumn = __webpack_require__(352);
+var _TableHeaderColumn = __webpack_require__(362);
 
 var _TableHeaderColumn2 = _interopRequireDefault(_TableHeaderColumn);
 
-var _TableHeader = __webpack_require__(920);
+var _TableHeader = __webpack_require__(979);
 
 var _TableHeader2 = _interopRequireDefault(_TableHeader);
 
-var _TableFooter = __webpack_require__(923);
+var _TableFooter = __webpack_require__(982);
 
 var _TableFooter2 = _interopRequireDefault(_TableFooter);
 
-var _TableBody = __webpack_require__(924);
+var _TableBody = __webpack_require__(983);
 
 var _TableBody2 = _interopRequireDefault(_TableBody);
 
-var _PaginationList = __webpack_require__(929);
+var _PaginationList = __webpack_require__(988);
 
 var _PaginationList2 = _interopRequireDefault(_PaginationList);
 
-var _ToolBar = __webpack_require__(931);
+var _ToolBar = __webpack_require__(990);
 
 var _ToolBar2 = _interopRequireDefault(_ToolBar);
 
-var _TableFilter = __webpack_require__(940);
+var _TableFilter = __webpack_require__(999);
 
 var _TableFilter2 = _interopRequireDefault(_TableFilter);
 
-var _TableDataStore = __webpack_require__(941);
+var _TableDataStore = __webpack_require__(1000);
 
 var _util = __webpack_require__(30);
 
 var _util2 = _interopRequireDefault(_util);
 
-var _csv_export_util = __webpack_require__(942);
+var _csv_export_util = __webpack_require__(1001);
 
 var _csv_export_util2 = _interopRequireDefault(_csv_export_util);
 
-var _Filter = __webpack_require__(946);
+var _Filter = __webpack_require__(1005);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -73112,12 +83752,12 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 912 */
+/* 971 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
     if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(0), __webpack_require__(351), __webpack_require__(2), __webpack_require__(195), __webpack_require__(194), __webpack_require__(914)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(0), __webpack_require__(361), __webpack_require__(2), __webpack_require__(198), __webpack_require__(197), __webpack_require__(973)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -73450,7 +84090,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 });
 
 /***/ }),
-/* 913 */
+/* 972 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
@@ -73574,12 +84214,12 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 });
 
 /***/ }),
-/* 914 */
+/* 973 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
     if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(0), __webpack_require__(26), __webpack_require__(351), __webpack_require__(195), __webpack_require__(194)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(0), __webpack_require__(26), __webpack_require__(361), __webpack_require__(198), __webpack_require__(197)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -73760,7 +84400,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 });
 
 /***/ }),
-/* 915 */
+/* 974 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73995,7 +84635,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 916 */
+/* 975 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74151,7 +84791,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 917 */
+/* 976 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74291,7 +84931,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 918 */
+/* 977 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74496,7 +85136,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 919 */
+/* 978 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74786,7 +85426,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 920 */
+/* 979 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74818,11 +85458,11 @@ var _classnames = __webpack_require__(20);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _SelectRowHeaderColumn = __webpack_require__(921);
+var _SelectRowHeaderColumn = __webpack_require__(980);
 
 var _SelectRowHeaderColumn2 = _interopRequireDefault(_SelectRowHeaderColumn);
 
-var _ExpandRowHeaderColumn = __webpack_require__(922);
+var _ExpandRowHeaderColumn = __webpack_require__(981);
 
 var _ExpandRowHeaderColumn2 = _interopRequireDefault(_ExpandRowHeaderColumn);
 
@@ -75084,7 +85724,7 @@ var _temp2 = function () {
 ;
 
 /***/ }),
-/* 921 */
+/* 980 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75157,7 +85797,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 922 */
+/* 981 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75231,7 +85871,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 923 */
+/* 982 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75386,7 +86026,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 924 */
+/* 983 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75418,15 +86058,15 @@ var _Const = __webpack_require__(10);
 
 var _Const2 = _interopRequireDefault(_Const);
 
-var _TableRow = __webpack_require__(925);
+var _TableRow = __webpack_require__(984);
 
 var _TableRow2 = _interopRequireDefault(_TableRow);
 
-var _TableColumn = __webpack_require__(926);
+var _TableColumn = __webpack_require__(985);
 
 var _TableColumn2 = _interopRequireDefault(_TableColumn);
 
-var _TableEditColumn = __webpack_require__(927);
+var _TableEditColumn = __webpack_require__(986);
 
 var _TableEditColumn2 = _interopRequireDefault(_TableEditColumn);
 
@@ -75434,7 +86074,7 @@ var _classnames = __webpack_require__(20);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _ExpandComponent = __webpack_require__(928);
+var _ExpandComponent = __webpack_require__(987);
 
 var _ExpandComponent2 = _interopRequireDefault(_ExpandComponent);
 
@@ -76191,7 +86831,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 925 */
+/* 984 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76449,7 +87089,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 926 */
+/* 985 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76730,7 +87370,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 927 */
+/* 986 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76758,11 +87398,11 @@ var _reactDom = __webpack_require__(26);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _Editor = __webpack_require__(353);
+var _Editor = __webpack_require__(363);
 
 var _Editor2 = _interopRequireDefault(_Editor);
 
-var _Notification = __webpack_require__(354);
+var _Notification = __webpack_require__(364);
 
 var _classnames = __webpack_require__(20);
 
@@ -77186,7 +87826,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 928 */
+/* 987 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77270,7 +87910,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 929 */
+/* 988 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77296,11 +87936,11 @@ var _classnames = __webpack_require__(20);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _PageButton = __webpack_require__(930);
+var _PageButton = __webpack_require__(989);
 
 var _PageButton2 = _interopRequireDefault(_PageButton);
 
-var _SizePerPageDropDown = __webpack_require__(355);
+var _SizePerPageDropDown = __webpack_require__(365);
 
 var _SizePerPageDropDown2 = _interopRequireDefault(_SizePerPageDropDown);
 
@@ -77734,7 +88374,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 930 */
+/* 989 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77842,7 +88482,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 931 */
+/* 990 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77866,7 +88506,7 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactModal = __webpack_require__(932);
+var _reactModal = __webpack_require__(991);
 
 var _reactModal2 = _interopRequireDefault(_reactModal);
 
@@ -77874,33 +88514,33 @@ var _Const = __webpack_require__(10);
 
 var _Const2 = _interopRequireDefault(_Const);
 
-var _Notification = __webpack_require__(354);
+var _Notification = __webpack_require__(364);
 
-var _InsertModal = __webpack_require__(939);
+var _InsertModal = __webpack_require__(998);
 
 var _InsertModal2 = _interopRequireDefault(_InsertModal);
 
-var _InsertButton = __webpack_require__(363);
+var _InsertButton = __webpack_require__(373);
 
 var _InsertButton2 = _interopRequireDefault(_InsertButton);
 
-var _DeleteButton = __webpack_require__(364);
+var _DeleteButton = __webpack_require__(374);
 
 var _DeleteButton2 = _interopRequireDefault(_DeleteButton);
 
-var _ExportCSVButton = __webpack_require__(365);
+var _ExportCSVButton = __webpack_require__(375);
 
 var _ExportCSVButton2 = _interopRequireDefault(_ExportCSVButton);
 
-var _ShowSelectedOnlyButton = __webpack_require__(366);
+var _ShowSelectedOnlyButton = __webpack_require__(376);
 
 var _ShowSelectedOnlyButton2 = _interopRequireDefault(_ShowSelectedOnlyButton);
 
-var _SearchField = __webpack_require__(367);
+var _SearchField = __webpack_require__(377);
 
 var _SearchField2 = _interopRequireDefault(_SearchField);
 
-var _ClearSearchButton = __webpack_require__(368);
+var _ClearSearchButton = __webpack_require__(378);
 
 var _ClearSearchButton2 = _interopRequireDefault(_ClearSearchButton);
 
@@ -78566,7 +89206,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 932 */
+/* 991 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78576,7 +89216,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Modal = __webpack_require__(933);
+var _Modal = __webpack_require__(992);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
@@ -78586,7 +89226,7 @@ exports.default = _Modal2.default;
 module.exports = exports["default"];
 
 /***/ }),
-/* 933 */
+/* 992 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78613,15 +89253,15 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _ModalPortal = __webpack_require__(934);
+var _ModalPortal = __webpack_require__(993);
 
 var _ModalPortal2 = _interopRequireDefault(_ModalPortal);
 
-var _ariaAppHider = __webpack_require__(357);
+var _ariaAppHider = __webpack_require__(367);
 
 var ariaAppHider = _interopRequireWildcard(_ariaAppHider);
 
-var _safeHTMLElement = __webpack_require__(359);
+var _safeHTMLElement = __webpack_require__(369);
 
 var _safeHTMLElement2 = _interopRequireDefault(_safeHTMLElement);
 
@@ -78836,7 +89476,7 @@ Modal.defaultStyles = {
 exports.default = Modal;
 
 /***/ }),
-/* 934 */
+/* 993 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78860,27 +89500,27 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _focusManager = __webpack_require__(935);
+var _focusManager = __webpack_require__(994);
 
 var focusManager = _interopRequireWildcard(_focusManager);
 
-var _scopeTab = __webpack_require__(936);
+var _scopeTab = __webpack_require__(995);
 
 var _scopeTab2 = _interopRequireDefault(_scopeTab);
 
-var _ariaAppHider = __webpack_require__(357);
+var _ariaAppHider = __webpack_require__(367);
 
 var ariaAppHider = _interopRequireWildcard(_ariaAppHider);
 
-var _refCount = __webpack_require__(358);
+var _refCount = __webpack_require__(368);
 
 var refCount = _interopRequireWildcard(_refCount);
 
-var _bodyClassList = __webpack_require__(937);
+var _bodyClassList = __webpack_require__(996);
 
 var bodyClassList = _interopRequireWildcard(_bodyClassList);
 
-var _safeHTMLElement = __webpack_require__(359);
+var _safeHTMLElement = __webpack_require__(369);
 
 var _safeHTMLElement2 = _interopRequireDefault(_safeHTMLElement);
 
@@ -79239,7 +89879,7 @@ module.exports = exports["default"];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 935 */
+/* 994 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79256,7 +89896,7 @@ exports.popWithoutFocus = popWithoutFocus;
 exports.setupScopedFocus = setupScopedFocus;
 exports.teardownScopedFocus = teardownScopedFocus;
 
-var _tabbable = __webpack_require__(356);
+var _tabbable = __webpack_require__(366);
 
 var _tabbable2 = _interopRequireDefault(_tabbable);
 
@@ -79337,7 +89977,7 @@ function teardownScopedFocus() {
 }
 
 /***/ }),
-/* 936 */
+/* 995 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79348,7 +89988,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = scopeTab;
 
-var _tabbable = __webpack_require__(356);
+var _tabbable = __webpack_require__(366);
 
 var _tabbable2 = _interopRequireDefault(_tabbable);
 
@@ -79418,7 +90058,7 @@ function scopeTab(node, event) {
 module.exports = exports["default"];
 
 /***/ }),
-/* 937 */
+/* 996 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79430,7 +90070,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.add = add;
 exports.remove = remove;
 
-var _refCount = __webpack_require__(358);
+var _refCount = __webpack_require__(368);
 
 var refCount = _interopRequireWildcard(_refCount);
 
@@ -79455,7 +90095,7 @@ function remove(bodyClass) {
 }
 
 /***/ }),
-/* 938 */
+/* 997 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -79502,7 +90142,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 939 */
+/* 998 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79524,15 +90164,15 @@ var _propTypes = __webpack_require__(2);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _InsertModalHeader = __webpack_require__(360);
+var _InsertModalHeader = __webpack_require__(370);
 
 var _InsertModalHeader2 = _interopRequireDefault(_InsertModalHeader);
 
-var _InsertModalFooter = __webpack_require__(361);
+var _InsertModalFooter = __webpack_require__(371);
 
 var _InsertModalFooter2 = _interopRequireDefault(_InsertModalFooter);
 
-var _InsertModalBody = __webpack_require__(362);
+var _InsertModalBody = __webpack_require__(372);
 
 var _InsertModalBody2 = _interopRequireDefault(_InsertModalBody);
 
@@ -79702,7 +90342,7 @@ var _temp2 = function () {
 ;
 
 /***/ }),
-/* 940 */
+/* 999 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79864,7 +90504,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 941 */
+/* 1000 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80741,7 +91381,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 942 */
+/* 1001 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80766,7 +91406,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /* eslint no-var: 0 */
 /* eslint no-unused-vars: 0 */
 if (_util2.default.canUseDOM()) {
-  var filesaver = __webpack_require__(943);
+  var filesaver = __webpack_require__(1002);
   var saveAs = filesaver.saveAs;
 }
 
@@ -80858,7 +91498,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 943 */
+/* 1002 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81039,7 +91679,7 @@ var saveAs = saveAs || function (view) {
 
 if (typeof module !== "undefined" && module.exports) {
 	module.exports.saveAs = saveAs;
-} else if ("function" !== "undefined" && __webpack_require__(944) !== null && __webpack_require__(945) !== null) {
+} else if ("function" !== "undefined" && __webpack_require__(1003) !== null && __webpack_require__(1004) !== null) {
 	!(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
 		return saveAs;
 	}).call(exports, __webpack_require__, exports, module),
@@ -81058,7 +91698,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 944 */
+/* 1003 */
 /***/ (function(module, exports) {
 
 module.exports = function() {
@@ -81067,7 +91707,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 945 */
+/* 1004 */
 /***/ (function(module, exports) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
@@ -81076,7 +91716,7 @@ module.exports = __webpack_amd_options__;
 /* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ }),
-/* 946 */
+/* 1005 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81095,7 +91735,7 @@ var _Const = __webpack_require__(10);
 
 var _Const2 = _interopRequireDefault(_Const);
 
-var _events = __webpack_require__(947);
+var _events = __webpack_require__(1006);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -81166,7 +91806,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 947 */
+/* 1006 */
 /***/ (function(module, exports) {
 
 // Copyright Joyent, Inc. and other Node contributors.
@@ -81474,7 +92114,7 @@ function isUndefined(arg) {
 
 
 /***/ }),
-/* 948 */
+/* 1007 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81561,7 +92201,7 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 949 */
+/* 1008 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81572,7 +92212,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.stockInfo = exports.selectAllStocks = undefined;
 
-var _values = __webpack_require__(950);
+var _values = __webpack_require__(1009);
 
 var _values2 = _interopRequireDefault(_values);
 
@@ -81580,7 +92220,7 @@ var _merge2 = __webpack_require__(142);
 
 var _merge3 = _interopRequireDefault(_merge2);
 
-var _stock_actions = __webpack_require__(45);
+var _stock_actions = __webpack_require__(54);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -81631,11 +92271,11 @@ var stockInfo = exports.stockInfo = function stockInfo(state) {
 };
 
 /***/ }),
-/* 950 */
+/* 1009 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseValues = __webpack_require__(951),
-    keys = __webpack_require__(953);
+var baseValues = __webpack_require__(1010),
+    keys = __webpack_require__(1012);
 
 /**
  * Creates an array of the own enumerable string keyed property values of `object`.
@@ -81671,10 +92311,10 @@ module.exports = values;
 
 
 /***/ }),
-/* 951 */
+/* 1010 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayMap = __webpack_require__(952);
+var arrayMap = __webpack_require__(1011);
 
 /**
  * The base implementation of `_.values` and `_.valuesIn` which creates an
@@ -81696,7 +92336,7 @@ module.exports = baseValues;
 
 
 /***/ }),
-/* 952 */
+/* 1011 */
 /***/ (function(module, exports) {
 
 /**
@@ -81723,11 +92363,11 @@ module.exports = arrayMap;
 
 
 /***/ }),
-/* 953 */
+/* 1012 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayLikeKeys = __webpack_require__(249),
-    baseKeys = __webpack_require__(954),
+    baseKeys = __webpack_require__(1013),
     isArrayLike = __webpack_require__(104);
 
 /**
@@ -81766,11 +92406,11 @@ module.exports = keys;
 
 
 /***/ }),
-/* 954 */
+/* 1013 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isPrototype = __webpack_require__(146),
-    nativeKeys = __webpack_require__(955);
+    nativeKeys = __webpack_require__(1014);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -81802,7 +92442,7 @@ module.exports = baseKeys;
 
 
 /***/ }),
-/* 955 */
+/* 1014 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var overArg = __webpack_require__(242);
@@ -81812,10404 +92452,6 @@ var nativeKeys = overArg(Object.keys, Object);
 
 module.exports = nativeKeys;
 
-
-/***/ }),
-/* 956 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _reactRedux = __webpack_require__(37);
-
-var _chart = __webpack_require__(957);
-
-var _chart2 = _interopRequireDefault(_chart);
-
-var _stock_actions = __webpack_require__(45);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var mapStateToProps = function mapStateToProps(state, ownProps) {
-	return {
-		stocks: state.entities.stocks,
-		symbol: ownProps.match.params.stockTicker
-	};
-};
-
-var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-	return {
-		fetchStock: function fetchStock(symbol) {
-			return dispatch((0, _stock_actions.fetchStock)(symbol));
-		}
-	};
-};
-
-exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_chart2.default);
-
-/***/ }),
-/* 957 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(26);
-
-var _candle_stick_chart = __webpack_require__(958);
-
-var _candle_stick_chart2 = _interopRequireDefault(_candle_stick_chart);
-
-var _helper = __webpack_require__(378);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ChartComponent = function (_React$Component) {
-	_inherits(ChartComponent, _React$Component);
-
-	function ChartComponent(props) {
-		_classCallCheck(this, ChartComponent);
-
-		return _possibleConstructorReturn(this, (ChartComponent.__proto__ || Object.getPrototypeOf(ChartComponent)).call(this, props));
-	}
-
-	_createClass(ChartComponent, [{
-		key: "componentDidMount",
-		value: function componentDidMount() {
-			this.props.fetchStock(this.props.symbol);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var _this2 = this;
-
-			if (this.props.stocks[this.props.symbol] == null) {
-				return _react2.default.createElement(
-					"div",
-					null,
-					"Loading..."
-				);
-			}
-			return _react2.default.createElement(
-				_helper.TypeChooser,
-				null,
-				function (type) {
-					return _react2.default.createElement(
-						"div",
-						null,
-						_react2.default.createElement(_candle_stick_chart2.default, {
-							type: type,
-							data: _this2.props.stocks[_this2.props.symbol].chart,
-							width: 100,
-							ratio: 2
-						})
-					);
-				}
-			);
-		}
-	}]);
-
-	return ChartComponent;
-}(_react2.default.Component);
-
-exports.default = ChartComponent;
-
-/***/ }),
-/* 958 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _d = __webpack_require__(265);
-
-var d3 = _interopRequireWildcard(_d);
-
-var _d3Time = __webpack_require__(80);
-
-var _d3Scale = __webpack_require__(61);
-
-var _d3TimeFormat = __webpack_require__(117);
-
-var _reactStockcharts = __webpack_require__(959);
-
-var _series = __webpack_require__(978);
-
-var _axes = __webpack_require__(1006);
-
-var _helper = __webpack_require__(378);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var AreaChart = function (_React$Component) {
-	_inherits(AreaChart, _React$Component);
-
-	function AreaChart() {
-		_classCallCheck(this, AreaChart);
-
-		return _possibleConstructorReturn(this, (AreaChart.__proto__ || Object.getPrototypeOf(AreaChart)).apply(this, arguments));
-	}
-
-	_createClass(AreaChart, [{
-		key: "render",
-		value: function render() {
-			var _props = this.props,
-			    data = _props.data,
-			    type = _props.type,
-			    width = _props.width,
-			    ratio = _props.ratio;
-
-			var xAccessor = function xAccessor(d) {
-				var formatter = (0, _d3TimeFormat.timeParse)("%Y-%m-%d");
-				return formatter(d.date);
-			};
-			var xExtents = [xAccessor((0, _utils.last)(data)), xAccessor(data[data.length - 100])];
-
-			return _react2.default.createElement(
-				"div",
-				null,
-				_react2.default.createElement(
-					_reactStockcharts.ChartCanvas,
-					{
-						ratio: ratio,
-						width: 2000,
-						height: 600,
-						margin: { left: 50, right: 50, top: 10, bottom: 30 },
-						seriesName: "MSFT",
-						data: data,
-						type: type,
-						xAccessor: xAccessor,
-						xScale: (0, _d3Scale.scaleTime)(),
-						xExtents: xExtents,
-						className: "react-stock-chart"
-					},
-					_react2.default.createElement(
-						_reactStockcharts.Chart,
-						{ id: 0, yExtents: function yExtents(d) {
-								return [d.high, d.low];
-							} },
-						_react2.default.createElement(_axes.XAxis, { axisAt: "bottom", orient: "bottom", ticks: 6 }),
-						_react2.default.createElement(_axes.YAxis, { axisAt: "left", orient: "left", ticks: 10 }),
-						_react2.default.createElement(_series.CandlestickSeries, { width: (0, _utils.timeIntervalBarWidth)(_d3Time.utcDay) })
-					)
-				)
-			);
-		}
-	}]);
-
-	return AreaChart;
-}(_react2.default.Component);
-
-AreaChart.propTypes = {
-	data: _propTypes2.default.array.isRequired,
-	width: _propTypes2.default.number.isRequired,
-	ratio: _propTypes2.default.number.isRequired,
-	type: _propTypes2.default.oneOf(["svg", "hybrid"]).isRequired
-};
-
-AreaChart.defaultProps = {
-	type: "svg"
-};
-AreaChart = (0, _helper.fitWidth)(AreaChart);
-
-exports.default = AreaChart;
-
-/***/ }),
-/* 959 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "version", function() { return version; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_ChartCanvas__ = __webpack_require__(960);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ChartCanvas", function() { return __WEBPACK_IMPORTED_MODULE_0__lib_ChartCanvas__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_Chart__ = __webpack_require__(372);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Chart", function() { return __WEBPACK_IMPORTED_MODULE_1__lib_Chart__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_GenericChartComponent__ = __webpack_require__(975);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "GenericChartComponent", function() { return __WEBPACK_IMPORTED_MODULE_2__lib_GenericChartComponent__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_GenericComponent__ = __webpack_require__(373);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "GenericComponent", function() { return __WEBPACK_IMPORTED_MODULE_3__lib_GenericComponent__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_BackgroundText__ = __webpack_require__(976);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BackgroundText", function() { return __WEBPACK_IMPORTED_MODULE_4__lib_BackgroundText__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lib_ZoomButtons__ = __webpack_require__(977);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ZoomButtons", function() { return __WEBPACK_IMPORTED_MODULE_5__lib_ZoomButtons__["a"]; });
-
-
-// common components
-
-
-
-
-
-
-
-
-var version = "0.7.0-beta.21";
-
-/*
-// chart types & Series
-import * as series from "./lib/series";
-import * as scale from "./lib/scale";
-
-import * as coordinates from "./lib/coordinates";
-import * as indicator from "./lib/indicator";
-import * as algorithm from "./lib/algorithm";
-
-import * as annotation from "./lib/annotation";
-
-import * as axes from "./lib/axes";
-import * as tooltip from "./lib/tooltip";
-import * as helper from "./lib/helper";
-
-import * as interactive from "./lib/interactive";
-import * as utils from "./lib/utils";
-
-*/
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-/* 960 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_d3_array__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_zoomBehavior__ = __webpack_require__(970);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__EventCapture__ = __webpack_require__(972);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__CanvasContainer__ = __webpack_require__(973);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__scale_evaluator__ = __webpack_require__(974);
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-
-
-/* eslint-disable no-unused-vars */
-
-/* eslint-enable no-unused-vars */
-
-
-
-
-
-
-
-
-var log = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["m" /* getLogger */])("ChartCanvas");
-
-var CANDIDATES_FOR_RESET = ["seriesName"];
-
-function shouldResetChart(thisProps, nextProps) {
-	return !CANDIDATES_FOR_RESET.every(function (key) {
-		var result = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["z" /* shallowEqual */])(thisProps[key], nextProps[key]);
-		// console.log(key, result);
-		return result;
-	});
-}
-
-function getCursorStyle(useCrossHairStyleCursor) {
-	var style = "\n\t.react-stockcharts-grabbing-cursor {\n\t\tpointer-events: all;\n\t\tcursor: -moz-grabbing;\n\t\tcursor: -webkit-grabbing;\n\t\tcursor: grabbing;\n\t}\n\t.react-stockcharts-crosshair-cursor {\n\t\tpointer-events: all;\n\t\tcursor: crosshair;\n\t}\n\t.react-stockcharts-tooltip-hover {\n\t\tpointer-events: all;\n\t\tcursor: pointer;\n\t}";
-	var tooltipStyle = "\n\t.react-stockcharts-avoid-interaction {\n\t\tpointer-events: none;\n\t}\n\t.react-stockcharts-enable-interaction {\n\t\tpointer-events: all;\n\t}\n\t.react-stockcharts-tooltip {\n\t\tpointer-events: all;\n\t\tcursor: pointer;\n\t}\n\t.react-stockcharts-default-cursor {\n\t\tcursor: default;\n\t}\n\t.react-stockcharts-move-cursor {\n\t\tcursor: move;\n\t}\n\t.react-stockcharts-pointer-cursor {\n\t\tcursor: pointer;\n\t}\n\t.react-stockcharts-ns-resize-cursor {\n\t\tcursor: ns-resize;\n\t}\n\t.react-stockcharts-ew-resize-cursor {\n\t\tcursor: ew-resize;\n\t}";
-	return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-		"style",
-		{ type: "text/css" },
-		useCrossHairStyleCursor ? style + tooltipStyle : tooltipStyle
-	);
-}
-
-function getDimensions(props) {
-	return {
-		height: props.height - props.margin.top - props.margin.bottom,
-		width: props.width - props.margin.left - props.margin.right
-	};
-}
-
-function getXScaleDirection(flipXScale) {
-	return flipXScale ? -1 : 1;
-}
-
-function calculateFullData(props) {
-	var fullData = props.data,
-	    plotFull = props.plotFull,
-	    xScale = props.xScale,
-	    clamp = props.clamp,
-	    pointsPerPxThreshold = props.pointsPerPxThreshold;
-	var xAccessor = props.xAccessor,
-	    displayXAccessor = props.displayXAccessor,
-	    minPointsPerPxThreshold = props.minPointsPerPxThreshold;
-
-
-	var useWholeData = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(plotFull) ? plotFull : xAccessor === __WEBPACK_IMPORTED_MODULE_3__utils__["q" /* identity */];
-
-	var _evaluator = Object(__WEBPACK_IMPORTED_MODULE_8__scale_evaluator__["a" /* default */])({
-		xScale: xScale,
-		useWholeData: useWholeData,
-		clamp: clamp,
-		pointsPerPxThreshold: pointsPerPxThreshold,
-		minPointsPerPxThreshold: minPointsPerPxThreshold
-	}),
-	    filterData = _evaluator.filterData;
-
-	return {
-		xAccessor: xAccessor,
-		displayXAccessor: displayXAccessor || xAccessor,
-		xScale: xScale,
-		fullData: fullData,
-		filterData: filterData
-	};
-}
-function resetChart(props) {
-	var firstCalculation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-	if (process.env.NODE_ENV !== "production") {
-		if (!firstCalculation) log("CHART RESET");
-	}
-
-	var state = calculateState(props);
-	var xAccessor = state.xAccessor,
-	    displayXAccessor = state.displayXAccessor,
-	    fullData = state.fullData;
-	var initialPlotData = state.plotData,
-	    xScale = state.xScale;
-	var postCalculator = props.postCalculator,
-	    children = props.children;
-
-
-	var plotData = postCalculator(initialPlotData);
-
-	var dimensions = getDimensions(props);
-	var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["a" /* getChartConfigWithUpdatedYScales */])(Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["d" /* getNewChartConfig */])(dimensions, children), { plotData: plotData, xAccessor: xAccessor, displayXAccessor: displayXAccessor, fullData: fullData }, xScale.domain());
-
-	return _extends({}, state, {
-		xScale: xScale,
-		plotData: plotData,
-		chartConfig: chartConfig
-	});
-}
-
-function updateChart(newState, initialXScale, props, lastItemWasVisible, initialChartConfig) {
-	var fullData = newState.fullData,
-	    xScale = newState.xScale,
-	    xAccessor = newState.xAccessor,
-	    displayXAccessor = newState.displayXAccessor,
-	    filterData = newState.filterData;
-
-
-	var lastItem = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["u" /* last */])(fullData);
-
-	var _initialXScale$domain = initialXScale.domain(),
-	    _initialXScale$domain2 = _slicedToArray(_initialXScale$domain, 2),
-	    start = _initialXScale$domain2[0],
-	    end = _initialXScale$domain2[1];
-
-	if (process.env.NODE_ENV !== "production") {
-		log("TRIVIAL CHANGE");
-	}
-
-	var postCalculator = props.postCalculator,
-	    children = props.children,
-	    padding = props.padding,
-	    flipXScale = props.flipXScale;
-	var maintainPointsPerPixelOnResize = props.maintainPointsPerPixelOnResize;
-
-	var direction = getXScaleDirection(flipXScale);
-	var dimensions = getDimensions(props);
-
-	var updatedXScale = setXRange(xScale, dimensions, padding, direction);
-
-	// console.log("lastItemWasVisible =", lastItemWasVisible, end, xAccessor(lastItem), end >= xAccessor(lastItem));
-	var initialPlotData = void 0;
-	if (!lastItemWasVisible || end >= xAccessor(lastItem)) {
-		// resize comes here...
-		var _initialXScale$range = initialXScale.range(),
-		    _initialXScale$range2 = _slicedToArray(_initialXScale$range, 2),
-		    rangeStart = _initialXScale$range2[0],
-		    rangeEnd = _initialXScale$range2[1];
-
-		var _updatedXScale$range = updatedXScale.range(),
-		    _updatedXScale$range2 = _slicedToArray(_updatedXScale$range, 2),
-		    newRangeStart = _updatedXScale$range2[0],
-		    newRangeEnd = _updatedXScale$range2[1];
-
-		var newDomainExtent = (newRangeEnd - newRangeStart) / (rangeEnd - rangeStart) * (end - start);
-		var newStart = maintainPointsPerPixelOnResize ? end - newDomainExtent : start;
-
-		var lastItemX = initialXScale(xAccessor(lastItem));
-		// console.log("pointsPerPixel => ", newStart, start, end, updatedXScale(end));
-		var response = filterData(fullData, [newStart, end], xAccessor, updatedXScale, { fallbackStart: start, fallbackEnd: { lastItem: lastItem, lastItemX: lastItemX } });
-		initialPlotData = response.plotData;
-		updatedXScale.domain(response.domain);
-		// console.log("HERE!!!!!", start, end);
-	} else if (lastItemWasVisible && end < xAccessor(lastItem)) {
-		// this is when a new item is added and last item was visible
-		// so slide over and show the new item also
-
-		// get plotData between [xAccessor(l) - (end - start), xAccessor(l)] and DO change the domain
-		var dx = initialXScale(xAccessor(lastItem)) - initialXScale.range()[1];
-
-		var _initialXScale$range$ = initialXScale.range().map(function (x) {
-			return x + dx;
-		}).map(initialXScale.invert),
-		    _initialXScale$range$2 = _slicedToArray(_initialXScale$range$, 2),
-		    _newStart = _initialXScale$range$2[0],
-		    newEnd = _initialXScale$range$2[1];
-
-		var _response = filterData(fullData, [_newStart, newEnd], xAccessor, updatedXScale);
-		initialPlotData = _response.plotData;
-		updatedXScale.domain(_response.domain); // if last item was visible, then shift
-	}
-	// plotData = getDataOfLength(fullData, showingInterval, plotData.length)
-	var plotData = postCalculator(initialPlotData);
-	var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["a" /* getChartConfigWithUpdatedYScales */])(Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["d" /* getNewChartConfig */])(dimensions, children, initialChartConfig), { plotData: plotData, xAccessor: xAccessor, displayXAccessor: displayXAccessor, fullData: fullData }, updatedXScale.domain());
-
-	return {
-		xScale: updatedXScale,
-		xAccessor: xAccessor,
-		chartConfig: chartConfig,
-		plotData: plotData,
-		fullData: fullData,
-		filterData: filterData
-	};
-}
-
-function calculateState(props) {
-	var inputXAccesor = props.xAccessor,
-	    xExtentsProp = props.xExtents,
-	    data = props.data,
-	    padding = props.padding,
-	    flipXScale = props.flipXScale;
-
-
-	if (process.env.NODE_ENV !== "production" && Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(props.xScale.invert)) {
-		for (var i = 1; i < data.length; i++) {
-			var prev = data[i - 1];
-			var curr = data[i];
-			if (inputXAccesor(prev) > inputXAccesor(curr)) {
-				throw new Error("'data' is not sorted on 'xAccessor', send 'data' sorted in assending order of 'xAccessor'");
-			}
-		}
-	}
-
-	var direction = getXScaleDirection(flipXScale);
-	var dimensions = getDimensions(props);
-
-	var extent = typeof xExtentsProp === "function" ? xExtentsProp(data) : Object(__WEBPACK_IMPORTED_MODULE_2_d3_array__["extent"])(xExtentsProp.map(function (d) {
-		return Object(__WEBPACK_IMPORTED_MODULE_3__utils__["j" /* functor */])(d);
-	}).map(function (each) {
-		return each(data, inputXAccesor);
-	}));
-
-	var _calculateFullData = calculateFullData(props),
-	    xAccessor = _calculateFullData.xAccessor,
-	    displayXAccessor = _calculateFullData.displayXAccessor,
-	    xScale = _calculateFullData.xScale,
-	    fullData = _calculateFullData.fullData,
-	    filterData = _calculateFullData.filterData;
-
-	var updatedXScale = setXRange(xScale, dimensions, padding, direction);
-
-	var _filterData = filterData(fullData, extent, inputXAccesor, updatedXScale),
-	    plotData = _filterData.plotData,
-	    domain = _filterData.domain;
-
-	if (process.env.NODE_ENV !== "production" && plotData.length <= 1) {
-		throw new Error("Showing " + plotData.length + " datapoints, review the 'xExtents' prop of ChartCanvas");
-	}
-	return {
-		plotData: plotData,
-		xScale: updatedXScale.domain(domain),
-		xAccessor: xAccessor,
-		displayXAccessor: displayXAccessor,
-		fullData: fullData,
-		filterData: filterData
-	};
-}
-
-function setXRange(xScale, dimensions, padding) {
-	var direction = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 1;
-
-	if (xScale.rangeRoundPoints) {
-		if (isNaN(padding)) throw new Error("padding has to be a number for ordinal scale");
-		xScale.rangeRoundPoints([0, dimensions.width], padding);
-	} else if (xScale.padding) {
-		if (isNaN(padding)) throw new Error("padding has to be a number for ordinal scale");
-		xScale.range([0, dimensions.width]);
-		xScale.padding(padding / 2);
-	} else {
-		var _ref = isNaN(padding) ? padding : { left: padding, right: padding },
-		    left = _ref.left,
-		    right = _ref.right;
-
-		if (direction > 0) {
-			xScale.range([left, dimensions.width - right]);
-		} else {
-			xScale.range([dimensions.width - right, left]);
-		}
-	}
-	return xScale;
-}
-
-function pinchCoordinates(pinch) {
-	var touch1Pos = pinch.touch1Pos,
-	    touch2Pos = pinch.touch2Pos;
-
-
-	return {
-		topLeft: [Math.min(touch1Pos[0], touch2Pos[0]), Math.min(touch1Pos[1], touch2Pos[1])],
-		bottomRight: [Math.max(touch1Pos[0], touch2Pos[0]), Math.max(touch1Pos[1], touch2Pos[1])]
-	};
-}
-
-var ChartCanvas = function (_Component) {
-	_inherits(ChartCanvas, _Component);
-
-	function ChartCanvas() {
-		_classCallCheck(this, ChartCanvas);
-
-		var _this = _possibleConstructorReturn(this, (ChartCanvas.__proto__ || Object.getPrototypeOf(ChartCanvas)).call(this));
-
-		_this.getDataInfo = _this.getDataInfo.bind(_this);
-		_this.getCanvasContexts = _this.getCanvasContexts.bind(_this);
-
-		_this.handleMouseMove = _this.handleMouseMove.bind(_this);
-		_this.handleMouseEnter = _this.handleMouseEnter.bind(_this);
-		_this.handleMouseLeave = _this.handleMouseLeave.bind(_this);
-		_this.handleZoom = _this.handleZoom.bind(_this);
-		_this.handlePinchZoom = _this.handlePinchZoom.bind(_this);
-		_this.handlePinchZoomEnd = _this.handlePinchZoomEnd.bind(_this);
-		_this.handlePan = _this.handlePan.bind(_this);
-		_this.handlePanEnd = _this.handlePanEnd.bind(_this);
-		_this.handleClick = _this.handleClick.bind(_this);
-		_this.handleMouseDown = _this.handleMouseDown.bind(_this);
-		_this.handleDoubleClick = _this.handleDoubleClick.bind(_this);
-		_this.handleContextMenu = _this.handleContextMenu.bind(_this);
-		_this.handleDragStart = _this.handleDragStart.bind(_this);
-		_this.handleDrag = _this.handleDrag.bind(_this);
-		_this.handleDragEnd = _this.handleDragEnd.bind(_this);
-
-		_this.panHelper = _this.panHelper.bind(_this);
-		_this.pinchZoomHelper = _this.pinchZoomHelper.bind(_this);
-		_this.xAxisZoom = _this.xAxisZoom.bind(_this);
-		_this.yAxisZoom = _this.yAxisZoom.bind(_this);
-		_this.resetYDomain = _this.resetYDomain.bind(_this);
-		_this.calculateStateForDomain = _this.calculateStateForDomain.bind(_this);
-		_this.generateSubscriptionId = _this.generateSubscriptionId.bind(_this);
-		_this.draw = _this.draw.bind(_this);
-		_this.redraw = _this.redraw.bind(_this);
-		_this.getAllPanConditions = _this.getAllPanConditions.bind(_this);
-
-		_this.subscriptions = [];
-		_this.subscribe = _this.subscribe.bind(_this);
-		_this.unsubscribe = _this.unsubscribe.bind(_this);
-		_this.amIOnTop = _this.amIOnTop.bind(_this);
-		_this.saveEventCaptureNode = _this.saveEventCaptureNode.bind(_this);
-		_this.saveCanvasContainerNode = _this.saveCanvasContainerNode.bind(_this);
-		_this.setCursorClass = _this.setCursorClass.bind(_this);
-		_this.getMutableState = _this.getMutableState.bind(_this);
-		// this.canvasDrawCallbackList = [];
-		_this.interactiveState = [];
-		_this.panInProgress = false;
-
-		_this.state = {};
-		_this.mutableState = {};
-		_this.lastSubscriptionId = 0;
-		return _this;
-	}
-
-	_createClass(ChartCanvas, [{
-		key: "saveEventCaptureNode",
-		value: function saveEventCaptureNode(node) {
-			this.eventCaptureNode = node;
-		}
-	}, {
-		key: "saveCanvasContainerNode",
-		value: function saveCanvasContainerNode(node) {
-			this.canvasContainerNode = node;
-		}
-	}, {
-		key: "getMutableState",
-		value: function getMutableState() {
-			return this.mutableState;
-		}
-	}, {
-		key: "getDataInfo",
-		value: function getDataInfo() {
-			return _extends({}, this.state, {
-				fullData: this.fullData
-			});
-		}
-	}, {
-		key: "getCanvasContexts",
-		value: function getCanvasContexts() {
-			if (this.canvasContainerNode) {
-				return this.canvasContainerNode.getCanvasContexts();
-			}
-		}
-	}, {
-		key: "generateSubscriptionId",
-		value: function generateSubscriptionId() {
-			this.lastSubscriptionId++;
-			return this.lastSubscriptionId;
-		}
-	}, {
-		key: "clearBothCanvas",
-		value: function clearBothCanvas() {
-			var canvases = this.getCanvasContexts();
-			if (canvases && canvases.axes) {
-				Object(__WEBPACK_IMPORTED_MODULE_3__utils__["g" /* clearCanvas */])([canvases.axes,
-				// canvases.hover,
-				canvases.mouseCoord], this.props.ratio);
-			}
-		}
-	}, {
-		key: "clearMouseCanvas",
-		value: function clearMouseCanvas() {
-			var canvases = this.getCanvasContexts();
-			if (canvases && canvases.mouseCoord) {
-				Object(__WEBPACK_IMPORTED_MODULE_3__utils__["g" /* clearCanvas */])([canvases.mouseCoord], this.props.ratio);
-			}
-		}
-	}, {
-		key: "clearThreeCanvas",
-		value: function clearThreeCanvas() {
-			var canvases = this.getCanvasContexts();
-			if (canvases && canvases.axes) {
-				Object(__WEBPACK_IMPORTED_MODULE_3__utils__["g" /* clearCanvas */])([canvases.axes,
-				// canvases.hover,
-				canvases.mouseCoord, canvases.bg], this.props.ratio);
-			}
-		}
-	}, {
-		key: "subscribe",
-		value: function subscribe(id, rest) {
-			var _rest$getPanCondition = rest.getPanConditions,
-			    getPanConditions = _rest$getPanCondition === undefined ? Object(__WEBPACK_IMPORTED_MODULE_3__utils__["j" /* functor */])({
-				draggable: false,
-				panEnabled: true
-			}) : _rest$getPanCondition;
-
-			this.subscriptions = this.subscriptions.concat(_extends({
-				id: id
-			}, rest, {
-				getPanConditions: getPanConditions
-			}));
-		}
-	}, {
-		key: "unsubscribe",
-		value: function unsubscribe(id) {
-			this.subscriptions = this.subscriptions.filter(function (each) {
-				return each.id !== id;
-			});
-		}
-	}, {
-		key: "getAllPanConditions",
-		value: function getAllPanConditions() {
-			return this.subscriptions.map(function (each) {
-				return each.getPanConditions();
-			});
-		}
-	}, {
-		key: "setCursorClass",
-		value: function setCursorClass(className) {
-			this.eventCaptureNode.setCursorClass(className);
-		}
-	}, {
-		key: "amIOnTop",
-		value: function amIOnTop(id) {
-			var dragableComponents = this.subscriptions.filter(function (each) {
-				return each.getPanConditions().draggable;
-			});
-
-			return dragableComponents.length > 0 && Object(__WEBPACK_IMPORTED_MODULE_3__utils__["u" /* last */])(dragableComponents).id === id;
-		}
-	}, {
-		key: "handleContextMenu",
-		value: function handleContextMenu(mouseXY, e) {
-			var _state = this.state,
-			    xAccessor = _state.xAccessor,
-			    chartConfig = _state.chartConfig,
-			    plotData = _state.plotData,
-			    xScale = _state.xScale;
-
-
-			var currentCharts = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["b" /* getCurrentCharts */])(chartConfig, mouseXY);
-			var currentItem = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["c" /* getCurrentItem */])(xScale, xAccessor, mouseXY, plotData);
-
-			this.triggerEvent("contextmenu", {
-				mouseXY: mouseXY,
-				currentItem: currentItem,
-				currentCharts: currentCharts
-			}, e);
-		}
-	}, {
-		key: "calculateStateForDomain",
-		value: function calculateStateForDomain(newDomain) {
-			var _state2 = this.state,
-			    xAccessor = _state2.xAccessor,
-			    displayXAccessor = _state2.displayXAccessor,
-			    initialXScale = _state2.xScale,
-			    initialChartConfig = _state2.chartConfig,
-			    initialPlotData = _state2.plotData;
-			var filterData = this.state.filterData;
-			var fullData = this.fullData;
-			var postCalculator = this.props.postCalculator;
-
-			var _filterData2 = filterData(fullData, newDomain, xAccessor, initialXScale, {
-				currentPlotData: initialPlotData,
-				currentDomain: initialXScale.domain()
-			}),
-			    beforePlotData = _filterData2.plotData,
-			    domain = _filterData2.domain;
-
-			var plotData = postCalculator(beforePlotData);
-			var updatedScale = initialXScale.copy().domain(domain);
-			var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["a" /* getChartConfigWithUpdatedYScales */])(initialChartConfig, { plotData: plotData, xAccessor: xAccessor, displayXAccessor: displayXAccessor, fullData: fullData }, updatedScale.domain());
-
-			return {
-				xScale: updatedScale,
-				plotData: plotData,
-				chartConfig: chartConfig
-			};
-		}
-	}, {
-		key: "pinchZoomHelper",
-		value: function pinchZoomHelper(initialPinch, finalPinch) {
-			var initialPinchXScale = initialPinch.xScale;
-			var _state3 = this.state,
-			    initialXScale = _state3.xScale,
-			    initialChartConfig = _state3.chartConfig,
-			    initialPlotData = _state3.plotData,
-			    xAccessor = _state3.xAccessor,
-			    displayXAccessor = _state3.displayXAccessor;
-			var filterData = this.state.filterData;
-			var fullData = this.fullData;
-			var postCalculator = this.props.postCalculator;
-
-			var _pinchCoordinates = pinchCoordinates(initialPinch),
-			    iTL = _pinchCoordinates.topLeft,
-			    iBR = _pinchCoordinates.bottomRight;
-
-			var _pinchCoordinates2 = pinchCoordinates(finalPinch),
-			    fTL = _pinchCoordinates2.topLeft,
-			    fBR = _pinchCoordinates2.bottomRight;
-
-			var e = initialPinchXScale.range()[1];
-
-			var xDash = Math.round(-(iBR[0] * fTL[0] - iTL[0] * fBR[0]) / (iTL[0] - iBR[0]));
-			var yDash = Math.round(e + ((e - iBR[0]) * (e - fTL[0]) - (e - iTL[0]) * (e - fBR[0])) / (e - iTL[0] - (e - iBR[0])));
-
-			var x = Math.round(-xDash * iTL[0] / (-xDash + fTL[0]));
-			var y = Math.round(e - (yDash - e) * (e - iTL[0]) / (yDash + (e - fTL[0])));
-
-			var newDomain = [x, y].map(initialPinchXScale.invert);
-			// var domainR = initial.right + right;
-
-			var _filterData3 = filterData(fullData, newDomain, xAccessor, initialPinchXScale, {
-				currentPlotData: initialPlotData,
-				currentDomain: initialXScale.domain()
-			}),
-			    beforePlotData = _filterData3.plotData,
-			    domain = _filterData3.domain;
-
-			var plotData = postCalculator(beforePlotData);
-			var updatedScale = initialXScale.copy().domain(domain);
-
-			var mouseXY = finalPinch.touch1Pos;
-			var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["a" /* getChartConfigWithUpdatedYScales */])(initialChartConfig, { plotData: plotData, xAccessor: xAccessor, displayXAccessor: displayXAccessor, fullData: fullData }, updatedScale.domain());
-			var currentItem = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["c" /* getCurrentItem */])(updatedScale, xAccessor, mouseXY, plotData);
-
-			return {
-				chartConfig: chartConfig,
-				xScale: updatedScale,
-				plotData: plotData,
-				mouseXY: mouseXY,
-				currentItem: currentItem
-			};
-		}
-	}, {
-		key: "cancelDrag",
-		value: function cancelDrag() {
-			this.eventCaptureNode.cancelDrag();
-			this.triggerEvent("dragcancel");
-		}
-	}, {
-		key: "handlePinchZoom",
-		value: function handlePinchZoom(initialPinch, finalPinch, e) {
-			var _this2 = this;
-
-			if (!this.waitingForAnimationFrame) {
-				this.waitingForAnimationFrame = true;
-				var state = this.pinchZoomHelper(initialPinch, finalPinch);
-
-				this.triggerEvent("pinchzoom", state, e);
-
-				this.finalPinch = finalPinch;
-
-				requestAnimationFrame(function () {
-					_this2.clearBothCanvas();
-					_this2.draw({ trigger: "pinchzoom" });
-					_this2.waitingForAnimationFrame = false;
-				});
-			}
-		}
-	}, {
-		key: "handlePinchZoomEnd",
-		value: function handlePinchZoomEnd(initialPinch, e) {
-			var xAccessor = this.state.xAccessor;
-
-
-			if (this.finalPinch) {
-				var state = this.pinchZoomHelper(initialPinch, this.finalPinch);
-				var xScale = state.xScale;
-
-				this.triggerEvent("pinchzoom", state, e);
-
-				this.finalPinch = null;
-
-				this.clearThreeCanvas();
-
-				var fullData = this.fullData;
-
-				var firstItem = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(fullData);
-
-				var start = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(xScale.domain());
-				var end = xAccessor(firstItem);
-				var onLoadMore = this.props.onLoadMore;
-
-
-				this.setState(state, function () {
-					if (start < end) {
-						onLoadMore(start, end);
-					}
-				});
-			}
-		}
-	}, {
-		key: "handleZoom",
-		value: function handleZoom(zoomDirection, mouseXY, e) {
-			if (this.panInProgress) return;
-			// console.log("zoomDirection ", zoomDirection, " mouseXY ", mouseXY);
-			var _state4 = this.state,
-			    xAccessor = _state4.xAccessor,
-			    initialXScale = _state4.xScale,
-			    initialPlotData = _state4.plotData;
-			var _props = this.props,
-			    zoomMultiplier = _props.zoomMultiplier,
-			    zoomAnchor = _props.zoomAnchor;
-			var fullData = this.fullData;
-
-			var item = zoomAnchor({
-				xScale: initialXScale,
-				xAccessor: xAccessor,
-				mouseXY: mouseXY,
-				plotData: initialPlotData,
-				fullData: fullData
-			});
-
-			var cx = initialXScale(item);
-			var c = zoomDirection > 0 ? 1 * zoomMultiplier : 1 / zoomMultiplier;
-			var newDomain = initialXScale.range().map(function (x) {
-				return cx + (x - cx) * c;
-			}).map(initialXScale.invert);
-
-			var _calculateStateForDom = this.calculateStateForDomain(newDomain),
-			    xScale = _calculateStateForDom.xScale,
-			    plotData = _calculateStateForDom.plotData,
-			    chartConfig = _calculateStateForDom.chartConfig;
-
-			var currentItem = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["c" /* getCurrentItem */])(xScale, xAccessor, mouseXY, plotData);
-			var currentCharts = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["b" /* getCurrentCharts */])(chartConfig, mouseXY);
-
-			this.clearThreeCanvas();
-
-			var firstItem = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(fullData);
-
-			var start = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(xScale.domain());
-			var end = xAccessor(firstItem);
-			var onLoadMore = this.props.onLoadMore;
-
-
-			this.mutableState = {
-				mouseXY: mouseXY,
-				currentItem: currentItem,
-				currentCharts: currentCharts
-			};
-
-			this.triggerEvent("zoom", {
-				xScale: xScale,
-				plotData: plotData,
-				chartConfig: chartConfig,
-				mouseXY: mouseXY,
-				currentCharts: currentCharts,
-				currentItem: currentItem,
-				show: true
-			}, e);
-
-			this.setState({
-				xScale: xScale,
-				plotData: plotData,
-				chartConfig: chartConfig
-			}, function () {
-				if (start < end) {
-					onLoadMore(start, end);
-				}
-			});
-		}
-	}, {
-		key: "xAxisZoom",
-		value: function xAxisZoom(newDomain) {
-			var _calculateStateForDom2 = this.calculateStateForDomain(newDomain),
-			    xScale = _calculateStateForDom2.xScale,
-			    plotData = _calculateStateForDom2.plotData,
-			    chartConfig = _calculateStateForDom2.chartConfig;
-
-			this.clearThreeCanvas();
-
-			var xAccessor = this.state.xAccessor;
-			var fullData = this.fullData;
-
-			var firstItem = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(fullData);
-			var start = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(xScale.domain());
-			var end = xAccessor(firstItem);
-			var onLoadMore = this.props.onLoadMore;
-
-
-			this.setState({
-				xScale: xScale,
-				plotData: plotData,
-				chartConfig: chartConfig
-			}, function () {
-				if (start < end) onLoadMore(start, end);
-			});
-		}
-	}, {
-		key: "yAxisZoom",
-		value: function yAxisZoom(chartId, newDomain) {
-			this.clearThreeCanvas();
-			var initialChartConfig = this.state.chartConfig;
-
-			var chartConfig = initialChartConfig.map(function (each) {
-				if (each.id === chartId) {
-					var yScale = each.yScale;
-
-					return _extends({}, each, {
-						yScale: yScale.copy().domain(newDomain),
-						yPanEnabled: true
-					});
-				} else {
-					return each;
-				}
-			});
-
-			this.setState({
-				chartConfig: chartConfig
-			});
-		}
-	}, {
-		key: "triggerEvent",
-		value: function triggerEvent(type, props, e) {
-			var _this3 = this;
-
-			// console.log("triggering ->", type);
-
-			this.subscriptions.forEach(function (each) {
-				var state = _extends({}, _this3.state, {
-					fullData: _this3.fullData,
-					subscriptions: _this3.subscriptions
-				});
-				each.listener(type, props, state, e);
-			});
-		}
-	}, {
-		key: "draw",
-		value: function draw(props) {
-			this.subscriptions.forEach(function (each) {
-				if (Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(each.draw)) each.draw(props);
-			});
-		}
-	}, {
-		key: "redraw",
-		value: function redraw() {
-			this.clearThreeCanvas();
-			this.draw({ force: true });
-		}
-	}, {
-		key: "panHelper",
-		value: function panHelper(mouseXY, initialXScale, panOrigin, chartsToPan) {
-			var _state5 = this.state,
-			    xAccessor = _state5.xAccessor,
-			    displayXAccessor = _state5.displayXAccessor,
-			    initialChartConfig = _state5.chartConfig;
-			var filterData = this.state.filterData;
-			var fullData = this.fullData;
-			var postCalculator = this.props.postCalculator;
-
-
-			var dx = mouseXY[0] - panOrigin[0];
-			var dy = mouseXY[1] - panOrigin[1];
-
-			if (Object(__WEBPACK_IMPORTED_MODULE_3__utils__["s" /* isNotDefined */])(initialXScale.invert)) throw new Error("xScale provided does not have an invert() method." + "You are likely using an ordinal scale. This scale does not support zoom, pan");
-
-			var newDomain = initialXScale.range().map(function (x) {
-				return x - dx;
-			}).map(initialXScale.invert);
-
-			var _filterData4 = filterData(fullData, newDomain, xAccessor, initialXScale, {
-				currentPlotData: this.hackyWayToStopPanBeyondBounds__plotData,
-				currentDomain: this.hackyWayToStopPanBeyondBounds__domain
-			}),
-			    beforePlotData = _filterData4.plotData,
-			    domain = _filterData4.domain;
-
-			var updatedScale = initialXScale.copy().domain(domain);
-			var plotData = postCalculator(beforePlotData);
-			// console.log(last(plotData));
-
-			var currentItem = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["c" /* getCurrentItem */])(updatedScale, xAccessor, mouseXY, plotData);
-			var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["a" /* getChartConfigWithUpdatedYScales */])(initialChartConfig, { plotData: plotData, xAccessor: xAccessor, displayXAccessor: displayXAccessor, fullData: fullData }, updatedScale.domain(), dy, chartsToPan);
-			var currentCharts = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["b" /* getCurrentCharts */])(chartConfig, mouseXY);
-
-			// console.log(initialXScale.domain(), newDomain, updatedScale.domain());
-			return {
-				xScale: updatedScale,
-				plotData: plotData,
-				chartConfig: chartConfig,
-				mouseXY: mouseXY,
-				currentCharts: currentCharts,
-				currentItem: currentItem
-			};
-		}
-	}, {
-		key: "handlePan",
-		value: function handlePan(mousePosition, panStartXScale, panOrigin, chartsToPan, e) {
-			var _this4 = this;
-
-			if (!this.waitingForPanAnimationFrame) {
-				this.waitingForPanAnimationFrame = true;
-
-				this.hackyWayToStopPanBeyondBounds__plotData = this.hackyWayToStopPanBeyondBounds__plotData || this.state.plotData;
-				this.hackyWayToStopPanBeyondBounds__domain = this.hackyWayToStopPanBeyondBounds__domain || this.state.xScale.domain();
-
-				var state = this.panHelper(mousePosition, panStartXScale, panOrigin, chartsToPan);
-
-				this.hackyWayToStopPanBeyondBounds__plotData = state.plotData;
-				this.hackyWayToStopPanBeyondBounds__domain = state.xScale.domain();
-
-				this.panInProgress = true;
-				// console.log(panStartXScale.domain(), state.xScale.domain())
-
-				this.triggerEvent("pan", state, e);
-
-				this.mutableState = {
-					mouseXY: state.mouseXY,
-					currentItem: state.currentItem,
-					currentCharts: state.currentCharts
-				};
-				requestAnimationFrame(function () {
-
-					_this4.waitingForPanAnimationFrame = false;
-					_this4.clearBothCanvas();
-					_this4.draw({ trigger: "pan" });
-				});
-			}
-		}
-	}, {
-		key: "handleMouseDown",
-		value: function handleMouseDown(mousePosition, currentCharts, e) {
-			this.triggerEvent("mousedown", this.mutableState, e);
-		}
-	}, {
-		key: "handleMouseEnter",
-		value: function handleMouseEnter(e) {
-			this.triggerEvent("mouseenter", {
-				show: true
-			}, e);
-		}
-	}, {
-		key: "handleMouseMove",
-		value: function handleMouseMove(mouseXY, inputType, e) {
-			var _this5 = this;
-
-			if (!this.waitingForAnimationFrame) {
-				this.waitingForAnimationFrame = true;
-
-				var _state6 = this.state,
-				    chartConfig = _state6.chartConfig,
-				    plotData = _state6.plotData,
-				    xScale = _state6.xScale,
-				    xAccessor = _state6.xAccessor;
-
-				var currentCharts = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["b" /* getCurrentCharts */])(chartConfig, mouseXY);
-				var currentItem = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["c" /* getCurrentItem */])(xScale, xAccessor, mouseXY, plotData);
-				this.triggerEvent("mousemove", {
-					show: true,
-					mouseXY: mouseXY,
-					// prevMouseXY is used in interactive components
-					prevMouseXY: this.prevMouseXY,
-					currentItem: currentItem,
-					currentCharts: currentCharts
-				}, e);
-
-				this.prevMouseXY = mouseXY;
-				this.mutableState = {
-					mouseXY: mouseXY,
-					currentItem: currentItem,
-					currentCharts: currentCharts
-				};
-
-				requestAnimationFrame(function () {
-					_this5.clearMouseCanvas();
-					_this5.draw({ trigger: "mousemove" });
-					_this5.waitingForAnimationFrame = false;
-				});
-			}
-		}
-	}, {
-		key: "handleMouseLeave",
-		value: function handleMouseLeave(e) {
-			this.triggerEvent("mouseleave", { show: false }, e);
-			this.clearMouseCanvas();
-			this.draw({ trigger: "mouseleave" });
-		}
-	}, {
-		key: "handleDragStart",
-		value: function handleDragStart(_ref2, e) {
-			var startPos = _ref2.startPos;
-
-			this.triggerEvent("dragstart", { startPos: startPos }, e);
-		}
-	}, {
-		key: "handleDrag",
-		value: function handleDrag(_ref3, e) {
-			var _this6 = this;
-
-			var startPos = _ref3.startPos,
-			    mouseXY = _ref3.mouseXY;
-			var _state7 = this.state,
-			    chartConfig = _state7.chartConfig,
-			    plotData = _state7.plotData,
-			    xScale = _state7.xScale,
-			    xAccessor = _state7.xAccessor;
-
-			var currentCharts = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["b" /* getCurrentCharts */])(chartConfig, mouseXY);
-			var currentItem = Object(__WEBPACK_IMPORTED_MODULE_5__utils_ChartDataUtil__["c" /* getCurrentItem */])(xScale, xAccessor, mouseXY, plotData);
-
-			this.triggerEvent("drag", {
-				startPos: startPos,
-				mouseXY: mouseXY,
-				currentItem: currentItem,
-				currentCharts: currentCharts
-			}, e);
-
-			this.mutableState = {
-				mouseXY: mouseXY,
-				currentItem: currentItem,
-				currentCharts: currentCharts
-			};
-
-			requestAnimationFrame(function () {
-				_this6.clearMouseCanvas();
-				_this6.draw({ trigger: "drag" });
-			});
-		}
-	}, {
-		key: "handleDragEnd",
-		value: function handleDragEnd(_ref4, e) {
-			var _this7 = this;
-
-			var mouseXY = _ref4.mouseXY;
-
-			this.triggerEvent("dragend", { mouseXY: mouseXY }, e);
-
-			requestAnimationFrame(function () {
-				_this7.clearMouseCanvas();
-				_this7.draw({ trigger: "dragend" });
-			});
-		}
-	}, {
-		key: "handleClick",
-		value: function handleClick(mousePosition, e) {
-			var _this8 = this;
-
-			this.triggerEvent("click", this.mutableState, e);
-
-			requestAnimationFrame(function () {
-				_this8.clearMouseCanvas();
-				_this8.draw({ trigger: "click" });
-			});
-		}
-	}, {
-		key: "handleDoubleClick",
-		value: function handleDoubleClick(mousePosition, e) {
-			this.triggerEvent("dblclick", {}, e);
-		}
-	}, {
-		key: "handlePanEnd",
-		value: function handlePanEnd(mousePosition, panStartXScale, panOrigin, chartsToPan, e) {
-			var _this9 = this;
-
-			var state = this.panHelper(mousePosition, panStartXScale, panOrigin, chartsToPan);
-			// console.log(this.canvasDrawCallbackList.map(d => d.type));
-			this.hackyWayToStopPanBeyondBounds__plotData = null;
-			this.hackyWayToStopPanBeyondBounds__domain = null;
-
-			this.panInProgress = false;
-
-			// console.log("PANEND", panEnd++);
-			var xScale = state.xScale,
-			    plotData = state.plotData,
-			    chartConfig = state.chartConfig;
-
-
-			this.triggerEvent("panend", state, e);
-
-			requestAnimationFrame(function () {
-				var xAccessor = _this9.state.xAccessor;
-				var fullData = _this9.fullData;
-
-
-				var firstItem = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(fullData);
-				var start = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(xScale.domain());
-				var end = xAccessor(firstItem);
-				// console.log(start, end, start < end ? "Load more" : "I have it");
-
-				var onLoadMore = _this9.props.onLoadMore;
-
-
-				_this9.clearThreeCanvas();
-
-				_this9.setState({
-					xScale: xScale,
-					plotData: plotData,
-					chartConfig: chartConfig
-				}, function () {
-					if (start < end) onLoadMore(start, end);
-				});
-			});
-		}
-	}, {
-		key: "getChildContext",
-		value: function getChildContext() {
-			var dimensions = getDimensions(this.props);
-			return {
-				fullData: this.fullData,
-				plotData: this.state.plotData,
-				width: dimensions.width,
-				height: dimensions.height,
-				chartConfig: this.state.chartConfig,
-				xScale: this.state.xScale,
-				xAccessor: this.state.xAccessor,
-				displayXAccessor: this.state.displayXAccessor,
-				chartCanvasType: this.props.type,
-				margin: this.props.margin,
-				ratio: this.props.ratio,
-				xAxisZoom: this.xAxisZoom,
-				yAxisZoom: this.yAxisZoom,
-				getCanvasContexts: this.getCanvasContexts,
-				redraw: this.redraw,
-				subscribe: this.subscribe,
-				unsubscribe: this.unsubscribe,
-				generateSubscriptionId: this.generateSubscriptionId,
-				getMutableState: this.getMutableState,
-				amIOnTop: this.amIOnTop,
-				setCursorClass: this.setCursorClass
-			};
-		}
-	}, {
-		key: "componentWillMount",
-		value: function componentWillMount() {
-			var _resetChart = resetChart(this.props, true),
-			    fullData = _resetChart.fullData,
-			    state = _objectWithoutProperties(_resetChart, ["fullData"]);
-
-			this.setState(state);
-			this.fullData = fullData;
-		}
-	}, {
-		key: "componentWillReceiveProps",
-		value: function componentWillReceiveProps(nextProps) {
-			var reset = shouldResetChart(this.props, nextProps);
-
-			var interaction = isInteractionEnabled(this.state.xScale, this.state.xAccessor, this.state.plotData);
-			var initialChartConfig = this.state.chartConfig;
-
-
-			var newState = void 0;
-			if (!interaction || reset || !Object(__WEBPACK_IMPORTED_MODULE_3__utils__["z" /* shallowEqual */])(this.props.xExtents, nextProps.xExtents)) {
-				if (process.env.NODE_ENV !== "production") {
-					if (!interaction) log("RESET CHART, changes to a non interactive chart");else if (reset) log("RESET CHART, one or more of these props changed", CANDIDATES_FOR_RESET);else log("xExtents changed");
-				}
-				// do reset
-				newState = resetChart(nextProps);
-			} else {
-				var _state$xScale$domain = this.state.xScale.domain(),
-				    _state$xScale$domain2 = _slicedToArray(_state$xScale$domain, 2),
-				    start = _state$xScale$domain2[0],
-				    end = _state$xScale$domain2[1];
-
-				var prevLastItem = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["u" /* last */])(this.fullData);
-
-				var calculatedState = calculateFullData(nextProps);
-				var xAccessor = calculatedState.xAccessor;
-
-				var lastItemWasVisible = xAccessor(prevLastItem) <= end && xAccessor(prevLastItem) >= start;
-
-				if (process.env.NODE_ENV !== "production") {
-					if (this.props.data !== nextProps.data) log("data is changed but seriesName did not, change the seriesName if you wish to reset the chart and lastItemWasVisible = ", lastItemWasVisible);else log("Trivial change, may be width/height or type changed, but that does not matter");
-				}
-
-				newState = updateChart(calculatedState, this.state.xScale, nextProps, lastItemWasVisible, initialChartConfig);
-			}
-
-			var _newState = newState,
-			    fullData = _newState.fullData,
-			    state = _objectWithoutProperties(_newState, ["fullData"]);
-
-			if (this.panInProgress) {
-				if (process.env.NODE_ENV !== "production") {
-					log("Pan is in progress");
-				}
-			} else {
-				/*
-    if (!reset) {
-    	state.chartConfig
-    		.forEach((each) => {
-    			// const sourceChartConfig = initialChartConfig.filter(d => d.id === each.id);
-    			const prevChartConfig = find(initialChartConfig, d => d.id === each.id);
-    			if (isDefined(prevChartConfig) && prevChartConfig.yPanEnabled) {
-    				each.yScale.domain(prevChartConfig.yScale.domain());
-    				each.yPanEnabled = prevChartConfig.yPanEnabled;
-    			}
-    		});
-    }
-    */
-				this.clearThreeCanvas();
-
-				this.setState(state);
-			}
-			this.fullData = fullData;
-		}
-		/*
-  componentDidUpdate(prevProps, prevState) {
-  	console.error(this.state.chartConfig, this.state.chartConfig.map(d => d.yScale.domain()));
-  }
-  */
-
-	}, {
-		key: "resetYDomain",
-		value: function resetYDomain(chartId) {
-			var chartConfig = this.state.chartConfig;
-
-			var changed = false;
-			var newChartConfig = chartConfig.map(function (each) {
-				if ((Object(__WEBPACK_IMPORTED_MODULE_3__utils__["s" /* isNotDefined */])(chartId) || each.id === chartId) && !Object(__WEBPACK_IMPORTED_MODULE_3__utils__["z" /* shallowEqual */])(each.yScale.domain(), each.realYDomain)) {
-					changed = true;
-					return _extends({}, each, {
-						yScale: each.yScale.domain(each.realYDomain),
-						yPanEnabled: false
-					});
-				}
-				return each;
-			});
-
-			if (changed) {
-				this.clearThreeCanvas();
-				this.setState({
-					chartConfig: newChartConfig
-				});
-			}
-		}
-	}, {
-		key: "shouldComponentUpdate",
-		value: function shouldComponentUpdate() {
-			// console.log("Happneing.....", !this.panInProgress)
-			return !this.panInProgress;
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var _props2 = this.props,
-			    type = _props2.type,
-			    height = _props2.height,
-			    width = _props2.width,
-			    margin = _props2.margin,
-			    className = _props2.className,
-			    zIndex = _props2.zIndex,
-			    defaultFocus = _props2.defaultFocus,
-			    ratio = _props2.ratio,
-			    mouseMoveEvent = _props2.mouseMoveEvent,
-			    panEvent = _props2.panEvent,
-			    zoomEvent = _props2.zoomEvent;
-			var _props3 = this.props,
-			    useCrossHairStyleCursor = _props3.useCrossHairStyleCursor,
-			    onSelect = _props3.onSelect;
-			var _state8 = this.state,
-			    plotData = _state8.plotData,
-			    xScale = _state8.xScale,
-			    xAccessor = _state8.xAccessor,
-			    chartConfig = _state8.chartConfig;
-
-			var dimensions = getDimensions(this.props);
-
-			var interaction = isInteractionEnabled(xScale, xAccessor, plotData);
-
-			var cursor = getCursorStyle(useCrossHairStyleCursor && interaction);
-			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-				"div",
-				{ style: { position: "relative", width: width, height: height }, className: className, onClick: onSelect },
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__CanvasContainer__["a" /* default */], { ref: this.saveCanvasContainerNode,
-					type: type,
-					ratio: ratio,
-					width: width, height: height, zIndex: zIndex }),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-					"svg",
-					{ className: className, width: width, height: height, style: { position: "absolute", zIndex: zIndex + 5 } },
-					cursor,
-					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-						"defs",
-						null,
-						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-							"clipPath",
-							{ id: "chart-area-clip" },
-							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", { x: "0", y: "0", width: dimensions.width, height: dimensions.height })
-						),
-						chartConfig.map(function (each, idx) {
-							return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-								"clipPath",
-								{ key: idx, id: "chart-area-clip-" + each.id },
-								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", { x: "0", y: "0", width: each.width, height: each.height })
-							);
-						})
-					),
-					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-						"g",
-						{ transform: "translate(" + (margin.left + 0.5) + ", " + (margin.top + 0.5) + ")" },
-						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__EventCapture__["a" /* default */], {
-							ref: this.saveEventCaptureNode,
-							mouseMove: mouseMoveEvent && interaction,
-							zoom: zoomEvent && interaction,
-							pan: panEvent && interaction,
-
-							width: dimensions.width,
-							height: dimensions.height,
-							chartConfig: chartConfig,
-							xScale: xScale,
-							xAccessor: xAccessor,
-							focus: defaultFocus,
-
-							getAllPanConditions: this.getAllPanConditions,
-							onContextMenu: this.handleContextMenu,
-							onClick: this.handleClick,
-							onDoubleClick: this.handleDoubleClick,
-							onMouseDown: this.handleMouseDown,
-							onMouseMove: this.handleMouseMove,
-							onMouseEnter: this.handleMouseEnter,
-							onMouseLeave: this.handleMouseLeave,
-
-							onDragStart: this.handleDragStart,
-							onDrag: this.handleDrag,
-							onDragComplete: this.handleDragEnd,
-
-							onZoom: this.handleZoom,
-							onPinchZoom: this.handlePinchZoom,
-							onPinchZoomEnd: this.handlePinchZoomEnd,
-							onPan: this.handlePan,
-							onPanEnd: this.handlePanEnd
-						}),
-						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-							"g",
-							{ className: "react-stockcharts-avoid-interaction" },
-							this.props.children
-						)
-					)
-				)
-			);
-		}
-	}]);
-
-	return ChartCanvas;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-function isInteractionEnabled(xScale, xAccessor, data) {
-	var interaction = !isNaN(xScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_3__utils__["o" /* head */])(data)))) && Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(xScale.invert);
-	return interaction;
-}
-
-ChartCanvas.propTypes = {
-	width: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	height: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	margin: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object,
-	ratio: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	// interval: PropTypes.oneOf(["D", "W", "M"]), // ,"m1", "m5", "m15", "W", "M"
-	type: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOf(["svg", "hybrid"]),
-	pointsPerPxThreshold: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
-	minPointsPerPxThreshold: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
-	data: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array.isRequired,
-	// initialDisplay: PropTypes.number,
-	xAccessor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	xExtents: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func]),
-	zoomAnchor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-
-	className: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
-	seriesName: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
-	zIndex: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
-	children: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.node.isRequired,
-	xScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	postCalculator: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	flipXScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
-	useCrossHairStyleCursor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
-	padding: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.shape({
-		left: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
-		right: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number
-	})]),
-	defaultFocus: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
-	zoomMultiplier: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
-	onLoadMore: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	displayXAccessor: function displayXAccessor(props, propName /* , componentName */) {
-		if (Object(__WEBPACK_IMPORTED_MODULE_3__utils__["s" /* isNotDefined */])(props[propName])) {
-			console.warn("`displayXAccessor` is not defined," + " will use the value from `xAccessor` as `displayXAccessor`." + " This might be ok if you do not use a discontinuous scale" + " but if you do, provide a `displayXAccessor` prop to `ChartCanvas`");
-		} else if (typeof props[propName] !== "function") {
-			return new Error("displayXAccessor has to be a function");
-		}
-	},
-	mouseMoveEvent: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
-	panEvent: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
-	clamp: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool]),
-	zoomEvent: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
-	onSelect: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	maintainPointsPerPixelOnResize: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool
-};
-
-ChartCanvas.defaultProps = {
-	margin: { top: 20, right: 30, bottom: 30, left: 80 },
-	type: "hybrid",
-	pointsPerPxThreshold: 2,
-	minPointsPerPxThreshold: 1 / 100,
-	className: "react-stockchart",
-	zIndex: 1,
-	xExtents: [__WEBPACK_IMPORTED_MODULE_2_d3_array__["min"], __WEBPACK_IMPORTED_MODULE_2_d3_array__["max"]],
-	postCalculator: __WEBPACK_IMPORTED_MODULE_3__utils__["q" /* identity */],
-	padding: 0,
-	xAccessor: __WEBPACK_IMPORTED_MODULE_3__utils__["q" /* identity */],
-	flipXScale: false,
-	useCrossHairStyleCursor: true,
-	defaultFocus: true,
-	onLoadMore: __WEBPACK_IMPORTED_MODULE_3__utils__["x" /* noop */],
-	onSelect: __WEBPACK_IMPORTED_MODULE_3__utils__["x" /* noop */],
-	mouseMoveEvent: true,
-	panEvent: true,
-	zoomEvent: true,
-	zoomMultiplier: 1.1,
-	clamp: false,
-	zoomAnchor: __WEBPACK_IMPORTED_MODULE_4__utils_zoomBehavior__["a" /* mouseBasedZoomAnchor */],
-	maintainPointsPerPixelOnResize: true
-	// ratio: 2,
-};
-
-ChartCanvas.childContextTypes = {
-	plotData: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array,
-	fullData: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array,
-	chartConfig: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.arrayOf(__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.shape({
-		id: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string]).isRequired,
-		origin: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.arrayOf(__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number).isRequired,
-		padding: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.shape({
-			top: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
-			bottom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number
-		})]),
-		yExtents: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.arrayOf(__WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func),
-		yExtentsProvider: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-		yScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-		mouseCoordinates: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.shape({
-			at: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
-			format: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func
-		}),
-		width: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-		height: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired
-	})).isRequired,
-	xScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	xAccessor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	displayXAccessor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	width: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	height: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	chartCanvasType: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOf(["svg", "hybrid"]).isRequired,
-	margin: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object.isRequired,
-	ratio: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	getCanvasContexts: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	xAxisZoom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	yAxisZoom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	amIOnTop: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	redraw: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	subscribe: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	unsubscribe: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	setCursorClass: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	generateSubscriptionId: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	getMutableState: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func
-};
-
-ChartCanvas.ohlcv = function (d) {
-	return { date: d.date, open: d.open, high: d.high, low: d.low, close: d.close, volume: d.volume };
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (ChartCanvas);
-//# sourceMappingURL=ChartCanvas.js.map
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
-
-/***/ }),
-/* 961 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export default */
-// copied from https://github.com/d3fc/d3fc-rebind/blob/master/src/rebind.js
-
-function createReboundMethod(target, source, name) {
-	var method = source[name];
-	if (typeof method !== "function") {
-		throw new Error("Attempt to rebind " + name + " which isn't a function on the source object");
-	}
-	return function () {
-		for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-			args[_key] = arguments[_key];
-		}
-
-		var value = method.apply(source, args);
-		return value === source ? target : value;
-	};
-}
-
-function rebind(target, source) {
-	for (var _len2 = arguments.length, names = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-		names[_key2 - 2] = arguments[_key2];
-	}
-
-	var _iteratorNormalCompletion = true;
-	var _didIteratorError = false;
-	var _iteratorError = undefined;
-
-	try {
-		for (var _iterator = names[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-			var name = _step.value;
-
-			target[name] = createReboundMethod(target, source, name);
-		}
-	} catch (err) {
-		_didIteratorError = true;
-		_iteratorError = err;
-	} finally {
-		try {
-			if (!_iteratorNormalCompletion && _iterator.return) {
-				_iterator.return();
-			}
-		} finally {
-			if (_didIteratorError) {
-				throw _iteratorError;
-			}
-		}
-	}
-
-	return target;
-}
-//# sourceMappingURL=rebind.js.map
-
-/***/ }),
-/* 962 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__identity__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__zipper__ = __webpack_require__(369);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__noop__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index__ = __webpack_require__(16);
-/*
-https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/merge.js
-
-The MIT License (MIT)
-
-Copyright (c) 2014-2015 Scott Logic Ltd.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-*/
-
-
-
-
-
-
-
-// applies an algorithm to an array, merging the result back into
-// the source array using the given merge function.
-/* unused harmony default export */ var _unused_webpack_default_export = (function () {
-
-	var algorithm = __WEBPACK_IMPORTED_MODULE_0__identity__["a" /* default */],
-	    skipUndefined = true,
-	    merge = __WEBPACK_IMPORTED_MODULE_2__noop__["a" /* default */];
-
-	function mergeCompute(data) {
-		var zip = Object(__WEBPACK_IMPORTED_MODULE_1__zipper__["a" /* default */])().combine(function (datum, indicator) {
-			var result = skipUndefined && Object(__WEBPACK_IMPORTED_MODULE_3__index__["s" /* isNotDefined */])(indicator) ? datum : merge(datum, indicator);
-			return Object(__WEBPACK_IMPORTED_MODULE_3__index__["s" /* isNotDefined */])(result) ? datum : result;
-		});
-
-		// console.log(data);
-		return zip(data, algorithm(data));
-	}
-
-	mergeCompute.algorithm = function (x) {
-		if (!arguments.length) {
-			return algorithm;
-		}
-		algorithm = x;
-		return mergeCompute;
-	};
-
-	mergeCompute.merge = function (x) {
-		if (!arguments.length) {
-			return merge;
-		}
-		merge = x;
-		return mergeCompute;
-	};
-	mergeCompute.skipUndefined = function (x) {
-		if (!arguments.length) {
-			return skipUndefined;
-		}
-		skipUndefined = x;
-		return mergeCompute;
-	};
-
-	return mergeCompute;
-});
-//# sourceMappingURL=merge.js.map
-
-/***/ }),
-/* 963 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__noop__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(16);
-
-
-/*
-
-Taken from https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/calculator/slidingWindow.js
-
-The MIT License (MIT)
-
-Copyright (c) 2014-2015 Scott Logic Ltd.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-*/
-
-
-
-
-/* unused harmony default export */ var _unused_webpack_default_export = (function () {
-
-	var undefinedValue = undefined,
-	    windowSize = 10,
-	    accumulator = __WEBPACK_IMPORTED_MODULE_0__noop__["a" /* default */],
-	    sourcePath = void 0,
-	    source = void 0,
-	    skipInitial = 0,
-	    misc = void 0;
-
-	// eslint-disable-next-line prefer-const
-	var slidingWindow = function slidingWindow(data) {
-		var sourceFunction = source || Object(__WEBPACK_IMPORTED_MODULE_1__index__["y" /* path */])(sourcePath);
-
-		var size = Object(__WEBPACK_IMPORTED_MODULE_1__index__["j" /* functor */])(windowSize).apply(this, arguments);
-		var windowData = data.slice(skipInitial, size + skipInitial).map(sourceFunction);
-		var accumulatorIdx = 0;
-		var undef = Object(__WEBPACK_IMPORTED_MODULE_1__index__["j" /* functor */])(undefinedValue);
-		// console.log(skipInitial, size, data.length, windowData.length);
-		return data.map(function (d, i) {
-			// console.log(d, i);
-			if (i < skipInitial + size - 1) {
-				return undef(sourceFunction(d), i, misc);
-			}
-			if (i >= skipInitial + size) {
-				// Treat windowData as FIFO rolling buffer
-				windowData.shift();
-				windowData.push(sourceFunction(d, i));
-			}
-			return accumulator(windowData, i, accumulatorIdx++, misc);
-		});
-	};
-
-	slidingWindow.undefinedValue = function (x) {
-		if (!arguments.length) {
-			return undefinedValue;
-		}
-		undefinedValue = x;
-		return slidingWindow;
-	};
-	slidingWindow.windowSize = function (x) {
-		if (!arguments.length) {
-			return windowSize;
-		}
-		windowSize = x;
-		return slidingWindow;
-	};
-	slidingWindow.misc = function (x) {
-		if (!arguments.length) {
-			return misc;
-		}
-		misc = x;
-		return slidingWindow;
-	};
-	slidingWindow.accumulator = function (x) {
-		if (!arguments.length) {
-			return accumulator;
-		}
-		accumulator = x;
-		return slidingWindow;
-	};
-	slidingWindow.skipInitial = function (x) {
-		if (!arguments.length) {
-			return skipInitial;
-		}
-		skipInitial = x;
-		return slidingWindow;
-	};
-	slidingWindow.sourcePath = function (x) {
-		if (!arguments.length) {
-			return sourcePath;
-		}
-		sourcePath = x;
-		return slidingWindow;
-	};
-	slidingWindow.source = function (x) {
-		if (!arguments.length) {
-			return source;
-		}
-		source = x;
-		return slidingWindow;
-	};
-
-	return slidingWindow;
-});
-//# sourceMappingURL=slidingWindow.js.map
-
-/***/ }),
-/* 964 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__noop__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identity__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__index__ = __webpack_require__(16);
-
-
-
-
-
-
-/* unused harmony default export */ var _unused_webpack_default_export = (function () {
-
-	var undefinedValue = undefined,
-	    windowSize = 10,
-	    accumulator = __WEBPACK_IMPORTED_MODULE_0__noop__["a" /* default */],
-	    source = __WEBPACK_IMPORTED_MODULE_1__identity__["a" /* default */],
-	    skipInitial = 0;
-
-	// eslint-disable-next-line prefer-const
-	var mappedSlidingWindow = function mappedSlidingWindow(data) {
-		var size = Object(__WEBPACK_IMPORTED_MODULE_2__index__["j" /* functor */])(windowSize).apply(this, arguments);
-		var windowData = [];
-		var accumulatorIdx = 0;
-		var undef = Object(__WEBPACK_IMPORTED_MODULE_2__index__["j" /* functor */])(undefinedValue);
-		// console.log(skipInitial, size, data.length, windowData.length);
-		var result = [];
-		data.forEach(function (d, i) {
-			// console.log(d, i, windowData.length);
-			var mapped = void 0;
-			if (i < skipInitial + size - 1) {
-				mapped = undef(d, i);
-				result.push(mapped);
-				windowData.push(mapped);
-				return;
-			}
-			if (i >= skipInitial + size) {
-				// Treat windowData as FIFO rolling buffer
-				windowData.shift();
-			}
-			windowData.push(source(d, i));
-			mapped = accumulator(windowData, i, accumulatorIdx++);
-			result.push(mapped);
-			windowData.pop();
-			windowData.push(mapped);
-			return;
-		});
-		return result;
-	};
-
-	mappedSlidingWindow.undefinedValue = function (x) {
-		if (!arguments.length) {
-			return undefinedValue;
-		}
-		undefinedValue = x;
-		return mappedSlidingWindow;
-	};
-	mappedSlidingWindow.windowSize = function (x) {
-		if (!arguments.length) {
-			return windowSize;
-		}
-		windowSize = x;
-		return mappedSlidingWindow;
-	};
-	mappedSlidingWindow.accumulator = function (x) {
-		if (!arguments.length) {
-			return accumulator;
-		}
-		accumulator = x;
-		return mappedSlidingWindow;
-	};
-	mappedSlidingWindow.skipInitial = function (x) {
-		if (!arguments.length) {
-			return skipInitial;
-		}
-		skipInitial = x;
-		return mappedSlidingWindow;
-	};
-	mappedSlidingWindow.source = function (x) {
-		if (!arguments.length) {
-			return source;
-		}
-		source = x;
-		return mappedSlidingWindow;
-	};
-
-	return mappedSlidingWindow;
-});
-//# sourceMappingURL=mappedSlidingWindow.js.map
-
-/***/ }),
-/* 965 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__noop__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__identity__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__index__ = __webpack_require__(16);
-
-
-/*
-
-Taken from https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/calculator/slidingWindow.js
-
-The MIT License (MIT)
-
-Copyright (c) 2014-2015 Scott Logic Ltd.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-*/
-
-
-
-
-
-/* unused harmony default export */ var _unused_webpack_default_export = (function () {
-
-	var accumulateTill = Object(__WEBPACK_IMPORTED_MODULE_2__index__["j" /* functor */])(false),
-	    accumulator = __WEBPACK_IMPORTED_MODULE_0__noop__["a" /* default */],
-	    value = __WEBPACK_IMPORTED_MODULE_1__identity__["a" /* default */],
-	    discardTillStart = false,
-	    discardTillEnd = false;
-
-	// eslint-disable-next-line prefer-const
-	var accumulatingWindow = function accumulatingWindow(data) {
-		var accumulatedWindow = discardTillStart ? undefined : [];
-		var response = [];
-		var accumulatorIdx = 0;
-		var i = 0;
-		for (i = 0; i < data.length; i++) {
-			var d = data[i];
-			// console.log(d, accumulateTill(d));
-			if (accumulatedWindow.length > 0 && accumulateTill(d, i, accumulatedWindow)) {
-				if (accumulatedWindow && accumulatedWindow.length > 0) response.push(accumulator(accumulatedWindow, i, accumulatorIdx++));
-				accumulatedWindow = [value(d)];
-			} else {
-				if (accumulatedWindow) accumulatedWindow.push(value(d));
-			}
-		}
-		if (!discardTillEnd) response.push(accumulator(accumulatedWindow, i, accumulatorIdx));
-		return response;
-	};
-
-	accumulatingWindow.accumulateTill = function (x) {
-		if (!arguments.length) {
-			return accumulateTill;
-		}
-		accumulateTill = Object(__WEBPACK_IMPORTED_MODULE_2__index__["j" /* functor */])(x);
-		return accumulatingWindow;
-	};
-	accumulatingWindow.accumulator = function (x) {
-		if (!arguments.length) {
-			return accumulator;
-		}
-		accumulator = x;
-		return accumulatingWindow;
-	};
-	accumulatingWindow.value = function (x) {
-		if (!arguments.length) {
-			return value;
-		}
-		value = x;
-		return accumulatingWindow;
-	};
-	accumulatingWindow.discardTillStart = function (x) {
-		if (!arguments.length) {
-			return discardTillStart;
-		}
-		discardTillStart = x;
-		return accumulatingWindow;
-	};
-	accumulatingWindow.discardTillEnd = function (x) {
-		if (!arguments.length) {
-			return discardTillEnd;
-		}
-		discardTillEnd = x;
-		return accumulatingWindow;
-	};
-	return accumulatingWindow;
-});
-//# sourceMappingURL=accumulatingWindow.js.map
-
-/***/ }),
-/* 966 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export plotDataLengthBarWidth */
-/* unused harmony export timeIntervalBarWidth */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(16);
-
-
-
-
-/**
- * Bar width is based on the amount of items in the plot data and the distance between the first and last of those
- * items.
- * @param props the props passed to the series.
- * @param moreProps an object holding the xScale, xAccessor and plotData.
- * @return {number} the bar width.
- */
-function plotDataLengthBarWidth(props, moreProps) {
-  var _props$widthRatio = props.widthRatio,
-      widthRatio = _props$widthRatio === undefined ? 0.8 : _props$widthRatio;
-  var scale = moreProps.xScale,
-      accessor = moreProps.xAccessor,
-      plotData = moreProps.plotData;
-
-
-  var width = Math.abs((scale(accessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(plotData))) - scale(accessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(plotData)))) / (plotData.length - 1));
-  return width * widthRatio;
-}
-
-/**
- * Generates a width function that calculates the bar width based on the given time interval.
- * @param interval a d3-time time interval.
- * @return {Function} the width function.
- */
-function timeIntervalBarWidth(interval) {
-  return function (props, moreProps) {
-    var _props$widthRatio2 = props.widthRatio,
-        widthRatio = _props$widthRatio2 === undefined ? 0.8 : _props$widthRatio2;
-    var scale = moreProps.xScale,
-        accessor = moreProps.xAccessor,
-        plotData = moreProps.plotData;
-
-
-    var first = accessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(plotData));
-    return Math.abs(scale(interval.offset(first, 1)) - scale(first)) * widthRatio;
-  };
-}
-//# sourceMappingURL=barWidth.js.map
-
-/***/ }),
-/* 967 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export strokeDashTypes */
-/* unused harmony export getStrokeDasharray */
-var strokeDashTypes = ["Solid", "ShortDash", "ShortDot", "ShortDashDot", "ShortDashDotDot", "Dot", "Dash", "LongDash", "DashDot", "LongDashDot", "LongDashDotDot"];
-
-var getStrokeDasharray = function getStrokeDasharray(type) {
-	switch (type) {
-		default:
-		case "Solid":
-			return "none";
-		case "ShortDash":
-			return "6, 2";
-		case "ShortDot":
-			return "2, 2";
-		case "ShortDashDot":
-			return "6, 2, 2, 2";
-		case "ShortDashDotDot":
-			return "6, 2, 2, 2, 2, 2";
-		case "Dot":
-			return "2, 6";
-		case "Dash":
-			return "8, 6";
-		case "LongDash":
-			return "16, 6";
-		case "DashDot":
-			return "8, 6, 2, 6";
-		case "LongDashDot":
-			return "16, 6, 2, 6";
-		case "LongDashDotDot":
-			return "16, 6, 2, 6, 2, 6";
-	}
-};
-//# sourceMappingURL=strokeDasharray.js.map
-
-/***/ }),
-/* 968 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/**
- * This is the common logic for both the Node.js and web browser
- * implementations of `debug()`.
- *
- * Expose `debug()` as the module.
- */
-
-exports = module.exports = createDebug.debug = createDebug['default'] = createDebug;
-exports.coerce = coerce;
-exports.disable = disable;
-exports.enable = enable;
-exports.enabled = enabled;
-exports.humanize = __webpack_require__(969);
-
-/**
- * Active `debug` instances.
- */
-exports.instances = [];
-
-/**
- * The currently active debug mode names, and names to skip.
- */
-
-exports.names = [];
-exports.skips = [];
-
-/**
- * Map of special "%n" handling functions, for the debug "format" argument.
- *
- * Valid key names are a single, lower or upper-case letter, i.e. "n" and "N".
- */
-
-exports.formatters = {};
-
-/**
- * Select a color.
- * @param {String} namespace
- * @return {Number}
- * @api private
- */
-
-function selectColor(namespace) {
-  var hash = 0, i;
-
-  for (i in namespace) {
-    hash  = ((hash << 5) - hash) + namespace.charCodeAt(i);
-    hash |= 0; // Convert to 32bit integer
-  }
-
-  return exports.colors[Math.abs(hash) % exports.colors.length];
-}
-
-/**
- * Create a debugger with the given `namespace`.
- *
- * @param {String} namespace
- * @return {Function}
- * @api public
- */
-
-function createDebug(namespace) {
-
-  var prevTime;
-
-  function debug() {
-    // disabled?
-    if (!debug.enabled) return;
-
-    var self = debug;
-
-    // set `diff` timestamp
-    var curr = +new Date();
-    var ms = curr - (prevTime || curr);
-    self.diff = ms;
-    self.prev = prevTime;
-    self.curr = curr;
-    prevTime = curr;
-
-    // turn the `arguments` into a proper Array
-    var args = new Array(arguments.length);
-    for (var i = 0; i < args.length; i++) {
-      args[i] = arguments[i];
-    }
-
-    args[0] = exports.coerce(args[0]);
-
-    if ('string' !== typeof args[0]) {
-      // anything else let's inspect with %O
-      args.unshift('%O');
-    }
-
-    // apply any `formatters` transformations
-    var index = 0;
-    args[0] = args[0].replace(/%([a-zA-Z%])/g, function(match, format) {
-      // if we encounter an escaped % then don't increase the array index
-      if (match === '%%') return match;
-      index++;
-      var formatter = exports.formatters[format];
-      if ('function' === typeof formatter) {
-        var val = args[index];
-        match = formatter.call(self, val);
-
-        // now we need to remove `args[index]` since it's inlined in the `format`
-        args.splice(index, 1);
-        index--;
-      }
-      return match;
-    });
-
-    // apply env-specific formatting (colors, etc.)
-    exports.formatArgs.call(self, args);
-
-    var logFn = debug.log || exports.log || console.log.bind(console);
-    logFn.apply(self, args);
-  }
-
-  debug.namespace = namespace;
-  debug.enabled = exports.enabled(namespace);
-  debug.useColors = exports.useColors();
-  debug.color = selectColor(namespace);
-  debug.destroy = destroy;
-
-  // env-specific initialization logic for debug instances
-  if ('function' === typeof exports.init) {
-    exports.init(debug);
-  }
-
-  exports.instances.push(debug);
-
-  return debug;
-}
-
-function destroy () {
-  var index = exports.instances.indexOf(this);
-  if (index !== -1) {
-    exports.instances.splice(index, 1);
-    return true;
-  } else {
-    return false;
-  }
-}
-
-/**
- * Enables a debug mode by namespaces. This can include modes
- * separated by a colon and wildcards.
- *
- * @param {String} namespaces
- * @api public
- */
-
-function enable(namespaces) {
-  exports.save(namespaces);
-
-  exports.names = [];
-  exports.skips = [];
-
-  var i;
-  var split = (typeof namespaces === 'string' ? namespaces : '').split(/[\s,]+/);
-  var len = split.length;
-
-  for (i = 0; i < len; i++) {
-    if (!split[i]) continue; // ignore empty strings
-    namespaces = split[i].replace(/\*/g, '.*?');
-    if (namespaces[0] === '-') {
-      exports.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
-    } else {
-      exports.names.push(new RegExp('^' + namespaces + '$'));
-    }
-  }
-
-  for (i = 0; i < exports.instances.length; i++) {
-    var instance = exports.instances[i];
-    instance.enabled = exports.enabled(instance.namespace);
-  }
-}
-
-/**
- * Disable debug output.
- *
- * @api public
- */
-
-function disable() {
-  exports.enable('');
-}
-
-/**
- * Returns true if the given mode name is enabled, false otherwise.
- *
- * @param {String} name
- * @return {Boolean}
- * @api public
- */
-
-function enabled(name) {
-  if (name[name.length - 1] === '*') {
-    return true;
-  }
-  var i, len;
-  for (i = 0, len = exports.skips.length; i < len; i++) {
-    if (exports.skips[i].test(name)) {
-      return false;
-    }
-  }
-  for (i = 0, len = exports.names.length; i < len; i++) {
-    if (exports.names[i].test(name)) {
-      return true;
-    }
-  }
-  return false;
-}
-
-/**
- * Coerce `val`.
- *
- * @param {Mixed} val
- * @return {Mixed}
- * @api private
- */
-
-function coerce(val) {
-  if (val instanceof Error) return val.stack || val.message;
-  return val;
-}
-
-
-/***/ }),
-/* 969 */
-/***/ (function(module, exports) {
-
-/**
- * Helpers.
- */
-
-var s = 1000;
-var m = s * 60;
-var h = m * 60;
-var d = h * 24;
-var y = d * 365.25;
-
-/**
- * Parse or format the given `val`.
- *
- * Options:
- *
- *  - `long` verbose formatting [false]
- *
- * @param {String|Number} val
- * @param {Object} [options]
- * @throws {Error} throw an error if val is not a non-empty string or a number
- * @return {String|Number}
- * @api public
- */
-
-module.exports = function(val, options) {
-  options = options || {};
-  var type = typeof val;
-  if (type === 'string' && val.length > 0) {
-    return parse(val);
-  } else if (type === 'number' && isNaN(val) === false) {
-    return options.long ? fmtLong(val) : fmtShort(val);
-  }
-  throw new Error(
-    'val is not a non-empty string or a valid number. val=' +
-      JSON.stringify(val)
-  );
-};
-
-/**
- * Parse the given `str` and return milliseconds.
- *
- * @param {String} str
- * @return {Number}
- * @api private
- */
-
-function parse(str) {
-  str = String(str);
-  if (str.length > 100) {
-    return;
-  }
-  var match = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(
-    str
-  );
-  if (!match) {
-    return;
-  }
-  var n = parseFloat(match[1]);
-  var type = (match[2] || 'ms').toLowerCase();
-  switch (type) {
-    case 'years':
-    case 'year':
-    case 'yrs':
-    case 'yr':
-    case 'y':
-      return n * y;
-    case 'days':
-    case 'day':
-    case 'd':
-      return n * d;
-    case 'hours':
-    case 'hour':
-    case 'hrs':
-    case 'hr':
-    case 'h':
-      return n * h;
-    case 'minutes':
-    case 'minute':
-    case 'mins':
-    case 'min':
-    case 'm':
-      return n * m;
-    case 'seconds':
-    case 'second':
-    case 'secs':
-    case 'sec':
-    case 's':
-      return n * s;
-    case 'milliseconds':
-    case 'millisecond':
-    case 'msecs':
-    case 'msec':
-    case 'ms':
-      return n;
-    default:
-      return undefined;
-  }
-}
-
-/**
- * Short format for `ms`.
- *
- * @param {Number} ms
- * @return {String}
- * @api private
- */
-
-function fmtShort(ms) {
-  if (ms >= d) {
-    return Math.round(ms / d) + 'd';
-  }
-  if (ms >= h) {
-    return Math.round(ms / h) + 'h';
-  }
-  if (ms >= m) {
-    return Math.round(ms / m) + 'm';
-  }
-  if (ms >= s) {
-    return Math.round(ms / s) + 's';
-  }
-  return ms + 'ms';
-}
-
-/**
- * Long format for `ms`.
- *
- * @param {Number} ms
- * @return {String}
- * @api private
- */
-
-function fmtLong(ms) {
-  return plural(ms, d, 'day') ||
-    plural(ms, h, 'hour') ||
-    plural(ms, m, 'minute') ||
-    plural(ms, s, 'second') ||
-    ms + ' ms';
-}
-
-/**
- * Pluralization helper.
- */
-
-function plural(ms, n, name) {
-  if (ms < n) {
-    return;
-  }
-  if (ms < n * 1.5) {
-    return Math.floor(ms / n) + ' ' + name;
-  }
-  return Math.ceil(ms / n) + ' ' + name + 's';
-}
-
-
-/***/ }),
-/* 970 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = mouseBasedZoomAnchor;
-/* unused harmony export lastVisibleItemBasedZoomAnchor */
-/* unused harmony export rightDomainBasedZoomAnchor */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ChartDataUtil__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(16);
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-
-
-
-/* eslint-disable no-unused-vars */
-
-function mouseBasedZoomAnchor(_ref) {
-	var xScale = _ref.xScale,
-	    xAccessor = _ref.xAccessor,
-	    mouseXY = _ref.mouseXY,
-	    plotData = _ref.plotData,
-	    fullData = _ref.fullData;
-
-	var currentItem = Object(__WEBPACK_IMPORTED_MODULE_0__ChartDataUtil__["c" /* getCurrentItem */])(xScale, xAccessor, mouseXY, plotData);
-	return xAccessor(currentItem);
-}
-
-function lastVisibleItemBasedZoomAnchor(_ref2) {
-	var xScale = _ref2.xScale,
-	    xAccessor = _ref2.xAccessor,
-	    mouseXY = _ref2.mouseXY,
-	    plotData = _ref2.plotData,
-	    fullData = _ref2.fullData;
-
-	var lastItem = Object(__WEBPACK_IMPORTED_MODULE_1__index__["u" /* last */])(plotData);
-	return xAccessor(lastItem);
-}
-
-function rightDomainBasedZoomAnchor(_ref3) {
-	var xScale = _ref3.xScale,
-	    xAccessor = _ref3.xAccessor,
-	    mouseXY = _ref3.mouseXY,
-	    plotData = _ref3.plotData,
-	    fullData = _ref3.fullData;
-
-	var _xScale$domain = xScale.domain(),
-	    _xScale$domain2 = _slicedToArray(_xScale$domain, 2),
-	    end = _xScale$domain2[1];
-
-	return end;
-}
-/* eslint-enable no-unused-vars */
-//# sourceMappingURL=zoomBehavior.js.map
-
-/***/ }),
-/* 971 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(global) {/**
- * lodash (Custom Build) <https://lodash.com/>
- * Build: `lodash modularize exports="npm" -o ./`
- * Copyright jQuery Foundation and other contributors <https://jquery.org/>
- * Released under MIT license <https://lodash.com/license>
- * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
- * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
- */
-
-/** Used as references for various `Number` constants. */
-var INFINITY = 1 / 0,
-    MAX_SAFE_INTEGER = 9007199254740991;
-
-/** `Object#toString` result references. */
-var argsTag = '[object Arguments]',
-    funcTag = '[object Function]',
-    genTag = '[object GeneratorFunction]';
-
-/** Detect free variable `global` from Node.js. */
-var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
-
-/** Detect free variable `self`. */
-var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
-
-/** Used as a reference to the global object. */
-var root = freeGlobal || freeSelf || Function('return this')();
-
-/**
- * Appends the elements of `values` to `array`.
- *
- * @private
- * @param {Array} array The array to modify.
- * @param {Array} values The values to append.
- * @returns {Array} Returns `array`.
- */
-function arrayPush(array, values) {
-  var index = -1,
-      length = values.length,
-      offset = array.length;
-
-  while (++index < length) {
-    array[offset + index] = values[index];
-  }
-  return array;
-}
-
-/** Used for built-in method references. */
-var objectProto = Object.prototype;
-
-/** Used to check objects for own properties. */
-var hasOwnProperty = objectProto.hasOwnProperty;
-
-/**
- * Used to resolve the
- * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
- * of values.
- */
-var objectToString = objectProto.toString;
-
-/** Built-in value references. */
-var Symbol = root.Symbol,
-    propertyIsEnumerable = objectProto.propertyIsEnumerable,
-    spreadableSymbol = Symbol ? Symbol.isConcatSpreadable : undefined;
-
-/**
- * The base implementation of `_.flatten` with support for restricting flattening.
- *
- * @private
- * @param {Array} array The array to flatten.
- * @param {number} depth The maximum recursion depth.
- * @param {boolean} [predicate=isFlattenable] The function invoked per iteration.
- * @param {boolean} [isStrict] Restrict to values that pass `predicate` checks.
- * @param {Array} [result=[]] The initial result value.
- * @returns {Array} Returns the new flattened array.
- */
-function baseFlatten(array, depth, predicate, isStrict, result) {
-  var index = -1,
-      length = array.length;
-
-  predicate || (predicate = isFlattenable);
-  result || (result = []);
-
-  while (++index < length) {
-    var value = array[index];
-    if (depth > 0 && predicate(value)) {
-      if (depth > 1) {
-        // Recursively flatten arrays (susceptible to call stack limits).
-        baseFlatten(value, depth - 1, predicate, isStrict, result);
-      } else {
-        arrayPush(result, value);
-      }
-    } else if (!isStrict) {
-      result[result.length] = value;
-    }
-  }
-  return result;
-}
-
-/**
- * Checks if `value` is a flattenable `arguments` object or array.
- *
- * @private
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is flattenable, else `false`.
- */
-function isFlattenable(value) {
-  return isArray(value) || isArguments(value) ||
-    !!(spreadableSymbol && value && value[spreadableSymbol]);
-}
-
-/**
- * Recursively flattens `array`.
- *
- * @static
- * @memberOf _
- * @since 3.0.0
- * @category Array
- * @param {Array} array The array to flatten.
- * @returns {Array} Returns the new flattened array.
- * @example
- *
- * _.flattenDeep([1, [2, [3, [4]], 5]]);
- * // => [1, 2, 3, 4, 5]
- */
-function flattenDeep(array) {
-  var length = array ? array.length : 0;
-  return length ? baseFlatten(array, INFINITY) : [];
-}
-
-/**
- * Checks if `value` is likely an `arguments` object.
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is an `arguments` object,
- *  else `false`.
- * @example
- *
- * _.isArguments(function() { return arguments; }());
- * // => true
- *
- * _.isArguments([1, 2, 3]);
- * // => false
- */
-function isArguments(value) {
-  // Safari 8.1 makes `arguments.callee` enumerable in strict mode.
-  return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') &&
-    (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
-}
-
-/**
- * Checks if `value` is classified as an `Array` object.
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is an array, else `false`.
- * @example
- *
- * _.isArray([1, 2, 3]);
- * // => true
- *
- * _.isArray(document.body.children);
- * // => false
- *
- * _.isArray('abc');
- * // => false
- *
- * _.isArray(_.noop);
- * // => false
- */
-var isArray = Array.isArray;
-
-/**
- * Checks if `value` is array-like. A value is considered array-like if it's
- * not a function and has a `value.length` that's an integer greater than or
- * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
- * @example
- *
- * _.isArrayLike([1, 2, 3]);
- * // => true
- *
- * _.isArrayLike(document.body.children);
- * // => true
- *
- * _.isArrayLike('abc');
- * // => true
- *
- * _.isArrayLike(_.noop);
- * // => false
- */
-function isArrayLike(value) {
-  return value != null && isLength(value.length) && !isFunction(value);
-}
-
-/**
- * This method is like `_.isArrayLike` except that it also checks if `value`
- * is an object.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is an array-like object,
- *  else `false`.
- * @example
- *
- * _.isArrayLikeObject([1, 2, 3]);
- * // => true
- *
- * _.isArrayLikeObject(document.body.children);
- * // => true
- *
- * _.isArrayLikeObject('abc');
- * // => false
- *
- * _.isArrayLikeObject(_.noop);
- * // => false
- */
-function isArrayLikeObject(value) {
-  return isObjectLike(value) && isArrayLike(value);
-}
-
-/**
- * Checks if `value` is classified as a `Function` object.
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a function, else `false`.
- * @example
- *
- * _.isFunction(_);
- * // => true
- *
- * _.isFunction(/abc/);
- * // => false
- */
-function isFunction(value) {
-  // The use of `Object#toString` avoids issues with the `typeof` operator
-  // in Safari 8-9 which returns 'object' for typed array and other constructors.
-  var tag = isObject(value) ? objectToString.call(value) : '';
-  return tag == funcTag || tag == genTag;
-}
-
-/**
- * Checks if `value` is a valid array-like length.
- *
- * **Note:** This method is loosely based on
- * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
- * @example
- *
- * _.isLength(3);
- * // => true
- *
- * _.isLength(Number.MIN_VALUE);
- * // => false
- *
- * _.isLength(Infinity);
- * // => false
- *
- * _.isLength('3');
- * // => false
- */
-function isLength(value) {
-  return typeof value == 'number' &&
-    value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
-}
-
-/**
- * Checks if `value` is the
- * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
- * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is an object, else `false`.
- * @example
- *
- * _.isObject({});
- * // => true
- *
- * _.isObject([1, 2, 3]);
- * // => true
- *
- * _.isObject(_.noop);
- * // => true
- *
- * _.isObject(null);
- * // => false
- */
-function isObject(value) {
-  var type = typeof value;
-  return !!value && (type == 'object' || type == 'function');
-}
-
-/**
- * Checks if `value` is object-like. A value is object-like if it's not `null`
- * and has a `typeof` result of "object".
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
- * @example
- *
- * _.isObjectLike({});
- * // => true
- *
- * _.isObjectLike([1, 2, 3]);
- * // => true
- *
- * _.isObjectLike(_.noop);
- * // => false
- *
- * _.isObjectLike(null);
- * // => false
- */
-function isObjectLike(value) {
-  return !!value && typeof value == 'object';
-}
-
-module.exports = flattenDeep;
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(33)))
-
-/***/ }),
-/* 972 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_d3_selection__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_ChartDataUtil__ = __webpack_require__(197);
-
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-
-
-
-var EventCapture = function (_Component) {
-	_inherits(EventCapture, _Component);
-
-	function EventCapture(props) {
-		_classCallCheck(this, EventCapture);
-
-		var _this = _possibleConstructorReturn(this, (EventCapture.__proto__ || Object.getPrototypeOf(EventCapture)).call(this, props));
-
-		_this.handleEnter = _this.handleEnter.bind(_this);
-		_this.handleLeave = _this.handleLeave.bind(_this);
-		_this.handleWheel = _this.handleWheel.bind(_this);
-		_this.handleMouseMove = _this.handleMouseMove.bind(_this);
-		_this.handleMouseDown = _this.handleMouseDown.bind(_this);
-		_this.handlePanEnd = _this.handlePanEnd.bind(_this);
-		_this.handlePan = _this.handlePan.bind(_this);
-		_this.handleTouchStart = _this.handleTouchStart.bind(_this);
-		_this.handlePinchZoom = _this.handlePinchZoom.bind(_this);
-		_this.handlePinchZoomEnd = _this.handlePinchZoomEnd.bind(_this);
-
-		_this.handleClick = _this.handleClick.bind(_this);
-
-		_this.handleRightClick = _this.handleRightClick.bind(_this);
-		_this.handleDrag = _this.handleDrag.bind(_this);
-		_this.handleDragEnd = _this.handleDragEnd.bind(_this);
-
-		_this.setCursorClass = _this.setCursorClass.bind(_this);
-		_this.saveNode = _this.saveNode.bind(_this);
-
-		_this.mouseInside = false;
-
-		_this.mouseInteraction = true;
-		_this.state = {
-			panInProgress: false
-		};
-		return _this;
-	}
-
-	_createClass(EventCapture, [{
-		key: "saveNode",
-		value: function saveNode(node) {
-			this.node = node;
-		}
-	}, {
-		key: "componentWillMount",
-		value: function componentWillMount() {
-			this.focus = this.props.focus;
-		}
-	}, {
-		key: "componentDidMount",
-		value: function componentDidMount() {
-			if (this.node) {
-				Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(this.node).on(__WEBPACK_IMPORTED_MODULE_3__utils__["a" /* MOUSEENTER */], this.handleEnter).on(__WEBPACK_IMPORTED_MODULE_3__utils__["b" /* MOUSELEAVE */], this.handleLeave);
-			}
-		}
-	}, {
-		key: "componentDidUpdate",
-		value: function componentDidUpdate() {
-			this.componentDidMount();
-		}
-	}, {
-		key: "componentWillUnmount",
-		value: function componentWillUnmount() {
-			if (this.node) {
-				Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(this.node).on(__WEBPACK_IMPORTED_MODULE_3__utils__["a" /* MOUSEENTER */], null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["b" /* MOUSELEAVE */], null);
-			}
-		}
-	}, {
-		key: "handleEnter",
-		value: function handleEnter() {
-			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
-
-			var onMouseEnter = this.props.onMouseEnter;
-
-			this.mouseInside = true;
-			if (!this.state.panInProgress && !this.state.dragInProgress) {
-				var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
-				Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], this.handleMouseMove);
-			}
-			onMouseEnter(e);
-		}
-	}, {
-		key: "handleLeave",
-		value: function handleLeave(e) {
-			var onMouseLeave = this.props.onMouseLeave;
-
-			this.mouseInside = false;
-			if (!this.state.panInProgress && !this.state.dragInProgress) {
-				var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
-				Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], null);
-			}
-			onMouseLeave(e);
-		}
-	}, {
-		key: "handleWheel",
-		value: function handleWheel(e) {
-			var _props = this.props,
-			    zoom = _props.zoom,
-			    onZoom = _props.onZoom;
-
-
-			if (zoom && this.focus && e.deltaY !== 0) {
-				e.preventDefault();
-
-				var newPos = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["w" /* mousePosition */])(e);
-				var zoomDir = e.deltaY > 0 ? 1 : -1;
-
-				onZoom(zoomDir, newPos, e);
-			}
-		}
-	}, {
-		key: "handleMouseMove",
-		value: function handleMouseMove() {
-			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
-
-			var _props2 = this.props,
-			    onMouseMove = _props2.onMouseMove,
-			    mouseMove = _props2.mouseMove;
-
-
-			if (this.mouseInteraction && mouseMove && !this.state.panInProgress) {
-
-				var newPos = Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["mouse"])(this.node);
-
-				onMouseMove(newPos, "mouse", e);
-			}
-		}
-	}, {
-		key: "handleClick",
-		value: function handleClick(e) {
-			var _this2 = this;
-
-			var mouseXY = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["w" /* mousePosition */])(e);
-			var _props3 = this.props,
-			    onClick = _props3.onClick,
-			    onDoubleClick = _props3.onDoubleClick;
-
-
-			if (!this.panHappened && !this.dragHappened) {
-				if (this.clicked) {
-					onDoubleClick(mouseXY, e);
-					this.clicked = false;
-				} else {
-					onClick(mouseXY, e);
-					this.clicked = true;
-					setTimeout(function () {
-						if (_this2.clicked) {
-							_this2.clicked = false;
-						}
-					}, 400);
-				}
-			}
-		}
-	}, {
-		key: "handleRightClick",
-		value: function handleRightClick(e) {
-			e.stopPropagation();
-			e.preventDefault();
-			var _props4 = this.props,
-			    onContextMenu = _props4.onContextMenu,
-			    onPanEnd = _props4.onPanEnd;
-
-
-			var mouseXY = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["w" /* mousePosition */])(e, this.node.getBoundingClientRect());
-
-			if (Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(this.state.panStart)) {
-				var _state$panStart = this.state.panStart,
-				    panStartXScale = _state$panStart.panStartXScale,
-				    panOrigin = _state$panStart.panOrigin,
-				    chartsToPan = _state$panStart.chartsToPan;
-
-				if (this.panHappened) {
-					onPanEnd(mouseXY, panStartXScale, panOrigin, chartsToPan, e);
-				}
-				var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
-				Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["d" /* MOUSEUP */], null);
-
-				this.setState({
-					panInProgress: false,
-					panStart: null
-				});
-			}
-
-			onContextMenu(mouseXY, e);
-		}
-	}, {
-		key: "handleDrag",
-		value: function handleDrag() {
-			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
-			if (this.props.onDrag) {
-				this.dragHappened = true;
-				var mouseXY = Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["mouse"])(this.node);
-				this.props.onDrag({
-					startPos: this.state.dragStartPosition,
-					mouseXY: mouseXY
-				}, e);
-			}
-		}
-	}, {
-		key: "cancelDrag",
-		value: function cancelDrag() {
-			var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
-			Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], this.mouseInside ? this.handleMouseMove : null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["d" /* MOUSEUP */], null);
-
-			this.setState({
-				dragInProgress: false
-			});
-			this.mouseInteraction = true;
-		}
-	}, {
-		key: "handleDragEnd",
-		value: function handleDragEnd() {
-			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
-			var mouseXY = Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["mouse"])(this.node);
-
-			var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
-			Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], this.mouseInside ? this.handleMouseMove : null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["d" /* MOUSEUP */], null);
-
-			if (this.dragHappened) {
-				this.props.onDragComplete({
-					mouseXY: mouseXY
-				}, e);
-			}
-
-			this.setState({
-				dragInProgress: false
-			});
-			this.mouseInteraction = true;
-		}
-	}, {
-		key: "handleMouseDown",
-		value: function handleMouseDown(e) {
-			if (e.button !== 0) {
-				return;
-			}
-			var _props5 = this.props,
-			    initialPanEnabled = _props5.pan,
-			    xScale = _props5.xScale,
-			    chartConfig = _props5.chartConfig,
-			    onMouseDown = _props5.onMouseDown;
-			var getAllPanConditions = this.props.getAllPanConditions;
-
-
-			this.panHappened = false;
-			this.dragHappened = false;
-			this.focus = true;
-
-			if (!this.state.panInProgress && this.mouseInteraction) {
-
-				var mouseXY = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["w" /* mousePosition */])(e);
-				var currentCharts = Object(__WEBPACK_IMPORTED_MODULE_4__utils_ChartDataUtil__["b" /* getCurrentCharts */])(chartConfig, mouseXY);
-
-				var _getAllPanConditions$ = getAllPanConditions().reduce(function (returnObj, a) {
-					return {
-						draggable: returnObj.draggable || a.draggable,
-						panEnabled: returnObj.panEnabled && a.panEnabled
-					};
-				}, {
-					draggable: false,
-					panEnabled: initialPanEnabled
-				}),
-				    panEnabled = _getAllPanConditions$.panEnabled,
-				    somethingSelected = _getAllPanConditions$.draggable;
-
-				var pan = panEnabled && !somethingSelected;
-
-				if (pan) {
-					this.setState({
-						panInProgress: pan,
-						panStart: {
-							panStartXScale: xScale,
-							panOrigin: mouseXY,
-							chartsToPan: currentCharts
-						}
-					});
-
-					var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
-					Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], this.handlePan).on(__WEBPACK_IMPORTED_MODULE_3__utils__["d" /* MOUSEUP */], this.handlePanEnd);
-				} else if (somethingSelected) {
-					this.setState({
-						panInProgress: false,
-						dragInProgress: true,
-						panStart: null,
-						dragStartPosition: mouseXY
-					});
-					this.props.onDragStart({ startPos: mouseXY }, e);
-					// this.mouseInteraction = false;
-
-					var _win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
-					Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(_win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], this.handleDrag).on(__WEBPACK_IMPORTED_MODULE_3__utils__["d" /* MOUSEUP */], this.handleDragEnd);
-				}
-
-				onMouseDown(mouseXY, currentCharts, e);
-			}
-			e.preventDefault();
-		}
-	}, {
-		key: "handlePan",
-		value: function handlePan() {
-			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
-
-			var _props6 = this.props,
-			    panEnabled = _props6.pan,
-			    onPan = _props6.onPan;
-
-
-			if (panEnabled && onPan && Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(this.state.panStart)) {
-
-				this.panHappened = true;
-
-				var _state$panStart2 = this.state.panStart,
-				    panStartXScale = _state$panStart2.panStartXScale,
-				    panOrigin = _state$panStart2.panOrigin,
-				    chartsToPan = _state$panStart2.chartsToPan;
-
-
-				var newPos = this.mouseInteraction ? Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["mouse"])(this.node) : Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["touches"])(this.node)[0];
-
-				this.lastNewPos = newPos;
-				onPan(newPos, panStartXScale, panOrigin, chartsToPan, e);
-			}
-		}
-	}, {
-		key: "handlePanEnd",
-		value: function handlePanEnd() {
-			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
-			var _props7 = this.props,
-			    panEnabled = _props7.pan,
-			    onPanEnd = _props7.onPanEnd;
-
-
-			if (Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(this.state.panStart)) {
-				var _state$panStart3 = this.state.panStart,
-				    panStartXScale = _state$panStart3.panStartXScale,
-				    panOrigin = _state$panStart3.panOrigin,
-				    chartsToPan = _state$panStart3.chartsToPan;
-
-
-				var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
-				Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], this.mouseInside ? this.handleMouseMove : null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["d" /* MOUSEUP */], null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["f" /* TOUCHMOVE */], null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["e" /* TOUCHEND */], null);
-
-				if (this.panHappened
-				// && !this.contextMenuClicked
-				&& panEnabled && onPanEnd) {
-
-					onPanEnd(this.lastNewPos, panStartXScale, panOrigin, chartsToPan, e);
-				}
-
-				this.setState({
-					panInProgress: false,
-					panStart: null
-				});
-			}
-		}
-	}, {
-		key: "handleTouchStart",
-		value: function handleTouchStart(e) {
-			this.mouseInteraction = false;
-
-			var _props8 = this.props,
-			    panEnabled = _props8.pan,
-			    chartConfig = _props8.chartConfig,
-			    onMouseMove = _props8.onMouseMove;
-			var _props9 = this.props,
-			    xScale = _props9.xScale,
-			    onPanEnd = _props9.onPanEnd;
-
-
-			if (e.touches.length === 1) {
-
-				this.panHappened = false;
-				var touchXY = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["A" /* touchPosition */])(Object(__WEBPACK_IMPORTED_MODULE_3__utils__["n" /* getTouchProps */])(e.touches[0]), e);
-				// onMouseMove(touchXY, "touch", e);
-				if (panEnabled) {
-					var currentCharts = Object(__WEBPACK_IMPORTED_MODULE_4__utils_ChartDataUtil__["b" /* getCurrentCharts */])(chartConfig, touchXY);
-
-					this.setState({
-						panInProgress: true,
-						panStart: {
-							panStartXScale: xScale,
-							panOrigin: touchXY,
-							chartsToPan: currentCharts
-						}
-					});
-
-					onMouseMove(touchXY, "touch", e);
-
-					var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
-					Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["f" /* TOUCHMOVE */], this.handlePan, false).on(__WEBPACK_IMPORTED_MODULE_3__utils__["e" /* TOUCHEND */], this.handlePanEnd, false);
-				}
-			} else if (e.touches.length === 2) {
-				// pinch zoom begin
-				// do nothing pinch zoom is handled in handleTouchMove
-				var _state = this.state,
-				    panInProgress = _state.panInProgress,
-				    panStart = _state.panStart;
-
-
-				if (panInProgress && panEnabled && onPanEnd) {
-					var panStartXScale = panStart.panStartXScale,
-					    panOrigin = panStart.panOrigin,
-					    chartsToPan = panStart.chartsToPan;
-
-
-					var _win2 = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
-					Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(_win2).on(__WEBPACK_IMPORTED_MODULE_3__utils__["c" /* MOUSEMOVE */], this.mouseInside ? this.handleMouseMove : null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["d" /* MOUSEUP */], null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["f" /* TOUCHMOVE */], this.handlePinchZoom, false).on(__WEBPACK_IMPORTED_MODULE_3__utils__["e" /* TOUCHEND */], this.handlePinchZoomEnd, false);
-
-					var touch1Pos = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["A" /* touchPosition */])(Object(__WEBPACK_IMPORTED_MODULE_3__utils__["n" /* getTouchProps */])(e.touches[0]), e);
-					var touch2Pos = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["A" /* touchPosition */])(Object(__WEBPACK_IMPORTED_MODULE_3__utils__["n" /* getTouchProps */])(e.touches[1]), e);
-
-					if (this.panHappened
-					// && !this.contextMenuClicked
-					&& panEnabled && onPanEnd) {
-
-						onPanEnd(this.lastNewPos, panStartXScale, panOrigin, chartsToPan, e);
-					}
-
-					this.setState({
-						panInProgress: false,
-						pinchZoomStart: {
-							xScale: xScale,
-							touch1Pos: touch1Pos,
-							touch2Pos: touch2Pos,
-							range: xScale.range(),
-							chartsToPan: chartsToPan
-						}
-					});
-				}
-			}
-		}
-	}, {
-		key: "handlePinchZoom",
-		value: function handlePinchZoom() {
-			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
-
-			var _touches = Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["touches"])(this.node),
-			    _touches2 = _slicedToArray(_touches, 2),
-			    touch1Pos = _touches2[0],
-			    touch2Pos = _touches2[1];
-
-			var _props10 = this.props,
-			    xScale = _props10.xScale,
-			    zoomEnabled = _props10.zoom,
-			    onPinchZoom = _props10.onPinchZoom;
-
-			// eslint-disable-next-line no-unused-vars
-
-			var _state$pinchZoomStart = this.state.pinchZoomStart,
-			    chartsToPan = _state$pinchZoomStart.chartsToPan,
-			    initialPinch = _objectWithoutProperties(_state$pinchZoomStart, ["chartsToPan"]);
-
-			if (zoomEnabled && onPinchZoom) {
-				onPinchZoom(initialPinch, {
-					touch1Pos: touch1Pos,
-					touch2Pos: touch2Pos,
-					xScale: xScale
-				}, e);
-			}
-		}
-	}, {
-		key: "handlePinchZoomEnd",
-		value: function handlePinchZoomEnd() {
-			var e = __WEBPACK_IMPORTED_MODULE_2_d3_selection__["event"];
-
-			var win = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["h" /* d3Window */])(this.node);
-			Object(__WEBPACK_IMPORTED_MODULE_2_d3_selection__["select"])(win).on(__WEBPACK_IMPORTED_MODULE_3__utils__["f" /* TOUCHMOVE */], null).on(__WEBPACK_IMPORTED_MODULE_3__utils__["e" /* TOUCHEND */], null);
-
-			var _props11 = this.props,
-			    zoomEnabled = _props11.zoom,
-			    onPinchZoomEnd = _props11.onPinchZoomEnd;
-
-			// eslint-disable-next-line no-unused-vars
-
-			var _state$pinchZoomStart2 = this.state.pinchZoomStart,
-			    chartsToPan = _state$pinchZoomStart2.chartsToPan,
-			    initialPinch = _objectWithoutProperties(_state$pinchZoomStart2, ["chartsToPan"]);
-
-			if (zoomEnabled && onPinchZoomEnd) {
-				onPinchZoomEnd(initialPinch, e);
-			}
-
-			this.setState({
-				pinchZoomStart: null
-			});
-		}
-	}, {
-		key: "setCursorClass",
-		value: function setCursorClass(cursorOverrideClass) {
-			if (cursorOverrideClass !== this.state.cursorOverrideClass) {
-				this.setState({
-					cursorOverrideClass: cursorOverrideClass
-				});
-			}
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var _props12 = this.props,
-			    height = _props12.height,
-			    width = _props12.width;
-
-			var className = this.state.cursorOverrideClass != null ? this.state.cursorOverrideClass : this.state.panInProgress ? "react-stockcharts-grabbing-cursor" : "react-stockcharts-crosshair-cursor";
-
-			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", { ref: this.saveNode,
-				className: className,
-				width: width,
-				height: height,
-				style: { opacity: 0 },
-				onWheel: this.handleWheel,
-				onMouseDown: this.handleMouseDown,
-				onClick: this.handleClick,
-				onContextMenu: this.handleRightClick,
-				onTouchStart: this.handleTouchStart
-			});
-		}
-	}]);
-
-	return EventCapture;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-// 				onMouseEnter={this.handleEnter}
-//				onMouseLeave={this.handleLeave}
-
-
-EventCapture.propTypes = {
-	mouseMove: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
-	zoom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
-	pan: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
-	panSpeedMultiplier: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	focus: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool.isRequired,
-
-	width: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	height: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	chartConfig: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array,
-	xScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	xAccessor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-
-	getAllPanConditions: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-
-	onMouseMove: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onMouseEnter: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onMouseLeave: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onZoom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onPinchZoom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onPinchZoomEnd: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	onPan: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onPanEnd: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onDragStart: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onDrag: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onDragComplete: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-
-	onClick: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onDoubleClick: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onContextMenu: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	onMouseDown: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	children: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.node
-};
-
-EventCapture.defaultProps = {
-	mouseMove: false,
-	zoom: false,
-	pan: false,
-	panSpeedMultiplier: 1,
-	focus: false,
-	onDragComplete: __WEBPACK_IMPORTED_MODULE_3__utils__["x" /* noop */]
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (EventCapture);
-//# sourceMappingURL=EventCapture.js.map
-
-/***/ }),
-/* 973 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(16);
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-
-var log = Object(__WEBPACK_IMPORTED_MODULE_2__utils__["m" /* getLogger */])("CanvasContainer");
-
-var CanvasContainer = function (_Component) {
-	_inherits(CanvasContainer, _Component);
-
-	function CanvasContainer(props) {
-		_classCallCheck(this, CanvasContainer);
-
-		var _this = _possibleConstructorReturn(this, (CanvasContainer.__proto__ || Object.getPrototypeOf(CanvasContainer)).call(this, props));
-
-		_this.setDrawCanvas = _this.setDrawCanvas.bind(_this);
-		_this.drawCanvas = {};
-		return _this;
-	}
-
-	_createClass(CanvasContainer, [{
-		key: "setDrawCanvas",
-		value: function setDrawCanvas(node) {
-			if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(node)) this.drawCanvas[node.id] = node.getContext("2d");else this.drawCanvas = {};
-		}
-	}, {
-		key: "getCanvasContexts",
-		value: function getCanvasContexts() {
-			if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(this.drawCanvas.axes)) {
-				return this.drawCanvas;
-			}
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var _props = this.props,
-			    height = _props.height,
-			    width = _props.width,
-			    type = _props.type,
-			    zIndex = _props.zIndex,
-			    ratio = _props.ratio;
-
-			if (type === "svg") return null;
-
-			log("using ratio ", ratio);
-
-			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-				"div",
-				{ style: { position: "absolute", zIndex: zIndex } },
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("canvas", { id: "bg", ref: this.setDrawCanvas, width: width * ratio, height: height * ratio,
-					style: { position: "absolute", width: width, height: height } }),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("canvas", { id: "axes", ref: this.setDrawCanvas, width: width * ratio, height: height * ratio,
-					style: { position: "absolute", width: width, height: height } }),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("canvas", { id: "mouseCoord", ref: this.setDrawCanvas, width: width * ratio, height: height * ratio,
-					style: { position: "absolute", width: width, height: height } })
-			);
-		}
-	}]);
-
-	return CanvasContainer;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-/*
-				<canvas id="hover" ref={this.setDrawCanvas} width={width * ratio} height={height * ratio}
-					style={{ position: "absolute", width: width, height: height }} />
-*/
-
-
-CanvasContainer.propTypes = {
-	width: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	height: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	type: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
-	zIndex: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
-	ratio: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (CanvasContainer);
-//# sourceMappingURL=CanvasContainer.js.map
-
-/***/ }),
-/* 974 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(16);
-
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-
-
-var log = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["m" /* getLogger */])("evaluator");
-
-function getNewEnd(fallbackEnd, xAccessor, initialXScale, start) {
-	var lastItem = fallbackEnd.lastItem,
-	    lastItemX = fallbackEnd.lastItemX;
-
-	var lastItemXValue = xAccessor(lastItem);
-
-	var _initialXScale$range = initialXScale.range(),
-	    _initialXScale$range2 = _slicedToArray(_initialXScale$range, 2),
-	    rangeStart = _initialXScale$range2[0],
-	    rangeEnd = _initialXScale$range2[1];
-
-	var newEnd = (rangeEnd - rangeStart) / (lastItemX - rangeStart) * (lastItemXValue - start) + start;
-	return newEnd;
-}
-
-function extentsWrapper(useWholeData, clamp, pointsPerPxThreshold, minPointsPerPxThreshold) {
-	function filterData(data, inputDomain, xAccessor, initialXScale) {
-		var _ref = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : {},
-		    currentPlotData = _ref.currentPlotData,
-		    currentDomain = _ref.currentDomain,
-		    fallbackStart = _ref.fallbackStart,
-		    fallbackEnd = _ref.fallbackEnd;
-
-		if (useWholeData) {
-			return { plotData: data, domain: inputDomain };
-		}
-
-		var left = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(inputDomain);
-		var right = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(inputDomain);
-		var clampedDomain = inputDomain;
-
-		var filteredData = getFilteredResponse(data, left, right, xAccessor);
-
-		if (filteredData.length === 1 && Object(__WEBPACK_IMPORTED_MODULE_0__utils__["r" /* isDefined */])(fallbackStart)) {
-			left = fallbackStart;
-			right = getNewEnd(fallbackEnd, xAccessor, initialXScale, left);
-
-			clampedDomain = [left, right];
-			filteredData = getFilteredResponse(data, left, right, xAccessor);
-		}
-
-		if (clamp === "left" || clamp === "both" || clamp === true) {
-			clampedDomain = [Math.max(left, xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(data))), clampedDomain[1]];
-		}
-		if (clamp === "right" || clamp === "both" || clamp === true) {
-			clampedDomain = [clampedDomain[0], Math.min(right, xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(data)))];
-		}
-
-		var realInputDomain = clampedDomain;
-		// [xAccessor(head(filteredData)), xAccessor(last(filteredData))];
-
-		var xScale = initialXScale.copy().domain(realInputDomain);
-
-		var width = Math.floor(xScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(filteredData))) - xScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(filteredData))));
-
-		var plotData = void 0,
-		    domain = void 0;
-
-		var chartWidth = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(xScale.range()) - Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(xScale.range());
-
-		log("Trying to show " + filteredData.length + " points in " + width + "px," + (" I can show up to " + (showMaxThreshold(width, pointsPerPxThreshold) - 1) + " points in that width. ") + ("Also FYI the entire chart width is " + chartWidth + "px and pointsPerPxThreshold is " + pointsPerPxThreshold));
-
-		if (canShowTheseManyPeriods(width, filteredData.length, pointsPerPxThreshold, minPointsPerPxThreshold)) {
-			plotData = filteredData;
-			domain = realInputDomain;
-			log("AND IT WORKED");
-		} else {
-			if (chartWidth > showMaxThreshold(width, pointsPerPxThreshold) && Object(__WEBPACK_IMPORTED_MODULE_0__utils__["r" /* isDefined */])(fallbackEnd)) {
-				plotData = filteredData;
-				var newEnd = getNewEnd(fallbackEnd, xAccessor, initialXScale, Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(realInputDomain));
-				domain = [Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(realInputDomain), newEnd];
-				// plotData = currentPlotData || filteredData.slice(filteredData.length - showMax(width, pointsPerPxThreshold));
-				// domain = currentDomain || [xAccessor(head(plotData)), xAccessor(last(plotData))];
-
-				var newXScale = xScale.copy().domain(domain);
-				var newWidth = Math.floor(newXScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(plotData))) - newXScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(plotData))));
-
-				log("and ouch, that is too much, so instead showing " + plotData.length + " in " + newWidth + "px");
-			} else {
-				plotData = currentPlotData || filteredData.slice(filteredData.length - showMax(width, pointsPerPxThreshold));
-				domain = currentDomain || [xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(plotData)), xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(plotData))];
-
-				var _newXScale = xScale.copy().domain(domain);
-				var _newWidth = Math.floor(_newXScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["u" /* last */])(plotData))) - _newXScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_0__utils__["o" /* head */])(plotData))));
-
-				log("and ouch, that is too much, so instead showing " + plotData.length + " in " + _newWidth + "px");
-			}
-		}
-		return { plotData: plotData, domain: domain };
-	}
-	return { filterData: filterData };
-}
-
-function canShowTheseManyPeriods(width, arrayLength, maxThreshold, minThreshold) {
-	return arrayLength > showMinThreshold(width, minThreshold) && arrayLength < showMaxThreshold(width, maxThreshold);
-}
-
-function showMinThreshold(width, threshold) {
-	return Math.max(1, Math.ceil(width * threshold));
-}
-
-function showMaxThreshold(width, threshold) {
-	return Math.floor(width * threshold);
-}
-
-function showMax(width, threshold) {
-	return Math.floor(showMaxThreshold(width, threshold) * 0.97);
-}
-
-function getFilteredResponse(data, left, right, xAccessor) {
-	var newLeftIndex = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["l" /* getClosestItemIndexes */])(data, left, xAccessor).right;
-	var newRightIndex = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["l" /* getClosestItemIndexes */])(data, right, xAccessor).left;
-
-	var filteredData = data.slice(newLeftIndex, newRightIndex + 1);
-	// console.log(right, newRightIndex, dataForInterval.length);
-
-	return filteredData;
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (function (_ref2) {
-	var xScale = _ref2.xScale,
-	    useWholeData = _ref2.useWholeData,
-	    clamp = _ref2.clamp,
-	    pointsPerPxThreshold = _ref2.pointsPerPxThreshold,
-	    minPointsPerPxThreshold = _ref2.minPointsPerPxThreshold;
-
-	return extentsWrapper(useWholeData || Object(__WEBPACK_IMPORTED_MODULE_0__utils__["s" /* isNotDefined */])(xScale.invert), clamp, pointsPerPxThreshold, minPointsPerPxThreshold);
-});
-//# sourceMappingURL=evaluator.js.map
-
-/***/ }),
-/* 975 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__GenericComponent__ = __webpack_require__(373);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(16);
-
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var ALWAYS_TRUE_TYPES = ["drag", "dragend"];
-
-var GenericChartComponent = function (_GenericComponent) {
-	_inherits(GenericChartComponent, _GenericComponent);
-
-	function GenericChartComponent(props, context) {
-		_classCallCheck(this, GenericChartComponent);
-
-		var _this = _possibleConstructorReturn(this, (GenericChartComponent.__proto__ || Object.getPrototypeOf(GenericChartComponent)).call(this, props, context));
-
-		_this.preCanvasDraw = _this.preCanvasDraw.bind(_this);
-		_this.postCanvasDraw = _this.postCanvasDraw.bind(_this);
-		_this.shouldTypeProceed = _this.shouldTypeProceed.bind(_this);
-		_this.preEvaluate = _this.preEvaluate.bind(_this);
-		return _this;
-	}
-
-	_createClass(GenericChartComponent, [{
-		key: "preCanvasDraw",
-		value: function preCanvasDraw(ctx, moreProps) {
-			_get(GenericChartComponent.prototype.__proto__ || Object.getPrototypeOf(GenericChartComponent.prototype), "preCanvasDraw", this).call(this, ctx, moreProps);
-			ctx.save();
-			var _context = this.context,
-			    margin = _context.margin,
-			    ratio = _context.ratio;
-			var chartConfig = moreProps.chartConfig;
-
-
-			var canvasOriginX = 0.5 * ratio + chartConfig.origin[0] + margin.left;
-			var canvasOriginY = 0.5 * ratio + chartConfig.origin[1] + margin.top;
-
-			var _moreProps$chartConfi = moreProps.chartConfig,
-			    width = _moreProps$chartConfi.width,
-			    height = _moreProps$chartConfi.height;
-			var _props = this.props,
-			    clip = _props.clip,
-			    edgeClip = _props.edgeClip;
-
-
-			ctx.setTransform(1, 0, 0, 1, 0, 0);
-			ctx.scale(ratio, ratio);
-			if (edgeClip) {
-				ctx.beginPath();
-				ctx.rect(-1, canvasOriginY - 10, width + margin.left + margin.right + 1, height + 20);
-				ctx.clip();
-			}
-
-			ctx.translate(canvasOriginX, canvasOriginY);
-
-			if (clip) {
-				ctx.beginPath();
-				ctx.rect(-1, -1, width + 1, height + 1);
-				ctx.clip();
-			}
-		}
-	}, {
-		key: "postCanvasDraw",
-		value: function postCanvasDraw(ctx, moreProps) {
-			_get(GenericChartComponent.prototype.__proto__ || Object.getPrototypeOf(GenericChartComponent.prototype), "postCanvasDraw", this).call(this, ctx, moreProps);
-			ctx.restore();
-		}
-	}, {
-		key: "updateMoreProps",
-		value: function updateMoreProps(moreProps) {
-			_get(GenericChartComponent.prototype.__proto__ || Object.getPrototypeOf(GenericChartComponent.prototype), "updateMoreProps", this).call(this, moreProps);
-			var chartConfigList = moreProps.chartConfig;
-
-
-			if (chartConfigList) {
-				var chartId = this.context.chartId;
-
-				var chartConfig = Object(__WEBPACK_IMPORTED_MODULE_2__utils__["i" /* find */])(chartConfigList, function (each) {
-					return each.id === chartId;
-				});
-				this.moreProps.chartConfig = chartConfig;
-			}
-			if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(this.moreProps.chartConfig)) {
-				var _moreProps$chartConfi2 = _slicedToArray(this.moreProps.chartConfig.origin, 2),
-				    ox = _moreProps$chartConfi2[0],
-				    oy = _moreProps$chartConfi2[1];
-
-				if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(moreProps.mouseXY)) {
-					var _moreProps$mouseXY = _slicedToArray(moreProps.mouseXY, 2),
-					    x = _moreProps$mouseXY[0],
-					    y = _moreProps$mouseXY[1];
-
-					this.moreProps.mouseXY = [x - ox, y - oy];
-				}
-				if (Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(moreProps.startPos)) {
-					var _moreProps$startPos = _slicedToArray(moreProps.startPos, 2),
-					    _x = _moreProps$startPos[0],
-					    _y = _moreProps$startPos[1];
-
-					this.moreProps.startPos = [_x - ox, _y - oy];
-				}
-			}
-		}
-	}, {
-		key: "preEvaluate",
-		value: function preEvaluate() /* type, moreProps */{
-			/* if (
-   	type === "mousemove"
-   	&& this.props.onMouseMove
-   	&& isDefined(moreProps)
-   	&& isDefined(moreProps.currentCharts)
-   ) {
-   	if (moreProps.currentCharts.indexOf(this.context.chartId) === -1) {
-   		moreProps.show = false;
-   	}
-   } */
-		}
-	}, {
-		key: "shouldTypeProceed",
-		value: function shouldTypeProceed(type, moreProps) {
-			if ((type === "mousemove" || type === "click") && this.props.disablePan) {
-				return true;
-			}
-			if (ALWAYS_TRUE_TYPES.indexOf(type) === -1 && Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(moreProps) && Object(__WEBPACK_IMPORTED_MODULE_2__utils__["r" /* isDefined */])(moreProps.currentCharts)) {
-				return moreProps.currentCharts.indexOf(this.context.chartId) > -1;
-			}
-			return true;
-		}
-	}]);
-
-	return GenericChartComponent;
-}(__WEBPACK_IMPORTED_MODULE_1__GenericComponent__["a" /* default */]);
-
-GenericChartComponent.propTypes = __WEBPACK_IMPORTED_MODULE_1__GenericComponent__["a" /* default */].propTypes;
-
-GenericChartComponent.defaultProps = __WEBPACK_IMPORTED_MODULE_1__GenericComponent__["a" /* default */].defaultProps;
-
-GenericChartComponent.contextTypes = _extends({}, __WEBPACK_IMPORTED_MODULE_1__GenericComponent__["a" /* default */].contextTypes, {
-	canvasOriginX: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
-	canvasOriginY: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
-	chartId: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number, __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string]).isRequired,
-	chartConfig: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object.isRequired,
-	ratio: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number.isRequired
-});
-
-/* harmony default export */ __webpack_exports__["a"] = (GenericChartComponent);
-//# sourceMappingURL=GenericChartComponent.js.map
-
-/***/ }),
-/* 976 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_PureComponent__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(16);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-
-
-var BackgroundText = function (_PureComponent) {
-	_inherits(BackgroundText, _PureComponent);
-
-	function BackgroundText() {
-		_classCallCheck(this, BackgroundText);
-
-		return _possibleConstructorReturn(this, (BackgroundText.__proto__ || Object.getPrototypeOf(BackgroundText)).apply(this, arguments));
-	}
-
-	_createClass(BackgroundText, [{
-		key: "componentDidMount",
-		value: function componentDidMount() {
-			if (this.context.chartCanvasType !== "svg" && Object(__WEBPACK_IMPORTED_MODULE_3__utils__["r" /* isDefined */])(this.context.getCanvasContexts)) {
-				var contexts = this.context.getCanvasContexts();
-				if (contexts) BackgroundText.drawOnCanvas(contexts.bg, this.props, this.context, this.props.children);
-			}
-		}
-	}, {
-		key: "componentDidUpdate",
-		value: function componentDidUpdate() {
-			this.componentDidMount();
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var chartCanvasType = this.context.chartCanvasType;
-
-
-			if (chartCanvasType !== "svg") return null;
-
-			var _props = this.props,
-			    x = _props.x,
-			    y = _props.y,
-			    fill = _props.fill,
-			    opacity = _props.opacity,
-			    stroke = _props.stroke,
-			    strokeOpacity = _props.strokeOpacity,
-			    fontFamily = _props.fontFamily,
-			    fontSize = _props.fontSize,
-			    textAnchor = _props.textAnchor;
-
-			var props = { x: x, y: y, fill: fill, opacity: opacity, stroke: stroke, strokeOpacity: strokeOpacity, fontFamily: fontFamily, fontSize: fontSize, textAnchor: textAnchor };
-			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-				"text",
-				props,
-				"this.props.children(interval)"
-			);
-		}
-	}]);
-
-	return BackgroundText;
-}(__WEBPACK_IMPORTED_MODULE_2__utils_PureComponent__["a" /* default */]);
-
-BackgroundText.drawOnCanvas = function (ctx, props, _ref, getText) {
-	var interval = _ref.interval;
-
-	ctx.clearRect(-1, -1, ctx.canvas.width + 2, ctx.canvas.height + 2);
-	ctx.save();
-
-	ctx.setTransform(1, 0, 0, 1, 0, 0);
-	ctx.translate(0.5, 0.5);
-
-	var x = props.x,
-	    y = props.y,
-	    fill = props.fill,
-	    opacity = props.opacity,
-	    stroke = props.stroke,
-	    strokeOpacity = props.strokeOpacity,
-	    fontFamily = props.fontFamily,
-	    fontSize = props.fontSize,
-	    textAnchor = props.textAnchor;
-
-
-	var text = getText(interval);
-
-	ctx.strokeStyle = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["p" /* hexToRGBA */])(stroke, strokeOpacity);
-
-	ctx.font = fontSize + "px " + fontFamily;
-	ctx.fillStyle = Object(__WEBPACK_IMPORTED_MODULE_3__utils__["p" /* hexToRGBA */])(fill, opacity);
-	ctx.textAlign = textAnchor === "middle" ? "center" : textAnchor;
-
-	if (stroke !== "none") ctx.strokeText(text, x, y);
-	ctx.fillText(text, x, y);
-
-	ctx.restore();
-};
-
-BackgroundText.propTypes = {
-	x: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	y: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	fontFamily: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
-	fontSize: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	fill: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
-	stroke: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
-	opacity: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
-	strokeOpacity: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
-	textAnchor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
-	children: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func
-};
-
-BackgroundText.defaultProps = {
-	opacity: 0.3,
-	fill: "#9E7523",
-	stroke: "#9E7523",
-	strokeOpacity: 1,
-	fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
-	fontSize: 12,
-	textAnchor: "middle"
-};
-
-BackgroundText.contextTypes = {
-	interval: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
-	getCanvasContexts: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func,
-	chartCanvasType: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (BackgroundText);
-//# sourceMappingURL=BackgroundText.js.map
-
-/***/ }),
-/* 977 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_d3_path__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_d3_interpolate__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(16);
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-// import { mean } from "d3-array";
-
-
-
-
-
-
-var ZoomButtons = function (_Component) {
-	_inherits(ZoomButtons, _Component);
-
-	function ZoomButtons(props) {
-		_classCallCheck(this, ZoomButtons);
-
-		var _this = _possibleConstructorReturn(this, (ZoomButtons.__proto__ || Object.getPrototypeOf(ZoomButtons)).call(this, props));
-
-		_this.handleZoomOut = _this.handleZoomOut.bind(_this);
-		_this.handleZoomIn = _this.handleZoomIn.bind(_this);
-		_this.zoom = _this.zoom.bind(_this);
-		return _this;
-	}
-
-	_createClass(ZoomButtons, [{
-		key: "zoom",
-		value: function zoom(direction) {
-			var _this2 = this;
-
-			var _context = this.context,
-			    xAxisZoom = _context.xAxisZoom,
-			    xScale = _context.xScale,
-			    plotData = _context.plotData,
-			    xAccessor = _context.xAccessor;
-
-			var cx = xScale(xAccessor(Object(__WEBPACK_IMPORTED_MODULE_4__utils__["u" /* last */])(plotData)));
-			// mean(xScale.range());
-			var zoomMultiplier = this.props.zoomMultiplier;
-
-
-			var c = direction > 0 ? 1 * zoomMultiplier : 1 / zoomMultiplier;
-
-			var _xScale$domain = xScale.domain(),
-			    _xScale$domain2 = _slicedToArray(_xScale$domain, 2),
-			    start = _xScale$domain2[0],
-			    end = _xScale$domain2[1];
-
-			var _xScale$range$map$map = xScale.range().map(function (x) {
-				return cx + (x - cx) * c;
-			}).map(xScale.invert),
-			    _xScale$range$map$map2 = _slicedToArray(_xScale$range$map$map, 2),
-			    newStart = _xScale$range$map$map2[0],
-			    newEnd = _xScale$range$map$map2[1];
-
-			var left = Object(__WEBPACK_IMPORTED_MODULE_3_d3_interpolate__["m" /* interpolateNumber */])(start, newStart);
-			var right = Object(__WEBPACK_IMPORTED_MODULE_3_d3_interpolate__["m" /* interpolateNumber */])(end, newEnd);
-
-			var foo = [0.25, 0.3, 0.5, 0.6, 0.75, 1].map(function (i) {
-				return [left(i), right(i)];
-			});
-
-			this.interval = setInterval(function () {
-				xAxisZoom(foo.shift());
-				if (foo.length === 0) {
-					clearInterval(_this2.interval);
-					delete _this2.interval;
-				}
-			}, 10);
-		}
-	}, {
-		key: "handleZoomOut",
-		value: function handleZoomOut() {
-			if (this.interval) return;
-			this.zoom(1);
-		}
-	}, {
-		key: "handleZoomIn",
-		value: function handleZoomIn() {
-			if (this.interval) return;
-			this.zoom(-1);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var chartConfig = this.context.chartConfig;
-			var width = chartConfig.width,
-			    height = chartConfig.height;
-			var _props = this.props,
-			    size = _props.size,
-			    heightFromBase = _props.heightFromBase,
-			    rx = _props.rx,
-			    ry = _props.ry;
-			var _props2 = this.props,
-			    stroke = _props2.stroke,
-			    strokeOpacity = _props2.strokeOpacity,
-			    fill = _props2.fill,
-			    strokeWidth = _props2.strokeWidth,
-			    fillOpacity = _props2.fillOpacity;
-			var _props3 = this.props,
-			    textFill = _props3.textFill,
-			    textStrokeWidth = _props3.textStrokeWidth;
-			var onReset = this.props.onReset;
-
-			var centerX = Math.round(width / 2);
-			var y = height - heightFromBase;
-
-			var _size = _slicedToArray(size, 2),
-			    w = _size[0],
-			    h = _size[1];
-
-			var hLength = 5;
-			var wLength = 6;
-
-			var textY = Math.round(y + h / 2);
-
-			var resetX = centerX;
-
-			var zoomOut = Object(__WEBPACK_IMPORTED_MODULE_2_d3_path__["a" /* path */])();
-			var zoomOutX = centerX - w - 2 * strokeWidth;
-			zoomOut.moveTo(zoomOutX - wLength, textY);
-			zoomOut.lineTo(zoomOutX + wLength, textY);
-			zoomOut.closePath();
-
-			var zoomIn = Object(__WEBPACK_IMPORTED_MODULE_2_d3_path__["a" /* path */])();
-			var zoomInX = centerX + w + 2 * strokeWidth;
-
-			zoomIn.moveTo(zoomInX - wLength, textY);
-			zoomIn.lineTo(zoomInX + wLength, textY);
-
-			zoomIn.moveTo(zoomInX, textY - hLength);
-			zoomIn.lineTo(zoomInX, textY + hLength);
-			// zoomIn.closePath();
-
-			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-				"g",
-				{ className: "react-stockcharts-zoom-button" },
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", {
-					x: zoomOutX - w / 2,
-					y: y,
-					rx: rx,
-					ry: ry,
-					height: h,
-					width: w,
-					fill: fill,
-					fillOpacity: fillOpacity,
-					stroke: stroke,
-					strokeOpacity: strokeOpacity,
-					strokeWidth: strokeWidth
-				}),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("path", { d: zoomOut.toString(),
-					stroke: textFill,
-					strokeWidth: textStrokeWidth
-				}),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", {
-					x: resetX - w / 2,
-					y: y,
-					rx: rx,
-					ry: ry,
-					height: h,
-					width: w,
-					fill: fill,
-					fillOpacity: fillOpacity,
-					stroke: stroke,
-					strokeOpacity: strokeOpacity,
-					strokeWidth: strokeWidth
-				}),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-					"g",
-					{ transform: "translate (" + resetX + ", " + (y + h / 4) + ") scale(.14)" },
-					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("path", { d: "M31 13C23.4 5.3 12.8.5 1.1.5c-23.3 0-42.3 19-42.3 42.5s18.9 42.5 42.3 42.5c13.8 0 26-6.6 33.7-16.9l-16.5-1.8C13.5 70.4 7.5 72.5 1 72.5c-16.2 0-29.3-13.2-29.3-29.4S-15.2 13.7 1 13.7c8.1 0 15.4 3.3 20.7 8.6l-10.9 11h32.5V.5L31 13z",
-						fill: textFill
-					})
-				),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", {
-					x: zoomInX - w / 2,
-					y: y,
-					rx: rx,
-					ry: ry,
-					height: h,
-					width: w,
-					fill: fill,
-					fillOpacity: fillOpacity,
-					stroke: stroke,
-					strokeOpacity: strokeOpacity,
-					strokeWidth: strokeWidth
-				}),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("path", { d: zoomIn.toString(),
-					stroke: textFill,
-					strokeWidth: textStrokeWidth
-				}),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", { className: "react-stockcharts-enable-interaction out",
-					onClick: this.handleZoomOut,
-					x: zoomOutX - w / 2,
-					y: y,
-					rx: rx,
-					ry: ry,
-					height: h,
-					width: w,
-					fill: "none"
-				}),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", { className: "react-stockcharts-enable-interaction reset",
-					onClick: onReset,
-					x: resetX - w / 2,
-					y: y,
-					rx: rx,
-					ry: ry,
-					height: h,
-					width: w,
-					fill: "none"
-				}),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("rect", { className: "react-stockcharts-enable-interaction in",
-					onClick: this.handleZoomIn,
-					x: zoomInX - w / 2,
-					y: y,
-					rx: rx,
-					ry: ry,
-					height: h,
-					width: w,
-					fill: "none"
-				})
-			);
-		}
-	}]);
-
-	return ZoomButtons;
-}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
-
-ZoomButtons.propTypes = {
-	zoomMultiplier: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	size: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array.isRequired,
-	heightFromBase: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	rx: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	ry: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	stroke: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
-	strokeWidth: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	strokeOpacity: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	fill: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
-	fillOpacity: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	fontSize: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	textDy: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
-	textFill: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
-	textStrokeWidth: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number.isRequired,
-	onReset: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func
-};
-
-ZoomButtons.defaultProps = {
-	size: [30, 24],
-	heightFromBase: 50,
-	rx: 3,
-	ry: 3,
-	stroke: "#000000",
-	strokeOpacity: 0.3,
-	strokeWidth: 1,
-	fill: "#D6D6D6",
-	fillOpacity: 0.4,
-	fontSize: 16,
-	textDy: ".3em",
-	textFill: "#000000",
-	textStrokeWidth: 2,
-	zoomMultiplier: 1.5,
-	onReset: __WEBPACK_IMPORTED_MODULE_4__utils__["x" /* noop */]
-};
-
-ZoomButtons.contextTypes = {
-	xScale: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	chartConfig: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object.isRequired,
-	plotData: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array.isRequired,
-	xAccessor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-	xAxisZoom: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (ZoomButtons);
-//# sourceMappingURL=ZoomButtons.js.map
-
-/***/ }),
-/* 978 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _AreaSeries = __webpack_require__(979);
-
-Object.defineProperty(exports, "AreaSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_AreaSeries).default;
-  }
-});
-
-var _AreaOnlySeries = __webpack_require__(198);
-
-Object.defineProperty(exports, "AreaOnlySeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_AreaOnlySeries).default;
-  }
-});
-
-var _ScatterSeries = __webpack_require__(988);
-
-Object.defineProperty(exports, "ScatterSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_ScatterSeries).default;
-  }
-});
-
-var _CircleMarker = __webpack_require__(989);
-
-Object.defineProperty(exports, "CircleMarker", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_CircleMarker).default;
-  }
-});
-
-var _TriangleMarker = __webpack_require__(990);
-
-Object.defineProperty(exports, "TriangleMarker", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_TriangleMarker).default;
-  }
-});
-
-var _SquareMarker = __webpack_require__(991);
-
-Object.defineProperty(exports, "SquareMarker", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_SquareMarker).default;
-  }
-});
-
-var _LineSeries = __webpack_require__(64);
-
-Object.defineProperty(exports, "LineSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_LineSeries).default;
-  }
-});
-
-var _CandlestickSeries = __webpack_require__(992);
-
-Object.defineProperty(exports, "CandlestickSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_CandlestickSeries).default;
-  }
-});
-
-var _OHLCSeries = __webpack_require__(993);
-
-Object.defineProperty(exports, "OHLCSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_OHLCSeries).default;
-  }
-});
-
-var _BarSeries = __webpack_require__(376);
-
-Object.defineProperty(exports, "BarSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_BarSeries).default;
-  }
-});
-
-var _StackedBarSeries = __webpack_require__(122);
-
-Object.defineProperty(exports, "StackedBarSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_StackedBarSeries).default;
-  }
-});
-
-var _GroupedBarSeries = __webpack_require__(994);
-
-Object.defineProperty(exports, "GroupedBarSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_GroupedBarSeries).default;
-  }
-});
-
-var _KagiSeries = __webpack_require__(995);
-
-Object.defineProperty(exports, "KagiSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_KagiSeries).default;
-  }
-});
-
-var _PointAndFigureSeries = __webpack_require__(996);
-
-Object.defineProperty(exports, "PointAndFigureSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_PointAndFigureSeries).default;
-  }
-});
-
-var _RenkoSeries = __webpack_require__(997);
-
-Object.defineProperty(exports, "RenkoSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_RenkoSeries).default;
-  }
-});
-
-var _MACDSeries = __webpack_require__(998);
-
-Object.defineProperty(exports, "MACDSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_MACDSeries).default;
-  }
-});
-
-var _BollingerSeries = __webpack_require__(999);
-
-Object.defineProperty(exports, "BollingerSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_BollingerSeries).default;
-  }
-});
-
-var _RSISeries = __webpack_require__(1000);
-
-Object.defineProperty(exports, "RSISeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_RSISeries).default;
-  }
-});
-
-var _StochasticSeries = __webpack_require__(1001);
-
-Object.defineProperty(exports, "StochasticSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_StochasticSeries).default;
-  }
-});
-
-var _ElderRaySeries = __webpack_require__(1002);
-
-Object.defineProperty(exports, "ElderRaySeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_ElderRaySeries).default;
-  }
-});
-
-var _VolumeProfileSeries = __webpack_require__(1004);
-
-Object.defineProperty(exports, "VolumeProfileSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_VolumeProfileSeries).default;
-  }
-});
-
-var _StraightLine = __webpack_require__(89);
-
-Object.defineProperty(exports, "StraightLine", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_StraightLine).default;
-  }
-});
-
-var _SARSeries = __webpack_require__(1005);
-
-Object.defineProperty(exports, "SARSeries", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_SARSeries).default;
-  }
-});
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-/* 979 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _LineSeries = __webpack_require__(64);
-
-var _LineSeries2 = _interopRequireDefault(_LineSeries);
-
-var _AreaOnlySeries = __webpack_require__(198);
-
-var _AreaOnlySeries2 = _interopRequireDefault(_AreaOnlySeries);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function AreaSeries(props) {
-	var yAccessor = props.yAccessor,
-	    baseAt = props.baseAt;
-	var className = props.className,
-	    opacity = props.opacity,
-	    stroke = props.stroke,
-	    strokeWidth = props.strokeWidth,
-	    fill = props.fill;
-
-
-	return _react2.default.createElement(
-		"g",
-		{ className: className },
-		_react2.default.createElement(_LineSeries2.default, {
-			yAccessor: yAccessor,
-			stroke: stroke, fill: "none",
-			strokeWidth: strokeWidth,
-			hoverHighlight: false }),
-		_react2.default.createElement(_AreaOnlySeries2.default, {
-			yAccessor: yAccessor,
-			base: baseAt,
-			stroke: "none", fill: fill,
-			opacity: opacity })
-	);
-}
-
-AreaSeries.propTypes = {
-	stroke: _propTypes2.default.string,
-	strokeWidth: _propTypes2.default.number,
-	fill: _propTypes2.default.string.isRequired,
-	opacity: _propTypes2.default.number.isRequired,
-	className: _propTypes2.default.string,
-	yAccessor: _propTypes2.default.func.isRequired,
-	baseAt: _propTypes2.default.func
-};
-
-AreaSeries.defaultProps = {
-	stroke: "#4682B4",
-	strokeWidth: 1,
-	opacity: 0.5,
-	fill: "#4682B4",
-	className: "react-stockcharts-area"
-};
-
-exports.default = AreaSeries;
-//# sourceMappingURL=AreaSeries.js.map
-
-/***/ }),
-/* 980 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-exports.default = rebind;
-// copied from https://github.com/d3fc/d3fc-rebind/blob/master/src/rebind.js
-
-function createReboundMethod(target, source, name) {
-	var method = source[name];
-	if (typeof method !== "function") {
-		throw new Error("Attempt to rebind " + name + " which isn't a function on the source object");
-	}
-	return function () {
-		for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-			args[_key] = arguments[_key];
-		}
-
-		var value = method.apply(source, args);
-		return value === source ? target : value;
-	};
-}
-
-function rebind(target, source) {
-	for (var _len2 = arguments.length, names = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-		names[_key2 - 2] = arguments[_key2];
-	}
-
-	var _iteratorNormalCompletion = true;
-	var _didIteratorError = false;
-	var _iteratorError = undefined;
-
-	try {
-		for (var _iterator = names[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-			var name = _step.value;
-
-			target[name] = createReboundMethod(target, source, name);
-		}
-	} catch (err) {
-		_didIteratorError = true;
-		_iteratorError = err;
-	} finally {
-		try {
-			if (!_iteratorNormalCompletion && _iterator.return) {
-				_iterator.return();
-			}
-		} finally {
-			if (_didIteratorError) {
-				throw _iteratorError;
-			}
-		}
-	}
-
-	return target;
-}
-//# sourceMappingURL=rebind.js.map
-
-/***/ }),
-/* 981 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-exports.default = function () {
-
-	var algorithm = _identity2.default,
-	    skipUndefined = true,
-	    merge = _noop2.default;
-
-	function mergeCompute(data) {
-		var zip = (0, _zipper2.default)().combine(function (datum, indicator) {
-			var result = skipUndefined && (0, _index.isNotDefined)(indicator) ? datum : merge(datum, indicator);
-			return (0, _index.isNotDefined)(result) ? datum : result;
-		});
-
-		// console.log(data);
-		return zip(data, algorithm(data));
-	}
-
-	mergeCompute.algorithm = function (x) {
-		if (!arguments.length) {
-			return algorithm;
-		}
-		algorithm = x;
-		return mergeCompute;
-	};
-
-	mergeCompute.merge = function (x) {
-		if (!arguments.length) {
-			return merge;
-		}
-		merge = x;
-		return mergeCompute;
-	};
-	mergeCompute.skipUndefined = function (x) {
-		if (!arguments.length) {
-			return skipUndefined;
-		}
-		skipUndefined = x;
-		return mergeCompute;
-	};
-
-	return mergeCompute;
-};
-
-var _identity = __webpack_require__(87);
-
-var _identity2 = _interopRequireDefault(_identity);
-
-var _zipper = __webpack_require__(374);
-
-var _zipper2 = _interopRequireDefault(_zipper);
-
-var _noop = __webpack_require__(88);
-
-var _noop2 = _interopRequireDefault(_noop);
-
-var _index = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-//# sourceMappingURL=merge.js.map
-
-/***/ }),
-/* 982 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/*
-
-Taken from https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/calculator/slidingWindow.js
-
-The MIT License (MIT)
-
-Copyright (c) 2014-2015 Scott Logic Ltd.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-*/
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-exports.default = function () {
-
-	var undefinedValue = undefined,
-	    windowSize = 10,
-	    accumulator = _noop2.default,
-	    sourcePath = void 0,
-	    source = void 0,
-	    skipInitial = 0,
-	    misc = void 0;
-
-	// eslint-disable-next-line prefer-const
-	var slidingWindow = function slidingWindow(data) {
-		var sourceFunction = source || (0, _index.path)(sourcePath);
-
-		var size = (0, _index.functor)(windowSize).apply(this, arguments);
-		var windowData = data.slice(skipInitial, size + skipInitial).map(sourceFunction);
-		var accumulatorIdx = 0;
-		var undef = (0, _index.functor)(undefinedValue);
-		// console.log(skipInitial, size, data.length, windowData.length);
-		return data.map(function (d, i) {
-			// console.log(d, i);
-			if (i < skipInitial + size - 1) {
-				return undef(sourceFunction(d), i, misc);
-			}
-			if (i >= skipInitial + size) {
-				// Treat windowData as FIFO rolling buffer
-				windowData.shift();
-				windowData.push(sourceFunction(d, i));
-			}
-			return accumulator(windowData, i, accumulatorIdx++, misc);
-		});
-	};
-
-	slidingWindow.undefinedValue = function (x) {
-		if (!arguments.length) {
-			return undefinedValue;
-		}
-		undefinedValue = x;
-		return slidingWindow;
-	};
-	slidingWindow.windowSize = function (x) {
-		if (!arguments.length) {
-			return windowSize;
-		}
-		windowSize = x;
-		return slidingWindow;
-	};
-	slidingWindow.misc = function (x) {
-		if (!arguments.length) {
-			return misc;
-		}
-		misc = x;
-		return slidingWindow;
-	};
-	slidingWindow.accumulator = function (x) {
-		if (!arguments.length) {
-			return accumulator;
-		}
-		accumulator = x;
-		return slidingWindow;
-	};
-	slidingWindow.skipInitial = function (x) {
-		if (!arguments.length) {
-			return skipInitial;
-		}
-		skipInitial = x;
-		return slidingWindow;
-	};
-	slidingWindow.sourcePath = function (x) {
-		if (!arguments.length) {
-			return sourcePath;
-		}
-		sourcePath = x;
-		return slidingWindow;
-	};
-	slidingWindow.source = function (x) {
-		if (!arguments.length) {
-			return source;
-		}
-		source = x;
-		return slidingWindow;
-	};
-
-	return slidingWindow;
-};
-
-var _noop = __webpack_require__(88);
-
-var _noop2 = _interopRequireDefault(_noop);
-
-var _index = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-//# sourceMappingURL=slidingWindow.js.map
-
-/***/ }),
-/* 983 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-exports.default = function () {
-
-	var undefinedValue = undefined,
-	    windowSize = 10,
-	    accumulator = _noop2.default,
-	    source = _identity2.default,
-	    skipInitial = 0;
-
-	// eslint-disable-next-line prefer-const
-	var mappedSlidingWindow = function mappedSlidingWindow(data) {
-		var size = (0, _index.functor)(windowSize).apply(this, arguments);
-		var windowData = [];
-		var accumulatorIdx = 0;
-		var undef = (0, _index.functor)(undefinedValue);
-		// console.log(skipInitial, size, data.length, windowData.length);
-		var result = [];
-		data.forEach(function (d, i) {
-			// console.log(d, i, windowData.length);
-			var mapped = void 0;
-			if (i < skipInitial + size - 1) {
-				mapped = undef(d, i);
-				result.push(mapped);
-				windowData.push(mapped);
-				return;
-			}
-			if (i >= skipInitial + size) {
-				// Treat windowData as FIFO rolling buffer
-				windowData.shift();
-			}
-			windowData.push(source(d, i));
-			mapped = accumulator(windowData, i, accumulatorIdx++);
-			result.push(mapped);
-			windowData.pop();
-			windowData.push(mapped);
-			return;
-		});
-		return result;
-	};
-
-	mappedSlidingWindow.undefinedValue = function (x) {
-		if (!arguments.length) {
-			return undefinedValue;
-		}
-		undefinedValue = x;
-		return mappedSlidingWindow;
-	};
-	mappedSlidingWindow.windowSize = function (x) {
-		if (!arguments.length) {
-			return windowSize;
-		}
-		windowSize = x;
-		return mappedSlidingWindow;
-	};
-	mappedSlidingWindow.accumulator = function (x) {
-		if (!arguments.length) {
-			return accumulator;
-		}
-		accumulator = x;
-		return mappedSlidingWindow;
-	};
-	mappedSlidingWindow.skipInitial = function (x) {
-		if (!arguments.length) {
-			return skipInitial;
-		}
-		skipInitial = x;
-		return mappedSlidingWindow;
-	};
-	mappedSlidingWindow.source = function (x) {
-		if (!arguments.length) {
-			return source;
-		}
-		source = x;
-		return mappedSlidingWindow;
-	};
-
-	return mappedSlidingWindow;
-};
-
-var _noop = __webpack_require__(88);
-
-var _noop2 = _interopRequireDefault(_noop);
-
-var _identity = __webpack_require__(87);
-
-var _identity2 = _interopRequireDefault(_identity);
-
-var _index = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-//# sourceMappingURL=mappedSlidingWindow.js.map
-
-/***/ }),
-/* 984 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/*
-
-Taken from https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/calculator/slidingWindow.js
-
-The MIT License (MIT)
-
-Copyright (c) 2014-2015 Scott Logic Ltd.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-*/
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-exports.default = function () {
-
-	var accumulateTill = (0, _index.functor)(false),
-	    accumulator = _noop2.default,
-	    value = _identity2.default,
-	    discardTillStart = false,
-	    discardTillEnd = false;
-
-	// eslint-disable-next-line prefer-const
-	var accumulatingWindow = function accumulatingWindow(data) {
-		var accumulatedWindow = discardTillStart ? undefined : [];
-		var response = [];
-		var accumulatorIdx = 0;
-		var i = 0;
-		for (i = 0; i < data.length; i++) {
-			var d = data[i];
-			// console.log(d, accumulateTill(d));
-			if (accumulatedWindow.length > 0 && accumulateTill(d, i, accumulatedWindow)) {
-				if (accumulatedWindow && accumulatedWindow.length > 0) response.push(accumulator(accumulatedWindow, i, accumulatorIdx++));
-				accumulatedWindow = [value(d)];
-			} else {
-				if (accumulatedWindow) accumulatedWindow.push(value(d));
-			}
-		}
-		if (!discardTillEnd) response.push(accumulator(accumulatedWindow, i, accumulatorIdx));
-		return response;
-	};
-
-	accumulatingWindow.accumulateTill = function (x) {
-		if (!arguments.length) {
-			return accumulateTill;
-		}
-		accumulateTill = (0, _index.functor)(x);
-		return accumulatingWindow;
-	};
-	accumulatingWindow.accumulator = function (x) {
-		if (!arguments.length) {
-			return accumulator;
-		}
-		accumulator = x;
-		return accumulatingWindow;
-	};
-	accumulatingWindow.value = function (x) {
-		if (!arguments.length) {
-			return value;
-		}
-		value = x;
-		return accumulatingWindow;
-	};
-	accumulatingWindow.discardTillStart = function (x) {
-		if (!arguments.length) {
-			return discardTillStart;
-		}
-		discardTillStart = x;
-		return accumulatingWindow;
-	};
-	accumulatingWindow.discardTillEnd = function (x) {
-		if (!arguments.length) {
-			return discardTillEnd;
-		}
-		discardTillEnd = x;
-		return accumulatingWindow;
-	};
-	return accumulatingWindow;
-};
-
-var _noop = __webpack_require__(88);
-
-var _noop2 = _interopRequireDefault(_noop);
-
-var _identity = __webpack_require__(87);
-
-var _identity2 = _interopRequireDefault(_identity);
-
-var _index = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-//# sourceMappingURL=accumulatingWindow.js.map
-
-/***/ }),
-/* 985 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _shallowEqual = __webpack_require__(375);
-
-var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var PureComponent = function (_React$Component) {
-	_inherits(PureComponent, _React$Component);
-
-	function PureComponent() {
-		_classCallCheck(this, PureComponent);
-
-		return _possibleConstructorReturn(this, (PureComponent.__proto__ || Object.getPrototypeOf(PureComponent)).apply(this, arguments));
-	}
-
-	_createClass(PureComponent, [{
-		key: "shouldComponentUpdate",
-		value: function shouldComponentUpdate(nextProps, nextState, nextContext) {
-			return !(0, _shallowEqual2.default)(this.props, nextProps) || !(0, _shallowEqual2.default)(this.state, nextState) || !(0, _shallowEqual2.default)(this.context, nextContext);
-		}
-	}]);
-
-	return PureComponent;
-}(_react2.default.Component);
-
-exports.default = PureComponent;
-//# sourceMappingURL=PureComponent.js.map
-
-/***/ }),
-/* 986 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.plotDataLengthBarWidth = plotDataLengthBarWidth;
-exports.timeIntervalBarWidth = timeIntervalBarWidth;
-
-var _utils = __webpack_require__(7);
-
-/**
- * Bar width is based on the amount of items in the plot data and the distance between the first and last of those
- * items.
- * @param props the props passed to the series.
- * @param moreProps an object holding the xScale, xAccessor and plotData.
- * @return {number} the bar width.
- */
-function plotDataLengthBarWidth(props, moreProps) {
-  var _props$widthRatio = props.widthRatio,
-      widthRatio = _props$widthRatio === undefined ? 0.8 : _props$widthRatio;
-  var scale = moreProps.xScale,
-      accessor = moreProps.xAccessor,
-      plotData = moreProps.plotData;
-
-
-  var width = Math.abs((scale(accessor((0, _utils.last)(plotData))) - scale(accessor((0, _utils.head)(plotData)))) / (plotData.length - 1));
-  return width * widthRatio;
-}
-
-/**
- * Generates a width function that calculates the bar width based on the given time interval.
- * @param interval a d3-time time interval.
- * @return {Function} the width function.
- */
-function timeIntervalBarWidth(interval) {
-  return function (props, moreProps) {
-    var _props$widthRatio2 = props.widthRatio,
-        widthRatio = _props$widthRatio2 === undefined ? 0.8 : _props$widthRatio2;
-    var scale = moreProps.xScale,
-        accessor = moreProps.xAccessor,
-        plotData = moreProps.plotData;
-
-
-    var first = accessor((0, _utils.head)(plotData));
-    return Math.abs(scale(interval.offset(first, 1)) - scale(first)) * widthRatio;
-  };
-}
-//# sourceMappingURL=barWidth.js.map
-
-/***/ }),
-/* 987 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-var strokeDashTypes = exports.strokeDashTypes = ["Solid", "ShortDash", "ShortDot", "ShortDashDot", "ShortDashDotDot", "Dot", "Dash", "LongDash", "DashDot", "LongDashDot", "LongDashDotDot"];
-
-var getStrokeDasharray = exports.getStrokeDasharray = function getStrokeDasharray(type) {
-	switch (type) {
-		default:
-		case "Solid":
-			return "none";
-		case "ShortDash":
-			return "6, 2";
-		case "ShortDot":
-			return "2, 2";
-		case "ShortDashDot":
-			return "6, 2, 2, 2";
-		case "ShortDashDotDot":
-			return "6, 2, 2, 2, 2, 2";
-		case "Dot":
-			return "2, 6";
-		case "Dash":
-			return "8, 6";
-		case "LongDash":
-			return "16, 6";
-		case "DashDot":
-			return "8, 6, 2, 6";
-		case "LongDashDot":
-			return "16, 6, 2, 6";
-		case "LongDashDotDot":
-			return "16, 6, 2, 6, 2, 6";
-	}
-};
-//# sourceMappingURL=strokeDasharray.js.map
-
-/***/ }),
-/* 988 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _d3Collection = __webpack_require__(29);
-
-var _GenericChartComponent = __webpack_require__(17);
-
-var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
-
-var _GenericComponent = __webpack_require__(15);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ScatterSeries = function (_Component) {
-	_inherits(ScatterSeries, _Component);
-
-	function ScatterSeries(props) {
-		_classCallCheck(this, ScatterSeries);
-
-		var _this = _possibleConstructorReturn(this, (ScatterSeries.__proto__ || Object.getPrototypeOf(ScatterSeries)).call(this, props));
-
-		_this.renderSVG = _this.renderSVG.bind(_this);
-		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
-		return _this;
-	}
-
-	_createClass(ScatterSeries, [{
-		key: "drawOnCanvas",
-		value: function drawOnCanvas(ctx, moreProps) {
-			var xAccessor = moreProps.xAccessor;
-
-
-			var points = helper(this.props, moreProps, xAccessor);
-
-			_drawOnCanvas(ctx, this.props, points);
-		}
-	}, {
-		key: "renderSVG",
-		value: function renderSVG(moreProps) {
-			var _props = this.props,
-			    className = _props.className,
-			    markerProps = _props.markerProps;
-			var xAccessor = moreProps.xAccessor;
-
-
-			var points = helper(this.props, moreProps, xAccessor);
-
-			return _react2.default.createElement(
-				"g",
-				{ className: className },
-				points.map(function (point, idx) {
-					var Marker = point.marker;
-
-					return _react2.default.createElement(Marker, _extends({ key: idx }, markerProps, { point: point }));
-				})
-			);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			return _react2.default.createElement(_GenericChartComponent2.default, {
-				svgDraw: this.renderSVG,
-				canvasDraw: this.drawOnCanvas,
-				canvasToDraw: _GenericComponent.getAxisCanvas,
-				drawOn: ["pan"]
-			});
-		}
-	}]);
-
-	return ScatterSeries;
-}(_react.Component);
-
-ScatterSeries.propTypes = {
-	className: _propTypes2.default.string,
-	yAccessor: _propTypes2.default.func.isRequired,
-	marker: _propTypes2.default.func,
-	markerProvider: _propTypes2.default.func,
-	markerProps: _propTypes2.default.object
-};
-
-ScatterSeries.defaultProps = {
-	className: "react-stockcharts-scatter"
-};
-
-function helper(props, moreProps, xAccessor) {
-	var yAccessor = props.yAccessor,
-	    markerProvider = props.markerProvider,
-	    markerProps = props.markerProps;
-	var Marker = props.marker;
-	var xScale = moreProps.xScale,
-	    yScale = moreProps.chartConfig.yScale,
-	    plotData = moreProps.plotData;
-
-
-	if (!(markerProvider || Marker)) throw new Error("required prop, either marker or markerProvider missing");
-
-	return plotData.map(function (d) {
-
-		if (markerProvider) Marker = markerProvider(d);
-
-		var mProps = _extends({}, Marker.defaultProps, markerProps);
-
-		var fill = (0, _utils.functor)(mProps.fill);
-		var stroke = (0, _utils.functor)(mProps.stroke);
-
-		return {
-			x: xScale(xAccessor(d)),
-			y: yScale(yAccessor(d)),
-			fill: (0, _utils.hexToRGBA)(fill(d), mProps.opacity),
-			stroke: stroke(d),
-			datum: d,
-			marker: Marker
-		};
-	});
-}
-
-function _drawOnCanvas(ctx, props, points) {
-	var markerProps = props.markerProps;
-
-
-	var nest = (0, _d3Collection.nest)().key(function (d) {
-		return d.fill;
-	}).key(function (d) {
-		return d.stroke;
-	}).entries(points);
-
-	nest.forEach(function (fillGroup) {
-		var fillKey = fillGroup.key,
-		    fillValues = fillGroup.values;
-
-
-		if (fillKey !== "none") {
-			ctx.fillStyle = fillKey;
-		}
-
-		fillValues.forEach(function (strokeGroup) {
-			// var { key: strokeKey, values: strokeValues } = strokeGroup;
-			var strokeValues = strokeGroup.values;
-
-
-			strokeValues.forEach(function (point) {
-				var marker = point.marker;
-
-				marker.drawOnCanvas(_extends({}, marker.defaultProps, markerProps, { fill: fillKey }), point, ctx);
-			});
-		});
-	});
-}
-
-exports.default = ScatterSeries;
-//# sourceMappingURL=ScatterSeries.js.map
-
-/***/ }),
-/* 989 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Circle(props) {
-	var className = props.className,
-	    stroke = props.stroke,
-	    strokeWidth = props.strokeWidth,
-	    opacity = props.opacity,
-	    fill = props.fill,
-	    point = props.point,
-	    r = props.r;
-
-	var radius = (0, _utils.functor)(r)(point.datum);
-	return _react2.default.createElement("circle", { className: className,
-		cx: point.x, cy: point.y,
-		stroke: stroke, strokeWidth: strokeWidth,
-		fillOpacity: opacity, fill: fill, r: radius });
-}
-
-Circle.propTypes = {
-	stroke: _propTypes2.default.string,
-	fill: _propTypes2.default.string.isRequired,
-	opacity: _propTypes2.default.number.isRequired,
-	point: _propTypes2.default.shape({
-		x: _propTypes2.default.number.isRequired,
-		y: _propTypes2.default.number.isRequired,
-		datum: _propTypes2.default.object.isRequired
-	}).isRequired,
-	className: _propTypes2.default.string,
-	strokeWidth: _propTypes2.default.number,
-	r: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]).isRequired
-};
-
-Circle.defaultProps = {
-	stroke: "#4682B4",
-	strokeWidth: 1,
-	opacity: 0.5,
-	fill: "#4682B4",
-	className: "react-stockcharts-marker-circle"
-};
-
-Circle.drawOnCanvas = function (props, point, ctx) {
-	var stroke = props.stroke,
-	    fill = props.fill,
-	    opacity = props.opacity,
-	    strokeWidth = props.strokeWidth;
-
-
-	ctx.strokeStyle = stroke;
-	ctx.lineWidth = strokeWidth;
-
-	if (fill !== "none") {
-		ctx.fillStyle = (0, _utils.hexToRGBA)(fill, opacity);
-	}
-
-	Circle.drawOnCanvasWithNoStateChange(props, point, ctx);
-};
-
-Circle.drawOnCanvasWithNoStateChange = function (props, point, ctx) {
-	var r = props.r;
-
-	var radius = (0, _utils.functor)(r)(point.datum);
-
-	ctx.moveTo(point.x, point.y);
-	ctx.beginPath();
-	ctx.arc(point.x, point.y, radius, 0, 2 * Math.PI, false);
-	ctx.stroke();
-	ctx.fill();
-};
-
-exports.default = Circle;
-//# sourceMappingURL=CircleMarker.js.map
-
-/***/ }),
-/* 990 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Triangle(props) {
-	var className = props.className,
-	    stroke = props.stroke,
-	    strokeWidth = props.strokeWidth,
-	    opacity = props.opacity,
-	    fill = props.fill,
-	    point = props.point,
-	    width = props.width;
-
-	var w = (0, _utils.functor)(width)(point.datum);
-	var x = point.x,
-	    y = point.y;
-
-	var _getTrianglePoints = getTrianglePoints(w),
-	    innerOpposite = _getTrianglePoints.innerOpposite,
-	    innerHypotenuse = _getTrianglePoints.innerHypotenuse;
-
-	var points = "\n\t\t" + x + " " + (y - innerHypotenuse) + ",\n\t\t" + (x + w / 2) + " " + (y + innerOpposite) + ",\n\t\t" + (x - w / 2) + " " + (y + innerOpposite) + "\n\t";
-	return _react2.default.createElement("polygon", {
-		className: className,
-		points: points,
-		stroke: stroke,
-		strokeWidth: strokeWidth,
-		fillOpacity: opacity,
-		fill: fill
-	});
-}
-Triangle.propTypes = {
-	stroke: _propTypes2.default.string,
-	fill: _propTypes2.default.string.isRequired,
-	opacity: _propTypes2.default.number.isRequired,
-	point: _propTypes2.default.shape({
-		x: _propTypes2.default.number.isRequired,
-		y: _propTypes2.default.number.isRequired,
-		datum: _propTypes2.default.object.isRequired
-	}).isRequired,
-	className: _propTypes2.default.string,
-	strokeWidth: _propTypes2.default.number,
-	width: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]).isRequired
-};
-Triangle.defaultProps = {
-	stroke: "#4682B4",
-	strokeWidth: 1,
-	opacity: 0.5,
-	fill: "#4682B4",
-	className: "react-stockcharts-marker-triangle"
-};
-Triangle.drawOnCanvas = function (props, point, ctx) {
-	var stroke = props.stroke,
-	    fill = props.fill,
-	    opacity = props.opacity,
-	    strokeWidth = props.strokeWidth;
-
-	ctx.strokeStyle = stroke;
-	ctx.lineWidth = strokeWidth;
-	if (fill !== "none") {
-		ctx.fillStyle = (0, _utils.hexToRGBA)(fill, opacity);
-	}
-	Triangle.drawOnCanvasWithNoStateChange(props, point, ctx);
-};
-Triangle.drawOnCanvasWithNoStateChange = function (props, point, ctx) {
-	var width = props.width;
-
-	var w = (0, _utils.functor)(width)(point.datum);
-	var x = point.x,
-	    y = point.y;
-
-	var _getTrianglePoints2 = getTrianglePoints(w),
-	    innerOpposite = _getTrianglePoints2.innerOpposite,
-	    innerHypotenuse = _getTrianglePoints2.innerHypotenuse;
-
-	ctx.beginPath();
-	ctx.moveTo(x, y - innerHypotenuse);
-	ctx.lineTo(x + w / 2, y + innerOpposite);
-	ctx.lineTo(x - w / 2, y + innerOpposite);
-	ctx.stroke();
-	ctx.fill();
-};
-exports.default = Triangle;
-
-
-function getTrianglePoints(width) {
-	var innerHypotenuse = width / 2 * (1 / Math.cos(30 * Math.PI / 180));
-	var innerOpposite = width / 2 * (1 / Math.tan(60 * Math.PI / 180));
-	return {
-		innerOpposite: innerOpposite,
-		innerHypotenuse: innerHypotenuse
-	};
-}
-//# sourceMappingURL=TriangleMarker.js.map
-
-/***/ }),
-/* 991 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Square(props) {
-	var className = props.className,
-	    stroke = props.stroke,
-	    strokeWidth = props.strokeWidth,
-	    opacity = props.opacity,
-	    fill = props.fill,
-	    point = props.point,
-	    width = props.width;
-
-	var w = (0, _utils.functor)(width)(point.datum);
-	var x = point.x - w / 2;
-	var y = point.y - w / 2;
-	return _react2.default.createElement("rect", {
-		className: className,
-		x: x,
-		y: y,
-		stroke: stroke,
-		strokeWidth: strokeWidth,
-		fillOpacity: opacity,
-		fill: fill,
-		width: w,
-		height: w
-	});
-}
-Square.propTypes = {
-	stroke: _propTypes2.default.string,
-	fill: _propTypes2.default.string.isRequired,
-	opacity: _propTypes2.default.number.isRequired,
-	point: _propTypes2.default.shape({
-		x: _propTypes2.default.number.isRequired,
-		y: _propTypes2.default.number.isRequired,
-		datum: _propTypes2.default.object.isRequired
-	}).isRequired,
-	className: _propTypes2.default.string,
-	strokeWidth: _propTypes2.default.number,
-	width: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]).isRequired
-};
-Square.defaultProps = {
-	stroke: "#4682B4",
-	strokeWidth: 1,
-	opacity: 0.5,
-	fill: "#4682B4",
-	className: "react-stockcharts-marker-rect"
-};
-Square.drawOnCanvas = function (props, point, ctx) {
-	var stroke = props.stroke,
-	    fill = props.fill,
-	    opacity = props.opacity,
-	    strokeWidth = props.strokeWidth;
-
-	ctx.strokeStyle = stroke;
-	ctx.lineWidth = strokeWidth;
-	if (fill !== "none") {
-		ctx.fillStyle = (0, _utils.hexToRGBA)(fill, opacity);
-	}
-	Square.drawOnCanvasWithNoStateChange(props, point, ctx);
-};
-Square.drawOnCanvasWithNoStateChange = function (props, point, ctx) {
-	var width = props.width;
-
-	var w = (0, _utils.functor)(width)(point.datum);
-	var x = point.x - w / 2;
-	var y = point.y - w / 2;
-	ctx.beginPath();
-	ctx.rect(x, y, w, w);
-	ctx.stroke();
-	ctx.fill();
-};
-exports.default = Square;
-//# sourceMappingURL=SquareMarker.js.map
-
-/***/ }),
-/* 992 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _d3Collection = __webpack_require__(29);
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _GenericChartComponent = __webpack_require__(17);
-
-var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
-
-var _GenericComponent = __webpack_require__(15);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var CandlestickSeries = function (_Component) {
-	_inherits(CandlestickSeries, _Component);
-
-	function CandlestickSeries(props) {
-		_classCallCheck(this, CandlestickSeries);
-
-		var _this = _possibleConstructorReturn(this, (CandlestickSeries.__proto__ || Object.getPrototypeOf(CandlestickSeries)).call(this, props));
-
-		_this.renderSVG = _this.renderSVG.bind(_this);
-		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
-		return _this;
-	}
-
-	_createClass(CandlestickSeries, [{
-		key: "drawOnCanvas",
-		value: function drawOnCanvas(ctx, moreProps) {
-			_drawOnCanvas(ctx, this.props, moreProps);
-		}
-	}, {
-		key: "renderSVG",
-		value: function renderSVG(moreProps) {
-			var _props = this.props,
-			    className = _props.className,
-			    wickClassName = _props.wickClassName,
-			    candleClassName = _props.candleClassName;
-			var xScale = moreProps.xScale,
-			    yScale = moreProps.chartConfig.yScale,
-			    plotData = moreProps.plotData,
-			    xAccessor = moreProps.xAccessor;
-
-
-			var candleData = getCandleData(this.props, xAccessor, xScale, yScale, plotData);
-
-			return _react2.default.createElement(
-				"g",
-				{ className: className },
-				_react2.default.createElement(
-					"g",
-					{ className: wickClassName, key: "wicks" },
-					getWicksSVG(candleData)
-				),
-				_react2.default.createElement(
-					"g",
-					{ className: candleClassName, key: "candles" },
-					getCandlesSVG(this.props, candleData)
-				)
-			);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var clip = this.props.clip;
-
-			return _react2.default.createElement(_GenericChartComponent2.default, {
-				clip: clip,
-				svgDraw: this.renderSVG,
-				canvasDraw: this.drawOnCanvas,
-				canvasToDraw: _GenericComponent.getAxisCanvas,
-				drawOn: ["pan"]
-			});
-		}
-	}]);
-
-	return CandlestickSeries;
-}(_react.Component);
-
-CandlestickSeries.propTypes = {
-	className: _propTypes2.default.string,
-	wickClassName: _propTypes2.default.string,
-	candleClassName: _propTypes2.default.string,
-	widthRatio: _propTypes2.default.number,
-	width: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]),
-	classNames: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]),
-	fill: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]),
-	stroke: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]),
-	wickStroke: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]),
-	yAccessor: _propTypes2.default.func,
-	clip: _propTypes2.default.bool
-};
-
-CandlestickSeries.defaultProps = {
-	className: "react-stockcharts-candlestick",
-	wickClassName: "react-stockcharts-candlestick-wick",
-	candleClassName: "react-stockcharts-candlestick-candle",
-	yAccessor: function yAccessor(d) {
-		return { open: d.open, high: d.high, low: d.low, close: d.close };
-	},
-	classNames: function classNames(d) {
-		return d.close > d.open ? "up" : "down";
-	},
-	width: _utils.plotDataLengthBarWidth,
-	wickStroke: "#000000",
-	// wickStroke: d => d.close > d.open ? "#6BA583" : "#FF0000",
-	fill: function fill(d) {
-		return d.close > d.open ? "#6BA583" : "#FF0000";
-	},
-	// stroke: d => d.close > d.open ? "#6BA583" : "#FF0000",
-	stroke: "#000000",
-	candleStrokeWidth: 0.5,
-	// stroke: "none",
-	widthRatio: 0.8,
-	opacity: 0.5,
-	clip: true
-};
-
-function getWicksSVG(candleData) {
-
-	var wicks = candleData.map(function (each, idx) {
-		var d = each.wick;
-		return _react2.default.createElement("path", { key: idx,
-			className: each.className,
-			stroke: d.stroke,
-			d: "M" + d.x + "," + d.y1 + " L" + d.x + "," + d.y2 + " M" + d.x + "," + d.y3 + " L" + d.x + "," + d.y4 });
-	});
-
-	return wicks;
-}
-
-function getCandlesSVG(props, candleData) {
-
-	/* eslint-disable react/prop-types */
-	var opacity = props.opacity,
-	    candleStrokeWidth = props.candleStrokeWidth;
-	/* eslint-enable react/prop-types */
-
-	var candles = candleData.map(function (d, idx) {
-		if (d.width <= 1) return _react2.default.createElement("line", { className: d.className, key: idx,
-			x1: d.x, y1: d.y, x2: d.x, y2: d.y + d.height,
-			stroke: d.fill });else if (d.height === 0) return _react2.default.createElement("line", { key: idx,
-			x1: d.x, y1: d.y, x2: d.x + d.width, y2: d.y + d.height,
-			stroke: d.fill });
-		return _react2.default.createElement("rect", { key: idx, className: d.className,
-			fillOpacity: opacity,
-			x: d.x, y: d.y, width: d.width, height: d.height,
-			fill: d.fill, stroke: d.stroke, strokeWidth: candleStrokeWidth });
-	});
-	return candles;
-}
-
-function _drawOnCanvas(ctx, props, moreProps) {
-	var opacity = props.opacity,
-	    candleStrokeWidth = props.candleStrokeWidth;
-	var xScale = moreProps.xScale,
-	    yScale = moreProps.chartConfig.yScale,
-	    plotData = moreProps.plotData,
-	    xAccessor = moreProps.xAccessor;
-
-	// const wickData = getWickData(props, xAccessor, xScale, yScale, plotData);
-
-	var candleData = getCandleData(props, xAccessor, xScale, yScale, plotData);
-
-	var wickNest = (0, _d3Collection.nest)().key(function (d) {
-		return d.wick.stroke;
-	}).entries(candleData);
-
-	wickNest.forEach(function (outer) {
-		var key = outer.key,
-		    values = outer.values;
-
-		ctx.strokeStyle = key;
-		ctx.fillStyle = key;
-		values.forEach(function (each) {
-			/*
-   ctx.moveTo(d.x, d.y1);
-   ctx.lineTo(d.x, d.y2);
-   	ctx.beginPath();
-   ctx.moveTo(d.x, d.y3);
-   ctx.lineTo(d.x, d.y4);
-   ctx.stroke(); */
-			var d = each.wick;
-
-			ctx.fillRect(d.x - 0.5, d.y1, 1, d.y2 - d.y1);
-			ctx.fillRect(d.x - 0.5, d.y3, 1, d.y4 - d.y3);
-		});
-	});
-
-	// const candleData = getCandleData(props, xAccessor, xScale, yScale, plotData);
-
-	var candleNest = (0, _d3Collection.nest)().key(function (d) {
-		return d.stroke;
-	}).key(function (d) {
-		return d.fill;
-	}).entries(candleData);
-
-	candleNest.forEach(function (outer) {
-		var strokeKey = outer.key,
-		    strokeValues = outer.values;
-
-		if (strokeKey !== "none") {
-			ctx.strokeStyle = strokeKey;
-			ctx.lineWidth = candleStrokeWidth;
-		}
-		strokeValues.forEach(function (inner) {
-			var key = inner.key,
-			    values = inner.values;
-
-			var fillStyle = (0, _utils.head)(values).width <= 1 ? key : (0, _utils.hexToRGBA)(key, opacity);
-			ctx.fillStyle = fillStyle;
-
-			values.forEach(function (d) {
-				if (d.width <= 1) {
-					// <line className={d.className} key={idx} x1={d.x} y1={d.y} x2={d.x} y2={d.y + d.height}/>
-					/*
-     ctx.beginPath();
-     ctx.moveTo(d.x, d.y);
-     ctx.lineTo(d.x, d.y + d.height);
-     ctx.stroke();
-     */
-					ctx.fillRect(d.x - 0.5, d.y, 1, d.height);
-				} else if (d.height === 0) {
-					// <line key={idx} x1={d.x} y1={d.y} x2={d.x + d.width} y2={d.y + d.height} />
-					/*
-     ctx.beginPath();
-     ctx.moveTo(d.x, d.y);
-     ctx.lineTo(d.x + d.width, d.y + d.height);
-     ctx.stroke();
-     */
-					ctx.fillRect(d.x, d.y - 0.5, d.width, 1);
-				} else {
-					/*
-     ctx.beginPath();
-     ctx.rect(d.x, d.y, d.width, d.height);
-     ctx.closePath();
-     ctx.fill();
-     if (strokeKey !== "none") ctx.stroke();
-     */
-					ctx.fillRect(d.x, d.y, d.width, d.height);
-					if (strokeKey !== "none") ctx.strokeRect(d.x, d.y, d.width, d.height);
-				}
-			});
-		});
-	});
-}
-/*
-function getWickData(props, xAccessor, xScale, yScale, plotData) {
-
-	const { classNames: classNameProp, wickStroke: wickStrokeProp, yAccessor } = props;
-	const wickStroke = functor(wickStrokeProp);
-	const className = functor(classNameProp);
-	const wickData = plotData
-			.filter(d => isDefined(yAccessor(d).close))
-			.map(d => {
-				// console.log(yAccessor);
-				const ohlc = yAccessor(d);
-
-				const x = Math.round(xScale(xAccessor(d))),
-					y1 = yScale(ohlc.high),
-					y2 = yScale(Math.max(ohlc.open, ohlc.close)),
-					y3 = yScale(Math.min(ohlc.open, ohlc.close)),
-					y4 = yScale(ohlc.low);
-
-				return {
-					x,
-					y1,
-					y2,
-					y3,
-					y4,
-					className: className(ohlc),
-					direction: (ohlc.close - ohlc.open),
-					stroke: wickStroke(ohlc),
-				};
-			});
-	return wickData;
-}
-*/
-
-function getCandleData(props, xAccessor, xScale, yScale, plotData) {
-	var wickStrokeProp = props.wickStroke;
-
-	var wickStroke = (0, _utils.functor)(wickStrokeProp);
-
-	var classNames = props.classNames,
-	    fillProp = props.fill,
-	    strokeProp = props.stroke,
-	    yAccessor = props.yAccessor;
-
-	var className = (0, _utils.functor)(classNames);
-
-	var fill = (0, _utils.functor)(fillProp);
-	var stroke = (0, _utils.functor)(strokeProp);
-
-	var widthFunctor = (0, _utils.functor)(props.width);
-	var width = widthFunctor(props, {
-		xScale: xScale,
-		xAccessor: xAccessor,
-		plotData: plotData
-	});
-
-	/*
- const candleWidth = Math.round(width);
- const offset = Math.round(candleWidth === 1 ? 0 : 0.5 * width);
- */
-	var trueOffset = 0.5 * width;
-	var offset = trueOffset > 0.7 ? Math.round(trueOffset) : Math.floor(trueOffset);
-
-	// eslint-disable-next-line prefer-const
-	var candles = [];
-
-	for (var i = 0; i < plotData.length; i++) {
-		var d = plotData[i];
-		if ((0, _utils.isDefined)(yAccessor(d).close)) {
-			var x = Math.round(xScale(xAccessor(d)));
-			// const x = Math.round(xScale(xAccessor(d)) - offset);
-
-			var ohlc = yAccessor(d);
-			var y = Math.round(yScale(Math.max(ohlc.open, ohlc.close)));
-			var height = Math.round(Math.abs(yScale(ohlc.open) - yScale(ohlc.close)));
-
-			candles.push({
-				// type: "line"
-				x: x - offset,
-				y: y,
-				wick: {
-					stroke: wickStroke(ohlc),
-					x: x,
-					y1: Math.round(yScale(ohlc.high)),
-					y2: y,
-					y3: y + height, // Math.round(yScale(Math.min(ohlc.open, ohlc.close))),
-					y4: Math.round(yScale(ohlc.low))
-				},
-				height: height,
-				width: offset * 2,
-				className: className(ohlc),
-				fill: fill(ohlc),
-				stroke: stroke(ohlc),
-				direction: ohlc.close - ohlc.open
-			});
-		}
-	}
-
-	return candles;
-}
-
-exports.default = CandlestickSeries;
-//# sourceMappingURL=CandlestickSeries.js.map
-
-/***/ }),
-/* 993 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _d3Collection = __webpack_require__(29);
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _GenericChartComponent = __webpack_require__(17);
-
-var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
-
-var _GenericComponent = __webpack_require__(15);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var OHLCSeries = function (_Component) {
-	_inherits(OHLCSeries, _Component);
-
-	function OHLCSeries(props) {
-		_classCallCheck(this, OHLCSeries);
-
-		var _this = _possibleConstructorReturn(this, (OHLCSeries.__proto__ || Object.getPrototypeOf(OHLCSeries)).call(this, props));
-
-		_this.renderSVG = _this.renderSVG.bind(_this);
-		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
-		return _this;
-	}
-
-	_createClass(OHLCSeries, [{
-		key: "drawOnCanvas",
-		value: function drawOnCanvas(ctx, moreProps) {
-			var yAccessor = this.props.yAccessor;
-			var xAccessor = moreProps.xAccessor;
-			var xScale = moreProps.xScale,
-			    yScale = moreProps.chartConfig.yScale,
-			    plotData = moreProps.plotData;
-
-
-			var barData = getOHLCBars(this.props, xAccessor, yAccessor, xScale, yScale, plotData);
-			_drawOnCanvas(ctx, barData);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var clip = this.props.clip;
-
-
-			return _react2.default.createElement(_GenericChartComponent2.default, {
-				svgDraw: this.renderSVG,
-				canvasToDraw: _GenericComponent.getAxisCanvas,
-				canvasDraw: this.drawOnCanvas,
-				clip: clip,
-				drawOn: ["pan"]
-			});
-		}
-	}, {
-		key: "renderSVG",
-		value: function renderSVG(moreProps) {
-			var _props = this.props,
-			    className = _props.className,
-			    yAccessor = _props.yAccessor;
-			var xAccessor = moreProps.xAccessor;
-			var xScale = moreProps.xScale,
-			    yScale = moreProps.chartConfig.yScale,
-			    plotData = moreProps.plotData;
-
-
-			var barData = getOHLCBars(this.props, xAccessor, yAccessor, xScale, yScale, plotData);
-
-			var strokeWidth = barData.strokeWidth,
-			    bars = barData.bars;
-
-
-			return _react2.default.createElement(
-				"g",
-				{ className: className },
-				bars.map(function (d, idx) {
-					return _react2.default.createElement("path", { key: idx,
-						className: d.className, stroke: d.stroke, strokeWidth: strokeWidth,
-						d: "M" + d.openX1 + " " + d.openY + " L" + d.openX2 + " " + d.openY + " M" + d.x + " " + d.y1 + " L" + d.x + " " + d.y2 + " M" + d.closeX1 + " " + d.closeY + " L" + d.closeX2 + " " + d.closeY });
-				})
-			);
-		}
-	}]);
-
-	return OHLCSeries;
-}(_react.Component);
-
-OHLCSeries.propTypes = {
-	className: _propTypes2.default.string,
-	classNames: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]).isRequired,
-	stroke: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]).isRequired,
-	yAccessor: _propTypes2.default.func.isRequired,
-	clip: _propTypes2.default.bool.isRequired
-};
-
-OHLCSeries.defaultProps = {
-	className: "react-stockcharts-ohlc",
-	yAccessor: function yAccessor(d) {
-		return { open: d.open, high: d.high, low: d.low, close: d.close };
-	},
-	classNames: function classNames(d) {
-		return (0, _utils.isDefined)(d.absoluteChange) ? d.absoluteChange > 0 ? "up" : "down" : "firstbar";
-	},
-	stroke: function stroke(d) {
-		return (0, _utils.isDefined)(d.absoluteChange) ? d.absoluteChange > 0 ? "#6BA583" : "#FF0000" : "#000000";
-	},
-	clip: true
-};
-
-function _drawOnCanvas(ctx, barData) {
-	var strokeWidth = barData.strokeWidth,
-	    bars = barData.bars;
-
-
-	var wickNest = (0, _d3Collection.nest)().key(function (d) {
-		return d.stroke;
-	}).entries(bars);
-
-	ctx.lineWidth = strokeWidth;
-
-	wickNest.forEach(function (outer) {
-		var key = outer.key,
-		    values = outer.values;
-
-		ctx.strokeStyle = key;
-		values.forEach(function (d) {
-			ctx.beginPath();
-			ctx.moveTo(d.x, d.y1);
-			ctx.lineTo(d.x, d.y2);
-
-			ctx.moveTo(d.openX1, d.openY);
-			ctx.lineTo(d.openX2, d.openY);
-
-			ctx.moveTo(d.closeX1, d.closeY);
-			ctx.lineTo(d.closeX2, d.closeY);
-
-			ctx.stroke();
-		});
-	});
-}
-
-function getOHLCBars(props, xAccessor, yAccessor, xScale, yScale, plotData) {
-	var classNamesProp = props.classNames,
-	    strokeProp = props.stroke;
-
-
-	var strokeFunc = (0, _utils.functor)(strokeProp);
-	var classNameFunc = (0, _utils.functor)(classNamesProp);
-
-	var width = xScale(xAccessor(plotData[plotData.length - 1])) - xScale(xAccessor(plotData[0]));
-
-	var barWidth = Math.max(1, Math.round(width / (plotData.length - 1) / 2) - 1.5);
-	var strokeWidth = Math.min(barWidth, 6);
-
-	var bars = plotData.filter(function (d) {
-		return (0, _utils.isDefined)(yAccessor(d).close);
-	}).map(function (d) {
-		var ohlc = yAccessor(d),
-		    x = Math.round(xScale(xAccessor(d))),
-		    y1 = yScale(ohlc.high),
-		    y2 = yScale(ohlc.low),
-		    openX1 = x - barWidth,
-		    openX2 = x + strokeWidth / 2,
-		    openY = yScale(ohlc.open),
-		    closeX1 = x - strokeWidth / 2,
-		    closeX2 = x + barWidth,
-		    closeY = yScale(ohlc.close),
-		    className = classNameFunc(d),
-		    stroke = strokeFunc(d);
-
-		return { x: x, y1: y1, y2: y2, openX1: openX1, openX2: openX2, openY: openY, closeX1: closeX1, closeX2: closeX2, closeY: closeY, stroke: stroke, className: className };
-	});
-	return { barWidth: barWidth, strokeWidth: strokeWidth, bars: bars };
-}
-
-exports.default = OHLCSeries;
-//# sourceMappingURL=OHLCSeries.js.map
-
-/***/ }),
-/* 994 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _GenericChartComponent = __webpack_require__(17);
-
-var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
-
-var _GenericComponent = __webpack_require__(15);
-
-var _StackedBarSeries = __webpack_require__(122);
-
-var _StackedBarSeries2 = _interopRequireDefault(_StackedBarSeries);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var GroupedBarSeries = function (_Component) {
-	_inherits(GroupedBarSeries, _Component);
-
-	function GroupedBarSeries(props) {
-		_classCallCheck(this, GroupedBarSeries);
-
-		var _this = _possibleConstructorReturn(this, (GroupedBarSeries.__proto__ || Object.getPrototypeOf(GroupedBarSeries)).call(this, props));
-
-		_this.renderSVG = _this.renderSVG.bind(_this);
-		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
-		return _this;
-	}
-
-	_createClass(GroupedBarSeries, [{
-		key: "drawOnCanvas",
-		value: function drawOnCanvas(ctx, moreProps) {
-			var xAccessor = moreProps.xAccessor;
-
-
-			(0, _StackedBarSeries.drawOnCanvasHelper)(ctx, this.props, moreProps, xAccessor, _StackedBarSeries.identityStack, postProcessor);
-		}
-	}, {
-		key: "renderSVG",
-		value: function renderSVG(moreProps) {
-			var xAccessor = moreProps.xAccessor;
-
-
-			return _react2.default.createElement(
-				"g",
-				{ className: "react-stockcharts-grouped-bar-series" },
-				(0, _StackedBarSeries.svgHelper)(this.props, moreProps, xAccessor, _StackedBarSeries.identityStack, postProcessor)
-			);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			return _react2.default.createElement(_GenericChartComponent2.default, {
-				svgDraw: this.renderSVG,
-				canvasDraw: this.drawOnCanvas,
-				canvasToDraw: _GenericComponent.getAxisCanvas,
-				drawOn: ["pan"]
-			});
-		}
-	}]);
-
-	return GroupedBarSeries;
-}(_react.Component);
-
-GroupedBarSeries.propTypes = {
-	baseAt: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]).isRequired,
-	direction: _propTypes2.default.oneOf(["up", "down"]).isRequired,
-	stroke: _propTypes2.default.bool.isRequired,
-	widthRatio: _propTypes2.default.number.isRequired,
-	opacity: _propTypes2.default.number.isRequired,
-	fill: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]).isRequired,
-	className: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]).isRequired,
-	yAccessor: _propTypes2.default.arrayOf(_propTypes2.default.func)
-};
-
-GroupedBarSeries.defaultProps = _extends({}, _StackedBarSeries2.default.defaultProps, {
-	widthRatio: 0.8,
-	spaceBetweenBar: 5
-});
-
-function postProcessor(array) {
-	return array.map(function (each) {
-		return _extends({}, each, {
-			x: each.x + each.offset - each.groupOffset,
-			width: each.groupWidth
-		});
-	});
-}
-
-exports.default = GroupedBarSeries;
-//# sourceMappingURL=GroupedBarSeries.js.map
-
-/***/ }),
-/* 995 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _d3Shape = __webpack_require__(82);
-
-var _GenericChartComponent = __webpack_require__(17);
-
-var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
-
-var _GenericComponent = __webpack_require__(15);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var KagiSeries = function (_Component) {
-	_inherits(KagiSeries, _Component);
-
-	function KagiSeries(props) {
-		_classCallCheck(this, KagiSeries);
-
-		var _this = _possibleConstructorReturn(this, (KagiSeries.__proto__ || Object.getPrototypeOf(KagiSeries)).call(this, props));
-
-		_this.renderSVG = _this.renderSVG.bind(_this);
-		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
-		return _this;
-	}
-
-	_createClass(KagiSeries, [{
-		key: "drawOnCanvas",
-		value: function drawOnCanvas(ctx, moreProps) {
-			var xAccessor = moreProps.xAccessor;
-
-
-			_drawOnCanvas(ctx, this.props, moreProps, xAccessor);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			return _react2.default.createElement(_GenericChartComponent2.default, {
-				svgDraw: this.renderSVG,
-				canvasToDraw: _GenericComponent.getAxisCanvas,
-				canvasDraw: this.drawOnCanvas,
-				drawOn: ["pan"]
-			});
-		}
-	}, {
-		key: "renderSVG",
-		value: function renderSVG(moreProps) {
-			var xAccessor = moreProps.xAccessor;
-			var xScale = moreProps.xScale,
-			    yScale = moreProps.chartConfig.yScale,
-			    plotData = moreProps.plotData;
-			var _props = this.props,
-			    className = _props.className,
-			    stroke = _props.stroke,
-			    fill = _props.fill,
-			    strokeWidth = _props.strokeWidth;
-
-
-			var paths = helper(plotData, xAccessor).map(function (each, i) {
-				var dataSeries = (0, _d3Shape.line)().x(function (item) {
-					return xScale(item[0]);
-				}).y(function (item) {
-					return yScale(item[1]);
-				}).curve(_d3Shape.curveStepBefore);
-
-				dataSeries(each.plot);
-
-				return _react2.default.createElement("path", { key: i, d: dataSeries(each.plot), className: each.type,
-					stroke: stroke[each.type], fill: fill[each.type], strokeWidth: strokeWidth });
-			});
-			return _react2.default.createElement(
-				"g",
-				{ className: className },
-				paths
-			);
-		}
-	}]);
-
-	return KagiSeries;
-}(_react.Component);
-
-KagiSeries.propTypes = {
-	className: _propTypes2.default.string,
-	stroke: _propTypes2.default.object,
-	fill: _propTypes2.default.object,
-	strokeWidth: _propTypes2.default.number.isRequired
-};
-
-KagiSeries.defaultProps = {
-	className: "react-stockcharts-kagi",
-	strokeWidth: 2,
-	stroke: {
-		yang: "#6BA583",
-		yin: "#E60000"
-	},
-	fill: {
-		yang: "none",
-		yin: "none"
-	},
-	currentValueStroke: "#000000"
-};
-
-function _drawOnCanvas(ctx, props, moreProps, xAccessor) {
-	var stroke = props.stroke,
-	    strokeWidth = props.strokeWidth,
-	    currentValueStroke = props.currentValueStroke;
-	var xScale = moreProps.xScale,
-	    yScale = moreProps.chartConfig.yScale,
-	    plotData = moreProps.plotData;
-
-
-	var paths = helper(plotData, xAccessor);
-
-	var begin = true;
-
-	paths.forEach(function (each) {
-		ctx.strokeStyle = stroke[each.type];
-		ctx.lineWidth = strokeWidth;
-
-		ctx.beginPath();
-		var prevX = void 0;
-		each.plot.forEach(function (d) {
-			var _ref = [xScale(d[0]), yScale(d[1])],
-			    x = _ref[0],
-			    y = _ref[1];
-
-			if (begin) {
-				ctx.moveTo(x, y);
-				begin = false;
-			} else {
-				if ((0, _utils.isDefined)(prevX)) {
-					ctx.lineTo(prevX, y);
-				}
-				ctx.lineTo(x, y);
-			}
-			prevX = x;
-			// console.log(d);
-		});
-		ctx.stroke();
-	});
-	var lastPlot = paths[paths.length - 1].plot;
-	var last = lastPlot[lastPlot.length - 1];
-	ctx.beginPath();
-	// ctx.strokeStyle = "black";
-	ctx.lineWidth = 1;
-
-	var _ref2 = [xScale(last[0]), yScale(last[2]), yScale(last[3])],
-	    x = _ref2[0],
-	    y1 = _ref2[1],
-	    y2 = _ref2[2];
-	// console.log(last, x, y);
-
-	ctx.moveTo(x, y1);
-	ctx.lineTo(x + 10, y1);
-	ctx.stroke();
-
-	ctx.beginPath();
-	ctx.strokeStyle = currentValueStroke;
-	ctx.moveTo(x - 10, y2);
-	ctx.lineTo(x, y2);
-	ctx.stroke();
-}
-
-function helper(plotData, xAccessor) {
-	var kagiLine = [];
-	var kagi = {};
-	var d = plotData[0];
-	var idx = xAccessor(d);
-
-	for (var i = 0; i < plotData.length; i++) {
-		d = plotData[i];
-
-		if ((0, _utils.isNotDefined)(d.close)) continue;
-		if ((0, _utils.isNotDefined)(kagi.type)) kagi.type = d.startAs;
-		if ((0, _utils.isNotDefined)(kagi.plot)) kagi.plot = [];
-
-		idx = xAccessor(d);
-		kagi.plot.push([idx, d.open]);
-
-		if ((0, _utils.isDefined)(d.changeTo)) {
-			kagi.plot.push([idx, d.changePoint]);
-			kagi.added = true;
-			kagiLine.push(kagi);
-
-			kagi = {
-				type: d.changeTo,
-				plot: [],
-				added: false
-			};
-			kagi.plot.push([idx, d.changePoint]);
-		}
-	}
-
-	if (!kagi.added) {
-		kagi.plot.push([idx, d.close, d.current, d.reverseAt]);
-		kagiLine.push(kagi);
-	}
-
-	// console.log(d.reverseAt);
-
-	return kagiLine;
-}
-
-exports.default = KagiSeries;
-//# sourceMappingURL=KagiSeries.js.map
-
-/***/ }),
-/* 996 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _GenericChartComponent = __webpack_require__(17);
-
-var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
-
-var _GenericComponent = __webpack_require__(15);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var PointAndFigureSeries = function (_Component) {
-	_inherits(PointAndFigureSeries, _Component);
-
-	function PointAndFigureSeries(props) {
-		_classCallCheck(this, PointAndFigureSeries);
-
-		var _this = _possibleConstructorReturn(this, (PointAndFigureSeries.__proto__ || Object.getPrototypeOf(PointAndFigureSeries)).call(this, props));
-
-		_this.renderSVG = _this.renderSVG.bind(_this);
-		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
-		return _this;
-	}
-
-	_createClass(PointAndFigureSeries, [{
-		key: "drawOnCanvas",
-		value: function drawOnCanvas(ctx, moreProps) {
-			var xAccessor = moreProps.xAccessor;
-			var xScale = moreProps.xScale,
-			    yScale = moreProps.chartConfig.yScale,
-			    plotData = moreProps.plotData;
-
-			var columns = getColumns(xScale, xAccessor, yScale, plotData);
-
-			_drawOnCanvas(ctx, this.props, columns);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var clip = this.props.clip;
-
-
-			return _react2.default.createElement(_GenericChartComponent2.default, {
-				clip: clip,
-				svgDraw: this.renderSVG,
-				canvasDraw: this.drawOnCanvas,
-				canvasToDraw: _GenericComponent.getAxisCanvas,
-				drawOn: ["pan"]
-			});
-		}
-	}, {
-		key: "renderSVG",
-		value: function renderSVG(moreProps) {
-			var xAccessor = moreProps.xAccessor;
-			var xScale = moreProps.xScale,
-			    yScale = moreProps.chartConfig.yScale,
-			    plotData = moreProps.plotData;
-			var _props = this.props,
-			    stroke = _props.stroke,
-			    fill = _props.fill,
-			    strokeWidth = _props.strokeWidth,
-			    className = _props.className;
-
-
-			var columns = getColumns(xScale, xAccessor, yScale, plotData);
-
-			return _react2.default.createElement(
-				"g",
-				{ className: className },
-				columns.map(function (col, idx) {
-					return _react2.default.createElement(
-						"g",
-						{ key: idx, className: col.className, transform: "translate(" + col.offset[0] + ", " + col.offset[1] + ")" },
-						col.boxes.map(function (box, i) {
-							if (col.direction > 0) {
-								return _react2.default.createElement(
-									"g",
-									{ key: idx + "-" + i },
-									_react2.default.createElement("line", { className: "up", strokeWidth: strokeWidth, stroke: stroke.up, fill: fill.up,
-										x1: 0, y1: box.open, x2: box.columnWidth, y2: box.close }),
-									_react2.default.createElement("line", { className: "up", strokeWidth: strokeWidth, stroke: stroke.up, fill: fill.up,
-										x1: 0, y1: box.close, x2: box.columnWidth, y2: box.open })
-								);
-							}
-							return _react2.default.createElement("ellipse", { key: idx + "-" + i,
-								className: "down", strokeWidth: strokeWidth, stroke: stroke.down, fill: fill.down,
-								cx: box.columnWidth / 2, cy: (box.open + box.close) / 2,
-								rx: box.columnWidth / 2, ry: box.boxHeight / 2 });
-						})
-					);
-				})
-			);
-		}
-	}]);
-
-	return PointAndFigureSeries;
-}(_react.Component);
-
-PointAndFigureSeries.propTypes = {
-	className: _propTypes2.default.string,
-	strokeWidth: _propTypes2.default.number.isRequired,
-	stroke: _propTypes2.default.object.isRequired,
-	fill: _propTypes2.default.object.isRequired,
-	clip: _propTypes2.default.bool.isRequired
-};
-
-PointAndFigureSeries.defaultProps = {
-	className: "react-stockcharts-point-and-figure",
-	strokeWidth: 1,
-	stroke: {
-		up: "#6BA583",
-		down: "#FF0000"
-	},
-	fill: {
-		up: "none",
-		down: "none"
-	},
-	clip: true
-};
-
-function _drawOnCanvas(ctx, props, columns) {
-	var stroke = props.stroke,
-	    fill = props.fill,
-	    strokeWidth = props.strokeWidth;
-
-
-	ctx.lineWidth = strokeWidth;
-
-	columns.forEach(function (col) {
-		var _col$offset = _slicedToArray(col.offset, 2),
-		    offsetX = _col$offset[0],
-		    offsetY = _col$offset[1];
-
-		col.boxes.forEach(function (box) {
-			if (col.direction > 0) {
-				ctx.fillStyle = fill.up;
-				ctx.strokeStyle = stroke.up;
-
-				ctx.beginPath();
-
-				ctx.moveTo(offsetX, offsetY + box.open);
-				ctx.lineTo(offsetX + box.columnWidth, offsetY + box.close);
-				ctx.moveTo(offsetX, offsetY + box.close);
-				ctx.lineTo(offsetX + box.columnWidth, offsetY + box.open);
-
-				ctx.stroke();
-			} else {
-				ctx.fillStyle = fill.down;
-				ctx.strokeStyle = stroke.down;
-
-				ctx.beginPath();
-
-				var x = offsetX + box.columnWidth / 2,
-				    y = offsetY + box.open + box.boxHeight / 2;
-				var rx = box.columnWidth / 2,
-				    ry = box.boxHeight / 2;
-
-
-				ctx.ellipse(x, y, rx, ry, 0, 0, 2 * Math.PI);
-				ctx.stroke();
-			}
-		});
-	});
-
-	ctx.stroke();
-}
-
-function getColumns(xScale, xAccessor, yScale, plotData) {
-
-	var width = xScale(xAccessor(plotData[plotData.length - 1])) - xScale(xAccessor(plotData[0]));
-
-	var columnWidth = width / (plotData.length - 1);
-
-	var anyBox = void 0,
-	    j = 0;
-	while ((0, _utils.isNotDefined)(anyBox)) {
-		if ((0, _utils.isDefined)(plotData[j].close)) {
-			anyBox = plotData[j].boxes[0];
-		} else {
-			break;
-		}
-		j++;
-	}
-
-	var boxHeight = Math.abs(yScale(anyBox.open) - yScale(anyBox.close));
-
-	var columns = plotData.filter(function (d) {
-		return (0, _utils.isDefined)(d.close);
-	}).map(function (d) {
-		var boxes = d.boxes.map(function (box) {
-			return {
-				columnWidth: columnWidth,
-				boxHeight: boxHeight,
-				open: yScale(box.open),
-				close: yScale(box.close)
-			};
-		});
-
-		var xOffset = xScale(xAccessor(d)) - columnWidth / 2;
-		return {
-			boxes: boxes,
-			direction: d.direction,
-			offset: [xOffset, 0]
-		};
-	});
-	return columns;
-}
-
-exports.default = PointAndFigureSeries;
-//# sourceMappingURL=PointAndFigureSeries.js.map
-
-/***/ }),
-/* 997 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _GenericChartComponent = __webpack_require__(17);
-
-var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
-
-var _GenericComponent = __webpack_require__(15);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var RenkoSeries = function (_Component) {
-	_inherits(RenkoSeries, _Component);
-
-	function RenkoSeries(props) {
-		_classCallCheck(this, RenkoSeries);
-
-		var _this = _possibleConstructorReturn(this, (RenkoSeries.__proto__ || Object.getPrototypeOf(RenkoSeries)).call(this, props));
-
-		_this.renderSVG = _this.renderSVG.bind(_this);
-		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
-		return _this;
-	}
-
-	_createClass(RenkoSeries, [{
-		key: "drawOnCanvas",
-		value: function drawOnCanvas(ctx, moreProps) {
-			var xAccessor = moreProps.xAccessor;
-			var xScale = moreProps.xScale,
-			    yScale = moreProps.chartConfig.yScale,
-			    plotData = moreProps.plotData;
-			var yAccessor = this.props.yAccessor;
-
-
-			var candles = getRenko(this.props, plotData, xScale, xAccessor, yScale, yAccessor);
-
-			_drawOnCanvas(ctx, candles);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var clip = this.props.clip;
-
-
-			return _react2.default.createElement(_GenericChartComponent2.default, {
-				clip: clip,
-				svgDraw: this.renderSVG,
-				canvasDraw: this.drawOnCanvas,
-				canvasToDraw: _GenericComponent.getAxisCanvas,
-				drawOn: ["pan"]
-			});
-		}
-	}, {
-		key: "renderSVG",
-		value: function renderSVG(moreProps) {
-			var xAccessor = moreProps.xAccessor;
-			var xScale = moreProps.xScale,
-			    yScale = moreProps.chartConfig.yScale,
-			    plotData = moreProps.plotData;
-			var yAccessor = this.props.yAccessor;
-
-
-			var candles = getRenko(this.props, plotData, xScale, xAccessor, yScale, yAccessor).map(function (each, idx) {
-				return _react2.default.createElement("rect", { key: idx, className: each.className,
-					fill: each.fill,
-					x: each.x,
-					y: each.y,
-					width: each.width,
-					height: each.height });
-			});
-
-			return _react2.default.createElement(
-				"g",
-				null,
-				_react2.default.createElement(
-					"g",
-					{ className: "candle" },
-					candles
-				)
-			);
-		}
-	}]);
-
-	return RenkoSeries;
-}(_react.Component);
-
-RenkoSeries.propTypes = {
-	classNames: _propTypes2.default.shape({
-		up: _propTypes2.default.string,
-		down: _propTypes2.default.string
-	}),
-	stroke: _propTypes2.default.shape({
-		up: _propTypes2.default.string,
-		down: _propTypes2.default.string
-	}),
-	fill: _propTypes2.default.shape({
-		up: _propTypes2.default.string,
-		down: _propTypes2.default.string,
-		partial: _propTypes2.default.string
-	}),
-	yAccessor: _propTypes2.default.func.isRequired,
-	clip: _propTypes2.default.bool.isRequired
-};
-
-RenkoSeries.defaultProps = {
-	classNames: {
-		up: "up",
-		down: "down"
-	},
-	stroke: {
-		up: "none",
-		down: "none"
-	},
-	fill: {
-		up: "#6BA583",
-		down: "#E60000",
-		partial: "#4682B4"
-	},
-	yAccessor: function yAccessor(d) {
-		return { open: d.open, high: d.high, low: d.low, close: d.close };
-	},
-	clip: true
-};
-
-function _drawOnCanvas(ctx, renko) {
-	renko.forEach(function (d) {
-		ctx.beginPath();
-
-		ctx.strokeStyle = d.stroke;
-		ctx.fillStyle = d.fill;
-
-		ctx.rect(d.x, d.y, d.width, d.height);
-		ctx.closePath();
-		ctx.fill();
-	});
-}
-
-function getRenko(props, plotData, xScale, xAccessor, yScale, yAccessor) {
-	var classNames = props.classNames,
-	    fill = props.fill;
-
-	var width = xScale(xAccessor(plotData[plotData.length - 1])) - xScale(xAccessor(plotData[0]));
-
-	var candleWidth = width / (plotData.length - 1);
-	var candles = plotData.filter(function (d) {
-		return (0, _utils.isDefined)(yAccessor(d).close);
-	}).map(function (d) {
-		var ohlc = yAccessor(d);
-		var x = xScale(xAccessor(d)) - 0.5 * candleWidth,
-		    y = yScale(Math.max(ohlc.open, ohlc.close)),
-		    height = Math.abs(yScale(ohlc.open) - yScale(ohlc.close)),
-		    className = ohlc.open <= ohlc.close ? classNames.up : classNames.down;
-
-		var svgfill = d.fullyFormed ? ohlc.open <= ohlc.close ? fill.up : fill.down : fill.partial;
-
-		return {
-			className: className,
-			fill: svgfill,
-			x: x,
-			y: y,
-			height: height,
-			width: candleWidth
-		};
-	});
-	return candles;
-}
-
-exports.default = RenkoSeries;
-//# sourceMappingURL=RenkoSeries.js.map
-
-/***/ }),
-/* 998 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _BarSeries = __webpack_require__(376);
-
-var _BarSeries2 = _interopRequireDefault(_BarSeries);
-
-var _LineSeries = __webpack_require__(64);
-
-var _LineSeries2 = _interopRequireDefault(_LineSeries);
-
-var _StraightLine = __webpack_require__(89);
-
-var _StraightLine2 = _interopRequireDefault(_StraightLine);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var MACDSeries = function (_Component) {
-	_inherits(MACDSeries, _Component);
-
-	function MACDSeries(props) {
-		_classCallCheck(this, MACDSeries);
-
-		var _this = _possibleConstructorReturn(this, (MACDSeries.__proto__ || Object.getPrototypeOf(MACDSeries)).call(this, props));
-
-		_this.yAccessorForMACD = _this.yAccessorForMACD.bind(_this);
-		_this.yAccessorForSignal = _this.yAccessorForSignal.bind(_this);
-		_this.yAccessorForDivergence = _this.yAccessorForDivergence.bind(_this);
-		_this.yAccessorForDivergenceBase = _this.yAccessorForDivergenceBase.bind(_this);
-		return _this;
-	}
-
-	_createClass(MACDSeries, [{
-		key: "yAccessorForMACD",
-		value: function yAccessorForMACD(d) {
-			var yAccessor = this.props.yAccessor;
-
-			return yAccessor(d) && yAccessor(d).macd;
-		}
-	}, {
-		key: "yAccessorForSignal",
-		value: function yAccessorForSignal(d) {
-			var yAccessor = this.props.yAccessor;
-
-			return yAccessor(d) && yAccessor(d).signal;
-		}
-	}, {
-		key: "yAccessorForDivergence",
-		value: function yAccessorForDivergence(d) {
-			var yAccessor = this.props.yAccessor;
-
-			return yAccessor(d) && yAccessor(d).divergence;
-		}
-	}, {
-		key: "yAccessorForDivergenceBase",
-		value: function yAccessorForDivergenceBase(xScale, yScale /* , d */) {
-			return yScale(0);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var _props = this.props,
-			    className = _props.className,
-			    opacity = _props.opacity,
-			    divergenceStroke = _props.divergenceStroke;
-			var _props2 = this.props,
-			    stroke = _props2.stroke,
-			    fill = _props2.fill;
-			var clip = this.props.clip;
-			var _props3 = this.props,
-			    zeroLineStroke = _props3.zeroLineStroke,
-			    zeroLineOpacity = _props3.zeroLineOpacity;
-
-
-			return _react2.default.createElement(
-				"g",
-				{ className: className },
-				_react2.default.createElement(_BarSeries2.default, {
-					baseAt: this.yAccessorForDivergenceBase,
-					className: "macd-divergence",
-					widthRatio: 0.5,
-					stroke: divergenceStroke,
-					fill: fill.divergence,
-					opacity: opacity,
-					clip: clip,
-					yAccessor: this.yAccessorForDivergence }),
-				_react2.default.createElement(_LineSeries2.default, {
-					yAccessor: this.yAccessorForMACD,
-					stroke: stroke.macd,
-					fill: "none" }),
-				_react2.default.createElement(_LineSeries2.default, {
-					yAccessor: this.yAccessorForSignal,
-					stroke: stroke.signal,
-					fill: "none" }),
-				_react2.default.createElement(_StraightLine2.default, {
-					stroke: zeroLineStroke,
-					opacity: zeroLineOpacity,
-					yValue: 0 })
-			);
-		}
-	}]);
-
-	return MACDSeries;
-}(_react.Component);
-
-MACDSeries.propTypes = {
-	className: _propTypes2.default.string,
-	yAccessor: _propTypes2.default.func.isRequired,
-	opacity: _propTypes2.default.number,
-	divergenceStroke: _propTypes2.default.bool,
-	zeroLineStroke: _propTypes2.default.string,
-	zeroLineOpacity: _propTypes2.default.number,
-	clip: _propTypes2.default.bool.isRequired,
-	stroke: _propTypes2.default.shape({
-		macd: _propTypes2.default.string.isRequired,
-		signal: _propTypes2.default.string.isRequired
-	}).isRequired,
-	fill: _propTypes2.default.shape({
-		divergence: _propTypes2.default.string.isRequired
-	}).isRequired
-};
-
-MACDSeries.defaultProps = {
-	className: "react-stockcharts-macd-series",
-	zeroLineStroke: "#000000",
-	zeroLineOpacity: 0.3,
-	opacity: 0.6,
-	divergenceStroke: false,
-	clip: true
-};
-
-exports.default = MACDSeries;
-//# sourceMappingURL=MACDSeries.js.map
-
-/***/ }),
-/* 999 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _LineSeries = __webpack_require__(64);
-
-var _LineSeries2 = _interopRequireDefault(_LineSeries);
-
-var _AreaOnlySeries = __webpack_require__(198);
-
-var _AreaOnlySeries2 = _interopRequireDefault(_AreaOnlySeries);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var BollingerSeries = function (_Component) {
-	_inherits(BollingerSeries, _Component);
-
-	function BollingerSeries(props) {
-		_classCallCheck(this, BollingerSeries);
-
-		var _this = _possibleConstructorReturn(this, (BollingerSeries.__proto__ || Object.getPrototypeOf(BollingerSeries)).call(this, props));
-
-		_this.yAccessorForTop = _this.yAccessorForTop.bind(_this);
-		_this.yAccessorForMiddle = _this.yAccessorForMiddle.bind(_this);
-		_this.yAccessorForBottom = _this.yAccessorForBottom.bind(_this);
-		_this.yAccessorForScalledBottom = _this.yAccessorForScalledBottom.bind(_this);
-		return _this;
-	}
-
-	_createClass(BollingerSeries, [{
-		key: "yAccessorForTop",
-		value: function yAccessorForTop(d) {
-			var yAccessor = this.props.yAccessor;
-
-			return yAccessor(d) && yAccessor(d).top;
-		}
-	}, {
-		key: "yAccessorForMiddle",
-		value: function yAccessorForMiddle(d) {
-			var yAccessor = this.props.yAccessor;
-
-			return yAccessor(d) && yAccessor(d).middle;
-		}
-	}, {
-		key: "yAccessorForBottom",
-		value: function yAccessorForBottom(d) {
-			var yAccessor = this.props.yAccessor;
-
-			return yAccessor(d) && yAccessor(d).bottom;
-		}
-	}, {
-		key: "yAccessorForScalledBottom",
-		value: function yAccessorForScalledBottom(scale, d) {
-			var yAccessor = this.props.yAccessor;
-
-			return scale(yAccessor(d) && yAccessor(d).bottom);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var _props = this.props,
-			    areaClassName = _props.areaClassName,
-			    className = _props.className,
-			    opacity = _props.opacity;
-			var _props2 = this.props,
-			    stroke = _props2.stroke,
-			    fill = _props2.fill;
-
-
-			return _react2.default.createElement(
-				"g",
-				{ className: className },
-				_react2.default.createElement(_LineSeries2.default, { yAccessor: this.yAccessorForTop,
-					stroke: stroke.top, fill: "none" }),
-				_react2.default.createElement(_LineSeries2.default, { yAccessor: this.yAccessorForMiddle,
-					stroke: stroke.middle, fill: "none" }),
-				_react2.default.createElement(_LineSeries2.default, { yAccessor: this.yAccessorForBottom,
-					stroke: stroke.bottom, fill: "none" }),
-				_react2.default.createElement(_AreaOnlySeries2.default, { className: areaClassName,
-					yAccessor: this.yAccessorForTop,
-					base: this.yAccessorForScalledBottom,
-					stroke: "none", fill: fill,
-					opacity: opacity })
-			);
-		}
-	}]);
-
-	return BollingerSeries;
-}(_react.Component);
-
-BollingerSeries.propTypes = {
-	yAccessor: _propTypes2.default.func.isRequired,
-	className: _propTypes2.default.string,
-	areaClassName: _propTypes2.default.string,
-	opacity: _propTypes2.default.number,
-	type: _propTypes2.default.string,
-	stroke: _propTypes2.default.shape({
-		top: _propTypes2.default.string.isRequired,
-		middle: _propTypes2.default.string.isRequired,
-		bottom: _propTypes2.default.string.isRequired
-	}).isRequired,
-	fill: _propTypes2.default.string.isRequired
-};
-
-BollingerSeries.defaultProps = {
-	className: "react-stockcharts-bollinger-band-series",
-	areaClassName: "react-stockcharts-bollinger-band-series-area",
-	opacity: 0.2
-};
-
-exports.default = BollingerSeries;
-//# sourceMappingURL=BollingerSeries.js.map
-
-/***/ }),
-/* 1000 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _LineSeries = __webpack_require__(64);
-
-var _LineSeries2 = _interopRequireDefault(_LineSeries);
-
-var _StraightLine = __webpack_require__(89);
-
-var _StraightLine2 = _interopRequireDefault(_StraightLine);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var RSISeries = function (_Component) {
-	_inherits(RSISeries, _Component);
-
-	function RSISeries() {
-		_classCallCheck(this, RSISeries);
-
-		return _possibleConstructorReturn(this, (RSISeries.__proto__ || Object.getPrototypeOf(RSISeries)).apply(this, arguments));
-	}
-
-	_createClass(RSISeries, [{
-		key: "render",
-		value: function render() {
-			var _props = this.props,
-			    className = _props.className,
-			    stroke = _props.stroke,
-			    opacity = _props.opacity;
-			var yAccessor = this.props.yAccessor;
-			var _props2 = this.props,
-			    overSold = _props2.overSold,
-			    middle = _props2.middle,
-			    overBought = _props2.overBought;
-
-
-			return _react2.default.createElement(
-				"g",
-				{ className: className },
-				_react2.default.createElement(_LineSeries2.default, {
-					className: className,
-					yAccessor: yAccessor,
-					stroke: stroke.line, fill: "none" }),
-				_react2.default.createElement(_StraightLine2.default, {
-					stroke: stroke.top, opacity: opacity.top,
-					yValue: overSold }),
-				_react2.default.createElement(_StraightLine2.default, {
-					stroke: stroke.middle, opacity: opacity.middle,
-					yValue: middle }),
-				_react2.default.createElement(_StraightLine2.default, {
-					stroke: stroke.bottom, opacity: opacity.bottom,
-					yValue: overBought })
-			);
-		}
-	}]);
-
-	return RSISeries;
-}(_react.Component);
-
-RSISeries.propTypes = {
-	className: _propTypes2.default.string,
-	yAccessor: _propTypes2.default.func.isRequired,
-	stroke: _propTypes2.default.shape({
-		line: _propTypes2.default.string.isRequired,
-		top: _propTypes2.default.string.isRequired,
-		middle: _propTypes2.default.string.isRequired,
-		bottom: _propTypes2.default.string.isRequired
-	}).isRequired,
-	opacity: _propTypes2.default.shape({
-		top: _propTypes2.default.number.isRequired,
-		middle: _propTypes2.default.number.isRequired,
-		bottom: _propTypes2.default.number.isRequired
-	}).isRequired,
-	overSold: _propTypes2.default.number.isRequired,
-	middle: _propTypes2.default.number.isRequired,
-	overBought: _propTypes2.default.number.isRequired
-};
-
-RSISeries.defaultProps = {
-	className: "react-stockcharts-rsi-series",
-	stroke: {
-		line: "#000000",
-		top: "#964B00",
-		middle: "#000000",
-		bottom: "#964B00"
-	},
-	opacity: {
-		top: 0.3,
-		middle: 0.3,
-		bottom: 0.3
-	},
-	overSold: 70,
-	middle: 50,
-	overBought: 30
-};
-
-exports.default = RSISeries;
-//# sourceMappingURL=RSISeries.js.map
-
-/***/ }),
-/* 1001 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _LineSeries = __webpack_require__(64);
-
-var _LineSeries2 = _interopRequireDefault(_LineSeries);
-
-var _StraightLine = __webpack_require__(89);
-
-var _StraightLine2 = _interopRequireDefault(_StraightLine);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var StochasticSeries = function (_Component) {
-	_inherits(StochasticSeries, _Component);
-
-	function StochasticSeries(props) {
-		_classCallCheck(this, StochasticSeries);
-
-		var _this = _possibleConstructorReturn(this, (StochasticSeries.__proto__ || Object.getPrototypeOf(StochasticSeries)).call(this, props));
-
-		_this.yAccessorForD = _this.yAccessorForD.bind(_this);
-		_this.yAccessorForK = _this.yAccessorForK.bind(_this);
-		return _this;
-	}
-
-	_createClass(StochasticSeries, [{
-		key: "yAccessorForD",
-		value: function yAccessorForD(d) {
-			var yAccessor = this.props.yAccessor;
-
-			return yAccessor(d) && yAccessor(d).D;
-		}
-	}, {
-		key: "yAccessorForK",
-		value: function yAccessorForK(d) {
-			var yAccessor = this.props.yAccessor;
-
-			return yAccessor(d) && yAccessor(d).K;
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var _props = this.props,
-			    className = _props.className,
-			    stroke = _props.stroke,
-			    refLineOpacity = _props.refLineOpacity;
-			var _props2 = this.props,
-			    overSold = _props2.overSold,
-			    middle = _props2.middle,
-			    overBought = _props2.overBought;
-
-			return _react2.default.createElement(
-				"g",
-				{ className: className },
-				_react2.default.createElement(_LineSeries2.default, { yAccessor: this.yAccessorForD,
-					stroke: stroke.dLine,
-					fill: "none" }),
-				_react2.default.createElement(_LineSeries2.default, { yAccessor: this.yAccessorForK,
-					stroke: stroke.kLine,
-					fill: "none" }),
-				_react2.default.createElement(_StraightLine2.default, {
-					stroke: stroke.top,
-					opacity: refLineOpacity,
-					yValue: overSold }),
-				_react2.default.createElement(_StraightLine2.default, {
-					stroke: stroke.middle,
-					opacity: refLineOpacity,
-					yValue: middle }),
-				_react2.default.createElement(_StraightLine2.default, {
-					stroke: stroke.bottom,
-					opacity: refLineOpacity,
-					yValue: overBought })
-			);
-		}
-	}]);
-
-	return StochasticSeries;
-}(_react.Component);
-
-StochasticSeries.propTypes = {
-	className: _propTypes2.default.string,
-	yAccessor: _propTypes2.default.func.isRequired,
-	stroke: _propTypes2.default.shape({
-		top: _propTypes2.default.string.isRequired,
-		middle: _propTypes2.default.string.isRequired,
-		bottom: _propTypes2.default.string.isRequired,
-		dLine: _propTypes2.default.string.isRequired,
-		kLine: _propTypes2.default.string.isRequired
-	}).isRequired,
-	overSold: _propTypes2.default.number.isRequired,
-	middle: _propTypes2.default.number.isRequired,
-	overBought: _propTypes2.default.number.isRequired,
-	refLineOpacity: _propTypes2.default.number.isRequired
-};
-
-StochasticSeries.defaultProps = {
-	className: "react-stockcharts-stochastic-series",
-	stroke: {
-		top: "#964B00",
-		middle: "#000000",
-		bottom: "#964B00",
-		dLine: "#EA2BFF",
-		kLine: "#74D400"
-	},
-	overSold: 80,
-	middle: 50,
-	overBought: 20,
-	refLineOpacity: 0.3
-};
-
-exports.default = StochasticSeries;
-//# sourceMappingURL=StochasticSeries.js.map
-
-/***/ }),
-/* 1002 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _OverlayBarSeries = __webpack_require__(1003);
-
-var _OverlayBarSeries2 = _interopRequireDefault(_OverlayBarSeries);
-
-var _StraightLine = __webpack_require__(89);
-
-var _StraightLine2 = _interopRequireDefault(_StraightLine);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ElderRaySeries = function (_Component) {
-	_inherits(ElderRaySeries, _Component);
-
-	function ElderRaySeries(props) {
-		_classCallCheck(this, ElderRaySeries);
-
-		var _this = _possibleConstructorReturn(this, (ElderRaySeries.__proto__ || Object.getPrototypeOf(ElderRaySeries)).call(this, props));
-
-		_this.fillForEachBar = _this.fillForEachBar.bind(_this);
-		_this.yAccessorTop = _this.yAccessorTop.bind(_this);
-		_this.yAccessorBullTop = _this.yAccessorBullTop.bind(_this);
-		_this.yAccessorBearTop = _this.yAccessorBearTop.bind(_this);
-		_this.yAccessorBullBottom = _this.yAccessorBullBottom.bind(_this);
-		_this.yAccessorBearBottom = _this.yAccessorBearBottom.bind(_this);
-		_this.yAccessorForBarBase = _this.yAccessorForBarBase.bind(_this);
-		return _this;
-	}
-
-	_createClass(ElderRaySeries, [{
-		key: "yAccessorTop",
-		value: function yAccessorTop(d) {
-			var yAccessor = this.props.yAccessor;
-
-			return yAccessor(d) && Math.max(yAccessor(d).bullPower, 0);
-		}
-	}, {
-		key: "yAccessorBullTop",
-		value: function yAccessorBullTop(d) {
-			var yAccessor = this.props.yAccessor;
-
-			return yAccessor(d) && (yAccessor(d).bullPower > 0 ? yAccessor(d).bullPower : undefined);
-		}
-	}, {
-		key: "yAccessorBearTop",
-		value: function yAccessorBearTop(d) {
-			var yAccessor = this.props.yAccessor;
-
-			return yAccessor(d) && (yAccessor(d).bearPower > 0 ? yAccessor(d).bearPower : undefined);
-		}
-	}, {
-		key: "yAccessorBullBottom",
-		value: function yAccessorBullBottom(d) {
-			var yAccessor = this.props.yAccessor;
-
-			return yAccessor(d) && (yAccessor(d).bullPower < 0 ? 0 : undefined);
-		}
-	}, {
-		key: "yAccessorBearBottom",
-		value: function yAccessorBearBottom(d) {
-			var yAccessor = this.props.yAccessor;
-
-			return yAccessor(d) && (yAccessor(d).bullPower < 0 || yAccessor(d).bullPower * yAccessor(d).bearPower < 0 // bullPower is +ve and bearPower is -ve
-			? Math.min(0, yAccessor(d).bullPower) : undefined);
-		}
-	}, {
-		key: "yAccessorForBarBase",
-		value: function yAccessorForBarBase(xScale, yScale, d) {
-			var yAccessor = this.props.yAccessor;
-
-			var y = yAccessor(d) && Math.min(yAccessor(d).bearPower, 0);
-			return yScale(y);
-		}
-	}, {
-		key: "fillForEachBar",
-		value: function fillForEachBar(d, yAccessorNumber) {
-			var _props = this.props,
-			    bullPowerFill = _props.bullPowerFill,
-			    bearPowerFill = _props.bearPowerFill;
-
-			return yAccessorNumber % 2 === 0 ? bullPowerFill : bearPowerFill;
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var _props2 = this.props,
-			    className = _props2.className,
-			    opacity = _props2.opacity,
-			    stroke = _props2.stroke,
-			    straightLineStroke = _props2.straightLineStroke,
-			    straightLineOpacity = _props2.straightLineOpacity,
-			    widthRatio = _props2.widthRatio;
-			var clip = this.props.clip;
-
-
-			return _react2.default.createElement(
-				"g",
-				{ className: className },
-				_react2.default.createElement(_OverlayBarSeries2.default, {
-					baseAt: this.yAccessorForBarBase,
-					className: "react-stockcharts-elderray-bar",
-					stroke: stroke,
-					fill: this.fillForEachBar,
-					opacity: opacity,
-					widthRatio: widthRatio,
-					clip: clip,
-					yAccessor: [this.yAccessorBullTop, this.yAccessorBearTop, this.yAccessorBullBottom, this.yAccessorBearBottom] }),
-				_react2.default.createElement(_StraightLine2.default, {
-					className: "react-stockcharts-elderray-straight-line",
-					yValue: 0,
-					stroke: straightLineStroke,
-					opacity: straightLineOpacity })
-			);
-		}
-	}]);
-
-	return ElderRaySeries;
-}(_react.Component);
-
-ElderRaySeries.propTypes = {
-	className: _propTypes2.default.string,
-	yAccessor: _propTypes2.default.func,
-	opacity: _propTypes2.default.number,
-	stroke: _propTypes2.default.bool,
-	bullPowerFill: _propTypes2.default.string,
-	bearPowerFill: _propTypes2.default.string,
-	straightLineStroke: _propTypes2.default.string,
-	straightLineOpacity: _propTypes2.default.number,
-	widthRatio: _propTypes2.default.number,
-	clip: _propTypes2.default.bool.isRequired
-};
-
-ElderRaySeries.defaultProps = {
-	className: "react-stockcharts-elderray-series",
-	straightLineStroke: "#000000",
-	straightLineOpacity: 0.3,
-	opacity: 0.5,
-	stroke: true,
-	bullPowerFill: "#6BA583",
-	bearPowerFill: "#FF0000",
-	widthRatio: 0.8,
-	clip: true
-};
-
-exports.default = ElderRaySeries;
-//# sourceMappingURL=ElderRaySeries.js.map
-
-/***/ }),
-/* 1003 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _d3Array = __webpack_require__(8);
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _GenericChartComponent = __webpack_require__(17);
-
-var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
-
-var _GenericComponent = __webpack_require__(15);
-
-var _StackedBarSeries = __webpack_require__(122);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var OverlayBarSeries = function (_Component) {
-	_inherits(OverlayBarSeries, _Component);
-
-	function OverlayBarSeries(props) {
-		_classCallCheck(this, OverlayBarSeries);
-
-		var _this = _possibleConstructorReturn(this, (OverlayBarSeries.__proto__ || Object.getPrototypeOf(OverlayBarSeries)).call(this, props));
-
-		_this.renderSVG = _this.renderSVG.bind(_this);
-		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
-		return _this;
-	}
-
-	_createClass(OverlayBarSeries, [{
-		key: "drawOnCanvas",
-		value: function drawOnCanvas(ctx, moreProps) {
-			var yAccessor = this.props.yAccessor;
-			var xAccessor = moreProps.xAccessor;
-			var xScale = moreProps.xScale,
-			    yScale = moreProps.chartConfig.yScale,
-			    plotData = moreProps.plotData;
-
-
-			var bars = getBars(this.props, xAccessor, yAccessor, xScale, yScale, plotData);
-
-			(0, _StackedBarSeries.drawOnCanvas2)(this.props, ctx, bars);
-		}
-	}, {
-		key: "renderSVG",
-		value: function renderSVG(moreProps) {
-			var yAccessor = this.props.yAccessor;
-			var xAccessor = moreProps.xAccessor;
-			var xScale = moreProps.xScale,
-			    yScale = moreProps.chartConfig.yScale,
-			    plotData = moreProps.plotData;
-
-
-			var bars = getBars(this.props, xAccessor, yAccessor, xScale, yScale, plotData);
-			return _react2.default.createElement(
-				"g",
-				{ className: "react-stockcharts-bar-series" },
-				(0, _StackedBarSeries.getBarsSVG2)(this.props, bars)
-			);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var clip = this.props.clip;
-
-
-			return _react2.default.createElement(_GenericChartComponent2.default, {
-				svgDraw: this.renderSVG,
-				canvasToDraw: _GenericComponent.getAxisCanvas,
-				canvasDraw: this.drawOnCanvas,
-				clip: clip,
-				drawOn: ["pan"]
-			});
-		}
-	}]);
-
-	return OverlayBarSeries;
-}(_react.Component);
-
-OverlayBarSeries.propTypes = {
-	baseAt: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.func]).isRequired,
-	direction: _propTypes2.default.oneOf(["up", "down"]).isRequired,
-	stroke: _propTypes2.default.bool.isRequired,
-	widthRatio: _propTypes2.default.number.isRequired,
-	opacity: _propTypes2.default.number.isRequired,
-	fill: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]).isRequired,
-	className: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.string]).isRequired,
-	xAccessor: _propTypes2.default.func,
-	yAccessor: _propTypes2.default.arrayOf(_propTypes2.default.func),
-	xScale: _propTypes2.default.func,
-	yScale: _propTypes2.default.func,
-	plotData: _propTypes2.default.array,
-	clip: _propTypes2.default.bool.isRequired
-};
-
-OverlayBarSeries.defaultProps = {
-	baseAt: function baseAt(xScale, yScale /* , d*/) {
-		return (0, _utils.first)(yScale.range());
-	},
-	direction: "up",
-	className: "bar",
-	stroke: false,
-	fill: "#4682B4",
-	opacity: 1,
-	widthRatio: 0.5,
-	clip: true
-};
-
-function getBars(props, xAccessor, yAccessor, xScale, yScale, plotData) {
-	var baseAt = props.baseAt,
-	    className = props.className,
-	    fill = props.fill,
-	    stroke = props.stroke,
-	    widthRatio = props.widthRatio;
-
-
-	var getClassName = (0, _utils.functor)(className);
-	var getFill = (0, _utils.functor)(fill);
-	var getBase = (0, _utils.functor)(baseAt);
-
-	var width = Math.abs(xScale(xAccessor((0, _utils.last)(plotData))) - xScale(xAccessor((0, _utils.first)(plotData))));
-
-	var bw = width / (plotData.length - 1) * widthRatio;
-	var barWidth = Math.round(bw);
-	var offset = barWidth === 1 ? 0 : 0.5 * bw;
-
-	// console.log(xScale.domain(), yScale.domain());
-
-	var bars = plotData.map(function (d) {
-		// eslint-disable-next-line prefer-const
-		var innerBars = yAccessor.map(function (eachYAccessor, i) {
-			var yValue = eachYAccessor(d);
-			if ((0, _utils.isNotDefined)(yValue)) return undefined;
-
-			var xValue = xAccessor(d);
-			var x = Math.round(xScale(xValue)) - offset;
-			var y = yScale(yValue);
-			// console.log(yValue, y, xValue, x)
-			return {
-				width: barWidth,
-				x: x,
-				y: y,
-				className: getClassName(d, i),
-				stroke: stroke ? getFill(d, i) : "none",
-				fill: getFill(d, i),
-				i: i
-			};
-		}).filter(function (yValue) {
-			return (0, _utils.isDefined)(yValue);
-		});
-
-		var b = getBase(xScale, yScale, d);
-		var h = void 0;
-		for (var i = innerBars.length - 1; i >= 0; i--) {
-			h = b - innerBars[i].y;
-			if (h < 0) {
-				innerBars[i].y = b;
-				h = -1 * h;
-			}
-			innerBars[i].height = h;
-			b = innerBars[i].y;
-		}
-		return innerBars;
-	});
-
-	return (0, _d3Array.merge)(bars);
-}
-
-exports.default = OverlayBarSeries;
-//# sourceMappingURL=OverlayBarSeries.js.map
-
-/***/ }),
-/* 1004 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _d3Array = __webpack_require__(8);
-
-var _d3Collection = __webpack_require__(29);
-
-var _d3Scale = __webpack_require__(61);
-
-var _GenericChartComponent = __webpack_require__(17);
-
-var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
-
-var _GenericComponent = __webpack_require__(15);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var VolumeProfileSeries = function (_Component) {
-	_inherits(VolumeProfileSeries, _Component);
-
-	function VolumeProfileSeries(props) {
-		_classCallCheck(this, VolumeProfileSeries);
-
-		var _this = _possibleConstructorReturn(this, (VolumeProfileSeries.__proto__ || Object.getPrototypeOf(VolumeProfileSeries)).call(this, props));
-
-		_this.renderSVG = _this.renderSVG.bind(_this);
-		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
-		return _this;
-	}
-
-	_createClass(VolumeProfileSeries, [{
-		key: "drawOnCanvas",
-		value: function drawOnCanvas(ctx, moreProps) {
-			var xAccessor = moreProps.xAccessor,
-			    width = moreProps.width;
-
-			var _helper = helper(this.props, moreProps, xAccessor, width),
-			    rects = _helper.rects,
-			    sessionBg = _helper.sessionBg;
-
-			_drawOnCanvas(ctx, this.props, rects, sessionBg);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			return _react2.default.createElement(_GenericChartComponent2.default, {
-				svgDraw: this.renderSVG,
-				canvasDraw: this.drawOnCanvas,
-				canvasToDraw: _GenericComponent.getAxisCanvas,
-				drawOn: ["pan"]
-			});
-		}
-	}, {
-		key: "renderSVG",
-		value: function renderSVG(moreProps) {
-			var _props = this.props,
-			    className = _props.className,
-			    opacity = _props.opacity;
-			var _props2 = this.props,
-			    showSessionBackground = _props2.showSessionBackground,
-			    sessionBackGround = _props2.sessionBackGround,
-			    sessionBackGroundOpacity = _props2.sessionBackGroundOpacity;
-			var xAccessor = moreProps.xAccessor,
-			    width = moreProps.width;
-
-			var _helper2 = helper(this.props, moreProps, xAccessor, width),
-			    rects = _helper2.rects,
-			    sessionBg = _helper2.sessionBg;
-
-			var sessionBgSvg = showSessionBackground ? sessionBg.map(function (d, idx) {
-				return _react2.default.createElement("rect", _extends({ key: idx }, d, { opacity: sessionBackGroundOpacity, fill: sessionBackGround }));
-			}) : null;
-
-			return _react2.default.createElement(
-				"g",
-				{ className: className },
-				sessionBgSvg,
-				rects.map(function (d, i) {
-					return _react2.default.createElement(
-						"g",
-						{ key: i },
-						_react2.default.createElement("rect", { x: d.x, y: d.y,
-							width: d.w1, height: d.height,
-							fill: d.fill1, stroke: d.stroke1, fillOpacity: opacity }),
-						_react2.default.createElement("rect", { x: d.x + d.w1, y: d.y,
-							width: d.w2, height: d.height,
-							fill: d.fill2, stroke: d.stroke2, fillOpacity: opacity })
-					);
-				})
-			);
-		}
-	}]);
-
-	return VolumeProfileSeries;
-}(_react.Component);
-
-VolumeProfileSeries.propTypes = {
-	className: _propTypes2.default.string,
-	opacity: _propTypes2.default.number,
-	showSessionBackground: _propTypes2.default.bool,
-	sessionBackGround: _propTypes2.default.string,
-	sessionBackGroundOpacity: _propTypes2.default.number
-};
-
-VolumeProfileSeries.defaultProps = {
-	opacity: 0.5,
-	className: "line ",
-	bins: 20,
-	maxProfileWidthPercent: 50,
-	source: function source(d) {
-		return d.close;
-	},
-	volume: function volume(d) {
-		return d.volume;
-	},
-	absoluteChange: function absoluteChange(d) {
-		return d.absoluteChange;
-	},
-	bySession: false,
-	/* eslint-disable no-unused-vars */
-	sessionStart: function sessionStart(_ref) {
-		var d = _ref.d,
-		    i = _ref.i,
-		    plotData = _ref.plotData;
-		return d.idx.startOfMonth;
-	},
-	/* eslint-enable no-unused-vars */
-	orient: "left",
-	fill: function fill(_ref2) {
-		var type = _ref2.type;
-		return type === "up" ? "#6BA583" : "#FF0000";
-	},
-	// // fill: ({ type }) => { var c = type === "up" ? "#6BA583" : "#FF0000"; console.log(type, c); return c },
-	// stroke: ({ type }) =>  type === "up" ? "#6BA583" : "#FF0000",
-	// stroke: "none",
-	stroke: "#FFFFFF",
-	showSessionBackground: false,
-	sessionBackGround: "#4682B4",
-	sessionBackGroundOpacity: 0.3,
-	partialStartOK: false,
-	partialEndOK: true
-};
-
-function helper(props, moreProps, xAccessor, width) {
-	var realXScale = moreProps.xScale,
-	    yScale = moreProps.chartConfig.yScale,
-	    plotData = moreProps.plotData;
-	var sessionStart = props.sessionStart,
-	    bySession = props.bySession,
-	    partialStartOK = props.partialStartOK,
-	    partialEndOK = props.partialEndOK;
-	var bins = props.bins,
-	    maxProfileWidthPercent = props.maxProfileWidthPercent,
-	    source = props.source,
-	    volume = props.volume,
-	    absoluteChange = props.absoluteChange,
-	    orient = props.orient,
-	    fill = props.fill,
-	    stroke = props.stroke;
-
-
-	var sessionBuilder = (0, _utils.accumulatingWindow)().discardTillStart(!partialStartOK).discardTillEnd(!partialEndOK).accumulateTill(function (d, i) {
-		return sessionStart({ d: d, i: i, plotData: plotData });
-	}).accumulator(_utils.identity);
-
-	var dx = plotData.length > 1 ? realXScale(xAccessor(plotData[1])) - realXScale(xAccessor((0, _utils.head)(plotData))) : 0;
-
-	var sessions = bySession ? sessionBuilder(plotData) : [plotData];
-
-	var allRects = sessions.map(function (session) {
-
-		var begin = bySession ? realXScale(xAccessor((0, _utils.head)(session))) : 0;
-		var finish = bySession ? realXScale(xAccessor((0, _utils.last)(session))) : width;
-		var sessionWidth = finish - begin + dx;
-
-		// console.log(session)
-
-		/* var histogram = d3.layout.histogram()
-  		.value(source)
-  		.bins(bins);*/
-
-		var histogram2 = (0, _d3Array.histogram)()
-		// .domain(xScale.domain())
-		.value(source).thresholds(bins);
-
-		// console.log(bins, histogram(session))
-		// console.log(bins, histogram2(session))
-		var rollup = (0, _d3Collection.nest)().key(function (d) {
-			return d.direction;
-		}).sortKeys(orient === "right" ? _d3Array.descending : _d3Array.ascending).rollup(function (leaves) {
-			return (0, _d3Array.sum)(leaves, function (d) {
-				return d.volume;
-			});
-		});
-
-		var values = histogram2(session);
-		// console.log("values", values)
-
-		var volumeInBins = values.map(function (arr) {
-			return arr.map(function (d) {
-				return absoluteChange(d) > 0 ? { direction: "up", volume: volume(d) } : { direction: "down", volume: volume(d) };
-			});
-		}).map(function (arr) {
-			return rollup.entries(arr);
-		});
-
-		// console.log("volumeInBins", volumeInBins)
-		var volumeValues = volumeInBins.map(function (each) {
-			return (0, _d3Array.sum)(each.map(function (d) {
-				return d.value;
-			}));
-		});
-
-		// console.log("volumeValues", volumeValues)
-		var base = function base(xScale) {
-			return (0, _utils.head)(xScale.range());
-		};
-
-		var _ref3 = orient === "right" ? [begin, begin + sessionWidth * maxProfileWidthPercent / 100] : [finish, finish - sessionWidth * (100 - maxProfileWidthPercent) / 100],
-		    _ref4 = _slicedToArray(_ref3, 2),
-		    start = _ref4[0],
-		    end = _ref4[1];
-
-		var xScale = (0, _d3Scale.scaleLinear)().domain([0, (0, _d3Array.max)(volumeValues)]).range([start, end]);
-
-		// console.log(xScale.domain())
-
-		var totalVolumes = volumeInBins.map(function (volumes) {
-
-			var totalVolume = (0, _d3Array.sum)(volumes, function (d) {
-				return d.value;
-			});
-			var totalVolumeX = xScale(totalVolume);
-			var width = base(xScale) - totalVolumeX;
-			var x = width < 0 ? totalVolumeX + width : totalVolumeX;
-
-			var ws = volumes.map(function (d) {
-				return {
-					type: d.key,
-					width: d.value * Math.abs(width) / totalVolume
-				};
-			});
-
-			return { x: x, ws: ws, totalVolumeX: totalVolumeX };
-		});
-		// console.log("totalVolumes", totalVolumes)
-
-		var rects = (0, _d3Array.zip)(values, totalVolumes).map(function (_ref5) {
-			var _ref6 = _slicedToArray(_ref5, 2),
-			    d = _ref6[0],
-			    _ref6$ = _ref6[1],
-			    x = _ref6$.x,
-			    ws = _ref6$.ws;
-
-			var w1 = ws[0] || { type: "up", width: 0 };
-			var w2 = ws[1] || { type: "down", width: 0 };
-
-			return {
-				// y: yScale(d.x + d.dx),
-				y: yScale(d.x1),
-				// height: yScale(d.x - d.dx) - yScale(d.x),
-				height: yScale(d.x1) - yScale(d.x0),
-				x: x,
-				width: width,
-				w1: w1.width,
-				w2: w2.width,
-				stroke1: (0, _utils.functor)(stroke)(w1),
-				stroke2: (0, _utils.functor)(stroke)(w2),
-				fill1: (0, _utils.functor)(fill)(w1),
-				fill2: (0, _utils.functor)(fill)(w2)
-			};
-		});
-
-		// console.log("rects", rects)
-
-		var sessionBg = {
-			x: begin,
-			y: (0, _utils.last)(rects).y,
-			height: (0, _utils.head)(rects).y - (0, _utils.last)(rects).y + (0, _utils.head)(rects).height,
-			width: sessionWidth
-		};
-
-		return { rects: rects, sessionBg: sessionBg };
-	});
-
-	return {
-		rects: (0, _d3Array.merge)(allRects.map(function (d) {
-			return d.rects;
-		})),
-		sessionBg: allRects.map(function (d) {
-			return d.sessionBg;
-		})
-	};
-}
-
-function _drawOnCanvas(ctx, props, rects, sessionBg) {
-	var opacity = props.opacity,
-	    sessionBackGround = props.sessionBackGround,
-	    sessionBackGroundOpacity = props.sessionBackGroundOpacity,
-	    showSessionBackground = props.showSessionBackground;
-
-	// var { rects, sessionBg } = helper(props, xScale, yScale, plotData);
-
-	if (showSessionBackground) {
-		ctx.fillStyle = (0, _utils.hexToRGBA)(sessionBackGround, sessionBackGroundOpacity);
-
-		sessionBg.forEach(function (each) {
-			var x = each.x,
-			    y = each.y,
-			    height = each.height,
-			    width = each.width;
-
-
-			ctx.beginPath();
-			ctx.rect(x, y, width, height);
-			ctx.closePath();
-			ctx.fill();
-		});
-	}
-
-	rects.forEach(function (each) {
-		var x = each.x,
-		    y = each.y,
-		    height = each.height,
-		    w1 = each.w1,
-		    w2 = each.w2,
-		    stroke1 = each.stroke1,
-		    stroke2 = each.stroke2,
-		    fill1 = each.fill1,
-		    fill2 = each.fill2;
-
-
-		if (w1 > 0) {
-			ctx.fillStyle = (0, _utils.hexToRGBA)(fill1, opacity);
-			if (stroke1 !== "none") ctx.strokeStyle = stroke1;
-
-			ctx.beginPath();
-			ctx.rect(x, y, w1, height);
-			ctx.closePath();
-			ctx.fill();
-
-			if (stroke1 !== "none") ctx.stroke();
-		}
-
-		if (w2 > 0) {
-			ctx.fillStyle = (0, _utils.hexToRGBA)(fill2, opacity);
-			if (stroke2 !== "none") ctx.strokeStyle = stroke2;
-
-			ctx.beginPath();
-			ctx.rect(x + w1, y, w2, height);
-			ctx.closePath();
-			ctx.fill();
-
-			if (stroke2 !== "none") ctx.stroke();
-		}
-	});
-}
-
-exports.default = VolumeProfileSeries;
-//# sourceMappingURL=VolumeProfileSeries.js.map
-
-/***/ }),
-/* 1005 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _GenericChartComponent = __webpack_require__(17);
-
-var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
-
-var _GenericComponent = __webpack_require__(15);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var SARSeries = function (_Component) {
-	_inherits(SARSeries, _Component);
-
-	function SARSeries(props) {
-		_classCallCheck(this, SARSeries);
-
-		var _this = _possibleConstructorReturn(this, (SARSeries.__proto__ || Object.getPrototypeOf(SARSeries)).call(this, props));
-
-		_this.renderSVG = _this.renderSVG.bind(_this);
-		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
-		_this.isHover = _this.isHover.bind(_this);
-		return _this;
-	}
-
-	_createClass(SARSeries, [{
-		key: "isHover",
-		value: function isHover(moreProps) {
-			var mouseXY = moreProps.mouseXY,
-			    currentItem = moreProps.currentItem,
-			    yScale = moreProps.chartConfig.yScale;
-			var yAccessor = this.props.yAccessor;
-
-			var y = mouseXY[1];
-			var currentY = yScale(yAccessor(currentItem));
-			return y < currentY + 5 && y > currentY - 5;
-		}
-	}, {
-		key: "drawOnCanvas",
-		value: function drawOnCanvas(ctx, moreProps) {
-			var _props = this.props,
-			    yAccessor = _props.yAccessor,
-			    fill = _props.fill,
-			    opacity = _props.opacity;
-			var xAccessor = moreProps.xAccessor,
-			    plotData = moreProps.plotData,
-			    xScale = moreProps.xScale,
-			    yScale = moreProps.chartConfig.yScale,
-			    hovering = moreProps.hovering;
-
-
-			var width = xScale(xAccessor((0, _utils.last)(plotData))) - xScale(xAccessor((0, _utils.first)(plotData)));
-
-			var d = width / plotData.length * 0.5 / 2;
-			var rx = Math.max(0.5, d / 2) + (hovering ? 2 : 0);
-			var ry = Math.min(2, Math.max(0.5, d)) + (hovering ? 0 : 0);
-
-			plotData.forEach(function (each) {
-				var centerX = xScale(xAccessor(each));
-				var centerY = yScale(yAccessor(each));
-				var color = yAccessor(each) > each.close ? fill.falling : fill.rising;
-
-				ctx.fillStyle = (0, _utils.hexToRGBA)(color, opacity);
-				ctx.strokeStyle = color;
-
-				ctx.beginPath();
-				ctx.ellipse(centerX, centerY, rx, ry, 0, 0, 2 * Math.PI);
-				ctx.closePath();
-				ctx.fill();
-				ctx.stroke();
-			});
-		}
-	}, {
-		key: "renderSVG",
-		value: function renderSVG(moreProps) {
-			var _props2 = this.props,
-			    className = _props2.className,
-			    yAccessor = _props2.yAccessor;
-			var xAccessor = moreProps.xAccessor,
-			    plotData = moreProps.plotData,
-			    xScale = moreProps.xScale,
-			    yScale = moreProps.chartConfig.yScale;
-			// console.log(moreProps);
-
-			return _react2.default.createElement(
-				"g",
-				{ className: className },
-				plotData.map(function (each, idx) {
-					return _react2.default.createElement("circle", { key: idx, cx: xScale(xAccessor(each)),
-						cy: yScale(yAccessor(each)), r: 3, fill: "green" });
-				})
-			);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var highlightOnHover = this.props.highlightOnHover;
-
-			var hoverProps = highlightOnHover ? {
-				isHover: this.isHover,
-				drawOn: ["mousemove", "pan"],
-				canvasToDraw: _GenericComponent.getMouseCanvas
-			} : {
-				drawOn: ["pan"],
-				canvasToDraw: _GenericComponent.getAxisCanvas
-			};
-
-			return _react2.default.createElement(_GenericChartComponent2.default, _extends({
-				svgDraw: this.renderSVG,
-
-				canvasDraw: this.drawOnCanvas,
-
-				onClickWhenHover: this.props.onClick,
-				onDoubleClickWhenHover: this.props.onDoubleClick,
-				onContextMenuWhenHover: this.props.onContextMenu
-			}, hoverProps));
-		}
-	}]);
-
-	return SARSeries;
-}(_react.Component);
-
-SARSeries.propTypes = {
-	className: _propTypes2.default.string,
-	fill: _propTypes2.default.object.isRequired,
-	yAccessor: _propTypes2.default.func.isRequired,
-	opacity: _propTypes2.default.number.isRequired,
-	onClick: _propTypes2.default.func,
-	onDoubleClick: _propTypes2.default.func,
-	onContextMenu: _propTypes2.default.func,
-	highlightOnHover: _propTypes2.default.bool
-};
-
-SARSeries.defaultProps = {
-	className: "react-stockcharts-sar",
-	fill: {
-		falling: "#4682B4",
-		rising: "#15EC2E"
-	},
-	highlightOnHover: true,
-	opacity: 0.2,
-	onClick: function onClick(e) {
-		console.log("Click", e);
-	},
-	onDoubleClick: function onDoubleClick(e) {
-		console.log("Double Click", e);
-	},
-	onContextMenu: function onContextMenu(e) {
-		console.log("Right Click", e);
-	}
-};
-
-exports.default = SARSeries;
-//# sourceMappingURL=SARSeries.js.map
-
-/***/ }),
-/* 1006 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _XAxis = __webpack_require__(1007);
-
-Object.defineProperty(exports, "XAxis", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_XAxis).default;
-  }
-});
-
-var _YAxis = __webpack_require__(1009);
-
-Object.defineProperty(exports, "YAxis", {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_YAxis).default;
-  }
-});
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-/* 1007 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _Axis = __webpack_require__(377);
-
-var _Axis2 = _interopRequireDefault(_Axis);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var XAxis = function (_Component) {
-	_inherits(XAxis, _Component);
-
-	function XAxis(props, context) {
-		_classCallCheck(this, XAxis);
-
-		var _this = _possibleConstructorReturn(this, (XAxis.__proto__ || Object.getPrototypeOf(XAxis)).call(this, props, context));
-
-		_this.axisZoomCallback = _this.axisZoomCallback.bind(_this);
-		return _this;
-	}
-
-	_createClass(XAxis, [{
-		key: "axisZoomCallback",
-		value: function axisZoomCallback(newXDomain) {
-			var xAxisZoom = this.context.xAxisZoom;
-
-			xAxisZoom(newXDomain);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var showTicks = this.props.showTicks;
-
-			var moreProps = helper(this.props, this.context);
-
-			return _react2.default.createElement(_Axis2.default, _extends({}, this.props, moreProps, { x: true,
-				zoomEnabled: this.props.zoomEnabled && showTicks,
-				axisZoomCallback: this.axisZoomCallback,
-				zoomCursorClassName: "react-stockcharts-ew-resize-cursor" }));
-		}
-	}]);
-
-	return XAxis;
-}(_react.Component);
-
-XAxis.propTypes = {
-	axisAt: _propTypes2.default.oneOfType([_propTypes2.default.oneOf(["top", "bottom", "middle"]), _propTypes2.default.number]).isRequired,
-	orient: _propTypes2.default.oneOf(["top", "bottom"]).isRequired,
-	innerTickSize: _propTypes2.default.number,
-	outerTickSize: _propTypes2.default.number,
-	tickFormat: _propTypes2.default.func,
-	tickPadding: _propTypes2.default.number,
-	tickSize: _propTypes2.default.number,
-	ticks: _propTypes2.default.number,
-	tickValues: _propTypes2.default.array,
-	showTicks: _propTypes2.default.bool,
-	className: _propTypes2.default.string,
-	zoomEnabled: _propTypes2.default.bool,
-	onContextMenu: _propTypes2.default.func,
-	onDoubleClick: _propTypes2.default.func
-};
-
-XAxis.defaultProps = {
-	showGrid: false,
-	showTicks: true,
-	showDomain: true,
-	className: "react-stockcharts-x-axis",
-	ticks: 10,
-	outerTickSize: 0,
-	fill: "none",
-	stroke: "#000000", // x axis stroke coloe
-	strokeWidth: 1,
-	opacity: 1, // x axis opacity
-	domainClassName: "react-stockcharts-axis-domain",
-	innerTickSize: 5,
-	tickPadding: 6,
-	tickStroke: "#000000", // tick/grid stroke
-	tickStrokeOpacity: 1,
-	fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
-	fontSize: 12,
-	xZoomHeight: 25,
-	zoomEnabled: true,
-	getMouseDelta: function getMouseDelta(startXY, mouseXY) {
-		return startXY[0] - mouseXY[0];
-	}
-};
-
-XAxis.contextTypes = {
-	chartConfig: _propTypes2.default.object.isRequired,
-	xAxisZoom: _propTypes2.default.func.isRequired
-};
-
-function helper(props, context) {
-	var axisAt = props.axisAt,
-	    xZoomHeight = props.xZoomHeight,
-	    orient = props.orient;
-	var _context$chartConfig = context.chartConfig,
-	    width = _context$chartConfig.width,
-	    height = _context$chartConfig.height;
-
-
-	var axisLocation = void 0;
-	var x = 0,
-	    w = width,
-	    h = xZoomHeight;
-
-	if (axisAt === "top") axisLocation = 0;else if (axisAt === "bottom") axisLocation = height;else if (axisAt === "middle") axisLocation = height / 2;else axisLocation = axisAt;
-
-	var y = orient === "top" ? -xZoomHeight : 0;
-
-	return {
-		transform: [0, axisLocation],
-		range: [0, width],
-		getScale: getXScale,
-		bg: { x: x, y: y, h: h, w: w }
-	};
-}
-
-function getXScale(moreProps) {
-	var scale = moreProps.xScale,
-	    width = moreProps.width;
-
-
-	if (scale.invert) {
-		var trueRange = [0, width];
-		var trueDomain = trueRange.map(scale.invert);
-		return scale.copy().domain(trueDomain).range(trueRange);
-	}
-
-	return scale;
-}
-
-exports.default = XAxis;
-//# sourceMappingURL=XAxis.js.map
-
-/***/ }),
-/* 1008 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _d3Selection = __webpack_require__(12);
-
-var _d3Array = __webpack_require__(8);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var AxisZoomCapture = function (_Component) {
-	_inherits(AxisZoomCapture, _Component);
-
-	function AxisZoomCapture(props) {
-		_classCallCheck(this, AxisZoomCapture);
-
-		var _this = _possibleConstructorReturn(this, (AxisZoomCapture.__proto__ || Object.getPrototypeOf(AxisZoomCapture)).call(this, props));
-
-		_this.handleDragStartMouse = _this.handleDragStartMouse.bind(_this);
-		_this.handleDragStartTouch = _this.handleDragStartTouch.bind(_this);
-		_this.handleDrag = _this.handleDrag.bind(_this);
-		_this.handleDragEnd = _this.handleDragEnd.bind(_this);
-		_this.handleRightClick = _this.handleRightClick.bind(_this);
-		_this.saveNode = _this.saveNode.bind(_this);
-		_this.state = {
-			startPosition: null
-		};
-		return _this;
-	}
-
-	_createClass(AxisZoomCapture, [{
-		key: "saveNode",
-		value: function saveNode(node) {
-			this.node = node;
-		}
-	}, {
-		key: "handleRightClick",
-		value: function handleRightClick(e) {
-			e.stopPropagation();
-			e.preventDefault();
-
-			var onContextMenu = this.props.onContextMenu;
-
-
-			var mouseXY = (0, _utils.mousePosition)(e, this.node.getBoundingClientRect());
-
-			(0, _d3Selection.select)((0, _utils.d3Window)(this.node)).on(_utils.MOUSEMOVE, null).on(_utils.MOUSEUP, null);
-			this.setState({
-				startPosition: null
-			});
-
-			onContextMenu(mouseXY, e);
-
-			this.contextMenuClicked = true;
-		}
-	}, {
-		key: "handleDragStartMouse",
-		value: function handleDragStartMouse(e) {
-			this.mouseInteraction = true;
-
-			var _props = this.props,
-			    getScale = _props.getScale,
-			    getMoreProps = _props.getMoreProps;
-
-			var startScale = getScale(getMoreProps());
-			this.dragHappened = false;
-
-			if (startScale.invert) {
-				(0, _d3Selection.select)((0, _utils.d3Window)(this.node)).on(_utils.MOUSEMOVE, this.handleDrag, false).on(_utils.MOUSEUP, this.handleDragEnd, false);
-
-				var startXY = (0, _utils.mousePosition)(e);
-
-				this.setState({
-					startPosition: {
-						startXY: startXY,
-						startScale: startScale
-					}
-				});
-			}
-			e.preventDefault();
-		}
-	}, {
-		key: "handleDragStartTouch",
-		value: function handleDragStartTouch(e) {
-			this.mouseInteraction = false;
-
-			var _props2 = this.props,
-			    getScale = _props2.getScale,
-			    getMoreProps = _props2.getMoreProps;
-
-			var startScale = getScale(getMoreProps());
-			this.dragHappened = false;
-
-			if (e.touches.length === 1 && startScale.invert) {
-				(0, _d3Selection.select)((0, _utils.d3Window)(this.node)).on(_utils.TOUCHMOVE, this.handleDrag).on(_utils.TOUCHEND, this.handleDragEnd);
-
-				var startXY = (0, _utils.touchPosition)((0, _utils.getTouchProps)(e.touches[0]), e);
-
-				this.setState({
-					startPosition: {
-						startXY: startXY,
-						startScale: startScale
-					}
-				});
-			}
-		}
-	}, {
-		key: "handleDrag",
-		value: function handleDrag() {
-			var startPosition = this.state.startPosition;
-			var _props3 = this.props,
-			    getMouseDelta = _props3.getMouseDelta,
-			    inverted = _props3.inverted;
-
-
-			this.dragHappened = true;
-			if ((0, _utils.isDefined)(startPosition)) {
-				var startScale = startPosition.startScale;
-				var startXY = startPosition.startXY;
-
-
-				var mouseXY = this.mouseInteraction ? (0, _d3Selection.mouse)(this.node) : (0, _d3Selection.touches)(this.node)[0];
-
-				var diff = getMouseDelta(startXY, mouseXY);
-
-				var center = (0, _d3Array.mean)(startScale.range());
-
-				var tempRange = startScale.range().map(function (d) {
-					return inverted ? d - (0, _utils.sign)(d - center) * diff : d + (0, _utils.sign)(d - center) * diff;
-				});
-
-				var newDomain = tempRange.map(startScale.invert);
-
-				if ((0, _utils.sign)((0, _utils.last)(startScale.range()) - (0, _utils.first)(startScale.range())) === (0, _utils.sign)((0, _utils.last)(tempRange) - (0, _utils.first)(tempRange))) {
-					var axisZoomCallback = this.props.axisZoomCallback;
-					// console.log(startXScale.domain(), newXDomain)
-
-					axisZoomCallback(newDomain);
-				}
-			}
-		}
-	}, {
-		key: "handleDragEnd",
-		value: function handleDragEnd() {
-			var _this2 = this;
-
-			if (!this.dragHappened) {
-				if (this.clicked) {
-					var e = _d3Selection.event;
-					var mouseXY = this.mouseInteraction ? (0, _d3Selection.mouse)(this.node) : (0, _d3Selection.touches)(this.node)[0];
-					var onDoubleClick = this.props.onDoubleClick;
-
-
-					onDoubleClick(mouseXY, e);
-				} else {
-					this.clicked = true;
-					setTimeout(function () {
-						_this2.clicked = false;
-					}, 300);
-				}
-			}
-
-			(0, _d3Selection.select)((0, _utils.d3Window)(this.node)).on(_utils.MOUSEMOVE, null).on(_utils.MOUSEUP, null).on(_utils.TOUCHMOVE, null).on(_utils.TOUCHEND, null);
-
-			this.setState({
-				startPosition: null
-			});
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var _props4 = this.props,
-			    bg = _props4.bg,
-			    zoomCursorClassName = _props4.zoomCursorClassName;
-
-
-			var cursor = (0, _utils.isDefined)(this.state.startPosition) ? zoomCursorClassName : "react-stockcharts-default-cursor";
-
-			return _react2.default.createElement("rect", {
-				className: "react-stockcharts-enable-interaction " + cursor,
-				ref: this.saveNode,
-				x: bg.x, y: bg.y, opacity: 0, height: bg.h, width: bg.w,
-				onContextMenu: this.handleRightClick,
-				onMouseDown: this.handleDragStartMouse,
-				onTouchStart: this.handleDragStartTouch
-			});
-		}
-	}]);
-
-	return AxisZoomCapture;
-}(_react.Component);
-
-AxisZoomCapture.propTypes = {
-	innerTickSize: _propTypes2.default.number,
-	outerTickSize: _propTypes2.default.number,
-	tickFormat: _propTypes2.default.func,
-	tickPadding: _propTypes2.default.number,
-	tickSize: _propTypes2.default.number,
-	ticks: _propTypes2.default.number,
-	tickValues: _propTypes2.default.array,
-	showDomain: _propTypes2.default.bool,
-	showTicks: _propTypes2.default.bool,
-	className: _propTypes2.default.string,
-	axisZoomCallback: _propTypes2.default.func,
-	inverted: _propTypes2.default.bool,
-	bg: _propTypes2.default.object.isRequired,
-	zoomCursorClassName: _propTypes2.default.string.isRequired,
-	getMoreProps: _propTypes2.default.func.isRequired,
-	getScale: _propTypes2.default.func.isRequired,
-	getMouseDelta: _propTypes2.default.func.isRequired,
-	onDoubleClick: _propTypes2.default.func.isRequired,
-	onContextMenu: _propTypes2.default.func.isRequired
-};
-
-AxisZoomCapture.defaultProps = {
-	onDoubleClick: _utils.noop,
-	onContextMenu: _utils.noop,
-	inverted: true
-};
-
-exports.default = AxisZoomCapture;
-//# sourceMappingURL=AxisZoomCapture.js.map
-
-/***/ }),
-/* 1009 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _Axis = __webpack_require__(377);
-
-var _Axis2 = _interopRequireDefault(_Axis);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var YAxis = function (_Component) {
-	_inherits(YAxis, _Component);
-
-	function YAxis(props, context) {
-		_classCallCheck(this, YAxis);
-
-		var _this = _possibleConstructorReturn(this, (YAxis.__proto__ || Object.getPrototypeOf(YAxis)).call(this, props, context));
-
-		_this.axisZoomCallback = _this.axisZoomCallback.bind(_this);
-		return _this;
-	}
-
-	_createClass(YAxis, [{
-		key: "axisZoomCallback",
-		value: function axisZoomCallback(newYDomain) {
-			var _context = this.context,
-			    chartId = _context.chartId,
-			    yAxisZoom = _context.yAxisZoom;
-
-			yAxisZoom(chartId, newYDomain);
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var _helper = helper(this.props, this.context),
-			    zoomEnabled = _helper.zoomEnabled,
-			    moreProps = _objectWithoutProperties(_helper, ["zoomEnabled"]);
-
-			return _react2.default.createElement(_Axis2.default, _extends({}, this.props, moreProps, {
-				zoomEnabled: this.props.zoomEnabled && zoomEnabled,
-				edgeClip: true,
-				axisZoomCallback: this.axisZoomCallback,
-				zoomCursorClassName: "react-stockcharts-ns-resize-cursor" }));
-		}
-	}]);
-
-	return YAxis;
-}(_react.Component);
-
-YAxis.propTypes = {
-	axisAt: _propTypes2.default.oneOfType([_propTypes2.default.oneOf(["left", "right", "middle"]), _propTypes2.default.number]).isRequired,
-	orient: _propTypes2.default.oneOf(["left", "right"]).isRequired,
-	innerTickSize: _propTypes2.default.number,
-	outerTickSize: _propTypes2.default.number,
-	tickFormat: _propTypes2.default.func,
-	tickPadding: _propTypes2.default.number,
-	tickSize: _propTypes2.default.number,
-	ticks: _propTypes2.default.number,
-	yZoomWidth: _propTypes2.default.number,
-	tickValues: _propTypes2.default.array,
-	showTicks: _propTypes2.default.bool,
-	className: _propTypes2.default.string,
-	zoomEnabled: _propTypes2.default.bool,
-	onContextMenu: _propTypes2.default.func,
-	onDoubleClick: _propTypes2.default.func
-};
-
-YAxis.defaultProps = {
-	showGrid: false,
-	showTicks: true,
-	showDomain: true,
-	className: "react-stockcharts-y-axis",
-	ticks: 10,
-	outerTickSize: 0,
-	domainClassName: "react-stockcharts-axis-domain",
-	fill: "none",
-	stroke: "#FFFFFF",
-	strokeWidth: 1,
-	opacity: 1,
-	innerTickSize: 5,
-	tickPadding: 6,
-	tickStroke: "#000000",
-	tickStrokeOpacity: 1,
-	fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
-	fontSize: 12,
-	yZoomWidth: 40,
-	zoomEnabled: true,
-	getMouseDelta: function getMouseDelta(startXY, mouseXY) {
-		return startXY[1] - mouseXY[1];
-	}
-};
-
-YAxis.contextTypes = {
-	yAxisZoom: _propTypes2.default.func.isRequired,
-	chartId: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string]).isRequired,
-	chartConfig: _propTypes2.default.object.isRequired
-};
-
-function helper(props, context) {
-	var axisAt = props.axisAt,
-	    yZoomWidth = props.yZoomWidth,
-	    orient = props.orient;
-	var _context$chartConfig = context.chartConfig,
-	    width = _context$chartConfig.width,
-	    height = _context$chartConfig.height;
-
-
-	var axisLocation = void 0;
-	var y = 0,
-	    w = yZoomWidth,
-	    h = height;
-
-	if (axisAt === "left") {
-		axisLocation = 0;
-	} else if (axisAt === "right") {
-		axisLocation = width;
-	} else if (axisAt === "middle") {
-		axisLocation = width / 2;
-	} else {
-		axisLocation = axisAt;
-	}
-
-	var x = orient === "left" ? -yZoomWidth : 0;
-
-	return {
-		transform: [axisLocation, 0],
-		range: [0, height],
-		getScale: getYScale,
-		bg: { x: x, y: y, h: h, w: w },
-		zoomEnabled: context.chartConfig.yPan
-	};
-}
-
-function getYScale(moreProps) {
-	var _moreProps$chartConfi = moreProps.chartConfig,
-	    scale = _moreProps$chartConfi.yScale,
-	    flipYScale = _moreProps$chartConfi.flipYScale,
-	    height = _moreProps$chartConfi.height;
-
-	if (scale.invert) {
-		var trueRange = flipYScale ? [0, height] : [height, 0];
-		var trueDomain = trueRange.map(scale.invert);
-		return scale.copy().domain(trueDomain).range(trueRange);
-	}
-	return scale;
-}
-
-exports.default = YAxis;
-//# sourceMappingURL=YAxis.js.map
-
-/***/ }),
-/* 1010 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var TypeChooser = function (_Component) {
-	_inherits(TypeChooser, _Component);
-
-	function TypeChooser(props) {
-		_classCallCheck(this, TypeChooser);
-
-		var _this = _possibleConstructorReturn(this, (TypeChooser.__proto__ || Object.getPrototypeOf(TypeChooser)).call(this, props));
-
-		_this.state = {
-			type: _this.props.type
-		};
-		_this.handleTypeChange = _this.handleTypeChange.bind(_this);
-		return _this;
-	}
-
-	_createClass(TypeChooser, [{
-		key: "handleTypeChange",
-		value: function handleTypeChange(e) {
-			// console.log(e.target.value);
-			this.setState({
-				type: e.target.value
-			});
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			return _react2.default.createElement(
-				"div",
-				null,
-				_react2.default.createElement(
-					"label",
-					null,
-					"Type: "
-				),
-				_react2.default.createElement(
-					"select",
-					{ name: "type", id: "type", onChange: this.handleTypeChange, value: this.state.type },
-					_react2.default.createElement(
-						"option",
-						{ value: "svg" },
-						"svg"
-					),
-					_react2.default.createElement(
-						"option",
-						{ value: "hybrid" },
-						"canvas + svg"
-					)
-				),
-				_react2.default.createElement(
-					"div",
-					{ style: this.props.style },
-					this.props.children(this.state.type)
-				)
-			);
-		}
-	}]);
-
-	return TypeChooser;
-}(_react.Component);
-
-TypeChooser.propTypes = {
-	type: _propTypes2.default.oneOf(["svg", "hybrid"]),
-	children: _propTypes2.default.func.isRequired,
-	style: _propTypes2.default.object.isRequired
-};
-
-TypeChooser.defaultProps = {
-	type: "hybrid",
-	style: {}
-};
-
-exports.default = TypeChooser;
-//# sourceMappingURL=TypeChooser.js.map
-
-/***/ }),
-/* 1011 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _saveSvgAsPng = __webpack_require__(1012);
-
-var _saveSvgAsPng2 = _interopRequireDefault(_saveSvgAsPng);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var dx = 0;
-var dy = 0;
-
-var SaveChartAsImage = {
-	save: function save(doc, container, background, cb) {
-		_saveSvgAsPng2.default.svgAsDataUri(container.getElementsByTagName("svg")[0], {}, function (uri) {
-			// eslint-disable-next-line prefer-const
-			var image = new Image();
-			image.onload = function () {
-
-				// eslint-disable-next-line prefer-const
-				var canvas = doc.createElement("canvas");
-				canvas.width = image.width;
-				canvas.height = image.height;
-
-				// eslint-disable-next-line prefer-const
-				var context = canvas.getContext("2d");
-
-				if ((0, _utils.isDefined)(background)) {
-					context.fillStyle = background;
-					context.fillRect(0, 0, canvas.width, canvas.height);
-				}
-				var canvasList = container.getElementsByTagName("canvas");
-				for (var i = 0; i < canvasList.length; i++) {
-					var each = canvasList[i];
-					if ((0, _utils.isDefined)(each)) {
-						var parent = each.parentNode.parentNode.getBoundingClientRect();
-						var rect = each.getBoundingClientRect();
-						context.drawImage(each, rect.left - parent.left + dx, rect.top - parent.top + dy);
-					}
-				}
-
-				context.drawImage(image, dx, dy);
-				cb(canvas.toDataURL("image/png"));
-			};
-			image.src = uri;
-		});
-	},
-	saveWithWhiteBG: function saveWithWhiteBG(doc, container, cb) {
-		return this.saveWithBG(doc, container, "white", cb);
-	},
-	saveWithDarkBG: function saveWithDarkBG(doc, container, cb) {
-		return this.saveWithBG(doc, container, "#303030", cb);
-	},
-	saveWithBG: function saveWithBG(doc, container, background, cb) {
-		return this.save(doc, container, background, cb);
-	},
-	saveChartAsImage: function saveChartAsImage(container) {
-		this.saveWithWhiteBG(document, container, function (src) {
-			var a = document.createElement("a");
-			a.setAttribute("href", src);
-			a.setAttribute("download", "Chart.png");
-
-			document.body.appendChild(a);
-			a.addEventListener("click", function () /* e */{
-				a.parentNode.removeChild(a);
-			});
-
-			a.click();
-		});
-	}
-};
-
-exports.default = SaveChartAsImage;
-//# sourceMappingURL=SaveChartAsImage.js.map
-
-/***/ }),
-/* 1012 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_RESULT__;(function() {
-  var out$ = typeof exports != 'undefined' && exports || "function" != 'undefined' && {} || this;
-
-  var doctype = '<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [<!ENTITY nbsp "&#160;">]>';
-
-  function isElement(obj) {
-    return obj instanceof HTMLElement || obj instanceof SVGElement;
-  }
-
-  function requireDomNode(el) {
-    if (!isElement(el)) {
-      throw new Error('an HTMLElement or SVGElement is required; got ' + el);
-    }
-  }
-
-  function isExternal(url) {
-    return url && url.lastIndexOf('http',0) == 0 && url.lastIndexOf(window.location.host) == -1;
-  }
-
-  function inlineImages(el, callback) {
-    requireDomNode(el);
-
-    var images = el.querySelectorAll('image'),
-        left = images.length,
-        checkDone = function() {
-          if (left === 0) {
-            callback();
-          }
-        };
-
-    checkDone();
-    for (var i = 0; i < images.length; i++) {
-      (function(image) {
-        var href = image.getAttributeNS("http://www.w3.org/1999/xlink", "href");
-        if (href) {
-          if (isExternal(href.value)) {
-            console.warn("Cannot render embedded images linking to external hosts: "+href.value);
-            return;
-          }
-        }
-        var canvas = document.createElement('canvas');
-        var ctx = canvas.getContext('2d');
-        var img = new Image();
-        img.crossOrigin="anonymous";
-        href = href || image.getAttribute('href');
-        if (href) {
-          img.src = href;
-          img.onload = function() {
-            canvas.width = img.width;
-            canvas.height = img.height;
-            ctx.drawImage(img, 0, 0);
-            image.setAttributeNS("http://www.w3.org/1999/xlink", "href", canvas.toDataURL('image/png'));
-            left--;
-            checkDone();
-          }
-          img.onerror = function() {
-            console.log("Could not load "+href);
-            left--;
-            checkDone();
-          }
-        } else {
-          left--;
-          checkDone();
-        }
-      })(images[i]);
-    }
-  }
-
-  function styles(el, options, cssLoadedCallback) {
-    var selectorRemap = options.selectorRemap;
-    var modifyStyle = options.modifyStyle;
-    var css = "";
-    // each font that has extranl link is saved into queue, and processed
-    // asynchronously
-    var fontsQueue = [];
-    var sheets = document.styleSheets;
-    for (var i = 0; i < sheets.length; i++) {
-      try {
-        var rules = sheets[i].cssRules;
-      } catch (e) {
-        console.warn("Stylesheet could not be loaded: "+sheets[i].href);
-        continue;
-      }
-
-      if (rules != null) {
-        for (var j = 0, match; j < rules.length; j++, match = null) {
-          var rule = rules[j];
-          if (typeof(rule.style) != "undefined") {
-            var selectorText;
-
-            try {
-              selectorText = rule.selectorText;
-            } catch(err) {
-              console.warn('The following CSS rule has an invalid selector: "' + rule + '"', err);
-            }
-
-            try {
-              if (selectorText) {
-                match = el.querySelector(selectorText) || el.parentNode.querySelector(selectorText);
-              }
-            } catch(err) {
-              console.warn('Invalid CSS selector "' + selectorText + '"', err);
-            }
-
-            if (match) {
-              var selector = selectorRemap ? selectorRemap(rule.selectorText) : rule.selectorText;
-              var cssText = modifyStyle ? modifyStyle(rule.style.cssText) : rule.style.cssText;
-              css += selector + " { " + cssText + " }\n";
-            } else if(rule.cssText.match(/^@font-face/)) {
-              // below we are trying to find matches to external link. E.g.
-              // @font-face {
-              //   // ...
-              //   src: local('Abel'), url(https://fonts.gstatic.com/s/abel/v6/UzN-iejR1VoXU2Oc-7LsbvesZW2xOQ-xsNqO47m55DA.woff2);
-              // }
-              //
-              // This regex will save extrnal link into first capture group
-              var fontUrlRegexp = /url\(["']?(.+?)["']?\)/;
-              // TODO: This needs to be changed to support multiple url declarations per font.
-              var fontUrlMatch = rule.cssText.match(fontUrlRegexp);
-
-              var externalFontUrl = (fontUrlMatch && fontUrlMatch[1]) || '';
-              var fontUrlIsDataURI = externalFontUrl.match(/^data:/);
-              if (fontUrlIsDataURI) {
-                // We should ignore data uri - they are already embedded
-                externalFontUrl = '';
-              }
-
-              if (externalFontUrl) {
-                // okay, we are lucky. We can fetch this font later
-
-                //handle url if relative
-                if (externalFontUrl.startsWith('../')) {
-                  externalFontUrl = sheets[i].href + '/../' + externalFontUrl
-                } else if (externalFontUrl.startsWith('./')) {
-                  externalFontUrl = sheets[i].href + '/.' + externalFontUrl
-                }
-
-                fontsQueue.push({
-                  text: rule.cssText,
-                  // Pass url regex, so that once font is downladed, we can run `replace()` on it
-                  fontUrlRegexp: fontUrlRegexp,
-                  format: getFontMimeTypeFromUrl(externalFontUrl),
-                  url: externalFontUrl
-                });
-              } else {
-                // otherwise, use previous logic
-                css += rule.cssText + '\n';
-              }
-            }
-          }
-        }
-      }
-    }
-
-    // Now all css is processed, it's time to handle scheduled fonts
-    processFontQueue(fontsQueue);
-
-    function getFontMimeTypeFromUrl(fontUrl) {
-      var supportedFormats = {
-        'woff2': 'font/woff2',
-        'woff': 'font/woff',
-        'otf': 'application/x-font-opentype',
-        'ttf': 'application/x-font-ttf',
-        'eot': 'application/vnd.ms-fontobject',
-        'sfnt': 'application/font-sfnt',
-        'svg': 'image/svg+xml'
-      };
-      var extensions = Object.keys(supportedFormats);
-      for (var i = 0; i < extensions.length; ++i) {
-        var extension = extensions[i];
-        // TODO: This is not bullet proof, it needs to handle edge cases...
-        if (fontUrl.indexOf('.' + extension) > 0) {
-          return supportedFormats[extension];
-        }
-      }
-
-      // If you see this error message, you probably need to update code above.
-      console.error('Unknown font format for ' + fontUrl+ '; Fonts may not be working correctly');
-      return 'application/octet-stream';
-    }
-
-    function processFontQueue(queue) {
-      if (queue.length > 0) {
-        // load fonts one by one until we have anything in the queue:
-        var font = queue.pop();
-        processNext(font);
-      } else {
-        // no more fonts to load.
-        cssLoadedCallback(css);
-      }
-
-      function processNext(font) {
-        // TODO: This could benefit from caching.
-        var oReq = new XMLHttpRequest();
-        oReq.addEventListener('load', fontLoaded);
-        oReq.addEventListener('error', transferFailed);
-        oReq.addEventListener('abort', transferFailed);
-        oReq.open('GET', font.url);
-        oReq.responseType = 'arraybuffer';
-        oReq.send();
-
-        function fontLoaded() {
-          // TODO: it may be also worth to wait until fonts are fully loaded before
-          // attempting to rasterize them. (e.g. use https://developer.mozilla.org/en-US/docs/Web/API/FontFaceSet )
-          var fontBits = oReq.response;
-          var fontInBase64 = arrayBufferToBase64(fontBits);
-          updateFontStyle(font, fontInBase64);
-        }
-
-        function transferFailed(e) {
-          console.warn('Failed to load font from: ' + font.url);
-          console.warn(e)
-          css += font.text + '\n';
-          processFontQueue();
-        }
-
-        function updateFontStyle(font, fontInBase64) {
-          var dataUrl = 'url("data:' + font.format + ';base64,' + fontInBase64 + '")';
-          css += font.text.replace(font.fontUrlRegexp, dataUrl) + '\n';
-
-          // schedule next font download on next tick.
-          setTimeout(function() {
-            processFontQueue(queue)
-          }, 0);
-        }
-
-      }
-    }
-
-    function arrayBufferToBase64(buffer) {
-      var binary = '';
-      var bytes = new Uint8Array(buffer);
-      var len = bytes.byteLength;
-
-      for (var i = 0; i < len; i++) {
-          binary += String.fromCharCode(bytes[i]);
-      }
-
-      return window.btoa(binary);
-    }
-  }
-
-  function getDimension(el, clone, dim) {
-    var v = (el.viewBox && el.viewBox.baseVal && el.viewBox.baseVal[dim]) ||
-      (clone.getAttribute(dim) !== null && !clone.getAttribute(dim).match(/%$/) && parseInt(clone.getAttribute(dim))) ||
-      el.getBoundingClientRect()[dim] ||
-      parseInt(clone.style[dim]) ||
-      parseInt(window.getComputedStyle(el).getPropertyValue(dim));
-    return (typeof v === 'undefined' || v === null || isNaN(parseFloat(v))) ? 0 : v;
-  }
-
-  function reEncode(data) {
-    data = encodeURIComponent(data);
-    data = data.replace(/%([0-9A-F]{2})/g, function(match, p1) {
-      var c = String.fromCharCode('0x'+p1);
-      return c === '%' ? '%25' : c;
-    });
-    return decodeURIComponent(data);
-  }
-
-  out$.prepareSvg = function(el, options, cb) {
-    requireDomNode(el);
-
-    options = options || {};
-    options.scale = options.scale || 1;
-    options.responsive = options.responsive || false;
-    var xmlns = "http://www.w3.org/2000/xmlns/";
-
-    inlineImages(el, function() {
-      var outer = document.createElement("div");
-      var clone = el.cloneNode(true);
-      var width, height;
-      if(el.tagName == 'svg') {
-        width = options.width || getDimension(el, clone, 'width');
-        height = options.height || getDimension(el, clone, 'height');
-      } else if(el.getBBox) {
-        var box = el.getBBox();
-        width = box.x + box.width;
-        height = box.y + box.height;
-        clone.setAttribute('transform', clone.getAttribute('transform').replace(/translate\(.*?\)/, ''));
-
-        var svg = document.createElementNS('http://www.w3.org/2000/svg','svg')
-        svg.appendChild(clone)
-        clone = svg;
-      } else {
-        console.error('Attempted to render non-SVG element', el);
-        return;
-      }
-
-      clone.setAttribute("version", "1.1");
-      if (!clone.getAttribute('xmlns')) {
-        clone.setAttributeNS(xmlns, "xmlns", "http://www.w3.org/2000/svg");
-      }
-      if (!clone.getAttribute('xmlns:xlink')) {
-        clone.setAttributeNS(xmlns, "xmlns:xlink", "http://www.w3.org/1999/xlink");
-      }
-
-      if (options.responsive) {
-        clone.removeAttribute('width');
-        clone.removeAttribute('height');
-        clone.setAttribute('preserveAspectRatio', 'xMinYMin meet');
-      } else {
-        clone.setAttribute("width", width * options.scale);
-        clone.setAttribute("height", height * options.scale);
-      }
-
-      clone.setAttribute("viewBox", [
-        options.left || 0,
-        options.top || 0,
-        width,
-        height
-      ].join(" "));
-
-      var fos = clone.querySelectorAll('foreignObject > *');
-      for (var i = 0; i < fos.length; i++) {
-        if (!fos[i].getAttribute('xmlns')) {
-          fos[i].setAttributeNS(xmlns, "xmlns", "http://www.w3.org/1999/xhtml");
-        }
-      }
-
-      outer.appendChild(clone);
-
-      // In case of custom fonts we need to fetch font first, and then inline
-      // its url into data-uri format (encode as base64). That's why style
-      // processing is done asynchonously. Once all inlining is finshed
-      // cssLoadedCallback() is called.
-      styles(el, options, cssLoadedCallback);
-
-      function cssLoadedCallback(css) {
-        // here all fonts are inlined, so that we can render them properly.
-        var s = document.createElement('style');
-        s.setAttribute('type', 'text/css');
-        s.innerHTML = "<![CDATA[\n" + css + "\n]]>";
-        var defs = document.createElement('defs');
-        defs.appendChild(s);
-        clone.insertBefore(defs, clone.firstChild);
-
-        if (cb) {
-          var outHtml = outer.innerHTML;
-          outHtml = outHtml.replace(/NS\d+:href/gi, 'xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href');
-          cb(outHtml, width, height);
-        }
-      }
-    });
-  }
-
-  out$.svgAsDataUri = function(el, options, cb) {
-    out$.prepareSvg(el, options, function(svg) {
-      var uri = 'data:image/svg+xml;base64,' + window.btoa(reEncode(doctype + svg));
-      if (cb) {
-        cb(uri);
-      }
-    });
-  }
-
-  out$.svgAsPngUri = function(el, options, cb) {
-    requireDomNode(el);
-
-    options = options || {};
-    options.encoderType = options.encoderType || 'image/png';
-    options.encoderOptions = options.encoderOptions || 0.8;
-
-    var convertToPng = function(src, w, h) {
-      var canvas = document.createElement('canvas');
-      var context = canvas.getContext('2d');
-      canvas.width = w;
-      canvas.height = h;
-
-      if(options.canvg) {
-        options.canvg(canvas, src);
-      } else {
-        context.drawImage(src, 0, 0);
-      }
-
-      if(options.backgroundColor){
-        context.globalCompositeOperation = 'destination-over';
-        context.fillStyle = options.backgroundColor;
-        context.fillRect(0, 0, canvas.width, canvas.height);
-      }
-
-      var png;
-      try {
-        png = canvas.toDataURL(options.encoderType, options.encoderOptions);
-      } catch (e) {
-        if ((typeof SecurityError !== 'undefined' && e instanceof SecurityError) || e.name == "SecurityError") {
-          console.error("Rendered SVG images cannot be downloaded in this browser.");
-          return;
-        } else {
-          throw e;
-        }
-      }
-      cb(png);
-    }
-
-    if(options.canvg) {
-      out$.prepareSvg(el, options, convertToPng);
-    } else {
-      out$.svgAsDataUri(el, options, function(uri) {
-        var image = new Image();
-
-        image.onload = function() {
-          convertToPng(image, image.width, image.height);
-        }
-
-        image.onerror = function() {
-          console.error(
-            'There was an error loading the data URI as an image on the following SVG\n',
-            window.atob(uri.slice(26)), '\n',
-            "Open the following link to see browser's diagnosis\n",
-            uri);
-        }
-
-        image.src = uri;
-      });
-    }
-  }
-
-  out$.download = function(name, uri) {
-    if (navigator.msSaveOrOpenBlob) {
-      navigator.msSaveOrOpenBlob(uriToBlob(uri), name);
-    } else {
-      var saveLink = document.createElement('a');
-      var downloadSupported = 'download' in saveLink;
-      if (downloadSupported) {
-        saveLink.download = name;
-        saveLink.style.display = 'none';
-        document.body.appendChild(saveLink);
-        try {
-          var blob = uriToBlob(uri);
-          var url = URL.createObjectURL(blob);
-          saveLink.href = url;
-          saveLink.onclick = function() {
-            requestAnimationFrame(function() {
-              URL.revokeObjectURL(url);
-            })
-          };
-        } catch (e) {
-          console.warn('This browser does not support object URLs. Falling back to string URL.');
-          saveLink.href = uri;
-        }
-        saveLink.click();
-        document.body.removeChild(saveLink);
-      }
-      else {
-        window.open(uri, '_temp', 'menubar=no,toolbar=no,status=no');
-      }
-    }
-  }
-
-  function uriToBlob(uri) {
-    var byteString = window.atob(uri.split(',')[1]);
-    var mimeString = uri.split(',')[0].split(':')[1].split(';')[0]
-    var buffer = new ArrayBuffer(byteString.length);
-    var intArray = new Uint8Array(buffer);
-    for (var i = 0; i < byteString.length; i++) {
-      intArray[i] = byteString.charCodeAt(i);
-    }
-    return new Blob([buffer], {type: mimeString});
-  }
-
-  out$.saveSvg = function(el, name, options) {
-    requireDomNode(el);
-
-    options = options || {};
-    out$.svgAsDataUri(el, options, function(uri) {
-      out$.download(name, uri);
-    });
-  }
-
-  out$.saveSvgAsPng = function(el, name, options) {
-    requireDomNode(el);
-
-    options = options || {};
-    out$.svgAsPngUri(el, options, function(uri) {
-      out$.download(name, uri);
-    });
-  }
-
-  // if define is defined create as an AMD module
-  if (true) {
-    !(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
-      return out$;
-    }).call(exports, __webpack_require__, exports, module),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  }
-
-})();
-
-
-/***/ }),
-/* 1013 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-exports.default = fitWidth;
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(26);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-function getDisplayName(Series) {
-	var name = Series.displayName || Series.name || "Series";
-	return name;
-}
-
-function fitWidth(WrappedComponent) {
-	var withRef = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-	var minWidth = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 100;
-
-	var ResponsiveComponent = function (_Component) {
-		_inherits(ResponsiveComponent, _Component);
-
-		function ResponsiveComponent(props) {
-			_classCallCheck(this, ResponsiveComponent);
-
-			var _this = _possibleConstructorReturn(this, (ResponsiveComponent.__proto__ || Object.getPrototypeOf(ResponsiveComponent)).call(this, props));
-
-			_this.handleWindowResize = _this.handleWindowResize.bind(_this);
-			_this.getWrappedInstance = _this.getWrappedInstance.bind(_this);
-			_this.saveNode = _this.saveNode.bind(_this);
-			_this.setTestCanvas = _this.setTestCanvas.bind(_this);
-			_this.state = {};
-			return _this;
-		}
-
-		_createClass(ResponsiveComponent, [{
-			key: "saveNode",
-			value: function saveNode(node) {
-				this.node = node;
-			}
-		}, {
-			key: "setTestCanvas",
-			value: function setTestCanvas(node) {
-				this.testCanvas = node;
-			}
-		}, {
-			key: "getRatio",
-			value: function getRatio() {
-				if ((0, _utils.isDefined)(this.testCanvas)) {
-					var context = this.testCanvas.getContext("2d");
-
-					var devicePixelRatio = window.devicePixelRatio || 1;
-					var backingStoreRatio = context.webkitBackingStorePixelRatio || context.mozBackingStorePixelRatio || context.msBackingStorePixelRatio || context.oBackingStorePixelRatio || context.backingStorePixelRatio || 1;
-
-					var ratio = devicePixelRatio / backingStoreRatio;
-					// console.log("ratio = ", ratio);
-					return ratio;
-				}
-				return 1;
-			}
-		}, {
-			key: "componentDidMount",
-			value: function componentDidMount() {
-				window.addEventListener("resize", this.handleWindowResize);
-				var el = this.node;
-				var w = el.parentNode.clientWidth;
-
-				/* eslint-disable react/no-did-mount-set-state */
-				this.setState({
-					width: Math.max(w, minWidth),
-					ratio: this.getRatio()
-				});
-				/* eslint-enable react/no-did-mount-set-state */
-			}
-		}, {
-			key: "componentWillUnmount",
-			value: function componentWillUnmount() {
-				window.removeEventListener("resize", this.handleWindowResize);
-			}
-		}, {
-			key: "handleWindowResize",
-			value: function handleWindowResize() {
-				var el = _reactDom2.default.findDOMNode(this.node); // eslint-disable-line react/no-find-dom-node
-				var w = el.parentNode.clientWidth;
-
-				if (w > minWidth) {
-					this.setState({
-						width: w
-					});
-				}
-			}
-		}, {
-			key: "getWrappedInstance",
-			value: function getWrappedInstance() {
-				return this.node;
-			}
-		}, {
-			key: "render",
-			value: function render() {
-				var ref = withRef ? { ref: this.saveNode } : {};
-
-				if (this.state.width) {
-					return _react2.default.createElement(WrappedComponent, _extends({ width: this.state.width, ratio: this.state.ratio }, this.props, ref));
-				} else {
-					return _react2.default.createElement(
-						"div",
-						ref,
-						_react2.default.createElement("canvas", { ref: this.setTestCanvas })
-					);
-				}
-			}
-		}]);
-
-		return ResponsiveComponent;
-	}(_react.Component);
-
-	ResponsiveComponent.displayName = "fitWidth(" + getDisplayName(WrappedComponent) + ")";
-
-	return ResponsiveComponent;
-}
-//# sourceMappingURL=fitWidth.js.map
-
-/***/ }),
-/* 1014 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-exports.default = fitDimensions;
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(26);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-function getDisplayName(Series) {
-	var name = Series.displayName || Series.name || "Series";
-	return name;
-}
-
-function fitDimensions(WrappedComponent) {
-	var props = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-	var _props$minWidth = props.minWidth,
-	    minWidth = _props$minWidth === undefined ? 100 : _props$minWidth,
-	    _props$minHeight = props.minHeight,
-	    minHeight = _props$minHeight === undefined ? 100 : _props$minHeight,
-	    ratio = props.ratio,
-	    width = props.width,
-	    height = props.height;
-
-
-	function getDimensions(el) {
-		var w = el.parentNode.clientWidth;
-		var h = el.parentNode.clientHeight;
-
-		return {
-			width: (0, _utils.isDefined)(width) ? width : Math.max(w, minWidth),
-			height: (0, _utils.isDefined)(height) ? height : Math.max(h, minHeight)
-		};
-	}
-
-	var ResponsiveComponent = function (_Component) {
-		_inherits(ResponsiveComponent, _Component);
-
-		function ResponsiveComponent(props) {
-			_classCallCheck(this, ResponsiveComponent);
-
-			var _this = _possibleConstructorReturn(this, (ResponsiveComponent.__proto__ || Object.getPrototypeOf(ResponsiveComponent)).call(this, props));
-
-			_this.handleWindowResize = _this.handleWindowResize.bind(_this);
-			_this.getWrappedInstance = _this.getWrappedInstance.bind(_this);
-			_this.saveNode = _this.saveNode.bind(_this);
-			_this.setTestCanvas = _this.setTestCanvas.bind(_this);
-			_this.state = {};
-			return _this;
-		}
-
-		_createClass(ResponsiveComponent, [{
-			key: "saveNode",
-			value: function saveNode(node) {
-				this.node = node;
-			}
-		}, {
-			key: "setTestCanvas",
-			value: function setTestCanvas(node) {
-				this.testCanvas = node;
-			}
-		}, {
-			key: "getRatio",
-			value: function getRatio() {
-				if ((0, _utils.isDefined)(this.testCanvas)) {
-					var context = this.testCanvas.getContext("2d");
-
-					var devicePixelRatio = window.devicePixelRatio || 1;
-					var backingStoreRatio = context.webkitBackingStorePixelRatio || context.mozBackingStorePixelRatio || context.msBackingStorePixelRatio || context.oBackingStorePixelRatio || context.backingStorePixelRatio || 1;
-
-					var _ratio = devicePixelRatio / backingStoreRatio;
-					// console.log("ratio = ", ratio);
-					return _ratio;
-				}
-				return 1;
-			}
-		}, {
-			key: "componentDidMount",
-			value: function componentDidMount() {
-				window.addEventListener("resize", this.handleWindowResize);
-				var dimensions = getDimensions(this.node);
-
-				/* eslint-disable react/no-did-mount-set-state */
-				this.setState(_extends({}, dimensions, {
-					ratio: (0, _utils.isDefined)(ratio) ? ratio : this.getRatio()
-				}));
-				/* eslint-enable react/no-did-mount-set-state */
-			}
-		}, {
-			key: "componentWillUnmount",
-			value: function componentWillUnmount() {
-				window.removeEventListener("resize", this.handleWindowResize);
-			}
-		}, {
-			key: "handleWindowResize",
-			value: function handleWindowResize() {
-				var node = _reactDom2.default.findDOMNode(this.node); // eslint-disable-line react/no-find-dom-node
-				this.setState(getDimensions(node));
-			}
-		}, {
-			key: "getWrappedInstance",
-			value: function getWrappedInstance() {
-				return this.node;
-			}
-		}, {
-			key: "render",
-			value: function render() {
-				var ref = { ref: this.saveNode };
-
-				if (this.state.width) {
-					return _react2.default.createElement(WrappedComponent, _extends({
-						height: this.state.height,
-						width: this.state.width,
-						ratio: this.state.ratio
-					}, this.props, ref));
-				} else {
-					return _react2.default.createElement(
-						"div",
-						ref,
-						_react2.default.createElement("canvas", { ref: this.setTestCanvas })
-					);
-				}
-			}
-		}]);
-
-		return ResponsiveComponent;
-	}(_react.Component);
-
-	ResponsiveComponent.displayName = "fitDimensions(" + getDisplayName(WrappedComponent) + ")";
-
-	return ResponsiveComponent;
-}
-//# sourceMappingURL=fitDimensions.js.map
 
 /***/ }),
 /* 1015 */
@@ -92222,7 +92464,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _reactRedux = __webpack_require__(37);
+var _reactRedux = __webpack_require__(39);
 
 var _session_actions = __webpack_require__(56);
 
@@ -92416,7 +92658,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _reactRedux = __webpack_require__(37);
+var _reactRedux = __webpack_require__(39);
 
 var _session_actions = __webpack_require__(56);
 
@@ -92637,7 +92879,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _reactRedux = __webpack_require__(37);
+var _reactRedux = __webpack_require__(39);
 
 var _session_actions = __webpack_require__(56);
 
@@ -92794,7 +93036,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _reactRedux = __webpack_require__(37);
+var _reactRedux = __webpack_require__(39);
 
 var _session_actions = __webpack_require__(56);
 
@@ -93023,7 +93265,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _reactRedux = __webpack_require__(37);
+var _reactRedux = __webpack_require__(39);
 
 var _session_actions = __webpack_require__(56);
 
@@ -93147,203 +93389,6 @@ var NavBar = function NavBar(_ref) {
 };
 
 exports.default = NavBar;
-
-/***/ }),
-/* 1027 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(26);
-
-var _candle_stick_chart = __webpack_require__(1028);
-
-var _candle_stick_chart2 = _interopRequireDefault(_candle_stick_chart);
-
-var _helper = __webpack_require__(378);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ChartComponent = function (_React$Component) {
-  _inherits(ChartComponent, _React$Component);
-
-  function ChartComponent(props) {
-    _classCallCheck(this, ChartComponent);
-
-    return _possibleConstructorReturn(this, (ChartComponent.__proto__ || Object.getPrototypeOf(ChartComponent)).call(this, props));
-  }
-
-  _createClass(ChartComponent, [{
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      console.log("CHARTPROPS", this.props);
-      return _react2.default.createElement(
-        _helper.TypeChooser,
-        null,
-        function (type) {
-          return _react2.default.createElement(
-            "div",
-            null,
-            _react2.default.createElement(_candle_stick_chart2.default, {
-              type: type,
-              data: _this2.props.stocks[_this2.props.symbol].chart,
-              ratio: 2
-            })
-          );
-        }
-      );
-    }
-  }]);
-
-  return ChartComponent;
-}(_react2.default.Component);
-
-exports.default = ChartComponent;
-
-/***/ }),
-/* 1028 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(2);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _d = __webpack_require__(265);
-
-var d3 = _interopRequireWildcard(_d);
-
-var _d3Time = __webpack_require__(80);
-
-var _d3Scale = __webpack_require__(61);
-
-var _d3TimeFormat = __webpack_require__(117);
-
-var _reactStockcharts = __webpack_require__(959);
-
-var _series = __webpack_require__(978);
-
-var _axes = __webpack_require__(1006);
-
-var _helper = __webpack_require__(378);
-
-var _utils = __webpack_require__(7);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var AreaChart = function (_React$Component) {
-  _inherits(AreaChart, _React$Component);
-
-  function AreaChart() {
-    _classCallCheck(this, AreaChart);
-
-    return _possibleConstructorReturn(this, (AreaChart.__proto__ || Object.getPrototypeOf(AreaChart)).apply(this, arguments));
-  }
-
-  _createClass(AreaChart, [{
-    key: "render",
-    value: function render() {
-      var _props = this.props,
-          data = _props.data,
-          type = _props.type,
-          width = _props.width,
-          ratio = _props.ratio;
-
-      var xAccessor = function xAccessor(d) {
-        var formatter = (0, _d3TimeFormat.timeParse)("%Y-%m-%d");
-        return formatter(d.date);
-      };
-      var xExtents = [xAccessor((0, _utils.last)(data)), xAccessor(data[data.length - 100])];
-      console.log("CHARTTTPROPS", this.props);
-      return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(
-          _reactStockcharts.ChartCanvas,
-          {
-            ratio: ratio,
-            width: width,
-            height: 600,
-            margin: { left: 50, right: 50, top: 10, bottom: 30 },
-            seriesName: "MSFT",
-            data: data,
-            type: type,
-            xAccessor: xAccessor,
-            xScale: (0, _d3Scale.scaleTime)(),
-            xExtents: xExtents,
-            zoomEvent: false,
-            clamp: true,
-            className: "react-stock-chart"
-          },
-          _react2.default.createElement(
-            _reactStockcharts.Chart,
-            { id: 0, yExtents: function yExtents(d) {
-                return [d.high, d.low];
-              } },
-            _react2.default.createElement(_axes.XAxis, { axisAt: "bottom", orient: "bottom", ticks: 6 }),
-            _react2.default.createElement(_axes.YAxis, { axisAt: "left", orient: "left", ticks: 10 }),
-            _react2.default.createElement(_series.CandlestickSeries, { width: (0, _utils.timeIntervalBarWidth)(_d3Time.utcDay) })
-          )
-        )
-      );
-    }
-  }]);
-
-  return AreaChart;
-}(_react2.default.Component);
-
-AreaChart.propTypes = {
-  data: _propTypes2.default.array.isRequired,
-  width: _propTypes2.default.number.isRequired,
-  ratio: _propTypes2.default.number.isRequired,
-  type: _propTypes2.default.oneOf(["svg", "hybrid"]).isRequired
-};
-
-AreaChart.defaultProps = {
-  type: "svg"
-};
-AreaChart = (0, _helper.fitWidth)(AreaChart);
-
-exports.default = AreaChart;
 
 /***/ })
 /******/ ]);

@@ -52248,7 +52248,7 @@ var StockShow = function (_React$Component) {
 								{ id: "news-index" },
 								_react2.default.createElement(
 									_reactCollapsible2.default,
-									{ trigger: "NEWS ARTICLES" },
+									{ trigger: "Recent News Articles" },
 									recentNews.map(function (news) {
 										return _react2.default.createElement(_news_index_item2.default, { key: news.datetime, news: news });
 									})
@@ -52257,14 +52257,13 @@ var StockShow = function (_React$Component) {
 						),
 						_react2.default.createElement(
 							_reactCollapsible2.default,
-							{ trigger: "Tweets" },
+							{ trigger: "What are people saying on Twitter?" },
 							_react2.default.createElement(
 								"div",
 								{ className: "stock-tweets" },
 								_react2.default.createElement(
 									"ul",
 									{ id: "tweets-index" },
-									"What are people saying on twitter?",
 									tweets.map(function (tweet) {
 										return _react2.default.createElement(_tweets_index_item2.default, { key: tweet.created_at, tweet: tweet });
 									})
@@ -70370,11 +70369,23 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var TweetIndexItem = function TweetIndexItem(_ref) {
   var tweet = _ref.tweet;
 
+
+  var computedTime = function computedTime(time) {
+    var parsed = Date.parse(time);
+    var now = Date.now();
+    return Math.round(parsed / (1000 * 60 * 60) % 24);
+  };
+  var timeOf = tweet.created_at;
   return _react2.default.createElement(
     "li",
-    null,
+    { className: "tweet-index-item" },
     tweet.full_text,
     _react2.default.createElement("br", null),
+    "-",
+    tweet.user.name,
+    "\xA0",
+    computedTime(timeOf),
+    "H\xA0ago",
     _react2.default.createElement("br", null)
   );
 };
@@ -93331,7 +93342,7 @@ var sessionLinks = function sessionLinks() {
       ),
       _react2.default.createElement(
         _reactRouterDom.Link,
-        { className: "login", to: "login" },
+        { className: "login", to: "/login/" },
         "Log In"
       )
     )

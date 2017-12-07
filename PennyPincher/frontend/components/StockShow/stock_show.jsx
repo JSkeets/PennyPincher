@@ -118,17 +118,17 @@ class StockShow extends React.Component {
 			<div className="tweets-news-wrapper">
 					<div className="stock-news">
 						<ul id="news-index">
-				<Collapsible trigger="NEWS ARTICLES">
+				<Collapsible trigger="Recent News Articles">
 							{recentNews.map(news => (
 								<NewsIndexItem key={news.datetime} news={news} />
 							))}
 				</Collapsible>
 						</ul>
 					</div>
-				<Collapsible trigger="Tweets">
+				<Collapsible trigger="What are people saying on Twitter?">
 					<div className="stock-tweets">
 					<ul id="tweets-index">
-						What are people saying on twitter?
+
 						{tweets.map(tweet => (
 							<TweetsIndexItem key={tweet.created_at} tweet={tweet} />
 						))}

@@ -43,7 +43,7 @@
 //The content within the collaspable area
 .Collapsible__contentInner {
   padding: 10px;
-  border: 1px solid red;
+  border: 1px solid #626868;
   border-top: 0;
 
   p {
@@ -70,7 +70,8 @@
 //   background:#D9D7DD;
 //    background:#38686A;
 //    background:#fc5130;
-   background:#998888;
+//    background:#998888;
+   background:#626868;
 
   color: white;
 
@@ -98,7 +99,7 @@
 }
 
 .CustomTriggerCSS {
-  background-color: lightcoral;
+  background-color: #626868;
   transition: background-color 200ms ease;
   
   
@@ -181,4 +182,16 @@ td {
 }
 #news-header {
 	border-width: 0.5px;
+}
+
+
+.tweet-index-item,
+.news-index-item{
+	border-style:solid;
+	border-width:0.5px;
+	border-color:black;
+	padding:5px;
+	font-size:17px;
+	margin:5px;
+	background-color: white;
 }

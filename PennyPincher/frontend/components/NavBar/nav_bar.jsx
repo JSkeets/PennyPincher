@@ -10,7 +10,7 @@ const sessionLinks = () => (
 				<h1 className="name">Penny Pincher</h1>
 			</Link>
 
-			<Link className="login" to="login">
+			<Link className="login" to="/login/">
 				Log In
 			</Link>
 		</div>

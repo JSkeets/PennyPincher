@@ -51198,7 +51198,12 @@ var App = function App() {
       "div",
       { className: "stock-show-page" },
       _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/stocks/:stockTicker", component: _stock_show_container2.default }),
-      _react2.default.createElement("div", { className: "stock-show-chart" })
+      _react2.default.createElement(
+        "div",
+        { className: "stock-show-chart" },
+        _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/stocks/:stockTicker", component: _chart_container2.default }),
+        ";"
+      )
     ),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/forgot", component: _forgot_password_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/emailsent", component: _emailsent2.default }),
@@ -51207,7 +51212,6 @@ var App = function App() {
 };
 
 exports.default = App;
-//  <Route exact path="/stocks/:stockTicker" component={ChartContainer} />;
 
 /***/ }),
 /* 600 */
@@ -51500,26 +51504,30 @@ var StockShow = function (_React$Component) {
 				),
 				_react2.default.createElement(
 					"div",
-					{ className: "stock-news" },
+					{ className: "tweets-news-wrapper" },
 					_react2.default.createElement(
-						"ul",
-						{ id: "news-index" },
-						"NEWS ARTICLES",
-						recentNews.map(function (news) {
-							return _react2.default.createElement(_news_index_item2.default, { key: news.datetime, news: news });
-						})
-					)
-				),
-				_react2.default.createElement(
-					"div",
-					{ className: "stock-tweets" },
+						"div",
+						{ className: "stock-news" },
+						_react2.default.createElement(
+							"ul",
+							{ id: "news-index" },
+							"NEWS ARTICLES",
+							recentNews.map(function (news) {
+								return _react2.default.createElement(_news_index_item2.default, { key: news.datetime, news: news });
+							})
+						)
+					),
 					_react2.default.createElement(
-						"ul",
-						{ id: "tweets-index" },
-						"What are people saying on twitter?",
-						tweets.map(function (tweet) {
-							return _react2.default.createElement(_tweets_index_item2.default, { key: tweet.created_at, tweet: tweet });
-						})
+						"div",
+						{ className: "stock-tweets" },
+						_react2.default.createElement(
+							"ul",
+							{ id: "tweets-index" },
+							"What are people saying on twitter?",
+							tweets.map(function (tweet) {
+								return _react2.default.createElement(_tweets_index_item2.default, { key: tweet.created_at, tweet: tweet });
+							})
+						)
 					)
 				)
 			);
@@ -81047,7 +81055,7 @@ var ChartComponent = function (_React$Component) {
 						_react2.default.createElement(_candle_stick_chart2.default, {
 							type: type,
 							data: _this2.props.stocks[_this2.props.symbol].chart,
-							width: 200,
+							width: 100,
 							ratio: 2
 						})
 					);
@@ -81143,7 +81151,7 @@ var AreaChart = function (_React$Component) {
 					_reactStockcharts.ChartCanvas,
 					{
 						ratio: ratio,
-						width: 900,
+						width: 2000,
 						height: 600,
 						margin: { left: 50, right: 50, top: 10, bottom: 30 },
 						seriesName: "MSFT",

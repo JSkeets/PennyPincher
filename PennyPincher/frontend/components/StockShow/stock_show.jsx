@@ -108,6 +108,7 @@ class StockShow extends React.Component {
 									<i>{recentNews.length}</i>
 								</div>
 				</div>
+			<div className="tweets-news-wrapper">
 				<div className="stock-news">
 				<ul id="news-index">
 					NEWS ARTICLES
@@ -124,7 +125,7 @@ class StockShow extends React.Component {
 					))}
 				</ul>
 				</div>
-
+			</div>
 			</div>
 		);
 	}

@@ -16,6 +16,7 @@
 }
 .stock-show-page {
 	display: flex;
+	flex-direction: column;
 }
 .stock-show-chart {
 	display: flex;
@@ -39,8 +40,13 @@
 	border-top: none;
 }
 
+.tweets-news-wrapper {
+	display: flex;
+}
+
 #news-index {
-	display: table-row;
+	display: flex;
+	flex-direction: column;
 	vertical-align: bottom;
 	height: 1px;
 }

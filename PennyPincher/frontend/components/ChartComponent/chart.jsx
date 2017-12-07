@@ -11,6 +11,7 @@ class ChartComponent extends React.Component {
 	componentDidMount() {
 		this.props.fetchStock(this.props.symbol);
 	}
+	
 	render() {
 		if (this.props.stocks[this.props.symbol] == null) {
 			return <div>Loading...</div>;
@@ -22,7 +23,7 @@ class ChartComponent extends React.Component {
 						<Chart
 							type={type}
 							data={this.props.stocks[this.props.symbol].chart}
-							width={200}
+							width={100}
 							ratio={2}
 						/>
 					</div>

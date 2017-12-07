@@ -23,10 +23,10 @@ const App = () => (
     <Route exact path="/login" component={LoginFormContainer} />
     <Route exact path="/thankyou" component={ThankYou} />
     <div className="stock-show-page">
-          <Route exact path="/stocks/:stockTicker" component={StockShowContainer} />
-        <div className="stock-show-chart">
-         
-        </div>
+      <Route exact path="/stocks/:stockTicker" component={StockShowContainer} />
+      <div className="stock-show-chart">
+        <Route exact path="/stocks/:stockTicker" component={ChartContainer} />;
+      </div>
     </div>
     <Route exact path="/forgot" component={ForgotPassword} />
     <Route exact path="/emailsent" component={EmailSent} />
@@ -35,4 +35,3 @@ const App = () => (
 );
 
 export default App;
-//  <Route exact path="/stocks/:stockTicker" component={ChartContainer} />;

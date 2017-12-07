@@ -48105,7 +48105,6 @@ var createUser = exports.createUser = function createUser(user) {
     url: "/api/users",
     data: { user: user },
     success: function success(response) {
-      console.log("Response is ", response);
       //When we get 200, this function should execute
       window.location.href = "/#/thankyou";
     },
@@ -70419,7 +70418,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var ReviewIndexItem = function ReviewIndexItem(_ref) {
 	var peer = _ref.peer;
 
-	console.log(peer);
 	return _react2.default.createElement("li", { className: "news-index-item" });
 };
 
@@ -70472,7 +70470,6 @@ var ChartComponent = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      console.log("CHARTPROPS", this.props);
       return _react2.default.createElement(
         _helper.TypeChooser,
         null,
@@ -70570,7 +70567,6 @@ var AreaChart = function (_React$Component) {
         return formatter(d.date);
       };
       var xExtents = [xAccessor((0, _utils.last)(data)), xAccessor(data[data.length - 100])];
-      console.log("CHARTTTPROPS", this.props);
       return _react2.default.createElement(
         "div",
         null,
@@ -81247,8 +81243,6 @@ var StockIndex = function (_React$Component) {
         );
       } else {
         this.addPercents();
-        console.log("STOCKSIFO", this.props.stocksInfo);
-        console.log("STOCKS", this.props.stocks);
         return _react2.default.createElement(
           "div",
           null,
@@ -92578,20 +92572,25 @@ var LoginForm = function (_React$Component) {
         " New? Sign Up!"
       );
     }
-
-    //   renderErrors() {
-    //     return (
-    //       <ul className="session-errors">
-    //         {this.props.errors.map((error, i) => (
-    //           <li key={`error-${i}`}>{error}</li>
-    //         ))}
-    //       </ul>
-    //     );
-    //   }
-
+  }, {
+    key: "renderErrors",
+    value: function renderErrors() {
+      return _react2.default.createElement(
+        "ul",
+        { className: "session-errors" },
+        this.props.errors.map(function (error, i) {
+          return _react2.default.createElement(
+            "li",
+            { key: "error-" + i },
+            error
+          );
+        })
+      );
+    }
   }, {
     key: "render",
     value: function render() {
+      console.log(this.props);
       return _react2.default.createElement(
         "div",
         { className: "login-page" },

@@ -34,23 +34,25 @@ class LoginForm extends React.Component {
     return <Link to="/signup"> New? Sign Up!</Link>;
   }
 
-//   renderErrors() {
-//     return (
-//       <ul className="session-errors">
-//         {this.props.errors.map((error, i) => (
-//           <li key={`error-${i}`}>{error}</li>
-//         ))}
-//       </ul>
-//     );
-//   }
+  renderErrors() {
+    return (
+      <ul className="session-errors">
+        {this.props.errors.map((error, i) => (
+          <li key={`error-${i}`}>{error}</li>
+        ))}
+      </ul>
+    );
+  }
 
   render() {
+    console.log(this.props);
     return <div className="login-page">
         <div className="form">
           <form onSubmit={this.handleSubmit} className="login-form">
             <i> Welcome to Penny Pincher </i>
             <br />
             <i>Please Log In </i>
+            
             <br />
             <div className="login-form">
               <br />

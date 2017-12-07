@@ -17,7 +17,6 @@ export const createUser = (user) =>(
     url: "/api/users",
     data: {user},
     success: function(response) {
-    console.log("Response is ", response);
     //When we get 200, this function should execute
     window.location.href = "/#/thankyou";
   },

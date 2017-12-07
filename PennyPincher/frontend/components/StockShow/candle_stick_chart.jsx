@@ -22,7 +22,6 @@ class AreaChart extends React.Component {
       xAccessor(last(data)),
       xAccessor(data[data.length - 100])
     ];
-    console.log("CHARTTTPROPS",this.props);
     return (
       <div>
         <ChartCanvas

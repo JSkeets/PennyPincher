@@ -83,8 +83,6 @@ class StockIndex extends React.Component {
 		  return <div className="loader">Loading...</div>;
     } else {
     this.addPercents();
-    console.log("STOCKSIFO",this.props.stocksInfo);
-    console.log("STOCKS", this.props.stocks);
 	  return <div>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css" />

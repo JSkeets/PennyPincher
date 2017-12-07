@@ -11,7 +11,6 @@ class ChartComponent extends React.Component {
 
 
   render() {
-      console.log("CHARTPROPS",this.props);
     return (
       <TypeChooser>
         {type => (

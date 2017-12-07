@@ -4,7 +4,9 @@ import d3 from "d3";
 import NewsIndexItem from "./news_index_item";
 import TweetsIndexItem from "./tweets_index_item";
 import PeerIndexItem from "./peer_index_item";
+import ChartComponent from "./chart_component";
 import ReactGA from "react-ga"; // https://github.com/react-ga/react-ga
+
 
 class StockShow extends React.Component {
 	constructor(props) {
@@ -68,6 +70,7 @@ class StockShow extends React.Component {
 		return news;
 	}
 	render() {
+		console.log("PROPS",this.props);
 		let symbol = this.props.symbol;
 		if (!this.props.stocks[symbol]) {
 			return null;
@@ -76,8 +79,7 @@ class StockShow extends React.Component {
 		let tweets = this.props.tweets[symbol].statuses;
 		let percStyle = this.percentUp();
 		console.log("PROPS",this.props);
-		return (
-			<div className="stock-show">
+		return (<div>
 							<div className="stock-basic-info">
 								<div id="symbol">
 									<i>Symbol</i>
@@ -107,7 +109,11 @@ class StockShow extends React.Component {
 									<i>Articles in the Last 5 Days</i>
 									<i>{recentNews.length}</i>
 								</div>
-				</div>
+								</div>
+							<div className="chart-tweet-wrapper">
+								<div className="chart-wrapper">
+									<ChartComponent stocks={this.props.stocks} symbol={this.props.stocks[symbol].quote.symbol} />
+								</div>
 			<div className="tweets-news-wrapper">
 				<div className="stock-news">
 				<ul id="news-index">
@@ -127,6 +133,7 @@ class StockShow extends React.Component {
 				</div>
 			</div>
 			</div>
+		</div>
 		);
 	}
 }

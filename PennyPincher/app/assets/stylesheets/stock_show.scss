@@ -47,6 +47,7 @@
 
 .tweets-news-wrapper {
 	display: flex;
+	flex-direction: column-reverse;
 }
 
 #news-index {

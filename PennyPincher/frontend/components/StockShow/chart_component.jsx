@@ -19,7 +19,6 @@ class ChartComponent extends React.Component {
             <Chart
               type={type}
               data={this.props.stocks[this.props.symbol].chart}
-              width={100}
               ratio={2}
             />
           </div>

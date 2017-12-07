@@ -93206,7 +93206,6 @@ var ChartComponent = function (_React$Component) {
             _react2.default.createElement(_candle_stick_chart2.default, {
               type: type,
               data: _this2.props.stocks[_this2.props.symbol].chart,
-              width: 100,
               ratio: 2
             })
           );
@@ -93294,7 +93293,7 @@ var AreaChart = function (_React$Component) {
         return formatter(d.date);
       };
       var xExtents = [xAccessor((0, _utils.last)(data)), xAccessor(data[data.length - 100])];
-
+      console.log("CHARTTTPROPS", this.props);
       return _react2.default.createElement(
         "div",
         null,
@@ -93302,7 +93301,7 @@ var AreaChart = function (_React$Component) {
           _reactStockcharts.ChartCanvas,
           {
             ratio: ratio,
-            width: 2000,
+            width: width,
             height: 600,
             margin: { left: 50, right: 50, top: 10, bottom: 30 },
             seriesName: "MSFT",
@@ -93311,6 +93310,8 @@ var AreaChart = function (_React$Component) {
             xAccessor: xAccessor,
             xScale: (0, _d3Scale.scaleTime)(),
             xExtents: xExtents,
+            zoomEvent: false,
+            clamp: true,
             className: "react-stock-chart"
           },
           _react2.default.createElement(

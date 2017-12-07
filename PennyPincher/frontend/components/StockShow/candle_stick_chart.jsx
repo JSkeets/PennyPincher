@@ -22,12 +22,12 @@ class AreaChart extends React.Component {
       xAccessor(last(data)),
       xAccessor(data[data.length - 100])
     ];
-
+    console.log("CHARTTTPROPS",this.props);
     return (
       <div>
         <ChartCanvas
           ratio={ratio}
-          width={2000}
+          width={width}
           height={600}
           margin={{ left: 50, right: 50, top: 10, bottom: 30 }}
           seriesName="MSFT"
@@ -36,6 +36,8 @@ class AreaChart extends React.Component {
           xAccessor={xAccessor}
           xScale={scaleTime()}
           xExtents={xExtents}
+          zoomEvent={false}
+          clamp={true}
           className="react-stock-chart"
         >
           <Chart id={0} yExtents={d => [d.high, d.low]}>

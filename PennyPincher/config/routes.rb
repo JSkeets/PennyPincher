@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :users, only: [:create,:index,:show]
     resource :session, only: [:create,:destroy]
   end
-  resources :watchlist, only: [:show,:create,:destroy,:edit,:update]
+  resources :watchlists, only: [:show,:create,:destroy,:edit,:update]
   resources :stocks, only: [:index,:show]
   resources :tweets, only: [:show]
   resources :password_resets,only: [:new, :create, :edit, :update]

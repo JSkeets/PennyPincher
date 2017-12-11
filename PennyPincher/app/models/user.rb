@@ -30,6 +30,8 @@ class User < ApplicationRecord
   after_initialize :ensure_session_token
   attr_accessor :activation_token, :reset_token
 
+  has_one :watchlist
+
   attr_reader :password
 
    def create_activation_digest

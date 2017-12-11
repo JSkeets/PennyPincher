@@ -71,7 +71,7 @@ class StockShow extends React.Component {
 		return news;
 	}
 	render() {
-		console.log("PROPS",this.props);
+
 		let symbol = this.props.symbol;
 		if (!this.props.stocks[symbol]) {
 			return null;
@@ -79,7 +79,7 @@ class StockShow extends React.Component {
 		let recentNews = this.recentNews();
 		let tweets = this.props.tweets[symbol].statuses;
 		let percStyle = this.percentUp();
-		console.log("PROPS",this.props);
+
 		return (<div>
 							<div className="stock-basic-info">
 								<div id="symbol">

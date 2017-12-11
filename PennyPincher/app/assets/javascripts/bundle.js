@@ -52114,7 +52114,7 @@ var StockShow = function (_React$Component) {
 	}, {
 		key: "render",
 		value: function render() {
-			console.log("PROPS", this.props);
+
 			var symbol = this.props.symbol;
 			if (!this.props.stocks[symbol]) {
 				return null;
@@ -52122,7 +52122,7 @@ var StockShow = function (_React$Component) {
 			var recentNews = this.recentNews();
 			var tweets = this.props.tweets[symbol].statuses;
 			var percStyle = this.percentUp();
-			console.log("PROPS", this.props);
+
 			return _react2.default.createElement(
 				"div",
 				null,

@@ -13,7 +13,7 @@ class Watchlist extends React.Component {
     ReactGA.initialize("UA-107597692-1");
     // This just needs to be called once since we have no routes in this case.
     ReactGA.pageview(window.location.pathname);
-    this.state = { yes: "no", loading: true };
+    this.state = { yes: "no", loading: true,stocks:[] };
 
     this.handleBtnClick = this.handleBtnClick.bind(this);
     this.colFormatter = this.colFormatter.bind(this);
@@ -23,7 +23,7 @@ class Watchlist extends React.Component {
 
 
   componentDidMount() {
-    setTimeout(() => this.setState({ loading: false }), 3000);
+    setTimeout(() => this.setState({ loading: false }), 5000);
   }
 
 
@@ -65,13 +65,19 @@ class Watchlist extends React.Component {
     }
   }
 
+ 
+
   render() {
     if (this.state.loading) {
       return <div className="loader">Loading...</div>;
     } else {
       console.log(this.props);
+      console.log(this.props.stocks["AAPL"]);
+      let parsed = Object.values(this.props.stocks);
+      debugger;
       return (
         <div>
+
           <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
@@ -80,7 +86,7 @@ class Watchlist extends React.Component {
             rel="stylesheet"
             href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css"
           />
-          <BootstrapTable ref="table" data={this.props.stocks}>
+          <BootstrapTable ref="table" data={parsed}>
             <TableHeaderColumn
               dataField="symbol"
               isKey={true}
@@ -98,14 +104,13 @@ class Watchlist extends React.Component {
             <TableHeaderColumn
               dataField="percentChange"
               dataSort={true}
-              dataFormat={this.percentFormatter}
+
             >
               Percent Change
             </TableHeaderColumn>
             <TableHeaderColumn
               dataField="float"
               dataSort={true}
-              dataFormat={this.floatFormatter}
             >
               Float
             </TableHeaderColumn>

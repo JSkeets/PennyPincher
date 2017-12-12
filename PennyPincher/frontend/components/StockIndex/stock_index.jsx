@@ -82,7 +82,6 @@ class StockIndex extends React.Component {
 	  if (this.state.loading) {
 		  return <div className="loader">Loading...</div>;
     } else {
-      debugger;
     this.addPercents();
 	  return <div>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />

@@ -70,5 +70,6 @@ export const watchlistStocks = state => {
       });
     }
   );
-  return [quotes];
+  return quotes;
 };
+

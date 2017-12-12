@@ -55,3 +55,20 @@ export const stockInfo = state => {
 	});
 	return quotes;
 };
+
+export const watchlistStocks = state => {
+  let quotes = {};
+  state.entities.watchlist[`${state.session.currentUser.id}`].forEach(
+    stock => {
+      let x = $.ajax({
+        method: "GET",
+        url: `https://api.iextrading.com/1.0/stock/${
+          stock
+        }/batch?types=quote,stats,news,peers,chart&range=6m&last=50`
+      }).then(res => {
+        quotes = merge(quotes, { [res.quote.symbol]: res });
+      });
+    }
+  );
+  return [quotes];
+};

@@ -45896,11 +45896,16 @@ var _tweets_reducer = __webpack_require__(562);
 
 var _tweets_reducer2 = _interopRequireDefault(_tweets_reducer);
 
+var _watchlist_reducer = __webpack_require__(1027);
+
+var _watchlist_reducer2 = _interopRequireDefault(_watchlist_reducer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var EntitiesReducer = (0, _redux.combineReducers)({
 	stocks: _stocks_reducer2.default,
-	tweets: _tweets_reducer2.default
+	tweets: _tweets_reducer2.default,
+	watchlist: _watchlist_reducer2.default
 });
 
 exports.default = EntitiesReducer;
@@ -51897,6 +51902,10 @@ var _emailsent = __webpack_require__(1024);
 
 var _emailsent2 = _interopRequireDefault(_emailsent);
 
+var _watchlist_container = __webpack_require__(1030);
+
+var _watchlist_container2 = _interopRequireDefault(_watchlist_container);
+
 var _navbar_container = __webpack_require__(1025);
 
 var _navbar_container2 = _interopRequireDefault(_navbar_container);
@@ -51915,6 +51924,7 @@ var App = function App() {
     { className: "app" },
     _react2.default.createElement(_navbar_container2.default, null),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: _stock_index_container2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/watchlist", component: _watchlist_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/signup", component: _signup_form_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/login", component: _login_form_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/thankyou", component: _thankyou2.default }),
@@ -81242,6 +81252,7 @@ var StockIndex = function (_React$Component) {
           "Loading..."
         );
       } else {
+        debugger;
         this.addPercents();
         return _react2.default.createElement(
           "div",
@@ -92215,15 +92226,15 @@ var _temp = function () {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.stockInfo = exports.selectAllStocks = undefined;
+exports.watchlistStocks = exports.stockInfo = exports.selectAllStocks = undefined;
 
 var _values = __webpack_require__(1009);
 
 var _values2 = _interopRequireDefault(_values);
 
-var _merge2 = __webpack_require__(142);
+var _merge3 = __webpack_require__(142);
 
-var _merge3 = _interopRequireDefault(_merge2);
+var _merge4 = _interopRequireDefault(_merge3);
 
 var _stock_actions = __webpack_require__(54);
 
@@ -92269,10 +92280,23 @@ var stockInfo = exports.stockInfo = function stockInfo(state) {
 			method: "GET",
 			url: "https://api.iextrading.com/1.0/stock/" + stock.symbol + "/batch?types=quote,stats,news,peers,chart&range=6m&last=50"
 		}).then(function (res) {
-			quotes = (0, _merge3.default)(quotes, _defineProperty({}, res.quote.symbol, res));
+			quotes = (0, _merge4.default)(quotes, _defineProperty({}, res.quote.symbol, res));
 		});
 	});
 	return quotes;
+};
+
+var watchlistStocks = exports.watchlistStocks = function watchlistStocks(state) {
+	var quotes = {};
+	state.entities.watchlist["" + state.session.currentUser.id].forEach(function (stock) {
+		var x = $.ajax({
+			method: "GET",
+			url: "https://api.iextrading.com/1.0/stock/" + stock + "/batch?types=quote,stats,news,peers,chart&range=6m&last=50"
+		}).then(function (res) {
+			quotes = (0, _merge4.default)(quotes, _defineProperty({}, res.quote.symbol, res));
+		});
+	});
+	return [quotes];
 };
 
 /***/ }),
@@ -92473,6 +92497,8 @@ var _reactRedux = __webpack_require__(39);
 
 var _session_actions = __webpack_require__(56);
 
+var _watchlist_actions = __webpack_require__(1028);
+
 var _login_form = __webpack_require__(1016);
 
 var _login_form2 = _interopRequireDefault(_login_form);
@@ -92489,7 +92515,11 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
     processForm: function processForm(user) {
       return dispatch((0, _session_actions.login)(user));
+    },
+    fetchWatchlist: function fetchWatchlist(id) {
+      return dispatch((0, _watchlist_actions.fetchWatchlist)(id));
     }
+
   };
 };
 
@@ -92562,6 +92592,7 @@ var LoginForm = function (_React$Component) {
       e.preventDefault();
       var user = this.state;
       this.props.processForm(user);
+      this.props.fetchWatchlist(1);
     }
   }, {
     key: "navLink",
@@ -93399,6 +93430,324 @@ var NavBar = function NavBar(_ref) {
 };
 
 exports.default = NavBar;
+
+/***/ }),
+/* 1027 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _watchlist_actions = __webpack_require__(1028);
+
+var _merge2 = __webpack_require__(142);
+
+var _merge3 = _interopRequireDefault(_merge2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var WatchlistReducer = function WatchlistReducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var action = arguments[1];
+
+  Object.freeze(state);
+  var newState = {};
+  switch (action.type) {
+    case _watchlist_actions.RECEIVE_WATCHLIST:
+      return (0, _merge3.default)({}, state, _defineProperty({}, action.watchlist.user_id, action.watchlist.stock_symbols));
+    default:
+      return state;
+  }
+};
+
+exports.default = WatchlistReducer;
+
+/***/ }),
+/* 1028 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.fetchWatchlist = exports.RECEIVE_WATCHLIST = undefined;
+
+var _watchlist_api_util = __webpack_require__(1029);
+
+var WatchlistUtil = _interopRequireWildcard(_watchlist_api_util);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+var RECEIVE_WATCHLIST = exports.RECEIVE_WATCHLIST = "RECEIVE_WATCHLIST";
+
+var receiveWatchlist = function receiveWatchlist(watchlist) {
+  return { type: RECEIVE_WATCHLIST, watchlist: watchlist };
+};
+
+var fetchWatchlist = exports.fetchWatchlist = function fetchWatchlist(watchlist) {
+  return function (dispatch) {
+    return WatchlistUtil.fetchWatchlist(watchlist).then(function (res) {
+      return dispatch(receiveWatchlist(res));
+    });
+  };
+};
+
+/***/ }),
+/* 1029 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var fetchWatchlist = exports.fetchWatchlist = function fetchWatchlist(id) {
+  return $.ajax({
+    method: "GET",
+    url: "/watchlists/" + id
+  });
+};
+
+/***/ }),
+/* 1030 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _reactRedux = __webpack_require__(39);
+
+var _watchlist = __webpack_require__(1031);
+
+var _watchlist2 = _interopRequireDefault(_watchlist);
+
+var _stock_actions = __webpack_require__(54);
+
+var _selectors = __webpack_require__(1008);
+
+var _watchlist_actions = __webpack_require__(1028);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var mapStateToProps = function mapStateToProps(state, ownProps) {
+  return {
+    stocks: (0, _selectors.watchlistStocks)(state)
+  };
+};
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return {
+    fetchAllStocks: function fetchAllStocks() {
+      return dispatch((0, _stock_actions.fetchAllStocks)());
+    },
+    fetchStock: function fetchStock(symbol) {
+      return dispatch((0, _stock_actions.fetchStock)(symbol));
+    }
+  };
+};
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_watchlist2.default);
+
+/***/ }),
+/* 1031 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _json2csv = __webpack_require__(264);
+
+var _json2csv2 = _interopRequireDefault(_json2csv);
+
+var _reactGa = __webpack_require__(359);
+
+var _reactGa2 = _interopRequireDefault(_reactGa);
+
+var _reactRouterDom = __webpack_require__(19);
+
+var _reactBootstrapTable = __webpack_require__(969);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // https://github.com/react-ga/react-ga
+
+var order = "desc";
+
+var Watchlist = function (_React$Component) {
+  _inherits(Watchlist, _React$Component);
+
+  function Watchlist(props) {
+    _classCallCheck(this, Watchlist);
+
+    // Add your tracking ID created from https://analytics.google.com/analytics/web/#home/
+    var _this = _possibleConstructorReturn(this, (Watchlist.__proto__ || Object.getPrototypeOf(Watchlist)).call(this, props));
+
+    _reactGa2.default.initialize("UA-107597692-1");
+    // This just needs to be called once since we have no routes in this case.
+    _reactGa2.default.pageview(window.location.pathname);
+    _this.state = { yes: "no", loading: true };
+
+    _this.handleBtnClick = _this.handleBtnClick.bind(_this);
+    _this.colFormatter = _this.colFormatter.bind(_this);
+    _this.percentFormatter = _this.percentFormatter.bind(_this);
+    _this.floatFormatter = _this.floatFormatter.bind(_this);
+    return _this;
+  }
+
+  _createClass(Watchlist, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      setTimeout(function () {
+        return _this2.setState({ loading: false });
+      }, 3000);
+    }
+  }, {
+    key: "colFormatter",
+    value: function colFormatter(cell, row) {
+      return _react2.default.createElement(
+        _reactRouterDom.Link,
+        { to: "stocks/" + cell },
+        cell
+      );
+    }
+  }, {
+    key: "handleBtnClick",
+    value: function handleBtnClick() {
+      if (order === "desc") {
+        this.refs.table.handleSort("asc", "name");
+        order = "asc";
+      } else {
+        this.refs.table.handleSort("desc", "name");
+        order = "desc";
+      }
+    }
+  }, {
+    key: "percentFormatter",
+    value: function percentFormatter(cell, row) {
+      if (cell > 0) {
+        return "<i id='percentPositive'>" + cell.toFixed(2) + "</i> ";
+      } else if (cell < 0) {
+        return "<i id='percentNegative'>" + cell.toFixed(2) + "</i> ";
+      } else {
+        return 0;
+      }
+      // return cell;
+    }
+  }, {
+    key: "floatFormatter",
+    value: function floatFormatter(cell, row) {
+      if (cell < 200) {
+        return "<i id='floatLow'>" + cell + "</i> ";
+      } else if (cell > 200 && cell < 100000) {
+        return "<i id='floatMid'>" + cell + "</i> ";
+      } else if (cell > 100000) {
+        return "<i id='floatHigh'>" + cell + "</i> ";
+      } else {
+        return 0;
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      if (this.state.loading) {
+        return _react2.default.createElement(
+          "div",
+          { className: "loader" },
+          "Loading..."
+        );
+      } else {
+        console.log(this.props);
+        return _react2.default.createElement(
+          "div",
+          null,
+          _react2.default.createElement("link", {
+            rel: "stylesheet",
+            href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+          }),
+          _react2.default.createElement("link", {
+            rel: "stylesheet",
+            href: "https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css"
+          }),
+          _react2.default.createElement(
+            _reactBootstrapTable.BootstrapTable,
+            { ref: "table", data: this.props.stocks },
+            _react2.default.createElement(
+              _reactBootstrapTable.TableHeaderColumn,
+              {
+                dataField: "symbol",
+                isKey: true,
+                dataSort: true,
+                dataFormat: this.colFormatter
+              },
+              "Symbol"
+            ),
+            _react2.default.createElement(
+              _reactBootstrapTable.TableHeaderColumn,
+              { dataField: "lastSalePrice", dataSort: true },
+              "Price"
+            ),
+            _react2.default.createElement(
+              _reactBootstrapTable.TableHeaderColumn,
+              { dataField: "volume", dataSort: true },
+              "Volume"
+            ),
+            _react2.default.createElement(
+              _reactBootstrapTable.TableHeaderColumn,
+              {
+                dataField: "percentChange",
+                dataSort: true,
+                dataFormat: this.percentFormatter
+              },
+              "Percent Change"
+            ),
+            _react2.default.createElement(
+              _reactBootstrapTable.TableHeaderColumn,
+              {
+                dataField: "float",
+                dataSort: true,
+                dataFormat: this.floatFormatter
+              },
+              "Float"
+            )
+          )
+        );
+      }
+    }
+  }]);
+
+  return Watchlist;
+}(_react2.default.Component);
+
+exports.default = Watchlist;
 
 /***/ })
 /******/ ]);

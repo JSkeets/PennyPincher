@@ -7,6 +7,7 @@ import ThankYou from "../components/SignUp/thankyou.jsx";
 import ForgotPassword from "../components/ForgotPassword/forgot_password_container.jsx";
 import PasswordReset from "../components/PasswordReset/password_reset_container.jsx";
 import EmailSent from "../components/PasswordReset/emailsent.jsx";
+import WatchlistContainer from "../components/Watchlist/watchlist_container.jsx";
 
 import NavBar from "../components/NavBar/navbar_container";
 import { Route, Redirect, Switch, Link, HashRouter } from "react-router-dom";
@@ -18,6 +19,7 @@ const App = () => (
   <div className="app">
     <NavBar />
     <Route exact path="/" component={StockIndexContainer} />
+    <Route exact path="/watchlist" component={WatchlistContainer} />
     <Route exact path="/signup" component={SignUpFormContainer} />
     <Route exact path="/login" component={LoginFormContainer} />
     <Route exact path="/thankyou" component={ThankYou} />

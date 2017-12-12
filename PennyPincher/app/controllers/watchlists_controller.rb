@@ -3,7 +3,7 @@ class WatchlistsController < ApplicationController
     def show
         @watchlist = Watchlist.find(params[:id])
         if @watchlist
-        render  "/watchlists/"
+        render  json: @watchlist
         else
         render json: ["watchlist isn't created yet"], status: 422
         end

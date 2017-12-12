@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import Watchlist from "./watchlist";
 import { fetchAllStocks, fetchStock } from "../../actions/stock_actions";
 import { selectAllStocks, stockInfo, watchlistStocks } from "../../reducers/selectors";
-import { fetchWatchlist} from "../../actions/watchlist_actions";
+import { fetchWatchlist,updateWatchlist} from "../../actions/watchlist_actions";
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -13,6 +13,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => ({
   fetchAllStocks: () => dispatch(fetchAllStocks()),
   fetchStock: symbol => dispatch(fetchStock(symbol)),
+  processForm: (ticker) => dispatch(updateWatchlist(ticker))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Watchlist);

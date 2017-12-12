@@ -13429,7 +13429,7 @@ module.exports = isPrototype;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.fetchWatchlist = exports.RECEIVE_WATCHLIST = undefined;
+exports.updateWatchlist = exports.fetchWatchlist = exports.RECEIVE_WATCHLIST = undefined;
 
 var _watchlist_api_util = __webpack_require__(567);
 
@@ -13446,6 +13446,14 @@ var receiveWatchlist = function receiveWatchlist(watchlist) {
 var fetchWatchlist = exports.fetchWatchlist = function fetchWatchlist(watchlist) {
   return function (dispatch) {
     return WatchlistUtil.fetchWatchlist(watchlist).then(function (res) {
+      return dispatch(receiveWatchlist(res));
+    });
+  };
+};
+
+var updateWatchlist = exports.updateWatchlist = function updateWatchlist(ticker) {
+  return function (dispatch) {
+    return WatchlistUtil.updateWatchlist(ticker).then(function (res) {
       return dispatch(receiveWatchlist(res));
     });
   };
@@ -48321,6 +48329,14 @@ var fetchWatchlist = exports.fetchWatchlist = function fetchWatchlist(id) {
   return $.ajax({
     method: "GET",
     url: "/watchlists/" + id
+  });
+};
+
+var updateWatchlist = exports.updateWatchlist = function updateWatchlist(ticker) {
+  return $.ajax({
+    method: "GET",
+    url: "/watchlists/" + ticker.id + "/edit",
+    data: { ticker: ticker }
   });
 };
 
@@ -93422,6 +93438,9 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
     },
     fetchStock: function fetchStock(symbol) {
       return dispatch((0, _stock_actions.fetchStock)(symbol));
+    },
+    processForm: function processForm(ticker) {
+      return dispatch((0, _watchlist_actions.updateWatchlist)(ticker));
     }
   };
 };
@@ -93459,6 +93478,8 @@ var _reactBootstrapTable = __webpack_require__(361);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -93479,13 +93500,14 @@ var Watchlist = function (_React$Component) {
     _reactGa2.default.initialize("UA-107597692-1");
     // This just needs to be called once since we have no routes in this case.
     _reactGa2.default.pageview(window.location.pathname);
-    _this.state = { yes: "no", loading: true, stocks: [] };
+    _this.state = { yes: "no", loading: true, stocks: _this.props.stocks, ticker: "" };
 
     _this.handleBtnClick = _this.handleBtnClick.bind(_this);
     _this.colFormatter = _this.colFormatter.bind(_this);
     _this.percentFormatter = _this.percentFormatter.bind(_this);
     _this.floatFormatter = _this.floatFormatter.bind(_this);
-    _this.createCustomDeleteButton = _this.createCustomDeleteButton.bind(_this);
+    _this.handleSubmit = _this.handleSubmit.bind(_this);
+    _this.update = _this.update.bind(_this);
     return _this;
   }
 
@@ -93544,18 +93566,22 @@ var Watchlist = function (_React$Component) {
       }
     }
   }, {
-    key: "createCustomDeleteButton",
-    value: function createCustomDeleteButton(onClick) {
-      return _react2.default.createElement(
-        "button",
-        { style: { color: "red" }, onClick: console.log("I CLICKED THE BUTTON") },
-        "Delete rows"
-      );
+    key: "update",
+    value: function update(field) {
+      var _this3 = this;
+
+      return function (e) {
+        return _this3.setState(_defineProperty({}, field, e.currentTarget.value));
+      };
     }
   }, {
-    key: "options",
-    value: function options() {
-      deleteBtn: this.createCustomDeleteButton;
+    key: "handleSubmit",
+    value: function handleSubmit(e) {
+      console.log("STATE", this.state);
+      debugger;
+      e.preventDefault();
+      var ticker = this.state;
+      this.props.processForm(ticker);
     }
   }, {
     key: "render",
@@ -93567,8 +93593,13 @@ var Watchlist = function (_React$Component) {
           "Loading..."
         );
       } else {
-        var cellEditProp = { mode: "click" };
-        var selectRow = { mode: "checkbox", cliclToSelct: true };
+        var cellEditProp = {
+          mode: "click"
+        };
+        var selectRow = {
+          mode: "checkbox",
+          cliclToSelct: true
+        };
         var parsed = Object.values(this.props.stocks);
         var realParsed = [];
         parsed.forEach(function (stock) {
@@ -93586,35 +93617,20 @@ var Watchlist = function (_React$Component) {
         return _react2.default.createElement(
           "div",
           null,
-          _react2.default.createElement("link", {
-            rel: "stylesheet",
-            href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
-          }),
-          _react2.default.createElement("link", {
-            rel: "stylesheet",
-            href: "https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css"
-          }),
+          _react2.default.createElement("link", { rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" }),
+          _react2.default.createElement("link", { rel: "stylesheet", href: "https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css" }),
+          _react2.default.createElement(
+            "form",
+            { onSubmit: this.handleSubmit },
+            _react2.default.createElement("input", { type: "text", placeholder: "new watchlist item", value: this.state.ticker, onChange: this.update("ticker") }),
+            _react2.default.createElement("input", { type: "submit" })
+          ),
           _react2.default.createElement(
             _reactBootstrapTable.BootstrapTable,
-            {
-              ref: "table",
-              data: realParsed,
-              selectRow: selectRow,
-              remote: this.remote,
-              deleteRow: true,
-              search: true,
-              pagination: true,
-              cellEdit: cellEditProp,
-              options: this.options()
-            },
+            { ref: "table", data: realParsed, selectRow: selectRow, remote: this.remote, deleteRow: true, search: true, pagination: true, options: { onDeleteRow: this.props.onDeleteRow } },
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              {
-                dataField: "symbol",
-                isKey: true,
-                dataSort: true,
-                dataFormat: this.colFormatter
-              },
+              { dataField: "symbol", isKey: true, dataSort: true, dataFormat: this.colFormatter },
               "Symbol"
             ),
             _react2.default.createElement(
@@ -93629,20 +93645,12 @@ var Watchlist = function (_React$Component) {
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              {
-                dataField: "changePercent",
-                dataSort: true,
-                dataFormat: this.percentFormatter
-              },
+              { dataField: "changePercent", dataSort: true, dataFormat: this.percentFormatter },
               "Percent Change"
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              {
-                dataField: "float",
-                dataSort: true,
-                dataFormat: this.floatFormatter
-              },
+              { dataField: "float", dataSort: true, dataFormat: this.floatFormatter },
               "Float"
             )
           )

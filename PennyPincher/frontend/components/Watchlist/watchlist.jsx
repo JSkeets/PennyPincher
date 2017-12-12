@@ -13,13 +13,14 @@ class Watchlist extends React.Component {
     ReactGA.initialize("UA-107597692-1");
     // This just needs to be called once since we have no routes in this case.
     ReactGA.pageview(window.location.pathname);
-    this.state = { yes: "no", loading: true, stocks: [] };
+    this.state = { yes: "no", loading: true, stocks: this.props.stocks, ticker: ""};
 
     this.handleBtnClick = this.handleBtnClick.bind(this);
     this.colFormatter = this.colFormatter.bind(this);
     this.percentFormatter = this.percentFormatter.bind(this);
     this.floatFormatter = this.floatFormatter.bind(this);
-    this.createCustomDeleteButton = this.createCustomDeleteButton.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.update = this.update.bind(this);
   }
 
   componentDidMount() {
@@ -62,24 +63,33 @@ class Watchlist extends React.Component {
       return 0;
     }
   }
-  createCustomDeleteButton  (onClick)  {
-    return (
-      <button style={{ color: "red" }} onClick={console.log("I CLICKED THE BUTTON")}>
-        Delete rows
-      </button>
-    );
-  }
-  options() {
-  deleteBtn: this.createCustomDeleteButton;
-}
 
+  update(field) {
+    return e =>
+      this.setState({
+        [field]: e.currentTarget.value
+      });
+  }
+
+  handleSubmit(e) {
+    console.log("STATE",this.state);
+    debugger;
+    e.preventDefault();
+    const ticker = this.state;
+    this.props.processForm(ticker);
+  }
 
   render() {
     if (this.state.loading) {
       return <div className="loader">Loading...</div>;
     } else {
-      const cellEditProp = { mode: "click" };
-      const selectRow = { mode: "checkbox", cliclToSelct: true };
+      const cellEditProp = {
+        mode: "click"
+      };
+      const selectRow = {
+        mode: "checkbox",
+        cliclToSelct: true
+      };
       let parsed = Object.values(this.props.stocks);
       let realParsed = [];
       parsed.forEach(stock => {
@@ -94,35 +104,15 @@ class Watchlist extends React.Component {
         newObj = {};
       });
       console.log(realParsed);
-      return (
-        <div>
-          <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
-          />
-          <link
-            rel="stylesheet"
-            href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css"
-          />
-          <BootstrapTable
-            ref="table"
-            data={realParsed}
-            selectRow={selectRow}
-            remote={this.remote}
-            deleteRow
-            search
-            pagination
-            cellEdit={cellEditProp}
-            options={
-              this.options()
-            }
-          >
-            <TableHeaderColumn
-              dataField="symbol"
-              isKey={true}
-              dataSort={true}
-              dataFormat={this.colFormatter}
-            >
+      return <div>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+          <link rel="stylesheet" href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css" />
+          <form onSubmit={this.handleSubmit}>
+            <input type="text" placeholder="new watchlist item" value={this.state.ticker} onChange={this.update("ticker")} />
+            <input type="submit" />
+          </form>
+          <BootstrapTable ref="table" data={realParsed} selectRow={selectRow} remote={this.remote} deleteRow search pagination options={{ onDeleteRow: this.props.onDeleteRow }}>
+            <TableHeaderColumn dataField="symbol" isKey={true} dataSort={true} dataFormat={this.colFormatter}>
               Symbol
             </TableHeaderColumn>
             <TableHeaderColumn dataField="price" dataSort={true}>
@@ -131,23 +121,14 @@ class Watchlist extends React.Component {
             <TableHeaderColumn dataField="volume" dataSort={true}>
               Volume
             </TableHeaderColumn>
-            <TableHeaderColumn
-              dataField="changePercent"
-              dataSort={true}
-              dataFormat={this.percentFormatter}
-            >
+            <TableHeaderColumn dataField="changePercent" dataSort={true} dataFormat={this.percentFormatter}>
               Percent Change
             </TableHeaderColumn>
-            <TableHeaderColumn
-              dataField="float"
-              dataSort={true}
-              dataFormat={this.floatFormatter}
-            >
+            <TableHeaderColumn dataField="float" dataSort={true} dataFormat={this.floatFormatter}>
               Float
             </TableHeaderColumn>
           </BootstrapTable>
-        </div>
-      );
+        </div>;
     }
   }
 }

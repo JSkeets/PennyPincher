@@ -19,6 +19,7 @@ class WatchlistsController < ApplicationController
     end
 
     def update
+        debugger
          @watchlist = Watchlist.find(params[:id])
       if @watchlist.update_attributes(watchlist_params)
         render "/watchlists/show"

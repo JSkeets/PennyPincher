@@ -13,5 +13,6 @@ export const fetchWatchlist= watchlist => dispatch =>
   WatchlistUtil.fetchWatchlist(watchlist).then(res => dispatch(receiveWatchlist(res)));
 
 
-
+export const updateWatchlist = ticker => dispatch =>
+ WatchlistUtil.updateWatchlist(ticker).then(res => dispatch(receiveWatchlist(res)));
 

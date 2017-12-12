@@ -117,7 +117,6 @@ class Watchlist extends React.Component {
               dataField="changePercent"
               dataSort={true}
               dataFormat={this.percentFormatter}
-
             >
               Percent Change
             </TableHeaderColumn>

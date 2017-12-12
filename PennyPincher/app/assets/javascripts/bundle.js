@@ -92677,7 +92677,6 @@ var LoginForm = function (_React$Component) {
       e.preventDefault();
       var user = this.state;
       this.props.processForm(user);
-      this.props.fetchWatchlist(1);
     }
   }, {
     key: "navLink",
@@ -93603,7 +93602,6 @@ var Watchlist = function (_React$Component) {
                 dataField: "changePercent",
                 dataSort: true,
                 dataFormat: this.percentFormatter
-
               },
               "Percent Change"
             ),
@@ -93644,6 +93642,8 @@ var _session_actions = __webpack_require__(56);
 
 var _reactRouterDom = __webpack_require__(18);
 
+var _watchlist_actions = __webpack_require__(147);
+
 var _nav_bar = __webpack_require__(1031);
 
 var _nav_bar2 = _interopRequireDefault(_nav_bar);
@@ -93661,6 +93661,9 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
     logout: function logout() {
       return dispatch((0, _session_actions.logout)());
+    },
+    fetchWatchlist: function fetchWatchlist(id) {
+      return dispatch((0, _watchlist_actions.fetchWatchlist)(id));
     }
   };
 };
@@ -93757,8 +93760,9 @@ var loggedInLinks = function loggedInLinks(currentUser, logout) {
 
 var NavBar = function NavBar(_ref) {
   var currentUser = _ref.currentUser,
-      logout = _ref.logout;
-  return currentUser ? loggedInLinks(currentUser, logout) : sessionLinks();
+      logout = _ref.logout,
+      fetchWatchlist = _ref.fetchWatchlist;
+  return currentUser ? fetchWatchlist(currentUser.id) && loggedInLinks(currentUser, logout) : sessionLinks();
 };
 
 exports.default = NavBar;

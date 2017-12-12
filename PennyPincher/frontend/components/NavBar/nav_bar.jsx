@@ -45,8 +45,8 @@ const loggedInLinks = (currentUser, logout) => (
   </hgroup>
 );
 
-const NavBar = ({ currentUser, logout}) =>
-	currentUser ?  loggedInLinks(currentUser, logout) : sessionLinks();
+const NavBar = ({ currentUser, logout,fetchWatchlist}) =>
+	currentUser ? fetchWatchlist(currentUser.id) && loggedInLinks(currentUser, logout) : sessionLinks();
 
 export default NavBar;
 

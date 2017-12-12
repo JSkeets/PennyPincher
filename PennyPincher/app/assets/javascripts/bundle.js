@@ -93601,7 +93601,8 @@ var Watchlist = function (_React$Component) {
               _reactBootstrapTable.TableHeaderColumn,
               {
                 dataField: "changePercent",
-                dataSort: true
+                dataSort: true,
+                dataFormat: this.percentFormatter
 
               },
               "Percent Change"
@@ -93610,7 +93611,8 @@ var Watchlist = function (_React$Component) {
               _reactBootstrapTable.TableHeaderColumn,
               {
                 dataField: "float",
-                dataSort: true
+                dataSort: true,
+                dataFormat: this.floatFormatter
               },
               "Float"
             )

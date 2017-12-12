@@ -116,6 +116,7 @@ class Watchlist extends React.Component {
             <TableHeaderColumn
               dataField="changePercent"
               dataSort={true}
+              dataFormat={this.percentFormatter}
 
             >
               Percent Change
@@ -123,6 +124,7 @@ class Watchlist extends React.Component {
             <TableHeaderColumn
               dataField="float"
               dataSort={true}
+              dataFormat={this.floatFormatter}
             >
               Float
             </TableHeaderColumn>
@@ -132,5 +134,6 @@ class Watchlist extends React.Component {
     }
   }
 }
+
 
 export default Watchlist;

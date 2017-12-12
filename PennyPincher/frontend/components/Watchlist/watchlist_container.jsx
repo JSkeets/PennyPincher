@@ -7,6 +7,8 @@ import { fetchWatchlist,updateWatchlist} from "../../actions/watchlist_actions";
 const mapStateToProps = (state, ownProps) => {
   return {
     stocks: watchlistStocks(state),
+    user: state.session.currentUser.id,
+    watchlistId: state.entities.watchlist.watchlistId
   };
 };
 

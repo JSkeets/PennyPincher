@@ -48291,9 +48291,9 @@ Object.defineProperty(exports, "__esModule", {
 
 var _watchlist_actions = __webpack_require__(147);
 
-var _merge2 = __webpack_require__(98);
+var _merge3 = __webpack_require__(98);
 
-var _merge3 = _interopRequireDefault(_merge2);
+var _merge4 = _interopRequireDefault(_merge3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -48307,7 +48307,8 @@ var WatchlistReducer = function WatchlistReducer() {
   var newState = {};
   switch (action.type) {
     case _watchlist_actions.RECEIVE_WATCHLIST:
-      return (0, _merge3.default)({}, state, _defineProperty({}, action.watchlist.user_id, action.watchlist.stock_symbols));
+      var newObj = (0, _merge4.default)({}, state, _defineProperty({}, "watchlistId", action.watchlist.id));
+      return (0, _merge4.default)(newObj, state, _defineProperty({}, action.watchlist.user_id, action.watchlist.stock_symbols));
     default:
       return state;
   }
@@ -48334,8 +48335,8 @@ var fetchWatchlist = exports.fetchWatchlist = function fetchWatchlist(id) {
 
 var updateWatchlist = exports.updateWatchlist = function updateWatchlist(ticker) {
   return $.ajax({
-    method: "GET",
-    url: "/watchlists/" + ticker.id + "/edit",
+    method: "PATCH",
+    url: "/watchlists/" + ticker.id + "/",
     data: { ticker: ticker }
   });
 };
@@ -93427,7 +93428,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {
-    stocks: (0, _selectors.watchlistStocks)(state)
+    stocks: (0, _selectors.watchlistStocks)(state),
+    user: state.session.currentUser.id,
+    watchlistId: state.entities.watchlist.watchlistId
   };
 };
 
@@ -93500,7 +93503,7 @@ var Watchlist = function (_React$Component) {
     _reactGa2.default.initialize("UA-107597692-1");
     // This just needs to be called once since we have no routes in this case.
     _reactGa2.default.pageview(window.location.pathname);
-    _this.state = { yes: "no", loading: true, stocks: _this.props.stocks, ticker: "" };
+    _this.state = { yes: "no", loading: true, stocks: _this.props.stocks, ticker: "", user: _this.props.user, id: _this.props.watchlistId };
 
     _this.handleBtnClick = _this.handleBtnClick.bind(_this);
     _this.colFormatter = _this.colFormatter.bind(_this);
@@ -93577,7 +93580,10 @@ var Watchlist = function (_React$Component) {
   }, {
     key: "handleSubmit",
     value: function handleSubmit(e) {
-      console.log("STATE", this.state);
+      var stateCopy = Object.assign({}, this.state);
+      stateCopy.stocks = Object.keys(stateCopy.stocks);
+      this.setState(stateCopy);
+      this.setState({ stocks: Object.keys(this.props.stocks) });
       debugger;
       e.preventDefault();
       var ticker = this.state;
@@ -93613,7 +93619,6 @@ var Watchlist = function (_React$Component) {
           realParsed.push(newObj);
           newObj = {};
         });
-        console.log(realParsed);
         return _react2.default.createElement(
           "div",
           null,

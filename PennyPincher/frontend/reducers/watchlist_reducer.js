@@ -6,7 +6,8 @@ let WatchlistReducer = (state = {}, action) => {
   let newState = {};
   switch (action.type) {
     case RECEIVE_WATCHLIST:
-      return merge({}, state, { [action.watchlist.user_id]: action.watchlist.stock_symbols });
+      let newObj = merge({}, state, {["watchlistId"]: action.watchlist.id});
+      return merge(newObj, state, { [action.watchlist.user_id]: action.watchlist.stock_symbols, });
     default:
       return state;
   }

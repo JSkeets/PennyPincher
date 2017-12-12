@@ -5,8 +5,8 @@ export const fetchWatchlist = id =>
   });
 
 export const updateWatchlist = ticker => $.ajax({
-           method: "GET",
-           url: `/watchlists/${ticker.id}/edit`,
-           data: {ticker}
-         });
+      method: "PATCH",
+      url: `/watchlists/${ticker.id}/`,
+      data: {ticker}
+   });
 

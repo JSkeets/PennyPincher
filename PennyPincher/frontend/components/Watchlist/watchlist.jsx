@@ -13,7 +13,7 @@ class Watchlist extends React.Component {
     ReactGA.initialize("UA-107597692-1");
     // This just needs to be called once since we have no routes in this case.
     ReactGA.pageview(window.location.pathname);
-    this.state = { yes: "no", loading: true, stocks: this.props.stocks, ticker: ""};
+    this.state = { yes: "no", loading: true, stocks: this.props.stocks, ticker: "", user: this.props.user,id:this.props.watchlistId};
 
     this.handleBtnClick = this.handleBtnClick.bind(this);
     this.colFormatter = this.colFormatter.bind(this);
@@ -72,7 +72,10 @@ class Watchlist extends React.Component {
   }
 
   handleSubmit(e) {
-    console.log("STATE",this.state);
+    let stateCopy = Object.assign({},this.state);
+    stateCopy.stocks = Object.keys(stateCopy.stocks);
+    this.setState(stateCopy);
+    this.setState({ stocks: Object.keys(this.props.stocks) });
     debugger;
     e.preventDefault();
     const ticker = this.state;
@@ -103,7 +106,6 @@ class Watchlist extends React.Component {
         realParsed.push(newObj);
         newObj = {};
       });
-      console.log(realParsed);
       return <div>
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
           <link rel="stylesheet" href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css" />

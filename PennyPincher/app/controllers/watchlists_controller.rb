@@ -19,10 +19,12 @@ class WatchlistsController < ApplicationController
     end
 
     def update
-        debugger
+         keys = params[:ticker][:stocks].keys
          @watchlist = Watchlist.find(params[:id])
-      if @watchlist.update_attributes(watchlist_params)
-        render "/watchlists/show"
+         stock_symbols = keys.push(params[:ticker][:ticker])
+         watchlist_attributes = { stock_symbols: stock_symbols}
+      if @watchlist.update_attributes(watchlist_attributes)
+        render json: @watchlist
       else
         render json: @watchlist.errors.full_messages, status:422
       end

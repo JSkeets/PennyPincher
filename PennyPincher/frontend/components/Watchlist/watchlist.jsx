@@ -13,20 +13,18 @@ class Watchlist extends React.Component {
     ReactGA.initialize("UA-107597692-1");
     // This just needs to be called once since we have no routes in this case.
     ReactGA.pageview(window.location.pathname);
-    this.state = { yes: "no", loading: true,stocks:[] };
+    this.state = { yes: "no", loading: true, stocks: [] };
 
     this.handleBtnClick = this.handleBtnClick.bind(this);
     this.colFormatter = this.colFormatter.bind(this);
     this.percentFormatter = this.percentFormatter.bind(this);
     this.floatFormatter = this.floatFormatter.bind(this);
+    this.createCustomDeleteButton = this.createCustomDeleteButton.bind(this);
   }
-
 
   componentDidMount() {
     setTimeout(() => this.setState({ loading: false }), 5000);
   }
-
-
 
   colFormatter(cell, row) {
     return <Link to={`stocks/${cell}`}>{cell}</Link>;
@@ -64,24 +62,33 @@ class Watchlist extends React.Component {
       return 0;
     }
   }
+  createCustomDeleteButton  (onClick)  {
+    return (
+      <button style={{ color: "red" }} onClick={console.log("I CLICKED THE BUTTON")}>
+        Delete rows
+      </button>
+    );
+  }
+  options() {
+  deleteBtn: this.createCustomDeleteButton;
+}
 
- 
 
   render() {
     if (this.state.loading) {
       return <div className="loader">Loading...</div>;
     } else {
-      console.log(this.props);
-      console.log(this.props.stocks["AAPL"]);
+      const cellEditProp = { mode: "click" };
+      const selectRow = { mode: "checkbox", cliclToSelct: true };
       let parsed = Object.values(this.props.stocks);
       let realParsed = [];
-      parsed.forEach((stock) => {
+      parsed.forEach(stock => {
         let newObj = {
           symbol: stock.quote.symbol,
           changePercent: stock.quote.changePercent,
           float: stock.stats.float,
           price: stock.quote.latestPrice,
-          volume: stock.quote.latestVolume,
+          volume: stock.quote.latestVolume
         };
         realParsed.push(newObj);
         newObj = {};
@@ -89,7 +96,6 @@ class Watchlist extends React.Component {
       console.log(realParsed);
       return (
         <div>
-
           <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
@@ -98,7 +104,19 @@ class Watchlist extends React.Component {
             rel="stylesheet"
             href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css"
           />
-          <BootstrapTable ref="table" data={realParsed}>
+          <BootstrapTable
+            ref="table"
+            data={realParsed}
+            selectRow={selectRow}
+            remote={this.remote}
+            deleteRow
+            search
+            pagination
+            cellEdit={cellEditProp}
+            options={
+              this.options()
+            }
+          >
             <TableHeaderColumn
               dataField="symbol"
               isKey={true}

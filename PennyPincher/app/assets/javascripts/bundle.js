@@ -33573,11 +33573,17 @@ var _root2 = _interopRequireDefault(_root);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 document.addEventListener("DOMContentLoaded", function () {
+  var root = document.getElementById("root");
+  var store = void 0;
+  if (window.currentUser) {
+    var preloadedState = { session: { currentUser: window.currentUser } };
+    store = (0, _store2.default)(preloadedState);
+    delete window.currentUser;
+  } else {
+    store = (0, _store2.default)();
+  }
 
-	var store = (0, _store2.default)();
-	window.store = store;
-	var root = document.getElementById("root");
-	_reactDom2.default.render(_react2.default.createElement(_root2.default, { store: store }), root);
+  _reactDom2.default.render(_react2.default.createElement(_root2.default, { store: store }), root);
 });
 
 /***/ }),
@@ -93479,6 +93485,7 @@ var Watchlist = function (_React$Component) {
     _this.colFormatter = _this.colFormatter.bind(_this);
     _this.percentFormatter = _this.percentFormatter.bind(_this);
     _this.floatFormatter = _this.floatFormatter.bind(_this);
+    _this.createCustomDeleteButton = _this.createCustomDeleteButton.bind(_this);
     return _this;
   }
 
@@ -93537,6 +93544,20 @@ var Watchlist = function (_React$Component) {
       }
     }
   }, {
+    key: "createCustomDeleteButton",
+    value: function createCustomDeleteButton(onClick) {
+      return _react2.default.createElement(
+        "button",
+        { style: { color: "red" }, onClick: console.log("I CLICKED THE BUTTON") },
+        "Delete rows"
+      );
+    }
+  }, {
+    key: "options",
+    value: function options() {
+      deleteBtn: this.createCustomDeleteButton;
+    }
+  }, {
     key: "render",
     value: function render() {
       if (this.state.loading) {
@@ -93546,8 +93567,8 @@ var Watchlist = function (_React$Component) {
           "Loading..."
         );
       } else {
-        console.log(this.props);
-        console.log(this.props.stocks["AAPL"]);
+        var cellEditProp = { mode: "click" };
+        var selectRow = { mode: "checkbox", cliclToSelct: true };
         var parsed = Object.values(this.props.stocks);
         var realParsed = [];
         parsed.forEach(function (stock) {
@@ -93575,7 +93596,17 @@ var Watchlist = function (_React$Component) {
           }),
           _react2.default.createElement(
             _reactBootstrapTable.BootstrapTable,
-            { ref: "table", data: realParsed },
+            {
+              ref: "table",
+              data: realParsed,
+              selectRow: selectRow,
+              remote: this.remote,
+              deleteRow: true,
+              search: true,
+              pagination: true,
+              cellEdit: cellEditProp,
+              options: this.options()
+            },
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
               {

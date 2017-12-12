@@ -74,7 +74,19 @@ class Watchlist extends React.Component {
       console.log(this.props);
       console.log(this.props.stocks["AAPL"]);
       let parsed = Object.values(this.props.stocks);
-      debugger;
+      let realParsed = [];
+      parsed.forEach((stock) => {
+        let newObj = {
+          symbol: stock.quote.symbol,
+          changePercent: stock.quote.changePercent,
+          float: stock.stats.float,
+          price: stock.quote.latestPrice,
+          volume: stock.quote.latestVolume,
+        };
+        realParsed.push(newObj);
+        newObj = {};
+      });
+      console.log(realParsed);
       return (
         <div>
 
@@ -86,7 +98,7 @@ class Watchlist extends React.Component {
             rel="stylesheet"
             href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css"
           />
-          <BootstrapTable ref="table" data={parsed}>
+          <BootstrapTable ref="table" data={realParsed}>
             <TableHeaderColumn
               dataField="symbol"
               isKey={true}
@@ -95,14 +107,14 @@ class Watchlist extends React.Component {
             >
               Symbol
             </TableHeaderColumn>
-            <TableHeaderColumn dataField="lastSalePrice" dataSort={true}>
+            <TableHeaderColumn dataField="price" dataSort={true}>
               Price
             </TableHeaderColumn>
             <TableHeaderColumn dataField="volume" dataSort={true}>
               Volume
             </TableHeaderColumn>
             <TableHeaderColumn
-              dataField="percentChange"
+              dataField="changePercent"
               dataSort={true}
 
             >

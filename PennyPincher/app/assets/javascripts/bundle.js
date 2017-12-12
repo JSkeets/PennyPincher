@@ -93550,7 +93550,19 @@ var Watchlist = function (_React$Component) {
         console.log(this.props);
         console.log(this.props.stocks["AAPL"]);
         var parsed = Object.values(this.props.stocks);
-        debugger;
+        var realParsed = [];
+        parsed.forEach(function (stock) {
+          var newObj = {
+            symbol: stock.quote.symbol,
+            changePercent: stock.quote.changePercent,
+            float: stock.stats.float,
+            price: stock.quote.latestPrice,
+            volume: stock.quote.latestVolume
+          };
+          realParsed.push(newObj);
+          newObj = {};
+        });
+        console.log(realParsed);
         return _react2.default.createElement(
           "div",
           null,
@@ -93564,7 +93576,7 @@ var Watchlist = function (_React$Component) {
           }),
           _react2.default.createElement(
             _reactBootstrapTable.BootstrapTable,
-            { ref: "table", data: parsed },
+            { ref: "table", data: realParsed },
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
               {
@@ -93577,7 +93589,7 @@ var Watchlist = function (_React$Component) {
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { dataField: "lastSalePrice", dataSort: true },
+              { dataField: "price", dataSort: true },
               "Price"
             ),
             _react2.default.createElement(
@@ -93588,7 +93600,7 @@ var Watchlist = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
               {
-                dataField: "percentChange",
+                dataField: "changePercent",
                 dataSort: true
 
               },

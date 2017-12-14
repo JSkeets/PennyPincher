@@ -1,7 +1,7 @@
 class WatchlistsController < ApplicationController
 
     def show
-        @watchlist = Watchlist.find(params[:id])
+        @watchlist = Watchlist.find_by_user_id(params[:id])
         if @watchlist
         render  json: @watchlist
         else

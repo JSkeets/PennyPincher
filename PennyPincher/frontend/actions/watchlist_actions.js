@@ -16,3 +16,6 @@ export const fetchWatchlist= watchlist => dispatch =>
 export const updateWatchlist = ticker => dispatch =>
  WatchlistUtil.updateWatchlist(ticker).then(res => dispatch(receiveWatchlist(res)));
 
+
+export const deleteWatchlist = ticker => dispatch =>
+ WatchlistUtil.deleteWatchlist(ticker).then(res => dispatch(receiveWatchlist(res)));

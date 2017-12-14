@@ -96,8 +96,11 @@ class Watchlist extends React.Component {
   }
 
   onClickProductSelected(cell, row) {
-    console.log("Product #", row.symbol);
-    console.log(this.state);
+    let deleteObj = {
+      symbol: row.symbol,
+      id: this.state.id
+    };
+    this.props.deleteWatchlist(deleteObj);
   }
 
   cellButton(cell, row, enumObject, rowIndex) {

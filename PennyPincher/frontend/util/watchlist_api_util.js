@@ -4,16 +4,16 @@ export const fetchWatchlist = id =>
     url: `/watchlists/${id}`
   });
 
-export const updateWatchlist = ticker => 
+export const updateWatchlist = ticker =>
 $.ajax({
       method: "PATCH",
       url: `/watchlists/${ticker.id}/`,
       data: {ticker}
    });
 
-export const deleteWatchlist = ticker => 
+export const deleteWatchlist = (ticker) =>
 $.ajax({
-      method: "PATCH",
+      method: "DELETE",
       url: `/watchlists/${ticker.id}/`,
       data: {ticker}
    });

@@ -10138,7 +10138,7 @@ module.exports = isArrayLike;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.updateWatchlist = exports.fetchWatchlist = exports.RECEIVE_WATCHLIST = undefined;
+exports.deleteWatchlist = exports.updateWatchlist = exports.fetchWatchlist = exports.RECEIVE_WATCHLIST = undefined;
 
 var _watchlist_api_util = __webpack_require__(574);
 
@@ -10163,6 +10163,14 @@ var fetchWatchlist = exports.fetchWatchlist = function fetchWatchlist(watchlist)
 var updateWatchlist = exports.updateWatchlist = function updateWatchlist(ticker) {
   return function (dispatch) {
     return WatchlistUtil.updateWatchlist(ticker).then(function (res) {
+      return dispatch(receiveWatchlist(res));
+    });
+  };
+};
+
+var deleteWatchlist = exports.deleteWatchlist = function deleteWatchlist(ticker) {
+  return function (dispatch) {
+    return WatchlistUtil.deleteWatchlist(ticker).then(function (res) {
       return dispatch(receiveWatchlist(res));
     });
   };
@@ -48346,7 +48354,7 @@ var updateWatchlist = exports.updateWatchlist = function updateWatchlist(ticker)
 
 var deleteWatchlist = exports.deleteWatchlist = function deleteWatchlist(ticker) {
   return $.ajax({
-    method: "PATCH",
+    method: "DELETE",
     url: "/watchlists/" + ticker.id + "/",
     data: { ticker: ticker }
   });
@@ -93460,6 +93468,9 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
     },
     processForm: function processForm(ticker) {
       return dispatch((0, _watchlist_actions.updateWatchlist)(ticker));
+    },
+    deleteWatchlist: function deleteWatchlist(ticker) {
+      return dispatch((0, _watchlist_actions.deleteWatchlist)(ticker));
     }
   };
 };
@@ -93619,8 +93630,11 @@ var Watchlist = function (_React$Component) {
   }, {
     key: "onClickProductSelected",
     value: function onClickProductSelected(cell, row) {
-      console.log("Product #", row.symbol);
-      console.log(this.state);
+      var deleteObj = {
+        symbol: row.symbol,
+        id: this.state.id
+      };
+      this.props.deleteWatchlist(deleteObj);
     }
   }, {
     key: "cellButton",

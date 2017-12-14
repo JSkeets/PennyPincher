@@ -13,7 +13,15 @@ class Watchlist extends React.Component {
     ReactGA.initialize("UA-107597692-1");
     // This just needs to be called once since we have no routes in this case.
     ReactGA.pageview(window.location.pathname);
-    this.state = { yes: "no", loading: true, stocks: this.props.stocks, ticker: "", user: this.props.user,id:this.props.watchlistId};
+    this.state = {
+      yes: "no",
+      loading: true,
+      stocks: this.props.stocks,
+      ticker: "",
+      delete:"",
+      user: this.props.user,
+      id: this.props.watchlistId
+    };
 
     this.handleBtnClick = this.handleBtnClick.bind(this);
     this.colFormatter = this.colFormatter.bind(this);
@@ -21,6 +29,8 @@ class Watchlist extends React.Component {
     this.floatFormatter = this.floatFormatter.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
+    this.cellButton = this.cellButton.bind(this);
+
   }
 
   componentDidMount() {
@@ -72,8 +82,10 @@ class Watchlist extends React.Component {
       });
   }
 
+
+
   handleSubmit(e) {
-    let stateCopy = Object.assign({},this.state);
+    let stateCopy = Object.assign({}, this.state);
     stateCopy.stocks = Object.keys(stateCopy.stocks);
     this.setState(stateCopy);
     this.setState({ stocks: Object.keys(this.props.stocks) });
@@ -83,7 +95,24 @@ class Watchlist extends React.Component {
     window.location.reload();
   }
 
+  onClickProductSelected(cell, row) {
+    console.log("Product #", row.symbol);
+    console.log(this.state);
+  }
+
+  cellButton(cell, row, enumObject, rowIndex) {
+    return (
+      <button
+        type="button"
+        onClick={() => this.onClickProductSelected(cell, row, rowIndex)}
+      >
+        Delete
+      </button>
+    );
+  }
+
   render() {
+    const options = { deleteBtn: this.createCustomDeleteButton };
     if (this.state.loading) {
       return <div className="loader">Loading...</div>;
     } else {
@@ -107,15 +136,42 @@ class Watchlist extends React.Component {
         realParsed.push(newObj);
         newObj = {};
       });
-      return <div>
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
-          <link rel="stylesheet" href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css" />
+      return (
+        <div>
+          <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+          />
+          <link
+            rel="stylesheet"
+            href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css"
+          />
           <form onSubmit={this.handleSubmit}>
-            <input type="text" placeholder="new watchlist item" value={this.state.ticker} onChange={this.update("ticker")} />
+            <input
+              type="text"
+              placeholder="new watchlist item"
+              value={this.state.ticker}
+              onChange={this.update("ticker")}
+            />
             <input type="submit" />
           </form>
-          <BootstrapTable ref="table" data={realParsed} selectRow={selectRow} remote={this.remote} deleteRow search pagination options={{ onDeleteRow: this.props.onDeleteRow }}>
-            <TableHeaderColumn dataField="symbol" isKey={true} dataSort={true} dataFormat={this.colFormatter}>
+          <BootstrapTable
+            ref="table"
+            data={realParsed}
+            options={options}
+            selectRow={selectRow}
+            remote={this.remote}
+            deleteRow
+            search
+            pagination
+            options={{ onDeleteRow: this.props.onDeleteRow }}
+          >
+            <TableHeaderColumn
+              dataField="symbol"
+              isKey={true}
+              dataSort={true}
+              dataFormat={this.colFormatter}
+            >
               Symbol
             </TableHeaderColumn>
             <TableHeaderColumn dataField="price" dataSort={true}>
@@ -124,14 +180,26 @@ class Watchlist extends React.Component {
             <TableHeaderColumn dataField="volume" dataSort={true}>
               Volume
             </TableHeaderColumn>
-            <TableHeaderColumn dataField="changePercent" dataSort={true} dataFormat={this.percentFormatter}>
+            <TableHeaderColumn
+              dataField="changePercent"
+              dataSort={true}
+              dataFormat={this.percentFormatter}
+            >
               Percent Change
             </TableHeaderColumn>
-            <TableHeaderColumn dataField="float" dataSort={true} dataFormat={this.floatFormatter}>
+            <TableHeaderColumn
+              dataField="float"
+              dataSort={true}
+              dataFormat={this.floatFormatter}
+            >
               Float
             </TableHeaderColumn>
+            <TableHeaderColumn dataField="button" dataFormat={this.cellButton.bind(this)}>
+              Delete
+            </TableHeaderColumn>
           </BootstrapTable>
-        </div>;
+        </div>
+      );
     }
   }
 }

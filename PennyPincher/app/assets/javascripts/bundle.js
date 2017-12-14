@@ -48344,6 +48344,14 @@ var updateWatchlist = exports.updateWatchlist = function updateWatchlist(ticker)
   });
 };
 
+var deleteWatchlist = exports.deleteWatchlist = function deleteWatchlist(ticker) {
+  return $.ajax({
+    method: "PATCH",
+    url: "/watchlists/" + ticker.id + "/",
+    data: { ticker: ticker }
+  });
+};
+
 /***/ }),
 /* 575 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -93511,7 +93519,15 @@ var Watchlist = function (_React$Component) {
     _reactGa2.default.initialize("UA-107597692-1");
     // This just needs to be called once since we have no routes in this case.
     _reactGa2.default.pageview(window.location.pathname);
-    _this.state = { yes: "no", loading: true, stocks: _this.props.stocks, ticker: "", user: _this.props.user, id: _this.props.watchlistId };
+    _this.state = {
+      yes: "no",
+      loading: true,
+      stocks: _this.props.stocks,
+      ticker: "",
+      delete: "",
+      user: _this.props.user,
+      id: _this.props.watchlistId
+    };
 
     _this.handleBtnClick = _this.handleBtnClick.bind(_this);
     _this.colFormatter = _this.colFormatter.bind(_this);
@@ -93519,6 +93535,8 @@ var Watchlist = function (_React$Component) {
     _this.floatFormatter = _this.floatFormatter.bind(_this);
     _this.handleSubmit = _this.handleSubmit.bind(_this);
     _this.update = _this.update.bind(_this);
+    _this.cellButton = _this.cellButton.bind(_this);
+
     return _this;
   }
 
@@ -93599,8 +93617,31 @@ var Watchlist = function (_React$Component) {
       window.location.reload();
     }
   }, {
+    key: "onClickProductSelected",
+    value: function onClickProductSelected(cell, row) {
+      console.log("Product #", row.symbol);
+      console.log(this.state);
+    }
+  }, {
+    key: "cellButton",
+    value: function cellButton(cell, row, enumObject, rowIndex) {
+      var _this4 = this;
+
+      return _react2.default.createElement(
+        "button",
+        {
+          type: "button",
+          onClick: function onClick() {
+            return _this4.onClickProductSelected(cell, row, rowIndex);
+          }
+        },
+        "Delete"
+      );
+    }
+  }, {
     key: "render",
     value: function render() {
+      var options = { deleteBtn: this.createCustomDeleteButton };
       if (this.state.loading) {
         return _react2.default.createElement(
           "div",
@@ -93631,20 +93672,45 @@ var Watchlist = function (_React$Component) {
         return _react2.default.createElement(
           "div",
           null,
-          _react2.default.createElement("link", { rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" }),
-          _react2.default.createElement("link", { rel: "stylesheet", href: "https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css" }),
+          _react2.default.createElement("link", {
+            rel: "stylesheet",
+            href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+          }),
+          _react2.default.createElement("link", {
+            rel: "stylesheet",
+            href: "https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css"
+          }),
           _react2.default.createElement(
             "form",
             { onSubmit: this.handleSubmit },
-            _react2.default.createElement("input", { type: "text", placeholder: "new watchlist item", value: this.state.ticker, onChange: this.update("ticker") }),
+            _react2.default.createElement("input", {
+              type: "text",
+              placeholder: "new watchlist item",
+              value: this.state.ticker,
+              onChange: this.update("ticker")
+            }),
             _react2.default.createElement("input", { type: "submit" })
           ),
           _react2.default.createElement(
             _reactBootstrapTable.BootstrapTable,
-            { ref: "table", data: realParsed, selectRow: selectRow, remote: this.remote, deleteRow: true, search: true, pagination: true, options: { onDeleteRow: this.props.onDeleteRow } },
+            _defineProperty({
+              ref: "table",
+              data: realParsed,
+              options: options,
+              selectRow: selectRow,
+              remote: this.remote,
+              deleteRow: true,
+              search: true,
+              pagination: true
+            }, "options", { onDeleteRow: this.props.onDeleteRow }),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { dataField: "symbol", isKey: true, dataSort: true, dataFormat: this.colFormatter },
+              {
+                dataField: "symbol",
+                isKey: true,
+                dataSort: true,
+                dataFormat: this.colFormatter
+              },
               "Symbol"
             ),
             _react2.default.createElement(
@@ -93659,13 +93725,26 @@ var Watchlist = function (_React$Component) {
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { dataField: "changePercent", dataSort: true, dataFormat: this.percentFormatter },
+              {
+                dataField: "changePercent",
+                dataSort: true,
+                dataFormat: this.percentFormatter
+              },
               "Percent Change"
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { dataField: "float", dataSort: true, dataFormat: this.floatFormatter },
+              {
+                dataField: "float",
+                dataSort: true,
+                dataFormat: this.floatFormatter
+              },
               "Float"
+            ),
+            _react2.default.createElement(
+              _reactBootstrapTable.TableHeaderColumn,
+              { dataField: "button", dataFormat: this.cellButton.bind(this) },
+              "Delete"
             )
           )
         );

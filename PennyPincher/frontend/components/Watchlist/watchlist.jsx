@@ -25,7 +25,7 @@ class Watchlist extends React.Component {
 
   componentDidMount() {
     this.props.fetchAllStocks();
-    setTimeout(() => this.setState({ loading: false }), 5000);
+    setTimeout(() => this.setState({ loading: false }), 3000);
   }
 
   colFormatter(cell, row) {
@@ -77,10 +77,10 @@ class Watchlist extends React.Component {
     stateCopy.stocks = Object.keys(stateCopy.stocks);
     this.setState(stateCopy);
     this.setState({ stocks: Object.keys(this.props.stocks) });
-    debugger;
     e.preventDefault();
     const ticker = this.state;
     this.props.processForm(ticker);
+    window.location.reload();
   }
 
   render() {

@@ -93530,7 +93530,7 @@ var Watchlist = function (_React$Component) {
       this.props.fetchAllStocks();
       setTimeout(function () {
         return _this2.setState({ loading: false });
-      }, 5000);
+      }, 3000);
     }
   }, {
     key: "colFormatter",
@@ -93593,10 +93593,10 @@ var Watchlist = function (_React$Component) {
       stateCopy.stocks = Object.keys(stateCopy.stocks);
       this.setState(stateCopy);
       this.setState({ stocks: Object.keys(this.props.stocks) });
-      debugger;
       e.preventDefault();
       var ticker = this.state;
       this.props.processForm(ticker);
+      window.location.reload();
     }
   }, {
     key: "render",

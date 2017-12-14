@@ -24,6 +24,7 @@ class Watchlist extends React.Component {
   }
 
   componentDidMount() {
+    this.props.fetchAllStocks();
     setTimeout(() => this.setState({ loading: false }), 5000);
   }
 

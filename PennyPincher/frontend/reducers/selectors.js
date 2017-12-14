@@ -57,7 +57,7 @@ export const stockInfo = state => {
 };
 
 export const watchlistStocks = state => {
-  let quotes = {};
+	let quotes = {};
   state.entities.watchlist[`${state.session.currentUser.id}`].forEach(
     stock => {
       let x = $.ajax({

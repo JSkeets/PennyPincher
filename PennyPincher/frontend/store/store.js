@@ -3,12 +3,17 @@ import RootReducer from "../reducers/root_reducer";
 import thunk from "redux-thunk";
 import logger from "redux-logger";
 import { composeWithDevTools } from "redux-devtools-extension";
+import { loadState, saveState } from "./localStorage";
 
-const configureStore = (preloadedState = {}) =>
+const persistedState = loadState();
+
+const configureStore =
 	createStore(
 		RootReducer,
-		preloadedState,
+		persistedState,
 		composeWithDevTools(applyMiddleware(thunk, logger))
 	);
-
+configureStore.subscribe(() => {
+	saveState(configureStore.getState());
+});
 export default configureStore;

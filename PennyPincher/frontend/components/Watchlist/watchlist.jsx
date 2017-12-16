@@ -16,11 +16,12 @@ class Watchlist extends React.Component {
     this.state = {
       yes: "no",
       loading: true,
-      stocks: this.props.stocks,
+      stocks: "",
       ticker: "",
       delete:"",
       user: this.props.user,
-      id: this.props.watchlistId
+      id: this.props.watchlistId,
+      watchlist: this.props.watchlist
     };
 
     this.handleBtnClick = this.handleBtnClick.bind(this);
@@ -33,9 +34,18 @@ class Watchlist extends React.Component {
 
   }
 
+  componentWillMount(){
+    this.props.fetchWatchlist("1");
+  }
+
   componentDidMount() {
     this.props.fetchAllStocks();
-    setTimeout(() => this.setState({ loading: false }), 3000);
+    let stocks = this.props.watchlistStocks(this.props.state);
+    this.setState({
+      stocks: stocks
+    });
+    this.props.fetchWatchlist("1");
+    setTimeout(() => this.setState({ loading: false }), 7000);
   }
 
   colFormatter(cell, row) {
@@ -96,10 +106,30 @@ class Watchlist extends React.Component {
   }
 
   onClickProductSelected(cell, row) {
+    let symbol = row.symbol;
     let deleteObj = {
       symbol: row.symbol,
       id: this.state.id
     };
+  //  let x = JSON.parse((window.localStorage.getItem("state")));
+
+  //  let user = this.state.user;
+  //  console.log(x.entities.watchlist[`${user}`]);
+  //  let watch = x.entities.watchlist[`${user}`];
+  //  watch.delete(symbol.symbol);
+  //  x.entities.watchlist[`${user}`] = watch;
+  //  console.log(x.entities.watchlist[`${user}`]);
+  // debugger;
+  // let xx = this.state.watchlist;
+  // let index = xx.indexOf(symbol);
+  // let newWatchlist;
+  // if (index > -1) {
+  //     newWatchlist = xx.splice(index, 1);
+  // }
+  // this.setState({
+  //   watchlist: newWatchlist
+  // });
+   
     this.props.deleteWatchlist(deleteObj);
   }
 
@@ -115,10 +145,12 @@ class Watchlist extends React.Component {
   }
 
   render() {
+    console.log("PORPS",this.props);
     const options = { deleteBtn: this.createCustomDeleteButton };
     if (this.state.loading) {
       return <div className="loader">Loading...</div>;
     } else {
+      console.log("INSIDE SECOND ELSE");
       const cellEditProp = {
         mode: "click"
       };
@@ -126,7 +158,7 @@ class Watchlist extends React.Component {
         mode: "checkbox",
         cliclToSelct: true
       };
-      let parsed = Object.values(this.props.stocks);
+      let parsed = Object.values(this.state.stocks);
       let realParsed = [];
       parsed.forEach(stock => {
         let newObj = {

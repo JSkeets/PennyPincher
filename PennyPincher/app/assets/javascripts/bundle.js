@@ -33557,6 +33557,7 @@ var stockInfo = exports.stockInfo = function stockInfo(state) {
 
 var watchlistStocks = exports.watchlistStocks = function watchlistStocks(state) {
 	var quotes = {};
+	debugger;
 	state.entities.watchlist["" + state.session.currentUser.id].forEach(function (stock) {
 		var x = $.ajax({
 			method: "GET",
@@ -33598,9 +33599,28 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 document.addEventListener("DOMContentLoaded", function () {
   var root = document.getElementById("root");
   var store = void 0;
-  store = _store2.default;
+  if (window.currentUser) {
+    var preloadedState = { session: { currentUser: window.currentUser } };
+    store = (0, _store2.default)(preloadedState);
+    delete window.currentUser;
+  } else {
+    store = (0, _store2.default)();
+  }
+
   _reactDom2.default.render(_react2.default.createElement(_root2.default, { store: store }), root);
-});
+}); // import React from "react";
+// import ReactDOM from "react-dom";
+// import configureStore from "./store/store";
+// import { fetchAllStocks } from "./util/stock_api_util";
+// import Root from "./components/root";
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const root = document.getElementById("root");
+//   let store;
+//     store = configureStore;
+//   ReactDOM.render(<Root store={store} />, root);
+// });
 
 /***/ }),
 /* 390 */
@@ -45513,7 +45533,7 @@ module.exports = ReactDOMInvalidARIAHook;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _redux = __webpack_require__(69);
@@ -45532,16 +45552,30 @@ var _reduxLogger2 = _interopRequireDefault(_reduxLogger);
 
 var _reduxDevtoolsExtension = __webpack_require__(579);
 
-var _localStorage = __webpack_require__(1045);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var persistedState = (0, _localStorage.loadState)();
+var configureStore = function configureStore() {
+  var preloadedState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  return (0, _redux.createStore)(_root_reducer2.default, preloadedState, (0, _reduxDevtoolsExtension.composeWithDevTools)((0, _redux.applyMiddleware)(_reduxThunk2.default, _reduxLogger2.default)));
+}; // import { createStore, applyMiddleware } from "redux";
+// import RootReducer from "../reducers/root_reducer";
+// import thunk from "redux-thunk";
+// import logger from "redux-logger";
+// import { composeWithDevTools } from "redux-devtools-extension";
+// import { loadState, saveState } from "./localStorage";
 
-var configureStore = (0, _redux.createStore)(_root_reducer2.default, persistedState, (0, _reduxDevtoolsExtension.composeWithDevTools)((0, _redux.applyMiddleware)(_reduxThunk2.default, _reduxLogger2.default)));
-configureStore.subscribe(function () {
-	(0, _localStorage.saveState)(configureStore.getState());
-});
+// const persistedState = loadState();
+
+// const configureStore =
+// 	createStore(
+// 		RootReducer,
+// 		persistedState,
+// 		composeWithDevTools(applyMiddleware(thunk, logger))
+// 	);
+// configureStore.subscribe(() => {
+// 	saveState(configureStore.getState());
+// });
+// export default configureStore;
 exports.default = configureStore;
 
 /***/ }),
@@ -93452,14 +93486,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {
-    stocks: (0, _selectors.watchlistStocks)(state),
+    state: state,
     user: state.session.currentUser.id,
-    watchlistId: state.entities.watchlist.watchlistId
+    watchlistId: state.entities.watchlist.watchlistId,
+    watchlist: state.entities.watchlist[state.session.currentUser.id]
   };
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
+    watchlistStocks: function watchlistStocks(state) {
+      return (0, _selectors.watchlistStocks)(state);
+    },
     fetchAllStocks: function fetchAllStocks() {
       return dispatch((0, _stock_actions.fetchAllStocks)());
     },
@@ -93471,6 +93509,9 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
     },
     deleteWatchlist: function deleteWatchlist(ticker) {
       return dispatch((0, _watchlist_actions.deleteWatchlist)(ticker));
+    },
+    fetchWatchlist: function fetchWatchlist(id) {
+      return dispatch((0, _watchlist_actions.fetchWatchlist)(id));
     }
   };
 };
@@ -93533,11 +93574,12 @@ var Watchlist = function (_React$Component) {
     _this.state = {
       yes: "no",
       loading: true,
-      stocks: _this.props.stocks,
+      stocks: "",
       ticker: "",
       delete: "",
       user: _this.props.user,
-      id: _this.props.watchlistId
+      id: _this.props.watchlistId,
+      watchlist: _this.props.watchlist
     };
 
     _this.handleBtnClick = _this.handleBtnClick.bind(_this);
@@ -93552,14 +93594,24 @@ var Watchlist = function (_React$Component) {
   }
 
   _createClass(Watchlist, [{
+    key: "componentWillMount",
+    value: function componentWillMount() {
+      this.props.fetchWatchlist("1");
+    }
+  }, {
     key: "componentDidMount",
     value: function componentDidMount() {
       var _this2 = this;
 
       this.props.fetchAllStocks();
+      var stocks = this.props.watchlistStocks(this.props.state);
+      this.setState({
+        stocks: stocks
+      });
+      this.props.fetchWatchlist("1");
       setTimeout(function () {
         return _this2.setState({ loading: false });
-      }, 3000);
+      }, 7000);
     }
   }, {
     key: "colFormatter",
@@ -93630,10 +93682,30 @@ var Watchlist = function (_React$Component) {
   }, {
     key: "onClickProductSelected",
     value: function onClickProductSelected(cell, row) {
+      var symbol = row.symbol;
       var deleteObj = {
         symbol: row.symbol,
         id: this.state.id
       };
+      //  let x = JSON.parse((window.localStorage.getItem("state")));
+
+      //  let user = this.state.user;
+      //  console.log(x.entities.watchlist[`${user}`]);
+      //  let watch = x.entities.watchlist[`${user}`];
+      //  watch.delete(symbol.symbol);
+      //  x.entities.watchlist[`${user}`] = watch;
+      //  console.log(x.entities.watchlist[`${user}`]);
+      // debugger;
+      // let xx = this.state.watchlist;
+      // let index = xx.indexOf(symbol);
+      // let newWatchlist;
+      // if (index > -1) {
+      //     newWatchlist = xx.splice(index, 1);
+      // }
+      // this.setState({
+      //   watchlist: newWatchlist
+      // });
+
       this.props.deleteWatchlist(deleteObj);
     }
   }, {
@@ -93655,6 +93727,7 @@ var Watchlist = function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      console.log("PORPS", this.props);
       var options = { deleteBtn: this.createCustomDeleteButton };
       if (this.state.loading) {
         return _react2.default.createElement(
@@ -93663,6 +93736,7 @@ var Watchlist = function (_React$Component) {
           "Loading..."
         );
       } else {
+        console.log("INSIDE SECOND ELSE");
         var cellEditProp = {
           mode: "click"
         };
@@ -93670,7 +93744,7 @@ var Watchlist = function (_React$Component) {
           mode: "checkbox",
           cliclToSelct: true
         };
-        var parsed = Object.values(this.props.stocks);
+        var parsed = Object.values(this.state.stocks);
         var realParsed = [];
         parsed.forEach(function (stock) {
           var newObj = {
@@ -93912,38 +93986,6 @@ var NavBar = function NavBar(_ref) {
 };
 
 exports.default = NavBar;
-
-/***/ }),
-/* 1044 */,
-/* 1045 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var loadState = exports.loadState = function loadState() {
-    try {
-        var serializedState = localStorage.getItem('state');
-        if (serializedState === null) {
-            return undefined;
-        }
-        return JSON.parse(serializedState);
-    } catch (err) {
-        return undefined;
-    }
-};
-
-var saveState = exports.saveState = function saveState(state) {
-    try {
-        var serializedState = JSON.stringify(state);
-        localStorage.setItem('state', serializedState);
-    } catch (err) {
-        // Ignore write errors
-    }
-};
 
 /***/ })
 /******/ ]);

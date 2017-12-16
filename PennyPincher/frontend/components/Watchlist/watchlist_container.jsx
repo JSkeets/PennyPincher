@@ -6,17 +6,20 @@ import { fetchWatchlist,updateWatchlist,deleteWatchlist} from "../../actions/wat
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    stocks: watchlistStocks(state),
+    state: state,
     user: state.session.currentUser.id,
-    watchlistId: state.entities.watchlist.watchlistId
+    watchlistId: state.entities.watchlist.watchlistId,
+    watchlist: state.entities.watchlist[state.session.currentUser.id]
   };
 };
 
 const mapDispatchToProps = dispatch => ({
+  watchlistStocks: (state) => watchlistStocks(state),
   fetchAllStocks: () => dispatch(fetchAllStocks()),
   fetchStock: symbol => dispatch(fetchStock(symbol)),
   processForm: (ticker) => dispatch(updateWatchlist(ticker)),
-  deleteWatchlist: (ticker) => dispatch(deleteWatchlist(ticker))
+  deleteWatchlist: (ticker) => dispatch(deleteWatchlist(ticker)),
+  fetchWatchlist: id => dispatch(fetchWatchlist(id))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Watchlist);

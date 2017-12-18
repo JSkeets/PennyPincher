@@ -18,10 +18,10 @@ class Watchlist extends React.Component {
       loading: true,
       stocks: "",
       ticker: "",
-      delete:"",
+      delete: "",
       user: this.props.user,
       id: this.props.watchlistId,
-      watchlist: this.props.watchlist
+      watchlist: []
     };
 
     this.handleBtnClick = this.handleBtnClick.bind(this);
@@ -31,21 +31,36 @@ class Watchlist extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
     this.cellButton = this.cellButton.bind(this);
-
+    this.doBoth = this.doBoth.bind(this);
   }
 
-  componentWillMount(){
-    this.props.fetchWatchlist("1");
-  }
+
+ doBoth(){
+   let stocks = this.props.watchlistStocks(this.state.watchlist);
+   this.setState({
+     stocks:stocks
+   });
+ }
+
+
+
 
   componentDidMount() {
-    this.props.fetchAllStocks();
-    let stocks = this.props.watchlistStocks(this.props.state);
-    this.setState({
-      stocks: stocks
-    });
     this.props.fetchWatchlist("1");
-    setTimeout(() => this.setState({ loading: false }), 7000);
+    $.ajax({
+      method: "GET",
+      url: `/watchlists/${1}`,
+      success: function(data) {
+        this.setState({watchlist: data.stock_symbols});
+      }.bind(this),
+      error: function(data) {
+        return data;
+      }
+    });
+    setTimeout(() => this.doBoth(),1000);
+    console.log("DIDMOUNT",this.state);
+
+    setTimeout(() => this.setState({ loading: false }), 3000);
   }
 
   colFormatter(cell, row) {
@@ -92,8 +107,6 @@ class Watchlist extends React.Component {
       });
   }
 
-
-
   handleSubmit(e) {
     let stateCopy = Object.assign({}, this.state);
     stateCopy.stocks = Object.keys(stateCopy.stocks);
@@ -111,25 +124,6 @@ class Watchlist extends React.Component {
       symbol: row.symbol,
       id: this.state.id
     };
-  //  let x = JSON.parse((window.localStorage.getItem("state")));
-
-  //  let user = this.state.user;
-  //  console.log(x.entities.watchlist[`${user}`]);
-  //  let watch = x.entities.watchlist[`${user}`];
-  //  watch.delete(symbol.symbol);
-  //  x.entities.watchlist[`${user}`] = watch;
-  //  console.log(x.entities.watchlist[`${user}`]);
-  // debugger;
-  // let xx = this.state.watchlist;
-  // let index = xx.indexOf(symbol);
-  // let newWatchlist;
-  // if (index > -1) {
-  //     newWatchlist = xx.splice(index, 1);
-  // }
-  // this.setState({
-  //   watchlist: newWatchlist
-  // });
-   
     this.props.deleteWatchlist(deleteObj);
   }
 
@@ -145,12 +139,15 @@ class Watchlist extends React.Component {
   }
 
   render() {
-    console.log("PORPS",this.props);
+    console.log("PORPS", this.props);
     const options = { deleteBtn: this.createCustomDeleteButton };
-    if (this.state.loading) {
+    if (this.state.loading ) {
+      console.log(this.state);
+      console.log("FIRST ELSE",this.state.stocks);
       return <div className="loader">Loading...</div>;
     } else {
-      console.log("INSIDE SECOND ELSE");
+      console.log(this.state);
+      console.log("INSIDE SECOND ELSE",this.state.stocks);
       const cellEditProp = {
         mode: "click"
       };
@@ -229,7 +226,10 @@ class Watchlist extends React.Component {
             >
               Float
             </TableHeaderColumn>
-            <TableHeaderColumn dataField="button" dataFormat={this.cellButton.bind(this)}>
+            <TableHeaderColumn
+              dataField="button"
+              dataFormat={this.cellButton.bind(this)}
+            >
               Delete
             </TableHeaderColumn>
           </BootstrapTable>
@@ -238,6 +238,5 @@ class Watchlist extends React.Component {
     }
   }
 }
-
 
 export default Watchlist;

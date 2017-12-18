@@ -1,7 +1,13 @@
 export const fetchWatchlist = id =>
   $.ajax({
     method: "GET",
-    url: `/watchlists/${id}`
+    url: `/watchlists/${id}`,
+    success: function (data){
+      return data;
+    },
+    error: function(data){
+      return data;
+    }
   });
 
 export const updateWatchlist = ticker =>

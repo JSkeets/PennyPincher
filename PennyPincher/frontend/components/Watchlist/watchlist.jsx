@@ -46,10 +46,11 @@ class Watchlist extends React.Component {
 
 
   componentDidMount() {
-    this.props.fetchWatchlist("1");
+    let user = this.props.user;
+    this.props.fetchWatchlist(user);
     $.ajax({
       method: "GET",
-      url: `/watchlists/${1}`,
+      url: `/watchlists/${user}`,
       success: function(data) {
         this.setState({watchlist: data.stock_symbols});
       }.bind(this),
@@ -58,9 +59,7 @@ class Watchlist extends React.Component {
       }
     });
     setTimeout(() => this.doBoth(),1000);
-    console.log("DIDMOUNT",this.state);
-
-    setTimeout(() => this.setState({ loading: false }), 3000);
+    setTimeout(() => this.setState({ loading: false }), 2000);
   }
 
   colFormatter(cell, row) {
@@ -137,6 +136,7 @@ class Watchlist extends React.Component {
     this.setState({
       watchlist: copy
     });
+    window.location.reload();
 
   }
 
@@ -152,15 +152,10 @@ class Watchlist extends React.Component {
   }
 
   render() {
-    console.log("PORPS", this.props);
     const options = { deleteBtn: this.createCustomDeleteButton };
     if (this.state.loading ) {
-      console.log(this.state);
-      console.log("FIRST ELSE",this.state.stocks);
       return <div className="loader">Loading...</div>;
     } else {
-      console.log(this.state);
-      console.log("INSIDE SECOND ELSE",this.state.stocks);
       const cellEditProp = {
         mode: "click"
       };

@@ -92674,9 +92674,6 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
     processForm: function processForm(user) {
       return dispatch((0, _session_actions.login)(user));
-    },
-    fetchWatchlist: function fetchWatchlist(id) {
-      return dispatch((0, _watchlist_actions.fetchWatchlist)(id));
     }
 
   };
@@ -92929,6 +92926,7 @@ var SignUpForm = function (_React$Component) {
       lname: ""
     };
     _this.handleSubmit = _this.handleSubmit.bind(_this);
+    _this.createWatchlist = _this.createWatchlist.bind(_this);
     return _this;
   }
 
@@ -92938,6 +92936,14 @@ var SignUpForm = function (_React$Component) {
       if (nextProps.loggedIn) {
         this.props.history.push("/");
       }
+    }
+  }, {
+    key: "createWatchlist",
+    value: function createWatchlist() {
+      $.ajax({
+        method: "POST",
+        url: "/watchlists"
+      });
     }
   }, {
     key: "update",
@@ -92954,6 +92960,7 @@ var SignUpForm = function (_React$Component) {
       e.preventDefault();
       var user = this.state;
       this.props.processForm(user);
+      this.createWatchlist();
     }
   }, {
     key: "navLink",
@@ -93599,10 +93606,11 @@ var Watchlist = function (_React$Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      this.props.fetchWatchlist("1");
+      var user = this.props.user;
+      this.props.fetchWatchlist(user);
       $.ajax({
         method: "GET",
-        url: "/watchlists/" + 1,
+        url: "/watchlists/" + user,
         success: function (data) {
           this.setState({ watchlist: data.stock_symbols });
         }.bind(this),
@@ -93613,11 +93621,9 @@ var Watchlist = function (_React$Component) {
       setTimeout(function () {
         return _this2.doBoth();
       }, 1000);
-      console.log("DIDMOUNT", this.state);
-
       setTimeout(function () {
         return _this2.setState({ loading: false });
-      }, 3000);
+      }, 2000);
     }
   }, {
     key: "colFormatter",
@@ -93706,6 +93712,7 @@ var Watchlist = function (_React$Component) {
       this.setState({
         watchlist: copy
       });
+      window.location.reload();
     }
   }, {
     key: "cellButton",
@@ -93726,19 +93733,14 @@ var Watchlist = function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      console.log("PORPS", this.props);
       var options = { deleteBtn: this.createCustomDeleteButton };
       if (this.state.loading) {
-        console.log(this.state);
-        console.log("FIRST ELSE", this.state.stocks);
         return _react2.default.createElement(
           "div",
           { className: "loader" },
           "Loading..."
         );
       } else {
-        console.log(this.state);
-        console.log("INSIDE SECOND ELSE", this.state.stocks);
         var cellEditProp = {
           mode: "click"
         };

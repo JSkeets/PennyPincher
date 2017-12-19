@@ -12,8 +12,7 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  processForm: user => dispatch(login(user)),
-  fetchWatchlist: id => dispatch(fetchWatchlist(id))
+  processForm: user => dispatch(login(user))
 
 });
 

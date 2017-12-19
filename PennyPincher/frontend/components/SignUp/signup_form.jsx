@@ -13,12 +13,20 @@ class SignUpForm extends React.Component {
       lname:""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.createWatchlist = this.createWatchlist.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.loggedIn) {
       this.props.history.push("/");
     }
+  }
+
+  createWatchlist(){
+    $.ajax({
+      method: "POST",
+      url: "/watchlists"
+    });
   }
 
   update(field) {
@@ -32,6 +40,7 @@ class SignUpForm extends React.Component {
     e.preventDefault();
     const user = this.state;
     this.props.processForm(user);
+    this.createWatchlist();
   }
 
   navLink() {

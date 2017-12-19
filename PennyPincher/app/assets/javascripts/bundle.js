@@ -48387,7 +48387,7 @@ var updateWatchlist = exports.updateWatchlist = function updateWatchlist(ticker)
 var deleteWatchlist = exports.deleteWatchlist = function deleteWatchlist(ticker) {
   return $.ajax({
     method: "DELETE",
-    url: "/watchlists/" + ticker.id + "/",
+    url: "/watchlists/" + ticker.userId + "/",
     data: { ticker: ticker }
   });
 };
@@ -93676,7 +93676,6 @@ var Watchlist = function (_React$Component) {
   }, {
     key: "handleSubmit",
     value: function handleSubmit(e) {
-      debugger;
       var copy = this.state.watchlist.slice();
       copy.push(this.state.ticker);
       this.setState({
@@ -93696,9 +93695,17 @@ var Watchlist = function (_React$Component) {
       var symbol = row.symbol;
       var deleteObj = {
         symbol: row.symbol,
-        id: this.state.id
+        id: this.state.user
       };
       this.props.deleteWatchlist(deleteObj);
+      var copy = this.state.watchlist.slice();
+      var index = copy.indexOf(symbol);
+      if (index > -1) {
+        copy.splice(index, 1);
+      }
+      this.setState({
+        watchlist: copy
+      });
     }
   }, {
     key: "cellButton",

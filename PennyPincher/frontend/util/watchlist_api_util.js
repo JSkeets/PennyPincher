@@ -17,10 +17,13 @@ $.ajax({
       data: {ticker}
    });
 
-export const deleteWatchlist = (ticker) =>
-$.ajax({
+export const deleteWatchlist = (ticker) =>{
+return ($.ajax({
       method: "DELETE",
-      url: `/watchlists/${ticker.id}/`,
+      url: `/watchlists/${ticker.userId}/`,
       data: {ticker}
-   });
+   })
+  );
+
+  };
 

@@ -29,7 +29,7 @@ class WatchlistsController < ApplicationController
     end
 
     def destroy
-        @watchlist = Watchlist.find(params[:id])
+        @watchlist = Watchlist.find_by_user_id(params[:ticker][:id])
         @watchlist.stock_symbols.delete(params[:ticker][:symbol])
         @watchlist.save
         render json: @watchlist

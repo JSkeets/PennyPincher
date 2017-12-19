@@ -108,7 +108,6 @@ class Watchlist extends React.Component {
   }
 
   handleSubmit(e) {
-    debugger;
     let copy = this.state.watchlist.slice();
     copy.push(this.state.ticker);
     this.setState({
@@ -127,10 +126,18 @@ class Watchlist extends React.Component {
     let symbol = row.symbol;
     let deleteObj = {
       symbol: row.symbol,
-      id: this.state.id
+      id: this.state.user
     };
     this.props.deleteWatchlist(deleteObj);
-  
+    let copy = this.state.watchlist.slice();
+    let index = copy.indexOf(symbol);
+    if (index > -1) {
+      copy.splice(index,1);
+    }
+    this.setState({
+      watchlist: copy
+    });
+
   }
 
   cellButton(cell, row, enumObject, rowIndex) {

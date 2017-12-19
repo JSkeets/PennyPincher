@@ -193,7 +193,8 @@ class Watchlist extends React.Component {
               value={this.state.ticker}
               onChange={this.update("ticker")}
             />
-            <input type="submit" />
+
+            <input type="submit" value="Add Ticker Symbol"/>
           </form>
           <BootstrapTable
             ref="table"

@@ -46136,11 +46136,16 @@ var _session_reducer = __webpack_require__(568);
 
 var _session_reducer2 = _interopRequireDefault(_session_reducer);
 
+var _errors_reducer = __webpack_require__(1032);
+
+var _errors_reducer2 = _interopRequireDefault(_errors_reducer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var RootReducer = (0, _redux.combineReducers)({
 	entities: _entities_reducer2.default,
-	session: _session_reducer2.default
+	session: _session_reducer2.default,
+	errors: _errors_reducer2.default
 });
 
 exports.default = RootReducer;
@@ -92679,7 +92684,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
-    loggedIn: Boolean(state.session.currentUser)
+    loggedIn: Boolean(state.session.currentUser),
+    errors: state.errors.session
   };
 };
 
@@ -92736,6 +92742,7 @@ var LoginForm = function (_React$Component) {
       password: ""
     };
     _this.handleSubmit = _this.handleSubmit.bind(_this);
+    _this.renderErrors = _this.renderErrors.bind(_this);
     return _this;
   }
 
@@ -92809,6 +92816,7 @@ var LoginForm = function (_React$Component) {
               null,
               "Please Log In "
             ),
+            this.renderErrors(),
             _react2.default.createElement("br", null),
             _react2.default.createElement(
               "div",
@@ -92878,8 +92886,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
-    loggedIn: Boolean(state.session.currentUser)
-
+    loggedIn: Boolean(state.session.currentUser),
+    errors: state.errors.session || []
   };
 };
 
@@ -92984,17 +92992,21 @@ var SignUpForm = function (_React$Component) {
         " Already a user? Login!"
       );
     }
-
-    // renderErrors() {
-    //   return (
-    //     <ul className="user-errors">
-    //       {this.props.errors.map((error, i) => (
-    //         <li key={`error-${i}`}>{error}</li>
-    //       ))}
-    //     </ul>
-    //   );
-    // }
-
+  }, {
+    key: "renderErrors",
+    value: function renderErrors() {
+      return _react2.default.createElement(
+        "ul",
+        { className: "user-errors" },
+        this.props.errors.map(function (error, i) {
+          return _react2.default.createElement(
+            "li",
+            { key: "error-" + i },
+            error
+          );
+        })
+      );
+    }
   }, {
     key: "render",
     value: function render() {
@@ -93011,6 +93023,7 @@ var SignUpForm = function (_React$Component) {
             _react2.default.createElement("br", null),
             "Create an account",
             _react2.default.createElement("br", null),
+            this.renderErrors(),
             _react2.default.createElement(
               "div",
               { className: "login-form" },
@@ -93794,7 +93807,7 @@ var Watchlist = function (_React$Component) {
               value: this.state.ticker,
               onChange: this.update("ticker")
             }),
-            _react2.default.createElement("input", { type: "submit" })
+            _react2.default.createElement("input", { type: "submit", value: "Add Ticker Symbol" })
           ),
           _react2.default.createElement(
             _reactBootstrapTable.BootstrapTable,
@@ -94014,6 +94027,105 @@ var NavBar = function NavBar(_ref) {
 };
 
 exports.default = NavBar;
+
+/***/ }),
+/* 1032 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _redux = __webpack_require__(69);
+
+var _session_errors_reducer = __webpack_require__(1033);
+
+var _session_errors_reducer2 = _interopRequireDefault(_session_errors_reducer);
+
+var _users_errors_reducer = __webpack_require__(1034);
+
+var _users_errors_reducer2 = _interopRequireDefault(_users_errors_reducer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ErrorsReducer = (0, _redux.combineReducers)({
+  session: _session_errors_reducer2.default,
+  users: _users_errors_reducer2.default
+});
+
+exports.default = ErrorsReducer;
+
+/***/ }),
+/* 1033 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _session_actions = __webpack_require__(56);
+
+var _nullErrors = [];
+
+exports.default = function () {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments[1];
+
+  Object.freeze(state);
+  switch (action.type) {
+    case _session_actions.RECEIVE_SESSION_ERRORS:
+      return action.errors;
+    case _session_actions.RECEIVE_CURRENT_USER:
+      return _nullErrors;
+    default:
+      return state;
+  }
+};
+
+/***/ }),
+/* 1034 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _user_actions = __webpack_require__(1035);
+
+var _session_actions = __webpack_require__(56);
+
+var _nullErrors = [];
+
+exports.default = function () {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments[1];
+
+  Object.freeze(state);
+  switch (action.type) {
+    case _user_actions.RECEIVE_USER_ERRORS:
+      return action.errors;
+    case _session_actions.RECEIVE_CURRENT_USER:
+      return _nullErrors;
+    default:
+      return state;
+  }
+};
+
+/***/ }),
+/* 1035 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 /***/ })
 /******/ ]);

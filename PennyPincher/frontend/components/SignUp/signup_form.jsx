@@ -47,15 +47,15 @@ class SignUpForm extends React.Component {
     return <Link to="/login"> Already a user? Login!</Link>;
   }
 
-  // renderErrors() {
-  //   return (
-  //     <ul className="user-errors">
-  //       {this.props.errors.map((error, i) => (
-  //         <li key={`error-${i}`}>{error}</li>
-  //       ))}
-  //     </ul>
-  //   );
-  // }
+  renderErrors() {
+    return (
+      <ul className="user-errors">
+        {this.props.errors.map((error, i) => (
+          <li key={`error-${i}`}>{error}</li>
+        ))}
+      </ul>
+    );
+  }
 
   render() {
     return <div className="login-page">
@@ -65,6 +65,7 @@ class SignUpForm extends React.Component {
             <br />
             Create an account
             <br />
+            {this.renderErrors()}
             <div className="login-form">
               <br />
 

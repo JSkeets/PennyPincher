@@ -93733,7 +93733,7 @@ var Watchlist = function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var options = { deleteBtn: this.createCustomDeleteButton };
+      var options = { noDataText: "Add a ticker symbol to your watchlist to begin!" };
       if (this.state.loading) {
         return _react2.default.createElement(
           "div",
@@ -93792,7 +93792,7 @@ var Watchlist = function (_React$Component) {
               remote: this.remote,
               search: true,
               pagination: true
-            }, "options", { onDeleteRow: this.props.onDeleteRow }),
+            }, "options", options),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
               {

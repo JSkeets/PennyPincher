@@ -152,7 +152,7 @@ class Watchlist extends React.Component {
   }
 
   render() {
-    const options = { deleteBtn: this.createCustomDeleteButton };
+    const options = { noDataText: "Add a ticker symbol to your watchlist to begin!"};
     if (this.state.loading ) {
       return <div className="loader">Loading...</div>;
     } else {
@@ -202,7 +202,7 @@ class Watchlist extends React.Component {
             remote={this.remote}
             search
             pagination
-            options={{ onDeleteRow: this.props.onDeleteRow }}
+            options={options}
           >
             <TableHeaderColumn
               dataField="symbol"

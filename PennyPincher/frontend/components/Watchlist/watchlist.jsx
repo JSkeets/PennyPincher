@@ -108,12 +108,17 @@ class Watchlist extends React.Component {
   }
 
   handleSubmit(e) {
-    let stateCopy = Object.assign({}, this.state);
-    stateCopy.stocks = Object.keys(stateCopy.stocks);
-    this.setState(stateCopy);
-    this.setState({ stocks: Object.keys(this.props.stocks) });
+    debugger;
+    let copy = this.state.watchlist.slice();
+    copy.push(this.state.ticker);
+    this.setState({
+      watchlist: copy
+    });
     e.preventDefault();
-    const ticker = this.state;
+    const ticker = {
+      ticker: this.state.ticker,
+      userId: this.state.user
+    };
     this.props.processForm(ticker);
     window.location.reload();
   }
@@ -125,6 +130,7 @@ class Watchlist extends React.Component {
       id: this.state.id
     };
     this.props.deleteWatchlist(deleteObj);
+  
   }
 
   cellButton(cell, row, enumObject, rowIndex) {
@@ -191,9 +197,7 @@ class Watchlist extends React.Component {
             ref="table"
             data={realParsed}
             options={options}
-            selectRow={selectRow}
             remote={this.remote}
-            deleteRow
             search
             pagination
             options={{ onDeleteRow: this.props.onDeleteRow }}

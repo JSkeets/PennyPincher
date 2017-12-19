@@ -93676,12 +93676,17 @@ var Watchlist = function (_React$Component) {
   }, {
     key: "handleSubmit",
     value: function handleSubmit(e) {
-      var stateCopy = Object.assign({}, this.state);
-      stateCopy.stocks = Object.keys(stateCopy.stocks);
-      this.setState(stateCopy);
-      this.setState({ stocks: Object.keys(this.props.stocks) });
+      debugger;
+      var copy = this.state.watchlist.slice();
+      copy.push(this.state.ticker);
+      this.setState({
+        watchlist: copy
+      });
       e.preventDefault();
-      var ticker = this.state;
+      var ticker = {
+        ticker: this.state.ticker,
+        userId: this.state.user
+      };
       this.props.processForm(ticker);
       window.location.reload();
     }
@@ -93775,9 +93780,7 @@ var Watchlist = function (_React$Component) {
               ref: "table",
               data: realParsed,
               options: options,
-              selectRow: selectRow,
               remote: this.remote,
-              deleteRow: true,
               search: true,
               pagination: true
             }, "options", { onDeleteRow: this.props.onDeleteRow }),

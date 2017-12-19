@@ -19,11 +19,9 @@ class WatchlistsController < ApplicationController
     end
 
     def update
-         keys = params[:ticker][:stocks].keys
-         @watchlist = Watchlist.find(params[:id])
-         stock_symbols = keys.push(params[:ticker][:ticker])
-         watchlist_attributes = { stock_symbols: stock_symbols}
-      if @watchlist.update_attributes(watchlist_attributes)
+         @watchlist = Watchlist.find_by_user_id(params[:ticker][:userId])
+        @watchlist.stock_symbols.push(params[:ticker][:ticker])
+      if @watchlist.save
         render json: @watchlist
       else
         render json: @watchlist.errors.full_messages, status:422

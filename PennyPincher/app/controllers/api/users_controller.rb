@@ -4,6 +4,8 @@ class Api::UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       UserMailer.account_activation(@user).deliver_now
+     @watchlist =  Watchlist.new(stock_symbols:[""],user_id: @user.id)
+     @watchlist.save
     else
       render json: @user.errors.full_messages, status: 422
     end

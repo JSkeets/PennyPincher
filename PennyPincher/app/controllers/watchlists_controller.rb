@@ -20,23 +20,12 @@ class WatchlistsController < ApplicationController
 
     def update
          @watchlist = Watchlist.find_by_user_id(params[:ticker][:userId])
-        if @watchlist
             @watchlist.stock_symbols.push(params[:ticker][:ticker])
              if @watchlist.save
                 render json: @watchlist
              else
                 render json: @watchlist.errors.full_messages, status:422
              end
-        else
-            stock = params[:ticker][:ticker]
-            user = params[:ticker][:userId].to_i
-            @watchlist = Watchlist.new(stock_symbols:["#{stock}"],user_id:user)
-                if @watchlist.save!
-                    render json: @watchlist
-                else
-                    render json: @watchlist.errors.full_messages, status: 422
-                end
-        end
     end
 
     def destroy

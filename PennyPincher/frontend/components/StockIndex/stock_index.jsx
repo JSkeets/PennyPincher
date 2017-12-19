@@ -96,10 +96,23 @@ class StockIndex extends React.Component {
           <TableHeaderColumn dataField="volume" dataSort={true}>
             Volume
           </TableHeaderColumn>
-          <TableHeaderColumn dataField="percentChange" dataSort={true} dataFormat={this.percentFormatter}>
+          <TableHeaderColumn dataField="percentChange" dataSort={true}
+            dataFormat={this.percentFormatter}
+            filter={ {
+            type: 'NumberFilter',
+            delay: 300,
+            numberComparators: [ '=', '>', '<=' ]
+          } }
+            >
             Percent Change
           </TableHeaderColumn>
-          <TableHeaderColumn dataField="float" dataSort={true} dataFormat={this.floatFormatter}>
+          <TableHeaderColumn dataField="float" dataSort={true} dataFormat={this.floatFormatter}
+          filter={ {
+            type: 'NumberFilter',
+            delay: 300,
+            numberComparators: [ '=', '>', '<=' ]
+          } }
+          >
             Float
           </TableHeaderColumn>
         </BootstrapTable>

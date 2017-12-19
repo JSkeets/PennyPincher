@@ -81625,12 +81625,25 @@ var StockIndex = function (_React$Component) {
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { dataField: "percentChange", dataSort: true, dataFormat: this.percentFormatter },
+              { dataField: "percentChange", dataSort: true,
+                dataFormat: this.percentFormatter,
+                filter: {
+                  type: 'NumberFilter',
+                  delay: 300,
+                  numberComparators: ['=', '>', '<=']
+                }
+              },
               "Percent Change"
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { dataField: "float", dataSort: true, dataFormat: this.floatFormatter },
+              { dataField: "float", dataSort: true, dataFormat: this.floatFormatter,
+                filter: {
+                  type: 'NumberFilter',
+                  delay: 300,
+                  numberComparators: ['=', '>', '<=']
+                }
+              },
               "Float"
             )
           )
@@ -93818,7 +93831,12 @@ var Watchlist = function (_React$Component) {
               {
                 dataField: "changePercent",
                 dataSort: true,
-                dataFormat: this.percentFormatter
+                dataFormat: this.percentFormatter,
+                filter: {
+                  type: 'NumberFilter',
+                  delay: 300,
+                  numberComparators: ['=', '>', '<=']
+                }
               },
               "Percent Change"
             ),
@@ -93827,7 +93845,12 @@ var Watchlist = function (_React$Component) {
               {
                 dataField: "float",
                 dataSort: true,
-                dataFormat: this.floatFormatter
+                dataFormat: this.floatFormatter,
+                filter: {
+                  type: 'NumberFilter',
+                  delay: 300,
+                  numberComparators: ['=', '>', '<=']
+                }
               },
               "Float"
             ),

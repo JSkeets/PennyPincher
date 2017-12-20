@@ -14,13 +14,15 @@ import { last, timeIntervalBarWidth } from "react-stockcharts/lib/utils";
 class AreaChart extends React.Component {
   render() {
     const { data, type, width, ratio } = this.props;
+
     let xAccessor = d => {
       let formatter = timeParse("%Y-%m-%d");
       return formatter(d.date);
     };
+
     const xExtents = [
       xAccessor(last(data)),
-      xAccessor(data[data.length - 100])
+      xAccessor(data[data.length - (data.length-1)])
     ];
     return (
       <div>

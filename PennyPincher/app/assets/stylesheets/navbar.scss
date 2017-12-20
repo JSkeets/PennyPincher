@@ -19,20 +19,25 @@
 	color: #058ed9;
 }
 
+.header-name:hover{
+	text-decoration: none;
+	color: #058ed9;
+}
+
 .home-nav{
 	display:flex;
 	align-self: center;
 }
 h1.name {
-
 	text-decoration: none;
 	padding: 10px;
 	color: #058ed9;
 	font-family: $courgette;
 }
+
 h1.name:hover,.logout-button:hover,.my-watchlist:hover {
 	color: #fc5130;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .header-buttons{

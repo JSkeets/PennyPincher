@@ -46206,9 +46206,9 @@ Object.defineProperty(exports, "__esModule", {
 
 var _stock_actions = __webpack_require__(45);
 
-var _merge3 = __webpack_require__(98);
+var _merge2 = __webpack_require__(98);
 
-var _merge4 = _interopRequireDefault(_merge3);
+var _merge3 = _interopRequireDefault(_merge2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -46222,11 +46222,9 @@ var StocksReducer = function StocksReducer() {
 	var newState = {};
 	switch (action.type) {
 		case _stock_actions.RECEIVE_STOCK:
-			return (0, _merge4.default)({}, state, _defineProperty({}, action.stock.quote.symbol, action.stock));
+			return (0, _merge3.default)({}, state, _defineProperty({}, action.stock.quote.symbol, action.stock));
 		case _stock_actions.RECEIVE_ALL_STOCKS:
-			return (0, _merge4.default)({}, state, action.stocks);
-		case _stock_actions.RECEIVE_TWEETS:
-			return (0, _merge4.default)({}, state, _defineProperty({}, action.hashtag, action.res));
+			return (0, _merge3.default)({}, state, action.stocks);
 		default:
 			return state;
 	}
@@ -52414,6 +52412,9 @@ var StockShow = function (_React$Component) {
 		_this.loadTweets = _this.loadTweets.bind(_this);
 		_this.recentNews = _this.recentNews.bind(_this);
 		_this.percentUp = _this.percentUp.bind(_this);
+		_this.state = {
+			loading: true
+		};
 		_reactGa2.default.initialize("UA-107597692-1");
 		// This just needs to be called once since we have no routes in this case.
 		_reactGa2.default.pageview(window.location.pathname);
@@ -52423,8 +52424,13 @@ var StockShow = function (_React$Component) {
 	_createClass(StockShow, [{
 		key: "componentDidMount",
 		value: function componentDidMount() {
+			var _this2 = this;
+
 			this.loadStock();
 			this.loadTweets();
+			setTimeout(function () {
+				return _this2.setState({ loading: false });
+			}, 1000);
 			// setInterval(this.loadStock, 2000);
 		}
 	}, {
@@ -52481,164 +52487,168 @@ var StockShow = function (_React$Component) {
 	}, {
 		key: "render",
 		value: function render() {
-
 			var symbol = this.props.symbol;
-			if (!this.props.stocks[symbol]) {
-				return null;
-			}
-			var recentNews = this.recentNews();
-			var tweets = this.props.tweets[symbol].statuses;
-			var percStyle = this.percentUp();
+			if (this.state.loading) {
+				return _react2.default.createElement(
+					"div",
+					{ className: "loader" },
+					"Loading..."
+				);
+			} else {
+				var recentNews = this.recentNews();
+				var tweets = this.props.tweets[symbol].statuses;
+				var percStyle = this.percentUp();
 
-			return _react2.default.createElement(
-				"div",
-				null,
-				_react2.default.createElement(
+				return _react2.default.createElement(
 					"div",
-					{ className: "stock-basic-info" },
+					null,
 					_react2.default.createElement(
 						"div",
-						{ id: "symbol" },
-						_react2.default.createElement(
-							"i",
-							null,
-							"Symbol"
-						),
-						_react2.default.createElement(
-							"i",
-							null,
-							this.props.stocks[symbol].quote.symbol
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ id: "company-name" },
-						_react2.default.createElement(
-							"i",
-							null,
-							"Company Name"
-						),
-						_react2.default.createElement(
-							"i",
-							null,
-							this.props.stocks[symbol].quote.companyName
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ id: "price" },
-						_react2.default.createElement(
-							"i",
-							null,
-							"Current Price"
-						),
-						_react2.default.createElement(
-							"i",
-							null,
-							this.props.stocks[symbol].quote.latestPrice
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ id: "volume" },
-						_react2.default.createElement(
-							"i",
-							null,
-							"Volume"
-						),
-						_react2.default.createElement(
-							"i",
-							null,
-							this.props.stocks[symbol].quote.latestVolume
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ id: "percent-change", style: percStyle },
-						_react2.default.createElement(
-							"i",
-							null,
-							"Percent Change"
-						),
-						_react2.default.createElement(
-							"i",
-							null,
-							(this.props.stocks[symbol].quote.changePercent * 100).toFixed(2)
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ id: "float" },
-						_react2.default.createElement(
-							"i",
-							null,
-							"Float"
-						),
-						_react2.default.createElement(
-							"i",
-							null,
-							this.props.stocks[symbol].stats.float
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ id: "news-header" },
-						_react2.default.createElement(
-							"i",
-							null,
-							"Articles in the Last 5 Days"
-						),
-						_react2.default.createElement(
-							"i",
-							null,
-							recentNews.length
-						)
-					)
-				),
-				_react2.default.createElement(
-					"div",
-					{ className: "chart-tweet-wrapper" },
-					_react2.default.createElement(
-						"div",
-						{ className: "chart-wrapper" },
-						_react2.default.createElement(_chart_component2.default, { stocks: this.props.stocks, symbol: this.props.stocks[symbol].quote.symbol })
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "tweets-news-wrapper" },
+						{ className: "stock-basic-info" },
 						_react2.default.createElement(
 							"div",
-							{ className: "stock-news" },
+							{ id: "symbol" },
 							_react2.default.createElement(
-								"ul",
-								{ id: "news-index" },
-								_react2.default.createElement(
-									_reactCollapsible2.default,
-									{ trigger: "Recent News Articles" },
-									recentNews.map(function (news) {
-										return _react2.default.createElement(_news_index_item2.default, { key: news.datetime, news: news });
-									})
-								)
+								"i",
+								null,
+								"Symbol"
+							),
+							_react2.default.createElement(
+								"i",
+								null,
+								this.props.stocks[symbol].quote.symbol
 							)
 						),
 						_react2.default.createElement(
-							_reactCollapsible2.default,
-							{ trigger: "What are people saying on Twitter?" },
+							"div",
+							{ id: "company-name" },
+							_react2.default.createElement(
+								"i",
+								null,
+								"Company Name"
+							),
+							_react2.default.createElement(
+								"i",
+								null,
+								this.props.stocks[symbol].quote.companyName
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ id: "price" },
+							_react2.default.createElement(
+								"i",
+								null,
+								"Current Price"
+							),
+							_react2.default.createElement(
+								"i",
+								null,
+								this.props.stocks[symbol].quote.latestPrice
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ id: "volume" },
+							_react2.default.createElement(
+								"i",
+								null,
+								"Volume"
+							),
+							_react2.default.createElement(
+								"i",
+								null,
+								this.props.stocks[symbol].quote.latestVolume
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ id: "percent-change", style: percStyle },
+							_react2.default.createElement(
+								"i",
+								null,
+								"Percent Change"
+							),
+							_react2.default.createElement(
+								"i",
+								null,
+								(this.props.stocks[symbol].quote.changePercent * 100).toFixed(2)
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ id: "float" },
+							_react2.default.createElement(
+								"i",
+								null,
+								"Float"
+							),
+							_react2.default.createElement(
+								"i",
+								null,
+								this.props.stocks[symbol].stats.float
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ id: "news-header" },
+							_react2.default.createElement(
+								"i",
+								null,
+								"Articles in the Last 5 Days"
+							),
+							_react2.default.createElement(
+								"i",
+								null,
+								recentNews.length
+							)
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "chart-tweet-wrapper" },
+						_react2.default.createElement(
+							"div",
+							{ className: "chart-wrapper" },
+							_react2.default.createElement(_chart_component2.default, { stocks: this.props.stocks, symbol: this.props.stocks[symbol].quote.symbol })
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "tweets-news-wrapper" },
 							_react2.default.createElement(
 								"div",
-								{ className: "stock-tweets" },
+								{ className: "stock-news" },
 								_react2.default.createElement(
 									"ul",
-									{ id: "tweets-index" },
-									tweets.map(function (tweet) {
-										return _react2.default.createElement(_tweets_index_item2.default, { key: tweet.created_at, tweet: tweet });
-									})
+									{ id: "news-index" },
+									_react2.default.createElement(
+										_reactCollapsible2.default,
+										{ trigger: "Recent News Articles" },
+										recentNews.map(function (news) {
+											return _react2.default.createElement(_news_index_item2.default, { key: news.datetime, news: news });
+										})
+									)
+								)
+							),
+							_react2.default.createElement(
+								_reactCollapsible2.default,
+								{ trigger: "What are people saying on Twitter?" },
+								_react2.default.createElement(
+									"div",
+									{ className: "stock-tweets" },
+									_react2.default.createElement(
+										"ul",
+										{ id: "tweets-index" },
+										tweets.map(function (tweet) {
+											return _react2.default.createElement(_tweets_index_item2.default, { key: tweet.created_at, tweet: tweet });
+										})
+									)
 								)
 							)
 						)
 					)
-				)
-			);
+				);
+			}
 		}
 	}]);
 
@@ -70929,11 +70939,13 @@ var AreaChart = function (_React$Component) {
           width = _props.width,
           ratio = _props.ratio;
 
+
       var xAccessor = function xAccessor(d) {
         var formatter = (0, _d3TimeFormat.timeParse)("%Y-%m-%d");
         return formatter(d.date);
       };
-      var xExtents = [xAccessor((0, _utils.last)(data)), xAccessor(data[data.length - 100])];
+
+      var xExtents = [xAccessor((0, _utils.last)(data)), xAccessor(data[data.length - (data.length - 1)])];
       return _react2.default.createElement(
         "div",
         null,
@@ -94032,7 +94044,6 @@ var loggedInLinks = function loggedInLinks(currentUser, logout) {
           {
             className: "my-watchlist",
             to: "/watchlist"
-
           },
           "My Watchlist"
         )

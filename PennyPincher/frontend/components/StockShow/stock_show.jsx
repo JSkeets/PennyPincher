@@ -17,6 +17,9 @@ class StockShow extends React.Component {
 		this.loadTweets = this.loadTweets.bind(this);
 		this.recentNews = this.recentNews.bind(this);
 		this.percentUp = this.percentUp.bind(this);
+		this.state = {
+			loading:true
+		};
 		ReactGA.initialize("UA-107597692-1");
 		// This just needs to be called once since we have no routes in this case.
 		ReactGA.pageview(window.location.pathname);
@@ -24,6 +27,7 @@ class StockShow extends React.Component {
 	componentDidMount() {
 		this.loadStock();
 		this.loadTweets();
+		setTimeout(() => this.setState({ loading: false }), 1000);
 		// setInterval(this.loadStock, 2000);
 	}
 
@@ -71,11 +75,10 @@ class StockShow extends React.Component {
 		return news;
 	}
 	render() {
-
-		let symbol = this.props.symbol;
-		if (!this.props.stocks[symbol]) {
-			return null;
-		}
+	let symbol = this.props.symbol;
+	  if (this.state.loading) {
+		  return <div className="loader">Loading...</div>;
+    	} else {
 		let recentNews = this.recentNews();
 		let tweets = this.props.tweets[symbol].statuses;
 		let percStyle = this.percentUp();
@@ -140,6 +143,7 @@ class StockShow extends React.Component {
 		</div>
 		);
 	}
+}
 }
 
 export default StockShow;

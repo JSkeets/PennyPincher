@@ -28,7 +28,6 @@ const loggedInLinks = (currentUser, logout) => (
         <NavLink
           className="my-watchlist"
           to="/watchlist"
-
         >
           My Watchlist
         </NavLink>

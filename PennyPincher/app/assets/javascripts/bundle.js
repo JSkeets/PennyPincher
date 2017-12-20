@@ -94023,26 +94023,25 @@ var loggedInLinks = function loggedInLinks(currentUser, logout) {
         "div",
         { className: "header-buttons-right" },
         _react2.default.createElement(
-          _reactRouterDom.NavLink,
-          {
-            className: "my_watchlist",
-            to: "/watchlist",
-            activeClassName: "is-active"
-          },
-          "My Watchlist"
-        ),
-        _react2.default.createElement(
           "button",
           { className: "logout-button", onClick: logout },
-          "LOG OUT"
+          "Log Out"
+        ),
+        _react2.default.createElement(
+          _reactRouterDom.NavLink,
+          {
+            className: "my-watchlist",
+            to: "/watchlist"
+
+          },
+          "My Watchlist"
         )
       ),
       _react2.default.createElement(
         _reactRouterDom.NavLink,
         {
           className: "header-name",
-          to: "/dashboard",
-          activeClassName: "user-is-active"
+          to: "/dashboard"
         },
         "Welcome ",
         currentUser.username

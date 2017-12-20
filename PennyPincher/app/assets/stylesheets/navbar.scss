@@ -13,6 +13,16 @@
 	flex-direction: column-reverse;
 }
 
+.header-name,.my-watchlist{
+	padding-right:30px;
+	text-decoration: none;
+	color: #058ed9;
+}
+
+.home-nav{
+	display:flex;
+	align-self: center;
+}
 h1.name {
 
 	text-decoration: none;
@@ -20,14 +30,18 @@ h1.name {
 	color: #058ed9;
 	font-family: $courgette;
 }
-h1.name:hover {
+h1.name:hover,.logout-button:hover,.my-watchlist:hover {
 	color: #fc5130;
+	text-decoration: none;
 }
 
 .header-buttons{
 	display:flex;
-	flex-direction: row-reverse;
 	justify-content: space-between;
+	font-size:30px;
+	font-family: $courgette;
+	text-decoration: none;
+	color: #058ed9;
 }
 
 #nameLink {
@@ -46,6 +60,8 @@ a.login,.logout-button{
 	font-family: $courgette;
 	font-size: 30px;
 	padding-left: 20px;
+	background-color: #eeeeee;
+	margin-right: 20px;
 }
 
 a.login:hover{

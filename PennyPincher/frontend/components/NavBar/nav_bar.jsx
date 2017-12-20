@@ -22,21 +22,20 @@ const loggedInLinks = (currentUser, logout) => (
   <hgroup className="nav-bar-login">
     <div className="header-buttons">
       <div className="header-buttons-right">
+        <button className="logout-button" onClick={logout}>
+          Log Out
+        </button>
         <NavLink
-          className="my_watchlist"
+          className="my-watchlist"
           to="/watchlist"
-          activeClassName="is-active"
+
         >
           My Watchlist
         </NavLink>
-        <button className="logout-button" onClick={logout}>
-          LOG OUT
-        </button>
       </div>
       <NavLink
         className="header-name"
         to="/dashboard"
-        activeClassName="user-is-active"
       >
         Welcome {currentUser.username}
       </NavLink>

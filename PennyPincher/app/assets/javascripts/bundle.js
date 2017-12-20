@@ -52269,6 +52269,8 @@ var _reactRouterDom = __webpack_require__(18);
 
 var _stock_actions = __webpack_require__(45);
 
+var _route_util = __webpack_require__(1036);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 window.fetchTweets = _stock_actions.fetchTweets;
@@ -52279,7 +52281,7 @@ var App = function App() {
     { className: "app" },
     _react2.default.createElement(_navbar_container2.default, null),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: _stock_index_container2.default }),
-    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/watchlist", component: _watchlist_container2.default }),
+    _react2.default.createElement(_route_util.ProtectedRoute, { exact: true, path: "/watchlist", component: _watchlist_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/signup", component: _signup_form_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/login", component: _login_form_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/thankyou", component: _thankyou2.default }),
@@ -92836,7 +92838,7 @@ var LoginForm = function (_React$Component) {
             _react2.default.createElement(
               "i",
               null,
-              " Welcome to Penny Pincher "
+              " Welcome to 6th Cent "
             ),
             _react2.default.createElement("br", null),
             _react2.default.createElement(
@@ -93057,7 +93059,7 @@ var SignUpForm = function (_React$Component) {
           _react2.default.createElement(
             "form",
             { onSubmit: this.handleSubmit, className: "signup-form-box" },
-            "Welcome to Penny Pincher",
+            "Welcome to 6th Cent",
             _react2.default.createElement("br", null),
             "Create an account",
             _react2.default.createElement("br", null),
@@ -94012,7 +94014,7 @@ var sessionLinks = function sessionLinks() {
         _react2.default.createElement(
           "h1",
           { className: "name" },
-          "Penny Pincher"
+          "6th Cent"
         )
       ),
       _react2.default.createElement(
@@ -94172,6 +94174,63 @@ exports.default = function () {
       return state;
   }
 };
+
+/***/ }),
+/* 1035 */,
+/* 1036 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ProtectedRoute = exports.AuthRoute = undefined;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRedux = __webpack_require__(37);
+
+var _reactRouterDom = __webpack_require__(18);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Auth = function Auth(_ref) {
+  var Component = _ref.component,
+      path = _ref.path,
+      loggedIn = _ref.loggedIn;
+  return _react2.default.createElement(_reactRouterDom.Route, {
+    path: path,
+    render: function render(props) {
+      return !loggedIn ? _react2.default.createElement(Component, props) : _react2.default.createElement(_reactRouterDom.Redirect, { to: "/dashboard" });
+    }
+  });
+};
+
+var Protected = function Protected(_ref2) {
+  var Component = _ref2.component,
+      path = _ref2.path,
+      loggedIn = _ref2.loggedIn;
+  return _react2.default.createElement(_reactRouterDom.Route, {
+    path: path,
+    render: function render(props) {
+      return loggedIn ? _react2.default.createElement(Component, props) : _react2.default.createElement(_reactRouterDom.Redirect, { to: "/login" });
+    }
+  });
+};
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    loggedIn: Boolean(state.session.currentUser)
+  };
+};
+
+var AuthRoute = exports.AuthRoute = (0, _reactRouterDom.withRouter)((0, _reactRedux.connect)(mapStateToProps, null)(Auth));
+
+var ProtectedRoute = exports.ProtectedRoute = (0, _reactRouterDom.withRouter)((0, _reactRedux.connect)(mapStateToProps, null)(Protected));
 
 /***/ })
 /******/ ]);

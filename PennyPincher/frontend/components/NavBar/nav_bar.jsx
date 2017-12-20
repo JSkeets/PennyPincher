@@ -7,7 +7,7 @@ const sessionLinks = () => (
 	<div>
 		<div className="nav-bar">
 			<Link to={`/`} id="nameLink">
-				<h1 className="name">Penny Pincher</h1>
+				<h1 className="name">6th Cent</h1>
 			</Link>
 
 			<Link className="login" to="/login/">

@@ -71,7 +71,7 @@ class SignUpForm extends React.Component {
     return <div className="login-page">
         <div className="form">
           <form onSubmit={this.handleSubmit} className="signup-form-box">
-            Welcome to Penny Pincher
+            Welcome to 6th Cent
             <br />
             Create an account
             <br />

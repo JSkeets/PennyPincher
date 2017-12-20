@@ -49,7 +49,7 @@ class LoginForm extends React.Component {
     return <div className="login-page">
         <div className="form">
           <form onSubmit={this.handleSubmit} className="login-form">
-            <i> Welcome to Penny Pincher </i>
+            <i> Welcome to 6th Cent </i>
             <br />
             <i>Please Log In </i>
             {this.renderErrors()}

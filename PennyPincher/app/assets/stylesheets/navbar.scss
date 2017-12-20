@@ -6,6 +6,13 @@
 	flex-direction: column;
 }
 
+.nav-bar-login{
+	display: flex;
+	font-size: 45px;
+	background-color: #eeeeee;
+	flex-direction: column-reverse;
+}
+
 h1.name {
 
 	text-decoration: none;
@@ -15,6 +22,12 @@ h1.name {
 }
 h1.name:hover {
 	color: #fc5130;
+}
+
+.header-buttons{
+	display:flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
 }
 
 #nameLink {
@@ -27,7 +40,7 @@ body {
 	font-family: $abel;
 }
 
-a.login {
+a.login,.logout-button{
 	text-decoration: none;
 	color: #058ed9;
 	font-family: $courgette;

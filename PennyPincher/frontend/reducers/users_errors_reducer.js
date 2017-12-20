@@ -1,4 +1,4 @@
-import { RECEIVE_USER_ERRORS } from "../actions/user_actions";
+import { RECEIVE_USER_ERRORS } from "../actions/session_actions";
 import { RECEIVE_CURRENT_USER } from "../actions/session_actions";
 
 const _nullErrors = [];

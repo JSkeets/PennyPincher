@@ -19,9 +19,6 @@ export const createUser = (user) =>(
     success: function(response) {
     //When we get 200, this function should execute
     window.location.href = "/#/thankyou";
-  },
-  error: function(error){
-    console.log("Error is ", error);
   }
   })
 );

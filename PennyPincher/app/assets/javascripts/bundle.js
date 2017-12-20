@@ -6356,7 +6356,7 @@ module.exports = root;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.resetPassword = exports.resetEmail = exports.createUser = exports.logout = exports.login = exports.receiveErrors = exports.receiveCurrentUser = exports.RECEIVE_SESSION_ERRORS = exports.RECEIVE_CURRENT_USER = undefined;
+exports.resetPassword = exports.resetEmail = exports.createUser = exports.logout = exports.login = exports.receiveUserErrors = exports.receiveErrors = exports.receiveCurrentUser = exports.RECEIVE_USER_ERRORS = exports.RECEIVE_SESSION_ERRORS = exports.RECEIVE_CURRENT_USER = undefined;
 
 var _session_api_util = __webpack_require__(569);
 
@@ -6366,6 +6366,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 var RECEIVE_CURRENT_USER = exports.RECEIVE_CURRENT_USER = "RECEIVE_CURRENT_USER";
 var RECEIVE_SESSION_ERRORS = exports.RECEIVE_SESSION_ERRORS = "RECEIVE_ERRORS";
+var RECEIVE_USER_ERRORS = exports.RECEIVE_USER_ERRORS = "RECEIVE_USER_ERRORS";
 
 var receiveCurrentUser = exports.receiveCurrentUser = function receiveCurrentUser(currentUser) {
   return {
@@ -6377,6 +6378,13 @@ var receiveCurrentUser = exports.receiveCurrentUser = function receiveCurrentUse
 var receiveErrors = exports.receiveErrors = function receiveErrors(errors) {
   return {
     type: RECEIVE_SESSION_ERRORS,
+    errors: errors
+  };
+};
+
+var receiveUserErrors = exports.receiveUserErrors = function receiveUserErrors(errors) {
+  return {
+    type: RECEIVE_USER_ERRORS,
     errors: errors
   };
 };
@@ -48464,9 +48472,6 @@ var createUser = exports.createUser = function createUser(user) {
     success: function success(response) {
       //When we get 200, this function should execute
       window.location.href = "/#/thankyou";
-    },
-    error: function error(_error) {
-      console.log("Error is ", _error);
     }
   });
 };
@@ -81620,12 +81625,23 @@ var StockIndex = function (_React$Component) {
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { dataField: "lastSalePrice", dataSort: true },
+              { dataField: "lastSalePrice", dataSort: true,
+                filter: {
+                  type: 'NumberFilter',
+                  delay: 300,
+                  numberComparators: ['=', '>', '<=']
+                } },
               "Price"
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { dataField: "volume", dataSort: true },
+              { dataField: "volume",
+                dataSort: true,
+                filter: {
+                  type: 'NumberFilter',
+                  delay: 300,
+                  numberComparators: ['=', '>', '<=']
+                } },
               "Volume"
             ),
             _react2.default.createElement(
@@ -92944,10 +92960,12 @@ var SignUpForm = function (_React$Component) {
       email: "",
       phone_number: "",
       fname: "",
-      lname: ""
+      lname: "",
+      errors: []
     };
     _this.handleSubmit = _this.handleSubmit.bind(_this);
     _this.createWatchlist = _this.createWatchlist.bind(_this);
+    _this.renderErrors = _this.renderErrors.bind(_this);
     return _this;
   }
 
@@ -92956,6 +92974,11 @@ var SignUpForm = function (_React$Component) {
     value: function componentWillReceiveProps(nextProps) {
       if (nextProps.loggedIn) {
         this.props.history.push("/");
+      }
+      if (nextProps.errors) {
+        this.setState({
+          errors: this.props.errors
+        });
       }
     }
   }, {
@@ -93010,6 +93033,9 @@ var SignUpForm = function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      console.log(this.props);
+      console.log(this.renderErrors);
+      console.log(this.state);
       return _react2.default.createElement(
         "div",
         { className: "login-page" },
@@ -93019,7 +93045,7 @@ var SignUpForm = function (_React$Component) {
           _react2.default.createElement(
             "form",
             { onSubmit: this.handleSubmit, className: "signup-form-box" },
-            "Welcome to Straight Up",
+            "Welcome to Penny Pincher",
             _react2.default.createElement("br", null),
             "Create an account",
             _react2.default.createElement("br", null),
@@ -93831,12 +93857,22 @@ var Watchlist = function (_React$Component) {
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { dataField: "price", dataSort: true },
+              { dataField: "price", dataSort: true,
+                filter: {
+                  type: 'NumberFilter',
+                  delay: 300,
+                  numberComparators: ['=', '>', '<=']
+                } },
               "Price"
             ),
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
-              { dataField: "volume", dataSort: true },
+              { dataField: "volume", dataSort: true,
+                filter: {
+                  type: 'NumberFilter',
+                  delay: 300,
+                  numberComparators: ['=', '>', '<=']
+                } },
               "Volume"
             ),
             _react2.default.createElement(
@@ -93870,6 +93906,7 @@ var Watchlist = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrapTable.TableHeaderColumn,
               {
+                width: "5%",
                 dataField: "button",
                 dataFormat: this.cellButton.bind(this)
               },
@@ -93978,41 +94015,49 @@ var sessionLinks = function sessionLinks() {
 var loggedInLinks = function loggedInLinks(currentUser, logout) {
   return _react2.default.createElement(
     "hgroup",
-    { className: "header-group" },
+    { className: "nav-bar-login" },
     _react2.default.createElement(
-      "button",
-      { className: "logout-button", onClick: logout },
-      "LOG OUT"
-    ),
-    _react2.default.createElement(
-      _reactRouterDom.NavLink,
-      {
-        className: "my_watchlist",
-        to: "/watchlist",
-        activeClassName: "is-active"
-      },
-      "My Watchlist"
-    ),
-    _react2.default.createElement(
-      _reactRouterDom.NavLink,
-      {
-        className: "header-name",
-        to: "/dashboard",
-        activeClassName: "user-is-active"
-      },
-      "Welcome ",
-      currentUser.username
+      "div",
+      { className: "header-buttons" },
+      _react2.default.createElement(
+        "div",
+        { className: "header-buttons-right" },
+        _react2.default.createElement(
+          _reactRouterDom.NavLink,
+          {
+            className: "my_watchlist",
+            to: "/watchlist",
+            activeClassName: "is-active"
+          },
+          "My Watchlist"
+        ),
+        _react2.default.createElement(
+          "button",
+          { className: "logout-button", onClick: logout },
+          "LOG OUT"
+        )
+      ),
+      _react2.default.createElement(
+        _reactRouterDom.NavLink,
+        {
+          className: "header-name",
+          to: "/dashboard",
+          activeClassName: "user-is-active"
+        },
+        "Welcome ",
+        currentUser.username
+      )
     ),
     _react2.default.createElement(
       "div",
-      { className: "nav-bar" },
+      { className: "home-nav" },
       _react2.default.createElement(
         _reactRouterDom.Link,
         { to: "/", id: "nameLink" },
         _react2.default.createElement(
           "h1",
           { className: "name" },
-          "Penny Pincher"
+          "6th Cent"
         )
       )
     )
@@ -94099,8 +94144,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _user_actions = __webpack_require__(1035);
-
 var _session_actions = __webpack_require__(56);
 
 var _nullErrors = [];
@@ -94111,7 +94154,7 @@ exports.default = function () {
 
   Object.freeze(state);
   switch (action.type) {
-    case _user_actions.RECEIVE_USER_ERRORS:
+    case _session_actions.RECEIVE_USER_ERRORS:
       return action.errors;
     case _session_actions.RECEIVE_CURRENT_USER:
       return _nullErrors;
@@ -94119,13 +94162,6 @@ exports.default = function () {
       return state;
   }
 };
-
-/***/ }),
-/* 1035 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
 
 /***/ })
 /******/ ]);

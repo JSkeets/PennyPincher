@@ -10,16 +10,23 @@ class SignUpForm extends React.Component {
       email: "",
       phone_number: "",
       fname:"",
-      lname:""
+      lname:"",
+      errors: []
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.createWatchlist = this.createWatchlist.bind(this);
+    this.renderErrors = this.renderErrors.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.loggedIn) {
       this.props.history.push("/");
     }
+   if(nextProps.errors) {
+     this.setState({
+       errors:this.props.errors
+     });
+   }
   }
 
   createWatchlist(){
@@ -58,10 +65,13 @@ class SignUpForm extends React.Component {
   }
 
   render() {
+    console.log(this.props);
+    console.log(this.renderErrors);
+    console.log(this.state);
     return <div className="login-page">
         <div className="form">
           <form onSubmit={this.handleSubmit} className="signup-form-box">
-            Welcome to Straight Up
+            Welcome to Penny Pincher
             <br />
             Create an account
             <br />

@@ -90,10 +90,21 @@ class StockIndex extends React.Component {
           <TableHeaderColumn dataField="symbol" isKey={true} dataSort={true} dataFormat={this.colFormatter}>
             Symbol
           </TableHeaderColumn>
-          <TableHeaderColumn dataField="lastSalePrice" dataSort={true}>
+          <TableHeaderColumn dataField="lastSalePrice" dataSort={true}
+          filter={ {
+                type: 'NumberFilter',
+                delay: 300,
+                numberComparators: [ '=', '>', '<=' ]
+          } }>
             Price
           </TableHeaderColumn>
-          <TableHeaderColumn dataField="volume" dataSort={true}>
+          <TableHeaderColumn dataField="volume"
+            dataSort={true}
+            filter={ {
+              type: 'NumberFilter',
+              delay: 300,
+              numberComparators: [ '=', '>', '<=' ]
+            } }>
             Volume
           </TableHeaderColumn>
           <TableHeaderColumn dataField="percentChange" dataSort={true}

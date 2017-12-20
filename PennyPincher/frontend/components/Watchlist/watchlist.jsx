@@ -213,10 +213,20 @@ class Watchlist extends React.Component {
             >
               Symbol
             </TableHeaderColumn>
-            <TableHeaderColumn dataField="price" dataSort={true}>
+            <TableHeaderColumn dataField="price" dataSort={true}
+            filter={ {
+                type: 'NumberFilter',
+                delay: 300,
+                numberComparators: [ '=', '>', '<=' ]
+          } }>
               Price
             </TableHeaderColumn>
-            <TableHeaderColumn dataField="volume" dataSort={true}>
+            <TableHeaderColumn dataField="volume" dataSort={true}
+            filter={ {
+                type: 'NumberFilter',
+                delay: 300,
+                numberComparators: [ '=', '>', '<=' ]
+          } }>
               Volume
             </TableHeaderColumn>
             <TableHeaderColumn
@@ -244,6 +254,7 @@ class Watchlist extends React.Component {
               Float
             </TableHeaderColumn>
             <TableHeaderColumn
+              width="5%"
               dataField="button"
               dataFormat={this.cellButton.bind(this)}
             >

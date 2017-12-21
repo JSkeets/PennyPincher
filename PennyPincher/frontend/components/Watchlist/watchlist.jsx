@@ -42,9 +42,6 @@ class Watchlist extends React.Component {
    });
  }
 
-
-
-
   componentDidMount() {
     let user = this.props.user;
     this.props.fetchWatchlist(user);

@@ -15425,20 +15425,21 @@ function inferColumns(rows) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_defaultLocale__ = __webpack_require__(761);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__src_defaultLocale__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__src_defaultLocale__["b"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_0__src_defaultLocale__["c"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "formatDefaultLocale", function() { return __WEBPACK_IMPORTED_MODULE_0__src_defaultLocale__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "format", function() { return __WEBPACK_IMPORTED_MODULE_0__src_defaultLocale__["b"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "formatPrefix", function() { return __WEBPACK_IMPORTED_MODULE_0__src_defaultLocale__["c"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_locale__ = __webpack_require__(301);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_1__src_locale__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "formatLocale", function() { return __WEBPACK_IMPORTED_MODULE_1__src_locale__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_formatSpecifier__ = __webpack_require__(302);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_2__src_formatSpecifier__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "formatSpecifier", function() { return __WEBPACK_IMPORTED_MODULE_2__src_formatSpecifier__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_precisionFixed__ = __webpack_require__(767);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_3__src_precisionFixed__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "precisionFixed", function() { return __WEBPACK_IMPORTED_MODULE_3__src_precisionFixed__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_precisionPrefix__ = __webpack_require__(768);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_4__src_precisionPrefix__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "precisionPrefix", function() { return __WEBPACK_IMPORTED_MODULE_4__src_precisionPrefix__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_precisionRound__ = __webpack_require__(769);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_5__src_precisionRound__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "precisionRound", function() { return __WEBPACK_IMPORTED_MODULE_5__src_precisionRound__["a"]; });
 
 
 
@@ -24200,14 +24201,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "forceX", function() { return __WEBPACK_IMPORTED_MODULE_11_d3_force__["forceX"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "forceY", function() { return __WEBPACK_IMPORTED_MODULE_11_d3_force__["forceY"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_d3_format__ = __webpack_require__(176);
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "formatDefaultLocale", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["b"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "format", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["a"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "formatPrefix", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["d"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "formatLocale", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["c"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "formatSpecifier", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["e"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "precisionFixed", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["f"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "precisionPrefix", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["g"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "precisionRound", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["h"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "formatDefaultLocale", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["formatDefaultLocale"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "format", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["format"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "formatPrefix", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["formatPrefix"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "formatLocale", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["formatLocale"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "formatSpecifier", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["formatSpecifier"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "precisionFixed", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["precisionFixed"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "precisionPrefix", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["precisionPrefix"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "precisionRound", function() { return __WEBPACK_IMPORTED_MODULE_12_d3_format__["precisionRound"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_d3_geo__ = __webpack_require__(770);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "geoArea", function() { return __WEBPACK_IMPORTED_MODULE_13_d3_geo__["c"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "geoBounds", function() { return __WEBPACK_IMPORTED_MODULE_13_d3_geo__["h"]; });
@@ -67489,28 +67490,28 @@ function identity() {
       stop = domain[domain.length - 1],
       step = Object(__WEBPACK_IMPORTED_MODULE_0_d3_array__["tickStep"])(start, stop, count == null ? 10 : count),
       precision;
-  specifier = Object(__WEBPACK_IMPORTED_MODULE_1_d3_format__["e" /* formatSpecifier */])(specifier == null ? ",f" : specifier);
+  specifier = Object(__WEBPACK_IMPORTED_MODULE_1_d3_format__["formatSpecifier"])(specifier == null ? ",f" : specifier);
   switch (specifier.type) {
     case "s": {
       var value = Math.max(Math.abs(start), Math.abs(stop));
-      if (specifier.precision == null && !isNaN(precision = Object(__WEBPACK_IMPORTED_MODULE_1_d3_format__["g" /* precisionPrefix */])(step, value))) specifier.precision = precision;
-      return Object(__WEBPACK_IMPORTED_MODULE_1_d3_format__["d" /* formatPrefix */])(specifier, value);
+      if (specifier.precision == null && !isNaN(precision = Object(__WEBPACK_IMPORTED_MODULE_1_d3_format__["precisionPrefix"])(step, value))) specifier.precision = precision;
+      return Object(__WEBPACK_IMPORTED_MODULE_1_d3_format__["formatPrefix"])(specifier, value);
     }
     case "":
     case "e":
     case "g":
     case "p":
     case "r": {
-      if (specifier.precision == null && !isNaN(precision = Object(__WEBPACK_IMPORTED_MODULE_1_d3_format__["h" /* precisionRound */])(step, Math.max(Math.abs(start), Math.abs(stop))))) specifier.precision = precision - (specifier.type === "e");
+      if (specifier.precision == null && !isNaN(precision = Object(__WEBPACK_IMPORTED_MODULE_1_d3_format__["precisionRound"])(step, Math.max(Math.abs(start), Math.abs(stop))))) specifier.precision = precision - (specifier.type === "e");
       break;
     }
     case "f":
     case "%": {
-      if (specifier.precision == null && !isNaN(precision = Object(__WEBPACK_IMPORTED_MODULE_1_d3_format__["f" /* precisionFixed */])(step))) specifier.precision = precision - (specifier.type === "%") * 2;
+      if (specifier.precision == null && !isNaN(precision = Object(__WEBPACK_IMPORTED_MODULE_1_d3_format__["precisionFixed"])(step))) specifier.precision = precision - (specifier.type === "%") * 2;
       break;
     }
   }
-  return Object(__WEBPACK_IMPORTED_MODULE_1_d3_format__["a" /* format */])(specifier);
+  return Object(__WEBPACK_IMPORTED_MODULE_1_d3_format__["format"])(specifier);
 });
 
 
@@ -67629,7 +67630,7 @@ function log() {
 
   scale.tickFormat = function(count, specifier) {
     if (specifier == null) specifier = base === 10 ? ".0e" : ",";
-    if (typeof specifier !== "function") specifier = Object(__WEBPACK_IMPORTED_MODULE_1_d3_format__["a" /* format */])(specifier);
+    if (typeof specifier !== "function") specifier = Object(__WEBPACK_IMPORTED_MODULE_1_d3_format__["format"])(specifier);
     if (count === Infinity) return specifier;
     if (count == null) count = 10;
     var k = Math.max(1, base * count / scale.ticks().length); // TODO fast estimate?
@@ -70926,6 +70927,16 @@ var _helper = __webpack_require__(360);
 
 var _utils = __webpack_require__(7);
 
+var _coordinates = __webpack_require__(1051);
+
+var _d3Format = __webpack_require__(176);
+
+var _scale = __webpack_require__(1058);
+
+var _tooltip = __webpack_require__(1060);
+
+var _indicator = __webpack_require__(1069);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -70935,6 +70946,41 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var dateFormat = (0, _d3TimeFormat.timeFormat)("%Y-%m-%d");
+var numberFormat = (0, _d3Format.format)(".2f");
+
+function tooltipContent(ys) {
+  return function (_ref) {
+    var currentItem = _ref.currentItem,
+        xAccessor = _ref.xAccessor;
+
+    return {
+      x: dateFormat(xAccessor(currentItem)),
+      y: [{
+        label: "open",
+        value: currentItem.open && numberFormat(currentItem.open)
+      }, {
+        label: "high",
+        value: currentItem.high && numberFormat(currentItem.high)
+      }, {
+        label: "low",
+        value: currentItem.low && numberFormat(currentItem.low)
+      }, {
+        label: "close",
+        value: currentItem.close && numberFormat(currentItem.close)
+      }].concat(ys.map(function (each) {
+        return {
+          label: each.label,
+          value: each.value(currentItem),
+          stroke: each.stroke
+        };
+      })).filter(function (line) {
+        return line.value;
+      })
+    };
+  };
+}
 
 var AreaChart = function (_React$Component) {
   _inherits(AreaChart, _React$Component);
@@ -70954,6 +71000,21 @@ var AreaChart = function (_React$Component) {
           width = _props.width,
           ratio = _props.ratio;
 
+      // const ema20 = ema()
+      // 	.id(0)
+      // 	.options({ windowSize: 20 })
+      // 	.merge((d, c) => {
+      // 		d.ema20 = c;
+      // 	})
+      // 	.accessor(d => d.ema20);
+
+      // const ema50 = ema()
+      // 	.id(2)
+      // 	.options({ windowSize: 50 })
+      // 	.merge((d, c) => {
+      // 		d.ema50 = c;
+      // 	})
+      // 	.accessor(d => d.ema50);
 
       var xAccessor = function xAccessor(d) {
         var formatter = (0, _d3TimeFormat.timeParse)("%Y-%m-%d");
@@ -70966,21 +71027,7 @@ var AreaChart = function (_React$Component) {
         null,
         _react2.default.createElement(
           _reactStockcharts.ChartCanvas,
-          {
-            ratio: ratio,
-            width: width,
-            height: 400,
-            margin: { left: 50, right: 50, top: 10, bottom: 30 },
-            seriesName: "MSFT",
-            data: data,
-            type: type,
-            xAccessor: xAccessor,
-            xScale: (0, _d3Scale.scaleTime)(),
-            xExtents: xExtents,
-            zoomEvent: false,
-            clamp: true,
-            className: "react-stock-chart"
-          },
+          { ratio: ratio, width: width, height: 400, margin: { left: 50, right: 50, top: 10, bottom: 30 }, seriesName: "MSFT", data: data, type: type, xAccessor: xAccessor, xScale: (0, _d3Scale.scaleTime)(), xExtents: xExtents, zoomEvent: false, clamp: true, className: "react-stock-chart" },
           _react2.default.createElement(
             _reactStockcharts.Chart,
             { id: 0, yExtents: function yExtents(d) {
@@ -70988,7 +71035,8 @@ var AreaChart = function (_React$Component) {
               } },
             _react2.default.createElement(_axes.XAxis, { axisAt: "bottom", orient: "bottom", ticks: 6 }),
             _react2.default.createElement(_axes.YAxis, { axisAt: "left", orient: "left", ticks: 10 }),
-            _react2.default.createElement(_series.CandlestickSeries, { width: (0, _utils.timeIntervalBarWidth)(_d3Time.utcDay) })
+            _react2.default.createElement(_series.CandlestickSeries, { width: (0, _utils.timeIntervalBarWidth)(_d3Time.utcDay) }),
+            _react2.default.createElement(_tooltip.HoverTooltip, { tooltipContent: tooltipContent([]), fontSize: 15 })
           )
         )
       );
@@ -94252,6 +94300,7852 @@ var mapStateToProps = function mapStateToProps(state) {
 var AuthRoute = exports.AuthRoute = (0, _reactRouterDom.withRouter)((0, _reactRedux.connect)(mapStateToProps, null)(Auth));
 
 var ProtectedRoute = exports.ProtectedRoute = (0, _reactRouterDom.withRouter)((0, _reactRedux.connect)(mapStateToProps, null)(Protected));
+
+/***/ }),
+/* 1037 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+var BollingerBand = exports.BollingerBand = {
+	windowSize: 20,
+	// source: d => d.close, // "high", "low", "open", "close"
+	sourcePath: "close",
+	multiplier: 2,
+	movingAverageType: "sma"
+};
+
+var ATR = exports.ATR = {
+	windowSize: 14
+};
+
+var ForceIndex = exports.ForceIndex = {
+	sourcePath: "close", // "high", "low", "open", "close"
+	volumePath: "volume"
+};
+var SmoothedForceIndex = exports.SmoothedForceIndex = {
+	sourcePath: "close", // "high", "low", "open", "close"
+	volumePath: "volume",
+	smoothingType: "ema",
+	smoothingWindow: 13
+};
+var Change = exports.Change = {
+	sourcePath: "close" // "high", "low", "open", "close"
+};
+var Compare = exports.Compare = {
+	basePath: "close",
+	mainKeys: ["open", "high", "low", "close"],
+	compareKeys: []
+};
+
+var ElderRay = exports.ElderRay = {
+	windowSize: 13,
+	// source: d => d.close, // "high", "low", "open", "close"
+	sourcePath: "close", // "high", "low", "open", "close"
+	movingAverageType: "sma"
+};
+
+var ElderImpulse = exports.ElderImpulse = {
+	sourcePath: "close" // "high", "low", "open", "close"
+};
+
+var SAR = exports.SAR = {
+	accelerationFactor: 0.02,
+	maxAccelerationFactor: 0.2
+};
+
+var MACD = exports.MACD = {
+	fast: 12,
+	slow: 26,
+	signal: 9,
+	// source: d => d.close, // "high", "low", "open", "close"
+	sourcePath: "close"
+};
+
+var FullStochasticOscillator = exports.FullStochasticOscillator = {
+	windowSize: 12,
+	kWindowSize: 3,
+	dWindowSize: 3
+};
+
+var RSI = exports.RSI = {
+	windowSize: 14,
+	// source: d => d.close, // "high", "low", "open", "close"
+	sourcePath: "close" // "high", "low", "open", "close"
+};
+
+var EMA = exports.EMA = {
+	// source: d => d.close, // "high", "low", "open", "close"
+	sourcePath: "close",
+	windowSize: 10
+};
+
+var SMA = exports.SMA = {
+	// source: d => d.close, // "high", "low", "open", "close"
+	sourcePath: "close",
+	windowSize: 10
+};
+
+var WMA = exports.WMA = {
+	// source: d => d.close, // "high", "low", "open", "close"
+	sourcePath: "close",
+	windowSize: 10
+};
+
+var TMA = exports.TMA = {
+	// source: d => d.close, // "high", "low", "open", "close"
+	sourcePath: "close",
+	windowSize: 10
+};
+
+var Kagi = exports.Kagi = {
+	reversalType: "ATR", // "ATR", "FIXED"
+	windowSize: 14,
+	reversal: 2,
+	sourcePath: "close" // "high", "low", "open", "close"
+	/* dateAccessor: d => d.date,
+ dateMutator: (d, date) => { d.date = date; }, */
+};
+
+var Renko = exports.Renko = {
+	reversalType: "ATR", // "ATR", "FIXED"
+	windowSize: 14,
+	fixedBrickSize: 2,
+	sourcePath: "high/low" // "close", "high/low"
+	/* source: d => ({ high: d.high, low: d.low }),
+ dateAccessor: d => d.date,
+ dateMutator: (d, date) => { d.date = date; }, */
+};
+
+var PointAndFigure = exports.PointAndFigure = {
+	boxSize: 0.5,
+	reversal: 3,
+	sourcePath: "high/low" // "close", "high/low"
+
+	/* source: d => ({ high: d.high, low: d.low }), // "close", "hi/lo"
+ dateAccessor: d => d.date,
+ dateMutator: (d, date) => { d.date = date; }, */
+};
+//# sourceMappingURL=defaultOptionsForComputation.js.map
+
+/***/ }),
+/* 1038 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var id = i++,
+	    accessor = void 0,
+	    stroke = void 0,
+	    fill = void 0,
+	    echo = void 0,
+	    type = void 0;
+
+	function baseIndicator() {}
+
+	baseIndicator.id = function (x) {
+		if (!arguments.length) return id;
+		id = x;
+		return baseIndicator;
+	};
+	baseIndicator.accessor = function (x) {
+		if (!arguments.length) return accessor;
+		accessor = x;
+		return baseIndicator;
+	};
+	baseIndicator.stroke = function (x) {
+		if (!arguments.length) return !stroke ? stroke = (0, _utils.overlayColors)(id) : stroke;
+		stroke = x;
+		return baseIndicator;
+	};
+	baseIndicator.fill = function (x) {
+		if (!arguments.length) return !fill ? fill = (0, _utils.overlayColors)(id) : fill;
+		fill = x;
+		return baseIndicator;
+	};
+	baseIndicator.echo = function (x) {
+		if (!arguments.length) return echo;
+		echo = x;
+		return baseIndicator;
+	};
+	baseIndicator.type = function (x) {
+		if (!arguments.length) return type;
+		type = x;
+		return baseIndicator;
+	};
+	return baseIndicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var i = 0;
+//# sourceMappingURL=baseIndicator.js.map
+
+/***/ }),
+/* 1039 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _ema = __webpack_require__(1043);
+
+Object.defineProperty(exports, "ema", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_ema).default;
+  }
+});
+
+var _sma = __webpack_require__(1049);
+
+Object.defineProperty(exports, "sma", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_sma).default;
+  }
+});
+
+var _wma = __webpack_require__(1071);
+
+Object.defineProperty(exports, "wma", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_wma).default;
+  }
+});
+
+var _tma = __webpack_require__(1072);
+
+Object.defineProperty(exports, "tma", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_tma).default;
+  }
+});
+
+var _bollingerband = __webpack_require__(1073);
+
+Object.defineProperty(exports, "bollingerband", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_bollingerband).default;
+  }
+});
+
+var _heikinAshi = __webpack_require__(1074);
+
+Object.defineProperty(exports, "heikinAshi", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_heikinAshi).default;
+  }
+});
+
+var _kagi = __webpack_require__(1075);
+
+Object.defineProperty(exports, "kagi", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_kagi).default;
+  }
+});
+
+var _pointAndFigure = __webpack_require__(1076);
+
+Object.defineProperty(exports, "pointAndFigure", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_pointAndFigure).default;
+  }
+});
+
+var _renko = __webpack_require__(1077);
+
+Object.defineProperty(exports, "renko", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_renko).default;
+  }
+});
+
+var _macd = __webpack_require__(1078);
+
+Object.defineProperty(exports, "macd", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_macd).default;
+  }
+});
+
+var _rsi = __webpack_require__(1079);
+
+Object.defineProperty(exports, "rsi", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_rsi).default;
+  }
+});
+
+var _sto = __webpack_require__(1080);
+
+Object.defineProperty(exports, "sto", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_sto).default;
+  }
+});
+
+var _atr = __webpack_require__(1045);
+
+Object.defineProperty(exports, "atr", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_atr).default;
+  }
+});
+
+var _forceIndex = __webpack_require__(1050);
+
+Object.defineProperty(exports, "forceIndex", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_forceIndex).default;
+  }
+});
+
+var _smoothedForceIndex = __webpack_require__(1081);
+
+Object.defineProperty(exports, "smoothedForceIndex", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_smoothedForceIndex).default;
+  }
+});
+
+var _elderRay = __webpack_require__(1082);
+
+Object.defineProperty(exports, "elderRay", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_elderRay).default;
+  }
+});
+
+var _sar = __webpack_require__(1083);
+
+Object.defineProperty(exports, "sar", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_sar).default;
+  }
+});
+
+var _compare = __webpack_require__(1084);
+
+Object.defineProperty(exports, "compare", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_compare).default;
+  }
+});
+
+var _change = __webpack_require__(1085);
+
+Object.defineProperty(exports, "change", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_change).default;
+  }
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+/* 1040 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ToolTipText = function (_Component) {
+	_inherits(ToolTipText, _Component);
+
+	function ToolTipText() {
+		_classCallCheck(this, ToolTipText);
+
+		return _possibleConstructorReturn(this, (ToolTipText.__proto__ || Object.getPrototypeOf(ToolTipText)).apply(this, arguments));
+	}
+
+	_createClass(ToolTipText, [{
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"text",
+				_extends({
+					fontFamily: this.props.fontFamily,
+					fontSize: this.props.fontSize
+				}, this.props, {
+					className: "react-stockcharts-tooltip" }),
+				this.props.children
+			);
+		}
+	}]);
+
+	return ToolTipText;
+}(_react.Component);
+
+ToolTipText.propTypes = {
+	fontFamily: _propTypes2.default.string.isRequired,
+	fontSize: _propTypes2.default.number.isRequired,
+	children: _propTypes2.default.node.isRequired
+};
+
+ToolTipText.defaultProps = {
+	fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
+	fontSize: 11
+};
+
+exports.default = ToolTipText;
+//# sourceMappingURL=ToolTipText.js.map
+
+/***/ }),
+/* 1041 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ToolTipTSpanLabel(props) {
+	return _react2.default.createElement(
+		"tspan",
+		_extends({ className: "react-stockcharts-tooltip-label" }, props),
+		props.children
+	);
+}
+
+ToolTipTSpanLabel.propTypes = {
+	children: _propTypes2.default.node.isRequired,
+	fill: _propTypes2.default.string.isRequired
+};
+
+ToolTipTSpanLabel.defaultProps = {
+	fill: "#4682B4"
+};
+
+exports.default = ToolTipTSpanLabel;
+//# sourceMappingURL=ToolTipTSpanLabel.js.map
+
+/***/ }),
+/* 1042 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.default = displayValuesFor;
+function displayValuesFor(props, moreProps) {
+	var currentItem = moreProps.currentItem;
+
+	return currentItem;
+}
+//# sourceMappingURL=displayValuesFor.js.map
+
+/***/ }),
+/* 1043 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/calculator/exponentialMovingAverage.js
+
+The MIT License (MIT)
+
+Copyright (c) 2014-2015 Scott Logic Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function () {
+
+	var options = _defaultOptionsForComputation.EMA;
+
+	function calculator(data) {
+		var _options = options,
+		    windowSize = _options.windowSize,
+		    sourcePath = _options.sourcePath;
+
+
+		var source = (0, _utils.path)(sourcePath);
+		var alpha = 2 / (windowSize + 1);
+		var previous = void 0;
+		var initialAccumulator = 0;
+		var skip = 0;
+
+		return data.map(function (d, i) {
+			var v = source(d, i);
+			if ((0, _utils.isNotDefined)(previous) && (0, _utils.isNotDefined)(v)) {
+				skip++;
+				return undefined;
+			} else if (i < windowSize + skip - 1) {
+				initialAccumulator += v;
+				return undefined;
+			} else if (i === windowSize + skip - 1) {
+				initialAccumulator += v;
+				var initialValue = initialAccumulator / windowSize;
+				previous = initialValue;
+				return initialValue;
+			} else {
+				var nextValue = v * alpha + (1 - alpha) * previous;
+				previous = nextValue;
+				return nextValue;
+			}
+		});
+	}
+	calculator.undefinedLength = function () {
+		var _options2 = options,
+		    windowSize = _options2.windowSize;
+
+		return windowSize - 1;
+	};
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.EMA, x);
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+//# sourceMappingURL=ema.js.map
+
+/***/ }),
+/* 1044 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.renderSVG = renderSVG;
+exports.drawOnCanvas = drawOnCanvas;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/* eslint-disable react/prop-types */
+function renderSVG(props) {
+	var className = props.className;
+
+
+	var edge = helper(props);
+	if (edge === null) return null;
+	var line = void 0,
+	    coordinateBase = void 0,
+	    coordinate = void 0;
+
+	if ((0, _utils.isDefined)(edge.line)) {
+		line = _react2.default.createElement("line", {
+			className: "react-stockcharts-cross-hair", opacity: edge.line.opacity, stroke: edge.line.stroke,
+			x1: edge.line.x1, y1: edge.line.y1,
+			x2: edge.line.x2, y2: edge.line.y2 });
+	}
+	if ((0, _utils.isDefined)(edge.coordinateBase)) {
+		var _edge$coordinateBase = edge.coordinateBase,
+		    rectWidth = _edge$coordinateBase.rectWidth,
+		    rectHeight = _edge$coordinateBase.rectHeight,
+		    arrowWidth = _edge$coordinateBase.arrowWidth;
+
+
+		var path = edge.orient === "left" ? "M0,0L0," + rectHeight + "L" + rectWidth + "," + rectHeight + "L" + (rectWidth + arrowWidth) + ",10L" + rectWidth + ",0L0,0L0,0" : "M0," + arrowWidth + "L" + arrowWidth + "," + rectHeight + "L" + (rectWidth + arrowWidth) + "," + rectHeight + "L" + (rectWidth + arrowWidth) + ",0L" + arrowWidth + ",0L0," + arrowWidth;
+
+		coordinateBase = edge.orient === "left" || edge.orient === "right" ? _react2.default.createElement(
+			"g",
+			{ transform: "translate(" + edge.coordinateBase.edgeXRect + "," + edge.coordinateBase.edgeYRect + ")" },
+			_react2.default.createElement("path", { d: path, key: 1, className: "react-stockchart-text-background",
+				height: rectHeight, width: rectWidth,
+				fill: edge.coordinateBase.fill, opacity: edge.coordinateBase.opacity })
+		) : _react2.default.createElement("rect", { key: 1, className: "react-stockchart-text-background",
+			x: edge.coordinateBase.edgeXRect,
+			y: edge.coordinateBase.edgeYRect,
+			height: rectHeight, width: rectWidth,
+			fill: edge.coordinateBase.fill, opacity: edge.coordinateBase.opacity });
+
+		coordinate = _react2.default.createElement(
+			"text",
+			{ key: 2, x: edge.coordinate.edgeXText,
+				y: edge.coordinate.edgeYText,
+				textAnchor: edge.coordinate.textAnchor,
+				fontFamily: edge.coordinate.fontFamily,
+				fontSize: edge.coordinate.fontSize,
+				dy: ".32em", fill: edge.coordinate.textFill },
+			edge.coordinate.displayCoordinate
+		);
+	}
+	return _react2.default.createElement(
+		"g",
+		{ className: className },
+		line,
+		coordinateBase,
+		coordinate
+	);
+}
+/* eslint-enable react/prop-types */
+
+function helper(props) {
+	var displayCoordinate = props.coordinate,
+	    show = props.show,
+	    type = props.type,
+	    orient = props.orient,
+	    edgeAt = props.edgeAt,
+	    hideLine = props.hideLine,
+	    lineStrokeDasharray = props.lineStrokeDasharray;
+	var fill = props.fill,
+	    opacity = props.opacity,
+	    fontFamily = props.fontFamily,
+	    fontSize = props.fontSize,
+	    textFill = props.textFill,
+	    lineStroke = props.lineStroke,
+	    lineOpacity = props.lineOpacity;
+	var stroke = props.stroke,
+	    strokeOpacity = props.strokeOpacity,
+	    strokeWidth = props.strokeWidth;
+	var arrowWidth = props.arrowWidth,
+	    rectWidth = props.rectWidth,
+	    rectHeight = props.rectHeight,
+	    rectRadius = props.rectRadius;
+	var x1 = props.x1,
+	    y1 = props.y1,
+	    x2 = props.x2,
+	    y2 = props.y2,
+	    dx = props.dx;
+
+
+	if (!show) return null;
+
+	var coordinateBase = void 0,
+	    coordinate = void 0;
+	if ((0, _utils.isDefined)(displayCoordinate)) {
+		var textAnchor = "middle"; // TODO: Below it is necessary to implement logic for the possibility of alignment from the right or from the left.
+
+		var edgeXRect = void 0,
+		    edgeYRect = void 0,
+		    edgeXText = void 0,
+		    edgeYText = void 0;
+
+		if (type === "horizontal") {
+			edgeXRect = dx + (orient === "right" ? edgeAt + 1 : edgeAt - rectWidth - 1);
+			edgeYRect = y1 - rectHeight / 2;
+			edgeXText = dx + (orient === "right" ? edgeAt + rectWidth / 2 : edgeAt - rectWidth / 2);
+			edgeYText = y1;
+		} else {
+			edgeXRect = x1 - rectWidth / 2;
+			edgeYRect = orient === "bottom" ? edgeAt : edgeAt - rectHeight;
+			edgeXText = x1;
+			edgeYText = orient === "bottom" ? edgeAt + rectHeight / 2 : edgeAt - rectHeight / 2;
+		}
+
+		coordinateBase = {
+			edgeXRect: edgeXRect, edgeYRect: edgeYRect, rectHeight: rectHeight, rectWidth: rectWidth, rectRadius: rectRadius, fill: fill, opacity: opacity, arrowWidth: arrowWidth, stroke: stroke, strokeOpacity: strokeOpacity, strokeWidth: strokeWidth
+		};
+		coordinate = {
+			edgeXText: edgeXText, edgeYText: edgeYText, textAnchor: textAnchor, fontFamily: fontFamily, fontSize: fontSize, textFill: textFill, displayCoordinate: displayCoordinate
+		};
+	}
+
+	var line = hideLine ? undefined : {
+		opacity: lineOpacity,
+		stroke: lineStroke,
+		strokeDasharray: lineStrokeDasharray,
+		x1: x1, y1: y1, x2: x2, y2: y2
+	};
+
+	return {
+		coordinateBase: coordinateBase, coordinate: coordinate, line: line, orient: orient
+	};
+}
+
+function drawOnCanvas(ctx, props) {
+	var fontSize = props.fontSize,
+	    fontFamily = props.fontFamily;
+
+
+	ctx.font = fontSize + "px " + fontFamily;
+	ctx.textBaseline = "middle";
+	var width = ctx.measureText(props.coordinate).width + 10;
+
+	var edge = helper(_extends({}, props, { rectWidth: width }));
+
+	if (edge === null) return;
+
+	if ((0, _utils.isDefined)(edge.coordinateBase)) {
+		var _edge$coordinateBase2 = edge.coordinateBase,
+		    rectWidth = _edge$coordinateBase2.rectWidth,
+		    rectHeight = _edge$coordinateBase2.rectHeight,
+		    rectRadius = _edge$coordinateBase2.rectRadius,
+		    arrowWidth = _edge$coordinateBase2.arrowWidth;
+
+
+		ctx.fillStyle = (0, _utils.hexToRGBA)(edge.coordinateBase.fill, edge.coordinateBase.opacity);
+		if ((0, _utils.isDefined)(edge.coordinateBase.stroke)) {
+			ctx.strokeStyle = (0, _utils.hexToRGBA)(edge.coordinateBase.stroke, edge.coordinateBase.strokeOpacity);
+			ctx.lineWidth = edge.coordinateBase.strokeWidth;
+		}
+
+		var x = edge.coordinateBase.edgeXRect;
+		var y = edge.coordinateBase.edgeYRect;
+		var halfHeight = rectHeight / 2;
+
+		ctx.beginPath();
+		if (edge.orient === "right") {
+			x -= arrowWidth;
+			ctx.moveTo(x, y + halfHeight);
+			ctx.lineTo(x + arrowWidth, y);
+			ctx.lineTo(x + rectWidth + arrowWidth, y);
+			ctx.lineTo(x + rectWidth + arrowWidth, y + rectHeight);
+			ctx.lineTo(x + arrowWidth, y + rectHeight);
+			ctx.closePath();
+		} else if (edge.orient === "left") {
+			// x += arrowWidth;
+			ctx.moveTo(x, y);
+			ctx.lineTo(x + rectWidth, y);
+			ctx.lineTo(x + rectWidth + arrowWidth, y + halfHeight);
+			ctx.lineTo(x + rectWidth, y + rectHeight);
+			ctx.lineTo(x, y + rectHeight);
+			ctx.closePath();
+		} else {
+			if (rectRadius) {
+				roundRect(ctx, x, y, rectWidth, rectHeight, 5);
+			} else {
+				ctx.rect(x, y, rectWidth, rectHeight);
+			}
+		}
+		ctx.fill();
+
+		if ((0, _utils.isDefined)(edge.coordinateBase.stroke)) {
+			ctx.stroke();
+		}
+
+		ctx.fillStyle = edge.coordinate.textFill;
+		ctx.textAlign = edge.coordinate.textAnchor === "middle" ? "center" : edge.coordinate.textAnchor;
+		ctx.fillText(edge.coordinate.displayCoordinate, edge.coordinate.edgeXText, edge.coordinate.edgeYText);
+	}
+
+	if ((0, _utils.isDefined)(edge.line)) {
+		var dashArray = (0, _utils.getStrokeDasharray)(edge.line.strokeDasharray).split(",").map(function (d) {
+			return +d;
+		});
+		ctx.setLineDash(dashArray);
+		ctx.strokeStyle = (0, _utils.hexToRGBA)(edge.line.stroke, edge.line.opacity);
+		ctx.lineWidth = 1;
+		ctx.beginPath();
+		ctx.moveTo(edge.line.x1, edge.line.y1);
+		ctx.lineTo(edge.line.x2, edge.line.y2);
+		ctx.stroke();
+	}
+}
+
+function roundRect(ctx, x, y, width, height, radius) {
+	ctx.beginPath();
+	ctx.moveTo(x + radius, y);
+	ctx.lineTo(x + width - radius, y);
+	ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+	ctx.lineTo(x + width, y + height - radius);
+	ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+	ctx.lineTo(x + radius, y + height);
+	ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+	ctx.lineTo(x, y + radius);
+	ctx.quadraticCurveTo(x, y, x + radius, y);
+	ctx.closePath();
+}
+
+// export default EdgeCoordinate;
+//# sourceMappingURL=EdgeCoordinateV3.js.map
+
+/***/ }),
+/* 1045 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function () {
+
+	var options = _defaultOptionsForComputation.ATR;
+	var source = function source(d) {
+		return { open: d.open, high: d.high, low: d.low, close: d.close };
+	};
+
+	function calculator(data) {
+		var _options = options,
+		    windowSize = _options.windowSize;
+
+
+		var trueRangeAlgorithm = (0, _utils.slidingWindow)().windowSize(2).source(source).undefinedValue(function (d) {
+			return d.high - d.low;
+		}) // the first TR value is simply the High minus the Low
+		.accumulator(function (values) {
+			var prev = values[0];
+			var d = values[1];
+			return Math.max(d.high - d.low, d.high - prev.close, d.low - prev.close);
+		});
+
+		var prevATR = void 0;
+
+		var atrAlgorithm = (0, _utils.slidingWindow)().skipInitial(1) // trueRange starts from index 1 so ATR starts from 1
+		.windowSize(windowSize).accumulator(function (values) {
+			var tr = (0, _utils.last)(values);
+			var atr = (0, _utils.isDefined)(prevATR) ? (prevATR * (windowSize - 1) + tr) / windowSize : (0, _d3Array.sum)(values) / windowSize;
+
+			prevATR = atr;
+			return atr;
+		});
+
+		var newData = atrAlgorithm(trueRangeAlgorithm(data));
+
+		return newData;
+	}
+	calculator.undefinedLength = function () {
+		var _options2 = options,
+		    windowSize = _options2.windowSize;
+
+		return windowSize - 1;
+	};
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.ATR, x);
+		return calculator;
+	};
+
+	calculator.source = function (x) {
+		if (!arguments.length) {
+			return source;
+		}
+		source = x;
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _d3Array = __webpack_require__(8);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+
+var _utils = __webpack_require__(7);
+//# sourceMappingURL=atr.js.map
+
+/***/ }),
+/* 1046 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+var themes = exports.themes = {
+	light: {
+		BollingerBand: {
+			stroke: {
+				top: "#964B00",
+				middle: "#000000",
+				bottom: "#964B00"
+			},
+			fill: "#4682B4"
+		},
+		ElderImpulse: {
+			stroke: {
+				up: "#6BA583",
+				down: "#FF0000",
+				neutral: "#0000FF"
+			}
+		},
+		MACD: {
+			fill: {
+				divergence: "#4682B4"
+			},
+			stroke: {
+				macd: "#FF0000",
+				signal: "#00F300"
+			}
+		},
+		FullStochasticOscillator: {
+			stroke: {
+				top: "#37a600",
+				middle: "#b8ab00",
+				bottom: "#37a600",
+				dLine: "#17becf",
+				kLine: "#ff7f0e"
+			}
+		}
+	},
+	dark: {
+		BollingerBand: {
+			stroke: {
+				top: "#964B00",
+				middle: "#FF6600",
+				bottom: "#964B00"
+			},
+			fill: "#4682B4"
+		},
+		ElderImpulse: {
+			stroke: {
+				up: "#6BA583",
+				down: "#FF0000",
+				neutral: "#0000FF"
+			}
+		},
+		MACD: {
+			fill: {
+				divergence: "#FF6600"
+			},
+			stroke: {
+				macd: "#ea2bff",
+				signal: "#74d400"
+			}
+		},
+		FullStochasticOscillator: {
+			stroke: {
+				top: "#37a600",
+				middle: "#b8ab00",
+				bottom: "#37a600",
+				dLine: "#ea2bff",
+				kLine: "#74d400"
+			}
+		}
+	}
+};
+
+var BollingerBand = exports.BollingerBand = themes.light.BollingerBand;
+var ElderImpulse = exports.ElderImpulse = themes.light.ElderImpulse;
+var MACD = exports.MACD = themes.light.MACD;
+var FullStochasticOscillator = exports.FullStochasticOscillator = themes.light.FullStochasticOscillator;
+//# sourceMappingURL=defaultOptionsForAppearance.js.map
+
+/***/ }),
+/* 1047 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+exports.default = financeDiscontinuousScale;
+
+var _d3Collection = __webpack_require__(29);
+
+var _d3Array = __webpack_require__(8);
+
+var _d3Scale = __webpack_require__(61);
+
+var _utils = __webpack_require__(7);
+
+var _levels = __webpack_require__(1048);
+
+var MAX_LEVEL = _levels.levelDefinition.length - 1;
+
+function financeDiscontinuousScale(index, futureProvider) {
+	var backingLinearScale = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : (0, _d3Scale.scaleLinear)();
+
+
+	if ((0, _utils.isNotDefined)(index)) throw new Error("Use the discontinuousTimeScaleProvider to create financeDiscontinuousScale");
+
+	function scale(x) {
+		return backingLinearScale(x);
+	}
+	scale.invert = function (x) {
+		var inverted = backingLinearScale.invert(x);
+		return Math.round(inverted * 10000) / 10000;
+	};
+	scale.domain = function (x) {
+		if (!arguments.length) return backingLinearScale.domain();
+		backingLinearScale.domain(x);
+		return scale;
+	};
+	scale.range = function (x) {
+		if (!arguments.length) return backingLinearScale.range();
+		backingLinearScale.range(x);
+		return scale;
+	};
+	scale.rangeRound = function (x) {
+		return backingLinearScale.range(x);
+	};
+	scale.clamp = function (x) {
+		if (!arguments.length) return backingLinearScale.clamp();
+		backingLinearScale.clamp(x);
+		return scale;
+	};
+	scale.interpolate = function (x) {
+		if (!arguments.length) return backingLinearScale.interpolate();
+		backingLinearScale.interpolate(x);
+		return scale;
+	};
+	scale.ticks = function (m, flexTicks) {
+		var backingTicks = backingLinearScale.ticks(m);
+		var ticksMap = (0, _d3Collection.map)();
+
+		var _backingLinearScale$d = backingLinearScale.domain(),
+		    _backingLinearScale$d2 = _slicedToArray(_backingLinearScale$d, 2),
+		    domainStart = _backingLinearScale$d2[0],
+		    domainEnd = _backingLinearScale$d2[1];
+
+		var start = Math.max(Math.ceil(domainStart), (0, _utils.head)(index).index) + Math.abs((0, _utils.head)(index).index);
+		var end = Math.min(Math.floor(domainEnd), (0, _utils.last)(index).index) + Math.abs((0, _utils.head)(index).index);
+
+		if (Math.floor(domainEnd) > end) {
+			// console.log(end, domainEnd, index);
+		}
+
+		var desiredTickCount = Math.ceil((end - start) / (domainEnd - domainStart) * backingTicks.length);
+
+		for (var i = MAX_LEVEL; i >= 0; i--) {
+			var ticksAtLevel = ticksMap.get(i);
+			var temp = (0, _utils.isNotDefined)(ticksAtLevel) ? [] : ticksAtLevel.slice();
+
+			for (var j = start; j <= end; j++) {
+				if (index[j].level === i) {
+					temp.push(index[j]);
+				}
+			}
+
+			ticksMap.set(i, temp);
+		}
+
+		var unsortedTicks = [];
+		for (var _i = MAX_LEVEL; _i >= 0; _i--) {
+			if (ticksMap.get(_i).length + unsortedTicks.length > desiredTickCount * 1.5) break;
+			unsortedTicks = unsortedTicks.concat(ticksMap.get(_i).map(function (d) {
+				return d.index;
+			}));
+		}
+
+		var ticks = unsortedTicks.sort(_d3Array.ascending);
+
+		// console.log(backingTicks.length, desiredTickCount, ticks, ticksMap);
+
+		if (!flexTicks && end - start > ticks.length) {
+			var ticksSet = (0, _d3Collection.set)(ticks);
+
+			var d = Math.abs((0, _utils.head)(index).index);
+
+			// ignore ticks within this distance
+			var distance = Math.ceil((backingTicks.length > 0 ? ((0, _utils.last)(backingTicks) - (0, _utils.head)(backingTicks)) / backingTicks.length / 4 : 1) * 1.5);
+
+			for (var _i2 = 0; _i2 < ticks.length - 1; _i2++) {
+				for (var _j = _i2 + 1; _j < ticks.length; _j++) {
+					if (ticks[_j] - ticks[_i2] <= distance) {
+						ticksSet.remove(index[ticks[_i2] + d].level >= index[ticks[_j] + d].level ? ticks[_j] : ticks[_i2]);
+					}
+				}
+			}
+
+			var tickValues = ticksSet.values().map(function (d) {
+				return parseInt(d, 10);
+			});
+
+			// console.log(ticks.length, tickValues, level);
+			// console.log(ticks, tickValues, distance);
+
+			return tickValues;
+		}
+
+		return ticks;
+	};
+	scale.tickFormat = function () {
+		return function (x) {
+			var d = Math.abs((0, _utils.head)(index).index);
+			var _index = index[x + d],
+			    format = _index.format,
+			    date = _index.date;
+
+			return format(date);
+		};
+	};
+	scale.value = function (x) {
+		var d = Math.abs((0, _utils.head)(index).index);
+		if ((0, _utils.isDefined)(index[x + d])) {
+			var date = index[x + d].date;
+
+			return date;
+		}
+	};
+	scale.nice = function (m) {
+		backingLinearScale.nice(m);
+		return scale;
+	};
+	scale.copy = function () {
+		return financeDiscontinuousScale(index, futureProvider, backingLinearScale.copy());
+	};
+	return scale;
+}
+//# sourceMappingURL=financeDiscontinuousScale.js.map
+
+/***/ }),
+/* 1048 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+var defaultFormatters = exports.defaultFormatters = {
+	yearFormat: "%Y",
+	quarterFormat: "%b %Y",
+	monthFormat: "%b",
+	weekFormat: "%d %b",
+	dayFormat: "%a %d",
+	hourFormat: "%_I %p",
+	minuteFormat: "%I:%M %p",
+	secondFormat: "%I:%M:%S %p",
+	milliSecondFormat: "%L"
+};
+
+var levelDefinition = exports.levelDefinition = [
+/* eslint-disable no-unused-vars */
+/* 19 */function (d, date, i) {
+	return d.startOfYear && date.getFullYear() % 12 === 0 && "yearFormat";
+},
+/* 18 */function (d, date, i) {
+	return d.startOfYear && date.getFullYear() % 4 === 0 && "yearFormat";
+},
+/* 17 */function (d, date, i) {
+	return d.startOfYear && date.getFullYear() % 2 === 0 && "yearFormat";
+},
+/* 16 */function (d, date, i) {
+	return d.startOfYear && "yearFormat";
+},
+/* 15 */function (d, date, i) {
+	return d.startOfQuarter && "quarterFormat";
+},
+/* 14 */function (d, date, i) {
+	return d.startOfMonth && "monthFormat";
+},
+/* 13 */function (d, date, i) {
+	return d.startOfWeek && "weekFormat";
+},
+/* 12 */function (d, date, i) {
+	return d.startOfDay && i % 2 === 0 && "dayFormat";
+},
+/* 11 */function (d, date, i) {
+	return d.startOfDay && "dayFormat";
+},
+/* 10 */function (d, date, i) {
+	return d.startOfHalfDay && "hourFormat";
+}, // 12h
+/*  9 */function (d, date, i) {
+	return d.startOfQuarterDay && "hourFormat";
+}, // 6h
+/*  8 */function (d, date, i) {
+	return d.startOfEighthOfADay && "hourFormat";
+}, // 3h
+/*  7 */function (d, date, i) {
+	return d.startOfHour && date.getHours() % 2 === 0 && "hourFormat";
+}, // 2h -- REMOVE THIS
+/*  6 */function (d, date, i) {
+	return d.startOfHour && "hourFormat";
+}, // 1h
+/*  5 */function (d, date, i) {
+	return d.startOf30Minutes && "minuteFormat";
+},
+/*  4 */function (d, date, i) {
+	return d.startOf15Minutes && "minuteFormat";
+},
+/*  3 */function (d, date, i) {
+	return d.startOf5Minutes && "minuteFormat";
+},
+/*  2 */function (d, date, i) {
+	return d.startOfMinute && "minuteFormat";
+},
+/*  1 */function (d, date, i) {
+	return d.startOf30Seconds && "secondFormat";
+},
+/*  0 */function (d, date, i) {
+	return "secondFormat";
+}];
+//# sourceMappingURL=levels.js.map
+
+/***/ }),
+/* 1049 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function () {
+
+	var options = _defaultOptionsForComputation.SMA;
+
+	function calculator(data) {
+		var _options = options,
+		    windowSize = _options.windowSize,
+		    sourcePath = _options.sourcePath;
+
+
+		var average = (0, _utils.slidingWindow)().windowSize(windowSize).sourcePath(sourcePath).accumulator(function (values) {
+			return (0, _d3Array.mean)(values);
+		});
+
+		return average(data);
+	}
+	calculator.undefinedLength = function () {
+		var _options2 = options,
+		    windowSize = _options2.windowSize;
+
+		return windowSize - 1;
+	};
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.SMA, x);
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _d3Array = __webpack_require__(8);
+
+var _utils = __webpack_require__(7);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+//# sourceMappingURL=sma.js.map
+
+/***/ }),
+/* 1050 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+exports.default = function () {
+
+	var options = _defaultOptionsForComputation.ForceIndex;
+
+	function calculator(data) {
+		var _options = options,
+		    sourcePath = _options.sourcePath,
+		    volumePath = _options.volumePath;
+
+
+		var source = (0, _utils.path)(sourcePath);
+		var volume = (0, _utils.path)(volumePath);
+
+		var forceIndexCalulator = (0, _utils.slidingWindow)().windowSize(2).accumulator(function (_ref) {
+			var _ref2 = _slicedToArray(_ref, 2),
+			    prev = _ref2[0],
+			    curr = _ref2[1];
+
+			return (source(curr) - source(prev)) * volume(curr);
+		});
+
+		var forceIndex = forceIndexCalulator(data);
+
+		return forceIndex;
+	}
+	calculator.undefinedLength = function () {
+		return 2;
+	};
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.ForceIndex, x);
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+//# sourceMappingURL=forceIndex.js.map
+
+/***/ }),
+/* 1051 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _EdgeIndicator = __webpack_require__(1052);
+
+Object.defineProperty(exports, "EdgeIndicator", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_EdgeIndicator).default;
+  }
+});
+
+var _CurrentCoordinate = __webpack_require__(1053);
+
+Object.defineProperty(exports, "CurrentCoordinate", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_CurrentCoordinate).default;
+  }
+});
+
+var _MouseCoordinateX = __webpack_require__(1054);
+
+Object.defineProperty(exports, "MouseCoordinateX", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_MouseCoordinateX).default;
+  }
+});
+
+var _MouseCoordinateY = __webpack_require__(1055);
+
+Object.defineProperty(exports, "MouseCoordinateY", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_MouseCoordinateY).default;
+  }
+});
+
+var _CrossHairCursor = __webpack_require__(1056);
+
+Object.defineProperty(exports, "CrossHairCursor", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_CrossHairCursor).default;
+  }
+});
+
+var _PriceCoordinate = __webpack_require__(1057);
+
+Object.defineProperty(exports, "PriceCoordinate", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_PriceCoordinate).default;
+  }
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+/* 1052 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _d3Format = __webpack_require__(176);
+
+var _EdgeCoordinateV = __webpack_require__(1044);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var EdgeIndicator = function (_Component) {
+	_inherits(EdgeIndicator, _Component);
+
+	function EdgeIndicator(props) {
+		_classCallCheck(this, EdgeIndicator);
+
+		var _this = _possibleConstructorReturn(this, (EdgeIndicator.__proto__ || Object.getPrototypeOf(EdgeIndicator)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(EdgeIndicator, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var edge = helper(this.props, moreProps);
+			var props = _extends({}, this.props, edge);
+			(0, _EdgeCoordinateV.drawOnCanvas)(ctx, props);
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var edge = helper(this.props, moreProps);
+			var props = _extends({}, this.props, edge);
+			return (0, _EdgeCoordinateV.renderSVG)(props);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				edgeClip: true,
+				clip: false,
+				svgDraw: this.renderSVG,
+				canvasDraw: this.drawOnCanvas,
+				canvasToDraw: _GenericComponent.getAxisCanvas,
+				drawOn: ["pan"]
+			});
+		}
+	}]);
+
+	return EdgeIndicator;
+}(_react.Component);
+
+EdgeIndicator.propTypes = {
+	yAccessor: _propTypes2.default.func,
+
+	type: _propTypes2.default.oneOf(["horizontal"]),
+	className: _propTypes2.default.string,
+	fill: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.func]),
+	textFill: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.func]),
+	itemType: _propTypes2.default.oneOf(["first", "last"]).isRequired,
+	orient: _propTypes2.default.oneOf(["left", "right"]),
+	edgeAt: _propTypes2.default.oneOf(["left", "right"]),
+	displayFormat: _propTypes2.default.func,
+	rectHeight: _propTypes2.default.number,
+	rectWidth: _propTypes2.default.number,
+	arrowWidth: _propTypes2.default.number,
+	lineStrokeDasharray: _propTypes2.default.oneOf(_utils.strokeDashTypes)
+};
+
+EdgeIndicator.defaultProps = {
+	className: "react-stockcharts-edgeindicator",
+
+	type: "horizontal",
+	orient: "left",
+	edgeAt: "left",
+	textFill: "#FFFFFF",
+	displayFormat: (0, _d3Format.format)(".2f"),
+	yAxisPad: 0,
+	rectHeight: 20,
+	rectWidth: 50,
+	arrowWidth: 10,
+	fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
+	fontSize: 13,
+	dx: 0,
+	hideLine: false,
+	fill: "#8a8a8a",
+	opacity: 1,
+
+	stroke: _utils.noop,
+	strokeOpacity: 1,
+	strokeWidth: 3,
+	lineStroke: "#000000",
+	lineOpacity: 0.3,
+	lineStrokeDasharray: "ShortDash"
+};
+
+function helper(props, moreProps) {
+	var itemType = props.itemType,
+	    yAccessor = props.yAccessor;
+	var plotData = moreProps.plotData;
+
+
+	var item = itemType === "first" ? (0, _utils.first)(plotData, yAccessor) : (0, _utils.last)(plotData, yAccessor);
+
+	// var currentItem = ChartDataUtil.getCurrentItemForChartNew(currentItems, forChart);
+	var edge = (0, _utils.isDefined)(item) ? getEdge(props, moreProps, item) : null;
+
+	return edge;
+}
+
+function getEdge(props, moreProps, item) {
+	var edgeType = props.type,
+	    displayFormat = props.displayFormat,
+	    edgeAt = props.edgeAt,
+	    yAxisPad = props.yAxisPad,
+	    orient = props.orient;
+	var yAccessor = props.yAccessor,
+	    fill = props.fill,
+	    textFill = props.textFill,
+	    rectHeight = props.rectHeight,
+	    rectWidth = props.rectWidth,
+	    arrowWidth = props.arrowWidth;
+	var fontFamily = props.fontFamily,
+	    fontSize = props.fontSize;
+	var stroke = props.stroke;
+	var xScale = moreProps.xScale,
+	    yScale = moreProps.chartConfig.yScale,
+	    xAccessor = moreProps.xAccessor,
+	    width = moreProps.width;
+
+
+	var yValue = yAccessor(item),
+	    xValue = xAccessor(item);
+
+	var x1 = Math.round(xScale(xValue)),
+	    y1 = Math.round(yScale(yValue));
+
+	var left = 0,
+	    right = width;
+
+	var edgeX = edgeAt === "left" ? left - yAxisPad : right + yAxisPad;
+
+	return {
+		// ...props,
+		coordinate: displayFormat(yValue),
+		show: true,
+		type: edgeType,
+		orient: orient,
+		edgeAt: edgeX,
+		fill: (0, _utils.functor)(fill)(item),
+		stroke: (0, _utils.functor)(stroke)(item),
+		fontFamily: fontFamily, fontSize: fontSize,
+		textFill: (0, _utils.functor)(textFill)(item),
+		rectHeight: rectHeight, rectWidth: rectWidth, arrowWidth: arrowWidth,
+		x1: x1,
+		y1: y1,
+		x2: right,
+		y2: y1
+	};
+}
+
+exports.default = EdgeIndicator;
+//# sourceMappingURL=EdgeIndicator.js.map
+
+/***/ }),
+/* 1053 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _utils = __webpack_require__(7);
+
+var _GenericComponent = __webpack_require__(15);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var CurrentCoordinate = function (_Component) {
+	_inherits(CurrentCoordinate, _Component);
+
+	function CurrentCoordinate(props) {
+		_classCallCheck(this, CurrentCoordinate);
+
+		var _this = _possibleConstructorReturn(this, (CurrentCoordinate.__proto__ || Object.getPrototypeOf(CurrentCoordinate)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(CurrentCoordinate, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var circle = helper(this.props, moreProps);
+			if (!circle) return null;
+
+			ctx.fillStyle = circle.fill;
+			ctx.beginPath();
+			ctx.arc(circle.x, circle.y, circle.r, 0, 2 * Math.PI, false);
+			ctx.fill();
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var className = this.props.className;
+
+
+			var circle = helper(this.props, moreProps);
+			if (!circle) return null;
+
+			return _react2.default.createElement("circle", { className: className, cx: circle.x, cy: circle.y, r: circle.r, fill: circle.fill });
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				svgDraw: this.renderSVG,
+				canvasDraw: this.drawOnCanvas,
+				canvasToDraw: _GenericComponent.getMouseCanvas,
+				drawOn: ["mousemove", "pan"]
+			});
+		}
+	}]);
+
+	return CurrentCoordinate;
+}(_react.Component);
+
+CurrentCoordinate.propTypes = {
+	yAccessor: _propTypes2.default.func,
+	r: _propTypes2.default.number.isRequired,
+	className: _propTypes2.default.string
+};
+
+CurrentCoordinate.defaultProps = {
+	r: 3,
+	className: "react-stockcharts-current-coordinate"
+};
+
+function helper(props, moreProps) {
+	var fill = props.fill,
+	    yAccessor = props.yAccessor,
+	    r = props.r;
+	var show = moreProps.show,
+	    xScale = moreProps.xScale,
+	    yScale = moreProps.chartConfig.yScale,
+	    currentItem = moreProps.currentItem,
+	    xAccessor = moreProps.xAccessor;
+
+	// console.log(show);
+
+	if (!show || (0, _utils.isNotDefined)(currentItem)) return null;
+
+	var xValue = xAccessor(currentItem);
+	var yValue = yAccessor(currentItem);
+
+	if ((0, _utils.isNotDefined)(yValue)) return null;
+
+	// console.log(chartConfig);
+	var x = Math.round(xScale(xValue));
+	var y = Math.round(yScale(yValue));
+
+	return { x: x, y: y, r: r, fill: fill };
+}
+
+exports.default = CurrentCoordinate;
+//# sourceMappingURL=CurrentCoordinate.js.map
+
+/***/ }),
+/* 1054 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _EdgeCoordinateV = __webpack_require__(1044);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var MouseCoordinateX = function (_Component) {
+	_inherits(MouseCoordinateX, _Component);
+
+	function MouseCoordinateX(props) {
+		_classCallCheck(this, MouseCoordinateX);
+
+		var _this = _possibleConstructorReturn(this, (MouseCoordinateX.__proto__ || Object.getPrototypeOf(MouseCoordinateX)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(MouseCoordinateX, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var props = helper(this.props, moreProps);
+			if ((0, _utils.isNotDefined)(props)) return null;
+
+			(0, _EdgeCoordinateV.drawOnCanvas)(ctx, props);
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var props = helper(this.props, moreProps);
+			if ((0, _utils.isNotDefined)(props)) return null;
+
+			return (0, _EdgeCoordinateV.renderSVG)(props);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				svgDraw: this.renderSVG,
+				clip: false,
+				canvasDraw: this.drawOnCanvas,
+				canvasToDraw: _GenericComponent.getMouseCanvas,
+				drawOn: ["mousemove", "pan", "drag"]
+			});
+		}
+	}]);
+
+	return MouseCoordinateX;
+}(_react.Component);
+
+MouseCoordinateX.propTypes = {
+	displayFormat: _propTypes2.default.func.isRequired,
+	yAxisPad: _propTypes2.default.number,
+	rectWidth: _propTypes2.default.number,
+	rectHeight: _propTypes2.default.number,
+	orient: _propTypes2.default.oneOf(["bottom", "top", "left", "right"]),
+	at: _propTypes2.default.oneOf(["bottom", "top", "left", "right"]),
+	fill: _propTypes2.default.string,
+	opacity: _propTypes2.default.number,
+	fontFamily: _propTypes2.default.string,
+	fontSize: _propTypes2.default.number,
+	textFill: _propTypes2.default.string,
+	snapX: _propTypes2.default.bool
+};
+
+function customX(props, moreProps) {
+	var xScale = moreProps.xScale,
+	    xAccessor = moreProps.xAccessor,
+	    currentItem = moreProps.currentItem,
+	    mouseXY = moreProps.mouseXY;
+	var snapX = props.snapX;
+
+	var x = snapX ? xScale(xAccessor(currentItem)) : mouseXY[0];
+
+	var displayXAccessor = moreProps.displayXAccessor;
+	var displayFormat = props.displayFormat;
+
+	var coordinate = snapX ? displayFormat(displayXAccessor(currentItem)) : displayFormat(xScale.invert(x));
+	return { x: x, coordinate: coordinate };
+}
+
+MouseCoordinateX.defaultProps = {
+	yAxisPad: 0,
+	rectWidth: 80,
+	rectHeight: 20,
+
+	// rectRadius: 5,
+	// stroke: "#684F1D",
+	strokeOpacity: 1,
+	strokeWidth: 1,
+
+	orient: "bottom",
+	at: "bottom",
+
+	fill: "#525252",
+	opacity: 1,
+	fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
+	fontSize: 13,
+	textFill: "#FFFFFF",
+	snapX: true,
+	customX: customX
+};
+
+function helper(props, moreProps) {
+	var show = moreProps.show,
+	    currentItem = moreProps.currentItem;
+	var height = moreProps.chartConfig.height;
+
+
+	if ((0, _utils.isNotDefined)(currentItem)) return null;
+
+	var customX = props.customX;
+	var orient = props.orient,
+	    at = props.at;
+	var stroke = props.stroke,
+	    strokeOpacity = props.strokeOpacity,
+	    strokeWidth = props.strokeWidth;
+	var rectRadius = props.rectRadius,
+	    rectWidth = props.rectWidth,
+	    rectHeight = props.rectHeight;
+	var fill = props.fill,
+	    opacity = props.opacity,
+	    fontFamily = props.fontFamily,
+	    fontSize = props.fontSize,
+	    textFill = props.textFill;
+
+
+	var edgeAt = at === "bottom" ? height : 0;
+
+	var _customX = customX(props, moreProps),
+	    x = _customX.x,
+	    coordinate = _customX.coordinate;
+
+	var type = "vertical";
+	var y1 = 0,
+	    y2 = height;
+	var hideLine = true;
+
+	var coordinateProps = {
+		coordinate: coordinate,
+		show: show,
+		type: type,
+		orient: orient,
+		edgeAt: edgeAt,
+		hideLine: hideLine,
+		fill: fill, opacity: opacity, fontFamily: fontFamily, fontSize: fontSize, textFill: textFill,
+		stroke: stroke, strokeOpacity: strokeOpacity, strokeWidth: strokeWidth,
+		rectWidth: rectWidth,
+		rectHeight: rectHeight,
+		rectRadius: rectRadius,
+		arrowWidth: 0,
+		x1: x,
+		x2: x,
+		y1: y1,
+		y2: y2
+	};
+	return coordinateProps;
+}
+
+exports.default = MouseCoordinateX;
+//# sourceMappingURL=MouseCoordinateX.js.map
+
+/***/ }),
+/* 1055 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _EdgeCoordinateV = __webpack_require__(1044);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var MouseCoordinateY = function (_Component) {
+	_inherits(MouseCoordinateY, _Component);
+
+	function MouseCoordinateY(props) {
+		_classCallCheck(this, MouseCoordinateY);
+
+		var _this = _possibleConstructorReturn(this, (MouseCoordinateY.__proto__ || Object.getPrototypeOf(MouseCoordinateY)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(MouseCoordinateY, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var props = helper(this.props, moreProps);
+			if ((0, _utils.isNotDefined)(props)) return null;
+
+			(0, _EdgeCoordinateV.drawOnCanvas)(ctx, props);
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var props = helper(this.props, moreProps);
+			if ((0, _utils.isNotDefined)(props)) return null;
+
+			return (0, _EdgeCoordinateV.renderSVG)(props);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				clip: false,
+				svgDraw: this.renderSVG,
+				canvasDraw: this.drawOnCanvas,
+				canvasToDraw: _GenericComponent.getMouseCanvas,
+				drawOn: ["mousemove", "pan", "drag"]
+			});
+		}
+	}]);
+
+	return MouseCoordinateY;
+}(_react.Component);
+
+MouseCoordinateY.propTypes = {
+	displayFormat: _propTypes2.default.func.isRequired,
+	yAxisPad: _propTypes2.default.number,
+	rectWidth: _propTypes2.default.number,
+	rectHeight: _propTypes2.default.number,
+	orient: _propTypes2.default.oneOf(["bottom", "top", "left", "right"]),
+	at: _propTypes2.default.oneOf(["bottom", "top", "left", "right"]),
+	dx: _propTypes2.default.number,
+	fill: _propTypes2.default.string,
+	opacity: _propTypes2.default.number,
+	fontFamily: _propTypes2.default.string,
+	fontSize: _propTypes2.default.number,
+	textFill: _propTypes2.default.string
+};
+
+MouseCoordinateY.defaultProps = {
+	yAxisPad: 0,
+	rectWidth: 50,
+	rectHeight: 20,
+	orient: "left",
+	at: "left",
+	dx: 0,
+	arrowWidth: 10,
+	fill: "#525252",
+	opacity: 1,
+	fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
+	fontSize: 13,
+	textFill: "#FFFFFF",
+
+	// stroke: "#684F1D",
+	strokeOpacity: 1,
+	strokeWidth: 1
+};
+
+function helper(props, moreProps) {
+	var chartId = moreProps.chartId,
+	    width = moreProps.width;
+	var show = moreProps.show,
+	    currentCharts = moreProps.currentCharts,
+	    yScale = moreProps.chartConfig.yScale,
+	    mouseXY = moreProps.mouseXY;
+
+
+	if ((0, _utils.isNotDefined)(mouseXY)) return null;
+
+	if (currentCharts.indexOf(chartId) < 0) return null;
+
+	var orient = props.orient,
+	    at = props.at,
+	    rectWidth = props.rectWidth,
+	    rectHeight = props.rectHeight,
+	    displayFormat = props.displayFormat,
+	    dx = props.dx;
+	var fill = props.fill,
+	    opacity = props.opacity,
+	    fontFamily = props.fontFamily,
+	    fontSize = props.fontSize,
+	    textFill = props.textFill,
+	    arrowWidth = props.arrowWidth;
+	var stroke = props.stroke,
+	    strokeOpacity = props.strokeOpacity,
+	    strokeWidth = props.strokeWidth;
+
+
+	var x1 = 0,
+	    x2 = width;
+	var edgeAt = at === "right" ? width : 0;
+
+	var type = "horizontal";
+	var y = mouseXY[1];
+	var coordinate = displayFormat(yScale.invert(y));
+	var hideLine = true;
+
+	var coordinateProps = {
+		coordinate: coordinate,
+		show: show,
+		type: type,
+		orient: orient,
+		edgeAt: edgeAt,
+		hideLine: hideLine,
+		fill: fill, opacity: opacity, fontFamily: fontFamily, fontSize: fontSize, textFill: textFill,
+		stroke: stroke, strokeOpacity: strokeOpacity, strokeWidth: strokeWidth,
+		rectWidth: rectWidth,
+		rectHeight: rectHeight,
+		arrowWidth: arrowWidth,
+		dx: dx,
+		x1: x1,
+		x2: x2,
+		y1: y,
+		y2: y
+	};
+	return coordinateProps;
+}
+
+exports.default = MouseCoordinateY;
+//# sourceMappingURL=MouseCoordinateY.js.map
+
+/***/ }),
+/* 1056 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _GenericComponent2 = _interopRequireDefault(_GenericComponent);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var CrossHairCursor = function (_Component) {
+	_inherits(CrossHairCursor, _Component);
+
+	function CrossHairCursor(props) {
+		_classCallCheck(this, CrossHairCursor);
+
+		var _this = _possibleConstructorReturn(this, (CrossHairCursor.__proto__ || Object.getPrototypeOf(CrossHairCursor)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(CrossHairCursor, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var lines = helper(this.props, moreProps);
+
+			if ((0, _utils.isDefined)(lines)) {
+				var _context = this.context,
+				    margin = _context.margin,
+				    ratio = _context.ratio;
+
+				var originX = 0.5 * ratio + margin.left;
+				var originY = 0.5 * ratio + margin.top;
+
+				ctx.save();
+				ctx.setTransform(1, 0, 0, 1, 0, 0);
+				ctx.scale(ratio, ratio);
+
+				ctx.translate(originX, originY);
+
+				lines.forEach(function (line) {
+					var dashArray = (0, _utils.getStrokeDasharray)(line.strokeDasharray).split(",").map(function (d) {
+						return +d;
+					});
+
+					ctx.strokeStyle = (0, _utils.hexToRGBA)(line.stroke, line.opacity);
+					ctx.setLineDash(dashArray);
+					ctx.beginPath();
+					ctx.moveTo(line.x1, line.y1);
+					ctx.lineTo(line.x2, line.y2);
+					ctx.stroke();
+				});
+
+				ctx.restore();
+			}
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var className = this.props.className;
+
+			var lines = helper(this.props, moreProps);
+
+			if ((0, _utils.isNotDefined)(lines)) return null;
+
+			return _react2.default.createElement(
+				"g",
+				{ className: "react-stockcharts-crosshair " + className },
+				lines.map(function (_ref, idx) {
+					var strokeDasharray = _ref.strokeDasharray,
+					    rest = _objectWithoutProperties(_ref, ["strokeDasharray"]);
+
+					return _react2.default.createElement("line", _extends({
+						key: idx,
+						strokeDasharray: (0, _utils.getStrokeDasharray)(strokeDasharray)
+					}, rest));
+				})
+			);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericComponent2.default, {
+				svgDraw: this.renderSVG,
+				clip: false,
+				canvasDraw: this.drawOnCanvas,
+				canvasToDraw: _GenericComponent.getMouseCanvas,
+				drawOn: ["mousemove", "pan", "drag"]
+			});
+		}
+	}]);
+
+	return CrossHairCursor;
+}(_react.Component);
+
+CrossHairCursor.propTypes = {
+	className: _propTypes2.default.string,
+	strokeDasharray: _propTypes2.default.oneOf(_utils.strokeDashTypes)
+};
+
+CrossHairCursor.contextTypes = {
+	margin: _propTypes2.default.object.isRequired,
+	ratio: _propTypes2.default.number.isRequired
+	// xScale for getting update event upon pan end, this is needed to get past the PureComponent shouldComponentUpdate
+	// xScale: PropTypes.func.isRequired,
+};
+
+function customX(props, moreProps) {
+	var xScale = moreProps.xScale,
+	    xAccessor = moreProps.xAccessor,
+	    currentItem = moreProps.currentItem,
+	    mouseXY = moreProps.mouseXY;
+	var snapX = props.snapX;
+
+	var x = snapX ? Math.round(xScale(xAccessor(currentItem))) : mouseXY[0];
+	return x;
+}
+
+CrossHairCursor.defaultProps = {
+	stroke: "#000000",
+	opacity: 0.3,
+	strokeDasharray: "ShortDash",
+	snapX: true,
+	customX: customX
+};
+
+function helper(props, moreProps) {
+	var mouseXY = moreProps.mouseXY,
+	    currentItem = moreProps.currentItem,
+	    show = moreProps.show,
+	    height = moreProps.height,
+	    width = moreProps.width;
+	var customX = props.customX,
+	    stroke = props.stroke,
+	    opacity = props.opacity,
+	    strokeDasharray = props.strokeDasharray;
+
+
+	if (!show || (0, _utils.isNotDefined)(currentItem)) return null;
+
+	var line1 = {
+		x1: 0,
+		x2: width,
+		y1: mouseXY[1],
+		y2: mouseXY[1],
+		stroke: stroke, strokeDasharray: strokeDasharray, opacity: opacity
+	};
+	var x = customX(props, moreProps);
+
+	var line2 = {
+		x1: x,
+		x2: x,
+		y1: 0,
+		y2: height,
+		stroke: stroke, strokeDasharray: strokeDasharray, opacity: opacity
+	};
+	return [line1, line2];
+}
+
+exports.default = CrossHairCursor;
+//# sourceMappingURL=CrossHairCursor.js.map
+
+/***/ }),
+/* 1057 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _EdgeCoordinateV = __webpack_require__(1044);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var PriceCoordinate = function (_Component) {
+	_inherits(PriceCoordinate, _Component);
+
+	function PriceCoordinate(props) {
+		_classCallCheck(this, PriceCoordinate);
+
+		var _this = _possibleConstructorReturn(this, (PriceCoordinate.__proto__ || Object.getPrototypeOf(PriceCoordinate)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(PriceCoordinate, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var props = helper(this.props, moreProps);
+			(0, _EdgeCoordinateV.drawOnCanvas)(ctx, props);
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var props = helper(this.props, moreProps);
+			return (0, _EdgeCoordinateV.renderSVG)(props);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				clip: false,
+				svgDraw: this.renderSVG,
+				canvasDraw: this.drawOnCanvas,
+				canvasToDraw: _GenericComponent.getAxisCanvas,
+				drawOn: ["pan"]
+			});
+		}
+	}]);
+
+	return PriceCoordinate;
+}(_react.Component);
+
+PriceCoordinate.propTypes = {
+	displayFormat: _propTypes2.default.func.isRequired,
+	yAxisPad: _propTypes2.default.number,
+	rectWidth: _propTypes2.default.number,
+	rectHeight: _propTypes2.default.number,
+	orient: _propTypes2.default.oneOf(["bottom", "top", "left", "right"]),
+	at: _propTypes2.default.oneOf(["bottom", "top", "left", "right"]),
+	price: _propTypes2.default.number,
+	dx: _propTypes2.default.number,
+	arrowWidth: _propTypes2.default.number,
+	opacity: _propTypes2.default.number,
+	lineOpacity: _propTypes2.default.number,
+	lineStroke: _propTypes2.default.string,
+	fontFamily: _propTypes2.default.string,
+	fontSize: _propTypes2.default.number,
+	fill: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.func]),
+	textFill: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.func])
+};
+
+PriceCoordinate.defaultProps = {
+	yAxisPad: 0,
+	rectWidth: 50,
+	rectHeight: 20,
+	orient: "left",
+	at: "left",
+	price: 0,
+	dx: 0,
+	arrowWidth: 0,
+	fill: "#BAB8b8",
+	opacity: 1,
+	lineOpacity: 0.2,
+	lineStroke: "#000000",
+	fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
+	fontSize: 13,
+	textFill: "#FFFFFF"
+};
+
+function helper(props, moreProps) {
+	var width = moreProps.width;
+	var yScale = moreProps.chartConfig.yScale;
+
+	var lowerPrice = yScale.domain()[0];
+	var upperPrice = yScale.domain()[1];
+	var lowerYValue = yScale.range()[0];
+	var upperYValue = yScale.range()[1];
+	var rangeSlope = (lowerPrice - upperPrice) / (lowerYValue - upperYValue);
+
+	var orient = props.orient,
+	    at = props.at,
+	    rectWidth = props.rectWidth,
+	    rectHeight = props.rectHeight,
+	    displayFormat = props.displayFormat,
+	    dx = props.dx,
+	    price = props.price;
+	var fill = props.fill,
+	    opacity = props.opacity,
+	    fontFamily = props.fontFamily,
+	    fontSize = props.fontSize,
+	    textFill = props.textFill,
+	    arrowWidth = props.arrowWidth,
+	    lineOpacity = props.lineOpacity,
+	    lineStroke = props.lineStroke;
+
+
+	var x1 = 0,
+	    x2 = width;
+	var edgeAt = at === "right" ? width : 0;
+
+	var type = "horizontal";
+	var priceShowTolerance = 5;
+
+	var y = 0;
+	var show = void 0;
+
+	if (price < upperPrice + priceShowTolerance || price > lowerPrice - priceShowTolerance) {
+		y = price / rangeSlope + (lowerYValue - lowerPrice / rangeSlope);
+		show = true;
+	} else {
+		show = false;
+	}
+
+	var coordinate = displayFormat(yScale.invert(y));
+	var hideLine = false;
+
+	var coordinateProps = {
+		coordinate: coordinate,
+		show: show,
+		type: type,
+		orient: orient,
+		edgeAt: edgeAt,
+		hideLine: hideLine,
+		lineOpacity: lineOpacity,
+		lineStroke: lineStroke,
+		fill: (0, _utils.functor)(fill)(price),
+		textFill: (0, _utils.functor)(textFill)(price),
+		opacity: opacity, fontFamily: fontFamily, fontSize: fontSize,
+		rectWidth: rectWidth,
+		rectHeight: rectHeight,
+		arrowWidth: arrowWidth,
+		dx: dx,
+		x1: x1,
+		x2: x2,
+		y1: y,
+		y2: y
+	};
+	return coordinateProps;
+}
+
+exports.default = PriceCoordinate;
+//# sourceMappingURL=PriceCoordinate.js.map
+
+/***/ }),
+/* 1058 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _discontinuousTimeScaleProvider = __webpack_require__(1059);
+
+Object.defineProperty(exports, "discontinuousTimeScaleProvider", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_discontinuousTimeScaleProvider).default;
+	}
+});
+Object.defineProperty(exports, "discontinuousTimeScaleProviderBuilder", {
+	enumerable: true,
+	get: function get() {
+		return _discontinuousTimeScaleProvider.discontinuousTimeScaleProviderBuilder;
+	}
+});
+
+var _financeDiscontinuousScale = __webpack_require__(1047);
+
+Object.defineProperty(exports, "financeDiscontinuousScale", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_financeDiscontinuousScale).default;
+	}
+});
+exports.defaultScaleProvider = defaultScaleProvider;
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function defaultScaleProvider(xScale) {
+	return function (data, xAccessor) {
+		return { data: data, xScale: xScale, xAccessor: xAccessor, displayXAccessor: xAccessor };
+	};
+}
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+/* 1059 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+// import { map as d3Map } from "d3-collection";
+
+exports.discontinuousTimeScaleProviderBuilder = discontinuousTimeScaleProviderBuilder;
+
+var _d3TimeFormat = __webpack_require__(119);
+
+var _financeDiscontinuousScale = __webpack_require__(1047);
+
+var _financeDiscontinuousScale2 = _interopRequireDefault(_financeDiscontinuousScale);
+
+var _utils = __webpack_require__(7);
+
+var _levels = __webpack_require__(1048);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function evaluateLevel(d, date, i, formatters) {
+	return _levels.levelDefinition.map(function (eachLevel, idx) {
+		return {
+			level: _levels.levelDefinition.length - idx - 1,
+			format: formatters[eachLevel(d, date, i)]
+		};
+	}).find(function (l) {
+		return !!l.format;
+	});
+}
+
+var discontinuousIndexCalculator = (0, _utils.slidingWindow)().windowSize(2).undefinedValue(function (d, idx, _ref) {
+	var initialIndex = _ref.initialIndex,
+	    formatters = _ref.formatters;
+
+	var i = initialIndex;
+	var row = {
+		date: d.getTime(),
+		startOf30Seconds: false,
+		startOfMinute: false,
+		startOf5Minutes: false,
+		startOf15Minutes: false,
+		startOf30Minutes: false,
+		startOfHour: false,
+		startOfEighthOfADay: false,
+		startOfQuarterDay: false,
+		startOfHalfDay: false,
+		startOfDay: true,
+		startOfWeek: false,
+		startOfMonth: false,
+		startOfQuarter: false,
+		startOfYear: false
+	};
+	var level = evaluateLevel(row, d, i, formatters);
+	return _extends({}, row, { index: i }, level);
+});
+
+var discontinuousIndexCalculatorLocalTime = discontinuousIndexCalculator.accumulator(function (_ref2, i, idx, _ref3) {
+	var _ref4 = _slicedToArray(_ref2, 2),
+	    prevDate = _ref4[0],
+	    nowDate = _ref4[1];
+
+	var initialIndex = _ref3.initialIndex,
+	    formatters = _ref3.formatters;
+
+	var startOf30Seconds = nowDate.getSeconds() % 30 === 0;
+
+	var startOfMinute = nowDate.getMinutes() !== prevDate.getMinutes();
+	var startOf5Minutes = startOfMinute && nowDate.getMinutes() % 5 <= prevDate.getMinutes() % 5;
+	var startOf15Minutes = startOfMinute && nowDate.getMinutes() % 15 <= prevDate.getMinutes() % 15;
+	var startOf30Minutes = startOfMinute && nowDate.getMinutes() % 30 <= prevDate.getMinutes() % 30;
+
+	var startOfHour = nowDate.getHours() !== prevDate.getHours();
+
+	var startOfEighthOfADay = startOfHour && nowDate.getHours() % 3 === 0;
+	var startOfQuarterDay = startOfHour && nowDate.getHours() % 6 === 0;
+	var startOfHalfDay = startOfHour && nowDate.getHours() % 12 === 0;
+
+	var startOfDay = nowDate.getDay() !== prevDate.getDay();
+	// According to ISO calendar
+	// Sunday = 0, Monday = 1, ... Saturday = 6
+	// day of week of today < day of week of yesterday then today is start of week
+	var startOfWeek = nowDate.getDay() < prevDate.getDay();
+	// month of today != month of yesterday then today is start of month
+	var startOfMonth = nowDate.getMonth() !== prevDate.getMonth();
+	// if start of month and month % 3 === 0 then it is start of quarter
+	var startOfQuarter = startOfMonth && nowDate.getMonth() % 3 <= prevDate.getMonth() % 3;
+	// year of today != year of yesterday then today is start of year
+	var startOfYear = nowDate.getFullYear() !== prevDate.getFullYear();
+
+	var row = {
+		date: nowDate.getTime(),
+		startOf30Seconds: startOf30Seconds,
+		startOfMinute: startOfMinute,
+		startOf5Minutes: startOf5Minutes,
+		startOf15Minutes: startOf15Minutes,
+		startOf30Minutes: startOf30Minutes,
+		startOfHour: startOfHour,
+		startOfEighthOfADay: startOfEighthOfADay,
+		startOfQuarterDay: startOfQuarterDay,
+		startOfHalfDay: startOfHalfDay,
+		startOfDay: startOfDay,
+		startOfWeek: startOfWeek,
+		startOfMonth: startOfMonth,
+		startOfQuarter: startOfQuarter,
+		startOfYear: startOfYear
+	};
+	var level = evaluateLevel(row, nowDate, i, formatters);
+	if (level == null) {
+		console.log(row);
+	}
+	return _extends({}, row, { index: i + initialIndex }, level);
+});
+
+function doStuff(realDateAccessor, inputDateAccessor, initialIndex, formatters) {
+	return function (data) {
+		var dateAccessor = realDateAccessor(inputDateAccessor);
+		var calculate = discontinuousIndexCalculatorLocalTime.source(dateAccessor).misc({ initialIndex: initialIndex, formatters: formatters });
+
+		var index = calculate(data);
+		/*
+  var map = d3Map();
+  for (var i = 0; i < data.length - 1; i++) {
+  		var nextDate = dateAccessor(data[i + 1]);
+  	var nowDate = dateAccessor(data[i]);
+  	var diff = nextDate - nowDate;
+  		if (map.has(diff)) {
+  		var count = parseInt(map.get(diff), 10) + 1;
+  		map.set(diff, count);
+  	} else {
+  		map.set(diff, 1);
+  	}
+  }
+  	var entries = map.entries().sort((a, b) => a.value < b.value);
+  	// For Renko/p&f
+  	var interval = entries[0].value === 1
+  	? Math.round((dateAccessor(last(data)) - dateAccessor(head(data))) / data.length)
+  	: parseInt(entries[0].key, 10); */
+
+		// return { index, interval };
+		return { index: index };
+	};
+}
+
+function discontinuousTimeScaleProviderBuilder() {
+	var initialIndex = 0,
+	    realDateAccessor = _utils.identity;
+	var inputDateAccessor = function inputDateAccessor(d) {
+		return d.date;
+	},
+	    indexAccessor = function indexAccessor(d) {
+		return d.idx;
+	},
+	    indexMutator = function indexMutator(d, idx) {
+		return _extends({}, d, { idx: idx });
+	},
+	    withIndex = void 0;
+
+	var currentFormatters = _levels.defaultFormatters;
+
+	// eslint-disable-next-line prefer-const
+	var discontinuousTimeScaleProvider = function discontinuousTimeScaleProvider(data) {
+		/*
+  console.warn("Are you sure you want to use a discontinuousTimeScale?"
+  	+ " Use this only if you have discontinuous data which"
+  	+ " needs to be displayed as continuous."
+  	+ " If you have continuous data use a d3 scale like"
+  	+ " `d3.scaleTime`"
+  );
+  */
+
+		var index = withIndex;
+
+		if ((0, _utils.isNotDefined)(index)) {
+			var response = doStuff(realDateAccessor, inputDateAccessor, initialIndex, currentFormatters)(data);
+
+			index = response.index;
+		}
+		// console.log(interval, entries[0].key);
+
+		var inputIndex = index.map(function (each) {
+			var format = each.format;
+
+			return {
+				// ...each,
+				index: each.index,
+				level: each.level,
+				date: new Date(each.date),
+				format: (0, _d3TimeFormat.timeFormat)(format)
+			};
+		});
+		var xScale = (0, _financeDiscontinuousScale2.default)(inputIndex);
+
+		var mergedData = (0, _utils.zipper)().combine(indexMutator);
+
+		var finalData = mergedData(data, inputIndex);
+
+		return {
+			data: finalData,
+			xScale: xScale,
+			xAccessor: function xAccessor(d) {
+				return d && indexAccessor(d).index;
+			},
+			displayXAccessor: realDateAccessor(inputDateAccessor)
+		};
+	};
+
+	discontinuousTimeScaleProvider.initialIndex = function (x) {
+		if (!arguments.length) {
+			return initialIndex;
+		}
+		initialIndex = x;
+		return discontinuousTimeScaleProvider;
+	};
+	discontinuousTimeScaleProvider.inputDateAccessor = function (x) {
+		if (!arguments.length) {
+			return inputDateAccessor;
+		}
+		inputDateAccessor = x;
+		return discontinuousTimeScaleProvider;
+	};
+	discontinuousTimeScaleProvider.indexAccessor = function (x) {
+		if (!arguments.length) {
+			return indexAccessor;
+		}
+		indexAccessor = x;
+		return discontinuousTimeScaleProvider;
+	};
+	discontinuousTimeScaleProvider.indexMutator = function (x) {
+		if (!arguments.length) {
+			return indexMutator;
+		}
+		indexMutator = x;
+		return discontinuousTimeScaleProvider;
+	};
+	discontinuousTimeScaleProvider.withIndex = function (x) {
+		if (!arguments.length) {
+			return withIndex;
+		}
+		withIndex = x;
+		return discontinuousTimeScaleProvider;
+	};
+	discontinuousTimeScaleProvider.utc = function () {
+		realDateAccessor = function realDateAccessor(dateAccessor) {
+			return function (d) {
+				var date = dateAccessor(d);
+				// The getTimezoneOffset() method returns the time-zone offset from UTC, in minutes, for the current locale.
+				var offsetInMillis = date.getTimezoneOffset() * 60 * 1000;
+				return new Date(date.getTime() + offsetInMillis);
+			};
+		};
+		return discontinuousTimeScaleProvider;
+	};
+	discontinuousTimeScaleProvider.setLocale = function (locale) {
+		var formatters = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+
+		if (locale) {
+			(0, _d3TimeFormat.timeFormatDefaultLocale)(locale);
+		}
+		if (formatters) {
+			currentFormatters = formatters;
+		}
+		return discontinuousTimeScaleProvider;
+	};
+
+	discontinuousTimeScaleProvider.indexCalculator = function () {
+		return doStuff(realDateAccessor, inputDateAccessor, initialIndex, currentFormatters);
+	};
+
+	return discontinuousTimeScaleProvider;
+}
+
+/* discontinuousTimeScaleProvider.utc = function(data,
+		dateAccessor,
+		indexAccessor,
+		indexMutator) {
+	var utcDateAccessor = d => {
+		var date = dateAccessor(d);
+		// The getTimezoneOffset() method returns the time-zone offset from UTC, in minutes, for the current locale.
+		var offsetInMillis = date.getTimezoneOffset() * 60 * 1000;
+		return new Date(date.getTime() + offsetInMillis);
+	};
+	return discontinuousTimeScaleProvider(data, utcDateAccessor, indexAccessor, indexMutator);
+};*/
+
+exports.default = discontinuousTimeScaleProviderBuilder();
+//# sourceMappingURL=discontinuousTimeScaleProvider.js.map
+
+/***/ }),
+/* 1060 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _MACDTooltip = __webpack_require__(1061);
+
+Object.defineProperty(exports, "MACDTooltip", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_MACDTooltip).default;
+  }
+});
+
+var _OHLCTooltip = __webpack_require__(1062);
+
+Object.defineProperty(exports, "OHLCTooltip", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_OHLCTooltip).default;
+  }
+});
+
+var _SingleValueTooltip = __webpack_require__(1063);
+
+Object.defineProperty(exports, "SingleValueTooltip", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_SingleValueTooltip).default;
+  }
+});
+
+var _MovingAverageTooltip = __webpack_require__(1064);
+
+Object.defineProperty(exports, "MovingAverageTooltip", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_MovingAverageTooltip).default;
+  }
+});
+
+var _BollingerBandTooltip = __webpack_require__(1065);
+
+Object.defineProperty(exports, "BollingerBandTooltip", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_BollingerBandTooltip).default;
+  }
+});
+
+var _RSITooltip = __webpack_require__(1066);
+
+Object.defineProperty(exports, "RSITooltip", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_RSITooltip).default;
+  }
+});
+
+var _StochasticTooltip = __webpack_require__(1067);
+
+Object.defineProperty(exports, "StochasticTooltip", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_StochasticTooltip).default;
+  }
+});
+
+var _HoverTooltip = __webpack_require__(1068);
+
+Object.defineProperty(exports, "HoverTooltip", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_HoverTooltip).default;
+  }
+});
+
+var _ToolTipText = __webpack_require__(1040);
+
+Object.defineProperty(exports, "ToolTipText", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_ToolTipText).default;
+  }
+});
+
+var _ToolTipTSpanLabel = __webpack_require__(1041);
+
+Object.defineProperty(exports, "ToolTipTSpanLabel", {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_ToolTipTSpanLabel).default;
+  }
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+/* 1061 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _d3Format = __webpack_require__(176);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _displayValuesFor = __webpack_require__(1042);
+
+var _displayValuesFor2 = _interopRequireDefault(_displayValuesFor);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _ToolTipText = __webpack_require__(1040);
+
+var _ToolTipText2 = _interopRequireDefault(_ToolTipText);
+
+var _ToolTipTSpanLabel = __webpack_require__(1041);
+
+var _ToolTipTSpanLabel2 = _interopRequireDefault(_ToolTipTSpanLabel);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var MACDTooltip = function (_Component) {
+	_inherits(MACDTooltip, _Component);
+
+	function MACDTooltip(props) {
+		_classCallCheck(this, MACDTooltip);
+
+		var _this = _possibleConstructorReturn(this, (MACDTooltip.__proto__ || Object.getPrototypeOf(MACDTooltip)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		return _this;
+	}
+
+	_createClass(MACDTooltip, [{
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var _props = this.props,
+			    onClick = _props.onClick,
+			    fontFamily = _props.fontFamily,
+			    fontSize = _props.fontSize,
+			    displayFormat = _props.displayFormat,
+			    className = _props.className;
+			var _props2 = this.props,
+			    yAccessor = _props2.yAccessor,
+			    options = _props2.options,
+			    appearance = _props2.appearance,
+			    labelFill = _props2.labelFill;
+			var displayValuesFor = this.props.displayValuesFor;
+			var _moreProps$chartConfi = moreProps.chartConfig,
+			    width = _moreProps$chartConfi.width,
+			    height = _moreProps$chartConfi.height;
+
+
+			var currentItem = displayValuesFor(this.props, moreProps);
+			var macdValue = currentItem && yAccessor(currentItem);
+
+			var macd = macdValue && macdValue.macd && displayFormat(macdValue.macd) || "n/a";
+			var signal = macdValue && macdValue.signal && displayFormat(macdValue.signal) || "n/a";
+			var divergence = macdValue && macdValue.divergence && displayFormat(macdValue.divergence) || "n/a";
+
+			var originProp = this.props.origin;
+
+			var origin = (0, _utils.functor)(originProp);
+
+			var _origin = origin(width, height),
+			    _origin2 = _slicedToArray(_origin, 2),
+			    x = _origin2[0],
+			    y = _origin2[1];
+
+			return _react2.default.createElement(
+				"g",
+				{ className: className, transform: "translate(" + x + ", " + y + ")", onClick: onClick },
+				_react2.default.createElement(
+					_ToolTipText2.default,
+					{ x: 0, y: 0,
+						fontFamily: fontFamily, fontSize: fontSize },
+					_react2.default.createElement(
+						_ToolTipTSpanLabel2.default,
+						{ fill: labelFill },
+						"MACD ("
+					),
+					_react2.default.createElement(
+						"tspan",
+						{ fill: appearance.stroke.macd },
+						options.slow
+					),
+					_react2.default.createElement(
+						_ToolTipTSpanLabel2.default,
+						{ fill: labelFill },
+						", "
+					),
+					_react2.default.createElement(
+						"tspan",
+						{ fill: appearance.stroke.macd },
+						options.fast
+					),
+					_react2.default.createElement(
+						_ToolTipTSpanLabel2.default,
+						{ fill: labelFill },
+						"): "
+					),
+					_react2.default.createElement(
+						"tspan",
+						{ fill: appearance.stroke.macd },
+						macd
+					),
+					_react2.default.createElement(
+						_ToolTipTSpanLabel2.default,
+						{ fill: labelFill },
+						" Signal ("
+					),
+					_react2.default.createElement(
+						"tspan",
+						{ fill: appearance.stroke.signal },
+						options.signal
+					),
+					_react2.default.createElement(
+						_ToolTipTSpanLabel2.default,
+						{ fill: labelFill },
+						"): "
+					),
+					_react2.default.createElement(
+						"tspan",
+						{ fill: appearance.stroke.signal },
+						signal
+					),
+					_react2.default.createElement(
+						_ToolTipTSpanLabel2.default,
+						{ fill: labelFill },
+						" Divergence: "
+					),
+					_react2.default.createElement(
+						"tspan",
+						{ fill: appearance.fill.divergence },
+						divergence
+					)
+				)
+			);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				clip: false,
+				svgDraw: this.renderSVG,
+				drawOn: ["mousemove"]
+			});
+		}
+	}]);
+
+	return MACDTooltip;
+}(_react.Component);
+
+MACDTooltip.propTypes = {
+	origin: _propTypes2.default.oneOfType([_propTypes2.default.array, _propTypes2.default.func]).isRequired,
+	className: _propTypes2.default.string,
+	fontFamily: _propTypes2.default.string,
+	fontSize: _propTypes2.default.number,
+	labelFill: _propTypes2.default.string,
+
+	yAccessor: _propTypes2.default.func.isRequired,
+	options: _propTypes2.default.shape({
+		slow: _propTypes2.default.number.isRequired,
+		fast: _propTypes2.default.number.isRequired,
+		signal: _propTypes2.default.number.isRequired
+	}).isRequired,
+	appearance: _propTypes2.default.shape({
+		stroke: {
+			macd: _propTypes2.default.string.isRequired,
+			signal: _propTypes2.default.string.isRequired
+		}.isRequired,
+		fill: _propTypes2.default.shape({
+			divergence: _propTypes2.default.string.isRequired
+		}).isRequired
+	}).isRequired,
+	displayFormat: _propTypes2.default.func.isRequired,
+	displayValuesFor: _propTypes2.default.func,
+	onClick: _propTypes2.default.func
+};
+
+MACDTooltip.defaultProps = {
+	origin: [0, 0],
+	displayFormat: (0, _d3Format.format)(".2f"),
+	displayValuesFor: _displayValuesFor2.default,
+	className: "react-stockcharts-tooltip"
+};
+
+exports.default = MACDTooltip;
+// export default MACDTooltip;
+//# sourceMappingURL=MACDTooltip.js.map
+
+/***/ }),
+/* 1062 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _d3Format = __webpack_require__(176);
+
+var _d3TimeFormat = __webpack_require__(119);
+
+var _displayValuesFor = __webpack_require__(1042);
+
+var _displayValuesFor2 = _interopRequireDefault(_displayValuesFor);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _utils = __webpack_require__(7);
+
+var _ToolTipText = __webpack_require__(1040);
+
+var _ToolTipText2 = _interopRequireDefault(_ToolTipText);
+
+var _ToolTipTSpanLabel = __webpack_require__(1041);
+
+var _ToolTipTSpanLabel2 = _interopRequireDefault(_ToolTipTSpanLabel);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var OHLCTooltip = function (_Component) {
+	_inherits(OHLCTooltip, _Component);
+
+	function OHLCTooltip(props) {
+		_classCallCheck(this, OHLCTooltip);
+
+		var _this = _possibleConstructorReturn(this, (OHLCTooltip.__proto__ || Object.getPrototypeOf(OHLCTooltip)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		return _this;
+	}
+
+	_createClass(OHLCTooltip, [{
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var displayValuesFor = this.props.displayValuesFor;
+			var _props = this.props,
+			    xDisplayFormat = _props.xDisplayFormat,
+			    accessor = _props.accessor,
+			    volumeFormat = _props.volumeFormat,
+			    ohlcFormat = _props.ohlcFormat,
+			    percentFormat = _props.percentFormat,
+			    displayTexts = _props.displayTexts;
+			var _moreProps$chartConfi = moreProps.chartConfig,
+			    width = _moreProps$chartConfi.width,
+			    height = _moreProps$chartConfi.height;
+			var displayXAccessor = moreProps.displayXAccessor;
+
+
+			var currentItem = displayValuesFor(this.props, moreProps);
+
+			var displayDate = void 0,
+			    open = void 0,
+			    high = void 0,
+			    low = void 0,
+			    close = void 0,
+			    volume = void 0,
+			    percent = void 0;
+			displayDate = open = high = low = close = volume = percent = displayTexts.na;
+
+			if ((0, _utils.isDefined)(currentItem) && (0, _utils.isDefined)(accessor(currentItem))) {
+				var item = accessor(currentItem);
+				volume = (0, _utils.isDefined)(item.volume) ? volumeFormat(item.volume) : displayTexts.na;
+
+				displayDate = xDisplayFormat(displayXAccessor(item));
+				open = ohlcFormat(item.open);
+				high = ohlcFormat(item.high);
+				low = ohlcFormat(item.low);
+				close = ohlcFormat(item.close);
+				percent = percentFormat((item.close - item.open) / item.open);
+			}
+
+			var originProp = this.props.origin;
+
+			var origin = (0, _utils.functor)(originProp);
+
+			var _origin = origin(width, height),
+			    _origin2 = _slicedToArray(_origin, 2),
+			    x = _origin2[0],
+			    y = _origin2[1];
+
+			var itemsToDisplay = {
+				displayDate: displayDate,
+				open: open,
+				high: high,
+				low: low,
+				close: close,
+				percent: percent,
+				volume: volume,
+				x: x,
+				y: y
+			};
+			return this.props.children(this.props, moreProps, itemsToDisplay);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				clip: false,
+				svgDraw: this.renderSVG,
+				drawOn: ["mousemove"]
+			});
+		}
+	}]);
+
+	return OHLCTooltip;
+}(_react.Component);
+
+OHLCTooltip.propTypes = {
+	className: _propTypes2.default.string,
+	accessor: _propTypes2.default.func,
+	xDisplayFormat: _propTypes2.default.func,
+	children: _propTypes2.default.func,
+	volumeFormat: _propTypes2.default.func,
+	percentFormat: _propTypes2.default.func,
+	ohlcFormat: _propTypes2.default.func,
+	origin: _propTypes2.default.oneOfType([_propTypes2.default.array, _propTypes2.default.func]),
+	fontFamily: _propTypes2.default.string,
+	fontSize: _propTypes2.default.number,
+	onClick: _propTypes2.default.func,
+	displayValuesFor: _propTypes2.default.func,
+	textFill: _propTypes2.default.string,
+	labelFill: _propTypes2.default.string,
+	displayTexts: _propTypes2.default.object
+};
+
+var displayTextsDefault = {
+	d: "Date: ",
+	o: " O: ",
+	h: " H: ",
+	l: " L: ",
+	c: " C: ",
+	v: " Vol: ",
+	na: "n/a"
+};
+
+OHLCTooltip.defaultProps = {
+	accessor: function accessor(d) {
+		return {
+			date: d.date,
+			open: d.open,
+			high: d.high,
+			low: d.low,
+			close: d.close,
+			volume: d.volume
+		};
+	},
+	xDisplayFormat: (0, _d3TimeFormat.timeFormat)("%Y-%m-%d"),
+	volumeFormat: (0, _d3Format.format)(".4s"),
+	percentFormat: (0, _d3Format.format)(".2%"),
+	ohlcFormat: (0, _d3Format.format)(".2f"),
+	displayValuesFor: _displayValuesFor2.default,
+	origin: [0, 0],
+	children: defaultDisplay,
+	displayTexts: displayTextsDefault
+};
+
+function defaultDisplay(props, moreProps, itemsToDisplay) {
+
+	/* eslint-disable */
+	var className = props.className,
+	    textFill = props.textFill,
+	    labelFill = props.labelFill,
+	    onClick = props.onClick,
+	    fontFamily = props.fontFamily,
+	    fontSize = props.fontSize,
+	    displayTexts = props.displayTexts;
+	/* eslint-enable */
+
+	var displayDate = itemsToDisplay.displayDate,
+	    open = itemsToDisplay.open,
+	    high = itemsToDisplay.high,
+	    low = itemsToDisplay.low,
+	    close = itemsToDisplay.close,
+	    volume = itemsToDisplay.volume,
+	    x = itemsToDisplay.x,
+	    y = itemsToDisplay.y;
+
+	return _react2.default.createElement(
+		"g",
+		{
+			className: "react-stockcharts-tooltip-hover " + className,
+			transform: "translate(" + x + ", " + y + ")",
+			onClick: onClick
+		},
+		_react2.default.createElement(
+			_ToolTipText2.default,
+			{
+				x: 0,
+				y: 0,
+				fontFamily: fontFamily,
+				fontSize: fontSize
+			},
+			_react2.default.createElement(
+				_ToolTipTSpanLabel2.default,
+				{
+					fill: labelFill,
+					key: "label",
+					x: 0,
+					dy: "5" },
+				displayTexts.d
+			),
+			_react2.default.createElement(
+				"tspan",
+				{ key: "value", fill: textFill },
+				displayDate
+			),
+			_react2.default.createElement(
+				_ToolTipTSpanLabel2.default,
+				{ fill: labelFill, key: "label_O" },
+				displayTexts.o
+			),
+			_react2.default.createElement(
+				"tspan",
+				{ key: "value_O", fill: textFill },
+				open
+			),
+			_react2.default.createElement(
+				_ToolTipTSpanLabel2.default,
+				{ fill: labelFill, key: "label_H" },
+				displayTexts.h
+			),
+			_react2.default.createElement(
+				"tspan",
+				{ key: "value_H", fill: textFill },
+				high
+			),
+			_react2.default.createElement(
+				_ToolTipTSpanLabel2.default,
+				{ fill: labelFill, key: "label_L" },
+				displayTexts.l
+			),
+			_react2.default.createElement(
+				"tspan",
+				{ key: "value_L", fill: textFill },
+				low
+			),
+			_react2.default.createElement(
+				_ToolTipTSpanLabel2.default,
+				{ fill: labelFill, key: "label_C" },
+				displayTexts.c
+			),
+			_react2.default.createElement(
+				"tspan",
+				{ key: "value_C", fill: textFill },
+				close
+			),
+			_react2.default.createElement(
+				_ToolTipTSpanLabel2.default,
+				{ fill: labelFill, key: "label_Vol" },
+				displayTexts.v
+			),
+			_react2.default.createElement(
+				"tspan",
+				{ key: "value_Vol", fill: textFill },
+				volume
+			)
+		)
+	);
+}
+
+exports.default = OHLCTooltip;
+//# sourceMappingURL=OHLCTooltip.js.map
+
+/***/ }),
+/* 1063 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _d3Format = __webpack_require__(176);
+
+var _displayValuesFor = __webpack_require__(1042);
+
+var _displayValuesFor2 = _interopRequireDefault(_displayValuesFor);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _ToolTipText = __webpack_require__(1040);
+
+var _ToolTipText2 = _interopRequireDefault(_ToolTipText);
+
+var _ToolTipTSpanLabel = __webpack_require__(1041);
+
+var _ToolTipTSpanLabel2 = _interopRequireDefault(_ToolTipTSpanLabel);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SingleValueTooltip = function (_Component) {
+	_inherits(SingleValueTooltip, _Component);
+
+	function SingleValueTooltip(props) {
+		_classCallCheck(this, SingleValueTooltip);
+
+		var _this = _possibleConstructorReturn(this, (SingleValueTooltip.__proto__ || Object.getPrototypeOf(SingleValueTooltip)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		return _this;
+	}
+
+	_createClass(SingleValueTooltip, [{
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var _props = this.props,
+			    onClick = _props.onClick,
+			    fontFamily = _props.fontFamily,
+			    fontSize = _props.fontSize,
+			    labelFill = _props.labelFill,
+			    valueFill = _props.valueFill,
+			    className = _props.className;
+			var _props2 = this.props,
+			    xDisplayFormat = _props2.xDisplayFormat,
+			    yDisplayFormat = _props2.yDisplayFormat,
+			    xLabel = _props2.xLabel,
+			    yLabel = _props2.yLabel,
+			    xAccessor = _props2.xAccessor,
+			    yAccessor = _props2.yAccessor;
+			var displayValuesFor = this.props.displayValuesFor;
+			var _moreProps$chartConfi = moreProps.chartConfig,
+			    width = _moreProps$chartConfi.width,
+			    height = _moreProps$chartConfi.height;
+
+			var currentItem = displayValuesFor(this.props, moreProps);
+
+			var xDisplayValue = (0, _utils.isDefined)(currentItem) && (0, _utils.isDefined)(xAccessor(currentItem)) ? xDisplayFormat(xAccessor(currentItem)) : "n/a";
+			var yDisplayValue = (0, _utils.isDefined)(currentItem) && (0, _utils.isDefined)(yAccessor(currentItem)) ? yDisplayFormat(yAccessor(currentItem)) : "n/a";
+
+			var originProp = this.props.origin;
+
+			var origin = (0, _utils.functor)(originProp);
+
+			var _origin = origin(width, height),
+			    _origin2 = _slicedToArray(_origin, 2),
+			    x = _origin2[0],
+			    y = _origin2[1];
+
+			return _react2.default.createElement(
+				"g",
+				{ className: className, transform: "translate(" + x + ", " + y + ")", onClick: onClick },
+				_react2.default.createElement(
+					_ToolTipText2.default,
+					{ x: 0, y: 0,
+						fontFamily: fontFamily, fontSize: fontSize },
+					xLabel ? _react2.default.createElement(
+						_ToolTipTSpanLabel2.default,
+						{ x: 0, dy: "5", fill: labelFill },
+						xLabel + ": "
+					) : null,
+					xLabel ? _react2.default.createElement(
+						"tspan",
+						{ fill: valueFill },
+						xDisplayValue + " "
+					) : null,
+					_react2.default.createElement(
+						_ToolTipTSpanLabel2.default,
+						{ fill: labelFill },
+						yLabel + ": "
+					),
+					_react2.default.createElement(
+						"tspan",
+						{ fill: valueFill },
+						yDisplayValue
+					)
+				)
+			);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				clip: false,
+				svgDraw: this.renderSVG,
+				drawOn: ["mousemove"]
+			});
+		}
+	}]);
+
+	return SingleValueTooltip;
+}(_react.Component);
+
+SingleValueTooltip.propTypes = {
+	xDisplayFormat: _propTypes2.default.func,
+	yDisplayFormat: _propTypes2.default.func.isRequired,
+	xLabel: _propTypes2.default.string,
+	yLabel: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.func]).isRequired,
+	labelFill: _propTypes2.default.string.isRequired,
+	valueFill: _propTypes2.default.string,
+	origin: _propTypes2.default.oneOfType([_propTypes2.default.array, _propTypes2.default.func]).isRequired,
+	className: _propTypes2.default.string,
+	fontFamily: _propTypes2.default.string,
+	fontSize: _propTypes2.default.number,
+	onClick: _propTypes2.default.func,
+	displayValuesFor: _propTypes2.default.func,
+	xAccessor: _propTypes2.default.func,
+	yAccessor: _propTypes2.default.func
+};
+
+SingleValueTooltip.defaultProps = {
+	origin: [0, 0],
+	labelFill: "#4682B4",
+	valueFill: "#000000",
+	yDisplayFormat: (0, _d3Format.format)(".2f"),
+	displayValuesFor: _displayValuesFor2.default,
+	xAccessor: _utils.noop,
+	yAccessor: _utils.identity,
+	className: "react-stockcharts-tooltip"
+};
+
+exports.default = SingleValueTooltip;
+//# sourceMappingURL=SingleValueTooltip.js.map
+
+/***/ }),
+/* 1064 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _d3Format = __webpack_require__(176);
+
+var _displayValuesFor = __webpack_require__(1042);
+
+var _displayValuesFor2 = _interopRequireDefault(_displayValuesFor);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _ToolTipText = __webpack_require__(1040);
+
+var _ToolTipText2 = _interopRequireDefault(_ToolTipText);
+
+var _ToolTipTSpanLabel = __webpack_require__(1041);
+
+var _ToolTipTSpanLabel2 = _interopRequireDefault(_ToolTipTSpanLabel);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SingleMAToolTip = function (_Component) {
+	_inherits(SingleMAToolTip, _Component);
+
+	function SingleMAToolTip(props) {
+		_classCallCheck(this, SingleMAToolTip);
+
+		var _this = _possibleConstructorReturn(this, (SingleMAToolTip.__proto__ || Object.getPrototypeOf(SingleMAToolTip)).call(this, props));
+
+		_this.handleClick = _this.handleClick.bind(_this);
+		return _this;
+	}
+
+	_createClass(SingleMAToolTip, [{
+		key: "handleClick",
+		value: function handleClick(e) {
+			var _props = this.props,
+			    onClick = _props.onClick,
+			    forChart = _props.forChart,
+			    options = _props.options;
+
+			onClick(_extends({ chartId: forChart }, options), e);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			var _props2 = this.props,
+			    textFill = _props2.textFill,
+			    labelFill = _props2.labelFill;
+
+			var translate = "translate(" + this.props.origin[0] + ", " + this.props.origin[1] + ")";
+			return _react2.default.createElement(
+				"g",
+				{ transform: translate },
+				_react2.default.createElement("line", { x1: 0, y1: 2, x2: 0, y2: 28, stroke: this.props.color, strokeWidth: "4px" }),
+				_react2.default.createElement(
+					_ToolTipText2.default,
+					{ x: 5, y: 11,
+						fontFamily: this.props.fontFamily, fontSize: this.props.fontSize },
+					_react2.default.createElement(
+						_ToolTipTSpanLabel2.default,
+						{ fill: labelFill },
+						this.props.displayName
+					),
+					_react2.default.createElement(
+						"tspan",
+						{ x: "5", dy: "15", fill: textFill },
+						this.props.value
+					)
+				),
+				_react2.default.createElement("rect", { x: 0, y: 0, width: 55, height: 30,
+					onClick: this.handleClick,
+					fill: "none", stroke: "none" })
+			);
+		}
+	}]);
+
+	return SingleMAToolTip;
+}(_react.Component);
+
+SingleMAToolTip.propTypes = {
+	origin: _propTypes2.default.array.isRequired,
+	color: _propTypes2.default.string.isRequired,
+	displayName: _propTypes2.default.string.isRequired,
+	value: _propTypes2.default.string.isRequired,
+	onClick: _propTypes2.default.func,
+	fontFamily: _propTypes2.default.string,
+	textFill: _propTypes2.default.string,
+	labelFill: _propTypes2.default.string,
+	fontSize: _propTypes2.default.number,
+	forChart: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string]).isRequired,
+	options: _propTypes2.default.object.isRequired
+};
+
+var MovingAverageTooltip = function (_Component2) {
+	_inherits(MovingAverageTooltip, _Component2);
+
+	function MovingAverageTooltip(props) {
+		_classCallCheck(this, MovingAverageTooltip);
+
+		var _this2 = _possibleConstructorReturn(this, (MovingAverageTooltip.__proto__ || Object.getPrototypeOf(MovingAverageTooltip)).call(this, props));
+
+		_this2.renderSVG = _this2.renderSVG.bind(_this2);
+		return _this2;
+	}
+
+	_createClass(MovingAverageTooltip, [{
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var displayValuesFor = this.props.displayValuesFor;
+			var chartId = moreProps.chartId;
+			var chartConfig = moreProps.chartConfig;
+			var _props3 = this.props,
+			    className = _props3.className,
+			    onClick = _props3.onClick,
+			    width = _props3.width,
+			    fontFamily = _props3.fontFamily,
+			    fontSize = _props3.fontSize,
+			    textFill = _props3.textFill,
+			    labelFill = _props3.labelFill;
+			var _props4 = this.props,
+			    originProp = _props4.origin,
+			    displayFormat = _props4.displayFormat,
+			    options = _props4.options;
+			var height = moreProps.chartConfig.height;
+
+
+			var currentItem = displayValuesFor(this.props, moreProps);
+			var config = chartConfig;
+
+			var origin = (0, _utils.functor)(originProp);
+
+			var _origin = origin(width, height),
+			    _origin2 = _slicedToArray(_origin, 2),
+			    x = _origin2[0],
+			    y = _origin2[1];
+
+			var _config$origin = _slicedToArray(config.origin, 2),
+			    ox = _config$origin[0],
+			    oy = _config$origin[1];
+
+			return _react2.default.createElement(
+				"g",
+				{ transform: "translate(" + (ox + x) + ", " + (oy + y) + ")", className: className },
+				options.map(function (each, idx) {
+					var yValue = currentItem && each.yAccessor(currentItem);
+
+					var tooltipLabel = each.type + " (" + each.windowSize + ")";
+					var yDisplayValue = yValue ? displayFormat(yValue) : "n/a";
+					return _react2.default.createElement(SingleMAToolTip, {
+						key: idx,
+						origin: [width * idx, 0],
+						color: each.stroke,
+						displayName: tooltipLabel,
+						value: yDisplayValue,
+						options: each,
+						forChart: chartId,
+						onClick: onClick,
+						fontFamily: fontFamily,
+						fontSize: fontSize,
+						textFill: textFill,
+						labelFill: labelFill
+					});
+				})
+			);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				clip: false,
+				svgDraw: this.renderSVG,
+				drawOn: ["mousemove"]
+			});
+		}
+	}]);
+
+	return MovingAverageTooltip;
+}(_react.Component);
+
+MovingAverageTooltip.propTypes = {
+	className: _propTypes2.default.string,
+	displayFormat: _propTypes2.default.func.isRequired,
+	origin: _propTypes2.default.array.isRequired,
+	displayValuesFor: _propTypes2.default.func,
+	onClick: _propTypes2.default.func,
+	textFill: _propTypes2.default.string,
+	labelFill: _propTypes2.default.string,
+	fontFamily: _propTypes2.default.string,
+	fontSize: _propTypes2.default.number,
+	width: _propTypes2.default.number,
+	options: _propTypes2.default.arrayOf(_propTypes2.default.shape({
+		yAccessor: _propTypes2.default.func.isRequired,
+		type: _propTypes2.default.string.isRequired,
+		stroke: _propTypes2.default.string.isRequired,
+		windowSize: _propTypes2.default.number.isRequired,
+		echo: _propTypes2.default.any
+	}))
+};
+
+MovingAverageTooltip.defaultProps = {
+	className: "react-stockcharts-tooltip react-stockcharts-moving-average-tooltip",
+	displayFormat: (0, _d3Format.format)(".2f"),
+	displayValuesFor: _displayValuesFor2.default,
+	origin: [0, 10],
+	width: 65
+};
+
+exports.default = MovingAverageTooltip;
+//# sourceMappingURL=MovingAverageTooltip.js.map
+
+/***/ }),
+/* 1065 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _d3Format = __webpack_require__(176);
+
+var _displayValuesFor = __webpack_require__(1042);
+
+var _displayValuesFor2 = _interopRequireDefault(_displayValuesFor);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _utils = __webpack_require__(7);
+
+var _ToolTipText = __webpack_require__(1040);
+
+var _ToolTipText2 = _interopRequireDefault(_ToolTipText);
+
+var _ToolTipTSpanLabel = __webpack_require__(1041);
+
+var _ToolTipTSpanLabel2 = _interopRequireDefault(_ToolTipTSpanLabel);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BollingerBandTooltip = function (_Component) {
+	_inherits(BollingerBandTooltip, _Component);
+
+	function BollingerBandTooltip(props) {
+		_classCallCheck(this, BollingerBandTooltip);
+
+		var _this = _possibleConstructorReturn(this, (BollingerBandTooltip.__proto__ || Object.getPrototypeOf(BollingerBandTooltip)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		return _this;
+	}
+
+	_createClass(BollingerBandTooltip, [{
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var _props = this.props,
+			    onClick = _props.onClick,
+			    displayFormat = _props.displayFormat,
+			    yAccessor = _props.yAccessor,
+			    options = _props.options,
+			    textFill = _props.textFill,
+			    labelFill = _props.labelFill;
+			var displayValuesFor = this.props.displayValuesFor;
+			var _moreProps$chartConfi = moreProps.chartConfig,
+			    width = _moreProps$chartConfi.width,
+			    height = _moreProps$chartConfi.height;
+
+
+			var currentItem = displayValuesFor(this.props, moreProps);
+
+			var top = void 0,
+			    middle = void 0,
+			    bottom = void 0;
+			top = middle = bottom = "n/a";
+
+			if ((0, _utils.isDefined)(currentItem) && (0, _utils.isDefined)(yAccessor(currentItem))) {
+				var item = yAccessor(currentItem);
+				top = displayFormat(item.top);
+				middle = displayFormat(item.middle);
+				bottom = displayFormat(item.bottom);
+			}
+
+			var originProp = this.props.origin;
+
+			var origin = (0, _utils.functor)(originProp);
+
+			var _origin = origin(width, height),
+			    _origin2 = _slicedToArray(_origin, 2),
+			    x = _origin2[0],
+			    y = _origin2[1];
+
+			var sourcePath = options.sourcePath,
+			    windowSize = options.windowSize,
+			    multiplier = options.multiplier,
+			    movingAverageType = options.movingAverageType;
+
+			var tooltipLabel = "BB(" + sourcePath + ", " + windowSize + ", " + multiplier + ", " + movingAverageType + "): ";
+			var tooltipValue = top + ", " + middle + ", " + bottom;
+			return _react2.default.createElement(
+				"g",
+				{ transform: "translate(" + x + ", " + y + ")",
+					className: this.props.className, onClick: onClick },
+				_react2.default.createElement(
+					_ToolTipText2.default,
+					{ x: 0, y: 0,
+						fontFamily: this.props.fontFamily, fontSize: this.props.fontSize },
+					_react2.default.createElement(
+						_ToolTipTSpanLabel2.default,
+						{ fill: labelFill },
+						tooltipLabel
+					),
+					_react2.default.createElement(
+						"tspan",
+						{ fill: textFill },
+						tooltipValue
+					)
+				)
+			);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				clip: false,
+				svgDraw: this.renderSVG,
+				drawOn: ["mousemove"]
+			});
+		}
+	}]);
+
+	return BollingerBandTooltip;
+}(_react.Component);
+
+BollingerBandTooltip.propTypes = {
+	className: _propTypes2.default.string,
+	yAccessor: _propTypes2.default.func.isRequired,
+	displayValuesFor: _propTypes2.default.func,
+	displayFormat: _propTypes2.default.func.isRequired,
+	origin: _propTypes2.default.array.isRequired,
+	onClick: _propTypes2.default.func,
+	options: _propTypes2.default.shape({
+		sourcePath: _propTypes2.default.string.isRequired,
+		windowSize: _propTypes2.default.number.isRequired,
+		multiplier: _propTypes2.default.number.isRequired,
+		movingAverageType: _propTypes2.default.string.isRequired
+	}).isRequired,
+	textFill: _propTypes2.default.string,
+	labelFill: _propTypes2.default.string,
+	fontFamily: _propTypes2.default.string,
+	fontSize: _propTypes2.default.number
+};
+
+BollingerBandTooltip.defaultProps = {
+	className: "react-stockcharts-tooltip react-stockcharts-bollingerband-tooltip",
+	displayFormat: (0, _d3Format.format)(".2f"),
+	displayValuesFor: _displayValuesFor2.default,
+	origin: [0, 10]
+};
+
+exports.default = BollingerBandTooltip;
+//# sourceMappingURL=BollingerBandTooltip.js.map
+
+/***/ }),
+/* 1066 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _d3Format = __webpack_require__(176);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _displayValuesFor = __webpack_require__(1042);
+
+var _displayValuesFor2 = _interopRequireDefault(_displayValuesFor);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _utils = __webpack_require__(7);
+
+var _ToolTipText = __webpack_require__(1040);
+
+var _ToolTipText2 = _interopRequireDefault(_ToolTipText);
+
+var _ToolTipTSpanLabel = __webpack_require__(1041);
+
+var _ToolTipTSpanLabel2 = _interopRequireDefault(_ToolTipTSpanLabel);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var RSITooltip = function (_Component) {
+	_inherits(RSITooltip, _Component);
+
+	function RSITooltip(props) {
+		_classCallCheck(this, RSITooltip);
+
+		var _this = _possibleConstructorReturn(this, (RSITooltip.__proto__ || Object.getPrototypeOf(RSITooltip)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		return _this;
+	}
+
+	_createClass(RSITooltip, [{
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var _props = this.props,
+			    onClick = _props.onClick,
+			    fontFamily = _props.fontFamily,
+			    fontSize = _props.fontSize,
+			    yAccessor = _props.yAccessor,
+			    displayFormat = _props.displayFormat,
+			    className = _props.className;
+			var _props2 = this.props,
+			    options = _props2.options,
+			    labelFill = _props2.labelFill,
+			    textFill = _props2.textFill;
+			var displayValuesFor = this.props.displayValuesFor;
+			var _moreProps$chartConfi = moreProps.chartConfig,
+			    width = _moreProps$chartConfi.width,
+			    height = _moreProps$chartConfi.height;
+
+
+			var currentItem = displayValuesFor(this.props, moreProps);
+			var rsi = (0, _utils.isDefined)(currentItem) && yAccessor(currentItem);
+			var value = rsi && displayFormat(rsi) || "n/a";
+
+			var originProp = this.props.origin;
+
+			var origin = (0, _utils.functor)(originProp);
+
+			var _origin = origin(width, height),
+			    _origin2 = _slicedToArray(_origin, 2),
+			    x = _origin2[0],
+			    y = _origin2[1];
+
+			var tooltipLabel = "RSI (" + options.windowSize + "): ";
+			return _react2.default.createElement(
+				"g",
+				{ className: className, transform: "translate(" + x + ", " + y + ")", onClick: onClick },
+				_react2.default.createElement(
+					_ToolTipText2.default,
+					{ x: 0, y: 0,
+						fontFamily: fontFamily, fontSize: fontSize },
+					_react2.default.createElement(
+						_ToolTipTSpanLabel2.default,
+						{ fill: labelFill },
+						tooltipLabel
+					),
+					_react2.default.createElement(
+						"tspan",
+						{ fill: textFill },
+						value
+					)
+				)
+			);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				clip: false,
+				svgDraw: this.renderSVG,
+				drawOn: ["mousemove"]
+			});
+		}
+	}]);
+
+	return RSITooltip;
+}(_react.Component);
+
+RSITooltip.propTypes = {
+	origin: _propTypes2.default.oneOfType([_propTypes2.default.array, _propTypes2.default.func]).isRequired,
+	options: _propTypes2.default.shape({
+		windowSize: _propTypes2.default.number.isRequired
+	}).isRequired,
+	className: _propTypes2.default.string,
+	fontFamily: _propTypes2.default.string,
+	fontSize: _propTypes2.default.number,
+	onClick: _propTypes2.default.func,
+	yAccessor: _propTypes2.default.func.isRequired,
+	displayFormat: _propTypes2.default.func.isRequired,
+	displayValuesFor: _propTypes2.default.func,
+	textFill: _propTypes2.default.string,
+	labelFill: _propTypes2.default.string
+};
+
+RSITooltip.defaultProps = {
+	displayFormat: (0, _d3Format.format)(".2f"),
+	displayValuesFor: _displayValuesFor2.default,
+	origin: [0, 0],
+	className: "react-stockcharts-tooltip"
+};
+
+exports.default = RSITooltip;
+//# sourceMappingURL=RSITooltip.js.map
+
+/***/ }),
+/* 1067 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _d3Format = __webpack_require__(176);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _displayValuesFor = __webpack_require__(1042);
+
+var _displayValuesFor2 = _interopRequireDefault(_displayValuesFor);
+
+var _GenericChartComponent = __webpack_require__(17);
+
+var _GenericChartComponent2 = _interopRequireDefault(_GenericChartComponent);
+
+var _utils = __webpack_require__(7);
+
+var _ToolTipText = __webpack_require__(1040);
+
+var _ToolTipText2 = _interopRequireDefault(_ToolTipText);
+
+var _ToolTipTSpanLabel = __webpack_require__(1041);
+
+var _ToolTipTSpanLabel2 = _interopRequireDefault(_ToolTipTSpanLabel);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var StochasticTooltip = function (_Component) {
+	_inherits(StochasticTooltip, _Component);
+
+	function StochasticTooltip(props) {
+		_classCallCheck(this, StochasticTooltip);
+
+		var _this = _possibleConstructorReturn(this, (StochasticTooltip.__proto__ || Object.getPrototypeOf(StochasticTooltip)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		return _this;
+	}
+
+	_createClass(StochasticTooltip, [{
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var _props = this.props,
+			    onClick = _props.onClick,
+			    fontFamily = _props.fontFamily,
+			    fontSize = _props.fontSize,
+			    yAccessor = _props.yAccessor,
+			    displayFormat = _props.displayFormat,
+			    label = _props.label;
+			var _props2 = this.props,
+			    className = _props2.className,
+			    options = _props2.options,
+			    appearance = _props2.appearance,
+			    labelFill = _props2.labelFill;
+			var displayValuesFor = this.props.displayValuesFor;
+			var _moreProps$chartConfi = moreProps.chartConfig,
+			    width = _moreProps$chartConfi.width,
+			    height = _moreProps$chartConfi.height;
+
+
+			var currentItem = displayValuesFor(this.props, moreProps);
+			var stroke = appearance.stroke;
+
+			var stochastic = currentItem && yAccessor(currentItem);
+
+			var K = stochastic && stochastic.K && displayFormat(stochastic.K) || "n/a";
+			var D = stochastic && stochastic.D && displayFormat(stochastic.D) || "n/a";
+
+			var originProp = this.props.origin;
+
+			var origin = (0, _utils.functor)(originProp);
+
+			var _origin = origin(width, height),
+			    _origin2 = _slicedToArray(_origin, 2),
+			    x = _origin2[0],
+			    y = _origin2[1];
+
+			return _react2.default.createElement(
+				"g",
+				{ className: className, transform: "translate(" + x + ", " + y + ")", onClick: onClick },
+				_react2.default.createElement(
+					_ToolTipText2.default,
+					{ x: 0, y: 0, fontFamily: fontFamily, fontSize: fontSize },
+					_react2.default.createElement(
+						_ToolTipTSpanLabel2.default,
+						{ fill: labelFill },
+						label + " %K("
+					),
+					_react2.default.createElement(
+						"tspan",
+						{ fill: stroke.kLine },
+						options.windowSize + ", " + options.kWindowSize
+					),
+					_react2.default.createElement(
+						_ToolTipTSpanLabel2.default,
+						{ fill: labelFill },
+						"): "
+					),
+					_react2.default.createElement(
+						"tspan",
+						{ fill: stroke.kLine },
+						K
+					),
+					_react2.default.createElement(
+						_ToolTipTSpanLabel2.default,
+						{ fill: labelFill },
+						" %D ("
+					),
+					_react2.default.createElement(
+						"tspan",
+						{ fill: stroke.dLine },
+						options.dWindowSize
+					),
+					_react2.default.createElement(
+						_ToolTipTSpanLabel2.default,
+						{ fill: labelFill },
+						"): "
+					),
+					_react2.default.createElement(
+						"tspan",
+						{ fill: stroke.dLine },
+						D
+					)
+				)
+			);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericChartComponent2.default, {
+				clip: false,
+				svgDraw: this.renderSVG,
+				drawOn: ["mousemove"]
+			});
+		}
+	}]);
+
+	return StochasticTooltip;
+}(_react.Component);
+
+StochasticTooltip.propTypes = {
+	origin: _propTypes2.default.oneOfType([_propTypes2.default.array, _propTypes2.default.func]).isRequired,
+	className: _propTypes2.default.string,
+	fontFamily: _propTypes2.default.string,
+	fontSize: _propTypes2.default.number,
+	labelFill: _propTypes2.default.string,
+
+	onClick: _propTypes2.default.func,
+	yAccessor: _propTypes2.default.func.isRequired,
+	options: _propTypes2.default.shape({
+		windowSize: _propTypes2.default.number.isRequired,
+		kWindowSize: _propTypes2.default.number.isRequired,
+		dWindowSize: _propTypes2.default.number.isRequired
+	}).isRequired,
+	appearance: _propTypes2.default.shape({
+		stroke: {
+			dLine: _propTypes2.default.string.isRequired,
+			kLine: _propTypes2.default.string.isRequired
+		}.isRequired
+	}).isRequired,
+	displayFormat: _propTypes2.default.func.isRequired,
+	displayValuesFor: _propTypes2.default.func,
+	label: _propTypes2.default.string.isRequired
+};
+
+StochasticTooltip.defaultProps = {
+	displayFormat: (0, _d3Format.format)(".2f"),
+	displayValuesFor: _displayValuesFor2.default,
+	origin: [0, 0],
+	className: "react-stockcharts-tooltip",
+	label: "STO"
+};
+
+exports.default = StochasticTooltip;
+//# sourceMappingURL=StochasticTooltip.js.map
+
+/***/ }),
+/* 1068 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _GenericComponent = __webpack_require__(15);
+
+var _GenericComponent2 = _interopRequireDefault(_GenericComponent);
+
+var _d3Array = __webpack_require__(8);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var HoverTooltip = function (_Component) {
+	_inherits(HoverTooltip, _Component);
+
+	function HoverTooltip(props) {
+		_classCallCheck(this, HoverTooltip);
+
+		var _this = _possibleConstructorReturn(this, (HoverTooltip.__proto__ || Object.getPrototypeOf(HoverTooltip)).call(this, props));
+
+		_this.renderSVG = _this.renderSVG.bind(_this);
+		_this.drawOnCanvas = _this.drawOnCanvas.bind(_this);
+		return _this;
+	}
+
+	_createClass(HoverTooltip, [{
+		key: "drawOnCanvas",
+		value: function drawOnCanvas(ctx, moreProps) {
+			var pointer = helper(this.props, moreProps, ctx);
+			var height = moreProps.height;
+
+
+			if ((0, _utils.isNotDefined)(pointer)) return null;
+			_drawOnCanvas(ctx, this.props, this.context, pointer, height, moreProps);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(_GenericComponent2.default, {
+				svgDraw: this.renderSVG,
+				canvasDraw: this.drawOnCanvas,
+				drawOn: ["mousemove", "pan" /* , "mouseleave" */]
+			});
+		}
+	}, {
+		key: "renderSVG",
+		value: function renderSVG(moreProps) {
+			var pointer = helper(this.props, moreProps);
+
+			if ((0, _utils.isNotDefined)(pointer)) return null;
+
+			var _props = this.props,
+			    bgFill = _props.bgFill,
+			    bgOpacity = _props.bgOpacity,
+			    backgroundShapeSVG = _props.backgroundShapeSVG,
+			    tooltipSVG = _props.tooltipSVG;
+			var _props2 = this.props,
+			    bgheight = _props2.bgheight,
+			    bgwidth = _props2.bgwidth;
+			var height = moreProps.height;
+			var x = pointer.x,
+			    y = pointer.y,
+			    content = pointer.content,
+			    centerX = pointer.centerX,
+			    pointWidth = pointer.pointWidth,
+			    bgSize = pointer.bgSize;
+
+
+			var bgShape = (0, _utils.isDefined)(bgwidth) && (0, _utils.isDefined)(bgheight) ? { width: bgwidth, height: bgheight } : bgSize;
+
+			return _react2.default.createElement(
+				"g",
+				null,
+				_react2.default.createElement("rect", { x: centerX - pointWidth / 2,
+					y: 0,
+					width: pointWidth,
+					height: height,
+					fill: bgFill,
+					opacity: bgOpacity }),
+				_react2.default.createElement(
+					"g",
+					{ className: "react-stockcharts-tooltip-content", transform: "translate(" + x + ", " + y + ")" },
+					backgroundShapeSVG(this.props, bgShape),
+					tooltipSVG(this.props, content)
+				)
+			);
+		}
+	}]);
+
+	return HoverTooltip;
+}(_react.Component);
+
+HoverTooltip.propTypes = {
+	chartId: _propTypes2.default.oneOfType([_propTypes2.default.number, _propTypes2.default.string]),
+	yAccessor: _propTypes2.default.func,
+	tooltipSVG: _propTypes2.default.func,
+	backgroundShapeSVG: _propTypes2.default.func,
+	bgwidth: _propTypes2.default.number,
+	bgheight: _propTypes2.default.number,
+	bgFill: _propTypes2.default.string.isRequired,
+	bgOpacity: _propTypes2.default.number.isRequired,
+	tooltipContent: _propTypes2.default.func.isRequired,
+	origin: _propTypes2.default.oneOfType([_propTypes2.default.array, _propTypes2.default.func]).isRequired,
+	fontFamily: _propTypes2.default.string,
+	fontSize: _propTypes2.default.number
+};
+
+HoverTooltip.contextTypes = {
+	margin: _propTypes2.default.object.isRequired,
+	ratio: _propTypes2.default.number.isRequired
+};
+
+HoverTooltip.defaultProps = {
+	// bgwidth: 150,
+	// bgheight: 50,
+	tooltipSVG: tooltipSVG,
+	tooltipCanvas: tooltipCanvas,
+	origin: origin,
+	fill: "#D4E2FD",
+	bgFill: "#D4E2FD",
+	bgOpacity: 0.5,
+	stroke: "#9B9BFF",
+	fontFill: "#000000",
+	opacity: 0.8,
+	backgroundShapeSVG: backgroundShapeSVG,
+	backgroundShapeCanvas: backgroundShapeCanvas,
+	fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
+	fontSize: 12
+};
+
+var PADDING = 5;
+var X = 10;
+var Y = 10;
+
+/* eslint-disable react/prop-types */
+function backgroundShapeSVG(_ref, _ref2) {
+	var fill = _ref.fill,
+	    stroke = _ref.stroke,
+	    opacity = _ref.opacity;
+	var height = _ref2.height,
+	    width = _ref2.width;
+
+	return _react2.default.createElement("rect", {
+		height: height,
+		width: width,
+		fill: fill,
+		opacity: opacity,
+		stroke: stroke });
+}
+
+function tooltipSVG(_ref3, content) {
+	var fontFamily = _ref3.fontFamily,
+	    fontSize = _ref3.fontSize,
+	    fontFill = _ref3.fontFill;
+
+	var tspans = [];
+	var startY = Y + fontSize * 0.9;
+
+	for (var i = 0; i < content.y.length; i++) {
+		var y = content.y[i];
+		var textY = startY + fontSize * (i + 1);
+
+		tspans.push(_react2.default.createElement(
+			"tspan",
+			{ key: "L-" + i, x: X, y: textY, fill: y.stroke },
+			y.label
+		));
+		tspans.push(_react2.default.createElement(
+			"tspan",
+			{ key: i },
+			": "
+		));
+		tspans.push(_react2.default.createElement(
+			"tspan",
+			{ key: "V-" + i },
+			y.value
+		));
+	}
+	return _react2.default.createElement(
+		"text",
+		{ fontFamily: fontFamily, fontSize: fontSize, fill: fontFill },
+		_react2.default.createElement(
+			"tspan",
+			{ x: X, y: startY },
+			content.x
+		),
+		tspans
+	);
+}
+/* eslint-enable react/prop-types */
+
+function backgroundShapeCanvas(props, _ref4, ctx) {
+	var width = _ref4.width,
+	    height = _ref4.height;
+	var fill = props.fill,
+	    stroke = props.stroke,
+	    opacity = props.opacity;
+
+
+	ctx.fillStyle = (0, _utils.hexToRGBA)(fill, opacity);
+	ctx.strokeStyle = stroke;
+	ctx.beginPath();
+	ctx.rect(0, 0, width, height);
+	ctx.fill();
+	ctx.stroke();
+}
+
+function tooltipCanvas(_ref5, content, ctx) {
+	var fontFamily = _ref5.fontFamily,
+	    fontSize = _ref5.fontSize,
+	    fontFill = _ref5.fontFill;
+
+	var startY = Y + fontSize * 0.9;
+	ctx.font = fontSize + "px " + fontFamily;
+	ctx.fillStyle = fontFill;
+	ctx.textAlign = "left";
+	ctx.fillText(content.x, X, startY);
+
+	for (var i = 0; i < content.y.length; i++) {
+		var y = content.y[i];
+		var textY = startY + fontSize * (i + 1);
+		ctx.fillStyle = y.stroke || fontFill;
+		ctx.fillText(y.label, X, textY);
+
+		ctx.fillStyle = fontFill;
+		ctx.fillText(": " + y.value, X + ctx.measureText(y.label).width, textY);
+	}
+}
+
+function _drawOnCanvas(ctx, props, context, pointer, height) {
+	var margin = context.margin,
+	    ratio = context.ratio;
+	var bgFill = props.bgFill,
+	    bgOpacity = props.bgOpacity;
+	var backgroundShapeCanvas = props.backgroundShapeCanvas,
+	    tooltipCanvas = props.tooltipCanvas;
+
+
+	var originX = 0.5 * ratio + margin.left;
+	var originY = 0.5 * ratio + margin.top;
+
+	ctx.save();
+
+	ctx.setTransform(1, 0, 0, 1, 0, 0);
+	ctx.scale(ratio, ratio);
+
+	ctx.translate(originX, originY);
+
+	var x = pointer.x,
+	    y = pointer.y,
+	    content = pointer.content,
+	    centerX = pointer.centerX,
+	    pointWidth = pointer.pointWidth,
+	    bgSize = pointer.bgSize;
+
+
+	ctx.fillStyle = (0, _utils.hexToRGBA)(bgFill, bgOpacity);
+	ctx.beginPath();
+	ctx.rect(centerX - pointWidth / 2, 0, pointWidth, height);
+	ctx.fill();
+
+	ctx.translate(x, y);
+	backgroundShapeCanvas(props, bgSize, ctx);
+	tooltipCanvas(props, content, ctx);
+
+	ctx.restore();
+}
+
+function calculateTooltipSize(_ref6, content, ctx) {
+	var fontFamily = _ref6.fontFamily,
+	    fontSize = _ref6.fontSize,
+	    fontFill = _ref6.fontFill;
+
+	if ((0, _utils.isNotDefined)(ctx)) {
+		var canvas = document.createElement("canvas");
+		ctx = canvas.getContext("2d");
+	}
+
+	ctx.font = fontSize + "px " + fontFamily;
+	ctx.fillStyle = fontFill;
+	ctx.textAlign = "left";
+
+	var measureText = function measureText(str) {
+		return {
+			width: ctx.measureText(str).width,
+			height: fontSize
+		};
+	};
+
+	var _content$y$map$reduce = content.y.map(function (_ref7) {
+		var label = _ref7.label,
+		    value = _ref7.value;
+		return measureText(label + ": " + value);
+	})
+	// Sum all y and x sizes (begin with x label size)
+	.reduce(function (res, size) {
+		return sumSizes(res, size);
+	}, measureText(String(content.x))),
+	    width = _content$y$map$reduce.width,
+	    height = _content$y$map$reduce.height;
+
+	return {
+		width: width + 2 * X,
+		height: height + 2 * Y
+	};
+}
+
+function sumSizes() {
+	for (var _len = arguments.length, sizes = Array(_len), _key = 0; _key < _len; _key++) {
+		sizes[_key] = arguments[_key];
+	}
+
+	return {
+		width: Math.max.apply(Math, _toConsumableArray(sizes.map(function (size) {
+			return size.width;
+		}))),
+		height: (0, _d3Array.sum)(sizes, function (d) {
+			return d.height;
+		})
+	};
+}
+
+function normalizeX(x, bgSize, pointWidth, width) {
+	// return x - bgSize.width - pointWidth / 2 - PADDING * 2 < 0
+	return x < width / 2 ? x + pointWidth / 2 + PADDING : x - bgSize.width - pointWidth / 2 - PADDING;
+}
+
+function normalizeY(y, bgSize) {
+	return y - bgSize.height <= 0 ? y + PADDING : y - bgSize.height - PADDING;
+}
+
+function origin(props, moreProps, bgSize, pointWidth) {
+	var chartId = props.chartId,
+	    yAccessor = props.yAccessor;
+	var mouseXY = moreProps.mouseXY,
+	    xAccessor = moreProps.xAccessor,
+	    currentItem = moreProps.currentItem,
+	    xScale = moreProps.xScale,
+	    chartConfig = moreProps.chartConfig,
+	    width = moreProps.width;
+
+	var y = (0, _utils.last)(mouseXY);
+
+	var xValue = xAccessor(currentItem);
+	var x = Math.round(xScale(xValue));
+
+	if ((0, _utils.isDefined)(chartId) && (0, _utils.isDefined)(yAccessor) && (0, _utils.isDefined)(chartConfig) && (0, _utils.isDefined)(chartConfig.findIndex)) {
+		var yValue = yAccessor(currentItem);
+		var chartIndex = chartConfig.findIndex(function (x) {
+			return x.id === chartId;
+		});
+
+		y = Math.round(chartConfig[chartIndex].yScale(yValue));
+	}
+
+	x = normalizeX(x, bgSize, pointWidth, width);
+	y = normalizeY(y, bgSize);
+
+	return [x, y];
+}
+
+function helper(props, moreProps, ctx) {
+	var show = moreProps.show,
+	    xScale = moreProps.xScale,
+	    currentItem = moreProps.currentItem,
+	    plotData = moreProps.plotData;
+	var origin = props.origin,
+	    tooltipContent = props.tooltipContent;
+	var xAccessor = moreProps.xAccessor,
+	    displayXAccessor = moreProps.displayXAccessor;
+
+
+	if (!show || (0, _utils.isNotDefined)(currentItem)) return;
+
+	var xValue = xAccessor(currentItem);
+
+	if (!show || (0, _utils.isNotDefined)(xValue)) return;
+
+	var content = tooltipContent({ currentItem: currentItem, xAccessor: displayXAccessor });
+	var centerX = xScale(xValue);
+	var pointWidth = Math.abs(xScale(xAccessor((0, _utils.last)(plotData))) - xScale(xAccessor((0, _utils.first)(plotData)))) / (plotData.length - 1);
+
+	var bgSize = calculateTooltipSize(props, content, ctx);
+
+	var _origin = origin(props, moreProps, bgSize, pointWidth),
+	    _origin2 = _slicedToArray(_origin, 2),
+	    x = _origin2[0],
+	    y = _origin2[1];
+
+	return { x: x, y: y, content: content, centerX: centerX, pointWidth: pointWidth, bgSize: bgSize };
+}
+
+exports.default = HoverTooltip;
+//# sourceMappingURL=HoverTooltip.js.map
+
+/***/ }),
+/* 1069 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.defaultOptionsForAppearance = exports.defaultOptionsForComputation = exports.compare = exports.elderImpulse = exports.change = exports.elderRay = exports.sar = exports.forceIndex = exports.stochasticOscillator = exports.atr = exports.rsi = exports.macd = exports.renko = exports.pointAndFigure = exports.kagi = exports.heikinAshi = exports.bollingerBand = exports.tma = exports.wma = exports.sma = exports.ema = undefined;
+
+var _ema = __webpack_require__(1070);
+
+Object.defineProperty(exports, "ema", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_ema).default;
+	}
+});
+
+var _sma = __webpack_require__(1086);
+
+Object.defineProperty(exports, "sma", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_sma).default;
+	}
+});
+
+var _wma = __webpack_require__(1087);
+
+Object.defineProperty(exports, "wma", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_wma).default;
+	}
+});
+
+var _tma = __webpack_require__(1088);
+
+Object.defineProperty(exports, "tma", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_tma).default;
+	}
+});
+
+var _bollingerBand = __webpack_require__(1089);
+
+Object.defineProperty(exports, "bollingerBand", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_bollingerBand).default;
+	}
+});
+
+var _heikinAshi = __webpack_require__(1090);
+
+Object.defineProperty(exports, "heikinAshi", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_heikinAshi).default;
+	}
+});
+
+var _kagi = __webpack_require__(1091);
+
+Object.defineProperty(exports, "kagi", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_kagi).default;
+	}
+});
+
+var _pointAndFigure = __webpack_require__(1092);
+
+Object.defineProperty(exports, "pointAndFigure", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_pointAndFigure).default;
+	}
+});
+
+var _renko = __webpack_require__(1093);
+
+Object.defineProperty(exports, "renko", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_renko).default;
+	}
+});
+
+var _macd = __webpack_require__(1094);
+
+Object.defineProperty(exports, "macd", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_macd).default;
+	}
+});
+
+var _rsi = __webpack_require__(1095);
+
+Object.defineProperty(exports, "rsi", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_rsi).default;
+	}
+});
+
+var _atr = __webpack_require__(1096);
+
+Object.defineProperty(exports, "atr", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_atr).default;
+	}
+});
+
+var _stochasticOscillator = __webpack_require__(1097);
+
+Object.defineProperty(exports, "stochasticOscillator", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_stochasticOscillator).default;
+	}
+});
+
+var _forceIndex = __webpack_require__(1098);
+
+Object.defineProperty(exports, "forceIndex", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_forceIndex).default;
+	}
+});
+
+var _sar = __webpack_require__(1099);
+
+Object.defineProperty(exports, "sar", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_sar).default;
+	}
+});
+
+var _elderRay = __webpack_require__(1100);
+
+Object.defineProperty(exports, "elderRay", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_elderRay).default;
+	}
+});
+
+var _change = __webpack_require__(1101);
+
+Object.defineProperty(exports, "change", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_change).default;
+	}
+});
+
+var _elderImpulse = __webpack_require__(1102);
+
+Object.defineProperty(exports, "elderImpulse", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_elderImpulse).default;
+	}
+});
+
+var _compare = __webpack_require__(1103);
+
+Object.defineProperty(exports, "compare", {
+	enumerable: true,
+	get: function get() {
+		return _interopRequireDefault(_compare).default;
+	}
+});
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+
+var defaultOptionsForComputation = _interopRequireWildcard(_defaultOptionsForComputation);
+
+var _defaultOptionsForAppearance = __webpack_require__(1046);
+
+var defaultOptionsForAppearance = _interopRequireWildcard(_defaultOptionsForAppearance);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.defaultOptionsForComputation = defaultOptionsForComputation;
+exports.defaultOptionsForAppearance = defaultOptionsForAppearance;
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+/* 1070 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE).accessor(function (d) {
+		return d.ema;
+	});
+
+	var underlyingAlgorithm = (0, _calculator.ema)();
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		datum.ema = indicator;
+	});
+
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		if (options.merge) {
+			if (!base.accessor()) throw new Error("Set an accessor to " + ALGORITHM_TYPE + " before calculating");
+			return mergedAlgorithm(data);
+		}
+		return underlyingAlgorithm(data);
+	};
+
+	(0, _utils.rebind)(indicator, base, "id", "accessor", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options", "undefinedLength");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge", "skipUndefined");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "EMA";
+//# sourceMappingURL=ema.js.map
+
+/***/ }),
+/* 1071 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function () {
+
+	var options = _defaultOptionsForComputation.WMA;
+
+	function calculator(data) {
+		var _options = options,
+		    windowSize = _options.windowSize,
+		    sourcePath = _options.sourcePath;
+
+
+		var weight = windowSize * (windowSize + 1) / 2;
+
+		var waverage = (0, _utils.slidingWindow)().windowSize(windowSize).sourcePath(sourcePath).accumulator(function (values) {
+			var total = (0, _d3Array.sum)(values, function (v, i) {
+				return (i + 1) * v;
+			});
+			return total / weight;
+		});
+
+		return waverage(data);
+	}
+	calculator.undefinedLength = function () {
+		var _options2 = options,
+		    windowSize = _options2.windowSize;
+
+
+		return windowSize - 1;
+	};
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.WMA, x);
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _d3Array = __webpack_require__(8);
+
+var _utils = __webpack_require__(7);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+//# sourceMappingURL=wma.js.map
+
+/***/ }),
+/* 1072 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+ TRIMA (Triangular Moving Average).
+
+ The Triangular Moving Average can be used like any other Moving Average, to obtain a smoother representation of the underlying data.
+ It is important to note that the Triangular Moving Average is typically much smoother than other moving averages.
+
+ Triangular moving averages give greater weight to prices at the centre of the chosen period andi it is calculated as double smoothed SMA (simple moving average).
+
+ Examples:
+   For TimeSerie={a,b,c,d,e,f...} ('a' is the older price)
+
+   1st value for TMA 4-Period is:  ((1*a)+(2*b)+(2*c)+(1*d)) / 6
+   2nd value for TMA 4-Period is:  ((1*b)+(2*c)+(2*d)+(1*e)) / 6
+
+   1st value for TMA 5-Period is:  ((1*a)+(2*b)+(3*c)+(2*d)+(1*e)) / 9
+   2nd value for TMA 5-Period is:  ((1*b)+(2*c)+(3*d)+(2*e)+(1*f)) / 9
+
+ Using algebra, it can be demonstrated that the TMA is equivalent to
+ doing a SMA of a SMA. The following explain the rules:
+
+   (1) When the period is even, TMA(x,period)=SMA(SMA(x,period/2),(period/2)+1)
+   (2) When the period is odd,  TMA(x,period)=SMA(SMA(x,(period+1)/2),(period+1)/2)
+
+ In other word:
+   (1) A period of 4 becomes TMA(x,4) = SMA( SMA( x, 2), 3 )
+   (2) A period of 5 becomes TMA(x,5) = SMA( SMA( x, 3), 3 )
+
+ The SMA of a SMA is the algorithm generally found in books.
+*/
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function () {
+	var options = _defaultOptionsForComputation.TMA;
+
+	function calculator(data) {
+		var _options = options,
+		    windowSize = _options.windowSize,
+		    sourcePath = _options.sourcePath;
+
+
+		var n = Math.floor(windowSize / 2);
+		var weight = windowSize % 2 === 0 ? n * (n + 1) : (n + 1) * (n + 1);
+
+		var triaverage = (0, _utils.slidingWindow)().windowSize(windowSize).sourcePath(sourcePath).accumulator(function (values) {
+			var total = (0, _d3Array.sum)(values, function (v, i) {
+				return i < n ? (i + 1) * v : (windowSize - i) * v;
+			});
+			return total / weight;
+		});
+
+		return triaverage(data);
+	}
+	calculator.undefinedLength = function () {
+		var _options2 = options,
+		    windowSize = _options2.windowSize;
+
+		return windowSize - 1;
+	};
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.TMA, x);
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _d3Array = __webpack_require__(8);
+
+var _utils = __webpack_require__(7);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+//# sourceMappingURL=tma.js.map
+
+/***/ }),
+/* 1073 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/calculator/bollingerBands.js
+
+The MIT License (MIT)
+
+Copyright (c) 2014-2015 Scott Logic Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function () {
+	var options = _defaultOptionsForComputation.BollingerBand;
+
+	function calculator(data) {
+		var _options = options,
+		    windowSize = _options.windowSize,
+		    multiplier = _options.multiplier,
+		    movingAverageType = _options.movingAverageType,
+		    sourcePath = _options.sourcePath;
+
+
+		var source = (0, _utils.path)(sourcePath);
+		var meanAlgorithm = movingAverageType === "ema" ? (0, _ema2.default)().options({ windowSize: windowSize, sourcePath: sourcePath }) : (0, _utils.slidingWindow)().windowSize(windowSize).accumulator(function (values) {
+			return (0, _d3Array.mean)(values);
+		}).sourcePath(sourcePath);
+
+		var bollingerBandAlgorithm = (0, _utils.slidingWindow)().windowSize(windowSize).accumulator(function (values) {
+			var avg = (0, _utils.last)(values).mean;
+			var stdDev = (0, _d3Array.deviation)(values, function (each) {
+				return source(each.datum);
+			});
+			return {
+				top: avg + multiplier * stdDev,
+				middle: avg,
+				bottom: avg - multiplier * stdDev
+			};
+		});
+
+		var zip = (0, _utils.zipper)().combine(function (datum, mean) {
+			return { datum: datum, mean: mean };
+		});
+
+		var tuples = zip(data, meanAlgorithm(data));
+		return bollingerBandAlgorithm(tuples);
+	}
+	calculator.undefinedLength = function () {
+		var _options2 = options,
+		    windowSize = _options2.windowSize;
+
+		return windowSize - 1;
+	};
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.BollingerBand, x);
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _d3Array = __webpack_require__(8);
+
+var _ema = __webpack_require__(1043);
+
+var _ema2 = _interopRequireDefault(_ema);
+
+var _utils = __webpack_require__(7);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=bollingerband.js.map
+
+/***/ }),
+/* 1074 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+exports.default = function () {
+
+	var source = _utils.identity;
+
+	function calculator(data) {
+		var algorithm = (0, _utils.mappedSlidingWindow)().windowSize(2).undefinedValue(function (_ref) {
+			var open = _ref.open,
+			    high = _ref.high,
+			    low = _ref.low,
+			    close = _ref.close;
+
+			close = (open + high + low + close) / 4;
+			return { open: open, high: high, low: low, close: close };
+		}).accumulator(function (_ref2) {
+			var _ref3 = _slicedToArray(_ref2, 2),
+			    prev = _ref3[0],
+			    now = _ref3[1];
+
+			// console.log(prev, now);
+			var date = now.date,
+			    volume = now.volume;
+
+			var close = (now.open + now.high + now.low + now.close) / 4;
+			var open = (prev.open + prev.close) / 2;
+			var high = Math.max(open, now.high, close);
+			var low = Math.min(open, now.low, close);
+			return { date: date, open: open, high: high, low: low, close: close, volume: volume };
+		});
+
+		return algorithm(data);
+	}
+	calculator.source = function (x) {
+		if (!arguments.length) {
+			return source;
+		}
+		source = x;
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _utils = __webpack_require__(7);
+//# sourceMappingURL=heikinAshi.js.map
+
+/***/ }),
+/* 1075 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function () {
+
+	var options = _defaultOptionsForComputation.Kagi;
+	var dateAccessor = function dateAccessor(d) {
+		return d.date;
+	};
+	var dateMutator = function dateMutator(d, date) {
+		d.date = date;
+	};
+
+	function calculator(data) {
+		var _options = options,
+		    reversalType = _options.reversalType,
+		    windowSize = _options.windowSize,
+		    reversal = _options.reversal,
+		    sourcePath = _options.sourcePath;
+
+
+		var source = (0, _utils.path)(sourcePath);
+		var reversalThreshold = void 0;
+
+		if (reversalType === "ATR") {
+			// calculateATR(rawData, period);
+			var atrAlgorithm = (0, _atr2.default)().options({ windowSize: windowSize });
+
+			var atrCalculator = (0, _utils.merge)().algorithm(atrAlgorithm).merge(function (d, c) {
+				d["atr" + windowSize] = c;
+			});
+
+			atrCalculator(data);
+			reversalThreshold = function reversalThreshold(d) {
+				return d["atr" + windowSize];
+			};
+		} else {
+			reversalThreshold = (0, _utils.functor)(reversal);
+		}
+
+		var kagiData = [];
+
+		var prevPeak = void 0,
+		    prevTrough = void 0,
+		    direction = void 0;
+		var line = {};
+
+		data.forEach(function (d) {
+			if ((0, _utils.isNotDefined)(line.from)) {
+				dateMutator(line, dateAccessor(d));
+				line.from = dateAccessor(d);
+
+				if (!line.open) line.open = d.open;
+				line.high = d.high;
+				line.low = d.low;
+				if (!line.close) line.close = source(d);
+				line.startOfYear = d.startOfYear;
+				line.startOfQuarter = d.startOfQuarter;
+				line.startOfMonth = d.startOfMonth;
+				line.startOfWeek = d.startOfWeek;
+			}
+
+			if (!line.startOfYear) {
+				line.startOfYear = d.startOfYear;
+				if (line.startOfYear) {
+					line.date = d.date;
+					// line.displayDate = d.displayDate;
+				}
+			}
+
+			if (!line.startOfQuarter) {
+				line.startOfQuarter = d.startOfQuarter;
+				if (line.startOfQuarter && !line.startOfYear) {
+					line.date = d.date;
+					// line.displayDate = d.displayDate;
+				}
+			}
+
+			if (!line.startOfMonth) {
+				line.startOfMonth = d.startOfMonth;
+				if (line.startOfMonth && !line.startOfQuarter) {
+					line.date = d.date;
+					// line.displayDate = d.displayDate;
+				}
+			}
+			if (!line.startOfWeek) {
+				line.startOfWeek = d.startOfWeek;
+				if (line.startOfWeek && !line.startOfMonth) {
+					line.date = d.date;
+					// line.displayDate = d.displayDate;
+				}
+			}
+			line.volume = (line.volume || 0) + d.volume;
+			line.high = Math.max(line.high, d.high);
+			line.low = Math.min(line.low, d.low);
+			line.to = dateAccessor(d);
+
+			var priceMovement = source(d) - line.close;
+
+			// console.log(source(d), priceMovement)
+			if (line.close >= line.open /* going up */ && priceMovement > 0 /* and moving in same direction */ || line.close < line.open /* going down */ && priceMovement < 0 /* and moving in same direction */) {
+				line.close = source(d);
+				if (prevTrough && line.close < prevTrough) {
+					// going below the prevTrough, so change from yang to yin
+					// A yin line forms when a Kagi line breaks below the prior trough.
+					line.changePoint = prevTrough;
+					if (line.startAs !== "yin") {
+						line.changeTo = "yin";
+						// line.startAs = "yang";
+					}
+				}
+				if (prevPeak && line.close > prevPeak) {
+					// going above the prevPeak, so change from yin to yang
+					// A yang line forms when a Kagi line breaks above the prior peak
+					line.changePoint = prevPeak;
+					if (line.startAs !== "yang") {
+						line.changeTo = "yang";
+						// line.startAs = "yin";
+					}
+				}
+			} else if (line.close >= line.open /* going up */
+			&& priceMovement < 0 /* and moving in other direction */
+			&& Math.abs(priceMovement) > reversalThreshold(d) /* and the movement is big enough for reversal */ || line.close < line.open /* going down */
+			&& priceMovement > 0 /* and moving in other direction */
+			&& Math.abs(priceMovement) > reversalThreshold(d) /* and the movement is big enough for reversal */) {
+				// reverse direction
+				var nextLineOpen = line.close;
+
+				direction = (line.close - line.open) / Math.abs(line.close - line.open);
+
+				var nextChangePoint = void 0,
+				    nextChangeTo = void 0;
+				if (direction < 0 /* if direction so far has been -ve*/) {
+						// compare with line.close becomes prevTrough
+						if ((0, _utils.isNotDefined)(prevPeak)) prevPeak = line.open;
+						prevTrough = line.close;
+						if (source(d) > prevPeak) {
+							nextChangePoint = prevPeak;
+							nextChangeTo = "yang";
+						}
+					} else {
+					if ((0, _utils.isNotDefined)(prevTrough)) prevTrough = line.open;
+					prevPeak = line.close;
+					if (source(d) < prevTrough) {
+						nextChangePoint = prevTrough;
+						nextChangeTo = "yin";
+					}
+				}
+				if ((0, _utils.isNotDefined)(line.startAs)) {
+					line.startAs = direction > 0 ? "yang" : "yin";
+				}
+
+				var startAs = line.changeTo || line.startAs;
+				line.added = true;
+				kagiData.push(line);
+				direction = -1 * direction; // direction is reversed
+
+				line = _extends({}, line);
+				line.open = nextLineOpen;
+				line.close = source(d);
+				line.startAs = startAs;
+				line.changePoint = nextChangePoint;
+				line.changeTo = nextChangeTo;
+				line.added = false;
+				line.from = undefined;
+				line.volume = 0;
+			} else {
+				// console.log("MOVING IN REV DIR BUT..", line.open, line.close, source(d));
+			}
+			line.current = source(d);
+			var dir = line.close - line.open;
+			dir = dir === 0 ? 1 : dir / Math.abs(dir);
+			line.reverseAt = dir > 0 ? line.close - reversalThreshold(d) : line.open - reversalThreshold(d);
+		});
+		if (!line.added) kagiData.push(line);
+
+		return kagiData;
+	}
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.Kagi, x);
+		return calculator;
+	};
+	calculator.dateMutator = function (x) {
+		if (!arguments.length) return dateMutator;
+		dateMutator = x;
+		return calculator;
+	};
+	calculator.dateAccessor = function (x) {
+		if (!arguments.length) return dateAccessor;
+		dateAccessor = x;
+		return calculator;
+	};
+	return calculator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _atr = __webpack_require__(1045);
+
+var _atr2 = _interopRequireDefault(_atr);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=kagi.js.map
+
+/***/ }),
+/* 1076 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function () {
+	var options = _defaultOptionsForComputation.PointAndFigure;
+	var dateAccessor = function dateAccessor(d) {
+		return d.date;
+	};
+	var dateMutator = function dateMutator(d, date) {
+		d.date = date;
+	};
+
+	function calculator(rawData) {
+		var _options = options,
+		    reversal = _options.reversal,
+		    boxSize = _options.boxSize,
+		    sourcePath = _options.sourcePath;
+
+
+		var source = sourcePath === "high/low" ? function (d) {
+			return { high: d.high, low: d.low };
+		} : function (d) {
+			return { high: d.close, low: d.close };
+		};
+
+		var pricingMethod = source;
+		var columnData = [];
+
+		var column = {
+			boxes: [],
+			open: rawData[0].open
+		},
+		    box = createBox(rawData[0], dateAccessor, dateMutator);
+
+		columnData.push(column);
+
+		rawData.forEach(function (d) {
+			column.volume = (column.volume || 0) + d.volume;
+
+			if (!box.startOfYear) {
+				box.startOfYear = d.startOfYear;
+				if (box.startOfYear) {
+					dateMutator(box, dateAccessor(d));
+					// box.displayDate = d.displayDate;
+				}
+			}
+
+			if (!box.startOfYear && !box.startOfQuarter) {
+				box.startOfQuarter = d.startOfQuarter;
+				if (box.startOfQuarter && !box.startOfYear) {
+					dateMutator(box, dateAccessor(d));
+					// box.displayDate = d.displayDate;
+				}
+			}
+
+			if (!box.startOfQuarter && !box.startOfMonth) {
+				box.startOfMonth = d.startOfMonth;
+				if (box.startOfMonth && !box.startOfQuarter) {
+					dateMutator(box, dateAccessor(d));
+					// box.displayDate = d.displayDate;
+				}
+			}
+			if (!box.startOfMonth && !box.startOfWeek) {
+				box.startOfWeek = d.startOfWeek;
+				if (box.startOfWeek && !box.startOfMonth) {
+					dateMutator(box, dateAccessor(d));
+					// box.displayDate = d.displayDate;
+				}
+			}
+
+			if (columnData.length === 1 && column.boxes.length === 0) {
+				var upwardMovement = Math.max(pricingMethod(d).high - column.open, 0); // upward movement
+				var downwardMovement = Math.abs(Math.min(column.open - pricingMethod(d).low, 0)); // downward movement
+				column.direction = upwardMovement > downwardMovement ? 1 : -1;
+				if (boxSize * reversal < upwardMovement || boxSize * reversal < downwardMovement) {
+					// enough movement to trigger a reversal
+					box.toDate = dateAccessor(d);
+					box.open = column.open;
+					var noOfBoxes = column.direction > 0 ? Math.floor(upwardMovement / boxSize) : Math.floor(downwardMovement / boxSize);
+					for (var i = 0; i < noOfBoxes; i++) {
+						box.close = box.open + column.direction * boxSize;
+						var prevBoxClose = box.close;
+						column.boxes.push(box);
+						box = createBox(box, dateAccessor, dateMutator);
+						// box = cloneMe(box);
+						box.open = prevBoxClose;
+					}
+					box.fromDate = dateAccessor(d);
+					box.date = dateAccessor(d);
+				}
+			} else {
+				// one or more boxes already formed in the current column
+				var _upwardMovement = Math.max(pricingMethod(d).high - box.open, 0); // upward movement
+				var _downwardMovement = Math.abs(Math.min(pricingMethod(d).low - box.open, 0)); // downward movement
+
+				if (column.direction > 0 && _upwardMovement > boxSize || /* rising column AND box can be formed */
+				column.direction < 0 && _downwardMovement > boxSize /* falling column AND box can be formed */) {
+						// form another box
+						box.close = box.open + column.direction * boxSize;
+						box.toDate = dateAccessor(d);
+						var _prevBoxClose = box.close;
+						column.boxes.push(box);
+						box = createBox(d, dateAccessor, dateMutator);
+						box.open = _prevBoxClose;
+						box.fromDate = dateAccessor(d);
+						dateMutator(box, dateAccessor(d));
+					} else if (column.direction > 0 && _downwardMovement > boxSize * reversal || /* rising column and there is downward movement to trigger a reversal */
+				column.direction < 0 && _upwardMovement > boxSize * reversal /* falling column and there is downward movement to trigger a reversal */) {
+						// reversal
+
+						box.open = box.open + -1 * column.direction * boxSize;
+						box.toDate = dateAccessor(d);
+						// box.displayDate = d.displayDate;
+						dateMutator(box, dateAccessor(d));
+						// box.startOfYear = d.startOfYear;
+						// box.startOfQuarter = d.startOfQuarter;
+						// box.startOfMonth = d.startOfMonth;
+						// box.startOfWeek = d.startOfWeek;
+						// console.table(column.boxes);
+						// var idx = index + 1;
+						column = {
+							boxes: [],
+							volume: 0,
+							direction: -1 * column.direction
+						};
+						var _noOfBoxes = column.direction > 0 ? Math.floor(_upwardMovement / boxSize) : Math.floor(_downwardMovement / boxSize);
+						for (var _i = 0; _i < _noOfBoxes; _i++) {
+							box.close = box.open + column.direction * boxSize;
+							var _prevBoxClose2 = box.close;
+							column.boxes.push(box);
+							box = createBox(d, dateAccessor, dateMutator);
+							box.open = _prevBoxClose2;
+						}
+
+						columnData.push(column);
+					}
+			}
+		});
+		updateColumns(columnData, dateAccessor, dateMutator);
+
+		return columnData;
+	}
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.PointAndFigure, x);
+		return calculator;
+	};
+	calculator.dateMutator = function (x) {
+		if (!arguments.length) return dateMutator;
+		dateMutator = x;
+		return calculator;
+	};
+	calculator.dateAccessor = function (x) {
+		if (!arguments.length) return dateAccessor;
+		dateAccessor = x;
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+
+function createBox(d, dateAccessor, dateMutator) {
+	var box = {
+		open: d.open,
+		fromDate: dateAccessor(d),
+		toDate: dateAccessor(d),
+		startOfYear: d.startOfYear,
+		startOfQuarter: d.startOfQuarter,
+		startOfMonth: d.startOfMonth,
+		startOfWeek: d.startOfWeek
+	};
+	dateMutator(box, dateAccessor(d));
+	return box;
+}
+
+function updateColumns(columnData, dateAccessor, dateMutator) {
+	columnData.forEach(function (d) {
+		// var lastBox = d.boxes[d.boxes.length - 1];
+
+		d.startOfYear = false;
+		d.startOfQuarter = false;
+		d.startOfMonth = false;
+		d.startOfWeek = false;
+
+		d.boxes.forEach(function (eachBox) {
+			if ((0, _utils.isNotDefined)(d.open)) d.open = eachBox.open;
+			d.close = eachBox.close;
+			d.high = Math.max(d.open, d.close);
+			d.low = Math.min(d.open, d.close);
+
+			if ((0, _utils.isNotDefined)(d.fromDate)) d.fromDate = eachBox.fromDate;
+			if ((0, _utils.isNotDefined)(d.date)) d.date = eachBox.date;
+			d.toDate = eachBox.toDate;
+
+			if (eachBox.startOfYear) {
+				d.startOfYear = d.startOfYear || eachBox.startOfYear;
+				d.startOfQuarter = eachBox.startOfQuarter;
+				d.startOfMonth = eachBox.startOfMonth;
+				d.startOfWeek = eachBox.startOfWeek;
+
+				dateMutator(d, dateAccessor(eachBox));
+			}
+			if (d.startOfQuarter !== true && eachBox.startOfQuarter) {
+				d.startOfQuarter = eachBox.startOfQuarter;
+				d.startOfMonth = eachBox.startOfMonth;
+				d.startOfWeek = eachBox.startOfWeek;
+				// d.displayDate = eachBox.displayDate;
+				dateMutator(d, dateAccessor(eachBox));
+			}
+			if (d.startOfMonth !== true && eachBox.startOfMonth) {
+				d.startOfMonth = eachBox.startOfMonth;
+				d.startOfWeek = eachBox.startOfWeek;
+				// d.displayDate = eachBox.displayDate;
+				dateMutator(d, dateAccessor(eachBox));
+			}
+			if (d.startOfWeek !== true && eachBox.startOfWeek) {
+				d.startOfWeek = eachBox.startOfWeek;
+				// d.displayDate = eachBox.displayDate;
+				dateMutator(d, dateAccessor(eachBox));
+			}
+		});
+	});
+
+	// console.table(columnData);
+	// console.table(rawData);
+	return columnData;
+}
+//# sourceMappingURL=pointAndFigure.js.map
+
+/***/ }),
+/* 1077 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function () {
+	var options = _defaultOptionsForComputation.Renko;
+
+	var dateAccessor = function dateAccessor(d) {
+		return d.date;
+	};
+	var dateMutator = function dateMutator(d, date) {
+		d.date = date;
+	};
+
+	function calculator(rawData) {
+		var _options = options,
+		    reversalType = _options.reversalType,
+		    fixedBrickSize = _options.fixedBrickSize,
+		    sourcePath = _options.sourcePath,
+		    windowSize = _options.windowSize;
+
+
+		var source = sourcePath === "high/low" ? function (d) {
+			return { high: d.high, low: d.low };
+		} : function (d) {
+			return { high: d.close, low: d.close };
+		};
+
+		var pricingMethod = source;
+		var brickSize = void 0;
+
+		if (reversalType === "ATR") {
+			// calculateATR(rawData, period);
+			var atrAlgorithm = (0, _atr2.default)().options({ windowSize: windowSize });
+
+			var atrCalculator = (0, _utils.merge)().algorithm(atrAlgorithm).merge(function (d, c) {
+				d["atr" + windowSize] = c;
+			});
+
+			atrCalculator(rawData);
+			brickSize = function brickSize(d) {
+				return d["atr" + windowSize];
+			};
+		} else {
+			brickSize = (0, _utils.functor)(fixedBrickSize);
+		}
+
+		var renkoData = [];
+
+		var index = 0,
+		    prevBrickClose = rawData[index].open,
+		    prevBrickOpen = rawData[index].open;
+		var brick = {},
+		    direction = 0;
+
+		rawData.forEach(function (d, idx) {
+			if ((0, _utils.isNotDefined)(brick.from)) {
+				brick.high = d.high;
+				brick.low = d.low;
+				brick.startOfYear = d.startOfYear;
+				brick.startOfQuarter = d.startOfQuarter;
+				brick.startOfMonth = d.startOfMonth;
+				brick.startOfWeek = d.startOfWeek;
+
+				brick.from = idx;
+				brick.fromDate = dateAccessor(d);
+				// indexMutator(brick, index++);
+				dateMutator(brick, dateAccessor(d));
+			}
+			brick.volume = (brick.volume || 0) + d.volume;
+
+			var prevCloseToHigh = prevBrickClose - pricingMethod(d).high,
+			    prevCloseToLow = prevBrickClose - pricingMethod(d).low,
+			    prevOpenToHigh = prevBrickOpen - pricingMethod(d).high,
+			    prevOpenToLow = prevBrickOpen - pricingMethod(d).low,
+			    priceMovement = Math.min(Math.abs(prevCloseToHigh), Math.abs(prevCloseToLow), Math.abs(prevOpenToHigh), Math.abs(prevOpenToLow));
+
+			brick.high = Math.max(brick.high, d.high);
+			brick.low = Math.min(brick.low, d.low);
+
+			if (!brick.startOfYear) {
+				brick.startOfYear = d.startOfYear;
+				if (brick.startOfYear) {
+					dateMutator(brick, dateAccessor(d));
+					// brick.displayDate = d.displayDate;
+				}
+			}
+
+			if (!brick.startOfQuarter) {
+				brick.startOfQuarter = d.startOfQuarter;
+				if (brick.startOfQuarter && !brick.startOfYear) {
+					dateMutator(brick, dateAccessor(d));
+					// brick.displayDate = d.displayDate;
+				}
+			}
+
+			if (!brick.startOfMonth) {
+				brick.startOfMonth = d.startOfMonth;
+				if (brick.startOfMonth && !brick.startOfQuarter) {
+					dateMutator(brick, dateAccessor(d));
+					// brick.displayDate = d.displayDate;
+				}
+			}
+			if (!brick.startOfWeek) {
+				brick.startOfWeek = d.startOfWeek;
+				if (brick.startOfWeek && !brick.startOfMonth) {
+					dateMutator(brick, dateAccessor(d));
+					// brick.displayDate = d.displayDate;
+				}
+			}
+
+			// d.brick = JSON.stringify(brick);
+			if (brickSize(d)) {
+				var noOfBricks = Math.floor(priceMovement / brickSize(d));
+
+				brick.open = Math.abs(prevCloseToHigh) < Math.abs(prevOpenToHigh) || Math.abs(prevCloseToLow) < Math.abs(prevOpenToLow) ? prevBrickClose : prevBrickOpen;
+
+				if (noOfBricks >= 1) {
+					var j = 0;
+					for (j = 0; j < noOfBricks; j++) {
+						brick.close = brick.open < pricingMethod(d).high ?
+						// if brick open is less than current price it means it is green/hollow brick
+						brick.open + brickSize(d) : brick.open - brickSize(d);
+						direction = brick.close > brick.open ? 1 : -1;
+						brick.direction = direction;
+						brick.to = idx;
+						brick.toDate = dateAccessor(d);
+						// brick.diff = brick.open - brick.close;
+						// brick.atr = d.atr;
+						brick.fullyFormed = true;
+						renkoData.push(brick);
+
+						prevBrickClose = brick.close;
+						prevBrickOpen = brick.open;
+
+						var newBrick = {
+							high: brick.high,
+							low: brick.low,
+							open: brick.close,
+							startOfYear: false,
+							startOfMonth: false,
+							startOfQuarter: false,
+							startOfWeek: false
+						};
+						brick = newBrick;
+						brick.from = idx;
+						brick.fromDate = dateAccessor(d);
+						// indexMutator(brick, index + j);
+						dateMutator(brick, dateAccessor(d));
+						brick.volume = (brick.volume || 0) + d.volume;
+					}
+					index = index + j - 1;
+					brick = {};
+				} else {
+					if (idx === rawData.length - 1) {
+						brick.close = direction > 0 ? pricingMethod(d).high : pricingMethod(d).low;
+						brick.to = idx;
+						brick.toDate = dateAccessor(d);
+						dateMutator(brick, dateAccessor(d));
+						brick.fullyFormed = false;
+						renkoData.push(brick);
+					}
+				}
+			}
+		});
+		return renkoData;
+	}
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.Renko, x);
+		return calculator;
+	};
+
+	calculator.dateMutator = function (x) {
+		if (!arguments.length) return dateMutator;
+		dateMutator = x;
+		return calculator;
+	};
+	calculator.dateAccessor = function (x) {
+		if (!arguments.length) return dateAccessor;
+		dateAccessor = x;
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _atr = __webpack_require__(1045);
+
+var _atr2 = _interopRequireDefault(_atr);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=renko.js.map
+
+/***/ }),
+/* 1078 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/calculator/macd.js
+
+The MIT License (MIT)
+
+Copyright (c) 2014-2015 Scott Logic Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function () {
+	var options = _defaultOptionsForComputation.MACD;
+
+	function calculator(data) {
+		var _options = options,
+		    fast = _options.fast,
+		    slow = _options.slow,
+		    signal = _options.signal,
+		    sourcePath = _options.sourcePath;
+
+
+		var fastEMA = (0, _ema2.default)().options({ windowSize: fast, sourcePath: sourcePath });
+
+		var slowEMA = (0, _ema2.default)().options({ windowSize: slow, sourcePath: sourcePath });
+
+		var signalEMA = (0, _ema2.default)().options({ windowSize: signal, sourcePath: undefined });
+
+		var macdCalculator = (0, _utils.zipper)().combine(function (fastEMA, slowEMA) {
+			return (0, _utils.isDefined)(fastEMA) && (0, _utils.isDefined)(slowEMA) ? fastEMA - slowEMA : undefined;
+		});
+
+		var macdArray = macdCalculator(fastEMA(data), slowEMA(data));
+
+		var undefinedArray = new Array(slow);
+		var signalArray = undefinedArray.concat(signalEMA(macdArray.slice(slow)));
+
+		var zip = (0, _utils.zipper)().combine(function (macd, signal) {
+			return {
+				macd: macd,
+				signal: signal,
+				divergence: (0, _utils.isDefined)(macd) && (0, _utils.isDefined)(signal) ? macd - signal : undefined
+			};
+		});
+
+		var macd = zip(macdArray, signalArray);
+
+		return macd;
+	}
+
+	calculator.undefinedLength = function () {
+		var _options2 = options,
+		    slow = _options2.slow,
+		    signal = _options2.signal;
+
+		return slow + signal - 1;
+	};
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.MACD, x);
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _ema = __webpack_require__(1043);
+
+var _ema2 = _interopRequireDefault(_ema);
+
+var _utils = __webpack_require__(7);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=macd.js.map
+
+/***/ }),
+/* 1079 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/calculator/relativeStrengthIndex.js
+
+The MIT License (MIT)
+
+Copyright (c) 2014-2015 Scott Logic Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function () {
+
+	var options = _defaultOptionsForComputation.RSI;
+
+	function calculator(data) {
+		var _options = options,
+		    windowSize = _options.windowSize,
+		    sourcePath = _options.sourcePath;
+
+
+		var source = (0, _utils.path)(sourcePath);
+		var prevAvgGain = void 0,
+		    prevAvgLoss = void 0;
+		var rsiAlgorithm = (0, _utils.slidingWindow)().windowSize(windowSize).accumulator(function (values) {
+
+			var avgGain = (0, _utils.isDefined)(prevAvgGain) ? (prevAvgGain * (windowSize - 1) + (0, _utils.last)(values).gain) / windowSize : (0, _d3Array.mean)(values, function (each) {
+				return each.gain;
+			});
+
+			var avgLoss = (0, _utils.isDefined)(prevAvgLoss) ? (prevAvgLoss * (windowSize - 1) + (0, _utils.last)(values).loss) / windowSize : (0, _d3Array.mean)(values, function (each) {
+				return each.loss;
+			});
+
+			var relativeStrength = avgGain / avgLoss;
+			var rsi = 100 - 100 / (1 + relativeStrength);
+
+			prevAvgGain = avgGain;
+			prevAvgLoss = avgLoss;
+
+			return rsi;
+		});
+
+		var gainsAndLossesCalculator = (0, _utils.slidingWindow)().windowSize(2).undefinedValue(function () {
+			return [0, 0];
+		}).accumulator(function (tuple) {
+			var prev = tuple[0];
+			var now = tuple[1];
+			var change = source(now) - source(prev);
+			return {
+				gain: Math.max(change, 0),
+				loss: Math.abs(Math.min(change, 0))
+			};
+		});
+
+		var gainsAndLosses = gainsAndLossesCalculator(data);
+
+		var rsiData = rsiAlgorithm(gainsAndLosses);
+
+		return rsiData;
+	}
+	calculator.undefinedLength = function () {
+		var _options2 = options,
+		    windowSize = _options2.windowSize;
+
+
+		return windowSize - 1;
+	};
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.RSI, x);
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _d3Array = __webpack_require__(8);
+
+var _utils = __webpack_require__(7);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+//# sourceMappingURL=rsi.js.map
+
+/***/ }),
+/* 1080 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/calculator/stochasticOscillator.js
+
+The MIT License (MIT)
+
+Copyright (c) 2014-2015 Scott Logic Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function () {
+
+	var options = _defaultOptionsForComputation.FullStochasticOscillator;
+
+	var source = function source(d) {
+		return { open: d.open, high: d.high, low: d.low, close: d.close };
+	};
+
+	function calculator(data) {
+		var _options = options,
+		    windowSize = _options.windowSize,
+		    kWindowSize = _options.kWindowSize,
+		    dWindowSize = _options.dWindowSize;
+
+
+		var high = function high(d) {
+			return source(d).high;
+		},
+		    low = function low(d) {
+			return source(d).low;
+		},
+		    close = function close(d) {
+			return source(d).close;
+		};
+
+		var kWindow = (0, _utils.slidingWindow)().windowSize(windowSize).accumulator(function (values) {
+
+			var highestHigh = (0, _d3Array.max)(values, high);
+			var lowestLow = (0, _d3Array.min)(values, low);
+
+			var currentClose = close((0, _utils.last)(values));
+			var k = (currentClose - lowestLow) / (highestHigh - lowestLow) * 100;
+
+			return k;
+		});
+
+		var kSmoothed = (0, _utils.slidingWindow)().skipInitial(windowSize - 1).windowSize(kWindowSize).accumulator(function (values) {
+			return (0, _d3Array.mean)(values);
+		});
+
+		var dWindow = (0, _utils.slidingWindow)().skipInitial(windowSize - 1 + kWindowSize - 1).windowSize(dWindowSize).accumulator(function (values) {
+			return (0, _d3Array.mean)(values);
+		});
+
+		var stoAlgorithm = (0, _utils.zipper)().combine(function (K, D) {
+			return { K: K, D: D };
+		});
+
+		var kData = kSmoothed(kWindow(data));
+		var dData = dWindow(kData);
+
+		var indicatorData = stoAlgorithm(kData, dData);
+
+		return indicatorData;
+	}
+	calculator.undefinedLength = function () {
+		var _options2 = options,
+		    windowSize = _options2.windowSize,
+		    kWindowSize = _options2.kWindowSize,
+		    dWindowSize = _options2.dWindowSize;
+
+		return windowSize + kWindowSize + dWindowSize;
+	};
+	calculator.source = function (x) {
+		if (!arguments.length) {
+			return source;
+		}
+		source = x;
+		return calculator;
+	};
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.FullStochasticOscillator, x);
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _d3Array = __webpack_require__(8);
+
+var _utils = __webpack_require__(7);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+//# sourceMappingURL=sto.js.map
+
+/***/ }),
+/* 1081 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function () {
+
+	var underlyingAlgorithm = (0, _forceIndex2.default)();
+	var merge = (0, _utils.zipper)().combine(function (force, smoothed) {
+		return { force: force, smoothed: smoothed };
+	});
+
+	var options = _defaultOptionsForComputation.SmoothedForceIndex;
+	function calculator(data) {
+		var _options = options,
+		    smoothingType = _options.smoothingType,
+		    smoothingWindow = _options.smoothingWindow;
+		var _options2 = options,
+		    sourcePath = _options2.sourcePath,
+		    volumePath = _options2.volumePath;
+
+
+		var algo = underlyingAlgorithm.options({ sourcePath: sourcePath, volumePath: volumePath });
+
+		var force = algo(data);
+
+		var ma = smoothingType === "ema" ? (0, _ema2.default)() : (0, _sma2.default)();
+		var forceMA = ma.options({
+			windowSize: smoothingWindow,
+			sourcePath: undefined
+		});
+
+		var smoothed = forceMA(force);
+		return merge(force, smoothed);
+	}
+
+	calculator.undefinedLength = function () {
+		var _options3 = options,
+		    smoothingWindow = _options3.smoothingWindow;
+
+		return underlyingAlgorithm.undefinedLength() + smoothingWindow - 1;
+	};
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.SmoothedForceIndex, x);
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _forceIndex = __webpack_require__(1050);
+
+var _forceIndex2 = _interopRequireDefault(_forceIndex);
+
+var _ema = __webpack_require__(1043);
+
+var _ema2 = _interopRequireDefault(_ema);
+
+var _sma = __webpack_require__(1049);
+
+var _sma2 = _interopRequireDefault(_sma);
+
+var _utils = __webpack_require__(7);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=smoothedForceIndex.js.map
+
+/***/ }),
+/* 1082 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+https://github.com/ScottLogic/d3fc/blob/master/src/indicator/algorithm/calculator/elderRay.js
+
+The MIT License (MIT)
+
+Copyright (c) 2014-2015 Scott Logic Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function () {
+
+	var options = _defaultOptionsForComputation.ElderRay;
+	var ohlc = function ohlc(d) {
+		return { open: d.open, high: d.high, low: d.low, close: d.close };
+	};
+
+	function calculator(data) {
+		var _options = options,
+		    windowSize = _options.windowSize,
+		    sourcePath = _options.sourcePath,
+		    movingAverageType = _options.movingAverageType;
+
+
+		var meanAlgorithm = movingAverageType === "ema" ? (0, _ema2.default)().options({ windowSize: windowSize, sourcePath: sourcePath }) : (0, _utils.slidingWindow)().windowSize(windowSize).accumulator(function (values) {
+			return (0, _d3Array.mean)(values);
+		}).sourcePath(sourcePath);
+
+		var zip = (0, _utils.zipper)().combine(function (datum, mean) {
+			var bullPower = (0, _utils.isDefined)(mean) ? ohlc(datum).high - mean : undefined;
+			var bearPower = (0, _utils.isDefined)(mean) ? ohlc(datum).low - mean : undefined;
+			return { bullPower: bullPower, bearPower: bearPower };
+		});
+
+		var newData = zip(data, meanAlgorithm(data));
+		return newData;
+	}
+	calculator.undefinedLength = function () {
+		var _options2 = options,
+		    windowSize = _options2.windowSize;
+
+		return windowSize - 1;
+	};
+	calculator.ohlc = function (x) {
+		if (!arguments.length) {
+			return ohlc;
+		}
+		ohlc = x;
+		return calculator;
+	};
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.ElderRay, x);
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _d3Array = __webpack_require__(8);
+
+var _ema = __webpack_require__(1043);
+
+var _ema2 = _interopRequireDefault(_ema);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//# sourceMappingURL=elderRay.js.map
+
+/***/ }),
+/* 1083 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+exports.default = function () {
+
+	var options = _defaultOptionsForComputation.SAR;
+
+	function calculator(data) {
+		var _options = options,
+		    accelerationFactor = _options.accelerationFactor,
+		    maxAccelerationFactor = _options.maxAccelerationFactor;
+
+
+		var algorithm = (0, _utils.mappedSlidingWindow)().windowSize(2).undefinedValue(function (_ref) {
+			var high = _ref.high,
+			    low = _ref.low;
+
+			return {
+				risingSar: low,
+				risingEp: high,
+				fallingSar: high,
+				fallingEp: low,
+				af: accelerationFactor
+			};
+		}).accumulator(function (_ref2) {
+			var _ref3 = _slicedToArray(_ref2, 2),
+			    prev = _ref3[0],
+			    now = _ref3[1];
+
+			var _calc = calc(prev, now),
+			    risingSar = _calc.risingSar,
+			    fallingSar = _calc.fallingSar,
+			    risingEp = _calc.risingEp,
+			    fallingEp = _calc.fallingEp;
+
+			if ((0, _utils.isNotDefined)(prev.use) && risingSar > now.low && fallingSar < now.high) {
+				return {
+					risingSar: risingSar,
+					fallingSar: fallingSar,
+					risingEp: risingEp,
+					fallingEp: fallingEp
+				};
+			}
+
+			var use = (0, _utils.isDefined)(prev.use) ? prev.use === "rising" ? risingSar > now.low ? "falling" : "rising" : fallingSar < now.high ? "rising" : "falling" : risingSar > now.low ? "falling" : "rising";
+
+			var current = prev.use === use ? {
+				af: Math.min(maxAccelerationFactor, prev.af + accelerationFactor),
+				fallingEp: fallingEp,
+				risingEp: risingEp,
+				fallingSar: fallingSar,
+				risingSar: risingSar
+			} : {
+				af: accelerationFactor,
+				fallingEp: now.low,
+				risingEp: now.high,
+				fallingSar: Math.max(prev.risingEp, now.high),
+				risingSar: Math.min(prev.fallingEp, now.low)
+			};
+
+			var date = now.date,
+			    high = now.high,
+			    low = now.low;
+
+			return _extends({
+				date: date,
+				high: high,
+				low: low
+			}, current, {
+				use: use,
+				sar: use === "falling" ? current.fallingSar : current.risingSar
+			});
+		});
+
+		var calculatedData = algorithm(data).map(function (d) {
+			return d.sar;
+		});
+		// console.log(calculatedData);
+
+		return calculatedData;
+	}
+	calculator.undefinedLength = function () {
+		return 1;
+	};
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.SAR, x);
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+
+function calc(prev, now) {
+	var risingSar = prev.risingSar + prev.af * (prev.risingEp - prev.risingSar);
+
+	var fallingSar = prev.fallingSar - prev.af * (prev.fallingSar - prev.fallingEp);
+
+	var risingEp = Math.max(prev.risingEp, now.high);
+	var fallingEp = Math.min(prev.fallingEp, now.low);
+
+	return {
+		risingSar: risingSar,
+		fallingSar: fallingSar,
+		risingEp: risingEp,
+		fallingEp: fallingEp
+	};
+}
+//# sourceMappingURL=sar.js.map
+
+/***/ }),
+/* 1084 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+exports.default = function () {
+	var options = _defaultOptionsForComputation.Change;
+
+	function calculator(data) {
+		var _options = options,
+		    basePath = _options.basePath,
+		    mainKeys = _options.mainKeys,
+		    compareKeys = _options.compareKeys;
+
+		var base = (0, _utils.path)(basePath);
+
+		var first = (0, _utils.head)(data);
+		var b = base(first);
+
+		// eslint-disable-next-line prefer-const
+		var firsts = {};
+
+		var compareData = data.map(function (d) {
+			// eslint-disable-next-line prefer-const
+			var result = {};
+
+			mainKeys.forEach(function (key) {
+				if (_typeof(d[key]) === "object") {
+					result[key] = {};
+					Object.keys(d[key]).forEach(function (subkey) {
+						result[key][subkey] = (d[key][subkey] - b) / b;
+					});
+				} else {
+					result[key] = (d[key] - b) / b;
+				}
+			});
+
+			compareKeys.forEach(function (key) {
+				if ((0, _utils.isDefined)(d[key]) && (0, _utils.isNotDefined)(firsts[key])) {
+					firsts[key] = d[key];
+				}
+				if ((0, _utils.isDefined)(d[key]) && (0, _utils.isDefined)(firsts[key])) {
+					result[key] = (d[key] - firsts[key]) / firsts[key];
+				}
+			});
+			return result;
+		});
+		// console.log(compareData[20]);
+		return compareData;
+	}
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.Change, x);
+		return calculator;
+	};
+	return calculator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+//# sourceMappingURL=compare.js.map
+
+/***/ }),
+/* 1085 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+exports.default = function () {
+	var options = _defaultOptionsForComputation.Change;
+
+	function calculator(data) {
+		var _options = options,
+		    sourcePath = _options.sourcePath;
+
+
+		var algo = (0, _utils.slidingWindow)().windowSize(2).sourcePath(sourcePath).accumulator(function (_ref) {
+			var _ref2 = _slicedToArray(_ref, 2),
+			    prev = _ref2[0],
+			    curr = _ref2[1];
+
+			var absoluteChange = curr - prev;
+			var percentChange = absoluteChange * 100 / prev;
+			return { absoluteChange: absoluteChange, percentChange: percentChange };
+		});
+
+		var newData = algo(data);
+
+		return newData;
+	}
+	calculator.undefinedLength = function () {
+		return 1;
+	};
+	calculator.options = function (x) {
+		if (!arguments.length) {
+			return options;
+		}
+		options = _extends({}, _defaultOptionsForComputation.Change, x);
+		return calculator;
+	};
+
+	return calculator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _defaultOptionsForComputation = __webpack_require__(1037);
+//# sourceMappingURL=change.js.map
+
+/***/ }),
+/* 1086 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE).accessor(function (d) {
+		return d.sma;
+	});
+
+	var underlyingAlgorithm = (0, _calculator.sma)();
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		datum.sma = indicator;
+	});
+
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		if (options.merge) {
+			if (!base.accessor()) throw new Error("Set an accessor to " + ALGORITHM_TYPE + " before calculating");
+			return mergedAlgorithm(data);
+		}
+		return underlyingAlgorithm(data);
+	};
+	(0, _utils.rebind)(indicator, base, "id", "accessor", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "undefinedLength");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge", "skipUndefined");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "SMA";
+//# sourceMappingURL=sma.js.map
+
+/***/ }),
+/* 1087 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE).accessor(function (d) {
+		return d.wma;
+	});
+
+	var underlyingAlgorithm = (0, _calculator.wma)();
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		datum.wma = indicator;
+	});
+
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		if (options.merge) {
+			if (!base.accessor()) throw new Error("Set an accessor to " + ALGORITHM_TYPE + " before calculating");
+			return mergedAlgorithm(data);
+		}
+		return underlyingAlgorithm(data);
+	};
+
+	(0, _utils.rebind)(indicator, base, "id", "accessor", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "undefinedLength");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge", "skipUndefined");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "WMA";
+//# sourceMappingURL=wma.js.map
+
+/***/ }),
+/* 1088 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE).accessor(function (d) {
+		return d.tma;
+	});
+
+	var underlyingAlgorithm = (0, _calculator.tma)();
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		datum.tma = indicator;
+	});
+
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		if (options.merge) {
+			if (!base.accessor()) throw new Error("Set an accessor to " + ALGORITHM_TYPE + " before calculating");
+			return mergedAlgorithm(data);
+		}
+		return underlyingAlgorithm(data);
+	};
+	(0, _utils.rebind)(indicator, base, "id", "accessor", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "undefinedLength");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge", "skipUndefined");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "TMA";
+//# sourceMappingURL=tma.js.map
+
+/***/ }),
+/* 1089 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE);
+
+	var underlyingAlgorithm = (0, _calculator.bollingerband)();
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		datum.bollingerBand = indicator;
+	});
+
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		if (options.merge) {
+			if (!base.accessor()) throw new Error("Set an accessor to " + ALGORITHM_TYPE + " before calculating");
+			return mergedAlgorithm(data);
+		}
+		return underlyingAlgorithm(data);
+	};
+
+	(0, _utils.rebind)(indicator, base, "id", "accessor", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge", "skipUndefined");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+var _calculator = __webpack_require__(1039);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "BollingerBand";
+//# sourceMappingURL=bollingerBand.js.map
+
+/***/ }),
+/* 1090 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE).accessor(function (d) {
+		return d.ha;
+	});
+
+	var underlyingAlgorithm = (0, _calculator.heikinAshi)();
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		return _extends({}, datum, indicator);
+	});
+
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		if (options.merge) {
+			if (!base.accessor()) throw new Error("Set an accessor to " + ALGORITHM_TYPE + " before calculating");
+			return mergedAlgorithm(data);
+		}
+		return underlyingAlgorithm(data);
+	};
+
+	(0, _utils.rebind)(indicator, base, "accessor", "stroke", "fill", "echo", "type");
+	// rebind(indicator, underlyingAlgorithm, "windowSize", "source");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge");
+
+	return indicator;
+};
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+var _utils = __webpack_require__(7);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "HeikinAshi";
+//# sourceMappingURL=heikinAshi.js.map
+
+/***/ }),
+/* 1091 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE);
+
+	var underlyingAlgorithm = (0, _calculator.kagi)();
+
+	var indicator = underlyingAlgorithm;
+
+	(0, _utils.rebind)(indicator, base, "id", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "dateAccessor", "dateMutator");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "Kagi";
+//# sourceMappingURL=kagi.js.map
+
+/***/ }),
+/* 1092 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE);
+
+	var underlyingAlgorithm = (0, _calculator.pointAndFigure)();
+
+	var indicator = underlyingAlgorithm;
+
+	(0, _utils.rebind)(indicator, base, "id", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "dateAccessor", "dateMutator");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options");
+	// rebind(indicator, mergedAlgorithm, "merge"/*, "skipUndefined"*/);
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "PointAndFigure";
+//# sourceMappingURL=pointAndFigure.js.map
+
+/***/ }),
+/* 1093 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE);
+
+	var underlyingAlgorithm = (0, _calculator.renko)();
+
+	var indicator = underlyingAlgorithm;
+
+	(0, _utils.rebind)(indicator, base, "id", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "dateAccessor", "dateMutator");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "Renko";
+//# sourceMappingURL=renko.js.map
+
+/***/ }),
+/* 1094 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE).fill(_defaultOptionsForAppearance.MACD.fill).stroke(_defaultOptionsForAppearance.MACD.stroke).accessor(function (d) {
+		return d.macd;
+	});
+
+	var underlyingAlgorithm = (0, _calculator.macd)();
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		datum.macd = indicator;
+	});
+
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		if (options.merge) {
+			if (!base.accessor()) throw new Error("Set an accessor to " + ALGORITHM_TYPE + " before calculating");
+			return mergedAlgorithm(data);
+		}
+		return underlyingAlgorithm(data);
+	};
+
+	(0, _utils.rebind)(indicator, base, "id", "accessor", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options", "undefinedLength");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge", "skipUndefined");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+var _defaultOptionsForAppearance = __webpack_require__(1046);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "MACD";
+//# sourceMappingURL=macd.js.map
+
+/***/ }),
+/* 1095 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE).accessor(function (d) {
+		return d.rsi;
+	});
+
+	var underlyingAlgorithm = (0, _calculator.rsi)();
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		datum.rsi = indicator;
+	});
+
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		if (options.merge) {
+			if (!base.accessor()) throw new Error("Set an accessor to " + ALGORITHM_TYPE + " before calculating");
+			return mergedAlgorithm(data);
+		}
+		return underlyingAlgorithm(data);
+	};
+
+	(0, _utils.rebind)(indicator, base, "id", "accessor", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options", "undefinedLength");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge", "skipUndefined");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "RSI";
+//# sourceMappingURL=rsi.js.map
+
+/***/ }),
+/* 1096 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE);
+
+	var underlyingAlgorithm = (0, _calculator.atr)();
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		datum.atr = indicator;
+	});
+
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		if (options.merge) {
+			if (!base.accessor()) throw new Error("Set an accessor to " + ALGORITHM_TYPE + " before calculating");
+			return mergedAlgorithm(data);
+		}
+		return underlyingAlgorithm(data);
+	};
+
+	(0, _utils.rebind)(indicator, base, "id", "accessor", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge", "skipUndefined");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "ATR";
+//# sourceMappingURL=atr.js.map
+
+/***/ }),
+/* 1097 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE);
+
+	var underlyingAlgorithm = (0, _calculator.sto)();
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		datum.sto = indicator;
+	});
+
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		if (options.merge) {
+			if (!base.accessor()) throw new Error("Set an accessor to " + ALGORITHM_TYPE + " before calculating");
+			return mergedAlgorithm(data);
+		}
+		return underlyingAlgorithm(data);
+	};
+
+	(0, _utils.rebind)(indicator, base, "id", "accessor", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options", "undefinedLength");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge", "skipUndefined");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "STO";
+//# sourceMappingURL=stochasticOscillator.js.map
+
+/***/ }),
+/* 1098 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE).accessor(function (d) {
+		return d.forceIndex;
+	});
+
+	var underlyingAlgorithm = (0, _calculator.forceIndex)();
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		datum.forceIndex = indicator;
+	});
+
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		if (options.merge) {
+			if (!base.accessor()) throw new Error("Set an accessor to " + ALGORITHM_TYPE + " before calculating");
+			return mergedAlgorithm(data);
+		}
+		return underlyingAlgorithm(data);
+	};
+
+	(0, _utils.rebind)(indicator, base, "id", "accessor", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge", "skipUndefined");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "ForceIndex";
+//# sourceMappingURL=forceIndex.js.map
+
+/***/ }),
+/* 1099 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE).accessor(function (d) {
+		return d.sar;
+	});
+
+	var underlyingAlgorithm = (0, _calculator.sar)();
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		datum.sar = indicator;
+	});
+
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		if (options.merge) {
+			if (!base.accessor()) throw new Error("Set an accessor to " + ALGORITHM_TYPE + " before calculating");
+			return mergedAlgorithm(data);
+		}
+		return underlyingAlgorithm(data);
+	};
+
+	(0, _utils.rebind)(indicator, base, "id", "accessor", "stroke", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "undefinedLength");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "SMA";
+//# sourceMappingURL=sar.js.map
+
+/***/ }),
+/* 1100 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE).accessor(function (d) {
+		return d.elderRay;
+	});
+
+	var underlyingAlgorithm = (0, _calculator.elderRay)();
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		datum.elderRay = indicator;
+	});
+
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		if (options.merge) {
+			if (!base.accessor()) throw new Error("Set an accessor to " + ALGORITHM_TYPE + " before calculating");
+			return mergedAlgorithm(data);
+		}
+		return underlyingAlgorithm(data);
+	};
+
+	(0, _utils.rebind)(indicator, base, "id", "accessor", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge", "skipUndefined");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "ElderRay";
+//# sourceMappingURL=elderRay.js.map
+
+/***/ }),
+/* 1101 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE);
+
+	var underlyingAlgorithm = (0, _calculator.change)();
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		datum.absoluteChange = indicator.absoluteChange;
+		datum.percentChange = indicator.percentChange;
+	});
+
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		if (options.merge) {
+			return mergedAlgorithm(data);
+		}
+		return underlyingAlgorithm(data);
+	};
+	(0, _utils.rebind)(indicator, base, "id", "accessor", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge", "skipUndefined");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "Change";
+//# sourceMappingURL=change.js.map
+
+/***/ }),
+/* 1102 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+exports.default = function () {
+
+	var macdSource = void 0,
+	    emaSource = void 0;
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE)
+	// .stroke(d => stroke[d.elderImpulse])
+	.stroke(_defaultOptionsForAppearance.ElderImpulse.stroke).fill(undefined);
+
+	var underlyingAlgorithm = (0, _utils.slidingWindow)().windowSize(2).undefinedValue("neutral").accumulator(function (_ref) {
+		var _ref2 = _slicedToArray(_ref, 2),
+		    prev = _ref2[0],
+		    curr = _ref2[1];
+
+		if ((0, _utils.isNotDefined)(macdSource)) throw new Error("macdSource not defined for " + ALGORITHM_TYPE + " calculator");
+		if ((0, _utils.isNotDefined)(emaSource)) throw new Error("emaSource not defined for " + ALGORITHM_TYPE + " calculator");
+
+		if ((0, _utils.isDefined)(macdSource(prev)) && (0, _utils.isDefined)(emaSource(prev))) {
+			var prevMACDDivergence = macdSource(prev).divergence;
+			var currMACDDivergence = macdSource(curr).divergence;
+
+			var prevEMA = emaSource(prev);
+			var currEMA = emaSource(curr);
+
+			if (currMACDDivergence >= prevMACDDivergence && currEMA >= prevEMA) return "up";
+
+			if (currMACDDivergence <= prevMACDDivergence && currEMA <= prevEMA) return "down";
+		}
+		return "neutral";
+	});
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		datum.elderImpulse = indicator;
+	});
+
+	// eslint-disable-next-line prefer-const
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		var newData = options.merge ? mergedAlgorithm(data) : underlyingAlgorithm(data);
+
+		return newData;
+	};
+	indicator.macdSource = function (x) {
+		if (!arguments.length) return macdSource;
+		macdSource = x;
+		return indicator;
+	};
+	indicator.emaSource = function (x) {
+		if (!arguments.length) return emaSource;
+		emaSource = x;
+		return indicator;
+	};
+	(0, _utils.rebind)(indicator, base, "id", "echo", "type", "stroke");
+	// rebind(indicator, underlyingAlgorithm, "windowSize", "movingAverageType", "multiplier", "source");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge", "skipUndefined");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _defaultOptionsForAppearance = __webpack_require__(1046);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "ElderImpulse";
+//# sourceMappingURL=elderImpulse.js.map
+
+/***/ }),
+/* 1103 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+exports.default = function () {
+
+	var base = (0, _baseIndicator2.default)().type(ALGORITHM_TYPE).accessor(function (d) {
+		return d.compare;
+	});
+
+	var underlyingAlgorithm = (0, _calculator.compare)();
+
+	var mergedAlgorithm = (0, _utils.merge)().algorithm(underlyingAlgorithm).merge(function (datum, indicator) {
+		datum.compare = indicator;
+	});
+
+	var indicator = function indicator(data) {
+		var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { merge: true };
+
+		if (options.merge) {
+			if (!base.accessor()) throw new Error("Set an accessor to " + ALGORITHM_TYPE + " before calculating");
+			return mergedAlgorithm(data);
+		}
+		return underlyingAlgorithm(data);
+	};
+
+	(0, _utils.rebind)(indicator, base, "id", "accessor", "stroke", "fill", "echo", "type");
+	(0, _utils.rebind)(indicator, underlyingAlgorithm, "options");
+	(0, _utils.rebind)(indicator, mergedAlgorithm, "merge");
+
+	return indicator;
+};
+
+var _utils = __webpack_require__(7);
+
+var _calculator = __webpack_require__(1039);
+
+var _baseIndicator = __webpack_require__(1038);
+
+var _baseIndicator2 = _interopRequireDefault(_baseIndicator);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ALGORITHM_TYPE = "Compare";
+//# sourceMappingURL=compare.js.map
 
 /***/ })
 /******/ ]);

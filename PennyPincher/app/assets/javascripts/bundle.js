@@ -33502,9 +33502,9 @@ var _values = __webpack_require__(1012);
 
 var _values2 = _interopRequireDefault(_values);
 
-var _merge3 = __webpack_require__(98);
+var _merge2 = __webpack_require__(98);
 
-var _merge4 = _interopRequireDefault(_merge3);
+var _merge3 = _interopRequireDefault(_merge2);
 
 var _stock_actions = __webpack_require__(45);
 
@@ -33545,14 +33545,33 @@ var selectAllStocks = exports.selectAllStocks = function selectAllStocks(state) 
 var stockInfo = exports.stockInfo = function stockInfo(state) {
 	var filtered = selectAllStocks(state);
 	var quotes = {};
+	console.log(filtered);
+	var stockSymb = [];
 	filtered.forEach(function (stock) {
+		stockSymb.push(stock.symbol);
+	});
+	var stockString = stockSymb.join(",");
+	if (stockString.length > 0) {
+		// filtered.forEach(stock => {
+		// 		let x = $.ajax({
+		// 				method: "GET",
+		// 				url: `https://api.iextrading.com/1.0/stock/${stock.symbol}/batch?types=quote,stats,news,peers,chart&range=6m&last=50`
+		// 			}).then(res => {
+		// 					quotes = merge(quotes, {
+		// 							[res.quote.symbol]: res
+		// 						});
+		// 					});
+		// 				});
 		var x = $.ajax({
 			method: "GET",
-			url: "https://api.iextrading.com/1.0/stock/" + stock.symbol + "/batch?types=quote,stats,news,peers,chart&range=6m&last=50"
+			url: "https://api.iextrading.com/1.0/stock/market/batch?symbols=" + stockString + "&types=quote,stats,news,peers,chart&range=6m&last=50"
 		}).then(function (res) {
-			quotes = (0, _merge4.default)(quotes, _defineProperty({}, res.quote.symbol, res));
+			console.log(res);
+			quotes = (0, _merge3.default)(quotes, {
+				res: res
+			});
 		});
-	});
+	}
 	return quotes;
 };
 
@@ -33563,7 +33582,7 @@ var watchlistStocks = exports.watchlistStocks = function watchlistStocks(stocks)
 			method: "GET",
 			url: "https://api.iextrading.com/1.0/stock/" + stock + "/batch?types=quote,stats,news,peers,chart&range=6m&last=50"
 		}).then(function (res) {
-			quotes = (0, _merge4.default)(quotes, _defineProperty({}, res.quote.symbol, res));
+			quotes = (0, _merge3.default)(quotes, _defineProperty({}, res.quote.symbol, res));
 		});
 	});
 	return quotes;
@@ -81548,7 +81567,7 @@ var StockIndex = function (_React$Component) {
       this.props.fetchAllStocks();
       setTimeout(function () {
         return _this2.setState({ loading: false });
-      }, 3000);
+      }, 4000);
     }
   }, {
     key: "addPercents",
@@ -81559,12 +81578,12 @@ var StockIndex = function (_React$Component) {
         if (stock.symbol === "IEXG") {
           stock.percentChange = 0;
           stock.float = 0;
-        } else if (_this3.props.stocksInfo[stock.symbol] === undefined) {
+        } else if (_this3.props.stocksInfo.res[stock.symbol] === undefined) {
           stock.percentChange = "N/A";
           stock.float = "N/A";
         } else {
-          stock.percentChange = _this3.props.stocksInfo[stock.symbol].quote.changePercent * 100;
-          stock.float = _this3.props.stocksInfo[stock.symbol].stats.float;
+          stock.percentChange = _this3.props.stocksInfo.res[stock.symbol].quote.changePercent * 100;
+          stock.float = _this3.props.stocksInfo.res[stock.symbol].stats.float;
         }
       });
     }
@@ -81616,6 +81635,7 @@ var StockIndex = function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
+      console.log(this.props);
       if (this.state.loading) {
         return _react2.default.createElement(
           "div",

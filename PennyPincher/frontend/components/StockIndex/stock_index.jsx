@@ -14,7 +14,7 @@ class StockIndex extends React.Component {
     ReactGA.initialize("UA-107597692-1");
     // This just needs to be called once since we have no routes in this case.
     ReactGA.pageview(window.location.pathname);
-    this.state = { yes: "no", loading: true };
+  this.state = { yes: "no", loading: true };
 	this.addPercents = this.addPercents.bind(this);
 	this.handleBtnClick = this.handleBtnClick.bind(this);
   this.colFormatter = this.colFormatter.bind(this);
@@ -23,7 +23,7 @@ class StockIndex extends React.Component {
   }
   componentDidMount() {
     this.props.fetchAllStocks();
-    setTimeout(() => this.setState({ loading: false }), 3000);
+    setTimeout(() => this.setState({ loading: false }), 4000);
   }
 
   addPercents() {
@@ -31,12 +31,12 @@ class StockIndex extends React.Component {
       if (stock.symbol === "IEXG" ){
         stock.percentChange = 0;
         stock.float = 0;
-      } else if (this.props.stocksInfo[stock.symbol] === undefined){
+      } else if (this.props.stocksInfo.res[stock.symbol] === undefined){
         stock.percentChange = "N/A";
         stock.float = "N/A";
       } else {
-      stock.percentChange = this.props.stocksInfo[stock.symbol].quote.changePercent * 100;
-      stock.float = this.props.stocksInfo[stock.symbol].stats.float;
+      stock.percentChange = this.props.stocksInfo.res[stock.symbol].quote.changePercent * 100;
+      stock.float = this.props.stocksInfo.res[stock.symbol].stats.float;
       }
     });
   }
@@ -79,6 +79,7 @@ class StockIndex extends React.Component {
   }
 
   render() {
+    console.log(this.props);
 	  if (this.state.loading) {
 		  return <div className="loader">Loading...</div>;
     } else {

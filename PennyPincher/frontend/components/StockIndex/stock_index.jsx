@@ -14,16 +14,29 @@ class StockIndex extends React.Component {
     ReactGA.initialize("UA-107597692-1");
     // This just needs to be called once since we have no routes in this case.
     ReactGA.pageview(window.location.pathname);
-  this.state = { yes: "no", loading: true };
+  this.state = { yes: "no", loading: true, stockInfo: this.props.stocksInfo};
 	this.addPercents = this.addPercents.bind(this);
 	this.handleBtnClick = this.handleBtnClick.bind(this);
   this.colFormatter = this.colFormatter.bind(this);
   this.percentFormatter = this.percentFormatter.bind(this);
   this.floatFormatter = this.floatFormatter.bind(this);
   }
+
   componentDidMount() {
     this.props.fetchAllStocks();
-    setTimeout(() => this.setState({ loading: false }), 4000);
+    let counter = 0;
+    let that = this;
+    let timer = setInterval(function() {
+        if(jQuery.isEmptyObject(that.props.stocksInfo)){
+        } else {
+          that.setState({
+            loading:false
+          });
+
+          clearInterval(timer);
+        }
+        counter++;
+    },200);
   }
 
   addPercents() {
@@ -63,7 +76,6 @@ class StockIndex extends React.Component {
     } else {
       return 0;
     }
-    // return cell;
   }
 
   floatFormatter(cell,row) {
@@ -79,7 +91,8 @@ class StockIndex extends React.Component {
   }
 
   render() {
-    console.log(this.props);
+    console.log("STOCKSINFO",this.props.stocksInfo);
+    console.log("INSIDE RENDER",jQuery.isEmptyObject(this.props.stocksInfo));
 	  if (this.state.loading) {
 		  return <div className="loader">Loading...</div>;
     } else {

@@ -43,23 +43,12 @@ export const selectAllStocks = state => {
 export const stockInfo = state => {
 	let filtered = selectAllStocks(state);
 	let quotes = {};
-	console.log(filtered);
 	let stockSymb = [];
 	filtered.forEach(stock => {
 		stockSymb.push(stock.symbol);
 	});
 	let stockString = stockSymb.join(",");
 	if (stockString.length > 0)  {
-	// filtered.forEach(stock => {
-	// 		let x = $.ajax({
-	// 				method: "GET",
-	// 				url: `https://api.iextrading.com/1.0/stock/${stock.symbol}/batch?types=quote,stats,news,peers,chart&range=6m&last=50`
-	// 			}).then(res => {
-	// 					quotes = merge(quotes, {
-	// 							[res.quote.symbol]: res
-	// 						});
-	// 					});
-	// 				});
 					let x = $.ajax({
 						method: "GET",
 						url: `https://api.iextrading.com/1.0/stock/market/batch?symbols=${stockString}&types=quote,stats,news,peers,chart&range=6m&last=50`
@@ -70,7 +59,12 @@ export const stockInfo = state => {
 							});
 					});
 	}
+	if ( quotes === {}) {
+		let loading = true;
+		return loading;
+	} else {
 	return quotes;
+	}
 };
 
 export const watchlistStocks = stocks=> {

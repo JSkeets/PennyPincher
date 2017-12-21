@@ -33545,23 +33545,12 @@ var selectAllStocks = exports.selectAllStocks = function selectAllStocks(state) 
 var stockInfo = exports.stockInfo = function stockInfo(state) {
 	var filtered = selectAllStocks(state);
 	var quotes = {};
-	console.log(filtered);
 	var stockSymb = [];
 	filtered.forEach(function (stock) {
 		stockSymb.push(stock.symbol);
 	});
 	var stockString = stockSymb.join(",");
 	if (stockString.length > 0) {
-		// filtered.forEach(stock => {
-		// 		let x = $.ajax({
-		// 				method: "GET",
-		// 				url: `https://api.iextrading.com/1.0/stock/${stock.symbol}/batch?types=quote,stats,news,peers,chart&range=6m&last=50`
-		// 			}).then(res => {
-		// 					quotes = merge(quotes, {
-		// 							[res.quote.symbol]: res
-		// 						});
-		// 					});
-		// 				});
 		var x = $.ajax({
 			method: "GET",
 			url: "https://api.iextrading.com/1.0/stock/market/batch?symbols=" + stockString + "&types=quote,stats,news,peers,chart&range=6m&last=50"
@@ -33572,7 +33561,12 @@ var stockInfo = exports.stockInfo = function stockInfo(state) {
 			});
 		});
 	}
-	return quotes;
+	if (quotes === {}) {
+		var loading = true;
+		return loading;
+	} else {
+		return quotes;
+	}
 };
 
 var watchlistStocks = exports.watchlistStocks = function watchlistStocks(stocks) {
@@ -81550,7 +81544,7 @@ var StockIndex = function (_React$Component) {
     _reactGa2.default.initialize("UA-107597692-1");
     // This just needs to be called once since we have no routes in this case.
     _reactGa2.default.pageview(window.location.pathname);
-    _this.state = { yes: "no", loading: true };
+    _this.state = { yes: "no", loading: true, stockInfo: _this.props.stocksInfo };
     _this.addPercents = _this.addPercents.bind(_this);
     _this.handleBtnClick = _this.handleBtnClick.bind(_this);
     _this.colFormatter = _this.colFormatter.bind(_this);
@@ -81562,28 +81556,35 @@ var StockIndex = function (_React$Component) {
   _createClass(StockIndex, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this2 = this;
-
       this.props.fetchAllStocks();
-      setTimeout(function () {
-        return _this2.setState({ loading: false });
-      }, 4000);
+      var counter = 0;
+      var that = this;
+      var timer = setInterval(function () {
+        if (jQuery.isEmptyObject(that.props.stocksInfo)) {} else {
+          that.setState({
+            loading: false
+          });
+
+          clearInterval(timer);
+        }
+        counter++;
+      }, 200);
     }
   }, {
     key: "addPercents",
     value: function addPercents() {
-      var _this3 = this;
+      var _this2 = this;
 
       this.props.stocks.map(function (stock) {
         if (stock.symbol === "IEXG") {
           stock.percentChange = 0;
           stock.float = 0;
-        } else if (_this3.props.stocksInfo.res[stock.symbol] === undefined) {
+        } else if (_this2.props.stocksInfo.res[stock.symbol] === undefined) {
           stock.percentChange = "N/A";
           stock.float = "N/A";
         } else {
-          stock.percentChange = _this3.props.stocksInfo.res[stock.symbol].quote.changePercent * 100;
-          stock.float = _this3.props.stocksInfo.res[stock.symbol].stats.float;
+          stock.percentChange = _this2.props.stocksInfo.res[stock.symbol].quote.changePercent * 100;
+          stock.float = _this2.props.stocksInfo.res[stock.symbol].stats.float;
         }
       });
     }
@@ -81617,7 +81618,6 @@ var StockIndex = function (_React$Component) {
       } else {
         return 0;
       }
-      // return cell;
     }
   }, {
     key: "floatFormatter",
@@ -81635,7 +81635,8 @@ var StockIndex = function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      console.log(this.props);
+      console.log("STOCKSINFO", this.props.stocksInfo);
+      console.log("INSIDE RENDER", jQuery.isEmptyObject(this.props.stocksInfo));
       if (this.state.loading) {
         return _react2.default.createElement(
           "div",

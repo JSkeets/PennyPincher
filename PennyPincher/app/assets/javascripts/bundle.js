@@ -70969,6 +70969,9 @@ function tooltipContent(ys) {
       }, {
         label: "close",
         value: currentItem.close && numberFormat(currentItem.close)
+      }, {
+        label: "volume (M)",
+        value: currentItem.volume && numberFormat(currentItem.volume / 1000000)
       }].concat(ys.map(function (each) {
         return {
           label: each.label,
@@ -71011,7 +71014,7 @@ var AreaChart = function (_React$Component) {
         null,
         _react2.default.createElement(
           _reactStockcharts.ChartCanvas,
-          { ratio: ratio, width: width, height: 400, margin: { left: 50, right: 50, top: 10, bottom: 30 }, seriesName: "MSFT", data: data, type: type, xAccessor: xAccessor, xScale: (0, _d3Scale.scaleTime)(), xExtents: xExtents, zoomEvent: true, clamp: true, className: "react-stock-chart" },
+          { ratio: ratio, width: width, height: 400, margin: { left: 50, right: 50, top: 10, bottom: 30 }, seriesName: "MSFT", data: data, type: type, xAccessor: xAccessor, xScale: (0, _d3Scale.scaleTime)(), xExtents: xExtents, zoomEvent: false, clamp: true, className: "react-stock-chart" },
           _react2.default.createElement(
             _reactStockcharts.Chart,
             { id: 1, yExtents: function yExtents(d) {

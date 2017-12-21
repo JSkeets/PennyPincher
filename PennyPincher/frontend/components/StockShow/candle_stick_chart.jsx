@@ -41,7 +41,11 @@ function tooltipContent(ys) {
         {
           label: "close",
           value: currentItem.close && numberFormat(currentItem.close)
-        }
+        },
+        {
+          label:"volume (M)",
+          value: currentItem.volume && numberFormat(currentItem.volume/1000000)
+        },
       ]
         .concat(
           ys.map(each => ({
@@ -68,7 +72,7 @@ class AreaChart extends React.Component {
       xAccessor(data[data.length - (data.length - 1)])
     ];
     return <div>
-        <ChartCanvas ratio={ratio} width={width} height={400} margin={{ left: 50, right: 50, top: 10, bottom: 30 }} seriesName="MSFT" data={data} type={type} xAccessor={xAccessor} xScale={scaleTime()} xExtents={xExtents} zoomEvent={true} clamp={true} className="react-stock-chart">
+        <ChartCanvas ratio={ratio} width={width} height={400} margin={{ left: 50, right: 50, top: 10, bottom: 30 }} seriesName="MSFT" data={data} type={type} xAccessor={xAccessor} xScale={scaleTime()} xExtents={xExtents} zoomEvent={false} clamp={true} className="react-stock-chart">
           <Chart id={1} yExtents={d => [d.high, d.low]}>
             <XAxis axisAt="bottom" orient="bottom" ticks={6} />
             <YAxis axisAt="right" orient="right" ticks={5} />

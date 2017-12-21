@@ -5,7 +5,7 @@ import { utcDay } from "d3-time";
 import { scaleTime } from "d3-scale";
 import { timeParse } from "d3-time-format";
 import { ChartCanvas, Chart } from "react-stockcharts";
-import { CandlestickSeries } from "react-stockcharts/lib/series";
+import { CandlestickSeries,BarSeries } from "react-stockcharts/lib/series";
 import { AreaSeries } from "react-stockcharts/lib/series";
 import { XAxis, YAxis } from "react-stockcharts/lib/axes";
 import { fitWidth } from "react-stockcharts/lib/helper";
@@ -56,26 +56,8 @@ function tooltipContent(ys) {
 }
 
 class AreaChart extends React.Component {
- 
   render() {
     const { data, type, width, ratio } = this.props;
-
-    // const ema20 = ema()
-		// 	.id(0)
-		// 	.options({ windowSize: 20 })
-		// 	.merge((d, c) => {
-		// 		d.ema20 = c;
-		// 	})
-		// 	.accessor(d => d.ema20);
-
-		// const ema50 = ema()
-		// 	.id(2)
-		// 	.options({ windowSize: 50 })
-		// 	.merge((d, c) => {
-		// 		d.ema50 = c;
-		// 	})
-		// 	.accessor(d => d.ema50);
-
     let xAccessor = d => {
       let formatter = timeParse("%Y-%m-%d");
       return formatter(d.date);
@@ -86,18 +68,35 @@ class AreaChart extends React.Component {
       xAccessor(data[data.length - (data.length - 1)])
     ];
     return <div>
-        <ChartCanvas ratio={ratio} width={width} height={400} margin={{ left: 50, right: 50, top: 10, bottom: 30 }} seriesName="MSFT" data={data} type={type} xAccessor={xAccessor} xScale={scaleTime()} xExtents={xExtents} zoomEvent={false} clamp={true} className="react-stock-chart">
-          <Chart id={0} yExtents={d => [d.high, d.low]}>
+        <ChartCanvas ratio={ratio} width={width} height={400} margin={{ left: 50, right: 50, top: 10, bottom: 30 }} seriesName="MSFT" data={data} type={type} xAccessor={xAccessor} xScale={scaleTime()} xExtents={xExtents} zoomEvent={true} clamp={true} className="react-stock-chart">
+          <Chart id={1} yExtents={d => [d.high, d.low]}>
             <XAxis axisAt="bottom" orient="bottom" ticks={6} />
-            <YAxis axisAt="left" orient="left" ticks={10} />
+            <YAxis axisAt="right" orient="right" ticks={5} />
             <CandlestickSeries width={timeIntervalBarWidth(utcDay)} />
 
             <HoverTooltip tooltipContent={tooltipContent(
                 [
-                
                 ]
               )} fontSize={15} />
           </Chart>
+          	<Chart
+					id={2}
+					yExtents={[d => d.volume]}
+					height={150}
+					origin={(w, h) => [0, h - 150]}
+				>
+					<YAxis
+						axisAt="left"
+						orient="left"
+						ticks={5}
+						tickFormat={format(".2s")}
+					/>
+
+					<BarSeries
+						yAccessor={d => d.volume}
+						fill={d => (d.close > d.open ? "#6BA583" : "#FF0000")}
+					/>
+				</Chart>
         </ChartCanvas>
       </div>;
   }

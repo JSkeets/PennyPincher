@@ -71000,22 +71000,6 @@ var AreaChart = function (_React$Component) {
           width = _props.width,
           ratio = _props.ratio;
 
-      // const ema20 = ema()
-      // 	.id(0)
-      // 	.options({ windowSize: 20 })
-      // 	.merge((d, c) => {
-      // 		d.ema20 = c;
-      // 	})
-      // 	.accessor(d => d.ema20);
-
-      // const ema50 = ema()
-      // 	.id(2)
-      // 	.options({ windowSize: 50 })
-      // 	.merge((d, c) => {
-      // 		d.ema50 = c;
-      // 	})
-      // 	.accessor(d => d.ema50);
-
       var xAccessor = function xAccessor(d) {
         var formatter = (0, _d3TimeFormat.timeParse)("%Y-%m-%d");
         return formatter(d.date);
@@ -71027,16 +71011,43 @@ var AreaChart = function (_React$Component) {
         null,
         _react2.default.createElement(
           _reactStockcharts.ChartCanvas,
-          { ratio: ratio, width: width, height: 400, margin: { left: 50, right: 50, top: 10, bottom: 30 }, seriesName: "MSFT", data: data, type: type, xAccessor: xAccessor, xScale: (0, _d3Scale.scaleTime)(), xExtents: xExtents, zoomEvent: false, clamp: true, className: "react-stock-chart" },
+          { ratio: ratio, width: width, height: 400, margin: { left: 50, right: 50, top: 10, bottom: 30 }, seriesName: "MSFT", data: data, type: type, xAccessor: xAccessor, xScale: (0, _d3Scale.scaleTime)(), xExtents: xExtents, zoomEvent: true, clamp: true, className: "react-stock-chart" },
           _react2.default.createElement(
             _reactStockcharts.Chart,
-            { id: 0, yExtents: function yExtents(d) {
+            { id: 1, yExtents: function yExtents(d) {
                 return [d.high, d.low];
               } },
             _react2.default.createElement(_axes.XAxis, { axisAt: "bottom", orient: "bottom", ticks: 6 }),
-            _react2.default.createElement(_axes.YAxis, { axisAt: "left", orient: "left", ticks: 10 }),
+            _react2.default.createElement(_axes.YAxis, { axisAt: "right", orient: "right", ticks: 5 }),
             _react2.default.createElement(_series.CandlestickSeries, { width: (0, _utils.timeIntervalBarWidth)(_d3Time.utcDay) }),
             _react2.default.createElement(_tooltip.HoverTooltip, { tooltipContent: tooltipContent([]), fontSize: 15 })
+          ),
+          _react2.default.createElement(
+            _reactStockcharts.Chart,
+            {
+              id: 2,
+              yExtents: [function (d) {
+                return d.volume;
+              }],
+              height: 150,
+              origin: function origin(w, h) {
+                return [0, h - 150];
+              }
+            },
+            _react2.default.createElement(_axes.YAxis, {
+              axisAt: "left",
+              orient: "left",
+              ticks: 5,
+              tickFormat: (0, _d3Format.format)(".2s")
+            }),
+            _react2.default.createElement(_series.BarSeries, {
+              yAccessor: function yAccessor(d) {
+                return d.volume;
+              },
+              fill: function fill(d) {
+                return d.close > d.open ? "#6BA583" : "#FF0000";
+              }
+            })
           )
         )
       );

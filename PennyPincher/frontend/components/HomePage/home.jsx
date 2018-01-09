@@ -3,7 +3,6 @@ import json2csv from "json2csv";
 import ReactGA from "react-ga"; 
 import { Link } from "react-router-dom";
 
-import img from "../../../public/icons/interactiveChart.gif";
 
 
 
@@ -46,7 +45,7 @@ class Home extends React.Component {
             <p>We offer the tools to help you make successful trades</p>
             <h1> Interactive Charts </h1>
 
-            <img src={"https://media.giphy.com/media/l0HU0CtNrpY7uTCDK/giphy.gif"} />
+            <img src={"https://media.giphy.com/media/3o751UYt30M5BAc7Xq/giphy.gif"} />
           </div>
         </div>
 

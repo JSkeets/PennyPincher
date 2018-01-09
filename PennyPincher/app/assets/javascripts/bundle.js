@@ -102165,10 +102165,6 @@ var _reactGa2 = _interopRequireDefault(_reactGa);
 
 var _reactRouterDom = __webpack_require__(19);
 
-var _interactiveChart = __webpack_require__(1106);
-
-var _interactiveChart2 = _interopRequireDefault(_interactiveChart);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -102249,7 +102245,7 @@ var Home = function (_React$Component) {
               null,
               " Interactive Charts "
             ),
-            _react2.default.createElement("img", { src: "https://media.giphy.com/media/l0HU0CtNrpY7uTCDK/giphy.gif" })
+            _react2.default.createElement("img", { src: "https://media.giphy.com/media/3o751UYt30M5BAc7Xq/giphy.gif" })
           )
         ),
         _react2.default.createElement(
@@ -102339,12 +102335,6 @@ var mapStateToProps = function mapStateToProps(state) {
 var AuthRoute = exports.AuthRoute = (0, _reactRouterDom.withRouter)((0, _reactRedux.connect)(mapStateToProps, null)(Auth));
 
 var ProtectedRoute = exports.ProtectedRoute = (0, _reactRouterDom.withRouter)((0, _reactRedux.connect)(mapStateToProps, null)(Protected));
-
-/***/ }),
-/* 1106 */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/jesseskeets/Desktop/PennyPincher/PennyPincher/public/icons/interactiveChart.gif'\n    at Error (native)");
 
 /***/ })
 /******/ ]);

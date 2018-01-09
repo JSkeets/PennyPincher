@@ -1,0 +1,59 @@
+.home-wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: space-between;
+};
+
+.tile-1,.tile-2,.tile-3 {
+    display: flex;
+    justify-content:space-between;
+    height:70vh;
+    margin-top:30px;
+    margin-left:30px;
+    margin-right:30px;
+    background-color:black;
+    font-family: "Bellefair";
+    font-size:40px;
+
+};
+
+.tile-1-right,.tile-2-right,.tile-3-right{
+    width:70vw;
+    font-family: "Bellefair"
+
+}
+.tile-1{
+    background-color:white;
+    color:#058ed9;
+    font-size:40px;
+    
+};
+
+.tile-1-right{
+    background-color: #023F77;
+    color: white;
+};
+
+.tile-2{
+    background-color: #023F77;
+    color: white;
+}
+
+.tile-2-right{
+background-color: white;
+color:#058ed9;
+}
+
+.tile-3{
+background-color: white;
+color:#058ed9;
+}
+
+.tile-3-right{
+background-color: #023F77;
+color:white;
+}
+
+.dark {
+    background: #303030;
+}

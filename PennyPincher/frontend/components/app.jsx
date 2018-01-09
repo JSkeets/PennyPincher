@@ -10,6 +10,7 @@ import EmailSent from "../components/PasswordReset/emailsent.jsx";
 import WatchlistContainer from "../components/Watchlist/watchlist_container.jsx";
 
 import NavBar from "../components/NavBar/navbar_container";
+import Home from "../components/HomePage/home_container";
 import { Route, Redirect, Switch, Link, HashRouter } from "react-router-dom";
 import {fetchTweets} from "../actions/stock_actions";
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
@@ -19,6 +20,7 @@ window.fetchTweets = fetchTweets;
 const App = () => (
   <div className="app">
     <NavBar />
+    <Route exact path="/home" component={Home} />
     <Route exact path="/" component={StockIndexContainer} />
     <ProtectedRoute exact path="/watchlist" component={WatchlistContainer} />
     <Route exact path="/signup" component={SignUpFormContainer} />

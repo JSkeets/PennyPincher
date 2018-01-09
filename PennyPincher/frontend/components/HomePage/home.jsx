@@ -24,11 +24,35 @@ class Home extends React.Component {
 
 
   render() {
-    return(
-        <div className="home-wrapper">
-
+    return <div className="home-wrapper">
+        <div className="tile-1">
+          <div className="tile-1-left">
+            <h1>Who We Are</h1>
+          </div>
+          <div className="tile-1-right">
+            <p>6th Cent is a community and application built by Penny Stock Traders, Day Traders, and Options Traders</p>
+            <h1> Interactive Charts </h1>
+          </div>
         </div>
-    );
+
+        <div className="tile-2">
+          <div className="tile-2-left">
+            <h1>What We Offer</h1>
+          </div>
+          <div className="tile-2-right">
+            <p>We offer the tools to help you make successful trades</p>
+          </div>
+        </div>
+
+        <div className="tile-3">
+          <div className="tile-3-left">
+            <h1>Join Us Today</h1>
+          </div>
+          <div className="tile-3-right">
+            <p>Join our community today, and start getting the edge you need to find and execute winning trades</p>
+          </div>
+        </div>
+      </div>;
   }
 }
 

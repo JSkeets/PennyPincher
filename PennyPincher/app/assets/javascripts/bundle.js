@@ -102342,9 +102342,9 @@ var ProtectedRoute = exports.ProtectedRoute = (0, _reactRouterDom.withRouter)((0
 
 /***/ }),
 /* 1106 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "/public/icons/interactiveChart.gif";
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/jesseskeets/Desktop/PennyPincher/PennyPincher/public/icons/interactiveChart.gif'\n    at Error (native)");
 
 /***/ })
 /******/ ]);

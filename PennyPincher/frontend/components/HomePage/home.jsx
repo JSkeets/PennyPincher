@@ -1,8 +1,9 @@
 import React from "react";
 import json2csv from "json2csv";
-import ReactGA from "react-ga"; // https://github.com/react-ga/react-ga
-
+import ReactGA from "react-ga"; 
 import { Link } from "react-router-dom";
+
+import img from "../../../public/icons/interactiveChart.gif";
 
 
 
@@ -30,8 +31,10 @@ class Home extends React.Component {
             <h1>Who We Are</h1>
           </div>
           <div className="tile-1-right">
-            <p>6th Cent is a community and application built by Penny Stock Traders, Day Traders, and Options Traders</p>
-            <h1> Interactive Charts </h1>
+            <p>
+              6th Cent is a community and application built by Penny Stock
+              Traders, Day Traders, and Options Traders
+            </p>
           </div>
         </div>
 
@@ -41,6 +44,9 @@ class Home extends React.Component {
           </div>
           <div className="tile-2-right">
             <p>We offer the tools to help you make successful trades</p>
+            <h1> Interactive Charts </h1>
+
+            <img src={"https://media.giphy.com/media/l0HU0CtNrpY7uTCDK/giphy.gif"} />
           </div>
         </div>
 
@@ -49,7 +55,10 @@ class Home extends React.Component {
             <h1>Join Us Today</h1>
           </div>
           <div className="tile-3-right">
-            <p>Join our community today, and start getting the edge you need to find and execute winning trades</p>
+            <p>
+              Join our community today, and start getting the edge you need
+              to find and execute winning trades
+            </p>
           </div>
         </div>
       </div>;

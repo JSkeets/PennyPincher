@@ -53767,7 +53767,7 @@ var _reactRouterDom = __webpack_require__(19);
 
 var _stock_actions = __webpack_require__(52);
 
-var _route_util = __webpack_require__(1104);
+var _route_util = __webpack_require__(1105);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -102165,13 +102165,17 @@ var _reactGa2 = _interopRequireDefault(_reactGa);
 
 var _reactRouterDom = __webpack_require__(19);
 
+var _interactiveChart = __webpack_require__(1106);
+
+var _interactiveChart2 = _interopRequireDefault(_interactiveChart);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // https://github.com/react-ga/react-ga
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Home = function (_React$Component) {
   _inherits(Home, _React$Component);
@@ -102217,11 +102221,6 @@ var Home = function (_React$Component) {
               "p",
               null,
               "6th Cent is a community and application built by Penny Stock Traders, Day Traders, and Options Traders"
-            ),
-            _react2.default.createElement(
-              "h1",
-              null,
-              " Interactive Charts "
             )
           )
         ),
@@ -102244,7 +102243,13 @@ var Home = function (_React$Component) {
               "p",
               null,
               "We offer the tools to help you make successful trades"
-            )
+            ),
+            _react2.default.createElement(
+              "h1",
+              null,
+              " Interactive Charts "
+            ),
+            _react2.default.createElement("img", { src: "https://media.giphy.com/media/l0HU0CtNrpY7uTCDK/giphy.gif" })
           )
         ),
         _react2.default.createElement(
@@ -102279,7 +102284,8 @@ var Home = function (_React$Component) {
 exports.default = Home;
 
 /***/ }),
-/* 1104 */
+/* 1104 */,
+/* 1105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102333,6 +102339,12 @@ var mapStateToProps = function mapStateToProps(state) {
 var AuthRoute = exports.AuthRoute = (0, _reactRouterDom.withRouter)((0, _reactRedux.connect)(mapStateToProps, null)(Auth));
 
 var ProtectedRoute = exports.ProtectedRoute = (0, _reactRouterDom.withRouter)((0, _reactRedux.connect)(mapStateToProps, null)(Protected));
+
+/***/ }),
+/* 1106 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/public/icons/interactiveChart.gif";
 
 /***/ })
 /******/ ]);

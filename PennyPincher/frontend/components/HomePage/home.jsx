@@ -43,7 +43,7 @@ class Home extends React.Component {
           <div className="tile-2-right">
             <div className="tile-2-1">
               <h1> Interactive Charts </h1>
-              <img src={"https://media.giphy.com/media/3o751UYt30M5BAc7Xq/giphy.gif"} width="925px" />
+              <img src={"https://media.giphy.com/media/l0HUlO4Mn3DbbKff2/giphy.gif"} width="925px" />
             </div>
             <div className="tile-2-2">
               <h1>Live Twitter Feed </h1>
@@ -66,8 +66,10 @@ class Home extends React.Component {
               to find and execute winning trades
             </p>
             <div className="signup-button-wrapper">
-              <Link className="signup-button-home" to="/signup">Sign Up</Link>
-              </div>
+              <Link className="signup-button-home" to="/signup">
+                Sign Up
+              </Link>
+            </div>
           </div>
         </div>
       </div>;

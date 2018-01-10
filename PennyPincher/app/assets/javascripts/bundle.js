@@ -102242,7 +102242,7 @@ var Home = function (_React$Component) {
                 null,
                 " Interactive Charts "
               ),
-              _react2.default.createElement("img", { src: "https://media.giphy.com/media/3o751UYt30M5BAc7Xq/giphy.gif", width: "925px" })
+              _react2.default.createElement("img", { src: "https://media.giphy.com/media/l0HUlO4Mn3DbbKff2/giphy.gif", width: "925px" })
             ),
             _react2.default.createElement(
               "div",

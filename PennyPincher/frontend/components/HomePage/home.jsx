@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 
 
-
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -32,20 +31,27 @@ class Home extends React.Component {
           <div className="tile-1-right">
             <p>
               6th Cent is a community and application built by Penny Stock
-              Traders, Day Traders, and Options Traders
+              Traders, Day Traders, and Options Traders to provide the tools to make trades easier and more successful
             </p>
           </div>
         </div>
-
         <div className="tile-2">
           <div className="tile-2-left">
-            <h1>What We Offer</h1>
+            <h1>The information you need to make successful trades!</h1>
           </div>
           <div className="tile-2-right">
-            <p>We offer the tools to help you make successful trades</p>
-            <h1> Interactive Charts </h1>
-
-            <img src={"https://media.giphy.com/media/3o751UYt30M5BAc7Xq/giphy.gif"} />
+            <div className="tile-2-1">
+              <h1> Interactive Charts </h1>
+              <img src={"https://media.giphy.com/media/3o751UYt30M5BAc7Xq/giphy.gif"} width="925px"  />
+            </div>
+            <div className="tile-2-2">
+              <h1>Live Twitter Feed </h1>
+              <img src={"https://s3.amazonaws.com/6thcenttwittershot/Screen+Shot+2018-01-09+at+2.46.43+PM.png"} width="925px"  />
+            </div>
+            <div className="tile-2-3">
+              <h1> Custom Watchlist </h1>
+              <img src={"https://s3.amazonaws.com/6thcenttwittershot/Screen+Shot+2018-01-09+at+2.54.12+PM.png"} width="925px"  />
+            </div>
           </div>
         </div>
 

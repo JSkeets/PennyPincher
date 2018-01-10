@@ -53778,8 +53778,8 @@ var App = function App() {
     "div",
     { className: "app" },
     _react2.default.createElement(_navbar_container2.default, null),
-    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/home", component: _home_container2.default }),
-    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: _stock_index_container2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/", component: _home_container2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/top", component: _stock_index_container2.default }),
     _react2.default.createElement(_route_util.ProtectedRoute, { exact: true, path: "/watchlist", component: _watchlist_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/signup", component: _signup_form_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: "/login", component: _login_form_container2.default }),
@@ -102067,19 +102067,18 @@ var loggedInLinks = function loggedInLinks(currentUser, logout) {
         ),
         _react2.default.createElement(
           _reactRouterDom.NavLink,
-          {
-            className: "my-watchlist",
-            to: "/watchlist"
-          },
+          { className: "my-watchlist", to: "/watchlist" },
           "My Watchlist"
+        ),
+        _react2.default.createElement(
+          _reactRouterDom.NavLink,
+          { className: "my-watchlist", to: "/top" },
+          "Top Picks"
         )
       ),
       _react2.default.createElement(
         _reactRouterDom.NavLink,
-        {
-          className: "header-name",
-          to: "/dashboard"
-        },
+        { className: "header-name", to: "/dashboard" },
         "Welcome ",
         currentUser.username
       )
@@ -102216,7 +102215,7 @@ var Home = function (_React$Component) {
             _react2.default.createElement(
               "p",
               null,
-              "6th Cent is a community and application built by Penny Stock Traders, Day Traders, and Options Traders"
+              "6th Cent is a community and application built by Penny Stock Traders, Day Traders, and Options Traders to provide the tools to make trades easier and more successful"
             )
           )
         ),
@@ -102229,23 +102228,42 @@ var Home = function (_React$Component) {
             _react2.default.createElement(
               "h1",
               null,
-              "What We Offer"
+              "The information you need to make successful trades!"
             )
           ),
           _react2.default.createElement(
             "div",
             { className: "tile-2-right" },
             _react2.default.createElement(
-              "p",
-              null,
-              "We offer the tools to help you make successful trades"
+              "div",
+              { className: "tile-2-1" },
+              _react2.default.createElement(
+                "h1",
+                null,
+                " Interactive Charts "
+              ),
+              _react2.default.createElement("img", { src: "https://media.giphy.com/media/3o751UYt30M5BAc7Xq/giphy.gif", width: "925px" })
             ),
             _react2.default.createElement(
-              "h1",
-              null,
-              " Interactive Charts "
+              "div",
+              { className: "tile-2-2" },
+              _react2.default.createElement(
+                "h1",
+                null,
+                "Live Twitter Feed "
+              ),
+              _react2.default.createElement("img", { src: "https://s3.amazonaws.com/6thcenttwittershot/Screen+Shot+2018-01-09+at+2.46.43+PM.png", width: "925px" })
             ),
-            _react2.default.createElement("img", { src: "https://media.giphy.com/media/3o751UYt30M5BAc7Xq/giphy.gif" })
+            _react2.default.createElement(
+              "div",
+              { className: "tile-2-3" },
+              _react2.default.createElement(
+                "h1",
+                null,
+                " Custom Watchlist "
+              ),
+              _react2.default.createElement("img", { src: "https://s3.amazonaws.com/6thcenttwittershot/Screen+Shot+2018-01-09+at+2.54.12+PM.png", width: "925px" })
+            )
           )
         ),
         _react2.default.createElement(
@@ -102309,7 +102327,7 @@ var Auth = function Auth(_ref) {
   return _react2.default.createElement(_reactRouterDom.Route, {
     path: path,
     render: function render(props) {
-      return !loggedIn ? _react2.default.createElement(Component, props) : _react2.default.createElement(_reactRouterDom.Redirect, { to: "/dashboard" });
+      return !loggedIn ? _react2.default.createElement(Component, props) : _react2.default.createElement(_reactRouterDom.Redirect, { to: "/" });
     }
   });
 };

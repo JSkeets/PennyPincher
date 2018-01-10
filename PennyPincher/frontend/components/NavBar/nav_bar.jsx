@@ -25,17 +25,14 @@ const loggedInLinks = (currentUser, logout) => (
         <button className="logout-button" onClick={logout}>
           Log Out
         </button>
-        <NavLink
-          className="my-watchlist"
-          to="/watchlist"
-        >
+        <NavLink className="my-watchlist" to="/watchlist">
           My Watchlist
         </NavLink>
+        <NavLink className="my-watchlist" to="/top">
+          Top Picks
+        </NavLink>
       </div>
-      <NavLink
-        className="header-name"
-        to="/dashboard"
-      >
+      <NavLink className="header-name" to="/dashboard">
         Welcome {currentUser.username}
       </NavLink>
     </div>

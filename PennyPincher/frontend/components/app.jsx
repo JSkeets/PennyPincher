@@ -20,8 +20,8 @@ window.fetchTweets = fetchTweets;
 const App = () => (
   <div className="app">
     <NavBar />
-    <Route exact path="/home" component={Home} />
-    <Route exact path="/" component={StockIndexContainer} />
+    <Route exact path="/" component={Home} />
+    <Route exact path="/top" component={StockIndexContainer} />
     <ProtectedRoute exact path="/watchlist" component={WatchlistContainer} />
     <Route exact path="/signup" component={SignUpFormContainer} />
     <Route exact path="/login" component={LoginFormContainer} />

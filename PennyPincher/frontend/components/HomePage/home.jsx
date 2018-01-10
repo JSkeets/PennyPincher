@@ -66,7 +66,7 @@ class Home extends React.Component {
               to find and execute winning trades
             </p>
             <div className="signup-button-wrapper">
-              <Link className="signup-button" to="/signup">Sign Up</Link>
+              <Link className="signup-button-home" to="/signup">Sign Up</Link>
               </div>
           </div>
         </div>

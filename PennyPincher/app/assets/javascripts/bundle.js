@@ -100804,7 +100804,7 @@ var LoginForm = function (_React$Component) {
     key: "componentWillReceiveProps",
     value: function componentWillReceiveProps(nextProps) {
       if (nextProps.loggedIn) {
-        this.props.history.push("/");
+        this.props.history.push("/watchlist");
       }
     }
   }, {
@@ -102291,7 +102291,7 @@ var Home = function (_React$Component) {
               { className: "signup-button-wrapper" },
               _react2.default.createElement(
                 _reactRouterDom.Link,
-                { className: "signup-button", to: "/signup" },
+                { className: "signup-button-home", to: "/signup" },
                 "Sign Up"
               )
             )

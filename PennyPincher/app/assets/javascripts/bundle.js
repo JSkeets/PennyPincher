@@ -102215,7 +102215,7 @@ var Home = function (_React$Component) {
             _react2.default.createElement(
               "p",
               null,
-              "6th Cent is a community and application built by Penny Stock Traders, Day Traders, and Options Traders to provide the tools to make trades easier and more successful"
+              "6th Cent is a community built by Penny Stock Traders, Day Traders, and Options Traders to make trading easier and more successful from beginner to expert"
             )
           )
         ),
@@ -102285,6 +102285,15 @@ var Home = function (_React$Component) {
               "p",
               null,
               "Join our community today, and start getting the edge you need to find and execute winning trades"
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "signup-button-wrapper" },
+              _react2.default.createElement(
+                _reactRouterDom.Link,
+                { className: "signup-button", to: "/signup" },
+                "Sign Up"
+              )
             )
           )
         )

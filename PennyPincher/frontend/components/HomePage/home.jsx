@@ -30,8 +30,9 @@ class Home extends React.Component {
           </div>
           <div className="tile-1-right">
             <p>
-              6th Cent is a community and application built by Penny Stock
-              Traders, Day Traders, and Options Traders to provide the tools to make trades easier and more successful
+              6th Cent is a community built by Penny Stock Traders, Day
+              Traders, and Options Traders to make trading easier and more
+              successful from beginner to expert
             </p>
           </div>
         </div>
@@ -42,15 +43,15 @@ class Home extends React.Component {
           <div className="tile-2-right">
             <div className="tile-2-1">
               <h1> Interactive Charts </h1>
-              <img src={"https://media.giphy.com/media/3o751UYt30M5BAc7Xq/giphy.gif"} width="925px"  />
+              <img src={"https://media.giphy.com/media/3o751UYt30M5BAc7Xq/giphy.gif"} width="925px" />
             </div>
             <div className="tile-2-2">
               <h1>Live Twitter Feed </h1>
-              <img src={"https://s3.amazonaws.com/6thcenttwittershot/Screen+Shot+2018-01-09+at+2.46.43+PM.png"} width="925px"  />
+              <img src={"https://s3.amazonaws.com/6thcenttwittershot/Screen+Shot+2018-01-09+at+2.46.43+PM.png"} width="925px" />
             </div>
             <div className="tile-2-3">
               <h1> Custom Watchlist </h1>
-              <img src={"https://s3.amazonaws.com/6thcenttwittershot/Screen+Shot+2018-01-09+at+2.54.12+PM.png"} width="925px"  />
+              <img src={"https://s3.amazonaws.com/6thcenttwittershot/Screen+Shot+2018-01-09+at+2.54.12+PM.png"} width="925px" />
             </div>
           </div>
         </div>
@@ -64,6 +65,9 @@ class Home extends React.Component {
               Join our community today, and start getting the edge you need
               to find and execute winning trades
             </p>
+            <div className="signup-button-wrapper">
+              <Link className="signup-button" to="/signup">Sign Up</Link>
+              </div>
           </div>
         </div>
       </div>;

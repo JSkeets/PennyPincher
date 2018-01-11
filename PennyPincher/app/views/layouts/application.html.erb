@@ -3,7 +3,12 @@
   <head>
     <title>6th Cent</title>
     <%= csrf_meta_tags %>
-
+      <script>
+      var host = "www.6thcent.com";
+      if ((host == window.location.host) && (window.location.protocol != "https:")){
+      window.location.protocol = "https";
+      }
+      </script>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>

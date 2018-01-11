@@ -183,22 +183,22 @@ class Watchlist extends React.Component {
             rel="stylesheet"
             href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css"
           />
-          <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit} className="new-watchlist-item">
             <input
+              className="new-watchlist-item-input"
               type="text"
               placeholder="new watchlist item"
               value={this.state.ticker}
               onChange={this.update("ticker")}
             />
 
-            <input type="submit" value="Add Ticker Symbol"/>
+            <input className="btn-primary" id="new-item-btn" type="submit" value="Add Ticker Symbol"/>
           </form>
           <BootstrapTable
             ref="table"
             data={realParsed}
             options={options}
             remote={this.remote}
-            search
             pagination
             options={options}
           >

@@ -53767,7 +53767,7 @@ var _reactRouterDom = __webpack_require__(19);
 
 var _stock_actions = __webpack_require__(52);
 
-var _route_util = __webpack_require__(1105);
+var _route_util = __webpack_require__(1104);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -101864,14 +101864,15 @@ var Watchlist = function (_React$Component) {
           }),
           _react2.default.createElement(
             "form",
-            { onSubmit: this.handleSubmit },
+            { onSubmit: this.handleSubmit, className: "new-watchlist-item" },
             _react2.default.createElement("input", {
+              className: "new-watchlist-item-input",
               type: "text",
               placeholder: "new watchlist item",
               value: this.state.ticker,
               onChange: this.update("ticker")
             }),
-            _react2.default.createElement("input", { type: "submit", value: "Add Ticker Symbol" })
+            _react2.default.createElement("input", { className: "btn-primary", id: "new-item-btn", type: "submit", value: "Add Ticker Symbol" })
           ),
           _react2.default.createElement(
             _reactBootstrapTable.BootstrapTable,
@@ -101880,7 +101881,6 @@ var Watchlist = function (_React$Component) {
               data: realParsed,
               options: options,
               remote: this.remote,
-              search: true,
               pagination: true
             }, "options", options),
             _react2.default.createElement(
@@ -102307,8 +102307,7 @@ var Home = function (_React$Component) {
 exports.default = Home;
 
 /***/ }),
-/* 1104 */,
-/* 1105 */
+/* 1104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

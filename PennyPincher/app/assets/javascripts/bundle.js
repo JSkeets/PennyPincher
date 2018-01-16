@@ -47570,7 +47570,7 @@ exports.default = RootReducer;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _redux = __webpack_require__(64);
@@ -47587,12 +47587,17 @@ var _watchlist_reducer = __webpack_require__(580);
 
 var _watchlist_reducer2 = _interopRequireDefault(_watchlist_reducer);
 
+var _comments_reducer = __webpack_require__(1105);
+
+var _comments_reducer2 = _interopRequireDefault(_comments_reducer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var EntitiesReducer = (0, _redux.combineReducers)({
-	stocks: _stocks_reducer2.default,
-	tweets: _tweets_reducer2.default,
-	watchlist: _watchlist_reducer2.default
+  stocks: _stocks_reducer2.default,
+  tweets: _tweets_reducer2.default,
+  watchlist: _watchlist_reducer2.default,
+  comments: _comments_reducer2.default
 });
 
 exports.default = EntitiesReducer;
@@ -53805,7 +53810,7 @@ exports.default = App;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _reactRedux = __webpack_require__(32);
@@ -53816,28 +53821,33 @@ var _stock_show2 = _interopRequireDefault(_stock_show);
 
 var _stock_actions = __webpack_require__(52);
 
+var _comment_actions = __webpack_require__(1106);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
-	return {
-		stocks: state.entities.stocks,
-		tweets: state.entities.tweets,
-		symbol: ownProps.match.params.stockTicker
-	};
+  return {
+    stocks: state.entities.stocks,
+    tweets: state.entities.tweets,
+    symbol: ownProps.match.params.stockTicker
+  };
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-	return {
-		fetchStock: function fetchStock(symbol) {
-			return dispatch((0, _stock_actions.fetchStock)(symbol));
-		},
-		fetchAllStocks: function fetchAllStocks() {
-			return dispatch((0, _stock_actions.fetchAllStocks)());
-		},
-		fetchTweets: function fetchTweets(hashtag) {
-			return dispatch((0, _stock_actions.fetchTweets)(hashtag));
-		}
-	};
+  return {
+    fetchStock: function fetchStock(symbol) {
+      return dispatch((0, _stock_actions.fetchStock)(symbol));
+    },
+    fetchAllStocks: function fetchAllStocks() {
+      return dispatch((0, _stock_actions.fetchAllStocks)());
+    },
+    fetchTweets: function fetchTweets(hashtag) {
+      return dispatch((0, _stock_actions.fetchTweets)(hashtag));
+    },
+    fetchComments: function fetchComments(ticker) {
+      return dispatch((0, _comment_actions.fetchComments)(ticker));
+    }
+  };
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_stock_show2.default);
@@ -53850,7 +53860,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -53901,259 +53911,263 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 var StockShow = function (_React$Component) {
-	_inherits(StockShow, _React$Component);
+  _inherits(StockShow, _React$Component);
 
-	function StockShow(props) {
-		_classCallCheck(this, StockShow);
+  function StockShow(props) {
+    _classCallCheck(this, StockShow);
 
-		var _this = _possibleConstructorReturn(this, (StockShow.__proto__ || Object.getPrototypeOf(StockShow)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (StockShow.__proto__ || Object.getPrototypeOf(StockShow)).call(this, props));
 
-		_this.loadStock = _this.loadStock.bind(_this);
-		_this.date = _this.date.bind(_this);
-		_this.loadTweets = _this.loadTweets.bind(_this);
-		_this.recentNews = _this.recentNews.bind(_this);
-		_this.percentUp = _this.percentUp.bind(_this);
-		_this.state = {
-			loading: true
-		};
-		_reactGa2.default.initialize("UA-107597692-1");
-		// This just needs to be called once since we have no routes in this case.
-		_reactGa2.default.pageview(window.location.pathname);
-		return _this;
-	}
+    _this.loadStock = _this.loadStock.bind(_this);
+    _this.date = _this.date.bind(_this);
+    _this.loadTweets = _this.loadTweets.bind(_this);
+    _this.recentNews = _this.recentNews.bind(_this);
+    _this.percentUp = _this.percentUp.bind(_this);
+    _this.state = {
+      loading: true
+    };
+    _reactGa2.default.initialize("UA-107597692-1");
+    // This just needs to be called once since we have no routes in this case.
+    _reactGa2.default.pageview(window.location.pathname);
+    return _this;
+  }
 
-	_createClass(StockShow, [{
-		key: "componentDidMount",
-		value: function componentDidMount() {
-			var _this2 = this;
+  _createClass(StockShow, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
 
-			this.loadStock();
-			this.loadTweets();
-			setTimeout(function () {
-				return _this2.setState({ loading: false });
-			}, 1000);
-			// setInterval(this.loadStock, 2000);
-		}
-	}, {
-		key: "loadTweets",
-		value: function loadTweets() {
-			this.props.fetchTweets(this.props.symbol);
-		}
-	}, {
-		key: "loadStock",
-		value: function loadStock() {
-			this.props.fetchStock(this.props.symbol);
-		}
-	}, {
-		key: "date",
-		value: function date() {
-			var c = new Date();
-			var x = c.setDate(c.getDate() - 5);
-			var d = new Date(x),
-			    month = "" + (d.getMonth() + 1),
-			    day = "" + d.getDate(),
-			    year = d.getFullYear();
-			if (month.length < 2) month = "0" + month;
-			if (day.length < 2) day = "0" + day;
-			return [year, month, day].join("-");
-		}
-	}, {
-		key: "percentUp",
-		value: function percentUp() {
-			var symbol = this.props.symbol;
-			if (this.props.stocks[symbol].quote.changePercent * 100 > 0) {
-				return {
-					color: "green"
-				};
-			} else {
-				return {
-					color: "red"
-				};
-			}
-		}
-	}, {
-		key: "recentNews",
-		value: function recentNews() {
-			var symbol = this.props.symbol;
-			var news = [];
+      this.loadStock();
+      this.loadTweets();
+      this.props.fetchComments(window.location.hash.slice(9));
+      setTimeout(function () {
+        return _this2.setState({ loading: false });
+      }, 1000);
+      // setInterval(this.loadStock, 2000);
+    }
+  }, {
+    key: "loadTweets",
+    value: function loadTweets() {
+      this.props.fetchTweets(this.props.symbol);
+    }
+  }, {
+    key: "loadStock",
+    value: function loadStock() {
+      this.props.fetchStock(this.props.symbol);
+    }
+  }, {
+    key: "date",
+    value: function date() {
+      var c = new Date();
+      var x = c.setDate(c.getDate() - 5);
+      var d = new Date(x),
+          month = "" + (d.getMonth() + 1),
+          day = "" + d.getDate(),
+          year = d.getFullYear();
+      if (month.length < 2) month = "0" + month;
+      if (day.length < 2) day = "0" + day;
+      return [year, month, day].join("-");
+    }
+  }, {
+    key: "percentUp",
+    value: function percentUp() {
+      var symbol = this.props.symbol;
+      if (this.props.stocks[symbol].quote.changePercent * 100 > 0) {
+        return {
+          color: "green"
+        };
+      } else {
+        return {
+          color: "red"
+        };
+      }
+    }
+  }, {
+    key: "recentNews",
+    value: function recentNews() {
+      var symbol = this.props.symbol;
+      var news = [];
 
-			var self = this;
-			this.props.stocks[symbol].news.forEach(function (newSing) {
-				if (self.date() < newSing.datetime.slice(0, 10)) {
-					news.push(newSing);
-				}
-			});
-			return news;
-		}
-	}, {
-		key: "render",
-		value: function render() {
-			var symbol = this.props.symbol;
-			if (this.state.loading) {
-				return _react2.default.createElement(
-					"div",
-					{ className: "loader" },
-					"Loading..."
-				);
-			} else {
-				var recentNews = this.recentNews();
-				var tweets = this.props.tweets[symbol].statuses;
-				var percStyle = this.percentUp();
+      var self = this;
+      this.props.stocks[symbol].news.forEach(function (newSing) {
+        if (self.date() < newSing.datetime.slice(0, 10)) {
+          news.push(newSing);
+        }
+      });
+      return news;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var symbol = this.props.symbol;
+      if (this.state.loading) {
+        return _react2.default.createElement(
+          "div",
+          { className: "loader" },
+          "Loading..."
+        );
+      } else {
+        var recentNews = this.recentNews();
+        var tweets = this.props.tweets[symbol].statuses;
+        var percStyle = this.percentUp();
 
-				return _react2.default.createElement(
-					"div",
-					null,
-					_react2.default.createElement(
-						"div",
-						{ className: "stock-basic-info" },
-						_react2.default.createElement(
-							"div",
-							{ id: "symbol" },
-							_react2.default.createElement(
-								"i",
-								null,
-								"Symbol"
-							),
-							_react2.default.createElement(
-								"i",
-								null,
-								this.props.stocks[symbol].quote.symbol
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ id: "company-name" },
-							_react2.default.createElement(
-								"i",
-								null,
-								"Company Name"
-							),
-							_react2.default.createElement(
-								"i",
-								null,
-								this.props.stocks[symbol].quote.companyName
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ id: "price" },
-							_react2.default.createElement(
-								"i",
-								null,
-								"Current Price"
-							),
-							_react2.default.createElement(
-								"i",
-								null,
-								this.props.stocks[symbol].quote.latestPrice
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ id: "volume" },
-							_react2.default.createElement(
-								"i",
-								null,
-								"Volume"
-							),
-							_react2.default.createElement(
-								"i",
-								null,
-								this.props.stocks[symbol].quote.latestVolume
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ id: "percent-change", style: percStyle },
-							_react2.default.createElement(
-								"i",
-								null,
-								"Percent Change"
-							),
-							_react2.default.createElement(
-								"i",
-								null,
-								(this.props.stocks[symbol].quote.changePercent * 100).toFixed(2)
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ id: "float" },
-							_react2.default.createElement(
-								"i",
-								null,
-								"Float"
-							),
-							_react2.default.createElement(
-								"i",
-								null,
-								this.props.stocks[symbol].stats.float
-							)
-						),
-						_react2.default.createElement(
-							"div",
-							{ id: "news-header" },
-							_react2.default.createElement(
-								"i",
-								null,
-								"Articles in the Last 5 Days"
-							),
-							_react2.default.createElement(
-								"i",
-								null,
-								recentNews.length
-							)
-						)
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "chart-tweet-wrapper" },
-						_react2.default.createElement(
-							"div",
-							{ className: "chart-wrapper" },
-							_react2.default.createElement(_chart_component2.default, { stocks: this.props.stocks, symbol: this.props.stocks[symbol].quote.symbol })
-						),
-						_react2.default.createElement(
-							"div",
-							{ className: "tweets-news-wrapper" },
-							_react2.default.createElement(
-								"div",
-								{ className: "stock-news" },
-								_react2.default.createElement(
-									"ul",
-									{ id: "news-index" },
-									_react2.default.createElement(
-										_reactCollapsible2.default,
-										{ trigger: "Recent News Articles" },
-										recentNews.map(function (news) {
-											return _react2.default.createElement(_news_index_item2.default, { key: news.datetime, news: news });
-										})
-									)
-								)
-							),
-							_react2.default.createElement(
-								_reactCollapsible2.default,
-								{ trigger: "What are people saying on Twitter?" },
-								_react2.default.createElement(
-									"div",
-									{ className: "stock-tweets" },
-									_react2.default.createElement(
-										"ul",
-										{ id: "tweets-index" },
-										tweets.map(function (tweet) {
-											return _react2.default.createElement(_tweets_index_item2.default, { key: tweet.created_at, tweet: tweet });
-										})
-									)
-								)
-							)
-						)
-					)
-				);
-			}
-		}
-	}]);
+        return _react2.default.createElement(
+          "div",
+          null,
+          _react2.default.createElement(
+            "div",
+            { className: "stock-basic-info" },
+            _react2.default.createElement(
+              "div",
+              { id: "symbol" },
+              _react2.default.createElement(
+                "i",
+                null,
+                "Symbol"
+              ),
+              _react2.default.createElement(
+                "i",
+                null,
+                this.props.stocks[symbol].quote.symbol
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { id: "company-name" },
+              _react2.default.createElement(
+                "i",
+                null,
+                "Company Name"
+              ),
+              _react2.default.createElement(
+                "i",
+                null,
+                this.props.stocks[symbol].quote.companyName
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { id: "price" },
+              _react2.default.createElement(
+                "i",
+                null,
+                "Current Price"
+              ),
+              _react2.default.createElement(
+                "i",
+                null,
+                this.props.stocks[symbol].quote.latestPrice
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { id: "volume" },
+              _react2.default.createElement(
+                "i",
+                null,
+                "Volume"
+              ),
+              _react2.default.createElement(
+                "i",
+                null,
+                this.props.stocks[symbol].quote.latestVolume
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { id: "percent-change", style: percStyle },
+              _react2.default.createElement(
+                "i",
+                null,
+                "Percent Change"
+              ),
+              _react2.default.createElement(
+                "i",
+                null,
+                (this.props.stocks[symbol].quote.changePercent * 100).toFixed(2)
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { id: "float" },
+              _react2.default.createElement(
+                "i",
+                null,
+                "Float"
+              ),
+              _react2.default.createElement(
+                "i",
+                null,
+                this.props.stocks[symbol].stats.float
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { id: "news-header" },
+              _react2.default.createElement(
+                "i",
+                null,
+                "Articles in the Last 5 Days"
+              ),
+              _react2.default.createElement(
+                "i",
+                null,
+                recentNews.length
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "chart-tweet-wrapper" },
+            _react2.default.createElement(
+              "div",
+              { className: "chart-wrapper" },
+              _react2.default.createElement(_chart_component2.default, {
+                stocks: this.props.stocks,
+                symbol: this.props.stocks[symbol].quote.symbol
+              })
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "tweets-news-wrapper" },
+              _react2.default.createElement(
+                "div",
+                { className: "stock-news" },
+                _react2.default.createElement(
+                  "ul",
+                  { id: "news-index" },
+                  _react2.default.createElement(
+                    _reactCollapsible2.default,
+                    { trigger: "Recent News Articles" },
+                    recentNews.map(function (news) {
+                      return _react2.default.createElement(_news_index_item2.default, { key: news.datetime, news: news });
+                    })
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                _reactCollapsible2.default,
+                { trigger: "What are people saying on Twitter?" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "stock-tweets" },
+                  _react2.default.createElement(
+                    "ul",
+                    { id: "tweets-index" },
+                    tweets.map(function (tweet) {
+                      return _react2.default.createElement(_tweets_index_item2.default, { key: tweet.created_at, tweet: tweet });
+                    })
+                  )
+                )
+              )
+            )
+          )
+        );
+      }
+    }
+  }]);
 
-	return StockShow;
+  return StockShow;
 }(_react2.default.Component);
 
 exports.default = StockShow;
@@ -102361,6 +102375,108 @@ var mapStateToProps = function mapStateToProps(state) {
 var AuthRoute = exports.AuthRoute = (0, _reactRouterDom.withRouter)((0, _reactRedux.connect)(mapStateToProps, null)(Auth));
 
 var ProtectedRoute = exports.ProtectedRoute = (0, _reactRouterDom.withRouter)((0, _reactRedux.connect)(mapStateToProps, null)(Protected));
+
+/***/ }),
+/* 1105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _comment_actions = __webpack_require__(1106);
+
+var _merge2 = __webpack_require__(107);
+
+var _merge3 = _interopRequireDefault(_merge2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var CommentsReducer = function CommentsReducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var action = arguments[1];
+
+  Object.freeze(state);
+  var newState = {};
+  switch (action.type) {
+    case _comment_actions.RECEIVE_COMMENTS:
+      var newObj = {};
+      return (0, _merge3.default)(newObj, state, _defineProperty({}, action.ticker, action.comments));
+    default:
+      return state;
+  }
+};
+
+exports.default = CommentsReducer;
+
+/***/ }),
+/* 1106 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.fetchComments = exports.RECEIVE_COMMENTS = undefined;
+
+var _comments_util = __webpack_require__(1107);
+
+var CommentsUtil = _interopRequireWildcard(_comments_util);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+var RECEIVE_COMMENTS = exports.RECEIVE_COMMENTS = "RECEIVE_COMMENTS";
+
+var receiveComments = function receiveComments(comments) {
+  return { type: RECEIVE_COMMENTS, comments: comments };
+};
+
+var fetchComments = exports.fetchComments = function fetchComments(ticker) {
+  return function (dispatch) {
+    return CommentsUtil.fetchComments(ticker).then(function (res) {
+      return dispatch(receiveComments(res));
+    });
+  };
+};
+
+/***/ }),
+/* 1107 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var fetchComments = exports.fetchComments = function fetchComments(ticker) {
+  return $.ajax({
+    method: "GET",
+    url: "/comments/",
+    data: { ticker: ticker },
+    success: function success(data) {
+      return data;
+    },
+    error: function error(data) {
+      return data;
+    }
+  });
+};
+
+var createComment = exports.createComment = function createComment(comment) {
+  return $.ajax({
+    method: "POST",
+    url: "/comments/",
+    data: { comment: comment }
+  });
+};
 
 /***/ })
 /******/ ]);

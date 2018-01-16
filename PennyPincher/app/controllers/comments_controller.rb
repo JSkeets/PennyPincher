@@ -3,8 +3,8 @@ class CommentsController < ApplicationController
   def index
       @comments = Comment.where(:ticker => params[:ticker])
       if @comments
-         render json:@comments 
-      else 
+         render "comments/index";
+      else
         render @comments.errors.full_messages, status: 422
       end
   end

@@ -53923,6 +53923,7 @@ var StockShow = function (_React$Component) {
     _this.loadTweets = _this.loadTweets.bind(_this);
     _this.recentNews = _this.recentNews.bind(_this);
     _this.percentUp = _this.percentUp.bind(_this);
+    _this.loadComments = _this.loadComments.bind(_this);
     _this.state = {
       loading: true
     };
@@ -53939,11 +53940,16 @@ var StockShow = function (_React$Component) {
 
       this.loadStock();
       this.loadTweets();
-      this.props.fetchComments(window.location.hash.slice(9));
+      this.loadComments();
       setTimeout(function () {
         return _this2.setState({ loading: false });
       }, 1000);
       // setInterval(this.loadStock, 2000);
+    }
+  }, {
+    key: "loadComments",
+    value: function loadComments() {
+      this.props.fetchComments(window.location.hash.slice(9));
     }
   }, {
     key: "loadTweets",
@@ -102434,14 +102440,14 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 var RECEIVE_COMMENTS = exports.RECEIVE_COMMENTS = "RECEIVE_COMMENTS";
 
-var receiveComments = function receiveComments(comments) {
-  return { type: RECEIVE_COMMENTS, comments: comments };
+var receiveComments = function receiveComments(comments, ticker) {
+  return { type: RECEIVE_COMMENTS, comments: comments, ticker: ticker };
 };
 
 var fetchComments = exports.fetchComments = function fetchComments(ticker) {
   return function (dispatch) {
     return CommentsUtil.fetchComments(ticker).then(function (res) {
-      return dispatch(receiveComments(res));
+      return dispatch(receiveComments(res, ticker));
     });
   };
 };

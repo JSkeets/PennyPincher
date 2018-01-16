@@ -16,6 +16,7 @@ class StockShow extends React.Component {
     this.loadTweets = this.loadTweets.bind(this);
     this.recentNews = this.recentNews.bind(this);
     this.percentUp = this.percentUp.bind(this);
+    this.loadComments = this.loadComments.bind(this);
     this.state = {
       loading: true
     };
@@ -26,11 +27,14 @@ class StockShow extends React.Component {
   componentDidMount() {
     this.loadStock();
     this.loadTweets();
-    this.props.fetchComments(window.location.hash.slice(9));
+    this.loadComments();
     setTimeout(() => this.setState({ loading: false }), 1000);
     // setInterval(this.loadStock, 2000);
   }
 
+  loadComments() {
+    this.props.fetchComments(window.location.hash.slice(9));
+  }
   loadTweets() {
     this.props.fetchTweets(this.props.symbol);
   }

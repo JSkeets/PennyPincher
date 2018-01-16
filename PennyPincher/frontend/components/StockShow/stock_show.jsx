@@ -3,6 +3,7 @@ import json2csv from "json2csv";
 import d3 from "d3";
 import NewsIndexItem from "./news_index_item";
 import TweetsIndexItem from "./tweets_index_item";
+import CommentIndexItem from "./comment_index_item";
 import PeerIndexItem from "./peer_index_item";
 import ChartComponent from "./chart_component";
 import ReactGA from "react-ga"; // https://github.com/react-ga/react-ga
@@ -85,6 +86,8 @@ class StockShow extends React.Component {
     } else {
       let recentNews = this.recentNews();
       let tweets = this.props.tweets[symbol].statuses;
+      debugger;
+      let comments = Object.values(this.props.comments[symbol]);
       let percStyle = this.percentUp();
 
       return (
@@ -145,6 +148,18 @@ class StockShow extends React.Component {
                   <ul id="tweets-index">
                     {tweets.map(tweet => (
                       <TweetsIndexItem key={tweet.created_at} tweet={tweet} />
+                    ))}
+                  </ul>
+                </div>
+              </Collapsible>
+              <Collapsible trigger="Comments">
+                <div className="stock-comments">
+                  <ul id="comments-index">
+                    {comments.map(comment => (
+                      <CommentIndexItem
+                        key={comment.created_at}
+                        comment={comment}
+                      />
                     ))}
                   </ul>
                 </div>

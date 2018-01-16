@@ -10,7 +10,8 @@ import { fetchComments } from "../../actions/comment_actions";
 const mapStateToProps = (state, ownProps) => ({
   stocks: state.entities.stocks,
   tweets: state.entities.tweets,
-  symbol: ownProps.match.params.stockTicker
+  symbol: ownProps.match.params.stockTicker,
+  comments: state.entities.comments
 });
 
 const mapDispatchToProps = dispatch => ({

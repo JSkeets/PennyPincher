@@ -53829,7 +53829,8 @@ var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {
     stocks: state.entities.stocks,
     tweets: state.entities.tweets,
-    symbol: ownProps.match.params.stockTicker
+    symbol: ownProps.match.params.stockTicker,
+    comments: state.entities.comments
   };
 };
 
@@ -53884,6 +53885,10 @@ var _news_index_item2 = _interopRequireDefault(_news_index_item);
 var _tweets_index_item = __webpack_require__(928);
 
 var _tweets_index_item2 = _interopRequireDefault(_tweets_index_item);
+
+var _comment_index_item = __webpack_require__(1108);
+
+var _comment_index_item2 = _interopRequireDefault(_comment_index_item);
 
 var _peer_index_item = __webpack_require__(929);
 
@@ -54015,6 +54020,8 @@ var StockShow = function (_React$Component) {
       } else {
         var recentNews = this.recentNews();
         var tweets = this.props.tweets[symbol].statuses;
+        debugger;
+        var comments = Object.values(this.props.comments[symbol]);
         var percStyle = this.percentUp();
 
         return _react2.default.createElement(
@@ -54162,6 +54169,24 @@ var StockShow = function (_React$Component) {
                     { id: "tweets-index" },
                     tweets.map(function (tweet) {
                       return _react2.default.createElement(_tweets_index_item2.default, { key: tweet.created_at, tweet: tweet });
+                    })
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                _reactCollapsible2.default,
+                { trigger: "Comments" },
+                _react2.default.createElement(
+                  "div",
+                  { className: "stock-comments" },
+                  _react2.default.createElement(
+                    "ul",
+                    { id: "comments-index" },
+                    comments.map(function (comment) {
+                      return _react2.default.createElement(_comment_index_item2.default, {
+                        key: comment.created_at,
+                        comment: comment
+                      });
                     })
                   )
                 )
@@ -102483,6 +102508,50 @@ var createComment = exports.createComment = function createComment(comment) {
     data: { comment: comment }
   });
 };
+
+/***/ }),
+/* 1108 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(19);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var CommentIndexItem = function CommentIndexItem(_ref) {
+  var comment = _ref.comment;
+
+  var computedTime = function computedTime(time) {
+    var parsed = Date.parse(time);
+    var now = Date.now();
+    return Math.round(parsed / (1000 * 60 * 60) % 24);
+  };
+  var timeOf = comment.created_at;
+  return _react2.default.createElement(
+    "li",
+    { className: "comment-index-item" },
+    comment.body,
+    _react2.default.createElement("br", null),
+    _react2.default.createElement("br", null)
+  );
+};
+
+exports.default = CommentIndexItem;
+//   <li className="news-index-item">
+//       <a href={`${news.url}`}>{news.headline}</a>&nbsp;&nbsp;
+//       {news.datetime.slice(0, 10)}&nbsp;&nbsp;
+//       {news.source}&nbsp;
+//     </li>
 
 /***/ })
 /******/ ]);

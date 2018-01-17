@@ -10,3 +10,8 @@ export const fetchComments = ticker => dispatch =>
   CommentsUtil.fetchComments(ticker).then(res =>
     dispatch(receiveComments(res, ticker))
   );
+
+export const createComment = (comment, ticker) => dispatch =>
+  CommentsUtil.createComment(comment).then(res =>
+    dispatch(receiveComments(res, ticker))
+  );

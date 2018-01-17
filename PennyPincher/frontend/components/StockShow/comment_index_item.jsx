@@ -9,18 +9,15 @@ const CommentIndexItem = ({ comment }) => {
   };
   let timeOf = comment.created_at;
   return (
-    <li className="comment-index-item">
-      {comment.body}
-      <br />
-      {/* -{tweet.user.name}&nbsp;{computedTime(timeOf)}H&nbsp;ago */}
-      <br />
-    </li>
+    <div>
+      <li className="comment-index-item">
+        {comment.body}
+        <br />
+        {/* -{tweet.user.name}&nbsp;{computedTime(timeOf)}H&nbsp;ago */}
+        <br />
+      </li>
+    </div>
   );
 };
 
 export default CommentIndexItem;
-//   <li className="news-index-item">
-//       <a href={`${news.url}`}>{news.headline}</a>&nbsp;&nbsp;
-//       {news.datetime.slice(0, 10)}&nbsp;&nbsp;
-//       {news.source}&nbsp;
-//     </li>

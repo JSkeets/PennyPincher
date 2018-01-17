@@ -18,8 +18,13 @@ class StockShow extends React.Component {
     this.recentNews = this.recentNews.bind(this);
     this.percentUp = this.percentUp.bind(this);
     this.loadComments = this.loadComments.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.update = this.update.bind(this);
     this.state = {
-      loading: true
+      loading: true,
+      body: "",
+      ticker: this.props.symbol,
+      user_id: this.props.userId
     };
     ReactGA.initialize("UA-107597692-1");
     // This just needs to be called once since we have no routes in this case.
@@ -30,6 +35,7 @@ class StockShow extends React.Component {
     this.loadTweets();
     this.loadComments();
     setTimeout(() => this.setState({ loading: false }), 1000);
+
     // setInterval(this.loadStock, 2000);
   }
 
@@ -42,6 +48,19 @@ class StockShow extends React.Component {
 
   loadStock() {
     this.props.fetchStock(this.props.symbol);
+  }
+
+  update(field) {
+    return e =>
+      this.setState({
+        [field]: e.currentTarget.value
+      });
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    let comment = this.state;
+    this.props.createComment(comment);
   }
 
   date() {
@@ -86,7 +105,6 @@ class StockShow extends React.Component {
     } else {
       let recentNews = this.recentNews();
       let tweets = this.props.tweets[symbol].statuses;
-      debugger;
       let comments = Object.values(this.props.comments[symbol]);
       let percStyle = this.percentUp();
 
@@ -132,6 +150,19 @@ class StockShow extends React.Component {
                 stocks={this.props.stocks}
                 symbol={this.props.stocks[symbol].quote.symbol}
               />
+            </div>
+            <div className="comment-form">
+              <form onSubmit={this.handleSubmit}>
+                <input
+                  type="text"
+                  placeholder="Leave a comment"
+                  value={this.state.comment}
+                  onChange={this.update("body")}
+                />
+                <button type="submit" className="btn btn--right">
+                  Leave a comment
+                </button>
+              </form>
             </div>
             <div className="tweets-news-wrapper">
               <div className="stock-news">

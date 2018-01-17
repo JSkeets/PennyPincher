@@ -19,7 +19,9 @@ class CommentsController < ApplicationController
   end
 
   def create
-    @comment = comment.new(comment_params)
+    debugger
+    @comment = Comment.new(comment_params)
+
     if @comment.save
       render  json:@comment
     else
@@ -47,7 +49,7 @@ class CommentsController < ApplicationController
   end
 
   def comment_params
-    params.require(:comment).permit(:rating,:body,:ticker)
+    params.require(:comment).permit(:user_id,:body,:ticker)
   end
 
 end

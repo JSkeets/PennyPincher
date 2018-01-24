@@ -24094,7 +24094,7 @@ module.exports = identity;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.createComment = exports.fetchComments = exports.RECEIVE_COMMENTS = undefined;
+exports.createComment = exports.fetchComments = exports.ADD_COMMENT = exports.RECEIVE_COMMENTS = undefined;
 
 var _comments_util = __webpack_require__(584);
 
@@ -24103,11 +24103,15 @@ var CommentsUtil = _interopRequireWildcard(_comments_util);
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 var RECEIVE_COMMENTS = exports.RECEIVE_COMMENTS = "RECEIVE_COMMENTS";
+var ADD_COMMENT = exports.ADD_COMMENT = "ADD_COMMENT";
 
 var receiveComments = function receiveComments(comments, ticker) {
   return { type: RECEIVE_COMMENTS, comments: comments, ticker: ticker };
 };
 
+var addComment = function addComment(comment) {
+  return { type: ADD_COMMENT, comment: comment };
+};
 var fetchComments = exports.fetchComments = function fetchComments(ticker) {
   return function (dispatch) {
     return CommentsUtil.fetchComments(ticker).then(function (res) {
@@ -24119,7 +24123,7 @@ var fetchComments = exports.fetchComments = function fetchComments(ticker) {
 var createComment = exports.createComment = function createComment(comment, ticker) {
   return function (dispatch) {
     return CommentsUtil.createComment(comment).then(function (res) {
-      return dispatch(receiveComments(res, ticker));
+      return dispatch(addComment(res));
     });
   };
 };
@@ -49865,9 +49869,9 @@ Object.defineProperty(exports, "__esModule", {
 
 var _comment_actions = __webpack_require__(265);
 
-var _merge2 = __webpack_require__(79);
+var _merge3 = __webpack_require__(79);
 
-var _merge3 = _interopRequireDefault(_merge2);
+var _merge4 = _interopRequireDefault(_merge3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -49882,7 +49886,11 @@ var CommentsReducer = function CommentsReducer() {
   switch (action.type) {
     case _comment_actions.RECEIVE_COMMENTS:
       var newObj = {};
-      return (0, _merge3.default)(newObj, state, _defineProperty({}, action.ticker, action.comments));
+      return (0, _merge4.default)(newObj, state, _defineProperty({}, action.ticker, action.comments));
+    case _comment_actions.ADD_COMMENT:
+      newObj = {};
+      return (0, _merge4.default)(newObj, state, _defineProperty({}, action.comment.ticker, action.comment));
+
     default:
       return state;
   }
@@ -54103,6 +54111,7 @@ var StockShow = function (_React$Component) {
       e.preventDefault();
       var comment = this.state;
       this.props.createComment(comment);
+      this.forceUpdate();
     }
   }, {
     key: "date",
@@ -54160,7 +54169,7 @@ var StockShow = function (_React$Component) {
         var tweets = this.props.tweets[symbol].statuses;
         var comments = Object.values(this.props.comments[symbol]);
         var percStyle = this.percentUp();
-
+        console.log("COMMENTS", comments);
         return _react2.default.createElement(
           "div",
           null,
@@ -54339,10 +54348,7 @@ var StockShow = function (_React$Component) {
                     "ul",
                     { id: "comments-index" },
                     comments.map(function (comment) {
-                      return _react2.default.createElement(_comment_index_item2.default, {
-                        key: comment.created_at,
-                        comment: comment
-                      });
+                      return _react2.default.createElement(_comment_index_item2.default, { key: comment.id, comment: comment });
                     })
                   )
                 )

@@ -61,6 +61,7 @@ class StockShow extends React.Component {
     e.preventDefault();
     let comment = this.state;
     this.props.createComment(comment);
+    this.forceUpdate();
   }
 
   date() {
@@ -107,7 +108,7 @@ class StockShow extends React.Component {
       let tweets = this.props.tweets[symbol].statuses;
       let comments = Object.values(this.props.comments[symbol]);
       let percStyle = this.percentUp();
-
+      console.log("COMMENTS", comments);
       return (
         <div>
           <div className="stock-basic-info">
@@ -187,10 +188,7 @@ class StockShow extends React.Component {
                 <div className="stock-comments">
                   <ul id="comments-index">
                     {comments.map(comment => (
-                      <CommentIndexItem
-                        key={comment.created_at}
-                        comment={comment}
-                      />
+                      <CommentIndexItem key={comment.id} comment={comment} />
                     ))}
                   </ul>
                 </div>

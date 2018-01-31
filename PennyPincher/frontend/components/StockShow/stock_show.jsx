@@ -24,7 +24,8 @@ class StockShow extends React.Component {
       loading: true,
       body: "",
       ticker: this.props.symbol,
-      user_id: this.props.userId
+      user_id: this.props.userId,
+      comments: this.props.comments
     };
     ReactGA.initialize("UA-107597692-1");
     // This just needs to be called once since we have no routes in this case.
@@ -106,7 +107,7 @@ class StockShow extends React.Component {
     } else {
       let recentNews = this.recentNews();
       let tweets = this.props.tweets[symbol].statuses;
-      let comments = Object.values(this.props.comments[symbol]);
+      let comments = Object.values(this.state.comments[symbol]);
       let percStyle = this.percentUp();
       console.log("COMMENTS", comments);
       return (

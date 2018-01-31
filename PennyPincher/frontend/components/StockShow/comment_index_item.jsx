@@ -8,6 +8,7 @@ const CommentIndexItem = ({ comment }) => {
     return Math.round((parsed / (1000 * 60 * 60)) % 24);
   };
   let timeOf = comment.created_at;
+
   return (
     <div>
       <li className="comment-index-item">

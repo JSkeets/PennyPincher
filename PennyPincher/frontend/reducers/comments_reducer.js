@@ -12,6 +12,7 @@ let CommentsReducer = (state = {}, action) => {
       });
     case ADD_COMMENT:
       newObj = {};
+
       return merge(newObj, state, { [action.comment.ticker]: action.comment });
 
     default:

@@ -49889,6 +49889,7 @@ var CommentsReducer = function CommentsReducer() {
       return (0, _merge4.default)(newObj, state, _defineProperty({}, action.ticker, action.comments));
     case _comment_actions.ADD_COMMENT:
       newObj = {};
+
       return (0, _merge4.default)(newObj, state, _defineProperty({}, action.comment.ticker, action.comment));
 
     default:
@@ -54059,7 +54060,8 @@ var StockShow = function (_React$Component) {
       loading: true,
       body: "",
       ticker: _this.props.symbol,
-      user_id: _this.props.userId
+      user_id: _this.props.userId,
+      comments: _this.props.comments
     };
     _reactGa2.default.initialize("UA-107597692-1");
     // This just needs to be called once since we have no routes in this case.
@@ -54167,7 +54169,7 @@ var StockShow = function (_React$Component) {
       } else {
         var recentNews = this.recentNews();
         var tweets = this.props.tweets[symbol].statuses;
-        var comments = Object.values(this.props.comments[symbol]);
+        var comments = Object.values(this.state.comments[symbol]);
         var percStyle = this.percentUp();
         console.log("COMMENTS", comments);
         return _react2.default.createElement(
@@ -72509,6 +72511,7 @@ var CommentIndexItem = function CommentIndexItem(_ref) {
     return Math.round(parsed / (1000 * 60 * 60) % 24);
   };
   var timeOf = comment.created_at;
+
   return _react2.default.createElement(
     "div",
     null,
